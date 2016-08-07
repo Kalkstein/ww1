@@ -1,0 +1,29 @@
+###########################
+# Austria Events
+###########################
+
+add_namespace = austria
+
+# Germany offers South Tyrol to Italy
+country_event = {
+	id = austria.1
+	title = austria.1.t
+	desc = austria.1.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+	
+	option = {
+		name = austria.1.a
+		ITA = { country_event = { days = 1 id = italy.18 } }
+		ITA = { transfer_state = 39 }
+	}
+	option = {
+		name = austria.1.b
+		GER = {
+			add_opinion_modifier = { 
+				target = ROOT
+				modifier = medium_decrease 
+			}
+		}
+	}
+}

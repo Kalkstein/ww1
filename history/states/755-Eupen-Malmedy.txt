@@ -1,0 +1,26 @@
+state={
+	id=755
+	name="STATE_755"
+	manpower = 93673
+	
+	state_category = large_city
+
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 1
+			3488 = {
+				bunker = 2
+			}
+
+		}
+		add_core_of = GER
+		add_core_of = BEL
+	}
+
+	provinces={
+		3488
+	}
+}

@@ -1,0 +1,34 @@
+state={
+	id=747
+	name="STATE_747"
+	manpower = 380000
+	resources={
+		steel = 5
+		chromium=3
+	}
+	
+	state_category = town
+	
+	history={
+		owner = TUR
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 2 
+			air_base = 3
+		}
+		add_core_of = ALB
+		add_claim_by = ITA
+		add_claim_by = GRE
+
+		1939.4.12 = {
+			owner = ITA
+			controller = ITA
+			remove_claim_by = ITA
+		}
+	}
+
+	provinces={
+		914 3448 6900 11767
+	}
+}

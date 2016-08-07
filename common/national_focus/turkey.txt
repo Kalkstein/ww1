@@ -1,0 +1,534 @@
+focus_tree = {
+	id = turkish_focus 
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = TUR
+		}
+	}
+	default = no
+	
+	focus = {
+		id = TUR_baghdad_railway_effort
+		icon = GFX_goal_generic_construct_civilian
+		x = 1
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		
+		bypass = {
+				341 = {
+					free_building_slots = {
+						building = infrastructure
+						size < 2
+					}
+				}
+				
+				347 = {
+					free_building_slots = {
+						building = infrastructure
+						size < 2
+					}
+				}
+		}
+		available = {
+			341 = {
+				is_owned_by = TUR
+			}
+			347 = {
+				is_owned_by = TUR
+		}
+	}
+		completion_reward = {
+			341 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes						
+					}
+			}
+			347 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes						
+					}
+				}
+			}
+		}
+
+		
+	focus = {
+		id = TUR_continue_the_railway
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = TUR_baghdad_railway_effort }
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		
+		bypass = {
+				49 = {
+					free_building_slots = {
+						building = infrastructure
+						size < 2
+					}
+				}
+				
+				346 = {
+					free_building_slots = {
+						building = infrastructure
+						size < 2
+					}
+				}
+				
+				348 = {
+					free_building_slots = {
+						building = infrastructure
+						size < 2
+					}
+				}
+			}
+	
+		available = {
+			49 = {
+				is_owned_by = TUR
+			}
+			346 = {
+				is_owned_by = TUR
+		}
+			348 = {
+				is_owned_by = TUR 
+		}
+	}
+		completion_reward = {
+			49 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes						
+					}
+			}
+			346 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes						
+					}
+				}
+				
+			348 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes						
+					}
+				}
+				
+			}
+	}	
+	
+	focus = {
+		id = TUR_mersin_yenice_adana_line
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = TUR_continue_the_railway }
+		x = 1
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		
+		bypass = {
+				345 = {
+					free_building_slots = {
+						building = infrastructure
+						size < 1
+					}
+				}
+				
+				344 = {
+					free_building_slots = {
+						building = infrastructure
+						size < 1
+					}
+				}
+				
+				677 = {
+					free_building_slots = {
+						building = infrastructure
+						size < 1
+					}
+				}
+			}
+	
+		available = {
+			345 = {
+				is_owned_by = TUR
+			}
+			344 = {
+				is_owned_by = TUR
+		}
+			677 = {
+				is_owned_by = TUR 
+		}
+	}
+		completion_reward = {
+			345 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes						
+					}
+			}
+			344 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes						
+					}
+					
+					add_building_construction = {
+					type = naval_base
+					level = 2
+					province = 11746
+					instant_build = yes
+				}
+				}
+				
+			677 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes						
+					}
+					add_building_construction = {
+					type = naval_base
+					level = 7
+					province = 12029
+					instant_build = yes
+				}
+				}
+				
+			}
+	}	
+	
+	
+	focus = {
+		id = TUR_the_desert_push
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = TUR_mersin_yenice_adana_line }
+		x = 3
+		y = 3
+		cost = 20
+		ai_will_do = {
+			factor = 10
+		}
+		
+		bypass = {
+				350 = {
+					free_building_slots = {
+						building = infrastructure
+						size < 2
+					}
+				}
+				
+				352 = {
+					free_building_slots = {
+						building = infrastructure
+						size < 2
+					}
+				}
+				
+				676 = {
+					free_building_slots = {
+						building = infrastructure
+						size < 2
+					}
+				}
+			}
+	
+		available = {
+			350 = {
+				is_owned_by = TUR
+			}
+			352 = {
+				is_owned_by = TUR
+		}
+			676 = {
+				is_owned_by = TUR 
+		}
+	}
+		completion_reward = {
+			350 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes						
+					}
+			}
+			352 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes						
+					}
+				}
+				
+			676 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes						
+					}
+
+				}
+				
+			}
+	}
+	
+	
+	
+	focus = {
+		id = TUR_reach_bagdad
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = TUR_the_desert_push }
+		x = 3
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		
+		bypass = {
+				291 = {
+					free_building_slots = {
+						building = infrastructure
+						size < 2
+					}
+				}
+			}
+	
+		available = {
+			291 = {
+				is_owned_by = TUR
+			}
+	}
+		completion_reward = {		
+			291 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes						
+					}
+				}
+				
+			}
+	}
+		
+	focus = {
+		id = TUR_persian_gulf_harbors
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = TUR_reach_bagdad }
+		x = 3
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+			
+		available = {
+			291 = {
+				is_owned_by = TUR
+			}
+	}
+		completion_reward = {		
+			291 = {
+					add_building_construction = {
+						type = naval_base
+						level = 5
+						province = 2089
+						instant_build = yes						
+					}
+				}
+				
+			}
+	}
+	
+	focus = {
+		id = TUR_industrial_reformation
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = TUR_mersin_yenice_adana_line }
+		x = 1
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		
+		bypass = {
+				341 = {	free_building_slots = {
+					building = industrial_complex
+						size < 3
+						include_locked = yes
+					}
+			}
+		}
+		available = {
+			341 = {
+				is_owned_by = TUR
+			}
+			344 = {
+				is_owned_by = TUR
+				}
+	}
+		completion_reward = {
+			341 = {
+					add_building_construction = {
+						type = industrial_complex
+						level = 3
+						instant_build = yes						
+					}
+			}
+			344 = {
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes						
+					}
+				}
+
+				
+			}
+	}
+	
+	focus = {
+		id = TUR_industrial_research
+		icon = GFX_focus_research
+		prerequisite = { focus = TUR_industrial_reformation }
+		x = 1
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available = {
+			341 = {
+				is_owned_by = TUR
+			}
+	}
+		completion_reward = {
+		
+		add_research_slot = 1
+		
+		add_tech_bonus = {
+				name = construction_tech_bonus
+				bonus = 0.5
+				uses = 2
+				category = construction_tech
+			}
+		}
+	}	
+	
+	focus = {
+		id = TUR_mesopotamian_oil
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = { focus = TUR_persian_gulf_harbors }
+		available = {
+			TUR = {
+				controls_state = 291
+			}
+		}
+		
+		x = 3
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+		completion_reward = {
+			add_resource = {
+				type = oil
+				amount = 14
+				state = 291
+			}
+		}
+	}
+	
+	focus = {
+		id = TUR_our_sultan
+		icon = GFX_goal_generic_national_unity
+		available = {
+			TUR = {
+			has_government = monarchy
+			}
+		}
+		
+		x = 8
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 39
+		}	
+		completion_reward = {
+		add_national_unity = 0.05
+		}
+	}
+	
+	focus = {
+		id = TUR_reclaim_bulgaria
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = TUR_our_sultan }
+		mutually_exclusive = { focus = TUR_bulgarian_diplomacy }
+		available = {
+			TUR = {
+			is_puppet = no
+			}
+		}
+		
+		x = 4
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 0.4
+		}	
+		completion_reward = {
+			48 = { add_claim_by = TUR }
+			212 = { add_claim_by = TUR }
+			211 = { add_claim_by = TUR }
+			77 = { add_claim_by = TUR }
+		}
+	}
+	
+	focus = {
+		id = TUR_bulgarian_diplomacy
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = TUR_our_sultan }
+		mutually_exclusive = { focus = TUR_reclaim_bulgaria }
+		available = {
+			TUR = {
+			is_puppet = no
+			
+			country_exists = BUL
+			}
+		}
+		
+		x = 6
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}	
+		completion_reward = {
+		}
+	}
+	
+}

@@ -1,0 +1,133 @@
+###########################
+# Low Countries Events
+###########################
+
+add_namespace = low
+
+
+# Reunification with the Netherlands
+country_event = {
+	id = low.1
+	title = low.1.t
+	desc = low.1.d
+	picture = GFX_report_event_german_troops
+	is_triggered_only = yes
+	
+	option = {
+		name = low.1.a
+		ai_chance = {
+			base = 30
+			modifier = {
+				add = -25
+				HOL = { has_army_size = { size < 20 } }
+			}
+			modifier = {
+				add = 100
+				HOL = { has_army_size = { size > 25 } }
+			}
+		}
+		annex_country = { target = BEL transfer_troops = yes }
+		6 = {
+			if = {
+				limit = { is_owned_by = BEL }
+				add_core_of = HOL
+			}
+		}
+		34 = {
+			if = {
+				limit = { is_owned_by = BEL }
+				add_core_of = HOL
+			}
+		}
+		295 = {
+			if = {
+				limit = { is_owned_by = BEL }
+				add_core_of = HOL
+			}
+		}
+		718 = {
+			if = {
+				limit = { is_owned_by = BEL }
+				add_core_of = HOL
+			}
+		}
+		538 = {
+			if = {
+				limit = { is_owned_by = BEL }
+				add_core_of = HOL
+			}
+		}
+	}
+	
+	option = {
+		name = low.1.b
+		ai_chance = {
+			base = 10 
+			modifier = {
+				factor = -10
+				HOL = { has_army_size = { size < 25 } }
+			}
+			modifier = {
+				add = 20
+				BEL = { has_army_size = { size < 20 } }
+			}
+		}
+		add_opinion_modifier = {
+				target = ROOT
+				modifier = protest_action_strong
+		}
+		6 = {
+			if = {
+				limit = { is_owned_by = BEL }
+				add_core_of = HOL
+			}
+		}
+		34 = {
+			if = {
+				limit = { is_owned_by = BEL }
+				add_core_of = HOL
+			}
+		}
+	}
+}
+
+# Reunification with Netherlands II
+country_event = {
+	id = low.2
+	title = low.2.t
+	desc = low.2.d
+	picture = GFX_report_event_german_troops
+	is_triggered_only = yes
+	
+	option = {
+		ai_chance = {
+			base = 30
+			modifier = {
+				add = 100
+				HOL = { has_army_size = { size > 25 } }
+			}
+		}
+		name = low.2.a
+		annex_country = { target = LUX transfer_troops = yes }
+		8 = {
+			if = {
+				limit = { is_owned_by = LUX }
+				add_core_of = HOL
+			}
+		}
+	}
+	
+	option = {
+		name = low.2.b
+		add_opinion_modifier = {
+			target = ROOT
+			modifier = protest_action_strong
+		}
+		8 = {
+			if = {
+				limit = { is_owned_by = LUX }
+				add_core_of = HOL
+			}
+		}
+	}
+}

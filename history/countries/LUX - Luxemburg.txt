@@ -1,0 +1,65 @@
+﻿capital = 8
+
+oob = "LUX_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	gw_artillery = 1
+	tech_support = 1
+	tech_engineers = 1
+	early_fighter = 1
+}
+
+set_politics = {
+
+	parties = {
+		democratic = {
+			popularity = 35
+		}
+
+		fascism = {
+			popularity = 0
+		}
+
+		communism = {
+			popularity = 0
+		}
+
+		monarchy = {
+			popularity = 20
+		}
+
+		neutrality = {
+			popularity = 45
+		}
+	}
+
+	ruling_party = democratic
+	last_election = "1909.6.3"
+	election_frequency = 36
+	elections_allowed = no
+}
+
+create_country_leader = {
+			name = "Grand Duchess Marie-Adelaide "
+			desc = "POLITICS_MARIE_ADELAIDE_DESC"
+			picture = Portrait_Luxembourg_Marie_Adelaide.dds
+			expire = "1925.25.2"
+			ideology = constitutionalism
+			traits = {
+				#
+			}
+		}
+
+create_country_leader = {
+		name = "Grand Duke William IV"
+		desc = "POLITICS_WILLIAM_IV_DESC"
+		picture = Portrait_Luxembourg_William_IV.dds
+		expire = "1912.25.2"
+		ideology = constitutionalism
+		traits = {
+			#
+		}
+	}

@@ -1,0 +1,118 @@
+﻿capital = 37
+
+oob = "DEN_1936"
+
+set_research_slots = 3
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_recon = 1
+	tech_engineers = 1
+	gw_artillery = 1
+	early_fighter = 1
+	cv_early_fighter = 1
+	early_submarine = 1
+	early_destroyer = 1
+	early_heavy_cruiser = 1
+	transport = 1
+}
+
+
+
+
+set_politics = {
+
+	parties = {
+		democratic = { 
+			popularity = 20
+		}
+
+		fascism = {
+			popularity = 0
+		}
+		
+		communism = {
+			popularity = 0
+		}
+
+		monarchy = {
+			popularity = 30
+		}
+
+		neutrality = {
+			popularity = 50
+		}
+	}
+	
+	ruling_party = neutrality
+	last_election = "1906.10.22"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_convoys = 40
+
+create_country_leader = {
+	name = "Kong Christian X"
+	desc = "POLITICS_CHRISTIAN_X_DESC"
+	picture = "Portrait_Denmark_Christian_X.dds"
+	expire = "1944.17.6"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Kong Frederick VIII"
+	desc = "POLITICS_FREDERICK_VIII_DESC"
+	picture = "Portrait_Denmark_Frederick_VIII.dds"
+	expire = "1912.14.5"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Thorvald Stauning"
+	desc = "POLITICS_THORVALD_STAUNING_DESC"
+	picture = "Portrait_Denmark_Thorvald_Stauning.dds"
+	expire = "1965.1.1"
+	ideology = socialism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Frits Clausen"
+	desc = "POLITICS_FRITS_CLAUSEN_DESC"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Aksel Larsen"
+	desc = "POLITICS_AKSEL_LARSEN_DESC"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	expire = "1965.1.1"
+	ideology = leninism
+	traits = {
+		#
+	}
+}
+
+
+create_corps_commander = {
+	name = "Wilhelm Wain Prior"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	traits = { trickster }
+	skill = 3
+}

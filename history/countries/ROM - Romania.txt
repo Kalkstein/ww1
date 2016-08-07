@@ -1,0 +1,134 @@
+﻿capital = 46
+
+oob = "ROM_1936"
+
+set_research_slots = 3
+
+# Starting tech
+set_technology = {
+	tech_support = 1
+	tech_engineers = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	gwtank = 1
+	basic_light_tank = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	gw_artillery = 1
+	early_fighter = 1
+	early_submarine = 1
+	early_destroyer = 1
+}
+
+ #Ideas
+ add_ideas = neutrality_idea
+
+set_convoys = 10
+
+set_politics = {
+
+	parties = {
+		democratic = {
+			popularity = 5
+		}
+
+		fascism = {
+			popularity = 20
+		}
+
+		communism = {
+			popularity = 15
+		}
+
+		monarchy = {
+			popularity = 60
+		}
+	}
+
+	ruling_party = neutrality
+	last_election = "1909.12.20"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Constantin Ion Parhon"
+	desc = "POLITICS_CONSTANTIN_PARHON_DESC"
+	picture = "Portrait_Romania_Constantin_Parhon.dds"
+	expire = "1965.1.1"
+	ideology = leninism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Armand Calinescu"
+	desc = "POLITICS_ARMAND_CALINESCU_DESC"
+	picture = "gfx/leaders/ROM/Portrait_Romania_Armand_Calinescu.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "King Carol I"
+	desc = "POLITICS_CAROL_I_DESC"
+	picture = "Portrait_Romania_Carol_I.dds"
+	expire = "1914.10.10"
+	ideology = despotism
+	traits = {
+
+	}
+}
+
+create_country_leader = {
+	name = "Octavian Goga"
+	desc = "POLITICS_OCTAVIAN_GOGA_DESC"
+	picture = "Portrait_Romania_Octavian_Goga.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Ion Antonescu"
+	desc = "POLITICS_ION_ANTONESCU_DESC"
+	picture = "Portrait_Romania_Ion_Antonescu.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_field_marshal = {
+	name = "Petre Dumitrescu"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	traits = { offensive_doctrine logistics_wizard }
+	skill = 4
+}
+
+create_corps_commander = {
+	name = "Ioan Mihail Racovita"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	traits = { hill_fighter }
+	skill = 3
+}
+
+### Ship Variants ###
+
+create_equipment_variant = {
+	name = "Regele Ferdinand Class"
+	type = destroyer_1
+	upgrades = {
+		ship_torpedo_upgrade = 1
+		destroyer_engine_upgrade = 1
+		ship_ASW_upgrade = 1
+		ship_anti_air_upgrade = 1
+	}
+}
