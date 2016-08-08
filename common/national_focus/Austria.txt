@@ -624,7 +624,7 @@ focus_tree = {
 			MNT = { exists = yes }
 			is_puppet = no
 			NOT = { has_war_with = SER }
-			NOT = { has_war_with = MNT}
+			NOT = { has_war_with = MNT }
 		}
 		prerequisite = { focus = AUS_give_minorities_rights }
 		x = 6
@@ -636,6 +636,87 @@ focus_tree = {
 		completion_reward = {
 			give_guarantee = SER
 			give_guarantee = MNT
+		}
+	}
+	
+	focus = {
+		id = AUS_peacekeeping_measures_2
+		icon = GFX_goal_generic_improve_relations
+		available = {
+			ROM = { exists = yes }
+			is_puppet = no
+			NOT = { has_war_with = ROM }
+		}
+		prerequisite = { focus = AUS_peacekeeping_measures }
+		x = 6
+		y = 2
+		cost = 10
+		#ai_will_do = {
+		#	factor = 2
+		#}
+		completion_reward = {
+			give_guarantee = ROM
+		}
+	}
+	
+	focus = {
+		id = AUS_improve_relations_to_the_Entente
+		icon = GFX_goal_generic_dangerous_deal
+		available = {
+			is_puppet = no
+			NOT = { has_war_with = SOV }
+			NOT = { has_war_with = ENG }
+			NOT = { has_war_with = FRA }
+		}
+		prerequisite = { focus = AUS_peacekeeping_measures_2 }
+		x = 5
+		y = 3
+		cost = 10	
+		#ai_will_do = {
+		#	factor = 2
+		#}
+		completion_reward = {
+			SOV = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = medium_increase
+				}
+			}
+			ENG = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = medium_increase
+				}
+			}
+			FRA = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = medium_increase
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = AUS_establish_our_own_alliance
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = AUS_peacekeeping_measures_2 }
+		x = 7
+		y = 3
+		cost = 10
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		mutually_exclusive = { focus = AUS_improve_relations_to_the_Entente }
+		available = {
+		}
+		
+		completion_reward = {
+			add_political_power = 120
+			set_rule = { can_create_factions = yes }
+			create_faction = "Vienna Alliance"
 		}
 	}
 	
@@ -674,12 +755,11 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10	
 		}
-
+		
 		completion_reward = {
 			107 = { add_claim_by = AUS }
 			81 = { add_claim_by = AUS }
 			46 = { add_claim_by = AUS }
-			}
 		}
 	}
 	
@@ -692,6 +772,7 @@ focus_tree = {
 		cost = 10
 		bypass = {
 			160 = { is_owned_by = AUS }
+			
 		}
 		ai_will_do = {
 			factor = 10	
@@ -699,6 +780,5 @@ focus_tree = {
 		
 		completion_reward = {
 			160 = { add_claim_by = AUS }
-			}
 		}
 	}

@@ -1,0 +1,306 @@
+focus_tree = {
+	id = usa_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = USA
+		}
+		
+		modifier = {
+			add = 10
+			original_tag = USA
+		}
+	}
+	
+	default = no
+
+	focus = {
+		id = USA_issue_foriegn_aid
+		icon = GFX_goal_generic_national_unity
+		x = 1
+		y = 0
+		cost = 10
+		completion_reward = {
+			add_ideas = foriegn_aid_focus
+		}
+	}
+	
+	focus = {
+		id = USA_strategy_meetings
+		icon = GFX_goal_generic_position_armies
+		prerequisite = { focus = USA_issue_foriegn_aid }
+		x = 1
+		y = 1
+		cost = 10
+		completion_reward = {
+			add_ideas = strategy_meetings
+		}
+	}
+
+	focus = {
+		id = USA_focus_on_the_homefront
+		icon = GFX_goal_generic_defence
+		mutually_exclusive = { focus = USA_overseas_soldiers }
+		prerequisite = { focus = USA_strategy_meetings }
+		x = 2
+		y = 2
+		cost = 10
+		completion_reward = {
+			conscription = 0.05
+			army_experince = -10
+			393 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			360 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			357 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			375 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			386 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}		
+	}
+	focus = {
+		id = USA_protect_our_borders
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { USA_focus_on_the_homefront }
+		x = 2
+		y = 3
+		cost = 10
+		completion_reward = {
+				361 = {
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 3957
+						instant_build = yes
+					}
+				}
+				358 = {
+				add_building_construction = {
+					type = bunker
+					level = 5
+					province = 11654
+					instant_build = yes
+				}
+				393 = {
+				add_building_construction = {
+					type = bunker
+					level = 5
+					province = 6710
+					instant_build = yes
+					}
+				}
+			}
+		}	
+	}
+	focus = {
+		id = USA_manifest_destiny
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = { focus = USA_protect_our_borders }
+		available = {
+			OR = {
+				country_exists = MEX
+				country_exists = CAN
+			}
+		}
+		will_lead_to_war_with = MEX
+		will_lead_to_war_with = CAN
+		x = 2
+		y = 4
+		cost = 10
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = MEX
+				generator = { 479 480 482 481 483 484 277 } # Northern Mexico
+			}
+			create_wargoal = {
+				type = take_state_focus
+				target = CAN
+				generator = { 276 468 466 465 464 682 } # Eastern Canada
+			}
+		}
+	}
+	focus = {
+		id = USA_overseas_soldiers
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		mutually_exclusive = { focus = USA_focus_on_the_homefront }
+		prerequisite = { focus = USA_strategy_meetings }
+		x = 0
+		y = 2
+		cost = 10
+		completion_reward = {
+			conscription = 0.05
+			army_experience = 50
+			set_rule = { can_send_volunteers = yes }
+			360 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			357 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = { 
+		id = USA_atlantic_reinforcment
+		icon = GFX_goal_generic_amphibious_assault
+		prerequisite = { USA_overseas_soldiers }
+		x = 0
+		y = 3
+		cost = 10
+		completion_reward = {
+			357 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+			358 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+			360 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = USA_western_front
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = USA_atlantic_reinforcment }
+		available = {
+			OR = {
+				country_exists = GER
+				country_exists = AUS
+			}
+			date > 1914.1.1
+		}
+		will_lead_to_war_with = GER
+		will_lead_to_war_with = AUS
+		x = 0
+		y = 4
+		cost = 10
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = GER
+				generator = { 28 42 50 } # Western Front
+			}
+			create_wargoal = {
+				type = take_state_focus
+				target = AUS
+				generator = { 163 103 736 } # Western Balkans
+			}
+		}
+	}
+	focus = {
+	id = USA_develop_rock_island
+	icon = GFX_goal_generic_army_artillery
+	available = {
+		date > 1911.6.12
+		}
+		x = 5
+		y = 0
+		cost = 10 
+		completion_reward = {
+			395 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			395 = {
+				add_building_construction = {
+					type = bunker
+					level = 5
+					province = 10393
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+	id = USA_support_private_industry
+	icon = GFX_goal_generic_production
+	prerequisite = { focus = USA_develop_rock_island }
+	x = 4
+	y = 1
+	cost = 10
+	completion_reward = {
+		371 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+		375 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 3
+				instant_build = yes
+			}
+		}
+	}	
+}
+}
