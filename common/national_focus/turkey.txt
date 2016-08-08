@@ -531,4 +531,139 @@ focus_tree = {
 		}
 	}
 	
+	focus = {
+		id = TUR_young_turk_revolution
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = TUR_our_sultan }
+		available = {
+			TUR = {
+			is_puppet = no
+			}
+		}
+		
+		x = 9
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+		completion_reward = {
+		add_political_power = 120
+		}
+	}
+	
+	focus = {
+		id = TUR_arabian_question
+		icon = GFX_goal_generic_position_armies
+		prerequisite = { focus = TUR_young_turk_revolution }
+		available = {
+			TUR = {
+			is_puppet = no
+			country_exists = SAU
+			country_exists = SHA
+			}
+		}
+		
+		x = 8
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+		completion_reward = {
+		add_political_power = 50
+		}
+	}
+	
+	focus = {
+		id = TUR_arabian_stability
+		icon = GFX_goal_generic_major_alliance
+		prerequisite = { focus = TUR_arabian_question }
+		available = {
+			TUR = {
+			is_puppet = no
+			country_exists = SAU
+			country_exists = SHA
+			}
+		}
+		
+		x = 8
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+		completion_reward = {
+		give_guarantee = SHA
+		give_guarantee = SAU
+		}
+	}
+	
+	focus = {
+		id = TUR_side_with_house_rashid
+		icon = GFX_goal_generic_alliance
+		mutually_exclusive = { focus = TUR_side_with_house_saud }
+		prerequisite = { focus = TUR_arabian_stability }
+		available = {
+			TUR = {
+			is_puppet = no
+			country_exists = SAU
+			country_exists = SHA
+			}
+		}	
+		x = 8
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 0
+		}	
+		completion_reward = {
+			SHA = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = offered_support
+				}
+			}
+			SAU = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = large_decrease
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = TUR_side_with_house_saud
+		icon = GFX_goal_generic_alliance
+		mutually_exclusive = { focus = TUR_side_with_house_rashid }
+		prerequisite = { focus = TUR_arabian_stability }
+		available = {
+			TUR = {
+			is_puppet = no
+			country_exists = SAU
+			country_exists = SHA
+			}
+		}	
+		x = 10
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 0
+		}	
+		completion_reward = {
+			SAU = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = offered_support
+				}
+			}
+			SHA = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = large_decrease
+				}
+			}
+		}
+	}
 }
