@@ -1455,7 +1455,7 @@ air_wings = {
 		}
 		# 3ya Dal'nyaya Bombardirovochnye Aviabrigada
 		# 13ya Dal'nyaya Bombardirovochnye Aviabrigada
-		strat_bomber_equipment_1 =  {
+		zeppelin_equipment_1 =  {
 			owner = "SOV" 
 			amount = 48
 		}
@@ -1505,7 +1505,7 @@ air_wings = {
 			amount = 188
 		}
 		# 5ya Dal'nyaya Bombardirovochnye Aviabrigada
-		strat_bomber_equipment_1 =  {
+		zeppelin_equipment_1 =  {
 			owner = "SOV" 
 			amount = 24
 		}
@@ -1599,7 +1599,7 @@ instant_effect = {
 
 	add_equipment_production = {
 		equipment = {
-			type = strat_bomber_equipment_1
+			type = zeppelin_equipment_1
 			creator = "SOV" 
 		}
 		requested_factories = 1

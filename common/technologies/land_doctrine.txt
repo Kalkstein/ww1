@@ -1,6 +1,10 @@
 technologies = {
 
 	mobile_warfare = {
+	
+		xor = {
+			mass_assault
+		}
 
 		path = {
 			leads_to_tech = concentrated_fire_plans 
@@ -18,7 +22,7 @@ technologies = {
 		army_speed_factor = 0.10
 
 		doctrine = yes	
-		research_cost = 1000
+		research_cost = 9
 
 		folder = {
 			name = land_doctrine_folder
@@ -31,11 +35,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20 
-		}
-		
-		ai_research_weights = {
-			armor = 4.0
+			factor = 0 
 		}
 	}
 	
@@ -108,8 +108,8 @@ technologies = {
 	
 	central_planning = {
 
-		category_army = { 
-			recon = 1 
+		recon = { 
+			recon = 25 
 		} 
 		
 		enable_tactic = tactic_unexpected_thrust
@@ -143,8 +143,9 @@ technologies = {
 	
 	firebrigades = {
 	
+		attrition = -0.05
+		
 		category_all_infantry = {
-			attrition = -0.05
 			defense = 0.05
 		}
 		
@@ -340,6 +341,7 @@ technologies = {
 	volkssturm = {
 		
 		conscription = 0.05
+		production_factory_max_efficiency_factor = -0.05
 		
 		path = {
 			leads_to_tech = guerilla_warfare 
@@ -1052,6 +1054,10 @@ technologies = {
 	
 	mass_assault = {
 	
+		xor = {
+			mobile_warfare
+		}
+	
 		unity_factor = -0.2
 		training_time_army_factor = -0.05
 		experience_gain_army_factor = 0.05
@@ -1070,7 +1076,7 @@ technologies = {
 		}
 
 		doctrine = yes	
-		research_cost = 1000
+		research_cost = 9
 		
 		categories = {
 			land_doctrine
@@ -1083,11 +1089,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 2
-		}
-		
-		ai_research_weights = {
-			industry = 2.0
+			factor = 0 
 		}
 	}
 	

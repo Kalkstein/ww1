@@ -21,7 +21,6 @@ set_technology = {
 	tactical_bomber1 = 1
 	strategic_bomber1 = 1
 	CAS1 = 1
-	naval_bomber1 = 1
 	early_submarine = 1
 	basic_submarine = 1
 	early_destroyer = 1

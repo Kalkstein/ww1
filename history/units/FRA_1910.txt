@@ -1321,8 +1321,8 @@ units = {
 		location = 3552 # Brest			
 		ship = { name = "Béarn" definition = carrier equipment = { carrier_1 = { amount = 1 owner = FRA } } 
 			air_wings = {
-				cv_fighter_equipment_0 =  { owner = "FRA" amount = 25 }
-				cv_nav_bomber_equipment_1 =  { owner = "FRA" amount = 20 }
+				cv_fighter_equipment_1 =  { owner = "FRA" amount = 25 }
+				#cv_nav_bomber_equipment_1 =  { owner = "FRA" amount = 20 }
 			}
 		}
 		# 2e Division des Contre-Torpilleurs
