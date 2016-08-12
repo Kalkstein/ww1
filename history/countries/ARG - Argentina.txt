@@ -36,7 +36,6 @@ set_country_flag = monroe_doctrine
 	oob = "ARG_1939"
 	set_technology = {
 		early_bomber = 1
-		naval_bomber1 = 1
 		interwar_artillery = 1
 		interwar_antiair = 1
 		infantry_weapons1 = 1

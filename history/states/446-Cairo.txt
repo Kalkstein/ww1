@@ -20,7 +20,7 @@ state=
 		}
 
 		add_core_of = EGY
-		add_claim_of = TUR
+		add_core_of = TUR
 
 	}
 
