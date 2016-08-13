@@ -1,0 +1,784 @@
+focus_tree = {
+	id = AUS_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = AUS
+		}
+	}
+	
+	default = no
+	
+	focus = {
+		id = AUS_continue_industrialization
+		icon = GFX_goal_generic_production
+		x = 1
+		y = 0
+		cost = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+			add_tech_bonus = {
+				name = construction_tech_bonus
+				bonus = 0.5
+				uses = 1
+				category = construction_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = AUS_railroads
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = AUS_continue_industrialization }
+		x = 1
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = infrastructure_effort_tt
+				all_owned_state = {			
+					free_building_slots = {
+						building = infrastructure
+						size < 1
+					}
+				}
+			}
+		}
+		
+		completion_reward = {
+			152 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			4 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			155 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			43 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			9 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		
+	}
+	
+	focus = {
+		id = AUS_industrial_expansion
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AUS_railroads }
+		x = 0
+		y = 2
+		cost = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}		
+
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = AUS_industrial_expansion_2
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AUS_industrial_expansion }
+		x = 0
+		y = 3
+		cost = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}		
+
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = AUS_production_effort
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = AUS_railroads }
+		x = 2
+		y = 2
+		cost = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = production_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = arms_factory
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}		
+
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = AUS_production_effort_2
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = AUS_production_effort }
+		x = 2
+		y = 3
+		cost = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = production_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = arms_factory
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}		
+
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = AUS_build_alpine_defences
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = AUS_production_effort_2 }
+		prerequisite = { focus = AUS_industrial_expansion_2 }
+		x = 1
+		y = 4
+		cost = 10
+		completion_reward = {
+			39 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 9598
+					instant_build= yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 6631
+					instant_build= yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 6675
+					instant_build= yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 11598
+					instant_build= yes
+				}
+			}
+			153 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 671
+					instant_build= yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 6673
+					instant_build= yes
+				}
+			}
+			736 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 11595
+					instant_build= yes	
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = AUS_extra_tech_slot
+		icon = GFX_focus_research
+		text = extra_tech_slot
+		prerequisite = { focus = AUS_build_alpine_defences }
+		x = 1
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	
+	focus = {
+		id = AUS_give_minorities_rights
+		icon = GFX_goal_support_democracy
+		x = 6
+		y = 0
+		cost = 10 
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		mutually_exclusive = { focus = AUS_support_monarchy }
+		available = {
+		}
+		
+		completion_reward = {
+			add_ideas = democratic_influence
+			remove_ideas = ethnic_tensions
+		}
+	}
+	
+	focus = {
+		id = AUS_peacekeeping_measures
+		icon = GFX_goal_generic_improve_relations
+		available = {
+			YUG = { exists = yes }
+			MNT = { exists = yes }
+			is_puppet = no
+			NOT = { has_war_with = SER }
+			NOT = { has_war_with = MNT }
+		}
+		prerequisite = { focus = AUS_give_minorities_rights }
+		x = 6
+		y = 1
+		cost = 10
+		#ai_will_do = {
+		#	factor = 2
+		#}
+		completion_reward = {
+			give_guarantee = SER
+			give_guarantee = MNT
+		}
+	}
+	
+	focus = {
+		id = AUS_peacekeeping_measures_2
+		icon = GFX_goal_generic_improve_relations
+		available = {
+			ROM = { exists = yes }
+			is_puppet = no
+			NOT = { has_war_with = ROM }
+		}
+		prerequisite = { focus = AUS_peacekeeping_measures }
+		x = 6
+		y = 2
+		cost = 10
+		#ai_will_do = {
+		#	factor = 2
+		#}
+		completion_reward = {
+			give_guarantee = ROM
+		}
+	}
+	
+	focus = {
+		id = AUS_improve_relations_to_the_Entente
+		icon = GFX_goal_generic_dangerous_deal
+		available = {
+			is_puppet = no
+			NOT = { has_war_with = SOV }
+			NOT = { has_war_with = ENG }
+			NOT = { has_war_with = FRA }
+		}
+		prerequisite = { focus = AUS_peacekeeping_measures_2 }
+		x = 5
+		y = 3
+		cost = 10	
+		#ai_will_do = {
+		#	factor = 2
+		#}
+		completion_reward = {
+			SOV = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = medium_increase
+				}
+			}
+			ENG = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = medium_increase
+				}
+			}
+			FRA = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = medium_increase
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = AUS_establish_our_own_alliance
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = AUS_peacekeeping_measures_2 }
+		x = 7
+		y = 3
+		cost = 10
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		mutually_exclusive = { focus = AUS_improve_relations_to_the_Entente }
+		available = {
+		}
+		
+		completion_reward = {
+			add_political_power = 120
+			set_rule = { can_create_factions = yes }
+			create_faction = "Vienna Alliance"
+		}
+	}
+	
+	focus = {
+		id = AUS_support_monarchy
+		icon = GFX_goal_generic_political_pressure
+		x = 8
+		y = 0
+		cost = 10
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		mutually_exclusive = { focus = AUS_give_minorities_rights }
+		available = {
+		}
+		
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	
+	focus = {
+		id = AUS_claims_the_Balkan
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = AUS_support_monarchy }
+		x = 8
+		y = 1
+		cost = 10
+		bypass = {
+			107 = { is_owned_by = AUS }
+			81 = { is_owned_by = AUS }
+			46 = { is_owned_by = AUS}
+		}
+		ai_will_do = {
+			factor = 10	
+		}
+		
+		completion_reward = {
+			107 = { add_claim_by = AUS }
+			81 = { add_claim_by = AUS }
+			46 = { add_claim_by = AUS }
+		}
+	}
+	
+	focus = {
+		id = AUS_claim_our_former_Italian_lands
+		icon = GFX_goal_demand_sudetenland
+		prerequisite = { focus = AUS_claims_the_Balkan }
+		x = 8
+		y = 2
+		cost = 10
+		bypass = {
+			160 = { is_owned_by = AUS }
+			
+		}
+		ai_will_do = {
+			factor = 10	
+		}
+		
+		completion_reward = {
+			160 = { add_claim_by = AUS }
+		}
+	}
