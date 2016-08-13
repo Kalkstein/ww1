@@ -47,7 +47,7 @@ equipments = {
 
 
 
-	# Regular infantry  1936
+	# Regular infantry  1910
 	infantry_equipment_1 = {
 		archetype = infantry_equipment
 		parent = infantry_equipment_0
@@ -86,7 +86,7 @@ equipments = {
 		build_cost_ic = 0.5
 	}
 
-	# Improved weapons  ~1939
+	# Improved weapons  ~1914
 	infantry_equipment_2 = {
 		archetype = infantry_equipment
 		parent = infantry_equipment_1
@@ -109,7 +109,7 @@ equipments = {
 		}
 	}
 
-	# Advanced weapons  ~1942
+	# Advanced weapons  ~1917
 	infantry_equipment_3 = {
 		archetype = infantry_equipment
 		parent = infantry_equipment_2

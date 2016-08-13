@@ -1086,9 +1086,11 @@ focus_tree = {
 		y = 4
 		cost = 10
 		completion_reward = {
-			add_opinion_modifier = {
-				target = ROOT
-				modifier = offered_support
+			BUL = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = offered_support
+				}
 			}
 		}
 	}
@@ -1113,9 +1115,11 @@ focus_tree = {
 		y = 6
 		cost = 10
 		completion_reward = {
-			add_opinion_modifier = {
-				target = ROOT
-				modifier = offered_support
+			AFG = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = offered_support
+				}
 			}
 		}
 	}
@@ -1128,9 +1132,11 @@ focus_tree = {
 		y = 7
 		cost = 10
 		completion_reward = {
-			add_opinion_modifier = {
-				target = ROOT
-				modifier = offered_support
+			PER = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = offered_support
+				}
 			}
 		}
 	}
@@ -1157,10 +1163,11 @@ focus_tree = {
 		y = 6
 		cost = 10
 		completion_reward = {
-			add_opinion_modifier = {
-				target = ROOT
-				modifier = aided_industry
-
+			CHI = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = aided_industry
+				}
 			}
 		}
 	}
