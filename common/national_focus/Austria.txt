@@ -208,7 +208,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = AUS_industrial_expansion_2_
+		id = AUS_industrial_expansion_2
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = AUS_industrial_expansion }
 		x = 0
