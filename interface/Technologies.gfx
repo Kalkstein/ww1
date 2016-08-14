@@ -2,6 +2,27 @@ spriteTypes = {
 
 	### generic equipment tech ###
 
+	
+	SpriteType = {
+		name = "GFX_sniper_medium"
+		texturefile = "gfx/interface/technologies/sniper_rifle.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_flamethrower_medium"
+		texturefile = "gfx/interface/technologies/flamethrower.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_field_grey_medium"
+		texturefile = "gfx/interface/technologies/GER_camo.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_winter_clothing_medium"
+		texturefile = "gfx/interface/technologies/winter_clothes_1939.dds"
+	}
+	
 	SpriteType = {
 		name = "GFX_rocket_interceptor_equipment_3_medium"
 		texturefile = "gfx/interface/technologies/rocket_interceptor_3.dds"
@@ -48,12 +69,12 @@ spriteTypes = {
 	}	
 	
 	SpriteType = {
-		name = "GFX_advanced_infantry_weapons_medium"
+		name = "GFX_infantry_weapons2_medium"
 		texturefile = "gfx/interface/technologies/infantry3.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_improved_infantry_weapons_medium"
+		name = "GFX_infantry_weapons_3_medium"
 		texturefile = "gfx/interface/technologies/infantry2.dds"
 	}	
 
@@ -432,7 +453,7 @@ spriteTypes = {
 	}	
 	
 	SpriteType = {
-		name = "GFX_infantry_weapons2_medium"
+		name = "GFX_improved_infantry_weapons1_medium"
 		texturefile = "gfx/interface/technologies/infantry_weapons.dds"
 	}	
 
@@ -442,7 +463,7 @@ spriteTypes = {
 	}	
 	
 	SpriteType = {
-		name = "GFX_advanced_infantry_weapons2_medium"
+		name = "GFX_improved_infantry_weapons_3_medium"
 		texturefile = "gfx/interface/technologies/infantry_weapons3.dds"
 	}		
 	
@@ -1981,7 +2002,7 @@ spriteTypes = {
 	}
 	
 	SpriteType = {
-		name = "GFX_GER_advanced_infantry_weapons_medium"
+		name = "GFX_GER_infantry_weapons_4_medium"
 		texturefile = "gfx/interface/technologies/GER_infantry_equipment_3.dds"
 	}
 

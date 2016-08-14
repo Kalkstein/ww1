@@ -116,6 +116,11 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
+		path = {
+			leads_to_tech = steel_helmet
+			research_cost_coeff = 1
+		}
+
 		research_cost = 2
 		start_year = 1913
 		folder = {
@@ -166,11 +171,11 @@ technologies = {
 			soft_attack = 0.05
 		}
 		cavalry = {
-			soft_attack = 0.1
+			soft_attack = 0.05
 		}			
 
 		path = {
-			leads_to_tech = infantry_weapons3
+			leads_to_tech = infantry_weapons_4
 			research_cost_coeff = 1
 		}
 		
@@ -193,7 +198,7 @@ technologies = {
 	
 	
 	
-	infantry_weapons3 = {
+	infantry_weapons_4 = {
 
 		enable_equipments = {
 			infantry_equipment_3
@@ -226,7 +231,7 @@ technologies = {
 			soft_attack = 0.05
 		}
 		cavalry = {
-			soft_attack = 0.1
+			soft_attack = 0.05
 		}			
 		
 		research_cost = 1.5
@@ -246,6 +251,173 @@ technologies = {
 	}
 	
 	
+#### End ####
+
+
+	steel_helmet = {
+		
+		category_light_infantry = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		
+		path = {
+			leads_to_tech = sniper
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = gas_mask
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1914
+		folder = {
+			name = infantry_folder
+			position = { x = 3 y = @1914 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	sniper = {
+
+		category_light_infantry = {
+			soft_attack = 0.01
+			recon = 0.5
+		}
+		
+		path = {
+			leads_to_tech = flamethrower
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1915
+		folder = {
+			name = infantry_folder
+			position = { x = 4 y = @1915 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	gas_mask = {
+
+		category_light_infantry = {
+			defense = 0.05 
+		}
+		
+		path = {
+			leads_to_tech = flamethrower
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1915
+		folder = {
+			name = infantry_folder
+			position = { x = 2 y = @1915 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	flamethrower = {
+
+	category_light_infantry = {
+			soft_attack = 0.05
+			breakthrough = 0.05
+		}		
+		path = {
+			leads_to_tech = field_grey
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1916
+		folder = {
+			name = infantry_folder
+			position = { x = 3 y = @1916 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	field_grey = {
+
+		category_light_infantry = {
+			defense = 0.01
+			breakthrough = 0.01
+		}
+		
+		path = {
+			leads_to_tech = winter_clothing
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1917
+		folder = {
+			name = infantry_folder
+			position = { x = 3 y = @1917 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	winter_clothing = {
+
+		modifier = {
+				winter_attrition_factor = -0.1
+		}
+
+		research_cost = 1.5
+		start_year = 1918
+		folder = {
+			name = infantry_folder
+			position = { x = 3 y = @1918 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 ####End####		
 	
 	
@@ -264,7 +436,7 @@ technologies = {
 		start_year = 1919
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @1919 }
+			position = { x = 1 y = @1919 }
 		}
 		
 		on_research_complete = {
@@ -337,8 +509,13 @@ technologies = {
 			max_organisation = 5
 			soft_attack = 0.05
 		}
+		
 		path = {
-			leads_to_tech = marines3
+			leads_to_tech = paratroopers
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tech_mountaineers3
 			research_cost_coeff = 1
 		}
 		
@@ -431,6 +608,15 @@ technologies = {
 		mountaineers = {
 			max_organisation = 5
 		}
+		
+		path = {
+			leads_to_tech = paratroopers
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = marines2
+			research_cost_coeff = 0.9
+		}
 
 		research_cost = 2.0
 		start_year = 1918
@@ -452,220 +638,7 @@ technologies = {
 ####End####	
 	
 	
-	steel_helmet = {
-
-		infantry = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		cavalry = {
-			defense = 0.02
-			breakthrough = 0.02
-		}		
-		mountaineers = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
-		paratrooper = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
-		marine = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
-		
-		path = {
-			leads_to_tech = sniper
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1.5
-		start_year = 1914
-		folder = {
-			name = infantry_folder
-			position = { x = 0 y = @1915 }
-		}
-		
-		categories = {
-			infantry_weapons
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
 	
-	sniper = {
-
-		infantry = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		cavalry = {
-			defense = 0.02
-			breakthrough = 0.02
-		}		
-		mountaineers = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
-		paratrooper = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
-		marine = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
-		
-		path = {
-			leads_to_tech = flamethrower
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1.5
-		start_year = 1915
-		folder = {
-			name = infantry_folder
-			position = { x = 0 y = @1915 }
-		}
-		
-		categories = {
-			infantry_weapons
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
-	flamethrower = {
-
-		infantry = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		cavalry = {
-			defense = 0.02
-			breakthrough = 0.02
-		}		
-		mountaineers = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
-		paratrooper = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
-		marine = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
-		
-		path = {
-			leads_to_tech = field_grey
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1.5
-		start_year = 1916
-		folder = {
-			name = infantry_folder
-			position = { x = 0 y = @1916 }
-		}
-		
-		categories = {
-			infantry_weapons
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
-	field_grey = {
-
-		infantry = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		cavalry = {
-			defense = 0.02
-			breakthrough = 0.02
-		}		
-		mountaineers = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
-		paratrooper = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
-		marine = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
-		
-		path = {
-			leads_to_tech = winter_clothing
-			research_cost_coeff = 1
-		}
-
-		research_cost = 1.5
-		start_year = 1917
-		folder = {
-			name = infantry_folder
-			position = { x = 0 y = @1917 }
-		}
-		
-		categories = {
-			infantry_weapons
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
-	winter_clothing = {
-
-		infantry = {
-			defense = 0.05
-			breakthrough = 0.05
-		}
-		cavalry = {
-			defense = 0.02
-			breakthrough = 0.02
-		}		
-		mountaineers = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
-		paratrooper = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
-		marine = {
-			defense = 0.03
-			breakthrough = 0.03
-		}
-
-		research_cost = 1.5
-		start_year = 1918
-		folder = {
-			name = infantry_folder
-			position = { x = 0 y = @1918 }
-		}
-		
-		categories = {
-			infantry_weapons
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
 	
 	
 	
