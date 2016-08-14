@@ -28,34 +28,19 @@ country_event = {
 		}
 		annex_country = { target = BEL transfer_troops = yes }
 		6 = {
-			if = {
-				limit = { is_owned_by = BEL }
-				add_core_of = HOL
-			}
+			add_core_of = HOL
 		}
 		34 = {
-			if = {
-				limit = { is_owned_by = BEL }
-				add_core_of = HOL
-			}
+			add_core_of = HOL
 		}
 		295 = {
-			if = {
-				limit = { is_owned_by = BEL }
-				add_core_of = HOL
-			}
+			add_core_of = HOL
 		}
 		718 = {
-			if = {
-				limit = { is_owned_by = BEL }
-				add_core_of = HOL
-			}
+			add_core_of = HOL
 		}
 		538 = {
-			if = {
-				limit = { is_owned_by = BEL }
-				add_core_of = HOL
-			}
+			add_core_of = HOL
 		}
 	}
 	
@@ -77,16 +62,10 @@ country_event = {
 				modifier = protest_action_strong
 		}
 		6 = {
-			if = {
-				limit = { is_owned_by = BEL }
-				add_core_of = HOL
-			}
+			add_core_of = HOL
 		}
 		34 = {
-			if = {
-				limit = { is_owned_by = BEL }
-				add_core_of = HOL
-			}
+			add_core_of = HOL
 		}
 	}
 }
