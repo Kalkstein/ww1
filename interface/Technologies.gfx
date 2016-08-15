@@ -2,7 +2,6 @@ spriteTypes = {
 
 	### generic equipment tech ###
 
-	
 	SpriteType = {
 		name = "GFX_sniper_medium"
 		texturefile = "gfx/interface/technologies/sniper_rifle.dds"
@@ -22,6 +21,7 @@ spriteTypes = {
 		name = "GFX_winter_clothing_medium"
 		texturefile = "gfx/interface/technologies/winter_clothes_1939.dds"
 	}
+	
 	
 	SpriteType = {
 		name = "GFX_rocket_interceptor_equipment_3_medium"
@@ -54,7 +54,7 @@ spriteTypes = {
 	}		
 	
 	SpriteType = {
-		name = "GFX_tech_support_medium"
+		name = "GFX_improved_machine_gun_1_medium"
 		texturefile = "gfx/interface/technologies/support_equipment_1.dds"
 	}		
 	
@@ -84,7 +84,7 @@ spriteTypes = {
 	}		
 	
 	SpriteType = {
-		name = "GFX_infantry_weapons1_medium"
+		name = "GFX_infantry_weapons_1_medium"
 		texturefile = "gfx/interface/technologies/infantry1.dds"
 	}	
 	
@@ -368,34 +368,24 @@ spriteTypes = {
 	}		
 	
 	SpriteType = {
-		name = "GFX_support_weapons4_medium"
+		name = "GFX_improved_machine_gun_4_medium"
 		texturefile = "gfx/interface/technologies/support_weapons4.dds"
 	}	
 	
 	SpriteType = {
-		name = "GFX_support_weapons3_medium"
+		name = "GFX_improved_machine_gun_3_medium"
 		texturefile = "gfx/interface/technologies/support_weapons3.dds"
 	}	
 	
 	SpriteType = {
-		name = "GFX_support_weapons2_medium"
+		name = "GFX_improved_machine_gun_2_medium"
 		texturefile = "gfx/interface/technologies/support_weapons2.dds"
 	}	
 	
 	SpriteType = {
-		name = "GFX_support_weapons_medium"
+		name = "GFX_improved_machine_gun_1_medium"
 		texturefile = "gfx/interface/technologies/support_weapons.dds"
-	}		
-	
-	SpriteType = {
-		name = "GFX_night_vision2_medium"
-		texturefile = "gfx/interface/technologies/night_vision2.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_night_vision_medium"
-		texturefile = "gfx/interface/technologies/night_vision.dds"
-	}	
+	}			
 
 	SpriteType = {
 		name = "GFX_tech_mountaineers3_medium"
@@ -453,7 +443,7 @@ spriteTypes = {
 	}	
 	
 	SpriteType = {
-		name = "GFX_improved_infantry_weapons1_medium"
+		name = "GFX_improved_infantry_weapons_1_medium"
 		texturefile = "gfx/interface/technologies/infantry_weapons.dds"
 	}	
 
