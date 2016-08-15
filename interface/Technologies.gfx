@@ -54,7 +54,7 @@ spriteTypes = {
 	}		
 	
 	SpriteType = {
-		name = "GFX_improved_machine_gun_1_medium"
+		name = "GFX_tech_support_medium"
 		texturefile = "gfx/interface/technologies/support_equipment_1.dds"
 	}		
 	
@@ -74,7 +74,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_infantry_weapons_3_medium"
+		name = "GFX_infantry_weapons_2_medium"
 		texturefile = "gfx/interface/technologies/infantry2.dds"
 	}	
 
@@ -1992,7 +1992,7 @@ spriteTypes = {
 	}
 	
 	SpriteType = {
-		name = "GFX_GER_infantry_weapons_4_medium"
+		name = "GFX_GER_infantry_weapons_3_medium"
 		texturefile = "gfx/interface/technologies/GER_infantry_equipment_3.dds"
 	}
 

@@ -16,7 +16,7 @@ set_technology = {
 	gwtank = 1
 	basic_light_tank = 1
 	infantry_weapons = 1
-	infantry_weapons1 = 1
+	infantry_weapons_1 = 1
 	early_destroyer = 1
 	early_light_cruiser = 1
 	early_submarine = 1
@@ -51,8 +51,7 @@ set_technology = {
 		interwar_artillery = 1
 		interwar_antitank = 1
 		interwar_antiair = 1
-		infantry_weapons2 = 1
-		support_weapons = 1
+		infantry_weapons_2 = 1
 		basic_destroyer = 1
 
 		#doctrines

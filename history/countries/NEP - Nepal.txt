@@ -29,8 +29,7 @@ set_technology = {
 		gw_artillery = 1
 		tech_support = 1		
 		tech_engineers = 1
-		infantry_weapons1 = 1
-		support_weapons = 1
+		infantry_weapons_1 = 1
 
 		#doctrines
 		air_superiority = 1
