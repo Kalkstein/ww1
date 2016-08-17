@@ -1305,7 +1305,7 @@ focus_tree = {
 	focus = {
 		id = GER_reform_the_suffage
 		icon = GFX_goal_generic_propaganda
-		prerequisite = { focus = GER_politics }
+		prerequisite = { focus = GER_reform_the_goverment }
 		x = 33
 		y = 2
 		cost = 10

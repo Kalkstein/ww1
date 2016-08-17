@@ -62,9 +62,6 @@ set_politics = {
 add_ideas = {
 	limited_conscription
 	low_economic_mobilisation
-	depleting_power
-	the_whites
-	the_reds
 }
 
 give_guarantee = YUG
@@ -451,28 +448,6 @@ create_navy_leader = {
 
 ### Ship Variants ###
 
-create_equipment_variant = {
-	name = "Series I Debakrist"
-	type = submarine_1
-	upgrades = {
-		ship_reliability_upgrade = 1
-		sub_engine_upgrade = 1
-		sub_stealth_upgrade = 1
-		sub_torpedo_upgrade = 1
-	}
-	obsolete = yes
-}
-
-create_equipment_variant = {
-	name = "Series IX Srednyaya"
-	type = submarine_2
-	upgrades = {
-		ship_reliability_upgrade = 1
-		sub_engine_upgrade = 1
-		sub_stealth_upgrade = 1
-		sub_torpedo_upgrade = 1
-	}
-}
 
 create_equipment_variant = {
 	name = "Leningrad & Minsk Class"
@@ -486,17 +461,6 @@ create_equipment_variant = {
 }
 
 1939.1.1 = {
-
-	create_equipment_variant = {
-		name = "Series X Shchuka"
-		type = submarine_2
-		upgrades = {
-			ship_reliability_upgrade = 3
-			sub_engine_upgrade = 3
-			sub_stealth_upgrade = 3
-			sub_torpedo_upgrade = 3
-		}
-	}
 
 	create_equipment_variant = {
 		name = "Maxim Gorky Class"

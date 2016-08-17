@@ -53,7 +53,7 @@ units = {
 	######## Ellinikó Genikó Epiteleío ########
 	division = {
 		name = "V Merarchía Pezikoú"
-		location = 12058
+		location = 11965
 		division_template = "Trigonikó Pezikoú" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
@@ -61,7 +61,7 @@ units = {
 	}
 	division = {
 		name = "VIII Merarchía Pezikoú"
-		location = 3914
+		location = 3973
 		division_template = "Tetrágono Pezikoú" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
@@ -69,7 +69,7 @@ units = {
 	}
 	division = {
 		name = "Merarchía Ippikoú"
-		location = 11818
+		location = 4109
 		division_template = "Merarchía Ippikoú" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
@@ -113,7 +113,7 @@ units = {
 	}
 	division = {
 		name = "IX Merarchía Pezikoú"
-		location = 966
+		location = 6930
 		division_template = "Trigonikó Pezikoú" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
@@ -123,7 +123,7 @@ units = {
 	# C Sóma Stratoú
 	division = {
 		name = "VI Merarchía Pezikoú"
-		location = 3526
+		location = 12001
 		division_template = "Trigonikó Pezikoú" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
@@ -131,7 +131,7 @@ units = {
 	}
 	division = {
 		name = "X Merarchía Pezikoú"
-		location = 10163
+		location = 4109
 		division_template = "Trigonikó Pezikoú" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
@@ -139,17 +139,7 @@ units = {
 	}
 	division = {
 		name = "XI Merarchía Pezikoú"
-		location = 11818
-		division_template = "Trigonikó Pezikoú" 
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
-	}
-
-	# D Sóma Stratoú
-	division = {
-		name = "VII Merarchía Pezikoú"
-		location = 9791
+		location = 11895
 		division_template = "Trigonikó Pezikoú" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
@@ -159,7 +149,7 @@ units = {
 	# E Sóma Stratoú
 	division = {
 		name = "XII Merarchía Pezikoú"
-		location = 11774
+		location = 7127
 		division_template = "Trigonikó Pezikoú" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3

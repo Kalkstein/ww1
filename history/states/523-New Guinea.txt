@@ -12,25 +12,9 @@ state={
 				naval_base = 3
 
 			}
-			12237 = {
-				naval_base = 2
-
-			}
-			12154 = {
-				naval_base = 1
-
-			}
-			12240 = {
-				naval_base = 1
-
-			}
-
 		}
 		victory_points = {
 			4329 3 
-		}
-		victory_points = {
-			12237 1 
 		}
 
 	}

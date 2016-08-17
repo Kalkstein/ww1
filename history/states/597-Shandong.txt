@@ -14,27 +14,10 @@ state=
 		victory_points = {
 			1069 3 
 		}
-		victory_points = {
-			10000 5 
-		}
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
 			air_base = 3
-			10000 = {
-				naval_base = 5
-				coastal_bunker = 1
-				bunker = 1
-			}
-			4205 = {
-				naval_base = 2
-				coastal_bunker = 1
-				bunker = 1
-			}
-		}
-
-		1938.10.25 = {
-			controller = JAP
 		}
 	}
 	provinces={

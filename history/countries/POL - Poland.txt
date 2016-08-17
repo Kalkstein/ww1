@@ -77,7 +77,6 @@ set_technology = {
 	set_technology = {
 		basic_light_tank = 1
 		tactical_bomber1 = 1
-		motorised_infantry = 1
 		interwar_artillery = 1
 		basic_submarine = 1
 		basic_destroyer = 1

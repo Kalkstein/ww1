@@ -459,7 +459,7 @@ units = {
 	##### Fifth War Area (CO: Li Zongren) #####
 	division = {
 		name = "3 Qibing Jun"
-		location = 10000
+		location = 4157
 		division_template = "Qibing Jun"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
@@ -467,7 +467,7 @@ units = {
 	}
 	division = {
 		name = "Qingdao Jingbei"
-		location = 10000
+		location = 1184
 		division_template = "Juntuán"		# Garrison unit (poor equipment and training)
 		start_equipment_factor = 0.3
 
@@ -475,7 +475,7 @@ units = {
 	## 3rd Army (CO: Han Fuqu) ##
 	division = {
 		name = "12 Juntuán"
-		location = 4205
+		location = 1200
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
@@ -483,7 +483,7 @@ units = {
 	}
 	division = {
 		name = "40 Juntuán"
-		location = 4205
+		location = 10018
 		division_template = "Juntuán"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5

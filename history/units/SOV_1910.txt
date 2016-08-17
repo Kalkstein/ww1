@@ -1453,19 +1453,12 @@ air_wings = {
 			owner = "SOV" 
 			amount = 94
 		}
-		# 3ya Dal'nyaya Bombardirovochnye Aviabrigada
-		# 13ya Dal'nyaya Bombardirovochnye Aviabrigada
-		zeppelin_equipment_1 =  {
-			owner = "SOV" 
-			amount = 48
-		}
-		# TODO -- 46ya Transporta Aviabrigada -- transport planes
 	}
 
 	# BOVO Aviatsya Komandovaniya -- Minsk
 	206 = {
 		# 8ya Istrebitel'nye Aviabrigada
-		fighter_equipment_1 = {
+		fighter_equipment_0 = {
 			owner = "SOV" 
 			amount = 94
 		}
@@ -1484,11 +1477,10 @@ air_wings = {
 	# KOVO Aviatsya Komandovaniya -- Kiev
 	202 = {
 		# 17ya Istrebitel'nye Aviabrigada
-		fighter_equipment_1 = {
+		fighter_equipment_0 = {
 			owner = "SOV" 
 			amount = 94
 		}
-		# 1ya Bombardirovochnye Aviabrigada
 		# 10ya Bombardirovochnye Aviabrigada
 		tac_bomber_equipment_0 =  {
 			owner = "SOV" 
@@ -1503,28 +1495,6 @@ air_wings = {
 		fighter_equipment_0 = {
 			owner = "SOV" 
 			amount = 188
-		}
-		# 5ya Dal'nyaya Bombardirovochnye Aviabrigada
-		zeppelin_equipment_1 =  {
-			owner = "SOV" 
-			amount = 24
-		}
-	}
-
-	# VVS - KBF Aviatsya Komandovaniya -- Leningrad
-	195 = {
-		# 8ya VMF Aviabrigada
-		nav_bomber_equipment_1 = {
-			owner = "SOV" 
-			amount = 54
-		}
-	}
-	# VVS - BSF Aviatsya Komandovaniya -- Sevastopol
-	137 = {
-		# 4ya VMF Aviabrigada
-		nav_bomber_equipment_1 = {
-			owner = "SOV" 
-			amount = 54
 		}
 	}
 }
@@ -1569,41 +1539,11 @@ instant_effect = {
 
 	add_equipment_production = {
 		equipment = {
-			type = light_tank_equipment_1
-			creator = "SOV" 
-		}
-		requested_factories = 3
-		progress = 0.4
-		efficiency = 50
-	}
-
-	add_equipment_production = {
-		equipment = {
-			type = motorized_equipment_1
-			creator = "SOV" 
-		}
-		requested_factories = 3
-		progress = 0.4
-		efficiency = 50
-	}
-
-	add_equipment_production = {
-		equipment = {
-			type = fighter_equipment_1
+			type = fighter_equipment_0
 			creator = "SOV" 
 		}
 		requested_factories = 1
 		progress = 0.15
-		efficiency = 50
-	}
-
-	add_equipment_production = {
-		equipment = {
-			type = zeppelin_equipment_1
-			creator = "SOV" 
-		}
-		requested_factories = 1
-		progress = 0.2
 		efficiency = 50
 	}
 
@@ -1624,9 +1564,8 @@ instant_effect = {
 	# SS: Stalinets class (x2) ("S-1" "S-2")
 	add_equipment_production = {
 		equipment = {
-			type = submarine_2
+			type = submarine_1
 			creator = "SOV"
-			version_name = "Series IX Srednyaya"
 		}
 		requested_factories = 1
 		progress = 0.80
@@ -1634,9 +1573,8 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = submarine_2
+			type = submarine_1
 			creator = "SOV"
-			version_name = "Series IX Srednyaya"
 		}
 		requested_factories = 1
 		progress = 0.80
@@ -1644,9 +1582,8 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = submarine_2
+			type = submarine_1
 			creator = "SOV"
-			version_name = "Series IX Srednyaya"
 		}
 		requested_factories = 1
 		progress = 0.80

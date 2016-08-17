@@ -52,11 +52,7 @@ focus_tree = {
 		y = 1
 		cost = 10
 		completion_reward = {
-			add_tech_bonus = {
-				name = motorized_bonus
-				bonus = 0.75
-				technology = motorised_infantry
-			}
+
 		}
 	}
 
@@ -181,7 +177,6 @@ focus_tree = {
 				bonus = 0.5
 				uses = 1
 				technology = paratroopers
-				technology = paratroopers2
 				technology = marines
 				technology = marines2
 				technology = tech_mountaineers

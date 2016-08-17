@@ -41,16 +41,6 @@ division_template = {
 		cavalry = { x = 0 y = 2 }
 	}
 }
-division_template = {
-	name = "Blindata Regimentul" 				# Armor Regiment
-	# Note: 2nd regiment created and merged with motorized inf to create Armor Division in 1940
-	regiments = {
-		light_armor = { x = 0 y = 0 }
-		light_armor = { x = 0 y = 1 }
-		motorized = { x = 1 y = 0 }           # added motorized not to make it a death trap
-		motorized = { x = 1 y = 1 }
-	}
-}
 
 
 units = {
@@ -124,7 +114,7 @@ units = {
 	division = {
 		name = "1 Blindata Regimentul"
 		location = 9617
-		division_template = "Blindata Regimentul"
+		division_template = "Cavalerie Brigada"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
 

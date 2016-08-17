@@ -39,9 +39,6 @@ division_template = {
 		cavalry = { x = 0 y = 1 }
 		cavalry = { x = 1 y = 0 }
 		cavalry = { x = 1 y = 1 }
-		motorized = { x = 2 y = 0 }		# (elite) Bersaglieri Regiment
-		motorized = { x = 2 y = 1 }
-		light_armor = { x = 3 y = 0 }	# L3/35 Tankette Battaltion
 	}
 	priority = 2
 }
@@ -156,7 +153,7 @@ units = {
 	# V Corpo d'Armata #
 	division= {	
 		name = "9a Divisione di Fanteria 'Pasubio'"
-		location = 11735
+		location = 603
 		division_template = "Divisione di Fanteria"	
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
@@ -182,7 +179,7 @@ units = {
 	# Subordinate to Army
 	division= {	
 		name = "2° Raggruppamento Celere"
-		location = 6626
+		location = 11587
 		division_template = "Raggruppamento Celere"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
@@ -194,19 +191,19 @@ units = {
 	division= {	
 		name = "1a Divisione Celere 'Eugenio di Savoia'"
 		location = 11584
-		division_template = "Divisione Celere"	
+		division_template = "Divisione di Fanteria"	
 		start_experience_factor = 0.3
 	}
 	division= {	
 		name = "2a Divisione Celere 'Emanuele Filiberto'"
 		location = 11584
-		division_template = "Divisione Celere"	
+		division_template = "Divisione di Fanteria"	
 		start_experience_factor = 0.3
 	}
 	division= {	
 		name = "3a Divisione Celere 'Principe Amedeo'"
 		location = 11584
-		division_template = "Divisione Celere"	
+		division_template = "Divisione di Fanteria"	
 		start_experience_factor = 0.3
 	}
 
@@ -234,7 +231,7 @@ units = {
 	# Subordinate to Theatre #
 	division= {	
 		name = "7a Divisione CC.NN. 'Cirene'"
-		location = 1149
+		location = 7059
 		division_template = "Divisione di Fanteria"		# CCNN militia, lower training and equipment
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
@@ -242,7 +239,7 @@ units = {
 	}
 	division= {	
 		name = "2a Divisione Coloniale 'Libia'"
-		location = 1130
+		location = 11773
 		division_template = "Divisione Coloniale"		# Colonial militia, lower training and equipment
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
 		start_equipment_factor = 0.5
@@ -615,7 +612,7 @@ units = {
 	}					
 	navy = {					
 		name = "6° Gruppo Sommergibili"				
-		base = 10007 
+		base = 11837
 		location = 10007 # Rhodes		
 		# 61a Squadriglia Sommergibili
 		ship = { name = "RM Sirena" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA version_name = "Sirena Class" } } }
@@ -636,7 +633,7 @@ units = {
 	### AFRICA ###					
 	navy = {					
 		name = "Comando Navale Libico"				
-		base = 1130 
+		base = 11778 
 		location = 1130 # Tobruk			
 		# 1a Squadriglia Cacciatorpedindiere
 		ship = { name = "RM Aquilone" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ITA version_name = "Navigatori Class" } } }
@@ -728,24 +725,6 @@ air_wings = {
 		}
 	}
 
-	### 4a Squadra Aerea -- Bari
-	156 = {
-		# 9a Divisione Aerea 'Leone'
-		nav_bomber_equipment_1 = {
-			owner = "ITA" 
-			amount = 48
-		}
-	}
-
-	### Commando Aeronautica Sardegna -- Caligari
-	114 = {
-		# 10a Divisione Aerea 'Marte'
-		nav_bomber_equipment_1 = {
-			owner = "ITA" 
-			amount = 24
-		}
-	}
-
 	### Commando Aeronautica Libia -- Tripoli
 	448 = {
 		fighter_equipment_0 =  {
@@ -801,26 +780,6 @@ instant_effect = {
 			}
 			requested_factories = 1
 			progress = 0.3
-			efficiency = 50
-		}
-
-		add_equipment_production = {
-			equipment = {
-				type = light_tank_equipment_1
-				creator = "ITA" 
-			}
-			requested_factories = 1
-			progress = 0.4
-			efficiency = 50
-		}
-
-		add_equipment_production = {
-			equipment = {
-				type = motorized_equipment_1
-				creator = "ITA" 
-			}
-			requested_factories = 2
-			progress = 0.4
 			efficiency = 50
 		}
 

@@ -43,7 +43,6 @@ set_technology = {
 	set_technology = {
 		gw_artillery = 1
 		tech_engineers = 1
-		motorised_infantry = 1
 		fighter1 = 1
 		tactical_bomber1 = 1
 		interwar_artillery = 1
@@ -99,7 +98,7 @@ set_politics = {
 			popularity = 0
 		}
 
-		monarchism = {
+		Monarchy = {
 			popularity = 30
 		}
 

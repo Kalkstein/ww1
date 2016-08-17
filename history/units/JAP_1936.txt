@@ -46,29 +46,7 @@ division_template = {
 		cavalry = { x = 1 y = 2 }
 	}
 }
-division_template = {
-	name = "Jidousha Shidan" 			# Motorized divisions - 4 motorized infantry regiments (3k men each), 1 recon regiment, 
-										#1 engineer regiment, 1 mounted artillery regiment
-	regiments = {
-		motorized = { x = 0 y = 0 }
-		motorized = { x = 0 y = 1 }
-		motorized = { x = 0 y = 2 }
-		motorized = { x = 1 y = 0 }
-		motorized = { x = 1 y = 1 }
-		motorized = { x = 1 y = 2 }
-		motorized = { x = 2 y = 0 }
-		motorized = { x = 2 y = 1 }
-		motorized = { x = 2 y = 2 }
-		motorized = { x = 3 y = 0 }
-		motorized = { x = 3 y = 1 }
-		motorized = { x = 3 y = 2 }
-	}
-	support = {
-		artillery = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-		recon = { x = 0 y = 2 }
-	}
-}
+
 division_template = {
 	name = "Rikusentai"				#This template covers SNLF divisions; historically there were roughly 5 total, with 1 being paratroopers
 	regiments = {
@@ -137,12 +115,6 @@ units = {
 		location = 7087 #Shizuoka
 		division_template = "Hohei Shidan"
 		start_experience_factor = 0.3
-	}
-	division = {
-		name = "Konoe Shidan"
-		location = 1182 #Tokyo
-		division_template = "Jidousha Shidan"			# Elite Guard unit (highest experience, best equipment)
-		start_experience_factor = 0.4
 	}
 	division = {
 		name = "Osaka Kichi Kaiheidan"
@@ -244,15 +216,6 @@ units = {
 		start_equipment_factor = 0.3	
 	}
 
-
-	#1 Konkyochi Ichigun
-	division = {
-		name = "Saipan Kichi Shubitai"
-		location = 3995 #Saipan
-		division_template = "Chuton-chi Shidan"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3		
-	}
 	division = {
 		name = "Iwoto Kichi Shubitai"
 		location = 13025 #Iwo Jima
@@ -260,89 +223,13 @@ units = {
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3		
 	}
+	
 	division = {
 		name = "Minamitorishima Kichi Shubitai"
 		location = 13026 #Marcus Island
 		division_template = "Chuton-chi Shidan"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3	
-	}
-
-	#2 Konkyochi Ichigun
-	division = {
-		name = "Yappu Kichi Shubitai"
-		location = 13028 #Yap
-		division_template = "Chuton-chi Shidan"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3		
-	}
-	division = {
-		name = "Palau Kichi Shubitai"
-		location = 4357 #Palau
-		division_template = "Chuton-chi Shidan"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3		
-	}
-	division = {
-		name = "Truk Kichi Shubitai"
-		location = 2489 #Truk
-		division_template = "Chuton-chi Shidan"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3		
-	}
-	division = {
-		name = "Satawan Kichi Shubitai"
-		location = 13035 #Satawan
-
-		division_template = "Chuton-chi Shidan"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-		
-	}
-	division = {
-		name = "Ulithi Kichi Shubitai"
-		location = 13029 #Ulithi
-		division_template = "Chuton-chi Shidan"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3		
-	}
-
-	#3 Konkyochi Ichigun
-	division = {
-		name = "Kwajalein Kichi Shubitai"
-		location = 13041 #Kwajalein
-		division_template = "Chuton-chi Shidan"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3		
-	}
-	division = {
-		name = "Eniwetok Kichi Shubitai"
-		location = 13046 #Eniwetok
-		division_template = "Chuton-chi Shidan"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3		
-	}
-	division = {
-		name = "Ponape Kichi Shubitai"
-		location = 13036 #Ponape
-		division_template = "Chuton-chi Shidan"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3		
-	}
-	division = {
-		name = "Mili Kichi Shubitai"
-		location = 13040 #Mili
-		division_template = "Chuton-chi Shidan"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3		
-	}
-	division = {
-		name = "Maleolap Kichi Shubitai"
-		location = 13043 #Maleolap
-		division_template = "Chuton-chi Shidan"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-		
 	}
 
 
@@ -358,7 +245,7 @@ units = {
 	}
 	division = {
 		name = "Kantogun Shureibu Keibitai"
-		location = 4572 #Hsinking
+		location = 9918 #Hsinking
 		division_template = "Chuton-chi Shidan"		# Japanese garrison (better than militia, but still with older equipment)
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7		
@@ -372,13 +259,13 @@ units = {
 	}
 	division = {
 		name = "9 'Take' Hohei Shidan"
-		location = 3944 #Near Changkufeng Lake
+		location = 6944 #Near Changkufeng Lake
 		division_template = "Hohei Shidan"
 		start_experience_factor = 0.3
 	}
 	division = {
 		name = "14 'Sho' Hohei Shidan"
-		location = 3843 #Eastern Manchuria
+		location = 898 #Eastern Manchuria
 		division_template = "Hohei Shidan"
 		start_experience_factor = 0.3
 	}
@@ -412,7 +299,7 @@ units = {
 	# 5 Homengun - 5th Field Army
 	division = {
 		name = "3 Dokuritsu Shubirentai"
-		location = 10521
+		location = 9899
 		division_template = "Chuton-chi Shidan"		# Japanese garrison (better than militia, but still with older equipment)
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
@@ -420,7 +307,7 @@ units = {
 	}
 	division = {
 		name = "4 Dokuritsu Shubirentai"
-		location = 10368
+		location = 906
 		division_template = "Chuton-chi Shidan"		# Japanese garrison (better than militia, but still with older equipment)
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
@@ -428,7 +315,7 @@ units = {
 	}
 	division = {
 		name = "5 Dokuritsu Shubirentai"
-		location = 10698
+		location = 6963
 		division_template = "Chuton-chi Shidan"		# Japanese garrison (better than militia, but still with older equipment)
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
@@ -436,7 +323,7 @@ units = {
 	}
 	division = {
 		name = "6 Dokuritsu Shubirentai"
-		location = 12500
+		location = 3860
 		division_template = "Chuton-chi Shidan"		# Japanese garrison (better than militia, but still with older equipment)
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
@@ -444,13 +331,13 @@ units = {
 	}
 	division = {
 		name = "8 'Sugi' Hohei Shidan"
-		location = 1693
+		location = 11835
 		division_template = "Hohei Shidan"
 		start_experience_factor = 0.3
 	}
 	division = {
 		name = "12 'Ken' Hohei Shidan"
-		location = 7569
+		location = 3803
 		division_template = "Hohei Shidan"
 		start_experience_factor = 0.3
 	}
@@ -516,15 +403,6 @@ units = {
 		start_experience_factor = 0.2
 	}
 
-
-	### Kita-Shina Ichigun - North China Army ###
-	#Independents
-	division = {
-		name = "5 'Koi' Hohei Shidan"
-		location = 3955 #East Hebei Autonomous Council
-		division_template = "Jidousha Shidan"
-		start_experience_factor = 0.3
-	}
 	division = {
 		name = "1 Dokuritsu Konsei Ryodan"
 		location = 3900 #East Hebei Autonomous Council
@@ -770,13 +648,6 @@ units = {
 		name = "1 Koku Sentai" # A part of "Dai 1 Kantai"
 		base = 9998
 		location = 9998  #Yokosuka
-		ship = { name = "Ryujo" definition = carrier equipment = { carrier_1 = {amount = 1 owner = JAP} } 				
-			air_wings = { 
-				cv_fighter_equipment_0 =  { owner = "JAP" amount = 18 } # historical 24
-				cv_CAS_equipment_1 = { owner = "JAP" amount = 12 } 	# historical 12
-
-			}
-		}
 		#Dai 5 Kuchikutai
 		ship = { name = "Asakaze" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
 		ship = { name = "Harukaze" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
@@ -817,14 +688,6 @@ units = {
 		ship = { name = "Aoba" definition = heavy_cruiser equipment = { heavy_cruiser_1 = {amount = 1 owner = JAP} } }
 		ship = { name = "Kinugasa" definition = heavy_cruiser equipment = { heavy_cruiser_1 = {amount = 1 owner = JAP} } }
 		# Dai 2 Koku Sentai
-		ship = { name = "Kaga" definition = carrier equipment = { carrier_1 = {amount = 1 owner = JAP version_name = "Akagi Class"} } 			
-
-			air_wings = { 
-				cv_fighter_equipment_0 =  { owner = "JAP" amount = 12 } # historical 16
-				cv_CAS_equipment_1 = { owner = "JAP" amount = 12 } # historical 16
-				#cv_nav_bomber_equipment_1 =  { owner = "JAP" amount = 21 } # historical 28
-			}
-		}
 	}
 	navy = {	
 		name = "2 Suirai Sentai" #A part of "Dai 2 Kantai"
@@ -873,14 +736,7 @@ units = {
 		location = 9950  #Sasebo
 
 		ship = { name = "Kongo" definition = battleship equipment = { battleship_2 = {amount = 1 owner = JAP} } }
-		ship = { name = "Kirishima" definition = battleship equipment = { battleship_2 = {amount = 1 owner = JAP} } }
-		ship = { name = "Akagi" definition = carrier equipment = { carrier_1 = {amount = 1 owner = JAP version_name = "Akagi Class"} } 				
-			air_wings = { 
-				cv_fighter_equipment_0 =  { owner = "JAP" amount = 9 } 	# historical 12
-				cv_CAS_equipment_1 = { owner = "JAP" amount = 12 } 			# historical 18
-				#cv_nav_bomber_equipment_1 =  { owner = "JAP" amount = 24 } 	# historical 36
-			}
-		}	
+		ship = { name = "Kirishima" definition = battleship equipment = { battleship_2 = {amount = 1 owner = JAP} } }	
 		ship = { name = "Natori" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = JAP version_name = "Kuma Class"} } }
 		ship = { name = "Yura" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = JAP version_name = "Kuma Class"} } }
 		ship = { name = "Kitakami" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = JAP version_name = "Kuma Class"} } }
@@ -982,8 +838,8 @@ units = {
 
 	navy = {
 		name = "Nanpo Yuso Sendan"
-		base = 2489
-		location = 2489  # Truk
+		base = 13025
+		location = 13025  # Truk
 		ship = { name = "Oite" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
 		ship = { name = "Hayate" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
 		ship = { name = "Yugao" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
@@ -1063,37 +919,6 @@ air_wings = {
 			amount = 60
 		}
 	}
-
-	# 2 Rengo Kokutai -- Taiwan
-	524 = {
-		# 12 Kokutai -- Nakajima A4N1
-		cv_fighter_equipment_0 = {
-			owner = "JAP" 
-			amount = 72
-		}
-		# 13 Kokutai -- Mitsubishi B2M2
-		#cv_nav_bomber_equipment_1 = {
-			owner = "JAP" 
-			amount = 48
-		}
-	}
-
-	### Akagi CAG -- Hiroshima (while Akagi is refit)
-	529 = { 
-		cv_fighter_equipment_0 =  {
-			owner = "JAP" 
-			amount = 12
-		}
-		cv_CAS_equipment_1 = {
-			owner = "JAP" 
-			amount = 9
-		}
-		#cv_nav_bomber_equipment_1 =  {
-			owner = "JAP" 
-			amount = 9
-		}
-
-	}
 }
 
 
@@ -1124,31 +949,11 @@ instant_effect =
 
 	add_equipment_production = {
 		equipment = {
-			type = motorized_equipment_1
-			creator = "JAP" 
-		}
-		requested_factories = 1
-		progress = 0.4
-		efficiency = 50
-	}
-
-	add_equipment_production = {
-		equipment = {
 			type = fighter_equipment_0
 			creator = "JAP" 
 		}
 		requested_factories = 1
 		progress = 0.15
-		efficiency = 50
-	}
-
-	add_equipment_production = {
-		equipment = {
-			type = #cv_nav_bomber_equipment_1
-			creator = "JAP" 
-		}
-		requested_factories = 1
-		progress = 0.2
 		efficiency = 50
 	}
 

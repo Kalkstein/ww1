@@ -416,26 +416,7 @@ units = {
 		ship = { name = "USS Colorado" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA version_name = "New Mexico Class" } } }				
 		ship = { name = "USS West Virginia" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA version_name = "New Mexico Class" } } }				
 		ship = { name = "USS Maryland" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA version_name = "New Mexico Class" } } }				
-	}				
-	navy = {					
-		name = "Carrier Division"				
-		base = 1562
-		location = 1562 # San Diego
-		ship = { name = "USS Lexington" definition = carrier equipment = { carrier_1 = { amount = 1 owner = USA } } 
-			air_wings = {
-				cv_fighter_equipment_0 =  { owner = "USA" amount = 8 } # historical: 16
-				cv_CAS_equipment_1 =  { owner = "USA" amount = 14 } # historical: 30
-				#cv_nav_bomber_equipment_1 =  { owner = "USA" amount = 8 } # historical: 12
-			}
-		}
-		ship = { name = "USS Saratoga" definition = carrier equipment = { carrier_1 = { amount = 1 owner = USA } } 
-			air_wings = {
-				cv_fighter_equipment_0 =  { owner = "USA" amount = 8 } # historical: 16
-				cv_CAS_equipment_1 =  { owner = "USA" amount = 14 } # historical: 30
-				#cv_nav_bomber_equipment_1 =  { owner = "USA" amount = 8 } # historical: 12
-			}
-		}
-	}					
+	}								
 	navy = {					
 		name = "Cruiser Division 3"				
 		base = 1562
@@ -645,19 +626,7 @@ units = {
 		location = 788 # Norfolk
 		ship = { name = "USS Augusta" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = USA } } }				
 		ship = { name = "USS Tuscaloosa" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = USA version_name = "Portland Class" } } }				
-	}					
-	navy = {					
-		name = "USS Ranger"				
-		base = 788
-		location = 788 # Norfolk
-		ship = { name = "USS Ranger" definition = carrier equipment = { carrier_2 = { amount = 1 owner = USA } } 
-			air_wings = {
-				cv_fighter_equipment_0 =  { owner = "USA" amount = 8 } # historical: 36
-				cv_CAS_equipment_1 =  { owner = "USA" amount = 14 } # historical: 15
-				#cv_nav_bomber_equipment_1 =  { owner = "USA" amount = 8 } # historical: 12
-			}
-		}
-	}					
+	}										
 	navy = {					
 		name = "Destroyer Flotilla  3"				
 		base = 788
@@ -906,24 +875,6 @@ air_wings = {
 #			amount = 36
 #		}
 #	}
-
-	### USN Atlantic Naval Patrol Division -- Norfolk
-	362 = { 
-		# Naval Patrol Wing 3 
-		nav_bomber_equipment_1 =  {
-			owner = "USA" 
-			amount = 36
-		}
-	}
-	### USN Pacific Naval Patrol Division -- San Diego
-	378 = { 
-		# Naval Patrol Wing 1 
-		# Naval Patrol Wing 2 
-		nav_bomber_equipment_1 =  {
-			owner = "USA" 
-			amount = 72
-		}
-	}
 }
 
 
@@ -959,16 +910,6 @@ instant_effect = {
 		}
 		requested_factories = 1
 		progress = 0.3
-		efficiency = 50
-	}
-
-	add_equipment_production = {
-		equipment = {
-			type = cv_fighter_equipment_0
-			creator = "USA" 
-		}
-		requested_factories = 1
-		progress = 0.15
 		efficiency = 50
 	}
 

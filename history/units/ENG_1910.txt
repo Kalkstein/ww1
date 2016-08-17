@@ -7,12 +7,12 @@
 		infantry = { x = 0 y = 2 }
 		infantry = { x = 0 y = 3 }
 		infantry = { x = 0 y = 4 }
-        	infantry = { x = 1 y = 0 }
+       	infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
 		infantry = { x = 1 y = 3 }
 		infantry = { x = 1 y = 4 }
-        	infantry = { x = 2 y = 0 }
+       	infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
 		infantry = { x = 2 y = 2 }
 		infantry = { x = 2 y = 3 }
@@ -40,7 +40,7 @@ division_template = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }
 		cavalry = { x = 0 y = 2 }
-       		cavalry = { x = 0 y = 3 }
+  		cavalry = { x = 0 y = 3 }
 		cavalry = { x = 1 y = 0 }
 		cavalry = { x = 1 y = 1 }
 		cavalry = { x = 1 y = 2 }
@@ -481,12 +481,6 @@ units = {
 		name = "Home Fleet"			
 		base = 11064
 		location = 11064 # Scapa Flow
-		ship = { name = "HMS Furious" definition = carrier equipment = { carrier_1 = { amount = 1 owner = ENG } } 
-			air_wings = {
-				cv_fighter_equipment_1 =  { owner = "ENG" amount = 9 }
-				#cv_nav_bomber_equipment_1 =  { owner = "ENG" amount = 12 }
-			}
-		}
 		ship = { name = "HMS Nelson" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG version_name = "Nelson Class" } } }			
 		ship = { name = "HMS Rodney" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG version_name = "Nelson Class" } } }				
 		ship = { name = "HMS Royal Oak" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }				
@@ -547,12 +541,6 @@ units = {
 		name = "Channel Force"			
 		base = 9458 
 		location = 9458 # Portsmouth
-		ship = { name = "HMS Courageous" definition = carrier equipment = { carrier_1 = { amount = 1 owner = ENG } } 
-			air_wings = {
-				cv_fighter_equipment_0 =  { owner = "ENG" amount = 9 }
-				#cv_nav_bomber_equipment_1 =  { owner = "ENG" amount = 24 }
-			}
-		}
 		ship = { name = "HMS Resolution" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }			
 		ship = { name = "HMS Revenge" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }					
 		ship = { name = "HMS Ceres" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG } } }
@@ -731,12 +719,6 @@ units = {
 		name = "Mediterranean Fleet"
 		base = 4076
 		location = 4076 # Alexandria
-		ship = { name = "HMS Glorious" definition = carrier equipment = { carrier_1 = { amount = 1 owner = ENG } } 
-			air_wings = {
-				cv_fighter_equipment_0 =  { owner = "ENG" amount = 6 } #historical 9
-				#cv_nav_bomber_equipment_1 =  { owner = "ENG" amount = 24 } #historical 36
-			}
-		}
 		ship = { name = "HMS Warspite" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }			
 		ship = { name = "HMS Barham" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }						
 		ship = { name = "HMS Malaya" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ENG } } }					
@@ -855,12 +837,6 @@ units = {
 		name = "China Fleet"
 		base = 10062
 		location = 10062 # Hong Kong			
-		ship = { name = "HMS Eagle" definition = carrier equipment = { carrier_1 = { amount = 1 owner = ENG } } 
-			air_wings = {
-				cv_fighter_equipment_0 =  { owner = "ENG" amount = 18 }
-				#cv_nav_bomber_equipment_1 =  { owner = "ENG" amount = 18 }
-			}
-		}
 		ship = { name = "HMS Kent" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ENG version_name = "County Class" } } }	
 		ship = { name = "HMS Cornwall" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ENG version_name = "County Class" } } }	
 		ship = { name = "HMS Dorsetshire" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ENG version_name = "County Class" } }	}
@@ -943,41 +919,11 @@ air_wings = {
 			amount = 64
 		}
 	}
-	125 = { 
-		### No. 2 Bomber Command, East Anglia area -- HP Heyford, Harrows, AW Whitleys
-		tac_bomber_equipment_0 = {
-			owner = "ENG" 
-			amount = 48
-		}
-	}
-	126 = { 
-		### No. 3 Bomber Command, Suffolk area -- HP Heyford, Harrows, AW Whitleys
-		tac_bomber_equipment_0 = {
-			owner = "ENG" 
-			amount = 64
-		}
-	}
-	130 = { 
-		### No. 4 Bomber Command, York area -- HP Heyford, Harrows, AW Whitleys
-		tac_bomber_equipment_0 = {
-			owner = "ENG" 
-			amount = 80
-		}
-	}
 	128 = { 
 		### No. 5 Bomber Command, Lincoln area -- Fairey Gordons, Battles
 		CAS_equipment_1 = {
 			owner = "ENG" 
 			amount = 64
-		}
-	}
-
-	### RAF Coastal Command
-	130 = { 
-		### No. 16 Coastal Command -- Vickers Vildebeests
-		nav_bomber_equipment_1 = {
-			owner = "ENG" 
-			amount = 24
 		}
 	}
 
@@ -987,10 +933,6 @@ air_wings = {
 		fighter_equipment_0 = {
 			owner = "ENG" 
 			amount = 72
-		}
-		tac_bomber_equipment_0 = {
-			owner = "ENG" 
-			amount = 48
 		}
 		CAS_equipment_1 = {
 			owner = "ENG" 
@@ -1019,10 +961,6 @@ air_wings = {
 	### RAF Far East
 	336 = { 
 		### RAF Far East
-		nav_bomber_equipment_1 = {
-			owner = "ENG" 
-			amount = 24
-		}
 		CAS_equipment_1 = {
 			owner = "ENG" 
 			amount = 64
@@ -1058,31 +996,11 @@ instant_effect = {
 
 	add_equipment_production = {
 		equipment = {
-			type = light_tank_equipment_1
-			creator = "ENG" 
-		}
-		requested_factories = 1
-		progress = 0.4
-		efficiency = 50
-	}
-
-	add_equipment_production = {
-		equipment = {
 			type = fighter_equipment_0
 			creator = "ENG" 
 		}
 		requested_factories = 1
 		progress = 0.15
-		efficiency = 50
-	}
-
-	add_equipment_production = {
-		equipment = {
-			type = tac_bomber_equipment_0
-			creator = "ENG" 
-		}
-		requested_factories = 1
-		progress = 0.1
 		efficiency = 50
 	}
 

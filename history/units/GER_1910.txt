@@ -6,11 +6,11 @@
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
 		infantry = { x = 0 y = 3 }
-        	infantry = { x = 1 y = 0 }
+        infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
 		infantry = { x = 1 y = 3 }
-        	infantry = { x = 2 y = 0 }
+        infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
 		infantry = { x = 2 y = 2 }
 		infantry = { x = 2 y = 3 }
@@ -27,7 +27,7 @@
 	support = {
         engineer = { x = 0 y = 0 }
         artillery = { x = 0 y = 1 }
-	recon = { x = 0 y = 2 }
+		recon = { x = 0 y = 2 }
 	}
 }
 division_template = {
@@ -1881,11 +1881,6 @@ air_wings = {
 		tac_bomber_equipment_0 = {		# He 45 or Do 23 ?
 			owner = "GER" 
 			amount = 120
-		}
-		# Sturzkampfgeschwader 162		
-		CAS_equipment_1 =  {			# Hs 123
-			owner = "GER" 
-			amount = 80
 		}	
 	}
 
@@ -1925,11 +1920,10 @@ air_wings = {
 	### VI. Luftkreiskommando -- Kiel ###
 	58 = { 
 		# Küstenfliegergruppe 106		
-		ballon1 =  {		# He 59, Do 18
+		ballon_equipment_1 =  {		# He 59, Do 18
 			owner = "GER" 
 			amount = 72
 		}
-		# Küstenfliegergruppe 206
 	}
 }
 

@@ -11,7 +11,6 @@
 		infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
 		infantry = { x = 2 y = 2 }
-		light_armor = { x = 3 y = 0 }
 	}
 }
 division_template = {
@@ -163,14 +162,7 @@ units = {
 }
 
 air_wings = {
-	### Royal Canadian Air Force (RCAF)-- New South Wales
-	276 = {
-		# RCAF Station Trenton (ONT) -- Westland Wapitis
-		nav_bomber_equipment_1 =  {
-			owner = "CAN" 
-			amount = 24
-		}
-	}
+
 }
 
 ##### Starting Production #####
@@ -182,15 +174,6 @@ instant_effect = {
 		}
 		requested_factories = 1
 		progress = 0.73
-		efficiency = 100
-	}
-	add_equipment_production = {
-		equipment = {
-			type = light_tank_equipment_1
-			creator = "CAN"
-		}
-		requested_factories = 1
-		progress = 0.85
 		efficiency = 100
 	}
 }

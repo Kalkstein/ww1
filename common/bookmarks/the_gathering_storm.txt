@@ -33,7 +33,7 @@ bookmarks = {
 			history = "GER_BATTEN_DOWN_THE_HATCHES_DESC"
 			ideology = fascism
 			ideas = {
-				general_staff
+				
 			}
 		}
 		"ITA"={
@@ -55,10 +55,7 @@ bookmarks = {
 			history = "SOV_BATTEN_DOWN_THE_HATCHES_DESC"
 			ideology = communism
 			ideas = {
-				depleting_power
-				the_reds
-				the_whites
-				entente_cordiale
+				
 			}
 		}
 

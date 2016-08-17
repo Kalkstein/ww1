@@ -68,7 +68,7 @@ units = {
 	}
 	division = {
 		name = "2. Jyske Division"
-		location = 11251  # Sonderborg
+		location = 399  # Sonderborg
 		division_template = "Binær Division"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3

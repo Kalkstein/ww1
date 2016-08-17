@@ -78,10 +78,7 @@ create_country_leader = {
 	desc = "POLITICS_MUSTAFA_KEMAL_ATATÜRK_DESC"
 	picture = "gfx/leaders/TUR/Portrait_Turkey_Mustafa_Kemal_Ataturk.dds"
 	expire = "1938.11.10"
-	ideology = democracy
-	traits = {
-		#
-	}
+	ideology = conservatism
 }
 
 create_country_leader = {
@@ -150,13 +147,3 @@ create_corps_commander = {
 
 ### Ship Variants ###
 
-create_equipment_variant = {
-	name = "Dumlupinar Class"
-	type = submarine_1
-	upgrades = {
-		ship_reliability_upgrade = 2
-		sub_engine_upgrade = 2
-		sub_stealth_upgrade = 2
-		sub_torpedo_upgrade = 2
-	}
-}

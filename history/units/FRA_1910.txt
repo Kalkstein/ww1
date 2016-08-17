@@ -1319,12 +1319,6 @@ units = {
 		name = "2ème Région Navale"			
 		base = 3552 
 		location = 3552 # Brest			
-		ship = { name = "Béarn" definition = carrier equipment = { carrier_1 = { amount = 1 owner = FRA } } 
-			air_wings = {
-				cv_fighter_equipment_1 =  { owner = "FRA" amount = 25 }
-				#cv_nav_bomber_equipment_1 =  { owner = "FRA" amount = 20 }
-			}
-		}
 		# 2e Division des Contre-Torpilleurs
 		ship = { name = "Jaguar" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA version_name = "Chacal Class" } } }
 		ship = { name = "Chacal" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = FRA version_name = "Chacal Class" } } }
@@ -1610,15 +1604,6 @@ air_wings = {
 			amount = 30
 		}
 	}
-
-	# Aeronautique Navale -- Cherbourg
-	15 = {
-		# Flotille F1
-		nav_bomber_equipment_1 = {
-			owner = "FRA" 
-			amount = 24
-		}
-	}
 }
 
 #########################
@@ -1656,25 +1641,6 @@ instant_effect = {
 		efficiency = 50
 	}
 
-	add_equipment_production = {
-		equipment = {
-			type = light_tank_equipment_2
-			creator = "FRA" 
-		}
-		requested_factories = 1
-		progress = 0.4
-		efficiency = 50
-	}
-
-	add_equipment_production = {
-		equipment = {
-			type = motorized_equipment_1
-			creator = "FRA" 
-		}
-		requested_factories = 1
-		progress = 0.4
-		efficiency = 50
-	}
 
 	# Ship Production
 	# SS: Redoutable variant (x7) ("Le Héros" "Le Conquérant" "Le Tonnant" "Agosta" "Sfax" "Casabianca" "Bévéziers")

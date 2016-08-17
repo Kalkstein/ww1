@@ -77,20 +77,10 @@ units = {
 
 	}
 
-	### Obalnim Armija ###
-	division = {
-		name = "12. 'Jadranska' Pesadijska Div."  			# Peadijska if we get font support
-		location = 3924
-		division_template = "Pesadijska Divizija"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-
-	}
-
 	### 5. Armija ###
 	division = {
 		name = "8. 'Krajinska' Pesadijska Div."  			# Peadijska if we get font support
-		location = 907
+		location = 11857
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
@@ -123,40 +113,13 @@ units = {
 
 	}
 
-	#### 1. Grupa Vojska ####
-	### 4. Armija ###
-	division = {
-		name = "27. 'Savaska' Pesadijska Div."  			# Peadijska if we get font support
-		location = 11581
-		division_template = "Pesadijska Divizija"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-
-	}
-
 	### 7. Armija ###
 	division = {
 		name = "Triglavski Odred"
-		location = 3631
+		location = 9756
 		division_template = "Gorska Pesadija"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
-
-	}
-	division = {
-		name = "Risnajaski Odred" 							# Rinajaski if we get font support
-		location = 11612
-		division_template = "Gorska Pesadija"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.7
-
-	}
-	division = {
-		name = "1. Konjička Divizija"
-		location = 9627
-		division_template = "Konjička Divizija"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
 
 	}
 
@@ -164,7 +127,7 @@ units = {
 	### 1. Armija ###
 	division = {
 		name = "7. 'Potiska' Pesadijska Div."  				# Peadijska if we get font support
-		location = 6643
+		location = 6634
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
@@ -179,18 +142,9 @@ units = {
 
 	}
 
-	### 2. Armija ###
-	division = {
-		name = "10. 'Bosanska' Pesadijska Div."  			# Peadijska if we get font support
-		location = 3627
-		division_template = "Pesadijska Divizija"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-
-	}
 	division = {
 		name = "17. 'Vrbaska' Pesadijska Div."  			# Peadijska if we get font support
-		location = 3623
+		location = 630
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
@@ -201,7 +155,7 @@ units = {
 	### 3. Armija ###
 	division = {
 		name = "13. 'Hercegovacka' Pesadijska Div."  		# Peadijska if we get font support
-		location = 833
+		location = 3956
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
@@ -209,7 +163,7 @@ units = {
 	}
 	division = {
 		name = "15. 'Zetska' Pesadijska Div."  				# Peadijska if we get font support
-		location = 6913
+		location = 9890
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
@@ -217,7 +171,7 @@ units = {
 	}
 	division = {
 		name = "25. 'Vardarsa' Pesadijska Div."  			# Peadijska if we get font support
-		location = 9809
+		location = 9906
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
@@ -227,7 +181,7 @@ units = {
 	### 3. Teritorijalna Armija ###
 	division = {
 		name = "5. 'Sumadijska' Pesadijska Div."  			# Peadijska if we get font support
-		location = 3833
+		location = 3939
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
@@ -235,7 +189,7 @@ units = {
 	}
 	division = {
 		name = "20. 'Bregalnicka' Pesadijska Div."  		# Peadijska if we get font support
-		location = 11856
+		location = 9599
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
@@ -243,31 +197,13 @@ units = {
 	}
 	division = {
 		name = "22. 'Ibarska' Pesadijska Div."  			# Peadijska if we get font support
-		location = 3882
+		location = 6953
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
 
 	}
-
-
-	##### NAVAL UNITS #####
-	###### Kraljevska Jugoslovenska Ratna Mornarica (KJRM) ######
-	navy = {				
-		name = "Kraljevska Mornarica"			
-		base = 3924
-		location = 3924 # Split
-		ship = { name = "KB Dalmacija" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = YUG } } }
-		ship = { name = "KB Dubrovnik" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = YUG } } }
-		# Podmornica Divizija
-		ship = { name = "KB Hrabri" definition = submarine equipment = { submarine_1 = { amount = 1 owner = YUG } } }				
-		ship = { name = "KB Nebojsa" definition = submarine equipment = { submarine_1 = { amount = 1 owner = YUG } } }				
-		ship = { name = "KB Smeli" definition = submarine equipment = { submarine_1 = { amount = 1 owner = YUG } } }				
-		ship = { name = "KB Osvetnik" definition = submarine equipment = { submarine_1 = { amount = 1 owner = YUG } } }				
-	}				
-
-}  # Neboja if we get font support
-
+}
 
 ###### Vazduhoplovstvo Vojske Kraljevine Jugoslavije (VVKJ) ######
 air_wings = {
@@ -305,15 +241,6 @@ instant_effect = {
 		}
 		requested_factories = 1
 		progress = 0.76
-		efficiency = 100
-	}
-	add_equipment_production = {
-		equipment = {
-			type = light_tank_equipment_1
-			creator = "YUG" 
-		}
-		requested_factories = 1
-		progress = 0.4
 		efficiency = 100
 	}
 }

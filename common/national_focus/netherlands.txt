@@ -576,7 +576,7 @@ focus_tree = {
 		prerequisite = { focus = HOL_claim_wallonia }
 		x = 15
 		y = 3
-		cost = 20
+		cost = 2000
 		completion_reward = {
 			BEL = { country_event = { id = low.1 } }
 		}

@@ -78,19 +78,6 @@ guiTypes = {
 				}
 				
 				instantTextBoxType = {
-					name = "infantry_subtitle_specialists"
-					position = { x = 30 y = 915 }
-					textureFile = ""
-					font = "hoi_33"
-					borderSize = { x = 0 y = 0}
-					text = "INFANTRY_TITLE_SPECIAL"
-					maxWidth = 600
-					maxHeight = 62
-					format = left
-					Orientation = "UPPER_LEFT"
-				}
-
-				instantTextBoxType = {
 					name = "infantry_subtitle_machinegun"
 					position = { x = 30 y = 650 }
 					textureFile = ""
@@ -101,8 +88,21 @@ guiTypes = {
 					maxHeight = 62
 					format = left
 					Orientation = "UPPER_LEFT"
-				}								
+				}	
 				
+				instantTextBoxType = {
+					name = "infantry_subtitle_specialists"
+					position = { x = 30 y = 1100 }
+					textureFile = ""
+					font = "hoi_33"
+					borderSize = { x = 0 y = 0}
+					text = "INFANTRY_TITLE_SPECIAL"
+					maxWidth = 600
+					maxHeight = 62
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
+
 				instantTextBoxType = {
 					name = "infantry_year2"
 					position = { x = 130 y = 50 }
@@ -238,7 +238,7 @@ guiTypes = {
 				}			
 			}	
 
-			
+
 			iconType = {
 				name = "highlight_infantry_1"
 				spriteType = "GFX_tutorial_research_small_item_icon_glow"
@@ -246,73 +246,43 @@ guiTypes = {
 				hide = yes
 				alwaystransparent = yes
 			}
-				
-	
+
 			gridboxtype = {
 				name = "infantry_weapons_tree"
 				position = { x = 140 y = 325 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 	
-			}			
+			}		
 
 			gridboxtype = {
-				name = "motorised_infantry_tree"
-				position = { x = 140 y = 2500 }
+				name = "machine_gun_tree"
+				position = { x = 140 y = 875 }
+				#size = { width = 420 height = 500 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 
 			gridboxtype = {
 				name = "marines_tree"
-				position = { x = 140 y = 950 }
+				position = { x = 140 y = 1325 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
-			
+
 			gridboxtype = {
 				name = "paratroopers_tree"
-				position = { x = 140 y = 1100 }
+				position = { x = 140 y = 1550 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 
 			gridboxtype = {
 				name = "tech_mountaineers_tree"
-				position = { x = 140 y = 1250 }
+				position = { x = 140 y = 1750 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
-			
-			gridboxtype = {
-				name = "sniper_rifle_tree"
-				position = { x = 140 y = 320 }
-				slotsize = { width = 70 height = 70 }
-				format = "LEFT"
-			}
-
-			gridboxtype = {
-				name = "flamethrower_tree"
-				position = { x = 278 y = 320 }
-				slotsize = { width = 70 height = 70 }
-				format = "LEFT"
-			}
-
-			gridboxtype = {
-				name = "camo_tree"
-				position = { x = 140 y = 840 }
-				#size = { width = 420 height = 500 }
-				slotsize = { width = 70 height = 70 }
-				format = "LEFT"
-			}
-
-			gridboxtype = {
-				name = "winter_clothes_gw_tree"
-				position = { x = 140 y = 670 }
-				#size = { width = 420 height = 500 }
-				slotsize = { width = 70 height = 70 }
-				format = "LEFT"
-			}			
 		}
 
 		containerWindowType = {
@@ -351,7 +321,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
-					text = "1918"
+					text = "1905"
 					maxWidth = 170
 					maxHeight = 32
 					format = left
@@ -364,7 +334,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
-					text = "1936"
+					text = "1910"
 					maxWidth = 170
 					maxHeight = 32
 					format = left
@@ -388,7 +358,7 @@ guiTypes = {
 					position = { x = 523 y = 50 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
-					text = "1939"
+					text = "1914"
 					maxWidth = 170
 					maxHeight = 32
 					format = left
@@ -424,7 +394,7 @@ guiTypes = {
 					position = { x = 943 y = 50 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
-					text = "1942"
+					text = "1916"
 					maxWidth = 170
 					maxHeight = 32
 					format = left
@@ -459,7 +429,7 @@ guiTypes = {
 					position = { x = 1363 y = 50 }
 					font = "hoi_36header"
 					borderSize = { x = 0 y = 0}
-					text = "1945"
+					text = "1918"
 					maxWidth = 170
 					maxHeight = 32
 					format = left
@@ -478,19 +448,7 @@ guiTypes = {
 #				}				
 					
 			}	
-				
-			containerWindowType = {
-				name = "tiled_research_bg"
-				position = { x=150 y=640 }
-				size = { width = 1340 height = 430 }
-				clipping = no
 			
-				background = {
-					name = "Background"
-					quadTextureSprite ="GFX_tiled_research_bg"
-				}			
-			}
-				
 			containerWindowType = {
 				name = "tiled_research_bg_2"
 				position = { x=160 y=920 }
