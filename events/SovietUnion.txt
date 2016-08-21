@@ -1,0 +1,773 @@
+﻿###########################
+# Soviet Events
+###########################
+
+# Revisit Stufen :
+# Revisit 1 : Dringend vor Veröffentlichung machen
+# Revisit 2 : Für die Localisation erinnerungen
+# Revisit 3 : Verbesserungsvorschläge für die Zeit nach der Veröffentlichung
+
+add_namespace = soviet
+
+# First Event for new officials
+country_event = {
+	id = soviet.1
+	title = soviet.1.t
+	desc = soviet.1.d
+	picture = GFX_report_event_soldiers_marching
+
+	is_triggered_only = yes
+
+	trigger = {	has_idea = new_officials }
+
+		hidden_effect = {
+			remove_ideas = new_officials
+			add_timed_idea = {
+				idea = new_officials_2
+				days = 1825
+			}
+			country_event = { id = soviet.2 days = 365 }
+		}
+	option = {
+		name = soviet.1.a
+		custom_effect_tooltip = soviet.1.a_tt
+	}
+}
+
+country_event = {
+	id = soviet.2
+	title = soviet.1.t
+	desc = soviet.1.d
+	picture = GFX_report_event_soldiers_marching
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			remove_ideas = new_officials_2
+			add_timed_idea = {
+				idea = new_officials_3
+				days = 1460
+			}
+			country_event = { id = soviet.3 days = 365 }
+		}
+	}
+	option = {
+		name = soviet.1.a
+		custom_effect_tooltip = soviet.1.a_tt
+	}
+}
+country_event = {
+	id = soviet.3
+	title = soviet.1.t
+	desc = soviet.1.d
+	picture = GFX_report_event_soldiers_marching
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			remove_ideas = new_officials_3
+			add_timed_idea = {
+				idea = new_officials_4
+				days = 1095
+			}
+			country_event = { id = soviet.4 days = 365 }
+		}
+	}
+	option = {
+		name = soviet.1.a
+		custom_effect_tooltip = soviet.1.a_tt
+	}
+}
+country_event = {
+	id = soviet.4
+	title = soviet.1.t
+	desc = soviet.1.d
+	picture = GFX_report_event_soldiers_marching
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			remove_ideas = new_officials_4
+			add_timed_idea = {
+				idea = new_officials_5
+				days = 730
+			}
+			country_event = { id = soviet.5 days = 365 }
+		}
+	}
+	option = {
+		name = soviet.1.a
+		custom_effect_tooltip = soviet.1.a_tt
+	}
+}
+country_event = {
+	id = soviet.5
+	title = soviet.1.t
+	desc = soviet.1.d
+	picture = GFX_report_event_soldiers_marching
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			remove_ideas = new_officials_5
+			add_timed_idea = {
+				idea = new_officials_6
+				days = 365
+			}
+			country_event = { id = soviet.6 days = 365 }
+		}
+	}
+	option = {
+		name = soviet.1.a
+		custom_effect_tooltip = soviet.1.a_tt
+	}
+}
+country_event = {
+	id = soviet.6
+	title = soviet.2.t
+	desc = soviet.2.d
+picture = GFX_report_event_soldiers_marching
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			remove_ideas = new_officials_6
+			}
+		}
+	option = {
+		name = soviet.2.a
+		custom_effect_tooltip = soviet.2.a_tt
+	}
+}
+
+country_event = {
+	id = soviet.7
+	title = soviet.7.t
+	desc = soviet.7.d
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+		add_timed_idea = { idea = city_revolts days = 30 } }	
+	}
+	option = {
+		name = soviet.7.a
+		custom_effect_tooltip = soviet.7.a_tt
+	}
+}
+
+country_event = {
+	id = soviet.8
+	title = soviet.8.t
+	desc = soviet.8.d
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+		add_timed_idea = {
+				idea = mass_protests
+				days = 14
+			}
+		}
+		}
+		
+	option = {
+		name = soviet.8.a
+		custom_effect_tooltip = soviet.8.a_tt
+	}
+	
+}
+
+country_event = {
+	id = soviet.9
+	title = soviet.9.t
+	desc = soviet.9.d
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+		add_ideas = duma_protest
+			}
+		}
+	option = {
+		name = soviet.9.a
+		custom_effect_tooltip = soviet.9.a_tt
+	}
+}
+
+country_event = {
+	id = soviet.10
+	title = soviet.10.t
+	desc = soviet.10.d
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+		add_ideas = purged_peasants
+			}
+		}
+	option = {
+		name = soviet.10.a
+		custom_effect_tooltip = soviet.10.a_tt	
+	}
+	# Revisit : Das ganze in zwei Events aufspalten mit Entscheidungsmöglichkeit: Gutheißen oder verbieten
+}
+
+country_event = {
+	id = soviet.11
+	title = soviet.11.t
+	desc = soviet.11.d
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.11.a
+		custom_effect_tooltip = soviet.11.a_tt	
+	}
+	# revisit : Kommunistische Revolution
+}
+
+country_event = {
+	id = soviet.12
+	title = soviet.12.t
+	desc = soviet.12.d
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+		add_ideas = purged_peasants
+			}
+		}
+	option = {
+		name = soviet.12.a
+		custom_effect_tooltip = soviet.12.a_tt	
+	}
+	# Demokratische Revolution
+	# revisit 1 : Dringend! den Revolutionsverlauf fertigmachen
+}	
+
+country_event = {
+	id = soviet.14
+	title = soviet.14.t
+	desc = soviet.14.d
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+		add_ideas = general_strike
+			}
+		}
+	option = {
+		name = soviet.14.a
+		custom_effect_tooltip = soviet.14.a_tt	
+	}
+	# Generalstreik
+}
+
+country_event = {
+	id = soviet.15
+	title = soviet.15.t
+	desc = soviet.15.d
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+		add_ideas = hate_to_the_tsar
+			}
+		}
+	option = {
+		name = soviet.15.a
+		custom_effect_tooltip = soviet.15.a_tt	
+	}
+}
+
+country_event = {
+	id = soviet.16
+	title = soviet.16.t
+	desc = soviet.16.d
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+		add_ideas = why_fight
+			}
+		}
+	option = {
+		name = soviet.16.a
+		custom_effect_tooltip = soviet.16.a_tt	
+	}
+}
+
+country_event = {
+	id = soviet.17
+	title = soviet.17.t
+	desc = soviet.17.d
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+		add_ideas = everyone_deserts
+			}
+		}
+	option = {
+		name = soviet.16.a
+		custom_effect_tooltip = soviet.16.a_tt	
+	}
+}	
+
+country_event = {
+	id = soviet.18
+	title = soviet.18.t
+	desc = soviet.18.d
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+
+	# Dieses Event ist nur da weil ich nicht weiß wie News gehen
+	option = {
+		name = soviet.18.a
+		custom_effect_tooltip = soviet.18.a_tt	
+	}
+}
+
+country_event = {
+	id = soviet.19
+	title = soviet.19.t
+	desc = soviet.19.d
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+
+	immediate = {
+	set_politics = {
+			elections_allowed = yes
+		}
+	}	
+	
+	option = {
+		name = soviet.19.a
+		custom_effect_tooltip = soviet.19.a_tt	
+	}
+}	
+
+country_event = {
+	# Kommunistischer Putsch
+	id = soviet.20
+	title = soviet.20.t
+	desc = soviet.20.d
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+
+	immediate = {
+	set_politics = {
+	ruling_party = communism
+	}
+		}
+	# Revisit : Rückkehr von Lenin als Event einfügen
+	
+	option = {
+		name = soviet.20.a
+		custom_effect_tooltip = soviet.20.a_tt	
+	}
+}	
+
+country_event = {
+	# Proteste nach Wahlfälschung, Zar flieht
+	id = soviet.21
+	title = soviet.21.t
+	desc = soviet.21.d
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+	
+	immediate = {
+	add_ideas = general_strike
+	}
+	option = {
+		name = soviet.21.a
+		custom_effect_tooltip = soviet.21.a_tt	
+	}
+}					
+
+country_event = {
+	# Kommunistische Machtübernahme
+	# revisit : Hier den beginnenden Bürgerkrieg einführen falls Russland nicht im Krieg ?
+	id = soviet.22
+	title = soviet.22.t
+	desc = soviet.22.d
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+	
+	immediate = {
+	set_politics = {
+	ruling_party = communism
+	}	
+		}
+	
+	option = {
+		name = soviet.22.a
+		custom_effect_tooltip = soviet.22.a_tt	
+	}
+}
+
+country_event = {
+	# Zusammentritt der anti-monarchistischen Duma
+	id = soviet.23
+	title = soviet.23.t
+	desc = soviet.23.d
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+	
+	option = {
+		# Schicksal akzeptieren
+		name = soviet.23.a
+		custom_effect_tooltip = soviet.23.a_tt
+		add_ideas = enemy_duma
+	}
+	
+	option = {
+	# duma auflösen
+		name = soviet.23.b
+		custom_effect_tooltip = soviet.23.b_tt
+		set_politics = {
+		elections_allowed = no
+		}
+		add_ideas = revolutionary_mood
+		hidden_effect = {
+		country_event = { id = soviet.24 days = 7 }
+		}	
+		}
+	}
+
+
+country_event = {
+	# Ultimatum der Liberalen, Rücktrittsangebote
+	id = soviet.24
+	title = soviet.24.t
+	desc = soviet.24.d
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+	
+	immediate = {
+	remove_ideas = revolutionary_mood
+	}
+	
+	option = {
+		name = soviet.24.a
+		custom_effect_tooltip = soviet.24.a_tt
+		add_ideas = why_fight
+		add_ideas = general_strike
+		add_ideas = we_need_to_fight
+	hidden_effect = {
+	country_event = { id = soviet.20 days = 21 }
+	}
+	}
+	
+	option = {
+		name = soviet.24.b
+		custom_effect_tooltip = soviet.24.b_tt
+	set_politics = {
+	ruling_party = democracy
+	}
+}
+}
+
+country_event = {
+	# bolschewiki melt together
+	id = soviet.25
+	title = soviet.25.t
+	desc = soviet.25.d
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+	
+	option = {
+	# We will get them nontheless
+		name = soviet.25.a
+		custom_effect_tooltip = soviet.25.a_tt
+		add_ideas = melted_bolschewiki		
+	}
+}
+
+country_event = {
+	id = soviet.26
+	title = soviet.26.t
+	desc = soviet.26.d
+	picture = GFX_report_event_soldiers_marching
+
+	option = {
+		name = soviet.26.a
+		custom_effect_tooltip = soviet.26.a_tt
+		hidden_effect = {
+			remove_ideas = new_officers
+			add_timed_idea = {
+				idea = new_officers_2
+				days = 1460
+				}
+			country_event = { id = soviet.27 days = 365 }
+		}
+	}
+}
+
+country_event = {
+	id = soviet.27
+	title = soviet.26.t
+	desc = soviet.26.d
+	picture = GFX_report_event_soldiers_marching
+
+	option = {
+		name = soviet.26.a
+		custom_effect_tooltip = soviet.26.a_tt
+		hidden_effect = {
+			remove_ideas = new_officers_2
+			add_timed_idea = {
+				idea = new_officers_3
+				days = 1095
+				}
+			country_event = { id = soviet.28 days = 365 }
+		}
+	}
+}
+
+country_event = {
+	id = soviet.28
+	title = soviet.26.t
+	desc = soviet.26.d
+	picture = GFX_report_event_soldiers_marching
+
+	option = {
+		name = soviet.26.a
+		custom_effect_tooltip = soviet.26.a_tt
+		hidden_effect = {
+			remove_ideas = new_officers_3
+			add_timed_idea = {
+				idea = new_officers_4
+				days = 730
+				}
+			country_event = { id = soviet.29 days = 365 }
+		}
+	}
+}
+
+country_event = {
+	id = soviet.29
+	title = soviet.29.t
+	desc = soviet.29.d
+	picture = GFX_report_event_soldiers_marching
+
+	option = {
+		name = soviet.29.a
+		custom_effect_tooltip = soviet.29.a_tt
+		hidden_effect = {
+			remove_ideas = new_officers_4
+			}
+		}
+	}
+
+country_event = {
+	# Nur nach dem Erforschen des Fokus dazu da die 1. Generation neuer Offiziere darzustellen
+	id = soviet.30
+	title = soviet.26.t
+	desc = soviet.26.d
+	picture = GFX_report_event_soldiers_marching
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.26.a
+		custom_effect_tooltip = soviet.26.a_tt
+		}
+}
+
+
+country_event = {
+	id = soviet.34
+	title = soviet.34.t
+	desc = soviet.34.d
+	picture = GFX_report_event_soldiers_marching
+
+	trigger = {	has_idea = progressing_agriculture }
+
+	option = {
+		name = soviet.34.a
+		custom_effect_tooltip = soviet.34.a_tt
+		hidden_effect = {
+			remove_ideas = progressing_agriculture
+			add_timed_idea = {
+				idea = progressing_agriculture_2
+				days = 1460
+				}
+			country_event = { id = soviet.35 days = 365 }
+		}
+	}
+}
+
+country_event = {
+	id = soviet.35
+	title = soviet.34.t
+	desc = soviet.34.d
+	picture = GFX_report_event_soldiers_marching
+	
+	trigger = {	has_idea = progressing_agriculture_2 }
+
+	option = {
+		name = soviet.34.a
+		custom_effect_tooltip = soviet.34.a_tt
+		hidden_effect = {
+			remove_ideas = progressing_agriculture_2
+			add_timed_idea = {
+				idea = progressing_agriculture_3
+				days = 1095
+			}
+			country_event = { id = soviet.36 days = 365 }
+		}
+	}
+}
+
+country_event = {
+	id = soviet.36
+	title = soviet.34.t
+	desc = soviet.34.d
+	picture = GFX_report_event_soldiers_marching
+
+	is_triggered_only = yes
+	
+	trigger = {	has_idea = progressing_agriculture_3 }
+
+	option = {
+		name = soviet.34.a
+		custom_effect_tooltip = soviet.34.a_tt
+		hidden_effect = {
+			remove_ideas = progressing_agriculture_3
+			add_timed_idea = {
+				idea = progressing_agriculture_4
+				days = 730
+			}
+			country_event = { id = soviet.37 days = 365 }
+		}
+	}
+}
+
+country_event = {
+	id = soviet.37
+	title = soviet.34.t
+	desc = soviet.34.d
+	picture = GFX_report_event_soldiers_marching
+
+	is_triggered_only = yes
+	
+	trigger = {	has_idea = progressing_agriculture_4 }
+
+	option = {
+		name = soviet.34.a
+		custom_effect_tooltip = soviet.34.a_tt
+		hidden_effect = {
+			remove_ideas = progressing_agriculture_4
+			add_timed_idea = {
+				idea = progressing_agriculture_5
+				days = 365
+			}
+			country_event = { id = soviet.38 days = 365 }
+		}
+	}
+}
+
+country_event = {
+	id = soviet.38
+	title = soviet.34.t
+	desc = soviet.34.d
+	picture = GFX_report_event_soldiers_marching
+
+	is_triggered_only = yes
+	
+	trigger = {	has_idea = progressing_agriculture_5 }
+
+	option = {
+		name = soviet.34.a
+		custom_effect_tooltip = soviet.34.a_tt
+		hidden_effect = {
+			remove_ideas = progressing_agriculture_5
+			remove_ideas = communist_priests
+		}
+	}
+}
+
+country_event = {
+	id = soviet.32
+	title = soviet.32.t
+	desc = soviet.32.d
+	picture = GFX_report_event_soldiers_marching
+
+	is_triggered_only = yes
+	
+	trigger = {
+	has_idea = religious_army
+	communism < 35
+	monarchy < 45
+	has_war = yes
+	any_war_score < 0
+	}
+		
+	option = {
+		name = soviet.32.a
+		custom_effect_tooltip = soviet.32.a_tt
+		remove_ideas = religious_army
+		add_ideas = angry_soldiers
+	}
+}
+
+country_event = {
+	id = soviet.33
+	title = soviet.33.t
+	desc = soviet.33.d
+	# revisit : 2 desc: Die Soldaten weigern sich zu kämpfen, sie wollen nicht in den Tod gehetzt werden
+	picture = GFX_report_event_soldiers_marching
+
+	is_triggered_only = yes
+	
+	trigger = {
+	has_idea = religious_army
+	communism > 35
+	}
+		
+	option = {
+		name = soviet.33.a
+		custom_effect_tooltip = soviet.33.a_tt
+		remove_ideas = religious_army
+		add_ideas = bolschewik_army
+	}
+}
+
+# Achtung : Events 34 bis 38 sind schon vergeben !!!!!!!!!!!!!!!!!!!
+
+
+
+
