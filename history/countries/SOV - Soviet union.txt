@@ -2,12 +2,12 @@
 
 oob = "SOV_1910"
 
-set_research_slots = 3
+set_research_slots = 2
 
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
-	infantry_weapons_1 = 1
+	infantry_weapons1 = 1
 	tech_recon = 1
 	tech_support = 1		
 	tech_engineers = 1
@@ -35,33 +35,33 @@ set_politics = {
 		democratic = { 
 			popularity = 20
 		}
-
-		fascism = {
-			popularity = 0
-		}
 		
 		communism = {
-			popularity = 5
+			popularity = 25
 		}
 
-		Monarchy = {
-			popularity = 65
+		monarchy = {
+			popularity = 55
 		}
 
 		neutrality = {
-			popularity = 10
+			popularity = 0
 		}
 	}
 	
-	ruling_party = Monarchy
-	last_election = "1909.7.1"
+	ruling_party = monarchy
+	last_election = "1905.7.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 add_ideas = {
-	limited_conscription
-	low_economic_mobilisation
+	hate_of_the_peasants
+	inefficient_bureaucracy
+	aristocratic_army_corps
+	raising_workers
+	new_bourgeoisie
+	army_problems
 }
 
 give_guarantee = YUG
@@ -74,7 +74,7 @@ create_country_leader = {
 	expire = "1965.3.1"
 	ideology = imperialism
 	traits = {
-		stout_defender
+		weak_autocrat
 	}
 }
 
@@ -105,12 +105,12 @@ add_namespace = {
 	type = unit_leader
 }
 
-create_corps_commander = {
-	name = "Georgy Zhukov"
+create_field_marshal = {
+	name = "Aleksei Brusilov"
 	id = 410
-		picture = "Portrait_Soviet_Gregory_Zhukov.dds"
-	traits = { winter_specialist panzer_leader  }
-	skill = 5
+		picture = "Portrait_Soviet_Semyon_Budyonny.dds"
+	traits = {  offensive_doctrine commando }
+	skill = 4
 
 	
 }
@@ -448,6 +448,28 @@ create_navy_leader = {
 
 ### Ship Variants ###
 
+create_equipment_variant = {
+	name = "Series I Debakrist"
+	type = submarine_1
+	upgrades = {
+		ship_reliability_upgrade = 1
+		sub_engine_upgrade = 1
+		sub_stealth_upgrade = 1
+		sub_torpedo_upgrade = 1
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "Series IX Srednyaya"
+	type = submarine_2
+	upgrades = {
+		ship_reliability_upgrade = 1
+		sub_engine_upgrade = 1
+		sub_stealth_upgrade = 1
+		sub_torpedo_upgrade = 1
+	}
+}
 
 create_equipment_variant = {
 	name = "Leningrad & Minsk Class"
@@ -461,6 +483,17 @@ create_equipment_variant = {
 }
 
 1939.1.1 = {
+
+	create_equipment_variant = {
+		name = "Series X Shchuka"
+		type = submarine_2
+		upgrades = {
+			ship_reliability_upgrade = 3
+			sub_engine_upgrade = 3
+			sub_stealth_upgrade = 3
+			sub_torpedo_upgrade = 3
+		}
+	}
 
 	create_equipment_variant = {
 		name = "Maxim Gorky Class"
