@@ -1,4 +1,4 @@
-division_template = {
+﻿division_template = {
 	name = "Pesadijska Divizija"	# Infantry Division	
 	# Note: infantry divisions were all at low reserve levels even just prior to Axis 
 	#	invasion of 1941
