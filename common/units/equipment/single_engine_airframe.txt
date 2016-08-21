@@ -185,14 +185,14 @@ equipments = {
 		naval_strike_attack = 1.5
 		naval_strike_targetting = 0.75
 		
-		build_cost_ic = 26
+		build_cost_ic = 5
 		resources = {
 			oil = 1
 			aluminium = 2
 			rubber = 1
 		}
 		
-		manpower = 20
+		manpower = 5
 	}
 
 	cv_nav_bomber_equipment = {
