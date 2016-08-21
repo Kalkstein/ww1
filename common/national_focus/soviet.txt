@@ -1,0 +1,568 @@
+# Revisit Stufen :
+# Revisit 1 : Dringend vor Veröffentlichung machen
+# Revisit 2 : Für die Localisation erinnerungen
+# Revisit 3 : Verbesserungsvorschläge für die Zeit nach der Veröffentlichung
+
+focus_tree = {
+	id = russia_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = SOV
+		}
+	}
+	
+	default = no
+	
+	focus = {
+		id = SOV_new_zemstwo_electoral_law
+		icon = GFX_goal_generic_national_unity
+		mutually_exclusive = { focus = SOV_deportations_to_siberia }
+		x = 8
+		y = 0
+		cost = 20
+		ai_will_do = {
+			factor = 0 
+		}
+		available = {
+			has_war = no
+			democratic > 0.30
+			communism > 0.30
+		}
+		completion_reward = {
+			add_political_power = 120
+		SOV = { add_timed_idea = { idea = democratic_reformers days = 365 }
+		}
+		remove_ideas = hate_of_the_peasants
+		add_ideas = distrustful_peasants
+		}
+	}	
+	
+	focus = {
+		id = SOV_restrict_ochrana_rights
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = SOV_new_zemstwo_electoral_law }
+		x = 8
+		y = 1
+		cost = 20
+		ai_will_do = {
+			factor = 0 
+		}
+		completion_reward = {
+		SOV = { add_timed_idea = { idea = hope_for_reforms days = 365 } }
+		}
+	}
+	
+	focus = {
+		id = SOV_rationalised_administration
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = SOV_restrict_ochrana_rights }
+		x = 8
+		y = 2
+		cost = 20
+		ai_will_do = {
+			factor = 0 
+		}
+		available = {
+			has_war = no
+		}
+		completion_reward = {
+		add_political_power = 120
+		remove_ideas = inefficient_bureaucracy
+		SOV = { add_timed_idea = { idea = new_officials days = 2190 } }
+		hidden_effect = {
+		country_event = { id = soviet.1 days = 365 }
+			}
+		}
+	}
+	
+	focus = {
+		id = SOV_free_the_universities
+		icon = GFX_focus_research
+		prerequisite = { focus = SOV_rationalised_administration }
+		x = 8
+		y = 3
+		cost = 20
+		ai_will_do = {
+			factor = 0 
+		}
+		completion_reward = {
+		add_research_slot = 1
+		SOV = { add_timed_idea = { idea = free_universities days = 365 } }
+		}
+	}
+	
+	focus = {
+		id = SOV_new_duma_election_law
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = SOV_free_the_universities }
+		x = 8
+		y = 4
+		cost = 30
+		ai_will_do = {
+			factor = 0 
+		}
+		completion_reward = {
+		SOV = { add_timed_idea = { idea = hope_for_democracy days = 14 } }
+		remove_ideas = raising_workers
+		remove_ideas = new_bourgeoisie
+		country_event = { id = soviet.18 hours = 6 }
+		country_event = { id = soviet.19 days = 14 }
+		}			
+	}
+	
+	
+	focus = {
+		id = SOV_end_aristocratic_supremacy
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = SOV_new_duma_election_law }
+		x = 8
+		y = 5
+		cost = 20
+		ai_will_do = {
+			factor = 0 
+		}
+		completion_reward = {
+		remove_ideas = distrustful_peasants
+		add_ideas = free_peasants
+		}
+	}
+	
+	focus = {
+		id = SOV_hire_poor_peasants
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = SOV_end_aristocratic_supremacy }
+		x = 6
+		y = 6
+		cost = 20
+		ai_will_do = {
+			factor = 0 
+		}
+		completion_reward = {
+		add_ideas = rural_exodus
+		}
+	}
+	
+	focus = {
+		id = SOV_integrate_the_bourgeoisie
+		icon = GFX_goal_generic_major_alliance
+		prerequisite = { focus = SOV_end_aristocratic_supremacy }
+		x = 8
+		y = 6
+		cost = 20
+		ai_will_do = {
+			factor = 0 
+		}
+		completion_reward = {
+		add_ideas = satisfied_bourgeoisie
+		# Revisit : Berater hinzufügen
+		}
+	}
+	
+	focus = {
+		id = SOV_modernize_agriculture
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = SOV_integrate_the_bourgeoisie }
+		x = 8
+		y = 7
+		cost = 20
+		ai_will_do = {
+			factor = 0 
+		}
+		completion_reward = {
+		add_ideas = communist_priests
+		remove_ideas = free_peasants
+		SOV = { add_timed_idea = { idea = progressing_agriculture days = 1825 } }
+		hidden_effect = {
+		country_event = { id = soviet.35 days = 365 }
+		}
+		}
+	}
+	
+	focus = {
+		id = SOV_deportations_to_siberia
+		icon = GFX_goal_generic_demand_territory
+		mutually_exclusive = { focus = SOV_new_zemstwo_electoral_law }
+		x = 10
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+		SOV = { add_timed_idea = { idea = imprisoned_communists days = 365 } }
+		hidden_effect = {
+		country_event = { id = soviet.7 days = 7 }
+		}
+		}
+	}
+	
+
+	focus = {
+		id = SOV_weaken_the_zemstwos
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = SOV_deportations_to_siberia }
+		x = 10
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+		add_ideas = extended_conscription
+		hidden_effect = {
+		SOV = { add_timed_idea = { idea = backstabbed_peasants days = 365 } }
+		}
+		# Revisit : Event Peasants State einfügen
+		}
+	}
+	
+	focus = {
+		id = SOV_sharpened_censorship
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = SOV_weaken_the_zemstwos }
+		x = 10
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+		add_ideas = forbidden_critic
+		hidden_effect = {
+		country_event = { id = soviet.9 days = 1 }
+		country_event = { id = soviet.8 days = 4 }
+		}
+		if = {
+		limit = { has_war = yes }
+		hidden_effect = {
+		country_event = { id = soviet.25 days = 7 }}
+		}
+	}	
+}
+	
+	focus = {
+		id = SOV_strenghten_country_nobility
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = SOV_sharpened_censorship }
+		x = 10
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+		add_ideas = loyal_nobility
+		hidden_effect = {
+		country_event = { id = soviet.10 days = 14 }
+		}
+		}
+	}
+	
+	focus = {
+		id = SOV_dissolve_duma
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = SOV_strenghten_country_nobility }
+		x = 10
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+			has_war = yes
+		}
+		completion_reward = {
+		add_ideas = unlimited_tsar_power
+		if = {
+		limit = { monarchy < 0.3 }
+		hidden_effect = {
+			country_event = { id = soviet.12 days = 14 }
+		}				
+		}
+		if = {
+		limit = { monarchy > 0.3 }
+		hidden_effect = {
+		country_event = { id = soviet.11 days = 14 }				
+			}
+		}
+	}	
+}	
+	
+	focus = {
+		id = SOV_suppress_subversive_parties
+		icon = GFX_goal_anti_comintern_pact
+		prerequisite = { focus = SOV_dissolve_duma }
+		x = 10
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+		has_war = yes }
+		completion_reward = {
+		add_ideas = purged_communists
+		hidden_effect = {
+				country_event = { id = soviet.14 hours = 6 }
+		}
+		if = {
+		limit = { has_war = yes
+		any_war_score < 5 }
+		hidden_effect = {
+				country_event = { id = soviet.11 days = 2 }
+				# Revisit : Hier extra Event einfügen für kommunistischen Putsch einfügen, damit neuer Text reinkann
+				}
+		}		
+		# Revisit : hier die nationalen Aufstände einfügen:
+		# Ukraine, Polen, Finnen
+		# Möglichkeit einfügen Narodniki zu verfolgen, endet in weniger kommunistischer Beliebtheit, aber mit Streiks und Bauernaufstand
+	}
+}	
+	
+		
+	focus = {
+		id = SOV_rule_of_terror
+		icon = GFX_goal_generic_CAS
+		prerequisite = { focus = SOV_suppress_subversive_parties }
+		available = {
+		has_war = yes }
+		x = 10
+		y = 6
+		cost = 1
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+		remove_ideas = general_strike
+		hidden_effect = {
+		country_event = { id = soviet.15 days = 1 }
+		country_event = { id = soviet.16 days = 5 }
+		}
+		if = {
+		limit = { monarchy < 0.3 }
+				hidden_effect = {
+				country_event = { id = soviet.12 days = 5 }
+				}
+			}
+		}	
+	}
+
+	focus = {
+		id = SOV_draft_resistent_peasants
+		icon = GFX_goal_generic_CAS
+		prerequisite = { focus = SOV_rule_of_terror }
+		available = {
+		has_war = yes }
+		x = 10
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+		add_ideas = drafting_resistant_peasants
+		hidden_effect = {
+		country_event = { id = soviet.15 days = 1 }
+		country_event = { id = soviet.17 days = 14 }
+		}	
+		if = {
+		limit = {
+		communism < 35 }		
+		hidden_effect = { country_event = { id = soviet.12 days = 14 } }
+		}
+		if = {
+		limit = { communism > 35 }
+		hidden_effect = {
+		country_event = { id = soviet.11 days = 14 } }
+		}
+		# revisit 3 : die ganzen putschereignisse hier eventuell noch spezieller zugeschnitten machen
+	}
+	}
+
+focus = {
+		id = SOV_easier_equipment
+		icon = GFX_goal_generic_axis_build_infantry
+		x = 2
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				army_experience = 10
+				name = infantry_weapons_bonus
+				bonus = 0.5
+				uses = 1
+				category = infantry_weapons
+		}
+	}
+	}
+
+focus = {
+		id = SOV_mass_army
+		icon = GFX_goal_generic_axis_build_infantry
+		prerequisite = { focus = SOV_easier_equipment }
+		x = 2
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_ideas = russian_mass_army
+		}
+	}
+
+focus = {
+		id = SOV_draft_peasant_childs
+		icon = GFX_goal_generic_axis_build_infantry
+		prerequisite = { focus = SOV_mass_army }
+		x = 2
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_ideas = drafted_peasant_childs
+		}
+	}
+
+focus = {
+		id = SOV_religious_indoctrination
+		icon = GFX_goal_generic_axis_build_infantry
+		prerequisite = { focus = SOV_draft_peasant_childs }
+		x = 2
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_ideas = religious_army
+		if = {
+		limit = {
+		has_war = yes
+		any_war_score < 0
+		communism < 35
+		monarchy < 45
+		}
+		hidden_effect = {
+			country_event = { id = soviet.32 days = 14 }
+		}
+		}
+		if = {
+		limit = { communism > 35 }
+		hidden_effect = {
+			country_event = { id = soviet.33 days = 14 }
+		}
+		}
+		}
+	}
+	
+	focus = {
+		id = SOV_defence_of_ruthenia
+		icon = GFX_goal_generic_axis_build_infantry
+		prerequisite = { focus = SOV_religious_indoctrination }
+		x = 2
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available = {
+		has_war = yes
+		any_war_score < -14
+		monarchy > 0.45
+		communism < 0.35
+		}
+		completion_reward = {
+			add_ideas = ruthenia_defence
+		}
+	}
+	
+# Moderne Armee Treee
+	
+focus = {
+		id = SOV_study_the_russo_japanese_war
+		icon = GFX_goal_generic_small_arms
+		x = 4
+		y = 6
+		cost = 20
+		ai_will_do = {
+			factor = 10
+		}
+		
+		prerequisite = { focus = SOV_end_aristocratic_supremacy }
+		
+		completion_reward = {
+		add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+			SOV = { add_timed_idea = { idea = thoughts_about_incompetence days = 365 }	
+		}
+	}
+
+focus = {
+		id = SOV_new_officers_corps
+		icon = GFX_goal_generic_small_arms
+		x = 4
+		y = 6
+		cost = 20
+		ai_will_do = {
+			factor = 20
+		}
+		
+		prerequisite = { focus = SOV_end_aristocratic_supremacy }
+		
+		completion_reward = {
+		SOV = { add_timed_idea = { idea = new_officers days = 1825 } }
+		hidden_effect = {
+		country_event = { id = soviet.26 days = 365 }
+		country_event = { id = soviet.30 days = 365 }
+		}
+		}
+	}	
+	
+focus = {
+		id = SOV_new_production_techniques
+		icon = GFX_goal_generic_small_arms
+		x = 4
+		y = 7
+		cost = 20
+		ai_will_do = {
+			factor = 20
+		}
+		
+		prerequisite = { focus = SOV_new_officers_corps }
+		
+		completion_reward = {
+		add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.5
+				uses = 2
+				category = infantry_weapons
+				category = artillery
+			}
+		add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.5
+				uses = 2
+				category = infantry_weapons
+				category = artillery
+			}	
+		}
+	}
+	
+}
+
+			
+			
