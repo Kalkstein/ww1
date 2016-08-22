@@ -1034,6 +1034,9 @@ focus_tree = {
 		x = 25
 		y = 2
 		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
 		completion_reward = {
 			AUS = {
 				add_opinion_modifier = {
@@ -1211,6 +1214,7 @@ focus_tree = {
 		y = 2
 		cost = 10
 		completion_reward = {
+			remove_from_faction = AUS
 			AUS = {
 				add_opinion_modifier = {
 					target = ROOT
@@ -1351,6 +1355,4 @@ focus_tree = {
 			add_ideas = GER_burgfrieden_idea
 		}
 	}
-
-	#### END ####
 }
