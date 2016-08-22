@@ -1,72 +1,66 @@
 bookmarks = {
 	bookmark = {
-		name = "GATHERING_STORM_NAME"
-		desc = "GATHERING_STORM_DESC"
-		date = 1936.1.1.12
-		picture = "GFX_select_date_1936"
+		name = "BATTEN_DOWN_THE_HATCHES_NAME"
+		desc = "BATTEN_DOWN_THE_HATCHES_DESC"
+		date = 1910.4.10.12
+		picture = "GFX_select_date_1910.dds"
 		default_country = "GER"
 		default = yes
 		
 		"FRA"={
-			history = "FRA_GATHERING_STORM_DESC"
+			history = "FRA_BATTEN_DOWN_THE_HATCHES_DESC"
 			ideology = democratic
 			ideas = {
-				FRA_victors_of_wwi
 				FRA_disjointed_government
-				FRA_protected_by_the_maginot_line
 			}
 		}
-		"USA"={
-			history = "USA_GATHERING_STORM_DESC"
+		"AUS"={
+			history = "AUS_BATTEN_DOWN_THE_HATCHES_DESC"
 			ideology = democratic
 			ideas = {
-				home_of_the_free
-				great_depression
-				undisturbed_isolation
+				ethnic_tensions
 			}
 		}
 		"ENG"={
-			history = "ENG_GATHERING_STORM_DESC"
+			history = "ENG_BATTEN_DOWN_THE_HATCHES_DESC"
 			ideology = democratic
 			ideas = {
 				stiff_upper_lip
-				ENG_the_war_to_end_all_wars
 				george_v
 			}
 		}
 		"GER"={
-			history = "GER_GATHERING_STORM_DESC"
+			history = "GER_BATTEN_DOWN_THE_HATCHES_DESC"
 			ideology = fascism
 			ideas = {
-
+				
 			}
 		}
 		"ITA"={
-			history = "ITA_GATHERING_STORM_DESC"
+			history = "ITA_BATTEN_DOWN_THE_HATCHES_DESC"
 			ideology = fascism
 			ideas={
 				vittoria_mutilata
 				victor_emmanuel
 			}			
 		}
-		"JAP"={
-			history = "JAP_GATHERING_STORM_DESC"
-			ideology = fascism
+		"TUR"={
+			history = "TUR_BATTEN_DOWN_THE_HATCHES_DESC"
+			ideology = neutrality
 			ideas={
-				state_shintoism
+				
 			}			
 		}
 		"SOV"={
-			history = "SOV_GATHERING_STORM_DESC"
+			history = "SOV_BATTEN_DOWN_THE_HATCHES_DESC"
 			ideology = communism
 			ideas = {
-				trotskyite_plot
-				home_of_revolution
+				
 			}
 		}
 
 		"---"={
-			history = "OTHER_GATHERING_STORM_DESC"
+			history = "OTHER_BATTEN_DOWN_THE_HATCHES_DESC"
 		}
 
 		effect = {
