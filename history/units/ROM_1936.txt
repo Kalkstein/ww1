@@ -210,7 +210,7 @@ units = {
 	# Corp 6 Armata
 	division = {
 		name = "Divizia 16 Infanterie"
-		location = 6682
+		location = 657
 		division_template = "Divizia Infanterie"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
@@ -218,7 +218,7 @@ units = {
 	}
 	division = {
 		name = "Divizia 17 Infanterie"
-		location = 6697
+		location = 3630
 		division_template = "Divizia Infanterie"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
@@ -226,7 +226,7 @@ units = {
 	}
 	division = {
 		name = "Divizia 18 Infanterie"
-		location = 3696
+		location = 657
 		division_template = "Divizia Infanterie"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
@@ -234,7 +234,7 @@ units = {
 	}
 	division = {
 		name = "Divizia 20 Infanterie"
-		location = 713
+		location = 6716
 		division_template = "Divizia Infanterie"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
@@ -242,7 +242,7 @@ units = {
 	}
 	division = {
 		name = "8 Cavalerie Brigada"
-		location = 6682
+		location = 11567
 		division_template = "Cavalerie Brigada"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
@@ -252,7 +252,7 @@ units = {
 	# Corp 7 Armata
 	division = {
 		name = "Divizia 1 Infanterie"
-		location = 690
+		location = 657
 		division_template = "Divizia Infanterie"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
@@ -260,7 +260,7 @@ units = {
 	}
 	division = {
 		name = "Divizia 4 Infanterie"
-		location = 690
+		location = 674
 		division_template = "Divizia Infanterie"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
@@ -268,7 +268,7 @@ units = {
 	}
 	division = {
 		name = "Divizia 19 Infanterie"
-		location = 690
+		location = 687
 		division_template = "Divizia Infanterie"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
@@ -278,7 +278,7 @@ units = {
 	# Corp Alpinisti
 	division = {
 		name = "1 Munte Brigada Mixt"
-		location = 6711
+		location = 11689
 		division_template = "Munte Brigada"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
@@ -286,7 +286,7 @@ units = {
 	}
 	division = {
 		name = "2 Munte Brigada Mixt"
-		location = 6711
+		location = 3728
 		division_template = "Munte Brigada"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
@@ -294,7 +294,7 @@ units = {
 	}
 	division = {
 		name = "3 Munte Brigada Mixt"
-		location = 6711
+		location = 11672
 		division_template = "Munte Brigada"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
@@ -302,7 +302,7 @@ units = {
 	}
 	division = {
 		name = "4 Munte Brigada Mixt"
-		location = 6711
+		location = 11655
 		division_template = "Munte Brigada"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
