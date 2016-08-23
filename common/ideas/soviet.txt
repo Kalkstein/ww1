@@ -1218,7 +1218,205 @@ new_officers_4 = {
 				motorized_equipment = -0.06
 				air_equipment = -0.06
 				}
-		}		
+		}
 
+modernizing_army = {
+				
+			removal_cost = -1
+			
+			allowed = {
+				always = no # added via focus
+			}
+					
+				allowed_civil_war = {
+					has_government = monarchism
+					has_government = democratic
+					has_government = communism
+					}
+			
+			picture = officers_purged
+			
+			modifier = {
+				army_org_factor = -0.2
+				army_morale_factor = -0.15
+				army_defence_factor = -0.2
+				army_attack_factor = -0.15
+				experience_loss_factor = 0.5
+				supply_consumption_factor = 0.2
+			}
+		}	
+			
+modernizing_army_2 = {
+				
+			removal_cost = -1
+			
+			allowed = {
+				always = no # added via focus
+			}
+					
+				allowed_civil_war = {
+					has_government = monarchism
+					has_government = democratic
+					has_government = communism
+					}
+			
+			picture = officers_purged
+			
+			modifier = {
+				army_org_factor = -0.16
+				army_morale_factor = -0.12
+				army_defence_factor = -0.16
+				army_attack_factor = -0.12
+				experience_loss_factor = 0.40
+				supply_consumption_factor = 0.16
+			}
+		}
+
+modernizing_army_3 = {
+				
+			removal_cost = -1
+			
+			allowed = {
+				always = no # added via focus
+			}
+					
+				allowed_civil_war = {
+					has_government = monarchism
+					has_government = democratic
+					has_government = communism
+					}
+			
+			picture = officers_purged
+			
+			modifier = {
+				army_org_factor = -0.12
+				army_morale_factor = -0.09
+				army_defence_factor = -0.12
+				army_attack_factor = -0.09
+				experience_loss_factor = 0.30
+				supply_consumption_factor = 0.12
+			}
+		}
+
+modernizing_army_4 = {
+				
+			removal_cost = -1
+			
+			allowed = {
+				always = no # added via focus
+			}
+					
+				allowed_civil_war = {
+					has_government = monarchism
+					has_government = democratic
+					has_government = communism
+					}
+			
+			picture = officers_purged
+			
+			modifier = {
+				army_org_factor = -0.08
+				army_morale_factor = -0.06
+				army_defence_factor = -0.08
+				army_attack_factor = -0.06
+				experience_loss_factor = 0.20
+				supply_consumption_factor = 0.08
+			}
+		}
+
+modernizing_army_5 = {
+				
+			removal_cost = -1
+			
+			allowed = {
+				always = no # added via focus
+			}
+					
+				allowed_civil_war = {
+					has_government = monarchism
+					has_government = democratic
+					has_government = communism
+					}
+			
+			picture = officers_purged
+			
+			modifier = {
+				army_org_factor = -0.04
+				army_morale_factor = -0.03
+				army_defence_factor = -0.04
+				army_attack_factor = -0.03
+				experience_loss_factor = 0.10
+				supply_consumption_factor = 0.04
+			}
+		}
+
+loyal_officers = {
+				
+			removal_cost = -1
+			
+			allowed = {
+				always = no # added via focus
+			}
+					
+				allowed_civil_war = {
+					has_government = monarchism
+					has_government = democratic
+					has_government = communism
+				# revisit 3 : den neuen Staaten im Fokus Tree ein Werkzeug geben diesen Effekt zu entfernen "Offizierssäuberung"	
+					}
+			
+			picture = officers_purged
+			
+			modifier = {
+				monarchy_drift = 0.03
+			}
+		}
+		
+foreign_officers = {
+				
+		removal_cost = -1
+			
+		allowed = {
+			always = no # added via focus
+		}
+					
+		allowed_civil_war = {
+			has_government = monarchism
+			has_government = democratic	
+		}
+			
+		picture = officers_purged
+			
+			research_bonus = {
+			land_doctrine = 0.15
+		}
+	}		
+		
+trained_army = {
+				
+			removal_cost = -1
+			
+			allowed = {
+				always = no # added via focus
+			}
+					
+				allowed_civil_war = {
+					has_government = monarchism
+					has_government = democratic
+					has_government = communism
+# revisit 3 : den neuen Staaten im Fokus Tree ein Werkzeug geben diesen Effekt zu entfernen "Soldatensäuberung"					
+					}
+			
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				monarchy_drift = 0.02
+				army_attack_factor = 0.10
+				army_defence_factor = 0.10
+				army_org_factor = 0.10
+				experience_loss_factor = -0.2
+				training_time_army_factor = 0.20
+			}
+		}		
 }
 }			
