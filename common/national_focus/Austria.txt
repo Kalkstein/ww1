@@ -788,16 +788,15 @@ focus_tree = {
 				}
 			}
 		}
-	}
-	
-	
+	}	
 
 	focus = {
 		id = AUS_build_alpine_defences
 		icon = GFX_goal_generic_fortify_city
-		prerequisite = { focus = AUS_export_harbours }
-		prerequisite = { focus = AUS_naval_development }
-		x = 1
+		prerequisite = { focus = AUS_export_harbours
+						 focus = AUS_naval_development }
+		mutually_exclusive = { focus = AUS_build_russian_defences }
+		x = 0
 		y = 9
 		cost = 10
 		completion_reward = {
@@ -853,9 +852,70 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = AUS_give_minorities_rights
+		id = AUS_build_russian_defences
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = AUS_export_harbours
+						 focus = AUS_naval_development }
+		mutually_exclusive = { focus = AUS_build_alpine_defences }
+		x = 2
+		y = 9
+		cost = 10
+		completion_reward = {
+			39 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 9598
+					instant_build= yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 6631
+					instant_build= yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 6675
+					instant_build= yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 11598
+					instant_build= yes
+				}
+			}
+			153 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 671
+					instant_build= yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 6673
+					instant_build= yes
+				}
+			}
+			736 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 11595
+					instant_build= yes	
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = AUS_experimental_flights
 		icon = GFX_goal_support_democracy
-		x = 6
+		x = 5
 		y = 0
 		cost = 10 
 		
@@ -863,9 +923,62 @@ focus_tree = {
 			factor = 5
 		}
 		
-		mutually_exclusive = { focus = AUS_support_monarchy }
-		available = {
+		completion_reward = {
+			
 		}
+	}
+	
+	focus = {
+		id = AUS_ocean_going_navy
+		icon = GFX_goal_support_democracy
+		x = 7
+		y = 0
+		cost = 10 
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = AUS_capital_railways
+		icon = GFX_goal_support_democracy
+		x = 9
+		y = 0
+		cost = 10 
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	
+	
+	
+	focus = {
+		id = AUS_give_minorities_rights
+		icon = GFX_goal_support_democracy
+		icon = GFX_goal_support_democracy
+		prerequisite = { focus = AUS_ocean_going_navy }
+		prerequisite = { focus = AUS_experimental_flights }
+		mutually_exclusive = { focus = AUS_support_monarchy }
+		x = 6
+		y = 1
+		cost = 10 
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		
+
 		
 		completion_reward = {
 			add_ideas = democratic_influence
@@ -885,7 +998,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = AUS_give_minorities_rights }
 		x = 6
-		y = 1
+		y = 2
 		cost = 10
 		#ai_will_do = {
 		#	factor = 2
@@ -906,7 +1019,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = AUS_peacekeeping_measures }
 		x = 6
-		y = 2
+		y = 3
 		cost = 10
 		#ai_will_do = {
 		#	factor = 2
@@ -927,7 +1040,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = AUS_peacekeeping_measures_2 }
 		x = 5
-		y = 3
+		y = 4
 		cost = 10	
 		#ai_will_do = {
 		#	factor = 2
@@ -959,11 +1072,11 @@ focus_tree = {
 		icon = GFX_goal_generic_demand_territory
 		prerequisite = { focus = AUS_peacekeeping_measures_2 }
 		x = 7
-		y = 3
+		y = 4
 		cost = 10
 		
 		ai_will_do = {
-			factor = 10
+			factor = 0
 		}
 		
 		mutually_exclusive = { focus = AUS_improve_relations_to_the_Entente }
@@ -978,18 +1091,35 @@ focus_tree = {
 	}
 	
 	focus = {
+		id = AUS_reconciliation_with_russia
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = AUS_improve_relations_to_the_Entente
+						 focus = AUS_establish_our_own_alliance }
+		x = 6
+		y = 5
+		cost = 10
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
 		id = AUS_support_monarchy
 		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = AUS_capital_railways }
+		prerequisite = { focus = AUS_ocean_going_navy }
+		mutually_exclusive = { focus = AUS_give_minorities_rights }
 		x = 8
-		y = 0
+		y = 1
 		cost = 10
 		
 		ai_will_do = {
 			factor = 10
-		}
-		
-		mutually_exclusive = { focus = AUS_give_minorities_rights }
-		available = {
 		}
 		
 		completion_reward = {
@@ -1002,7 +1132,7 @@ focus_tree = {
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = AUS_support_monarchy }
 		x = 8
-		y = 1
+		y = 2
 		cost = 10
 		bypass = {
 			107 = { is_owned_by = AUS }
@@ -1025,7 +1155,7 @@ focus_tree = {
 		icon = GFX_goal_demand_sudetenland
 		prerequisite = { focus = AUS_claims_the_Balkan }
 		x = 8
-		y = 2
+		y = 3
 		cost = 10
 		bypass = {
 			160 = { is_owned_by = AUS }

@@ -49,8 +49,7 @@ focus_tree = {
 		y = 2
 		cost = 10
 		completion_reward = {
-			conscription = 0.05
-			army_experince = -10
+			army_experience = 10
 			393 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -96,7 +95,7 @@ focus_tree = {
 	focus = {
 		id = USA_protect_our_borders
 		icon = GFX_goal_generic_fortify_city
-		prerequisite = { USA_focus_on_the_homefront }
+		prerequisite = { focus = USA_focus_on_the_homefront }
 		x = 2
 		y = 3
 		cost = 10
@@ -115,6 +114,7 @@ focus_tree = {
 					level = 5
 					province = 11654
 					instant_build = yes
+					}
 				}
 				393 = {
 				add_building_construction = {
@@ -124,7 +124,6 @@ focus_tree = {
 					instant_build = yes
 					}
 				}
-			}
 		}	
 	}
 	focus = {
@@ -164,7 +163,6 @@ focus_tree = {
 		y = 2
 		cost = 10
 		completion_reward = {
-			conscription = 0.05
 			army_experience = 50
 			set_rule = { can_send_volunteers = yes }
 			360 = {
@@ -189,7 +187,7 @@ focus_tree = {
 	focus = { 
 		id = USA_atlantic_reinforcment
 		icon = GFX_goal_generic_amphibious_assault
-		prerequisite = { USA_overseas_soldiers }
+		prerequisite = {focus = USA_overseas_soldiers }
 		x = 0
 		y = 3
 		cost = 10
@@ -250,6 +248,27 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = USA_warriors_of_freedom
+		icon = GFX_goal_support_democracy
+		prerequisite = { focus = USA_western_front focus = USA_manifest_destiny }
+		available = {
+			OR = {
+				has_war_with = GER
+				has_war_with = AUS
+				has_war_with = FRA
+				has_war_with = ENG
+			}
+		}
+		x = 1
+		y = 5
+		cost = 10
+		completion_reward = {
+			add_ideas = warriors_of_freedom
+			army_experience = 25
+			}
+		}
+	
+	focus = {
 	id = USA_develop_rock_island
 	icon = GFX_goal_generic_army_artillery
 	available = {
@@ -280,6 +299,7 @@ focus_tree = {
 	focus = {
 	id = USA_support_private_industry
 	icon = GFX_goal_generic_production
+	mutually_exclusive = { focus = USA_military_complex_development }
 	prerequisite = { focus = USA_develop_rock_island }
 	x = 4
 	y = 1
@@ -291,16 +311,170 @@ focus_tree = {
 				type = industrial_complex
 				level = 2
 				instant_build = yes
+				}
 			}
-		}
 		375 = {
-			add_extra_state_shared_building_slots = 2
+			add_extra_state_shared_building_slots = 3
 			add_building_construction = {
 				type = industrial_complex
 				level = 3
 				instant_build = yes
+				}
+			}
+		}	
+	}
+	focus = {
+	id = USA_military_complex_development
+	icon = GFX_goal_generic_small_arms
+	mutually_exclusive = { focus = USA_support_private_industry }
+	prerequisite = { focus = USA_develop_rock_island }
+	x = 6
+	y = 1
+	cost = 10
+	completion_reward = {
+	add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.5
+				uses = 3
+				category = infantry_weapons
+				category = artillery
+			}
+			373 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}			
+		}
+	}
+	focus = {
+	id = USA_mass_industrialism 
+	icon = GFX_goal_generic_construct_mil_factory
+	prerequisite = { focus = USA_support_private_industry }
+	x = 4 
+	y = 2 
+	cost = 10 
+	completion_reward = {
+		add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 2
+				category = industry
 			}
 		}
-	}	
-}
+	}
+	focus = {
+	id = USA_infantry_tactics_development
+	icon = GFX_goal_generic_special_forces
+	prerequisite = { focus = USA_military_complex_development }
+	x = 6 
+	y = 2
+	cost = 10
+	completion_reward = {
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 0.75
+				uses = 2
+				technology = tech_mountaineers
+				technology = tech_mountaineers2	
+			}
+			373 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}			
+		}
+	}
+	focus = {
+	id = USA_birth_of_texas_fracking
+	icon = GFX_goal_generic_production
+	prerequisite = { focus = USA_mass_industrialism }
+	available = {
+	USA = {
+		controls_state = 662
+		}
+	}		
+	x = 4
+	y = 3
+	cost = 10	
+	completion_reward = {
+		add_resource = {
+			type = oil
+			amount = 16
+			state = 375
+			}
+		375 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+	id = USA_support_US_steel
+	icon = GFX_goal_generic_construct_civ_factory
+	prerequisite = { focus = USA_Infantry_Tactics_Development }
+	available = {
+	USA = {
+		controls_state = 360
+		}
+	}		
+	x = 6
+	y = 3
+	cost = 10
+	completion_reward = {
+		add_resource = {
+			type = steel
+			amount = 12
+			state = 360
+			}
+		360 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+	id = USA_found_the_airforce 
+	icon = GFX_goal_generic_build_airforce
+	prerequisite = { focus = USA_birth_of_texas_fracking focus = USA_support_US_steel }
+	x = 5 
+	y = 4
+	cost = 10
+	completion_reward = {
+		air_experience = 25
+			360 = {
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}	
+			375 = {
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}	
+		add_tech_bonus = {
+			name = air_doc_bonus
+			bonus = 0.5
+			uses = 1
+			category = air_doctrine
+			}
+		}
+	}
 }
