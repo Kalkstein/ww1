@@ -1,0 +1,249 @@
+﻿###########################
+# Bulgarian Events
+###########################
+
+add_namespace = bulgaria
+
+country_event = {
+    id = bulgaria.1 
+	title = bulgaria.1.t 
+	desc = bulgaria.1.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = bulgaria.1.a	
+		ai_chance = { factor = 90 }
+		add_political_power = -10
+		BUL = {
+			add_tech_bonus = {
+					name = infantry_weapons_bonus
+					bonus = 0.5
+					uses = 1 
+					technology = infantry_weapons
+				}
+				add_tech_bonus = {
+					name = armor_bonus
+					bonus = 0.3
+					uses = 2
+					category = armor
+				}
+		}
+	}
+	
+	option = {
+		name = bulgaria.1.b	
+		ai_chance = { factor = 10 }
+	}
+}
+
+country_event = {
+    id = bulgaria.2 
+	title = bulgaria.2.t 
+	desc = bulgaria.2.d 
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+	
+	option = {
+	    name = bulgaria.2.a 
+		ai_chance = { factor = 95 }
+	    add_to_faction = BUL
+		BUL = {
+		    country_event = { id = bulgaria.5 days = 1 }
+			}
+		hidden_effect = { news_event = { hours = 24 id = news.241 } }
+	}
+	
+	option = {
+	    name = bulgaria.2.b 
+		ai_chance = { factor = 5 }
+		BUL = {
+		    country_event = { id = bulgaria.6 days = 1 }
+			add_opinion_modifier = { target = FRA modifier = BUL_rejected_entente }
+			}
+	}
+}
+
+country_event = {
+    id = bulgaria.3 
+	title = bulgaria.3.t 
+	desc = bulgaria.3.d 
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+	    name = bulgaria.3.a 
+		ai_chance = { factor = 100 } 
+		BUL = {
+		    add_tech_bonus = {
+					name = industry_bonus
+					bonus = 0.5
+				    uses = 1
+					technology = industry
+				}
+				add_tech_bonus = {
+					name = electronics_bonus
+					bonus = 0.4
+					ahead_reduction = 1
+					category = electronics 
+				}
+		}
+		add_political_power = -10
+	}
+	option = {
+	    name = bulgaria.3.b 
+		ai_chance = { factor = 0 }
+		add_political_power  = 10 
+	}
+}
+
+country_event = {
+    id = bulgaria.4 
+	title = bulgaria.4.t 
+	desc = bulgaria.4.d 
+	picture = GFX_report_event_soldiers_marching
+	
+	is_triggered_only = yes 
+	
+	option = {
+	    name = bulgaria.4.a 
+		hidden_effect = { load_oob = BUL_PART_MOBILIZATION_1 }
+	}
+}
+	
+country_event = {
+    id = bulgaria.5 
+	title = bulgaria.5.t 
+	desc = bulgaria.5.d 
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+	
+	option = {
+	    name = bulgaria.5.a 
+	}
+		
+}
+
+country_event = { 
+    id = bulgaria.6 
+    title = bulgaria.6.t 
+	desc = bulgaria.6.d 
+	picture = GFX_report_event_worried_french
+	
+	is_triggered_only = yes 
+	
+	option = {
+	    name = bulgaria.6.a 
+		unlock_national_focus = BUL_own_democratic_faction
+    }
+}
+
+country_event = {
+    id = bulgaria.7
+	title = bulgaria.7.t 
+	desc = bulgaria.7.d 
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes 
+	
+	option = {
+	    name = bulgaria.7.a 
+		ai_chance = { factor = 100 }
+		BUL = {
+		    add_to_faction = ROOT
+		}
+	}
+ 	
+	option = {
+	    name = bulgaria.7.b 
+		ai_chance = {factor = 0 }
+		BUL = { country_event = { id = bulgaria.8 days = 1} }
+	}
+}
+
+country_event = {
+    id = bulgaria.8 
+    title = bulgaria.8.t 
+	desc = bulgaria.8.d 
+	picture = GFX_report_event_bunker_01
+	
+	is_triggered_only = yes 
+	
+	option = {
+	    name = bulgaria.8.a 
+	}
+}
+
+country_event = {
+    id = bulgaria.9
+	title = bulgaria.9.t 
+	desc = bulgaria.9.d 
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes 
+	
+	option = {
+	    name = bulgaria.9.a 
+		ai_chance = { factor = 55 }
+		BUL = {
+		    add_to_faction = YUG
+		}
+	}
+ 	
+	option = {
+	    name = bulgaria.9.b 
+		ai_chance = {factor = 45 }
+	}
+}
+
+country_event = {
+    id = bulgaria.10
+	title = bulgaria.10.t 
+	desc = bulgaria.10.d 
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes 
+	
+	option = {
+	    name = bulgaria.10.a 
+		ai_chance = { factor = 55 }
+		BUL = {
+		    add_to_faction = GRE
+		}
+	}
+ 	
+	option = {
+	    name = bulgaria.10.b 
+		ai_chance = {factor = 45 }
+	}
+}
+
+country_event = {
+    id = bulgaria.11 
+	title = bulgaria.11.t 
+	desc = bulgaria.11.d 
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only 
+	
+	option = {
+	    name = bulgaria.11.a 
+		ai_chance = { factor = 100 }
+		hidden_effect = { set_global_flag = BUL_russia_helps }
+	}
+	
+	option = {
+	    name = bulgaria.11.b 
+		ai_chance = { factor = 0 }
+	    BUL = {
+		    add_opinion_modifier = {
+					target = ROOT
+					modifier = BUL_russia_no_help
+				}
+		}
+	}
+}
