@@ -107,7 +107,8 @@ focus_tree = {
 					modifier = strengthened_balkan_ties #+50 opinion
 				}
 		    }
-    }	}	
+		}
+	}
 	
 	focus = {
 	    id = BUL_britain_treaty
@@ -158,9 +159,8 @@ focus_tree = {
 		    add_popularity = {
 					ideology = communism
 					popularity = 0.25
-				}
-		    
 			}
+		  }
 	}
 	
     focus = {
@@ -311,7 +311,7 @@ focus_tree = {
 
 		}
 	}
-			
+
 	focus = {
         id = BUL_serbia_communist_expansion
 	    icon = GFX_goal_generic_demand_territory
@@ -452,7 +452,6 @@ focus_tree = {
 				custom_effect_tooltip = baltic_league_without_russia
 			}
 
-		}
 	}
 	
 	focus = {
@@ -1076,6 +1075,8 @@ focus_tree = {
 	    id = BUL_war_with_ottomans
 		icon = GFX_goal_generic_occupy_states_ongoing_war
 		prerequisite = { focus = BUL_invite_serbia focus = BUL_join_entente focus = BUL_use_political_influence }
-		available = 
-			
+		available = {
+		}
+	}
+}	
 		
