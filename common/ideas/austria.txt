@@ -21,6 +21,25 @@ ideas = {
 				unity_factor = -0.33
 			}
 		}
+		
+		national_outrage
+			
+			removal_cost = -1
+	
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				has_government = monarchy
+			}
+			
+			picture = ethnic_tensions_pic
+			
+			modifier = {
+				monarchy_drift = -0.03
+			}
+		}
 	}
 
 	political_advisor = {
