@@ -24,7 +24,7 @@ news_event = {
 	fire_only_once = yes
 	
 	immediate = {
-	set_global_flag = balcan_war
+	set_global_flag = balkan_war
 	}
 	option = {
 	    name = news.1.a 
@@ -64,8 +64,8 @@ news_event = {
 	major = yes
 	
 	trigger = {
-		has_global_flag = balcan_war
-		NOT = { has_global_flag = balcan_war_over }
+		has_global_flag = balkan_war
+		NOT = { has_global_flag = balkan_war_over }
 		TUR = {
 		NOT = { has_war_with = BUL }
 		NOT = { has_war_with = SER }
@@ -77,7 +77,7 @@ news_event = {
 	}
 	
 	immediate = {
-		set_global_flag = balcan_war_over
+		set_global_flag = balkan_war_over
 	}
 	
 	option = {
