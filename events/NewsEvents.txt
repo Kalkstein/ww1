@@ -55,6 +55,60 @@ news_event = {
 	}
 }
 
+news_event = {
+	id = news.2
+	title = news.2.t
+	desc = news.2.d
+	picture = GFX_news_event_033
+	
+	major = yes
+	
+	trigger = {
+		has_global_flag = balcan_war
+		NOT = { has_global_flag = balcan_war_over }
+		TUR = {
+		NOT = { has_war_with = BUL }
+		NOT = { has_war_with = SER }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		set_global_flag = balcan_war_over
+	}
+	
+	option = {
+		name = news.64.a
+		trigger = {
+			TAG = TUR
+		}
+	}
+	option = {
+		name = news.64.b
+		trigger = { 
+		TAG = BUL
+		TAG = SER
+		TAG = GRE
+		TAG = ALB
+		TAG = MNT
+		}
+	}
+	option = {
+		name = news.64.c
+		trigger = { 
+		NOT = { TAG = BUL }
+		NOT = { TAG = ALB }
+		NOT = { TAG = GRE }
+		NOT = { TAG = MNT }
+		NOT = { TAG = YUG }
+		NOT = { TAG = TUR }
+		}
+	}
+}
+
 #Turco-Bulgarian Faction
 news_event = {
     id = news.238 
