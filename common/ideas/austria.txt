@@ -21,6 +21,7 @@ ideas = {
 				unity_factor = -0.33
 			}
 		}
+		
 	}
 
 	political_advisor = {

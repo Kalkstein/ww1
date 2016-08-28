@@ -1,0 +1,1082 @@
+focus_tree = {
+	id = bulgarian_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = BUL
+		}
+	}
+	default = no
+	
+	focus = {
+	     id = BUL_strengthen_state
+		 icon = GFX_goal_generic_national_unity
+		 x = 20
+		 y = 0
+		 cost = 10 
+		 completion_reward = {
+		     add_political_power = 100
+			 add_national_unity = 0.10
+		}
+	}	 
+	
+	focus = {
+	    id = BUL_reform_government
+		icon = GFX_goal_generic_demand_territory
+		mutually_exclusive = { focus = BUL_support_monarchy }
+		prerequisite = { focus = BUL_strengthen_state }
+		x = 15
+		y = 1
+		cost = 10
+		completion_reward = {
+		    add_ideas = BUL_reform_government #Political Power Gain +10%
+		}
+	}
+	
+	focus = {
+	    id = BUL_support_monarchy
+		icon = GFX_goal_generic_political_pressure
+		mutually_exclusive = { focus = BUL_reform_government }
+		prerequisite = { focus = BUL_strengthen_state }
+		x = 25
+		y = 1 
+		cost = 10
+		completion_reward = {
+		    add_popularity = {
+					ideology = monarchy
+					popularity = 0.2
+				}
+			add_ideas = BUL_keep_monarchy #Monarchism support +0.03 daily 
+		}
+	}
+	
+	focus = {
+	    id = BUL_turn_towards_democracy
+		icon = GFX_goal_support_democracy
+        mutually_exclusive = { focus = BUL_drift_towards_communism }
+		prerequisite = { focus = BUL_reform_government }
+		x = 12
+		y = 2
+		cost = 10 
+		completion_reward = {
+		    add_ideas = democratic_influence
+		}
+    }		
+		
+    focus = {
+	    id = BUL_drift_towards_communism
+		icon = GFX_goal_support_communism
+		mutually_exclusive = { focus = BUL_turn_towards_democracy }
+		prerequisite = { focus = BUL_reform_government }
+		x = 18
+		y = 2
+		cost = 10
+		completion_reward = {
+		    add_ideas = communist_influence 
+		}
+	}
+
+	focus = {
+	    id = BUL_strengthen_ties
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = BUL_support_monarchy }
+		x = 25
+		y = 2
+		cost = 10
+		completion_reward = {
+		    GRE = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = strengthened_balkan_ties #+50 opinion
+				}
+			}
+		    
+			MNT = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = strengthened_balkan_ties #+50 opinion
+				}
+			}
+				
+		    YUG = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = strengthened_balkan_ties #+50 opinion
+				}
+		    }
+		}
+	}
+	
+	focus = {
+	    id = BUL_britain_treaty
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = BUL_turn_towards_democracy }
+		cancel = { 
+			OR = {
+				has_war_with = ENG
+				NOT = { country_exists = ENG }
+			} 
+	    }
+		bypass = { 
+			NOT = { country_exists = ENG }
+		}
+		x = 12 
+		y = 3
+		cost = 10
+		completion_reward = {
+		    ENG = {
+				country_event = { id = bulgaria.1 days = 1 }
+				custom_effect_tooltip = needs_approval
+			}
+			effect_tooltip = {
+				add_tech_bonus = {
+					name = infantry_weapons_bonus
+					bonus = 0.5
+					uses = 1 
+					technology = infantry_weapons
+				}
+				add_tech_bonus = {
+					name = armor_bonus
+					bonus = 0.3
+					uses = 2
+					category = armor
+				}
+			}
+		}
+	}
+	
+	focus = {
+	    id = BUL_communist_power
+		icon = GFX_goal_generic_military_deal
+		prerequisite = { focus = BUL_drift_towards_communism }
+		x = 18 
+		y = 3
+		cost = 10
+		completion_reward = {
+		    add_popularity = {
+					ideology = communism
+					popularity = 0.25
+			}
+		  }
+	}
+	
+    focus = {
+        id = BUL_push_claims
+	    icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = BUL_strengthen_ties }
+		mutually_exclusive = { focus = BUL_improve_tur_relations }
+		available = {
+			is_puppet = no		
+			184 = {
+				owner = {
+					original_tag = TUR
+				}
+				controller = {
+					original_tag = TUR
+				}
+			}
+			
+			731 = {
+				owner = {
+					original_tag = TUR
+				}
+				controller = {
+					original_tag = TUR
+				}
+			}
+		}
+		bypass = {
+			OR = {
+				has_war_with = TUR
+				is_in_faction_with = TUR
+				NOT = {
+					184 = {
+						controller = {
+							original_tag = TUR
+						}
+						owner = {
+							original_tag = TUR
+						}
+					}
+					731 = {
+						owner = {
+							original_tag = TUR
+						}
+						controller = {
+							original_tag = TUR
+						}
+			        }     
+				}
+			}
+		}
+		cancel_if_invalid = yes
+		x = 27
+		y = 3
+		cost = 10
+		completion_reward = {
+		    TUR = { add_opinion_modifier = { target = ROOT modifier = BUL_claims } } #-50 opinion modifier
+		}	    
+	}
+
+	focus = {
+	    id = BUL_improve_tur_relations
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = BUL_strengthen_ties }
+		mutually_exclusive = { focus = BUL_push_claims }
+		available = {
+			NOT = { has_war_with = TUR }
+			TUR = {
+			    exists = yes
+				is_puppet = no 
+			}
+		}
+		x = 23
+		y = 3
+		cost = 10 
+		completion_reward = {
+		    TUR = { add_opinion_modifier = { target = ROOT modifier = BUL_tur_friends } } #+50 opinion modifier
+		}
+	}
+	
+	focus = {
+	    id = BUL_become_neutral
+		icon = GFX_goal_generic_neutrality_focus
+		prerequisite = { focus = BUL_britain_treaty }
+		mutually_exclusive = { focus = BUL_own_democratic_faction focus = BUL_improve_entente_relations }
+		available = {
+		    has_war = no
+			is_in_faction = no
+		    has_government = democratic 
+	    }
+		x = 8 
+		y = 4
+		cost = 10 
+		completion_reward = {
+		    if = {
+				limit = { NOT = { has_idea = neutrality_idea } }
+				add_ideas = neutrality_idea
+			}
+			add_political_power = 100
+		}
+    }
+
+    focus = {
+        id = BUL_own_democratic_faction  
+		icon = GFX_goal_tripartite_pact
+		prerequisite = { focus = BUL_britain_treaty }
+		mutually_exclusive = { focus = BUL_improve_entente_relations focus = BUL_become_neutral }
+		available = {
+		    has_war = no
+			is_in_faction = no
+			has_government = democratic
+		}
+		x = 10
+		y = 4
+		cost = 10
+		completion_reward = {
+		    set_rule = { can_create_factions = yes }
+			add_political_power = 100
+		}
+	}
+	
+	focus = {
+	    id = BUL_improve_entente_relations 
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = BUL_britain_treaty }
+		mutually_exclusive = { focus = BUL_own_democratic_faction focus = BUL_become_neutral }
+		available = {
+		    has_war = no
+			has_government = democratic 
+			NOT = { has_war_with = FRA }
+		}
+		bypass = { 
+		    ROOT = { 
+			     is_in_faction_with = FRA 
+		    }
+		}
+		x = 12
+		y = 4
+		cost = 10
+		completion_reward = {
+			FRA = { add_opinion_modifier = { target = ROOT modifier = BUL_entente_friends } }
+			every_country = {
+			    limit = {
+			        is_in_faction_with = FRA
+			    }
+			    add_opinion_modifier = { target = ROOT modifier = BUL_entente_friends }
+			}
+
+		}
+	}
+
+	focus = {
+        id = BUL_serbia_communist_expansion
+	    icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = BUL_communist_power }
+		mutually_exclusive = { focus = BUL_spread_revolution }
+		will_lead_to_war_with = YUG
+		available = {
+		    is_puppet = no
+			has_government = communism 
+				
+			    YUG = {
+			        exists = yes
+				    is_puppet = no
+		        }
+		    YUG = {
+			    NOT = {
+				    has_government = communism
+			    }
+		    }
+		}	
+		
+		bypass = {
+				
+					YUG = {
+						OR = {
+							exists = no
+							is_puppet = yes		
+						}
+					}
+				
+		}
+		cancel_if_invalid = yes
+		x = 17
+		y = 4
+		cost = 10
+		completion_reward = {
+		    create_wargoal = {
+				type = take_state_focus
+				target = YUG
+				generator = { 108 }
+			}
+		}
+    }
+
+	focus = {
+	    id = BUL_spread_revolution
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = BUL_communist_power }
+		mutually_exclusive = { focus = BUL_serbia_communist_expansion }
+		available = {
+		    is_puppet = no
+			has_government = communism 
+		}
+		x = 19
+		y = 4 
+		cost = 10
+		completion_reward = {
+		    set_rule = { can_send_volunteers = yes }
+			add_political_power = 100
+		}
+	}
+	
+	focus = {
+	    id = BUL_revoke_ottoman_claims
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = BUL_improve_tur_relations }
+		available = {
+		    is_puppet = no
+			has_war = no
+		    731 = {
+			    controller = {
+							original_tag = TUR
+						}
+						owner = {
+							original_tag = TUR
+						} 
+			}
+			184 = {
+			    controller = {
+							original_tag = TUR
+						}
+						owner = {
+							original_tag = TUR
+						} 
+			}
+			TUR = {
+			    exists = yes
+				is_in_faction = no
+				is_puppet = no
+				has_war = no
+			}
+		}
+		
+		cancel_if_invalid = yes
+		
+		bypass = {
+		    is_in_faction_with = TUR
+			NOT = {
+				731 = {
+					controller = {
+								original_tag = TUR
+							}
+							owner = {
+								original_tag = TUR
+							} 
+				}
+				184 = {
+			    controller = {
+							original_tag = TUR
+						}
+						owner = {
+							original_tag = TUR
+						} 
+				}
+		    }
+		}
+		
+		x = 23
+		y = 4 
+		cost = 10 
+		completion_reward = {
+		    remove_state_claim = 184
+			remove_state_claim = 731
+			add_political_power = 100
+	    }
+	}
+	
+	focus = {
+	    id = BUL_without_russian_aid
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = BUL_push_claims }
+		mutually_exclusive = { focus = BUL_with_russian_aid }
+		x = 27
+		y = 4 
+		cost = 10
+		completion_reward = {
+			add_political_power = 50
+				custom_effect_tooltip = baltic_league_without_russia
+			}
+
+	}
+	
+	focus = {
+	    id = BUL_with_russian_aid 
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = BUL_push_claims }
+		mutually_exclusive = { focus = BUL_without_russian_aid }
+		available = {
+			is_puppet = no
+		    NOT = { has_war_with = SOV }
+		    SOV = {
+			    exists = yes
+				is_puppet = no
+				}
+		}
+		    
+		x = 29
+		y = 4
+		cost = 10
+		completion_reward = {
+		    SOV = {
+			    country_event = { id = bulgaria.11 days = 1}
+			    custom_effect_tooltip = baltic_league_with_russia 
+			}
+	    }
+	}
+	
+	focus = {
+	    id = BUL_neutral_fortress
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = BUL_become_neutral }
+		available = {
+		    48 = {
+			    controller = {
+							original_tag = BUL
+						}
+						owner = {
+							original_tag = BUL
+			            }
+			}			
+			212 = {
+                controller = {
+							original_tag = BUL
+						}
+						owner = {
+							original_tag = BUL
+						}			
+			}
+			211 = {
+			    controller = {
+							original_tag = BUL
+						}
+						owner = {
+							original_tag = BUL
+						} 
+			}
+			
+		}
+		x = 8
+		y = 5 
+		cost = 20
+		completion_reward = {
+		    211 = {
+			add_building_construction = {
+					type = bunker
+					level = 5
+					instant_build =  yes
+					province = 9902
+				}
+			}
+			211 = {
+			add_building_construction = {
+					type = bunker
+					level = 5
+					instant_build =  yes
+					province = 9888
+				}
+			}
+		    48 = {
+			add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build =  yes
+					province = 9771
+				}
+			}
+			48 = {
+			add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build =  yes
+					province = 965
+				}
+			}
+		    48 = {
+			add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build =  yes
+					province = 935
+				}
+			}
+			48 = {
+			add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build =  yes
+					province = 6857
+				}
+			}
+			48 = {
+			add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build =  yes
+					province = 9818
+				}
+			}
+			212 = {
+			add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build =  yes
+					province = 11813
+				}
+			}
+			212 = {
+			add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build =  yes
+					province = 893
+				}
+			}
+			212 = {
+			add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build =  yes
+					province = 878
+				}
+			}212 = {
+			add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build =  yes
+					province = 9862
+				}
+			}
+	    }
+	}
+	
+	focus = {
+	    id = BUL_invite_greece
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = BUL_own_democratic_faction }
+		available = {
+		    has_war = no
+			NOT = {
+			    has_war_with = GRE 
+				}
+			GRE = {
+			    is_in_faction = no
+				has_war = no
+				exists = yes
+				}
+		}
+			cancel_if_invalid = yes
+			
+		bypass = {
+		    GRE = {
+			    is_in_faction_with = BUL
+			}
+		}
+		x = 10 
+		y = 5 
+		cost = 10 
+		completion_reward = {
+		    GRE = {
+			    country_event = { id = bulgaria.10 days = 1 }
+			}
+		}
+	}
+	
+	focus = {
+	    id = BUL_join_entente
+		icon = GFX_goal_generic_major_alliance
+		prerequisite = { focus = BUL_improve_entente_relations }
+		available = {
+		    has_war = no
+			is_puppet = no
+			is_in_faction = no
+			FRA = {
+			    exists = yes
+				is_faction_leader = yes
+			}
+		}
+		
+		bypass = {
+		    FRA = {
+			    is_faction_leader = yes
+				is_in_faction_with = BUL 
+			}
+		}
+		cancel_if_invalid = yes
+		x = 12
+		y = 5
+		cost = 20
+		completion_reward = {
+		    FRA = {
+			    country_event = { id = bulgaria.2 days = 1 } 
+			}
+		}
+		
+	
+	}
+	
+	focus = {
+	    id = BUL_take_revolution_to_romania
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = BUL_serbia_communist_expansion }
+		available = {
+		    is_puppet = no
+			has_government = communism 
+			ROM = {
+			    exists = yes
+				is_puppet = no
+				NOT = {
+				    has_government = communism 
+					is_in_faction_with = BUL
+				}
+			}
+			81 = {
+			    controller = {
+							original_tag = ROM
+						}
+						owner = {
+							original_tag = ROM
+						}
+			}
+		}
+	    cancel_if_invalid = yes
+		x = 17
+		y = 5 
+		cost = 10
+		completion_reward = {
+		    create_wargoal = {
+				type = puppet_wargoal_focus
+				target = ROM
+			}
+		}
+	}
+	
+	focus = {
+	    id = BUL_support_russian_communists
+		icon = GFX_goal_generic_war_with_comintern
+		prerequisite = { focus = BUL_spread_revolution }
+		available = {
+		    is_puppet = no
+			has_government = communism
+			SOV = {
+			    is_puppet = no
+				exists = yes
+				NOT = { 
+				    has_government = communism 
+				}
+			}	
+	    }
+		bypass = {
+		    SOV = { 
+			    has_government = communism 
+			}
+		}
+		cancel_if_invalid = yes
+		x = 19 
+		y = 5
+		cost = 10
+		completion_reward = { 
+		        SOV= {
+				    add_ideas = BUL_russian_communism 
+				}
+		}
+	}
+	
+    focus = {
+	    id = BUL_ottoman_faction
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = BUL_revoke_ottoman_claims }
+		available = {
+		    is_puppet = no
+			is_in_faction = no
+			has_war = no
+			TUR = {
+			    exists = yes
+				is_in_faction = no
+				is_puppet = no
+				has_war = no
+			}
+		}
+		
+		cancel_if_invalid = yes
+		
+		bypass = {
+		    is_in_faction_with = TUR
+		}
+		
+		x = 23
+		y = 5
+		cost = 10 
+		completion_reward = {
+		    set_rule = { can_create_factions = yes }
+			create_faction = turco_bulgarian_faction
+			if = {
+					limit = {
+						TUR = {
+							is_in_faction = no
+						}
+					}
+					TUR = {
+						country_event = { id = bulgaria.6 days = 1 }
+					}
+			}
+		}
+		hidden_effect = { news_event = { hours = 6 id = news.238 } }
+	}
+	
+	focus = {
+	    id = BUL_balkan_league 
+		icon = GFX_goal_anschluss
+		prerequisite = {
+			focus = BUL_with_russian_aid
+			focus = BUL_without_russian_aid 
+
+		}
+		
+		available = {
+		    TUR = {
+			    exist = yes
+				is_puppet = no
+			}
+		    is_in_faction = no
+			has_war = no
+			YUG = {
+			    exists = yes
+				is_in_faction = no
+				has_war = no
+				is_puppet = no
+				}
+			GRE = {
+			    exist = yes
+				is_in_faction = no
+				has_war = no
+				is_puppet = no
+			}
+			MNT = {
+			    exists = yes
+				is_in_faction = no
+				has_war = no
+				is_puppet = no
+			}
+		    184 = {
+			    controller = {
+							original_tag = TUR
+						}
+						owner = {
+							original_tag = TUR
+						} 
+			}	
+			731 = {
+			    controller = {
+							original_tag = TUR
+						}
+						owner = {
+							original_tag = TUR
+						} 
+			}
+			106 = {
+			    controller = {
+							original_tag = TUR
+						}
+						owner = {
+							original_tag = TUR
+						} 
+			}
+			746 = {
+			    controller = {
+							original_tag = TUR
+						}
+						owner = {
+							original_tag = TUR
+						} 
+			}
+			185 = {
+			    controller = {
+							original_tag = TUR
+						}
+						owner = {
+							original_tag = TUR
+						} 
+			}
+		}
+		
+		cancel_if_invalid = yes
+		
+		bypass = {
+	        184 = {
+			    controller = {
+							original_tag = BUL
+						}
+						owner = {
+							original_tag = BUL
+						} 
+			}	
+			731 = {
+			    controller = {
+							original_tag = BUL
+						}
+						owner = {
+							original_tag = BUL
+						} 
+			}
+			106 = {
+			    controller = {
+							original_tag = YUG
+						}
+						owner = {
+							original_tag = YUG
+						} 
+			}
+			746 = {
+			    controller = {
+							original_tag = YUG
+						}
+						owner = {
+							original_tag = YUG
+						} 
+			}
+			748 = {
+			    controller = {
+							original_tag = YUG
+						}
+						owner = {
+							original_tag = YUG
+						} 
+			}
+			185 = {
+			    controller = {
+							original_tag = GRE
+						}
+						owner = {
+							original_tag = GRE
+						} 
+			}
+		
+		}
+		
+		x = 27
+		y = 5
+		cost = 20
+		completion_reward = {
+		    set_rule = { can_create_factions = yes }
+			create_faction = balkan_league 
+			YUG = {
+			    country_event = { id = bulgaria.7 days = 1 }
+				custom_effect_tooltip = balkan_league_invite
+			}
+			GRE = {
+			    country_event = { id = bulgaria.7 days = 1 }
+				custom_effect_tooltip = balkan_league_invite
+			}
+			MNT = {
+			    country_event = { id = bulgaria.7 days = 1 }
+				custom_effect_tooltip = balkan_league_invite
+			}
+		}
+		hidden_effect = {
+		    news_event = { hours = 24 id = news.239 } 
+		}
+	}
+	
+	focus = {
+	    id = BUL_neutral_armed
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = { focus = BUL_neutral_fortress }
+		x = 8 
+		y = 6 
+		cost = 10
+		completion_reward = {
+		    add_ideas = BUL_armed_neutrality
+			add_national_unity = 0.1
+        }
+    }
+
+    focus = {
+        id = BUL_invite_serbia
+        icon = GFX_goal_generic_army_doctrines
+	    prerequisite = { focus = BUL_invite_greece }
+		available = {
+		    is_faction_leader = yes
+			has_war = no
+			YUG = {
+				exists = yes
+				is_puppet = no
+				is_in_faction = no 
+				has_war = no
+			}
+		}
+		cancel_if_invalid = yes
+		bypass = { 
+		    YUG = {
+			    is_in_faction = yes
+			}
+		}
+		x = 10
+		y = 6 
+		cost = 10 
+		completion_reward = {
+		    YUG = {
+			    country_event = { id = bulgaria.9 days = 1 } 
+			}
+		}
+	}
+	
+	focus = {
+	    id = BUL_communist_influence
+		icon = GFX_goal_generic_dangerous_deal 
+		prerequisite = { focus = BUL_support_russian_communists }
+		x = 19 
+		y = 6 
+		cost = 10 
+		completion_reward = {
+		    add_political_power = 100
+			add_ideas = partisan_suppression_focus
+		}
+	}
+	
+	focus = {
+	    id = BUL_use_political_influence 
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = BUL_ottoman_faction }
+		available = {
+		    NOT = {
+			    is_in_faction_with = ROM
+			}
+			is_in_faction_with = TUR
+			is_puppet = no
+			ROM = {
+			    exists = yes
+			}
+		}
+		bypass = {
+		    ROM = {
+			    is_puppet_of = BUL 
+			}
+		}
+		x = 23
+		y = 6
+		cost = 10
+		completion_reward = {
+		    ROM = { 
+			    country_event = { id = romania.7 days = 1 }
+			}	
+		}
+    }
+  
+    focus = {
+        id = BUL_ottoman_tech
+        icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = BUL_ottoman_faction }
+		available = {
+		    TUR = {
+			    exists = yes 
+				is_in_faction_with = BUL
+			} 
+		}
+		x = 25
+	    y = 6 
+		cost = 10
+		completion_reward = {
+		    TUR = {
+				country_event = { id = bulgaria.3 days = 1 }
+				custom_effect_tooltip = needs_approval
+			}
+			effect_tooltip = {
+				add_tech_bonus = {
+					name = industry_bonus
+					bonus = 0.5
+				    uses = 1
+					technology = industry
+				}
+				add_tech_bonus = {
+					name = electronics_bonus
+					bonus = 0.4
+					ahead_reduction = 1
+					category = electronics 
+				}
+			}
+		}
+	}
+	
+	focus = {
+	    id = BUL_partially_mobilize
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = BUL_balkan_league }		 
+		x = 27 
+		y = 6 
+		cost = 10
+		completion_reward = {
+		    add_ideas = partial_economic_mobilisation
+			army_experience = 10
+			add_named_threat = { threat = 5 name = BUL_part_mob }
+			custom_effect_tooltip = bul_begin_mobilization_tooltip
+		}
+	    hidden_effect = { 
+		    news_event = { hours = 6 id = news.240 } 
+		    country_event = { id = bulgaria.4 days = 3 } 
+		}
+	}
+	
+	focus = { 
+	    id = BUL_war_with_ottomans
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = BUL_invite_serbia focus = BUL_join_entente focus = BUL_use_political_influence }
+		available = {
+		}
+	}
+}	
+		

@@ -914,7 +914,7 @@ focus_tree = {
 	
 	focus = {
 		id = AUS_experimental_flights
-		icon = GFX_goal_support_democracy
+		icon = GFX_goal_generic_build_airforce
 		x = 5
 		y = 0
 		cost = 10 
@@ -924,13 +924,17 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 1
+				category = light_fighter
+			}
 		}
 	}
 	
 	focus = {
 		id = AUS_ocean_going_navy
-		icon = GFX_goal_support_democracy
+		icon = GFX_goal_generic_navy_battleship
 		x = 7
 		y = 0
 		cost = 10 
@@ -940,13 +944,18 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				technology = early_battleship
+				technology = basic_battleship
+			}
 		}
 	}
 	
 	focus = {
 		id = AUS_capital_railways
-		icon = GFX_goal_support_democracy
+		icon = GFX_goal_generic_production
 		x = 9
 		y = 0
 		cost = 10 
@@ -956,12 +965,16 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
+			4 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
-	
-	
-	
+
 	focus = {
 		id = AUS_give_minorities_rights
 		icon = GFX_goal_support_democracy

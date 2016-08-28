@@ -1,0 +1,238 @@
+﻿###########################
+# News Events
+###########################
+
+add_namespace = news
+
+# Begin of the Balcan War
+news_event = {
+    id = news.1 
+	title = news.1.t 
+	desc = news.1.d 
+	picture = GFX_report_event_soldiers_marching
+	
+	major = no 
+	
+	trigger = {
+	TUR = {
+	has_war_with = BUL
+	has_war_with = YUG
+	has_war_with = GRE
+	}
+	}
+	
+	fire_only_once = yes
+	
+	immediate = {
+	set_global_flag = balkan_war
+	}
+	option = {
+	    name = news.1.a 
+		trigger = {
+			 TAG = TUR 
+		}
+	}
+	option = {
+	    name = news.1.b
+		trigger = {
+			TAG = BUL 
+			TAG = GRE 
+			TAG = MNT 
+			TAG = YUG
+		}
+	}
+	option = {
+	    name = news.1.c 
+		trigger = {
+			NOT = {
+			TAG = BUL 
+			TAG = GRE 
+			TAG = MNT 
+			TAG = YUG
+			TAG = TUR 
+			}
+		}
+	}
+}
+
+news_event = {
+	id = news.2
+	title = news.2.t
+	desc = news.2.d
+	picture = GFX_news_event_033
+	
+	major = yes
+	
+	trigger = {
+		has_global_flag = balkan_war
+		NOT = { has_global_flag = balkan_war_over }
+		TUR = {
+		NOT = { has_war_with = BUL }
+		NOT = { has_war_with = SER }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		set_global_flag = balkan_war_over
+	}
+	
+	option = {
+		name = news.64.a
+		trigger = {
+			TAG = TUR
+		}
+	}
+	option = {
+		name = news.64.b
+		trigger = { 
+		TAG = BUL
+		TAG = SER
+		TAG = GRE
+		TAG = ALB
+		TAG = MNT
+		}
+	}
+	option = {
+		name = news.64.c
+		trigger = { 
+		NOT = { TAG = BUL }
+		NOT = { TAG = ALB }
+		NOT = { TAG = GRE }
+		NOT = { TAG = MNT }
+		NOT = { TAG = YUG }
+		NOT = { TAG = TUR }
+		}
+	}
+}
+
+#Turco-Bulgarian Faction
+news_event = {
+    id = news.238 
+	title = news.238.t 
+	desc = news.238.d 
+	picture = GFX_news_event_017
+	
+	major = no 
+	
+	is_triggered_only = yes 
+	
+	option = {
+	    name = news.238.a 
+		trigger = {
+			NOT = {
+			    TAG = TUR 
+				TAG = BUL 
+			}
+		}
+	}
+}
+
+#The Balkan League 
+news_event = {
+	id = news.239 
+	title = news.239.t 
+	desc = news.239.d 
+	picture = GFX_news_event_018 
+	
+	major = yes 
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = news.239.a
+		trigger = {
+		    NOT = {
+				TAG = BUL 
+				TAG = GRE 
+				TAG = MNT 
+				TAG = YUG 
+				TAG = TUR
+			}
+		}
+	}
+	
+	option = {
+		name = news.239.b 
+		trigger = {
+			TAG = TUR
+		}
+	}
+}
+
+#Bulgaria Partially Mobilizes 
+news_event = {
+	id = news.240
+	title = news.240.t
+	desc = news.240.d 
+	picture = GFX_news_event_003 
+	
+	major = no
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = news.240.a 
+		trigger = {
+			NOT = {
+				OR = {
+					TAG = BUL 
+					TAG = TUR
+					is_in_faction_with = BUL 
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = news.240.b 
+		trigger = {
+			TAG = TUR 
+		}
+	}
+	
+	option = {
+		name = news.240.c 
+		trigger = {
+			is_in_faction_with = BUL
+		}
+	}
+}
+
+#Bulgaria joins the Entente
+news_event = {
+    id = news.241
+	title = news.241.t 
+	desc = news.241.d 
+	picture = GFX_news_event_009 
+	
+	major = yes
+	
+	is_triggered_only = yes 
+	
+	option = {
+	    name = news.241.a 
+		trigger = {
+		    NOT = { 
+			    OR = {
+					TAG = BUL 
+					is_in_faction_with = FRA 
+					TAG = FRA
+				}
+			}
+		}
+	}
+	
+	option = {
+	    name = news.241.b
+		trigger = {
+		    OR = {
+				is_in_faction_with = FRA
+				TAG = FRA
+			}
+		}
+	}
+}
