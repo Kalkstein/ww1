@@ -9,6 +9,9 @@
 
 add_namespace = soviet
 
+# Revisit 1 : Dringend! Die ganzen AI_chances für events einfügen die mehrere Optionen haben, auch mit Historical_AI und so
+
+# Revisit 3 : Die Mobilisierungsevents für Russland machen
 # First Event for new officials
 country_event = {
 	id = soviet.1
@@ -20,6 +23,9 @@ country_event = {
 
 	trigger = {	has_idea = new_officials }
 
+	option = {
+		name = soviet.1.a
+		custom_effect_tooltip = soviet.1.a_tt
 		hidden_effect = {
 			remove_ideas = new_officials
 			add_timed_idea = {
@@ -28,9 +34,6 @@ country_event = {
 			}
 			country_event = { id = soviet.2 days = 365 }
 		}
-	option = {
-		name = soviet.1.a
-		custom_effect_tooltip = soviet.1.a_tt
 	}
 }
 
@@ -495,7 +498,7 @@ country_event = {
 		name = soviet.24.b
 		custom_effect_tooltip = soviet.24.b_tt
 	set_politics = {
-	ruling_party = democracy
+	ruling_party = democratic
 	}
 }
 }
@@ -522,6 +525,8 @@ country_event = {
 	title = soviet.26.t
 	desc = soviet.26.d
 	picture = GFX_report_event_soldiers_marching
+	
+	is_triggered_only = yes
 
 	option = {
 		name = soviet.26.a
@@ -542,6 +547,8 @@ country_event = {
 	title = soviet.26.t
 	desc = soviet.26.d
 	picture = GFX_report_event_soldiers_marching
+	
+	is_triggered_only = yes
 
 	option = {
 		name = soviet.26.a
@@ -562,6 +569,8 @@ country_event = {
 	title = soviet.26.t
 	desc = soviet.26.d
 	picture = GFX_report_event_soldiers_marching
+	
+	is_triggered_only = yes
 
 	option = {
 		name = soviet.26.a
@@ -582,6 +591,8 @@ country_event = {
 	title = soviet.29.t
 	desc = soviet.29.d
 	picture = GFX_report_event_soldiers_marching
+	
+	is_triggered_only = yes
 
 	option = {
 		name = soviet.29.a
@@ -614,7 +625,7 @@ country_event = {
 	desc = soviet.34.d
 	picture = GFX_report_event_soldiers_marching
 
-	trigger = {	has_idea = progressing_agriculture }
+	is_triggered_only = yes
 
 	option = {
 		name = soviet.34.a
@@ -636,7 +647,7 @@ country_event = {
 	desc = soviet.34.d
 	picture = GFX_report_event_soldiers_marching
 	
-	trigger = {	has_idea = progressing_agriculture_2 }
+	is_triggered_only = yes
 
 	option = {
 		name = soviet.34.a
@@ -753,6 +764,8 @@ country_event = {
 
 	is_triggered_only = yes
 	
+	fire_only_once = yes
+	
 	trigger = {
 	has_idea = religious_army
 	communism > 35
@@ -766,7 +779,521 @@ country_event = {
 	}
 }
 
-# Achtung : Events 34 bis 38 sind schon vergeben !!!!!!!!!!!!!!!!!!!
+country_event = {
+	id = soviet.39
+	title = soviet.39.t
+	desc = soviet.39.d
+	# revisit : 2 desc: Heute hat unser Rüstungsminister verkündet, das unsere Armee modernisiert wird...
+	picture = GFX_report_event_soldiers_marching
+
+	is_triggered_only = yes
+		
+	option = {
+		# revisit 2 : Auf in die neue Zeit!
+		name = soviet.39.a
+		custom_effect_tooltip = soviet.39.a_tt
+	}
+}
+
+country_event = {
+	id = soviet.40
+	title = soviet.40.t
+	desc = soviet.40.d
+	# revisit : 2 desc: Die Modernisierung schreitet voran... Unsere Soldaten machen sich mit den neuen Waffen vertraut
+	picture = GFX_report_event_soldiers_marching
+
+	is_triggered_only = yes
+		
+	option = {
+		# revisit 2 : Auf in die neue Zeit!
+		name = soviet.40.a
+		custom_effect_tooltip = soviet.40.a_tt
+		hidden_effect = {
+			remove_ideas = modernizing_army
+			add_timed_idea = {
+				idea = modernizing_army_2
+				days = 1460
+			}
+			country_event = { id = soviet.41 days = 365 }
+		}
+	}
+}
+
+country_event = {
+	id = soviet.41
+	title = soviet.40.t
+	desc = soviet.40.d
+	# revisit : 2 desc: Die Modernisierung schreitet voran... Unsere Soldaten machen sich mit den neuen Waffen vertraut
+	picture = GFX_report_event_soldiers_marching
+
+	is_triggered_only = yes
+		
+	option = {
+		# revisit 2 : Auf in die neue Zeit!
+		name = soviet.40.a
+		custom_effect_tooltip = soviet.40.a_tt
+		hidden_effect = {
+			remove_ideas = modernizing_army_2
+			add_timed_idea = {
+				idea = modernizing_army_3
+				days = 1095
+			}
+			country_event = { id = soviet.42 days = 365 }
+		}
+	}
+}
+
+country_event = {
+	id = soviet.42
+	title = soviet.40.t
+	desc = soviet.40.d
+	# revisit : 2 desc: Die Modernisierung schreitet voran... Unsere Soldaten machen sich mit den neuen Waffen vertraut
+	picture = GFX_report_event_soldiers_marching
+
+	is_triggered_only = yes
+		
+	option = {
+		# revisit 2 : Auf in die neue Zeit!
+		name = soviet.40.a
+		custom_effect_tooltip = soviet.40.a_tt
+		hidden_effect = {
+			remove_ideas = modernizing_army_3
+			add_timed_idea = {
+				idea = modernizing_army_4
+				days = 730
+			}
+			country_event = { id = soviet.43 days = 365 }
+		}
+	}
+}
+
+country_event = {
+	id = soviet.43
+	title = soviet.40.t
+	desc = soviet.40.d
+	# revisit : 2 desc: Die Modernisierung schreitet voran... Unsere Soldaten machen sich mit den neuen Waffen vertraut
+	picture = GFX_report_event_soldiers_marching
+
+	is_triggered_only = yes
+		
+	option = {
+		# revisit 2 : Auf in die neue Zeit!
+		name = soviet.40.a
+		custom_effect_tooltip = soviet.40.a_tt
+		hidden_effect = {
+			remove_ideas = modernizing_army_4
+			add_timed_idea = {
+				idea = modernizing_army_5
+				days = 365
+			}
+			country_event = { id = soviet.44 days = 365 }
+		}
+	}
+}
+
+country_event = {
+	id = soviet.44
+	title = soviet.44.t
+	desc = soviet.44.d
+	# revisit : 2 desc: In einer feierlichen Zeremonie nahmen heute der Verteidigungsminister und der Regierungschef 
+	# eine Parade der modernisierten Streitkräfte ab, ausländische Beobachter waren sichtlich beeindruckt von den neuen Fähigkeiten
+	# der russischen Armee
+	picture = GFX_report_event_soldiers_marching
+
+	is_triggered_only = yes
+		
+	option = {
+		# revisit 2 : Auf in die neue Zeit!
+		name = soviet.40.a
+		custom_effect_tooltip = soviet.40.a_tt
+		hidden_effect = {
+			remove_ideas = modernizing_army_5
+			add_ideas = loyal_officers
+		}
+	}
+}
+
+country_event = {
+	id = soviet.45
+	title = soviet.45.t
+	desc = soviet.45.d
+	# revisit : 2 desc: Nach der Initiative unseres Außenministers der die Unterstützung des Panslawismus verkündete, reagierte 
+	# Ö-U heute mit einer Drohung, Deutschland bekräftigte seine Unterstützung für seinen Verbündeten, während Frankreich und das UK
+	# klarmachten das sie nicht in den Krieg eintreten würden sollte Russland einen Angriffskrieg führen
+	picture = GFX_report_event_soldiers_marching
+
+	is_triggered_only = yes
+		
+	option = {
+		# revisit 2 : Auf in die neue Zeit!
+		name = soviet.40.a
+		custom_effect_tooltip = soviet.40.a_tt
+		hidden_effect = {
+			remove_ideas = modernizing_army_5
+			add_ideas = loyal_officers
+		}
+	}
+}
+
+country_event = {
+	id = soviet.46
+	title = soviet.46.t
+	desc = soviet.46.d
+	# Die Russen haben uns eine Kooperation angeboten ...
+	picture = GFX_report_event_soldiers_marching
+
+	is_triggered_only = yes
+		
+	option = {
+		name = soviet.46.a
+		ai_chance = { factor = 80 }
+		add_opinion_modifier = { target = SOV modifier = cooperation }
+		hidden_effect = {
+		SOV = { country_event = { id = soviet.47 hours = 4 }} 
+		}
+		}
+		
+	option = {
+	name = soviet.46.b
+	ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 20
+				is_historical_focus_on = yes
+				GER = {
+					NOT = { has_wargoal_against = SOV }
+					NOT = { is_justifying_wargoal_against = SOV }
+				}
+			}
+			modifier = {
+				factor = 0
+				is_in_faction_with = SOV
+			}
+		}
+	hidden_effect = {
+	SOV = { country_event = { id = soviet.48 hours = 4 }} 
+	}
+	}
+}
+
+country_event = {
+	id = soviet.47
+	title = soviet.47.t
+	desc = soviet.47.d
+	# revisit : 2 desc: Bulgarien hat klugerweise zugestimmt .. Das gibt uns gelegenheit unsere Ambitionen durchzusetzen ...
+	picture = GFX_report_event_soldiers_marching
+
+	is_triggered_only = yes
+		
+	option = {
+		name = soviet.47.a
+		diplomatic_relation = { country = SOV relation = non_aggression_pact }
+		add_opinion_modifier = { target = BUL modifier = cooperation }
+		give_guarantee = BUL
+	}
+}
+
+country_event = {
+	id = soviet.48
+	title = soviet.48.t
+	desc = soviet.48.d
+	# revisit : 2 desc: Die Bulgaren haben es gewagt sich unserem Willen zu widersetzen! ...
+	picture = GFX_report_event_soldiers_marching
+
+	is_triggered_only = yes
+		
+	option = {
+		name = soviet.48.a
+		add_opinion_modifier = { target = BUL modifier = bulgaria_refuses }
+	}
+}
+
+country_event = {
+	id = soviet.49
+	title = soviet.49.t
+	desc = soviet.49.d
+	# revisit : 2 desc: Heute hat unser Botschafter den BUL im geheimen eine Allianz angeboten
+	picture = GFX_report_event_soldiers_marching
+
+	is_triggered_only = yes
+		
+	option = {
+		name = soviet.49.a
+		ai_chance = {
+		factor = 100 
+		modifier = {
+				factor = 0
+				BUL = {
+					is_in_faction_with = GER
+				}
+			}
+		}
+		BUL = { add_opinion_modifier = { target = SOV modifier = slavic_alliance } }
+		SOV = { country_event = { id = soviet.50 hours = 4 }} 
+	}
+	
+	option = {
+		name = soviet.49.b
+		SOV = { country_event = { id = soviet.51 hours = 4 }} 
+	}
+}
+
+country_event = {
+	id = soviet.50
+	title = soviet.50.t
+	desc = soviet.50.d
+	picture = GFX_report_event_soldiers_marching
+
+	is_triggered_only = yes
+		
+	option = {
+		name = soviet.50.a
+		SOV = {
+			if = {
+					limit = {
+						is_faction_leader = yes
+					}
+					dismantle_faction = yes
+			}
+			if = {
+					limit = {
+						is_in_faction  = yes
+					}
+					remove_from_faction = SOV
+			}
+		}
+		create_faction = "slavic_alliance"
+		add_to_faction = BUL
+		SOV = { add_opinion_modifier = { target = BUL modifier = slavic_alliance } }
+	}	
+}
+
+country_event = {
+	id = soviet.51
+	title = soviet.51.t
+	desc = soviet.51.d
+	# revisit : 2 desc: Die Bulgaren haben es gewagt sich unserem Willen zu widersetzen! ...
+	picture = GFX_report_event_soldiers_marching
+
+	is_triggered_only = yes
+		
+	option = {
+		name = soviet.51.a
+		SOV = { add_opinion_modifier = { target = BUL modifier = bulgaria_refuses } }
+	}
+}
+
+country_event = {
+	id = soviet.52
+	title = soviet.52.t
+	desc = soviet.52.d
+	# revisit : 2 desc: Heute haben wir Serbien angeboten dem Bündniss mit Bulgarien beizutreten
+	picture = GFX_report_event_soldiers_marching
+
+	is_triggered_only = yes
+		
+	option = { # Serbia Accepts
+		name = soviet.52.a
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0
+				is_in_faction_with = GER
+				}
+			modifier = {
+				factor = 0
+				is_in_faction_with = FRA
+				}	
+			}	
+		SOV = { country_event = { id = soviet.58 hours = 6 }}
+		YUG = { add_opinion_modifier = { target = SOV modifier = slavic_alliance } }
+	}
+	
+	option = {
+		name = soviet.52.b
+		# Revisit 3 : Garantie widerrufen
+		SER = { add_opinion_modifier = { target = SOV modifier = serbia_refuses } }
+		SER = { add_timed_idea = { idea = heavy_disappointment days = 162 } }
+	}
+}
+
+country_event = {
+	id = soviet.53
+	title = soviet.53.t
+	desc = soviet.53.d
+	picture = GFX_report_event_soldiers_marching
+
+	is_triggered_only = yes
+		
+	option = {
+		name = soviet.53.a
+		add_to_faction = ROM
+		ROM = { add_opinion_modifier = { target = AUS modifier = austrian_help } }
+		# Revisit 3 : News Event einfügen indem das neue Bündniss zelebriert wird
+	}
+	
+	option = {
+		name = soviet.53.b
+		# Revisit 2 : Rumänien alleine lassen
+		ROM = { add_opinion_modifier = { target = AUS modifier = left_alone } }
+		# Revisit 3 : Event einfügen indem Rumänien ankündigt sich alleine zu verteidigen
+	}
+}
+
+country_event = {
+	id = soviet.54
+	title = soviet.54.t
+	desc = soviet.54.d
+	picture = GFX_report_event_soldiers_marching
+
+	is_triggered_only = yes
+		
+	option = {
+		# Den Balkan garantieren
+		name = soviet.54.a
+		ROM = { add_opinion_modifier = { target = AUS modifier = austrian_guarantee } }
+		SOV = { country_event = { id = soviet.57 days = 2 }}
+		set_global_flag = austrian_guarantees
+	}
+	
+	option = {
+		# Österreich lässt alleine
+		name = soviet.54.b
+		ROM = { add_opinion_modifier = { target = AUS modifier = left_alone } }
+		GRE = { add_opinion_modifier = { target = AUS modifier = left_alone } }
+		ALB = { add_opinion_modifier = { target = AUS modifier = left_alone } }
+		AUS = { country_event = { id = soviet.55 days = 2 }}
+		SOV = { country_event = { id = soviet.56 days = 3 }}
+	}
+}
+
+country_event = {
+	id = soviet.55
+	title = soviet.55.t
+	desc = soviet.55.d
+	picture = GFX_report_event_soldiers_marching
+
+	is_triggered_only = yes
+		
+	option = {
+		name = soviet.55.a
+		AUS = { add_timed_idea = { idea = national_outrage days = 162 } }
+	}
+}
+
+country_event = {
+	id = soviet.56
+	title = soviet.56.t
+	desc = soviet.56.d
+	picture = GFX_report_event_soldiers_marching
+
+	is_triggered_only = yes
+		
+	option = {
+		name = soviet.56.a
+		add_timed_idea = { idea = they_know_whats_right days = 162 }
+	}
+}
+
+country_event = {
+	id = soviet.57
+	title = soviet.57.t
+	desc = soviet.57.d
+	picture = GFX_report_event_soldiers_marching
+
+	is_triggered_only = yes
+		
+	option = {
+		name = soviet.57.a
+		add_timed_idea = { idea = we_will_show_them days = 162 }
+	}
+}
+
+country_event = {
+	id = soviet.58
+	title = soviet.58.t
+	desc = soviet.58.d
+	picture = GFX_report_event_soldiers_marching
+	# revisit 2 : Heute wurde Serbien in einem Festakt in unser Bündniss aufgenommen, alle Slawen sind vereint!
+	is_triggered_only = yes
+		
+	option = {
+		name = soviet.58.a
+		add_to_faction = YUG
+		add_timed_idea = { idea = slavic_enthusiasm days = 162 }
+	}
+}
+
+country_event = {
+	id = soviet.59
+	title = soviet.59.t
+	desc = soviet.59.d
+	picture = GFX_report_event_soldiers_marching
+	# revisit 2 : In den russischen Medien ist immer wieder von einer kommenden Befreiung der Slawen die Rede, offensichtlich
+	# erwägt Russland so einen Krieg, Österreich hat Russland bereits mit Krieg gedroht sollte dies geschehen, Deutschalnd
+	# bekräftigte die Drohung
+	is_triggered_only = yes
+		
+	option = {
+		name = soviet.59.a
+		add_timed_idea = { idea = free_the_slavs days = 70  }
+		set_global_flag = a_war_is_coming
+	}
+}
+
+country_event = {
+	id = soviet.60
+	title = soviet.60.t
+	desc = soviet.60.d
+	picture = GFX_report_event_soldiers_marching
+	
+	trigger = {
+	SOV = {
+	has_war_with = AUS
+	has_war_with = GER
+	}
+	BUL = {
+	has_war_with = AUS
+	has_war_with = GER
+	}
+	YUG = {
+	has_war_with = AUS
+	has_war_with = GER
+	}
+	FRA = {
+	NOT = { has_war_with = GER }
+	NOT = { has_war_with = AUS }
+	}
+	}
+	
+	fire_only_once = yes
+		
+	option = {
+		name = soviet.60.a
+		add_timed_idea = { idea = god_help_russia days = 70  }
+		set_global_flag = world_war
+	}
+}
+
+country_event = {
+	id = soviet.61
+	title = soviet.61.t
+	desc = soviet.61.d
+	picture = GFX_report_event_soldiers_marching
+	# revisit 2 : Deutschland und österreich haben heute angekündigt das sie das Osmanische Reich gegen jede Agression
+	# vonseiten Russlands verteidigen werden
+	is_triggered_only = yes
+		
+	option = {
+		name = soviet.61.a
+		set_global_flag = a_war_is_coming
+	}
+}
+
+
+
+
+
 
 
 
