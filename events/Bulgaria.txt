@@ -228,7 +228,15 @@ country_event = {
 	desc = bulgaria.11.d 
 	picture = GFX_report_event_generic_sign_treaty2
 	
-	is_triggered_only 
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { has_global_flag = bul11 }
+	}
+	
+	immediate = {
+		set_global_flag = bul11 
+	}
 	
 	option = {
 	    name = bulgaria.11.a 
