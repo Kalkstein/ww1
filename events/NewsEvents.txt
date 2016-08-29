@@ -236,3 +236,85 @@ news_event = {
 		}
 	}
 }
+
+# Attentat von Sarajevo
+news_event = {
+	id = ww1.1
+	title = ww1.1.t
+	desc = ww1.1.d
+	picture = GFX_news_event_048
+	
+	major = yes
+	
+	trigger = {
+		date > 1914.5.28
+		NOT = {
+			has_global_flag = ass_sarajevo
+		}
+		country_exists = AUS
+		country_exists = SER
+		AUS = {
+			NOT = { has_war_with = SER }
+		}
+		GER = { has_war = no }
+		FRA = { has_war = no }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		set_global_flag = ass_sarajevo 
+	}
+	
+	option = {
+		name = ww1.1.a
+	}
+}
+
+# Krieg
+news_event = {
+	id = ww1.2
+	title = ww1.2.t
+	desc = ww1.2.d
+	picture = GFX_news_event_048
+	
+	major = yes
+	
+	trigger = {
+		date > 1914.6.28
+		has_global_flag = ass_sarajevo
+		NOT = { has_global_flag = war_sarajevo }
+		country_exists = GER
+		country_exists = FRA
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		set_global_flag = war_sarajevo 
+	}
+	
+	option = {
+		name = ww1.2.a
+		trigger = { 
+			NOT = { TAG = AUS }
+		}
+	}
+	
+	option = {
+		name = ww1.2.b
+		trigger = { 
+			TAG = AUS
+		}
+		AUS = {
+			declare_war_on = {
+				target = SER
+				type = puppet_wargoal_focus
+			}
+		}
+	}
+}

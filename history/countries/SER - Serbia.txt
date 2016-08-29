@@ -1,6 +1,6 @@
 ﻿capital = 107
 
-oob = "YUG_1936"
+oob = "SER_1936"
 
 set_research_slots = 3
 
@@ -41,7 +41,7 @@ set_technology = {
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
 	
-	oob = "YUG_1939"
+	oob = "SER_1939"
 	set_technology = {
 		fighter1 = 1
 		early_bomber = 1
@@ -79,80 +79,54 @@ set_technology = {
 	}
 }
 
-set_convoys = 0
-
+set_convoys = 10
 set_politics = {
 
 	parties = {
 		democratic = { 
-			popularity = 20
+			popularity = 15
 		}
 
 		fascism = {
-			popularity = 30
+			popularity = 10
 		}
 		
 		communism = {
-			popularity = 20
-			#banned = no #default is no
+			popularity = 15
 		}
 		
-		neutrality = { 
-			popularity = 30
+		monarchy = { 
+			popularity = 25
+		}
+		
+		neutrality = {
+			popularity = 35
 		}
 	}
 	
 	ruling_party = neutrality
-	last_election = "1936.1.1"
+	last_election = "1909.5.3"
 	election_frequency = 36
-	elections_allowed = yes
+	elections_allowed = no
 }
 
-1939.1.1 = {
-	set_politics = {
-
-		parties = {
-			democratic = { 
-				popularity = 20
-			}
-
-			fascism = {
-				popularity = 30
-			}
-			
-			communism = {
-				popularity = 20
-				#banned = no #default is no
-			}
-			
-			neutrality = { 
-				popularity = 30
-			}
-		}
-		
-		ruling_party = fascism
-		last_election = "1938.1.1"
-		election_frequency = 36
-		elections_allowed = yes
-	}
-}
 set_national_unity = 0.6
 
 create_country_leader = {
-	name = "Draza Mihailovic"
-	desc = ""
-	picture = "Portrait_Yugoslavia_Prince_Paul.dds"
-	expire = "1965.1.1"
-	ideology = conservatism
+	name = "Kraj Peter I"
+	desc = "POLITICS_PETER_I_DESC"
+	picture = "Portrait_Yugoslavia_Peter_I.dds"
+	expire = "1921.16.8"
+	ideology = despotism
 	traits = {
-		#
+		
 	}
 }
 
 create_country_leader = {
-	name = "Milan Nedic"
-	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
+	name = "Milan Stojadinovic"
+	desc = "POLITICS_MILAN_STOJADINOVIC_DESC"
+	picture = "gfx/leaders/YUG/Portrait_Yugoslavia_Milan_Stojadinovic.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
@@ -161,23 +135,39 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Peter Karadordevic"
-	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+	name = "Milan Grol"
+	desc = "POLITICS_MILAN_GROL_DESC"
+	picture = "gfx/leaders/YUG/Portrait_Yugoslavia_Milan_Grol.dds"
 	expire = "1965.1.1"
-	ideology = Despotism
+	ideology = liberalism
 	traits = {
 		#
 	}
 }
 
 create_country_leader = {
-	name = "Zivorad Jovanovic"
-	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	name = "Josip Broz Tito"
+	desc = "POLITICS_JOSIP_BROZ_TITO_DESC"
+	picture = "Portrait_Yugoslavia_Josip_Broz_Tito.dds"
 	expire = "1965.1.1"
 	ideology = leninism
 	traits = {
 		#
 	}
+}
+
+create_corps_commander = {
+	name = "Vladimir Cukavac"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+	traits = { trickster  }
+	skill = 3
+
+}
+
+create_corps_commander = {
+	name = "Ivan Gosnjak"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+	traits = { urban_assault_specialist }
+	skill = 3
+	
 }
