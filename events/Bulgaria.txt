@@ -230,18 +230,13 @@ country_event = {
 	
 	is_triggered_only = yes
 	
-	trigger = {
-		NOT = { has_global_flag = bul11 }
-	}
-	
-	immediate = {
-		set_global_flag = bul11 
-	}
 	
 	option = {
 	    name = bulgaria.11.a 
 		ai_chance = { factor = 100 }
-		hidden_effect = { set_global_flag = BUL_russia_helps }
+		immediate = {
+			set_global_flag = BUL_russia_helps
+		}
 	}
 	
 	option = {
