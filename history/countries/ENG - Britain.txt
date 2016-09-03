@@ -131,165 +131,80 @@ create_country_leader = {
 }
 
 create_field_marshal = {
-	name = "Alan Brooke"
+	name = "Douglas Haig"
 	picture = "Portrait_Britain_Alan_Brooke.dds"
-	traits = { offensive_doctrine defensive_doctrine }
+	traits = { offensive_doctrine  }
 	skill = 5
 }
 
 create_field_marshal = {
-	name = "Bernard Montgomery"
+	name = "John French"
 	picture = "Portrait_Britain_Bernard_Montgomery.dds"
-	traits = { logistics_wizard offensive_doctrine  }
+	traits = { old_guard defensive_doctrine }
 	skill = 4
 }
 
 create_corps_commander = {
-	name = "Claude Auchinleck"
+	name = "James_Grierson"
 	picture = "Portrait_Britain_Claude_Auchinleck.dds"
-	traits = {  }
-	skill = 5
-}
-
-create_corps_commander = {
-	name = "Neil Ritchie"
-	picture = "Portrait_Britain_Neil_Ritchie.dds"
-	traits = { panzer_leader  }
-	skill = 4
-}
-
-create_corps_commander = {
-	name = "Alan Cunningham"
-	picture = "Portrait_Britain_Alan_Cunningham.dds"
-	traits = {}
-	skill = 4
-}
-
-create_corps_commander = {
-	name = "William Slim"
-	picture = "Portrait_Britain_William_Slim.dds"
 	traits = { trickster }
-	skill = 5
+	skill = 3
 }
 
 create_corps_commander = {
-	name = "Richard O'Connor"
+	name = "Horace Smith Dorrien"
+	picture = "Portrait_Britain_Neil_Ritchie.dds"
+	traits = {  }
+	skill = 3
+}
+
+create_corps_commander = {
+	name = "Herbert Plumer"
+	picture = "Portrait_Britain_Alan_Cunningham.dds"
+	traits = {  }
+	skill = 3
+}
+
+create_corps_commander = {
+	name = "Edmund Allenby"
+	picture = "Portrait_Britain_William_Slim.dds"
+	traits = {  }
+	skill = 2
+}
+
+create_corps_commander = {
+	name = "George Milne"
 	picture = "Portrait_Britain_Richard_OConnor.dds"
 	traits = {  }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Julian_Byng"
+	picture = "Portrait_Britain_William_Platt.dds"
+	traits = { hill_fighter }
 	skill = 4
 }
 
 create_corps_commander = {
-	name = "William Platt"
-	picture = "Portrait_Britain_William_Platt.dds"
-	traits = {  }
-	skill = 3
-}
-
-create_corps_commander = {
-	name = "George Giffard"
+	name = "Henry_Rawlinson"
 	picture = "Portrait_Britain_George_Giffard.dds"
 	traits = {  }
+	skill = 2
+}
+
+create_corps_commander = {
+	name = "William Birdwood"
+	picture = "Portrait_Britain_John_Jackie_Smyth.dds"
+	traits = { hill_fighter }
 	skill = 3
 }
 
 create_corps_commander = {
-	name = "Harold Alexander"
-	picture = "Portrait_Britain_Harold_Alexander.dds"
-	traits = {  }
-	skill = 5
-}
-
-create_corps_commander = {
-	name = "Jackie Smyth"
-	picture = "Portrait_Britain_John_Jackie_Smyth.dds"
+	name = "James Murray"
+	picture = "Portrait_Britain_Thomas_Jacomb_Hutton.dds"
 	traits = { old_guard }
 	skill = 1
-}
-
-create_corps_commander = {
-	name = "Thomas Jacomb Hutton"
-		picture = "Portrait_Britain_Thomas_Jacomb_Hutton.dds"
-	traits = {  }
-	skill = 2
-}
-
-create_corps_commander = {
-	name = "Arthur Percival"
-		picture = "Portrait_Britain_Arthur_Percival.dds"
-	traits = {   }
-	skill = 2
-}
-
-create_corps_commander = {
-	name = "Merton Beckwith-Smith"
-		picture = "Portrait_Britain_Merton_Beckwith_Smith.dds"
-	traits = { commando }
-	skill = 1
-}
-
-create_corps_commander = {
-	name = "Henry Pownall"
-	picture = "Portrait_Britain_Henry_Pownall.dds"
-	traits = {  trickster }
-	skill = 2
-}
-
-create_corps_commander = {
-	name = "John Vereker Lord Gort"
-	picture = "Portrait_Britain_John_Vereker.dds"
-	traits = {  }
-	skill = 4
-}
-
-create_corps_commander = {
-	name = "Henry Wilson"
-		picture = "Portrait_Britain_Henry_Maitland_Wilson.dds"
-	traits = {  }
-	skill = 4
-}
-
-create_corps_commander = {
-	name = "William Gott"
-		picture = "Portrait_Britain_William_Gott.dds"
-	traits = { panzer_leader }
-	skill = 3
-}
-
-create_corps_commander = {
-	name = "Jock Campbell"
-		picture = "Portrait_Britain_Jock_Campbell.dds"
-	traits = { panzer_leader  }
-	skill = 4
-}
-
-create_corps_commander = {
-	name = "Oliver Leese"
-	picture = "Portrait_Britain_Oliver_Leese.dds"
-	traits = {  panzer_leader }
-	skill = 4
-}
-
-create_corps_commander = {
-	name = "Miles Dempsey"
-	picture = "Portrait_Britain_Miles_Dempsey.dds"
-	traits = {  }
-	skill = 4
-}
-
-create_corps_commander = {
-	name = "Brian Horrocks"
-	picture = "Portrait_Britain_Brian_Horrocks.dds"
-	traits = {  panzer_leader }
-	skill = 3
-
-}
-
-create_corps_commander = {
-	name = "Archibald Wavell"
-	picture = "Portrait_Britain_Archibald_Wavell.dds"
-	traits = {  }
-	skill = 4
 }
 
 create_navy_leader = {
