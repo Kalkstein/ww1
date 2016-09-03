@@ -1238,49 +1238,16 @@ focus_tree = {
 			remove_ideas = FRA_disjointed_government
 			add_ideas = FRA_national_mobilization_focus
 		}
-	}
-
-	focus = {
-		id = FRA_join_comintern
-		icon = GFX_goal_support_communism
-		mutually_exclusive = { focus = FRA_humanite_unie }
-	 	available = {
-	 		is_puppet = no
-	 		OR = {
-	 			has_government = communism
-	 			communism > 0.4
-	 		}
-	 		has_war = no
- 			SOV = {
- 				exists = yes
- 				has_government = communism
- 				is_faction_leader = yes
- 			}
-		}
-	 	prerequisite = { focus = FRA_national_mobilization }
-	 	bypass = {
-	 		is_in_faction_with = SOV
-	 	}
-		x = 15
-		y = 5
-		cost = 10
-		#ai_will_do = {
-		#	factor = 1
-		#}
-		completion_reward = {
-			SOV = { country_event = { id = soviet.29 days = 1 } }
-		}
 	}	
 
 	focus = {
 		id = FRA_humanite_unie
 		icon = GFX_goal_generic_dangerous_deal
-		mutually_exclusive = { focus = FRA_join_comintern }
 	 	available = {
 	 		is_puppet = no
 		}
 	 	prerequisite = { focus = FRA_national_mobilization }
-		x = 13
+		x = 14
 		y = 5
 		cost = 10
 		#ai_will_do = {
@@ -1626,12 +1593,12 @@ focus_tree = {
 	focus = {
 		id = FRA_france_first
 		icon = GFX_goal_generic_attack_allies
-	 	mutually_exclusive = { focus = FRA_join_germany focus = FRA_woo_italy }
+	 	mutually_exclusive = { focus = FRA_woo_italy }
 	 	available = {
 	 		is_puppet = no	 		
 		}
 	 	prerequisite = { focus = FRA_army_of_aggression }
-		x = 18
+		x = 19
 		y = 5
 		cost = 10
 		#ai_will_do = {
@@ -1645,7 +1612,7 @@ focus_tree = {
 	focus = {
 		id = FRA_woo_italy
 		icon = GFX_goal_tripartite_pact
-	 	mutually_exclusive = { focus = FRA_join_germany focus = FRA_france_first}
+	 	mutually_exclusive = { focus = FRA_france_first}
 	 	available = {
 	 		is_puppet = no
 	 		NOT = { has_war_with = ITA }
@@ -1665,7 +1632,7 @@ focus_tree = {
 	 		}
 		}
 	 	prerequisite = { focus = FRA_army_of_aggression }
-		x = 20
+		x = 21
 		y = 5
 		cost = 10
 		#ai_will_do = {
@@ -1674,38 +1641,6 @@ focus_tree = {
 		completion_reward = {
 			ITA = { country_event = { id = italy.8 days = 1 } }			
 			### Fires event to ITA asking them to join your faction - creates faction if you don't already lead one.
-		}
-	}
-
-	focus = {
-		id = FRA_join_germany
-		icon = GFX_goal_support_fascism
-	 	mutually_exclusive = { focus = FRA_woo_italy focus = FRA_france_first}
-	 	available = {
-	 		is_puppet = no
-	 		NOT = { has_war_with = GER }
-	 		OR = {
-	 			has_government = fascism
-	 			fascism > 0.4
-	 		}
-			is_in_faction = no
-	 		
-	 		GER = {
-	 			exists = yes
-	 			has_government = fascism
- 				is_faction_leader = yes
-	 		}
-		}
-	 	prerequisite = { focus = FRA_army_of_aggression }
-		x = 22
-		y = 5
-		cost = 10
-		#ai_will_do = {
-		#	factor = 1
-		#}
-		completion_reward = {
-			### EVENT ASKING GERMANY TO JOIN FACTION
-			GER = { country_event = { id = germany.91 days = 1 } }			
 		}
 	}
 }
