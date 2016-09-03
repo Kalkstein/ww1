@@ -129,7 +129,6 @@ technologies = {
 	increase_working_hours = {
 
 		industrial_capacity_factory = 0.2
-		global_building_slots_factor = 0.20
 		unity_factor = -0.05
 		
 		
@@ -245,7 +244,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1937
+		start_year = 1912
 		
 		folder = {
 			name = industry_folder
@@ -276,7 +275,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1939
+		start_year = 1914
 		
 		folder = {
 			name = industry_folder
@@ -307,7 +306,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1941
+		start_year = 1916
 		
 		folder = {
 			name = industry_folder
@@ -333,7 +332,7 @@ technologies = {
 		global_building_slots_factor = 0.20
 		
 		research_cost = 2
-		start_year = 1943
+		start_year = 1917
 		
 		folder = {
 			name = industry_folder
@@ -413,7 +412,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1937
+		start_year = 1912
 		
 		folder = {
 			name = industry_folder
@@ -446,7 +445,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1939
+		start_year = 1914
 		
 		folder = {
 			name = industry_folder
@@ -479,7 +478,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1941
+		start_year = 1916
 		
 		folder = {
 			name = industry_folder
@@ -508,7 +507,7 @@ technologies = {
 		
 		
 		research_cost = 2
-		start_year = 1943
+		start_year = 1917
 		
 		folder = {
 			name = industry_folder
@@ -543,7 +542,7 @@ technologies = {
 		}
 		
 		research_cost = 3
-		start_year = 1936
+		start_year = 1914
 		folder = {
 			name = industry_folder
 			position = { x = 0 y = 0 }
@@ -588,6 +587,7 @@ technologies = {
 		}
 		
 		research_cost = 1.5
+		start_year = 1916
 		
 		folder = {
 			name = industry_folder
@@ -633,57 +633,11 @@ technologies = {
 		}
 		
 		research_cost = 1.5
-		start_year = 1939
+		start_year = 1918
 		
 		folder = {
 			name = industry_folder
 			position = { x = 0 y = 6 }
-		}
-		
-		categories = {
-			industry
-			synth_resources
-		}
-		
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0.5
-				oil > 10
-			}
-			modifier = {
-				factor = 0.5
-				oil > 20
-			}	
-			modifier = {
-				factor = 0.5
-				oil > 30
-			}			
-		}
-		
-		ai_research_weights = {
-			oil = -2.0
-		}
-	}
-	
-	advanced_oil_plant = {
-
-		enable_building = {
-			building = synthetic_refinery
-			level = 4
-		}
-		
-		path = {
-			leads_to_tech = advanced_oil_plant 
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1.5
-		start_year = 1943
-		
-		folder = {
-			name = industry_folder
-			position = { x = 0 y = 10 }
 		}
 		
 		categories = {
@@ -726,7 +680,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1936
+		start_year = 1910
 		categories = {
 			industry
 			construction_tech
@@ -781,7 +735,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1937
+		start_year = 1912
 		
 		categories = {
 			industry
@@ -807,7 +761,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1937
+		start_year = 1912
 		
 		categories = {
 			industry
@@ -839,7 +793,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1939
+		start_year = 1914
 		
 		categories = {
 			industry
@@ -866,7 +820,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1939
+		start_year = 1914
 		
 		categories = {
 			industry
@@ -897,7 +851,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1941
+		start_year = 1916
 		
 		categories = {
 			industry
@@ -923,7 +877,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1941
+		start_year = 1916
 		
 		categories = {
 			industry
@@ -951,7 +905,7 @@ technologies = {
 
 		
 		research_cost = 2
-		start_year = 1943
+		start_year = 1917
 		
 		categories = {
 			industry
@@ -978,7 +932,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1943
+		start_year = 1917
 		
 		categories = {
 			industry
@@ -994,6 +948,4 @@ technologies = {
 			factor = 4
 		}
 	}			
-
-	
 }
