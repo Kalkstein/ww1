@@ -19,7 +19,15 @@ state={
 			arms_factory = 1
 			industrial_complex = 4
 			air_base = 1
-
+			3516 = {
+				bunker = 3
+			}
+			9444 = {
+				bunker = 1
+			}
+			11519 = {
+				bunker = 3
+			}
 		}
 		add_core_of = BEL
 	}
