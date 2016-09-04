@@ -111,6 +111,180 @@ news_event = {
 	}
 }
 
+news_event = {
+	id = news.3
+	title = news.3.t
+	desc = news.3.d
+	picture = GFX_news_event_033
+	
+	major = yes
+	
+	trigger = {
+		has_global_flag = russian_ottoman_conflict
+		NOT = { has_global_flag = world_war }
+		TUR = {
+		has_war_with = SOV
+		NOT = { has_war_with = FRA } 
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	fire_only_once = yes
+	
+	immediate = {
+		set_global_flag = balcan_war_over
+	}
+	
+	option = {
+		name = news.3.a
+		trigger = {
+			TAG = TUR
+		}
+	}
+	option = {
+		name = news.3.b
+		trigger = { 
+		TAG = BUL
+		TAG = SER
+		TAG = GRE
+		TAG = ALB
+		TAG = MNT
+		}
+	}
+	option = {
+		name = news.3.c
+		trigger = { 
+		NOT = { TAG = BUL }
+		NOT = { TAG = ALB }
+		NOT = { TAG = GRE }
+		NOT = { TAG = MNT }
+		NOT = { TAG = YUG }
+		NOT = { TAG = TUR }
+		}
+	}
+}
+
+news_event = {
+	id = news.4
+	title = news.4.t
+	desc = news.4.d
+	picture = GFX_news_event_033
+	
+	major = no
+	
+	fire_only_once = yes
+	
+	trigger = {
+		SOV = { has_completed_focus = SOV_bind_with_the_entente }
+		NOT = { has_global_flag = war_sarajevo }
+		SOV = { NOT = { has_war_with = GER } }
+		FRA = { NOT = { has_war_with = GER } }
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+	# Wir werden die Mittelmächte von der Erde tilgen!
+		name = news.4.a
+		trigger = {
+		TAG = SOV
+		}
+	}
+	option = {
+	# Besorgnisseregend
+		name = news.4.b
+		trigger = { 
+		TAG = AUS
+		TAG = GER
+		}
+	}
+	
+	option = {
+	# Eine sinnvolle Entscheidung
+		name = news.4.c
+		trigger = { 
+		TAG = ENG
+		TAG = FRA
+		}
+	}
+	
+	option = {
+		name = news.4.e
+		trigger = { 
+		NOT = { TAG = ENG }
+		NOT = { TAG = FRA }
+		NOT = { TAG = AUS }
+		NOT = { TAG = GER }
+		NOT = { TAG = SOV }
+		}
+	}
+}
+
+news_event = {
+	id = news.5
+	title = news.5.t
+	desc = news.5.d
+	picture = GFX_news_event_033
+	
+	major = no
+	
+	fire_only_once = yes
+	
+	trigger = {
+		SOV = { has_completed_focus = SOV_total_mobilization }
+		SOV = { has_war_with = GER }
+	}
+	
+	mean_time_to_happen = {
+		days = 14
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+	# Sehr besorgniserregend
+		name = news.4.a
+		trigger = {
+		TAG = ENG
+		TAG = FRA
+		}
+	}
+	option = {
+	# Besorgnisseregend
+		name = news.4.b
+		trigger = { 
+		TAG = SOV
+		}
+	}
+	
+	option = {
+	# Eine sinnvolle Entscheidung
+		name = news.4.c
+		trigger = { 
+		TAG = GER
+		TAG = AUS
+		}
+	}
+	
+	option = {
+		name = news.4.e
+		trigger = { 
+		NOT = { TAG = ENG }
+		NOT = { TAG = FRA }
+		NOT = { TAG = AUS }
+		NOT = { TAG = GER }
+		NOT = { TAG = SOV }
+		}
+	}
+}
+
 #Turco-Bulgarian Faction
 news_event = {
     id = news.238 
