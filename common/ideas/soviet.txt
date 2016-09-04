@@ -73,6 +73,8 @@ ideas = {
 				army_org_factor = -0.1
 				experience_gain_army_factor = -0.5
 				army_morale_factor = -0.3
+				max_planning = -0.3
+				planning_speed = -0.3
 				}
 			research_bonus = {
 				land_doctrine = -0.50 
@@ -121,7 +123,7 @@ ideas = {
 			picture = generic_manpower_bonus
 
 			modifier = {
-				democratic_drift = 0.02
+				democratic_drift = 0.03
 				monarchy_drift = -0.05
 				}
 			
@@ -1123,6 +1125,8 @@ new_officers = {
 				army_org_factor = -0.08
 				experience_gain_army_factor = -0.40
 				army_morale_factor = -0.24
+				max_planning = -0.24
+				planning_speed = -0.24
 				}
 			research_bonus = {
 				land_doctrine = -0.40
@@ -1152,6 +1156,8 @@ new_officers_2 = {
 				army_org_factor = -0.06
 				experience_gain_army_factor = -0.30
 				army_morale_factor = -0.18
+				max_planning = -0.18
+				planning_speed = -0.18
 				}
 			research_bonus = {
 				land_doctrine = -0.30
@@ -1181,6 +1187,8 @@ new_officers_3 = {
 				army_org_factor = -0.04
 				experience_gain_army_factor = -0.20
 				army_morale_factor = -0.12
+				max_planning = -0.12
+				planning_speed = -0.12
 				}
 			research_bonus = {
 				land_doctrine = -0.20
@@ -1210,6 +1218,8 @@ new_officers_4 = {
 				army_org_factor = -0.02
 				experience_gain_army_factor = -0.10
 				army_morale_factor = -0.06
+				max_planning = -0.06
+				planning_speed = -0.06
 				}
 			research_bonus = {
 				land_doctrine = -0.10
@@ -1494,7 +1504,7 @@ slavism_euphoria = {
 		}
 	}
 	
-	slavic_enthusiasm
+	slavic_enthusiasm = {
 	
 		removal_cost = -1
 			
@@ -1513,7 +1523,7 @@ slavism_euphoria = {
 		}
 	}
 	
-	new_slavery
+	new_slavery = {
 	
 		removal_cost = -1
 			
@@ -1590,6 +1600,150 @@ slavism_euphoria = {
 		modifier = {
 		monarchy_drift = 0.08		
 		}
+	}
+	
+	a_imperial_war = {
+	
+	removal_cost = -1
+			
+		allowed = {
+			always = no # added via focus
+		}
+					
+		allowed_civil_war = {
+			has_government = monarchism
+			has_government = democratic
+		}
+			
+		picture = officers_purged
+		
+		modifier = {
+		monarchy_drift = -0.05
+		communism_drift = 0.05
+		}
+	}
+	
+	allied_planning = {
+	
+	removal_cost = -1
+			
+		allowed = {
+			always = no # added via focus
+		}
+					
+		allowed_civil_war = {
+			has_government = monarchism
+			has_government = democratic
+		}
+			
+		picture = general_staff
+		
+		modifier = {
+		max_planning = 0.15
+		}
+	}
+	
+	a_nation_behind_her_emperor = {
+	
+	removal_cost = -1
+			
+		allowed = {
+			always = no # added via focus
+		}
+					
+		allowed_civil_war = {
+			has_government = monarchism
+		}
+			
+		picture = general_staff
+		
+		modifier = {
+		monarchy_drift = 0.10
+		}
+	
+	}
+
+	defense_of_the_reich = {
+	
+	removal_cost = -1
+			
+		allowed = {
+			always = no # added via focus
+		}
+					
+		allowed_civil_war = {
+			has_government = monarchism
+		}
+			
+		picture = general_staff
+		
+		modifier = {
+		monarchy_drift = 0.10
+		}
+	
+	}
+	
+	conscription_of_the_weakest = {
+	
+	removal_cost = -1
+			
+		allowed = {
+			always = no # added via focus
+		}
+					
+		allowed_civil_war = {
+			has_government = monarchism
+		}
+			
+		picture = general_staff
+		
+		modifier = {
+		conscription = 0.03
+		training_time_factor = 0.10
+		}
+	
+	}
+	
+	exploited_workers = {
+	
+	removal_cost = -1
+			
+		allowed = {
+			always = no # added via focus
+		}
+					
+		allowed_civil_war = {
+			has_government = monarchism
+		}
+			
+		picture = general_staff
+		
+		modifier = {
+		communism_drift = 0.05
+		production_speed_buildings_factor = -0.3
+		}
+	
+	}
+	
+	lame_hqs = {
+	
+	removal_cost = -1
+			
+		allowed = {
+			always = no # added via focus
+		}
+					
+		allowed_civil_war = {
+			has_government = monarchism
+		}
+			
+		picture = general_staff
+		
+		modifier = {
+		max_planning = -0.2
+		planning_speed = -0.25
+		}
+	
 	}
 	
 }
