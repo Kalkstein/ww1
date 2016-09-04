@@ -12,7 +12,11 @@ focus_tree = {
 	
 	default = no
 	
-	focus = {
+			#########################
+			#### Indsutry Branch ####
+			#########################
+			
+focus = {
 		id = AUS_continue_industrialization
 		icon = GFX_goal_generic_production
 		x = 1
@@ -912,30 +916,17 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
-		id = AUS_experimental_flights
-		icon = GFX_goal_generic_build_airforce
-		x = 5
-		y = 0
-		cost = 10 
-		
-		ai_will_do = {
-			factor = 5
-		}
-		
-		completion_reward = {
-			add_tech_bonus = {
-				bonus = 0.50
-				uses = 1
-				category = light_fighter
-			}
-		}
-	}
+	
+			#################################
+			####   Indsutry Branch End   ####
+			#################################		               
+			#### Diplomatic Branch Start ####
+			#################################
 	
 	focus = {
 		id = AUS_ocean_going_navy
 		icon = GFX_goal_generic_navy_battleship
-		x = 7
+		x = 5
 		y = 0
 		cost = 10 
 		
@@ -974,24 +965,40 @@ focus_tree = {
 			}
 		}
 	}
+	
+	focus = {
+		id = AUS_experimental_flights
+		icon = GFX_goal_generic_build_airforce
+		x = 7
+		y = 1
+		cost = 10 
+		prerequisite = { focus = AUS_capital_railways }
+		prerequisite = { focus = AUS_ocean_going_navy }
+		ai_will_do = {
+			factor = 5
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 1
+				category = light_fighter
+			}
+		}
+	}
 
 	focus = {
 		id = AUS_give_minorities_rights
 		icon = GFX_goal_support_democracy
-		icon = GFX_goal_support_democracy
-		prerequisite = { focus = AUS_ocean_going_navy }
-		prerequisite = { focus = AUS_experimental_flights }
 		mutually_exclusive = { focus = AUS_support_monarchy }
-		x = 6
-		y = 1
+		prerequisite = { focus = AUS_experimental_flights }
+		x = 5
+		y = 2
 		cost = 10 
 		
 		ai_will_do = {
 			factor = 5
 		}
-		
-		
-
 		
 		completion_reward = {
 			add_ideas = democratic_influence
@@ -1000,7 +1007,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = AUS_peacekeeping_measures
+		id = AUS_vienna_treaties
 		icon = GFX_goal_generic_improve_relations
 		available = {
 			YUG = { exists = yes }
@@ -1010,12 +1017,9 @@ focus_tree = {
 			NOT = { has_war_with = MNT }
 		}
 		prerequisite = { focus = AUS_give_minorities_rights }
-		x = 6
-		y = 2
+		x = 5
+		y = 3
 		cost = 10
-		#ai_will_do = {
-		#	factor = 2
-		#}
 		completion_reward = {
 			give_guarantee = SER
 			give_guarantee = MNT
@@ -1023,24 +1027,24 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = AUS_peacekeeping_measures_2
+		id = AUS_ploiesti_treaty
 		icon = GFX_goal_generic_improve_relations
 		available = {
 			ROM = { exists = yes }
 			is_puppet = no
 			NOT = { has_war_with = ROM }
 		}
-		prerequisite = { focus = AUS_peacekeeping_measures }
-		x = 6
-		y = 3
+		prerequisite = { focus = AUS_vienna_treaties }
+		x = 5
+		y = 4
 		cost = 10
-		#ai_will_do = {
-		#	factor = 2
-		#}
+		
 		completion_reward = {
 			give_guarantee = ROM
 		}
 	}
+	
+	#Peackeeping measures? More like dick shrinking measures amirite?
 	
 	focus = {
 		id = AUS_improve_relations_to_the_Entente
@@ -1051,13 +1055,11 @@ focus_tree = {
 			NOT = { has_war_with = ENG }
 			NOT = { has_war_with = FRA }
 		}
-		prerequisite = { focus = AUS_peacekeeping_measures_2 }
-		x = 5
-		y = 4
+		prerequisite = { focus = AUS_ploiesti_treaty }
+		mutually_exclusive = { focus = AUS_establish_our_own_alliance }
+		x = 4
+		y = 5
 		cost = 10	
-		#ai_will_do = {
-		#	factor = 2
-		#}
 		completion_reward = {
 			SOV = {
 				add_opinion_modifier = {
@@ -1083,31 +1085,8 @@ focus_tree = {
 	focus = {
 		id = AUS_establish_our_own_alliance
 		icon = GFX_goal_generic_demand_territory
-		prerequisite = { focus = AUS_peacekeeping_measures_2 }
-		x = 7
-		y = 4
-		cost = 10
-		
-		ai_will_do = {
-			factor = 0
-		}
-		
+		prerequisite = { focus = AUS_ploiesti_treaty }
 		mutually_exclusive = { focus = AUS_improve_relations_to_the_Entente }
-		available = {
-		}
-		
-		completion_reward = {
-			add_political_power = 120
-			set_rule = { can_create_factions = yes }
-			create_faction = "Vienna Alliance"
-		}
-	}
-	
-	focus = {
-		id = AUS_reconciliation_with_russia
-		icon = GFX_goal_generic_demand_territory
-		prerequisite = { focus = AUS_improve_relations_to_the_Entente
-						 focus = AUS_establish_our_own_alliance }
 		x = 6
 		y = 5
 		cost = 10
@@ -1115,20 +1094,42 @@ focus_tree = {
 		ai_will_do = {
 			factor = 0
 		}
+	
+		available = {
+		}
 		
 		completion_reward = {
-			
+			add_political_power = 150
+			set_rule = { can_create_factions = yes }
+			create_faction = "Allied States of Vienna"
+		}
+	}
+	
+	focus = {
+		id = AUS_integrate_all_minorities
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = AUS_improve_relations_to_the_Entente
+						 focus = AUS_establish_our_own_alliance }
+		x = 5
+		y = 6
+		cost = 10
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		completion_reward = {
+			add_ideas = Integrated_Minorities
 		}
 	}
 	
 	focus = {
 		id = AUS_support_monarchy
 		icon = GFX_goal_generic_political_pressure
-		prerequisite = { focus = AUS_capital_railways }
-		prerequisite = { focus = AUS_ocean_going_navy }
 		mutually_exclusive = { focus = AUS_give_minorities_rights }
-		x = 8
-		y = 1
+		prerequisite = { focus = AUS_experimental_flights }
+		x = 9
+		y = 2
 		cost = 10
 		
 		ai_will_do = {
@@ -1144,8 +1145,8 @@ focus_tree = {
 		id = AUS_claims_the_Balkan
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = AUS_support_monarchy }
-		x = 8
-		y = 2
+		x = 9
+		y = 3
 		cost = 10
 		bypass = {
 			107 = { is_owned_by = AUS }
@@ -1167,8 +1168,8 @@ focus_tree = {
 		id = AUS_claim_our_former_Italian_lands
 		icon = GFX_goal_demand_sudetenland
 		prerequisite = { focus = AUS_claims_the_Balkan }
-		x = 8
-		y = 3
+		x = 9
+		y = 4
 		cost = 10
 		bypass = {
 			160 = { is_owned_by = AUS }
@@ -1182,3 +1183,108 @@ focus_tree = {
 			160 = { add_claim_by = AUS }
 		}
 	}
+	
+			#################################
+			#### Diplomatic Branch Start ####
+			#################################		               
+			####	Army Branch Start    ####
+			#################################
+	
+	focus = {
+		id = AUS_strengthen_the_homeland
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = { focus = AUS_claim_our_former_Italian_lands }
+		x = 9
+		y = 5
+		cost = 10
+		completion_reward = {
+			army_experience = 50
+			add_ideas = quality_over_quantity
+			
+		}
+	}
+	focus = {
+		id = AUS_integrated_army
+		icon = GFX_goal_generic_military_deal
+		prerequisite = { focus = AUS_integrate_all_minorities }
+		x = 5
+		y = 7
+		cost = 10
+		completion_reward = {
+			army_experience = -10
+			add_ideas = integrated_army
+			
+		}
+	}
+	focus = {
+		id = AUS_german_technology_sharing
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = AUS_strengthen_the_homeland }
+		x = 10
+		y = 6
+		cost = 10
+		completion_reward = {
+			army_experience = 15
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 0.5
+				uses = 2
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+	focus = {
+		id = AUS_quantity_over_quality
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AUS_integrated_army }
+		x = 4
+		y = 8
+		cost = 10
+		completion_reward = {
+			army_experience = -5
+			add_ideas = quantity_over_quality
+			
+		}
+	}
+	focus = {
+		id = AUS_german_equipment_deals
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = AUS_strengthen_the_homeland }
+		x = 8
+		y = 6
+		cost = 10
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				ahead_reduction = 0.75
+				uses = 2
+				category = infantry_weapons
+				category = artillery
+			}
+			4 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = AUS_minority_mandatory_service
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = { focus = AUS_integrated_army }
+		x = 6
+		y = 8
+		cost = 10
+		completion_reward = {
+			army_experience = 3
+			add_ideas = minority_mandatory_service
+		}
+	}	
+}
+	
+	

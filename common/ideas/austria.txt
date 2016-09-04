@@ -7,7 +7,7 @@ ideas = {
 			removal_cost = -1
 	
 			allowed = {
-				always = no # Added via focus
+				always = no 
 			}
 
 			allowed_civil_war = {
@@ -21,7 +21,103 @@ ideas = {
 				unity_factor = -0.33
 			}
 		}
+		integrated_minorities = {
+			
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = monarchy
+				}
+			}
+
+			picture = generic_intel_bonus
+			
+			modifier = {
+				conscription = 0.1
+			}
+		}
+		quality_over_quantity = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				has_government = monarchy
+			}
+			
+			picture = generic_production_bonus
+			
+			modifier = {
+				army_org_factor = 0.15
+				army_morale_factor = 0.25
+				conscription = -0.025
+				research_time_factor = 0.15
+				land_reinforce_rate = 0.2
+			}
+		}
+		quantity_over_quality = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				has_government = monarchy
+			}
+			
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				army_org_factor = -0.15
+				conscription = 0.10
+				land_reinforce_rate = -0.2
+			}
+		}
+		integrated_army = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				has_government = monarchy
+			}
+			
+			picture = generic_infantry_bonus
+			
+			modifier = {
+				conscription = 0.05
+			}
+		}
 		
+		minority_mandatory_service = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				has_government = monarchy
+			}
+			
+			picture = generic_infantry_bonus
+			
+			modifier = {
+				conscription = 0.20
+				army_morale_factor = -0.15
+				land_reinforce_rate = -0.3
+			}
+		}
 	}
 
 	political_advisor = {
