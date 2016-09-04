@@ -80,10 +80,10 @@ technologies = {
 		}
 
 		artillery = {
-			soft_attack = 0.1
+			breakthrough = 0.1
 		}
 		artillery_brigade = {
-			soft_attack = 0.1
+			breakthrough = 0.1
 		}
 		
 		path = {
@@ -201,10 +201,10 @@ technologies = {
 		}
 
 		artillery = {
-			soft_attack = 0.1
+			breakthrough = 0.1
 		}
 		artillery_brigade = {
-			soft_attack = 0.1
+			breakthrough = 0.1
 		}
 		
 		path = {
@@ -278,10 +278,10 @@ technologies = {
 		}
 
 		artillery = {
-			soft_attack = 0.1
+			breakthrough = 0.1
 		}
 		artillery_brigade = {
-			soft_attack = 0.1
+			breakthrough = 0.1
 		}
 		
 		path = {
@@ -387,10 +387,10 @@ technologies = {
 		}
 
 		artillery = {
-			soft_attack = 0.1
+			hard_attack = 0.1
 		}
 		artillery_brigade = {
-			soft_attack = 0.1
+			hard_attack = 0.1
 		}
 		
 		research_cost = 1
@@ -418,10 +418,10 @@ technologies = {
 		}
 
 		artillery = {
-			soft_attack = 0.1
+			breakthrough = 0.1
 		}
 		artillery_brigade = {
-			soft_attack = 0.1
+			breakthrough = 0.1
 		}
 		
 		research_cost = 1
@@ -452,14 +452,14 @@ technologies = {
 #		}
 		
 		path = {
-			leads_to_tech = rocket_artillery2_1
+			leads_to_tech = rocket_artillery2
 			research_cost_coeff = 1
 		}
 
-		path = {
-			leads_to_tech = rocket_artillery2_2
-			research_cost_coeff = 1
-		}
+#		path = {
+#			leads_to_tech = rocket_artillery2_2
+#			research_cost_coeff = 1
+#		}
 		
 		research_cost = 2
 
@@ -479,30 +479,28 @@ technologies = {
 		}
 	}
 	
-	rocket_artillery2_1 = {
-		xor = {
-			rocket_artillery2_2
-		}
+	rocket_artillery2 = {
+#		xor = {
+#			rocket_artillery2_2
+#		}
 
 		rocket_artillery = {
-			soft_attack = 0.15
+			defence = 0.15
 		}
 		rocket_artillery_brigade = {
-			soft_attack = 0.15
+			defence = 0.15
 		}
-		motorized_rocket_brigade = {
-			soft_attack = 0.15
-		}
+
 		
 		path = {
-			leads_to_tech = rocket_artillery3_1
+			leads_to_tech = rocket_artillery3
 			research_cost_coeff = 1
 		}
 
-		path = {
-			leads_to_tech = rocket_artillery3_2
-			research_cost_coeff = 1
-		}
+#		path = {
+#			leads_to_tech = rocket_artillery3_2
+#			research_cost_coeff = 1
+#		}
 		
 		research_cost = 1
 
@@ -522,62 +520,56 @@ technologies = {
 		}
 	}
 
-	rocket_artillery2_2 = {
-		xor = {
-			rocket_artillery2_1
-		}
-
-		rocket_artillery = {
-			soft_attack = 0.15
-		}
-		rocket_artillery_brigade = {
-			soft_attack = 0.15
-		}
-		motorized_rocket_brigade = {
-			soft_attack = 0.15
-		}
-		
-		path = {
-			leads_to_tech = rocket_artillery3_1
-			research_cost_coeff = 1
-		}
-
-		path = {
-			leads_to_tech = rocket_artillery3_2
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1
-
-		start_year = 1915
-		
-		folder = {
-			name = artillery_folder
-			position = { x = 1 y = 8 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			rocketry
-		}
-	}
+#	rocket_artillery2_2 = {
+#		xor = {
+#			rocket_artillery2_1
+#		}
+#
+#		rocket_artillery = {
+#			soft_attack = 0.15
+#		}
+#		rocket_artillery_brigade = {
+#			soft_attack = 0.15
+#		}
+#		
+#		path = {
+#			leads_to_tech = rocket_artillery3_1
+#			research_cost_coeff = 1
+#		}
+#
+#		path = {
+#			leads_to_tech = rocket_artillery3_2
+#			research_cost_coeff = 1
+#		}
+#		
+#		research_cost = 1
+#
+#		start_year = 1915
+#		
+#		folder = {
+#			name = artillery_folder
+#			position = { x = 1 y = 8 }
+#		}
+#		
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		
+#		categories = {
+#			rocketry
+#		}
+#	}
 	
-	rocket_artillery3_1 = {
-		xor = {
-			rocket_artillery3_2
-		}
+	rocket_artillery3 = {
+#		xor = {
+#			rocket_artillery3_2
+#		}
 
 		rocket_artillery = {
-			soft_attack = 0.15
+			defence = 0.15
 		}
 		rocket_artillery_brigade = {
-			soft_attack = 0.15
-		}
-		motorized_rocket_brigade = {
-			soft_attack = 0.15
+			defence = 0.15
 		}
 
 		path = {
@@ -603,51 +595,48 @@ technologies = {
 		}
 	}
 
-	rocket_artillery3_2 = {
-		xor = {
-			rocket_artillery3_1
-		}
+#	rocket_artillery3_2 = {
+#		xor = {
+#			rocket_artillery3_1
+#		}
+#
+#		rocket_artillery = {
+#			soft_attack = 0.15
+#		}
+#		rocket_artillery_brigade = {
+#			soft_attack = 0.15
+#		}
+#
+#		path = {
+#			leads_to_tech = rocket_artillery4
+#			research_cost_coeff = 1
+#		}
+#		
+#		research_cost = 1
+#
+#		start_year = 1916
+#		
+#		folder = {
+#			name = artillery_folder
+#			position = { x = 1 y = 10 }
+#		}
+#		
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		
+#		categories = {
+#			rocketry
+#		}
+#	}		
 
-		rocket_artillery = {
-			soft_attack = 0.15
-		}
-		rocket_artillery_brigade = {
-			soft_attack = 0.15
-		}
-		motorized_rocket_brigade = {
-			soft_attack = 0.15
-		}
-
-		path = {
-			leads_to_tech = rocket_artillery4
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1
-
-		start_year = 1916
-		
-		folder = {
-			name = artillery_folder
-			position = { x = 1 y = 10 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			rocketry
-		}
-	}
-	
 	rocket_artillery4 = {
 	
 		enable_equipments = {
 			rocket_artillery_equipment_2
 		}
 		motorized_rocket_brigade = {
-			soft_attack = 0.3
+			defence = 0.3
 		}
 
 		#rocket_artillery = {
