@@ -69,31 +69,75 @@ division_template = {
 
 units = {
 	division = {
-		name = "7-ma Diviziya Rilski Pekhoten"
-		location = 935 
-		division_template = "Golyam Pekhotna Divizija"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.8
-
-	}
-
-	division = {
-		name = "2-ra Trakiĭska Pekhotna Diviziya"
-		location = 935
+		name = "1-va Pekhotna Diviziya Sofiya"
+		location = 949
 		division_template = "Pekhotna Divizija"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
 
-	}	
-
-	division = {
-		name = "Kavaleriĭska Diviziya"
-		location = 9888 
-		division_template = "Kavaleriiska Divizija"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.8
-
 	}
-
 	
+	division = {
+		name = "3-ta Balkanska Dekhotna Diviziya"
+		location = 949 
+		division_template = "Golyam Pekhotna Divizija"
+		start_experience_factor = 0.3 
+		start_equipment_factor = 0.8
+	}
+	
+	division = {
+		name = "10-ta Pekhotna Diviziya"
+		location = 949 
+		division_template = "Pekhotna Divizija"
+		start_experience_factor = 0.3 
+		start_equipment_factor = 0.8
+	}
+	
+	division = {
+		name = "8-mi Tundzha Pekhotna Diviziya"
+		location = 9902 
+		division_template = "Golyam Pekhotna Divizija"
+		start_experience_factor = 0.3 
+		start_equipment_factor = 0.8
+	}
+	
+	division = {
+		name = "9-ti Pleven Pekhotna Diviziya"
+		location = 9902 
+		division_template = "Golyam Pekhotna Divizija"
+		start_experience_factor = 0.3 
+		start_equipment_factor = 0.8
+	}
+	
+	division = {
+		name = "Khaskovo Chetata"
+		location = 9902 
+		division_template = "Pekhotna Divizija"
+		start_experience_factor = 0.3 
+		start_equipment_factor = 0.8
+	}
+	
+	division = {
+		name = "4-ti Preslav Pekhotna Diviziya"
+		location = 893
+		division_template = "Golyam Pekhotna Divizija"
+		start_experience_factor = 0.3 
+		start_equipment_factor = 0.8
+	}
+	
+	division = {
+		name = "5-ti Dunavski Pekhotna Diviziya"
+		location = 893
+		division_template = "Golyam Pekhotna Divizija"
+		start_experience_factor = 0.3 
+		start_equipment_factor = 0.8
+	}
+	
+	division = {
+		name = "6-ti Bde pekhotna diviziya"
+		location = 893
+		division_template = "Pekhotna Divizija"
+		start_experience_factor = 0.3 
+		start_equipment_factor = 0.8
+	}
 }
