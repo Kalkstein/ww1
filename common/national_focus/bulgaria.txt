@@ -776,8 +776,11 @@ focus_tree = {
 						country_event = { id = bulgaria.6 days = 1 }
 					}
 			}
+		
+			hidden_effect = {
+				news_event = { hours = 6 id = news.238 } 
+			}
 		}
-		hidden_effect = { news_event = { hours = 6 id = news.238 } }
 	}
 	
 	focus = {
@@ -788,10 +791,9 @@ focus_tree = {
 			focus = BUL_without_russian_aid 
 
 		}
-		
 		available = {
 		    TUR = {
-			    exist = yes
+			    exists = yes
 				is_puppet = no
 			}
 		    is_in_faction = no
@@ -801,7 +803,7 @@ focus_tree = {
 				is_in_faction = no
 				has_war = no
 				is_puppet = no
-				}
+			}
 			GRE = {
 			    exist = yes
 				is_in_faction = no
@@ -928,9 +930,10 @@ focus_tree = {
 			    country_event = { id = bulgaria.7 days = 1 }
 				custom_effect_tooltip = balkan_league_invite
 			}
-		}
-		hidden_effect = {
-		    news_event = { hours = 24 id = news.239 } 
+		
+			hidden_effect = {
+				news_event = { hours = 24 id = news.239 } 
+			}
 		}
 	}
 	
@@ -1039,7 +1042,7 @@ focus_tree = {
 			}
 			effect_tooltip = {
 				add_tech_bonus = {
-					name = industry_bonus
+					name = industrial_bonus
 					bonus = 0.5
 				    uses = 1
 					technology = industry
@@ -1066,10 +1069,11 @@ focus_tree = {
 			army_experience = 10
 			add_named_threat = { threat = 5 name = BUL_part_mob }
 			custom_effect_tooltip = bul_begin_mobilization_tooltip
-		}
-	    hidden_effect = { 
-		    news_event = { hours = 6 id = news.240 } 
-		    country_event = { id = bulgaria.4 days = 3 } 
+		
+			hidden_effect = { 
+				news_event = { hours = 6 id = news.240 } 
+				country_event = { id = bulgaria.4 days = 3 } 
+			}
 		}
 	}
 	
@@ -1175,12 +1179,12 @@ focus_tree = {
 			add_named_threat = { threat = 5 name = BUL_mob } 
 			army_experience = 10
 			custom_effect_tooltip = BUL_general_mob 
-		}
-		hidden_effect = {
-			BUL = {
-				country_event = { id = bulgaria.12 days = 1 }
+			hidden_effect = {
+				BUL = {
+					country_event = { id = bulgaria.12 days = 1 }
+				}
+				news_event = { hours = 6 id = news.242 }
 			}
-			news_event = { hours = 6 id = news.242 }
 		}
 	}
 	
@@ -1415,19 +1419,18 @@ focus_tree = {
 		cost = 10 
 		completion_reward = {
 			custom_effect_tooltip = BUL_leave_league
-		}
-		hidden_effect = {
-			BUL = {
-				dismantle_faction = yes 
-			}
-			SER = {
-				create_faction = "balkan_league"
-				add_to_faction = MNT 
-				add_to_faction = GRE 
-			}
-		}
 		
-		
+			hidden_effect = {
+				BUL = {
+					dismantle_faction = yes 
+				}
+				SER = {
+					create_faction = "balkan_league"
+					add_to_faction = MNT 
+					add_to_faction = GRE 
+				}
+			}
+		}
 	}
 	
 	focus = {
@@ -1699,7 +1702,7 @@ focus_tree = {
 		}
 		cancel_if_invalid = yes 
 		bypass = {
-			is_in_faction = FRA 
+			is_in_faction_with = FRA 
 		}
 		x = 29 
 		y = 15 
@@ -2138,7 +2141,7 @@ focus_tree = {
 			}
 			is_in_faction = no 
 			TUR = {
-				has_war_with FRA 
+				has_war_with = FRA 
 			}
 		}
 		cancel_if_invalid = yes 
@@ -2215,7 +2218,7 @@ focus_tree = {
 		y = 18 
 		cost = 10 
 		completion_reward = {
-			add_ideas = total_economic_mobilization
+			add_ideas = tot_economic_mobilisation
 		}
 	}
 	
@@ -2323,7 +2326,7 @@ focus_tree = {
 		x = 41 
 		y = 1 
 		cost = 10 
-		completion_reward - {
+		completion_reward = {
 			add_tech_bonus = {
 				name = land_doc_bonus
 					bonus = 0.3
