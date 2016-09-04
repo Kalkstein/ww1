@@ -1080,8 +1080,11 @@ focus_tree = {
 			factor = 0.1
 		}
 		completion_reward = {
-			add_tech = mass_assault = {
-
+			add_tech_bonus = {
+				name = FRA_over_the_top_focus
+				bonus = 0.5
+				uses = 1
+				category = land_doctrine
 			}
 		}
 	}
@@ -1326,10 +1329,6 @@ focus_tree = {
 						is_puppet = no
 						NOT = { has_war_with = FRA }
 					}
-				}
-				SOV { country_event = france.17 }
-				hidden_effect = {
-					news_event = { hours = 6 id = news.177 }
 				}
 			}
 		}
