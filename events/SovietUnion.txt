@@ -12,6 +12,7 @@ add_namespace = soviet
 # Revisit 1 : Dringend! Die ganzen AI_chances für events einfügen die mehrere Optionen haben, auch mit Historical_AI und so
 
 # Revisit 3 : Die Mobilisierungsevents für Russland machen
+# besonders bei den Events 71 und 77 aufpassen
 # First Event for new officials
 country_event = {
 	id = soviet.1
@@ -1112,8 +1113,8 @@ country_event = {
 	option = {
 		name = soviet.52.b
 		# Revisit 3 : Garantie widerrufen
-		SER = { add_opinion_modifier = { target = SOV modifier = serbia_refuses } }
-		SER = { add_timed_idea = { idea = heavy_disappointment days = 162 } }
+		YUG = { add_opinion_modifier = { target = SOV modifier = serbia_refuses } }
+		YUG = { add_timed_idea = { idea = heavy_disappointment days = 162 } }
 	}
 }
 
@@ -1287,8 +1288,574 @@ country_event = {
 	option = {
 		name = soviet.61.a
 		set_global_flag = a_war_is_coming
+		TUR = { add_opinion_modifier = { target = GER modifier = central_powers_support } }
+		TUR = { add_opinion_modifier = { target = AUS modifier = central_powers_support } }
+		hidden_effect = {
+		set_global_flag = russian_ottoman_conflict
+		}
 	}
 }
+
+country_event = {
+	id = soviet.62
+	title = soviet.62.t
+	desc = soviet.62.d
+	picture = GFX_report_event_soldiers_marching
+	trigger = {
+	TUR = { has_war_with = SOV }
+	has_global_flag = russian_ottoman_conflict
+	}
+	
+	mean_time_to_happen = {
+		days = 4
+	}
+	
+	fire_only_once = yes 
+		
+	option = {
+		name = soviet.62.a
+		TUR = { add_opinion_modifier = { target = GER modifier = central_powers_support } }
+		TUR = { add_opinion_modifier = { target = AUS modifier = central_powers_support } }
+	}
+}
+
+country_event = {
+	id = soviet.63
+	title = soviet.63.t
+	desc = soviet.63.d
+	# revisit 2 : Die westlichen Allierten haben heute angekündigt Russland bei seinem Expansionsversuch keine
+	# Hilfe leisten zu wollen
+	picture = GFX_report_event_soldiers_marching
+	trigger = {
+	TUR = { has_war_with = SOV }
+	has_global_flag = russian_ottoman_conflict
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	fire_only_once = yes 
+		
+	option = {
+		name = soviet.63.a
+		SOV = {
+			if = {
+					limit = {
+						is_faction_leader = yes
+					}
+					dismantle_faction = yes
+			}
+			if = {
+					limit = {
+						is_in_faction  = yes
+					}
+					remove_from_faction = SOV
+			}
+		}
+		FRA = { add_opinion_modifier = { target = SOV modifier = russian_war_fault } }
+		ENG = { add_opinion_modifier = { target = SOV modifier = russian_war_fault } }
+	}
+}
+
+country_event = {
+	id = soviet.64
+	title = soviet.64.t
+	desc = soviet.64.d
+	picture = GFX_report_event_soldiers_marching
+	
+	is_triggered_only = yes
+		
+	option = {
+		name = soviet.64.a
+		# revisit 2 : die Mittelmächte um Hilfe fragen
+		trigger = {
+		BUL = { NOT = { has_government = democracy } }
+		}
+		GER = { add_opinion_modifier = { target = BUL modifier = a_potential_ally } }
+		AUS = { add_opinion_modifier = { target = BUL modifier = a_potential_ally } }
+		GER = { country_event = { id = soviet.65 days = 3 }}
+	}
+	
+	option = {
+		name = soviet.64.b
+		trigger = {
+		BUL = { has_government = democracy }
+		}
+		ENG = { add_opinion_modifier = { target = BUL modifier = threatened_democracy } }
+		FRA = { add_opinion_modifier = { target = BUL modifier = threatened_democracy } }
+		ENG = { country_event = { id = soviet.66 days = 3 }}
+	}
+	
+	option = {
+		name = soviet.64.c
+		# Alleine kämpfen
+		trigger = {
+		BUL = { NOT = { is_in_faction = yes } } 
+		}
+		BUL = { add_opinion_modifier = { target = SOV modifier = russian_saber_rattling } }
+	}
+	
+	option = {
+		name = soviet.64.e
+		# Mit unseren Verbündeten bekämpfen
+		trigger = {
+		BUL = { is_in_faction = yes }
+		}
+		BUL = { add_opinion_modifier = { target = SOV modifier = russian_saber_rattling } }
+		if = {
+		limit = {
+		BUL = { is_in_faction_with = ENG } }
+		ENG = { add_opinion_modifier = { target = SOV modifier = russian_saber_rattling } }
+		}
+		if = {
+		limit = {
+		BUL = { is_in_faction_with = GER } }
+		GER = { add_opinion_modifier = { target = SOV modifier = russian_saber_rattling } }
+		}
+	}	
+}
+
+country_event = {
+	id = soviet.65
+	title = soviet.65.t
+	desc = soviet.65.d
+	picture = GFX_report_event_soldiers_marching
+	# revisit 2 : Deutschland und österreich haben heute angekündigt das sie Bulgarien bei der Verteidigung der Dardanellen
+	# unterstützen werden
+	is_triggered_only = yes
+		
+	option = {
+		name = soviet.65.a
+		ai_chance = { factor = 100 
+			modifier = {
+			factor = 0 
+			is_in_faction_with = SOV 
+			}
+		}	
+		BUL = { add_opinion_modifier = { target = GER modifier = central_powers_support } }
+		BUL = { add_opinion_modifier = { target = AUS modifier = central_powers_support } }
+		add_to_faction = BUL
+	}
+	
+	option = {
+		name = soviet.65.b
+		BUL = { add_opinion_modifier = { target = GER modifier = stabbed_by_central_powers } }
+		BUL = { add_opinion_modifier = { target = AUS modifier = stabbed_by_central_powers } }
+	}
+}
+
+country_event = {
+	id = soviet.66
+	title = soviet.66.t
+	desc = soviet.66.d
+	picture = GFX_report_event_soldiers_marching
+	# revisit 2 : Deutschland und österreich haben heute angekündigt das sie Bulgarien bei der Verteidigung der Dardanellen
+	# unterstützen werden
+	is_triggered_only = yes
+		
+	option = {
+		name = soviet.66.a
+		ai_chance = { factor = 30 
+			modifier = {
+			factor = 0 
+			is_in_faction_with = SOV 
+			}
+			modifier = {
+			factor = 100 
+			has_war_with = SOV
+			}
+			modifier = {
+			factor = 100 
+			has_war_with = GER
+			}
+		}	
+		BUL = { add_opinion_modifier = { target = ENG modifier = allied_support } }
+		BUL = { add_opinion_modifier = { target = FRA modifier = allied_support } }
+		add_to_faction = BUL
+	}
+	
+	option = {
+		name = soviet.66.b
+		ai_chance = { factor = 70 }
+		BUL = { add_opinion_modifier = { target = ENG modifier = stabbed_by_allies } }
+		BUL = { add_opinion_modifier = { target = FRA modifier = stabbed_by_allies } }
+	}
+}
+
+country_event = {
+	id = soviet.67
+	title = soviet.67.t
+	desc = soviet.67.d
+	picture = GFX_report_event_soldiers_marching
+	# revisit 2 : Nach dem zum Erliegen kommen unserer Offensive hat sich unser Planungsvorteil in Luft aufgelöst, unser Generalstab
+	# ist so inkompetent wie eh und je
+	trigger = {
+	has_war_with = GER
+	SOV = { has_aggressive_war = yes }
+	}
+	
+	mean_time_to_happen = { days = 28 }
+	
+	option = {
+		name = soviet.67.a
+		# Wir werden gewinnen!
+		remove_ideas = allied_planning
+		FRA = { remove_ideas = allied_planning }
+		ENG = { remove_ideas = allied_planning }
+	}
+}
+
+country_event = {
+	id = soviet.68
+	title = soviet.68.t
+	desc = soviet.68.d
+	picture = GFX_report_event_soldiers_marching
+	# revisit 2 : nach dem Kriegsausbruch hat sich unser zar in das Hauptquartier begeben, die Angst vor Kontrollen und 
+	# die militärische Inkompetenz Nikolajs verlangsamen unsere Plannung
+	
+	trigger = {
+	OR = { has_war_with = GER }
+	OR = { has_war_with = TUR }
+	}
+	
+	mean_time_to_happen = { days = 8 }
+	
+	option = {
+		name = soviet.68.a
+		# Mit Gottes Hilfe wird Russland siegen!
+		add_ideas = lame_hqs 
+			}
+	}
+
+country_event = {
+	id = soviet.69
+	title = soviet.69.t
+	desc = soviet.69.d
+	picture = GFX_report_event_soldiers_marching
+	# revisit 2 : Mit den Angriffen deutscher Truppen auf unsere Grenzen haben sich unsere Planungen 
+	# für eine Offensive in Luft aufgelöst
+	trigger = {
+	has_war_with = GER
+	NOT = { has_aggresive_war = yes }
+	}
+	
+	mean_time_to_happen = { days = 2 }
+	
+	option = {
+		name = soviet.69.a
+		# Jetzt gilt es Gott zu vertrauen!
+		remove_ideas = allied_planning
+		FRA = { remove_ideas = allied_planning }
+		ENG = { remove_ideas = allied_planning }
+	}
+}
+
+country_event = {
+	id = soviet.70
+	title = soviet.70.t
+	desc = soviet.70.d
+	picture = GFX_report_event_soldiers_marching
+	# revisit 2 : Die Russen haben uns heute im geheimen einen durchgeknallten Plan vorgeschlagen, ein präventivangriff auf 
+	# Deutschland um die Mittelmächte zu zerschlagen, sollen wir da jetzt mitmachen?
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.70.a
+		# Eine sehr gute Idee
+		ai_chance = { 
+		factor = 95 
+		modifier = {
+		factor = 100
+		has_global_flag = a_war_is_coming
+		}
+		}
+		ENG = { add_opinion_modifier = { target = SOV modifier = a_good_plan } }
+		SOV = { country_event = { id = soviet.72 hours = 12 } }
+		FRA = { country_event = { id = soviet.74 days = 1 } }
+		
+	}
+	option = {
+		name = soviet.70.b
+		# Eindeutig zu viel Wodka
+		remove_from_faction = SOV
+		SOV = { country_event = { id = soviet.73 hours = 12 } }
+		ENG = { add_opinion_modifier = { target = SOV modifier = russian_warmongers } }
+	}
+}
+
+country_event = {
+	id = soviet.72
+	title = soviet.72.t
+	desc = soviet.72.d
+	picture = GFX_report_event_soldiers_marching
+	# revisit 2 : Die Engländer haben unserem Plan zugestimmt und wollen mithelfen
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.72.a
+		# Sie haben Verstand
+		SOV = { add_opinion_modifier = { target = ENG modifier = a_good_plan } }
+	}
+}
+
+country_event = {
+	id = soviet.73
+	title = soviet.73.t
+	desc = soviet.73.d
+	picture = GFX_report_event_soldiers_marching
+	# revisit 2 : Die dummen Engländer haben angeblich gestützt "auf eine ausführliche Analyse der deutsche Kräft und der
+	# internationalen Lage" abgelehnt, tumbe Idioten mit zuviel Wissenschaft im Hirn, dann ist der Ruhm für uns!
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.72.a
+		# Sie erkennen die Chance nicht
+		SOV = { add_opinion_modifier = { target = ENG modifier = not_used_chances } }
+	}
+}
+
+country_event = {
+	id = soviet.74
+	title = soviet.74.t
+	desc = soviet.74.d
+	picture = GFX_report_event_soldiers_marching
+	# revisit 2 : Die Engländer haben uns vertraulich einen russischen Plan angetragen, ein Präventivangriff auf Deutschland,
+	# die beiden sind shcon voll in der Vorbereitung
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.74.a
+		# eine gute Ideee
+		FRA = { add_opinion_modifier = { target = SOV modifier = together_we_are_strong } }
+		FRA = { add_opinion_modifier = { target = ENG modifier = together_we_are_strong } }
+		country_event = { id = soviet.74 hours = 12 }
+	}
+	option = {
+		name = soviet.74.b
+		# Jetzt sind die Engländer auch noch durchgeknallt
+		FRA = { add_opinion_modifier = { target = ENG modifier = a_insane_plan } }
+		FRA = { add_opinion_modifier = { target = SOV modifier = a_insane_plan } }
+		ENG = { country_event = { id = soviet.75 hours = 6 } }
+		SOV = { country_event = { id = soviet.76 hours = 12 } }
+		remove_from_faction = FRA
+	}
+}
+
+country_event = {
+	id = soviet.75
+	title = soviet.75.t
+	desc = soviet.75.d
+	picture = GFX_report_event_soldiers_marching
+	# revisit 2 : Die feigen Franzosen haben angeblich gestützt "auf eine ausführliche Analyse der deutsche Kräft und der
+	# internationalen Lage" abgelehnt, tumbe Idioten mit zuviel Wissenschaft im Hirn, dann ist der Ruhm für uns!
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.75.a
+		# Sie verpassen ihre Chance
+		ENG = { add_opinion_modifier = { target = FRA modifier = not_used_chances } }
+	}
+}
+
+country_event = {
+	id = soviet.76
+	title = soviet.76.t
+	desc = soviet.76.d
+	picture = GFX_report_event_soldiers_marching
+	# revisit 2 : Die feigen Franzosen haben angeblich gestützt "auf eine ausführliche Analyse der deutsche Kräft und der
+	# internationalen Lage" abgelehnt, tumbe Idioten mit zuviel Wissenschaft im Hirn, dann ist der Ruhm für uns!
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.76.a
+		# Sie erkennen die Chance nicht
+		SOV = { add_opinion_modifier = { target = FRA modifier = not_used_chances } }
+	}
+}
+
+country_event = {
+	id = soviet.71
+	title = soviet.71.t
+	desc = soviet.71.d
+	picture = GFX_report_event_soldiers_marching
+	# revisit 2 : Es ist nur noch eine Frage für unseren Angriff auf die Mittelmächte zu klären, jetzt die Infanteristen
+	# einziehen, riskieren das die Deutschen es mitkriegen, aber dafür unsere Infantersten länger drillen können oder 
+	# noch ein bisschen warten?
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.71.a
+		# Jetzt mobilisieren
+		ai_chance = {
+		factor = 50 
+		modifier = {
+		factor = 80 
+		NOT = { is_in_faction_with = ENG }
+		}
+		}
+		load_oob = "SOV_preventiv_war_early_mobilization"
+		GER = { country_event = { id = soviet.78 days = 1 } }
+		AUS = { country_event = { id = soviet.79 days = 2 } }
+		set_politics = {
+			economy = { law = war_economy }
+			mobilization_laws = { law = extensive_conscription }
+		}
+	}
+	option = {
+		name = soviet.71.b
+		# warten wir noch drei Wochen
+		country_event = { id = soviet.77 days = 21 }
+	}
+}
+
+country_event = {
+	id = soviet.77
+	title = soviet.77.t
+	desc = soviet.77.d
+	picture = GFX_report_event_soldiers_marching
+	# revisit 2 : Jetzt ist es allerhöchste Eisenbahn, die Mobilisierung muss beschlossen werden, die Deutschen haben
+	# wahrscheinlich längst Wind von unseren Plänen gekriegt
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.77.a
+		# Lets go!
+		load_oob = "SOV_preventiv_war_late_mobilization"
+		GER = { country_event = { id = soviet.78 days = 1 } }
+		AUS = { country_event = { id = soviet.79 days = 2 } }
+		add_ideas = war_economy 
+		add_ideas = extensive_conscription 
+		}
+	}
+}
+
+country_event = {
+	id = soviet.78
+	title = soviet.78.t
+	desc = soviet.78.d
+	picture = GFX_report_event_soldiers_marching
+	# revisit 2 : Russland hat heute sämtliche Männer über 16 eingezogen und im ganzen Land strömen Millionen zu den Kasernen
+	# offenbar steht ein großer Krieg unmittelbar bevor und das einzige sinnvolle Ziel bei so einer großen Mobilization
+	# wären wir... Die Haltung der restlichen Alliierten ist noch unklar, aber Russland plant offenbar einen Angriff
+	# Willhelm II. hielt heute eine Rede im Reichstag in der er ankündigte : "Egal was kommt, wir werden die barbarischen 
+	# Horden in ihre Steppe zurückschlagen!" Das ganze Volk und selbst die vaterlandslosen Sozialisten stehen hinter ihm
+	# und die Mobilmachung wurde einstimmig beschlossen. Österreich bekundete seine Loyalität und macht ebenfalls mobil
+	# revisit 3 : Deutsche Mobilmachung einfügen mit Event
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.78.a
+		# We will crush them!
+		GER = { add_opinion_modifier = { target = SOV modifier = russian_attack } }
+		GER = { 
+		add_timed_idea = {
+			idea = a_nation_behind_her_emperor
+			days = 80
+		} }
+		GER = { add_ideas = defense_of_the_reich }
+		add_ideas = war_economy 
+		add_ideas = extensive_conscription 
+		}
+}
+
+
+country_event = {
+	id = soviet.79
+	title = soviet.79.t
+	desc = soviet.79.d
+	picture = GFX_report_event_soldiers_marching
+	# revisit 2 : Russland hat heute sämtliche Männer über 16 eingezogen und im ganzen Land strömen Millionen zu den Kasernen
+	# offenbar steht ein großer Krieg unmittelbar bevor und das einzige sinnvolle Ziel bei so einer großen Mobilisation
+	# wären wir... Die Haltung der restlichen Alliierten ist noch unklar, aber Russland plant offenbar einen Angriff
+	# Willhelm II. hielt heute eine Rede im Reichstag in der er ankündigte : "Egal was kommt, wir werden die barbarischen 
+	# Horden in ihre Steppe zurückschlagen!" Das ganze Volk und selbst die vaterlandslosen Sozialisten stehen hinter ihm
+	# und die Mobilmachung wurde einstimmig beschlossen. Es ist keine Frage das Österreich in dieser Angelegenheit loyal
+	# hinter Deutschland steht und wir haben ebenfalls mobilgemacht
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.79.a
+		# United we stand together
+		set_politics = {
+			economy = { law = war_economy }
+			mobilization_laws = { law = extensive_conscription }
+		}
+		AUS = { add_opinion_modifier = { target = SOV modifier = russian_attack } }
+	}
+}
+
+country_event = {
+	id = soviet.80
+	title = soviet.80.t
+	desc = soviet.80.d
+	picture = GFX_report_event_soldiers_marching
+	# Die Soldaten einzuziehen war ein Fehler, sie haben nicht nur subversive kommunistische Ideen in die Armee gebracht,
+	# nein, nun desertiert absolut jeder, weil es die neuen vormachen!
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.80.a
+		# I think we cant do anything
+		add_ideas = { everyone_deserts }
+		set_global_flag = russian_army_moulders
+	}
+}
+
+country_event = {
+	id = soviet.81
+	title = soviet.81.t
+	desc = soviet.81.d
+	picture = GFX_report_event_soldiers_marching
+	# Kommunistische Arbeiter
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.81.a
+		# I think we cant do anything
+		add_ideas = { exploited_workers }
+		set_global_flag = russian_army_moulders
+	}
+}
+
+country_event = {
+	id = soviet.82
+	title = soviet.82.t
+	desc = soviet.82.d
+	picture = GFX_report_event_soldiers_marching
+	# revisit 2 : Die Kommunisten nutzen in ihrer Propaganda heftig aus das Russland einen Krieg führt obwohl
+	# zuhause Bauern leiden
+	trigger = {
+	NOT = { has_completed_focus = SOV_modernize_agriculture }
+	has_completed_focus = SOV_smash_the_ottomans
+	has_global_flag = russian_ottoman_conflict
+	has_war_with = TUR
+	}
+	
+	mean_time_to_happen = { days = 2 }
+	
+	option = {
+		name = soviet.82.a
+		# Sie schlagen aus allem Profit
+		add_timed_idea = {
+				idea = a_imperial_war
+				days = 365
+			}
+	}
+}
+
 
 
 
