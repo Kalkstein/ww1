@@ -274,7 +274,7 @@ focus_tree = {
 	available = {
 		date > 1911.6.12
 		}
-		x = 5
+		x = 6
 		y = 0
 		cost = 10 
 		completion_reward = {
@@ -301,7 +301,7 @@ focus_tree = {
 	icon = GFX_goal_generic_production
 	mutually_exclusive = { focus = USA_military_complex_development }
 	prerequisite = { focus = USA_develop_rock_island }
-	x = 4
+	x = 5
 	y = 1
 	cost = 10
 	completion_reward = {
@@ -328,7 +328,7 @@ focus_tree = {
 	icon = GFX_goal_generic_small_arms
 	mutually_exclusive = { focus = USA_support_private_industry }
 	prerequisite = { focus = USA_develop_rock_island }
-	x = 6
+	x = 7
 	y = 1
 	cost = 10
 	completion_reward = {
@@ -353,7 +353,7 @@ focus_tree = {
 	id = USA_mass_industrialism 
 	icon = GFX_goal_generic_construct_mil_factory
 	prerequisite = { focus = USA_support_private_industry }
-	x = 4 
+	x = 5
 	y = 2 
 	cost = 10 
 	completion_reward = {
@@ -369,7 +369,7 @@ focus_tree = {
 	id = USA_infantry_tactics_development
 	icon = GFX_goal_generic_special_forces
 	prerequisite = { focus = USA_military_complex_development }
-	x = 6 
+	x = 7 
 	y = 2
 	cost = 10
 	completion_reward = {
@@ -399,7 +399,7 @@ focus_tree = {
 		controls_state = 662
 		}
 	}		
-	x = 4
+	x = 5
 	y = 3
 	cost = 10	
 	completion_reward = {
@@ -421,13 +421,13 @@ focus_tree = {
 	focus = {
 	id = USA_support_US_steel
 	icon = GFX_goal_generic_construct_civ_factory
-	prerequisite = { focus = USA_Infantry_Tactics_Development }
+	prerequisite = { focus = USA_infantry_tactics_development }
 	available = {
 	USA = {
 		controls_state = 360
 		}
 	}		
-	x = 6
+	x = 7
 	y = 3
 	cost = 10
 	completion_reward = {
@@ -448,9 +448,9 @@ focus_tree = {
 	}
 	focus = {
 	id = USA_found_the_airforce 
-	icon = GFX_goal_generic_build_airforce
+	icon = GFX_goal_generic_air_production
 	prerequisite = { focus = USA_birth_of_texas_fracking focus = USA_support_US_steel }
-	x = 5 
+	x = 6
 	y = 4
 	cost = 10
 	completion_reward = {
@@ -474,6 +474,24 @@ focus_tree = {
 			bonus = 0.5
 			uses = 1
 			category = air_doctrine
+			}
+		}
+	}	
+	focus = {
+	id = USA_birth_of_special_forces
+	icon = GFX_goal_generic_secret_weapon
+	prerequisite = { focus = USA_found_the_airforce }
+	x = 6
+	y = 5
+	cost = 10
+	completion_reward = {
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 0.75
+				uses = 3
+				technology = paratroopers
+				technology = marines
+				technology = tech_mountaineers
 			}
 		}
 	}
