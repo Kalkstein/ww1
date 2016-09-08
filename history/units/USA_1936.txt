@@ -1,6 +1,6 @@
 ﻿##### Division Templates #####
 division_template = {
-	name = "Infantry Division"  	# Standard formation for frontline divisions
+	name = "Infantry Division"  	
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -14,60 +14,41 @@ division_template = {
 		infantry = { x = 2 y = 2 }
 	}
 	support = {
-		artillery = { x = 0 y = 0 }  # US Hvy Field Arty consisted of 2 Bns, 155mm howitzers
-		engineer = { x = 0 y = 1 }   # US Eng Rgt consisted of 2 Bns
-	}
+		recon = { x = 0 y = 0 }     
+		engineer = { x = 0 y = 1 }   
+		artillery = { x = 0 y = 2 } 
 }
 division_template = {
-	name = "National Guard Division"  	# Standard formation for NG divisions through late 1940
-
-	regiments = {						
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
-		infantry = { x = 3 y = 0 }
-		infantry = { x = 3 y = 1 }
-		infantry = { x = 3 y = 2 }
-	}
-	support = {
-		artillery = { x = 0 y = 0 }  # US Hvy Field Arty consisted of 2 Bns, 155mm howitzers
-		engineer = { x = 0 y = 1 }   # US Eng Rgt consisted of 2 Bns
-	}
-}
-division_template = {
-	name = "Cavalry Division"  		# 1st Cavalry Division only
+	name = "Cavalry Division"  		
 
 	regiments = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }
 		cavalry = { x = 0 y = 2 }
-		cavalry = { x = 0 y = 3 }
 		cavalry = { x = 1 y = 0 }
 		cavalry = { x = 1 y = 1 }
 		cavalry = { x = 1 y = 2 }
-		cavalry = { x = 1 y = 3 }
 	}
 	support = {
-		recon = { x = 0 y = 0 }      # US Cav Recon consisted of 52 ACs, 13 L Arm
-		engineer = { x = 0 y = 1 }   # US Eng Bn
+		recon = { x = 0 y = 0 }     
+		engineer = { x = 0 y = 1 }  
 	}
 }
 division_template = {
-	name = "Garrison Brigade"  		# used for island defense (older equipment, lower experience)
+	name = "Infantry Reserve Division"  	# Reserve Soldiers of the United States Army
 
-	regiments = {
+	regiments = {						
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
 	}
 	support = {
-		engineer = { x = 0 y = 0 }   
+		recon = { x = 0 y = 0 }     
+		engineer = { x = 0 y = 1 }   
+		artillery = { x = 0 y = 2 }  
 	}
 	priority = 0
 }
@@ -79,36 +60,35 @@ units = {
 	division = {			
 		name = "Puerto Rico Department"
 		location = 1440
-		division_template = "Infantry Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.15
+		division_template = "Infantry Reserve Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.75
 
 	}			
 	division = {			
 		name = "Panama Canal Force"		
 		location = 7617
-		division_template = "Infantry Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.15
+		division_template = "Infantry Reserve Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.75
 
 	}
 
-	### 1st Army -- note: Armies only paper organizations in 1936 ###
 	# I Army Corps #
 	division= {			
 		name = "26th 'Yankee' Division"		
 		location = 6732
 		division_template = "National Guard Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.75
 
 	}			
 	division= {			
 		name = "43rd 'Winged Victory' Division"		
 		location = 6732
 		division_template = "National Guard Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.75
 
 	}
 	# II Army Corps #
@@ -116,96 +96,95 @@ units = {
 		name = "1st 'Big Red One' Division"		
 		location = 3878
 		division_template = "Infantry Division"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.75
 	}			
 	division= {			
 		name = "27th 'New York' Division"		
 		location = 3878
-		division_template = "National Guard Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.75
 
 	}			
 	division= {			
 		name = "44th Infantry Division"		
 		location = 3878
-		division_template = "National Guard Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		division_template = "Infantry Division"
+	start_experience_factor = 0.5
+		start_equipment_factor = 0.75
 
 	}			
 	# III Army Corps #
 	division= {			
 		name = "28th 'Keystone' Division"		
 		location = 6984
-		division_template = "National Guard Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.75
 
 	}			
 	division= {			
 		name = "29th 'Blue and Gray' Division"		
 		location = 6984
-		division_template = "National Guard Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.75
 
 	}			
 
 
-	### 2nd Army -- note: Armies only paper organizations in 1936 ###
 	# V Army Corps #
 	division= {			
 		name = "37th 'Buckeye' Division"		
 		location = 6855
-		division_template = "National Guard Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.75
 
 	}			
 	division= {			
 		name = "38th 'Cyclone' Division"		
 		location = 6855
-		division_template = "National Guard Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.75
 
 	}			
 	# VI Army Corps #
 	division= {			
 		name = "32nd 'Red Arrow' Division"		
 		location = 9450
-		division_template = "National Guard Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.75
 
 	}			
 	division= {			
 		name = "33rd 'Golden Cross' Division"		
 		location = 9450
-		division_template = "National Guard Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.75
 
 	}			
 
 
-	### 3rd Army -- note: Armies only paper organizations in 1936 ###
 	# IV Army Corps #
 	division = {			
 		name = "30th 'Old Hickory' Division"		
 		location = 12384
-		division_template = "National Guard Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.75
 
 	}			
 	division= {			
 		name = "31st 'Dixie' Division"		
 		location = 12384
-		division_template = "National Guard Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.75
 
 	}			
 	# VIII Army Corps #
@@ -213,72 +192,74 @@ units = {
 		name = "2nd 'Indianhead' Division"		
 		location = 12782
 		division_template = "Infantry Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.75
 
 	}			
 	division= {			
 		name = "36th 'Texas' Division"		
 		location = 12782
-		division_template = "National Guard Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.75
 
 	}			
 	division= {			
 		name = "45th 'Thunderbird' Division"		
 		location = 12782
-		division_template = "National Guard Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.75
 
 	}			
 	division= {			
 		name = "1st Cavalry 'The 1st Team' Division"		
 		location = 12782
 		division_template = "Cavalry Division"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.75
 	}			
 					
-	### 4th Army -- note: Armies only paper organizations in 1936 ###
-	# VII Army Corps (CO: Bishop) #
+	# VII Army Corps #
 	division= {			
 		name = "34th 'Red Bull' Division"		
 		location = 12586
-		division_template = "National Guard Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.75
 
 	}			
 	division= {			
 		name = "35th 'Santa Fe' Division"		
 		location = 12586
-		division_template = "National Guard Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.75
 
-	}			
-	# IX Army Corps (CO: DeWitt) #
+	}
+	
+	# IX Army Corps #
 	division= {			
 		name = "3rd 'Rock of the Marne' Division"		
 		location = 9671
 		division_template = "Infantry Division"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.75
 	}			
 	division = {			
 		name = "40th 'Sunshine' Division"		
 		location = 9671
-		division_template = "National Guard Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.75
 
 	}			
 	division= {			
 		name = "41st 'Sunset' Division"		
 		location = 9671
-		division_template = "National Guard Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.75
 
 	}			
 					
@@ -288,17 +269,17 @@ units = {
 	division = {			
 		name = "Alaska Defense Command"		
 		location = 13091
-		division_template = "Infantry Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.15
+		division_template = "Infantry Reserve Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.25
 
 	}			
 	division= {			
 		name = "Attu Island Garrison"		
 		location = 13067
-		division_template = "Garrison Brigade"
+		division_template = "Infantry Reserve Division"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.15
+		start_equipment_factor = 0.25
 
 	}
 			
@@ -306,9 +287,9 @@ units = {
 	division = {			
 		name = "Hawaiian Division"		
 		location = 4180
-		division_template = "National Guard Division"		# older equipment, less training than NG division
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		division_template = "Infantry Reserve Division"	
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.25
 
 	}
 
@@ -316,25 +297,25 @@ units = {
 	division= {				
 		name = "Midway Island Garrison"			
 		location = 13052
-		division_template = "Garrison Brigade"
+		division_template = "Infantry Reserve Division"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.15
+		start_equipment_factor = 0.25
 
 	}				
 	division= {				
 		name = "Wake Island Garrison"			
 		location = 13047
-		division_template = "Garrison Brigade"
+		division_template = "Infantry Reserve Division"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.15
+		start_equipment_factor = 0.25
 
 	}				
 	division= {				
 		name = "Guam Garrison"			
 		location = 12140
-		division_template = "Garrison Brigade"
+		division_template = "Infantry Reserve Division"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.15
+		start_equipment_factor = 0.25
 
 	}				
 	
@@ -342,41 +323,41 @@ units = {
 	division= {			
 		name = "Christmas Island Garrison"		
 		location = 13048
-		division_template = "Garrison Brigade"
+		division_template = "Infantry Reserve Division"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.15
+		start_equipment_factor = 0.25
 
 	}			
 	division= {			
 		name = "Jarvis Island Garrison"		
 		location = 13049
-		division_template = "Garrison Brigade"
+		division_template = "Infantry Reserve Division"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.15
+		start_equipment_factor = 0.25
 
 	}			
 	division= {			
 		name = "Palmyra Garrison"		
 		location = 13050
-		division_template = "Garrison Brigade"
+		division_template = "Infantry Reserve Division"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.15
+		start_equipment_factor = 0.25
 
 	}			
 	division= {			
 		name = "Phoenix Island Garrison"		
 		location = 13053
-		division_template = "Garrison Brigade"
+		division_template = "Infantry Reserve Division"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.15
+		start_equipment_factor = 0.25
 
 	}			
 	division= {			
 		name = "Johnston Island Garrison"		
 		location = 13051
-		division_template = "Garrison Brigade"
+		division_template = "Infantry Reserve Division"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.15
+		start_equipment_factor = 0.25
 
 	}			
 
@@ -384,9 +365,9 @@ units = {
 	division = {										
 		name = "Phillippine Division"			
 		location = 10265
-		division_template = "Infantry Division"			# older equipment, less training than NG division
+		division_template = "Infantry Reserve Division"		
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.25
 
 	}				
 

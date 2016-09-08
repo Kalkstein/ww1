@@ -1,6 +1,6 @@
 ideas = {
 
-	mobilization_laws = { 
+	mobilization_laws = {
 		law = yes
 
 		disarmed_nation = {
@@ -18,6 +18,18 @@ ideas = {
 			}
 			
 			cancel_if_invalid = no
+			ai_will_do = {
+				factor = 100
+				modifier = {
+					factor = 0
+					has_idea = volunteer_only
+					has_idea = limited_conscription
+					has_idea = extensive_conscription
+					has_idea = service_by_requirement
+					has_idea = all_adults_serve
+					has_idea = scraping_the_barrel
+				}
+			}
 		}
 		
 		volunteer_only = {
@@ -39,6 +51,17 @@ ideas = {
 			default = yes
 			
 			cancel_if_invalid = no
+			ai_will_do = {
+				factor = 100
+				modifier = {
+					factor = 0
+					has_idea = limited_conscription
+					has_idea = extensive_conscription
+					has_idea = service_by_requirement
+					has_idea = all_adults_serve
+					has_idea = scraping_the_barrel
+				}
+			}
 		}
 		
 		limited_conscription = {
@@ -58,6 +81,21 @@ ideas = {
 			}
 			
 			cancel_if_invalid = no
+			ai_will_do = { 
+				factor = 100
+				modifier = {
+					factor = 100
+					has_idea = volunteer_only
+					has_manpower < 100000
+				}
+				modifier = {
+					factor = 0
+					has_idea = extensive_conscription
+					has_idea = service_by_requirement
+					has_idea = all_adults_serve
+					has_idea = scraping_the_barrel
+				}
+			}
 		}
 		
 		extensive_conscription = {
@@ -83,6 +121,20 @@ ideas = {
 			}
 			
 			cancel_if_invalid = no
+			ai_will_do = { 
+				factor = 100
+				modifier = {
+					factor = 100
+					has_idea = limited_conscription
+					has_manpower < 100000
+				}
+				modifier = {
+					factor = 0
+					has_idea = service_by_requirement
+					has_idea = all_adults_serve
+					has_idea = scraping_the_barrel
+				}
+			}
 		}
 		
 		service_by_requirement = {
@@ -109,6 +161,19 @@ ideas = {
 			}
 			
 			cancel_if_invalid = no
+			ai_will_do = { 
+				factor = 100
+				modifier = {
+					factor = 100
+					has_idea = extensive_conscription
+					has_manpower < 100000
+				}
+				modifier = {
+					factor = 0
+					has_idea = all_adults_serve
+					has_idea = scraping_the_barrel
+				}
+			}
 		}
 		
 		all_adults_serve = {
@@ -136,6 +201,18 @@ ideas = {
 			}
 			
 			cancel_if_invalid = no
+			ai_will_do = { 
+				factor = 100
+				modifier = {
+					factor = 100
+					has_idea = service_by_requirement
+					has_manpower < 100000
+				}
+				modifier = {
+					factor = 0
+					has_idea = scraping_the_barrel
+				}
+			}
 		}
 		
 		scraping_the_barrel = {
@@ -158,6 +235,14 @@ ideas = {
 			}
 			
 			cancel_if_invalid = no
+			ai_will_do = { 
+				factor = 100
+				modifier = {
+					factor = 100
+					has_idea = all_adults_serve
+					has_manpower < 100000
+				}
+			}
 		}
 	}
 }

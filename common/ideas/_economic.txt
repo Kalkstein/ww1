@@ -80,6 +80,16 @@ ideas = {
 			default = yes
 			
 			cancel_if_invalid = no
+			
+			ai_will_do = {
+				factor = 100
+				modifier = {
+					factor = 0
+					has_idea = partial_economic_mobilisation
+					has_idea = war_economy
+					has_idea = tot_economic_mobilisation
+				}
+			}
 		}
 		
 		low_economic_mobilisation = {
@@ -93,7 +103,7 @@ ideas = {
 				}			
 			}
 			
-			cost = 350
+			cost = 150
 			removal_cost = -1
 			
 			modifier = {
@@ -113,6 +123,13 @@ ideas = {
 					
 					is_major = yes
 				}
+				
+				modifier = {
+					factor = 0
+					has_idea = partial_economic_mobilisation
+					has_idea = war_economy
+					has_idea = tot_economic_mobilisation
+				}
    			}
 		}
 		
@@ -127,7 +144,7 @@ ideas = {
 				}			
 			}
 
-			cost = 450
+			cost = 150
 			removal_cost = -1
 			
 			modifier = {
@@ -146,6 +163,12 @@ ideas = {
 					factor = 2
 					
 					is_major = yes
+				}
+				
+				modifier = {
+					factor = 0
+					has_idea = war_economy
+					has_idea = tot_economic_mobilisation
 				}
    			}
 		}
@@ -171,7 +194,7 @@ ideas = {
 				}			
 			}
 		
-			cost = 550
+			cost = 150
 			removal_cost = -1
 			
 			modifier = {
@@ -184,14 +207,22 @@ ideas = {
 			cancel_if_invalid = no
 			
 			ai_will_do = {
-   				factor = 1
-
-   				modifier = {
-					factor = 40
-					
-					is_major = yes
+				factor = 100
+				modifier = {
+					factor = 100
+					has_war = yes
+					any_enemy_country = {
+						ic_ratio = { 
+							tag = ROOT 
+							ratio > 0.2
+						}
+					}
 				}
-   			}
+				modifier = {
+					factor = 0
+					has_idea = tot_economic_mobilisation
+				}
+			}
 		}
 		
 		tot_economic_mobilisation = {
@@ -207,7 +238,7 @@ ideas = {
 				}
 			}
 			
-			cost = 650
+			cost = 150
 			removal_cost = -1
 			
 			modifier = {
@@ -219,6 +250,20 @@ ideas = {
 			}
 			
 			cancel_if_invalid = no
+			ai_will_do = {
+				factor = 10
+				modifier = {
+					factor = 1000
+					has_manpower > 5000000
+					has_war = yes
+					any_enemy_country = {
+						ic_ratio = { 
+							tag = ROOT 
+							ratio > 0.75
+						}
+					}
+				}
+			}
 		}
 	}
 	
@@ -244,7 +289,7 @@ ideas = {
 		export_focus = {
 			
 			
-			cost = 350
+			cost = 150
 			removal_cost = -1
 			
 			modifier = {
@@ -285,7 +330,7 @@ ideas = {
 				}
 			}
 		
-			cost = 450
+			cost = 150
 			removal_cost = -1
 			
 			modifier = {
@@ -329,7 +374,7 @@ ideas = {
 				}
 			}
 			
-			cost = 550
+			cost = 150
 			removal_cost = -1
 			
 			
