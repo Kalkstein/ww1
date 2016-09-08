@@ -352,13 +352,13 @@ focus_tree = {
 		completion_reward = {
 		add_ideas = unlimited_tsar_power
 		if = {
-		limit = { monarchy < 0.3 }
+		limit = { fascism < 0.3 }
 		hidden_effect = {
 			country_event = { id = soviet.12 days = 14 }
 		}				
 		}
 		if = {
-		limit = { monarchy > 0.3 }
+		limit = { fascism > 0.3 }
 		hidden_effect = {
 		country_event = { id = soviet.11 days = 14 }				
 			}
@@ -417,7 +417,7 @@ focus_tree = {
 		country_event = { id = soviet.16 days = 5 }
 		}
 		if = {
-		limit = { monarchy < 0.3 }
+		limit = { fascism < 0.3 }
 				hidden_effect = {
 				country_event = { id = soviet.12 days = 5 }
 				}
@@ -524,7 +524,7 @@ focus = {
 		has_war = yes
 		any_war_score < 0
 		communism < 35
-		monarchy < 45
+		fascism < 45
 		}
 		hidden_effect = {
 			country_event = { id = soviet.32 days = 14 }
@@ -553,7 +553,7 @@ focus = {
 		available = {
 		has_war = yes
 		any_war_score < -14
-		monarchy > 0.45
+		fascism > 0.45
 		communism < 0.35
 		}
 		completion_reward = {

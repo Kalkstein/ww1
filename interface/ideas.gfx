@@ -30,6 +30,11 @@ spriteTypes = {
 	texturefile = "gfx/interface/ideas/ethnic_tensions_pic.dds"
 	}
 
+	SpriteType = {
+	name = "GFX_idea_united_germany"
+	texturefile = "gfx/interface/ideas/united_germany.dds"
+	}
+
 spriteType = {
 	name = "GFX_idea_the_reds"
 	texturefile = "gfx/interface/ideas/the_reds.dds"

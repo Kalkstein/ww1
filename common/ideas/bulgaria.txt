@@ -17,7 +17,7 @@ ideas = {
 				political_power_gain = 1
 			}
 		}
-		BUL_keep_monarchy_idea = {
+		BUL_keep_fascism_idea = {
 			picture = generic_intel_bonus 
 			removal_cost = -1 
 			
@@ -30,7 +30,7 @@ ideas = {
 			}
 			
 			modifier = {
-				monarchy_drift = 0.04
+				fascism_drift = 0.04
 			}
 		}
 		BUL_russian_communism_idea = {
