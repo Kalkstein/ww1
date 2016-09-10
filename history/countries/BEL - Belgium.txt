@@ -153,7 +153,7 @@ create_country_leader = {
 	desc = "POLITICS_LEON_DEGRELLE_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
 	expire = "1965.1.1"
-	ideology = rexism
+	ideology = despotism
 	traits = {
 		#
 	}
@@ -164,7 +164,7 @@ create_country_leader = {
 	desc = "POLITICS_ALBERT_I_DESC"
 	picture = "Portrait_Belgium_Albert_I.dds"
 	expire = "1934.17.2"
-	ideology = absolutism
+	ideology = imperialism
 	traits = {
 		cornered_fox
 	}

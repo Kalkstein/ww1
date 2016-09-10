@@ -88,7 +88,7 @@ create_country_leader = {
 	desc = "POLITICS_SVEN_OLOV_LINDHOLM_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
 	expire = "1965.1.1"
-	ideology = nazism
+	ideology = imperialism
 	traits = {
 		#
 	}

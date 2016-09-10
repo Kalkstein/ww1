@@ -127,7 +127,7 @@ create_country_leader = {
 	desc = "POLITICS_ERIC_CAMPBELL_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = absolutism
 	traits = {
 		#
 	}

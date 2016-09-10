@@ -31,7 +31,7 @@ set_politics = {
 			popularity = 5
 		}
 
-		fascism = {
+		neutrality = {
 			popularity = 80
 		}
 
@@ -84,7 +84,7 @@ create_country_leader = {
 	desc = "POLITICS_OCTAVIAN_GOGA_DESC"
 	picture = "Portrait_Romania_Octavian_Goga.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = absolutism
 	traits = {
 		#
 	}
