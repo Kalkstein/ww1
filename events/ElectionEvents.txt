@@ -540,7 +540,7 @@ country_event = {
 	trigger = {
 		tag = SOV 
 		communism > 0.5
-		has_government = monarchy
+		has_government = fascism
 	}
 	
 	option = {
@@ -574,8 +574,8 @@ country_event = {
 	trigger = {
 		tag = SOV
 		communism < 0.5
-		monarchy < 0.5
-		has_government = monarchy
+		fascism < 0.5
+		has_government = fascism
 	}
 	
 	option = {
@@ -597,8 +597,8 @@ country_event = {
 
 	trigger = {
 		tag = SOV
-		monarchy > 0.5
-		has_government = monarchy
+		fascism > 0.5
+		has_government = fascism
 	}
 	
 	option = {

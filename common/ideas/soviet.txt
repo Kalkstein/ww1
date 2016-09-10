@@ -124,7 +124,7 @@ ideas = {
 
 			modifier = {
 				democratic_drift = 0.03
-				monarchy_drift = -0.05
+				fascism_drift = -0.05
 				}
 			
 		}
@@ -257,7 +257,7 @@ ideas = {
 			modifier = {
 			industrial_capacity_factory = -0.95
 			communism_drift = 0.1
-			monarchy_drift = -0.1
+			fascism_drift = -0.1
 			}
 		}
 		
@@ -277,7 +277,7 @@ ideas = {
 			picture = generic_manpower_bonus
 
 			modifier = {
-			monarchy_drift = -1
+			fascism_drift = -1
 			communism_drift = 0.8
 			}
 		}
@@ -298,7 +298,7 @@ ideas = {
 			picture = generic_manpower_bonus
 
 			modifier = {
-			monarchy_drift = -0.5
+			fascism_drift = -0.5
 			communism_drift = 0.5
 			democratic_drift = 0.5
 			
@@ -321,7 +321,7 @@ ideas = {
 			picture = generic_manpower_bonus
 
 			modifier = {
-			monarchy_drift = -0.5
+			fascism_drift = -0.5
 			communism_drift = 1
 			
 			}
@@ -342,7 +342,7 @@ ideas = {
 			picture = generic_manpower_bonus
 
 			modifier = {
-			monarchy_drift = -0.10
+			fascism_drift = -0.10
 			communism_drift = 0.05
 			democratic_drift = 0.05			
 			army_attack_factor = -0.15
@@ -365,7 +365,7 @@ ideas = {
 			picture = generic_manpower_bonus
 
 			modifier = {
-			monarchy_drift = -0.1
+			fascism_drift = -0.1
 			communism_drift = 0.1
 			army_attack_factor = -0.30
 			army_defence_factor = -0.10
@@ -388,7 +388,7 @@ ideas = {
 			picture = generic_manpower_bonus
 
 			modifier = {
-			monarchy_drift = 0.02
+			fascism_drift = 0.02
 			political_power_factor = 0.2
 			}
 		}
@@ -681,7 +681,7 @@ ideas = {
 			picture = generic_manpower_bonus
 			
 			modifier = {
-			monarchy_drift = 0.5
+			fascism_drift = 0.5
 			democratic_drift = 0.2
 			}
 		}
@@ -731,7 +731,7 @@ ideas = {
 			picture = generic_manpower_bonus
 
 			modifier = {
-			monarchy_drift = 0.03
+			fascism_drift = 0.03
 			unity_factor = 0.10
 			}
 		}
@@ -804,7 +804,7 @@ ideas = {
 			modifier = {
 				communism_drift = 0.02
 				democratic_drift = 0.05
-				monarchy_drift = -0.05
+				fascism_drift = -0.05
 				}
 		}
 		
@@ -1378,7 +1378,7 @@ loyal_officers = {
 			picture = officers_purged
 			
 			modifier = {
-				monarchy_drift = 0.03
+				fascism_drift = 0.03
 			}
 		}
 		
@@ -1419,7 +1419,7 @@ trained_army = {
 			picture = generic_manpower_bonus
 			
 			modifier = {
-				monarchy_drift = 0.02
+				fascism_drift = 0.02
 				army_attack_factor = 0.10
 				army_defence_factor = 0.10
 				army_org_factor = 0.10
@@ -1443,7 +1443,7 @@ slavism_euphoria = {
 		picture = officers_purged
 		
 		modifier = {
-		monarchy_drift = 0.02			
+		fascism_drift = 0.02			
 		}
 	}
 
@@ -1462,7 +1462,7 @@ slavism_euphoria = {
 		picture = officers_purged
 		
 		modifier = {
-		monarchy_drift = 0.04			
+		fascism_drift = 0.04			
 		}
 	}
 
@@ -1481,7 +1481,7 @@ slavism_euphoria = {
 		picture = officers_purged
 		
 		modifier = {
-		monarchy_drift = -0.03		
+		fascism_drift = -0.03		
 		}
 	}
 	
@@ -1500,7 +1500,7 @@ slavism_euphoria = {
 		picture = sisu
 		
 		modifier = {
-		monarchy_drift = -0.05		
+		fascism_drift = -0.05		
 		}
 	}
 	
@@ -1519,7 +1519,7 @@ slavism_euphoria = {
 		picture = sisu
 		
 		modifier = {
-		monarchy_drift = 0.05		
+		fascism_drift = 0.05		
 		}
 	}
 	
@@ -1559,7 +1559,7 @@ slavism_euphoria = {
 		picture = officers_purged
 		
 		modifier = {
-		monarchy_drift = 0.06		
+		fascism_drift = 0.06		
 		}
 	}
 
@@ -1578,7 +1578,7 @@ slavism_euphoria = {
 		picture = officers_purged
 		
 		modifier = {
-		monarchy_drift = 0.10		
+		fascism_drift = 0.10		
 		}
 	}
 	
@@ -1598,7 +1598,7 @@ slavism_euphoria = {
 		picture = officers_purged
 		
 		modifier = {
-		monarchy_drift = 0.08		
+		fascism_drift = 0.08		
 		}
 	}
 	
@@ -1618,7 +1618,7 @@ slavism_euphoria = {
 		picture = officers_purged
 		
 		modifier = {
-		monarchy_drift = -0.05
+		fascism_drift = -0.05
 		communism_drift = 0.05
 		}
 	}
@@ -1658,7 +1658,7 @@ slavism_euphoria = {
 		picture = general_staff
 		
 		modifier = {
-		monarchy_drift = 0.10
+		fascism_drift = 0.10
 		}
 	
 	}
@@ -1678,7 +1678,7 @@ slavism_euphoria = {
 		picture = general_staff
 		
 		modifier = {
-		monarchy_drift = 0.10
+		fascism_drift = 0.10
 		}
 	
 	}

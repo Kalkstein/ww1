@@ -81,7 +81,7 @@ ideas = {
 				OR = {
 					has_government = fascism
 					has_government = communism
-					has_government = monarchy		
+					has_government = fascism		
 				}			
 			}
 			
@@ -115,7 +115,7 @@ ideas = {
 				OR = {
 					has_government = fascism
 					has_government = communism
-					has_government = monarchy
+					has_government = fascism
 				}			
 			}
 			
@@ -149,7 +149,7 @@ ideas = {
 				OR = {
 					has_government = fascism
 					has_government = communism
-					has_government = monarchy
+					has_government = fascism
 				}			
 			}
 		

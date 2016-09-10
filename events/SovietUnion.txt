@@ -743,7 +743,7 @@ country_event = {
 	trigger = {
 	has_idea = religious_army
 	communism < 35
-	monarchy < 45
+	fascism < 45
 	has_war = yes
 	any_war_score < 0
 	}

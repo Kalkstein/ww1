@@ -33,7 +33,7 @@ set_politics = {
 		}
 
 		fascism = {
-			popularity = 15
+			popularity = 95
 	
 		}
 		
@@ -41,17 +41,13 @@ set_politics = {
 			popularity = 0
 	
 		}
-		
-		Monarchy = { 
-			popularity = 80
-		}
 
 		neutrality = {
 			popularity = 5
 		}
 	}
 	
-	ruling_party = Monarchy
+	ruling_party = fascism
 	last_election = "1935.2.8"
 	election_frequency = 48
 	elections_allowed = no

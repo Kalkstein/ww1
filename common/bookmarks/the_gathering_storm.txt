@@ -33,7 +33,7 @@ bookmarks = {
 			history = "GER_BATTEN_DOWN_THE_HATCHES_DESC"
 			ideology = fascism
 			ideas = {
-				
+				united_germany
 			}
 		}
 		"ITA"={
