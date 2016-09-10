@@ -83,12 +83,6 @@ ideas = {
 			
 			ai_will_do = {
 				factor = 100
-				modifier = {
-					factor = 0
-					has_idea = partial_economic_mobilisation
-					has_idea = war_economy
-					has_idea = tot_economic_mobilisation
-				}
 			}
 		}
 		
@@ -123,13 +117,6 @@ ideas = {
 					
 					is_major = yes
 				}
-				
-				modifier = {
-					factor = 0
-					has_idea = partial_economic_mobilisation
-					has_idea = war_economy
-					has_idea = tot_economic_mobilisation
-				}
    			}
 		}
 		
@@ -163,12 +150,6 @@ ideas = {
 					factor = 2
 					
 					is_major = yes
-				}
-				
-				modifier = {
-					factor = 0
-					has_idea = war_economy
-					has_idea = tot_economic_mobilisation
 				}
    			}
 		}
@@ -217,10 +198,6 @@ ideas = {
 							ratio > 0.2
 						}
 					}
-				}
-				modifier = {
-					factor = 0
-					has_idea = tot_economic_mobilisation
 				}
 			}
 		}
