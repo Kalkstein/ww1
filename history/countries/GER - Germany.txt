@@ -31,11 +31,7 @@ set_technology = {
 	mobile_warfare = 1
 }
 
-
-
-
-
-set_research_slots = 4
+set_research_slots = 5
 set_convoys = 200
 set_national_unity = 0.8
 
