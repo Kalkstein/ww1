@@ -990,7 +990,7 @@ focus = {
 	focus = {
 		id = AUS_give_minorities_rights
 		icon = GFX_goal_support_democracy
-		mutually_exclusive = { focus = AUS_support_monarchy }
+		mutually_exclusive = { focus = AUS_support_fascism }
 		prerequisite = { focus = AUS_experimental_flights }
 		x = 5
 		y = 2
@@ -1124,7 +1124,7 @@ focus = {
 	}
 	
 	focus = {
-		id = AUS_support_monarchy
+		id = AUS_support_fascism
 		icon = GFX_goal_generic_political_pressure
 		mutually_exclusive = { focus = AUS_give_minorities_rights }
 		prerequisite = { focus = AUS_experimental_flights }
@@ -1144,7 +1144,7 @@ focus = {
 	focus = {
 		id = AUS_claims_the_Balkan
 		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = { focus = AUS_support_monarchy }
+		prerequisite = { focus = AUS_support_fascism }
 		x = 9
 		y = 3
 		cost = 10

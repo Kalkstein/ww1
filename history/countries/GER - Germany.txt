@@ -31,37 +31,43 @@ set_technology = {
 	mobile_warfare = 1
 }
 
-
-
-
-
-set_research_slots = 4
+set_research_slots = 5
 set_convoys = 200
 set_national_unity = 0.8
 
 set_politics = {
 
 	parties = {
-		Monarchy = {
-			popularity = 85
+		democratic = {
+			popularity = 21.0
+		}
+		
+		fascism = {
+			popularity = 27.5
 		}
 
+		neutrality = {
+			popularity = 22.6
+		}
+		
 		communism = {
-			popularity = 15
+			popularity = 28.9
 		}
 	}
 
-	ruling_party = Monarchy
-	last_election = "1933.3.5"
-	election_frequency = 48
-	elections_allowed = no
+	ruling_party = fascism
+	last_election = "1907.1.12"
+	election_frequency = 60
+	elections_allowed = yes
 
 }
 
 create_faction = Central_Powers
+add_to_faction = GER
 add_to_faction = AUS
 
 add_ideas = {
+	united_germany
 	limited_exports
 	extensive_conscription
 	partial_economic_mobilisation
@@ -74,7 +80,7 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = imperialism
 	traits = {
-		dictator
+		kaiser
 	}
 }
 
@@ -89,41 +95,26 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Wilhelm Pieck"
+	name = "Friedrich Ebert"
 	desc = "POLITICS_WILHELM_PIECK_DESC"
 	picture = "Portrait_Germany_Wilhelm_Pieck.dds"
 	expire = "1965.1.1"
-	ideology = stalinism
+	ideology = leninism
 	traits = {
-		stalins_puppet
-		exiled
 	}
 }
 
-#create_country_leader = {
-#	name = "Otto Wels"
-#	desc = "POLITICS_OTTO_WELS_DESC"
-#	picture = "Portrait_Germany_Adolf_Hitler.dds"
-#	expire = "1939.1.16"
-#	ideology = socialism
-#	traits = {
-#		exiled
-#		union_man
-#	}
-#}
-#
-#create_country_leader = {
-#	name = "Ernst Thälmann"
-#	desc = "POLITICS_ERNST_THALMANN_DESC"
-#	picture = "Portrait_Germany_Adolf_Hitler.dds"
-#	expire = "1956.1.1"
-#	ideology = stalinism
-#	traits = {
-#		assassination_survivor
-#		stalins_puppet
-#		political_prisoner
-#	}
-#}
+create_country_leader = {
+	name = "Ferdinand von Radziwill"
+	desc = "POLITICS_OTTO_WELS_DESC"
+	picture = "Portrait_Germany_Adolf_Hitler.dds"
+	expire = "1939.1.16"
+	ideology = despotism
+	traits = {
+		exiled
+		union_man
+	}
+}
 
 add_namespace = {
 	name = "ger_unit_leader"
@@ -131,10 +122,10 @@ add_namespace = {
 }
 
 create_field_marshal = {
-	name = "Gerd von Rundstedt"
+	name = "Paul von Hindenburg"
 	picture = "Portrait_Germany_Gerd_von_Rundstedt.dds"
 	traits = { defensive_doctrine offensive_doctrine }
-	skill = 3
+	skill = 4
 	id = 1
 }
 
@@ -165,8 +156,8 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Erich von Manstein"
 	picture = "Portrait_Germany_Erich_von_Manstein.dds"
-	traits = { trickster panzer_leader fortress_buster }
-	skill = 4
+	traits = { trickster fortress_buster }
+	skill = 5
 	id = 5
 }
 
@@ -196,9 +187,9 @@ create_corps_commander = {
 }
 
 create_corps_commander = {
-	name = "Fedor von Bock"
+	name = "Karl von Einem"
 		picture = "Portrait_Germany_Fedor_von_Bock.dds"
-	traits = {  }
+	traits = { trickster }
 	skill = 4
 	id = 9
 }
@@ -341,7 +332,7 @@ create_corps_commander = {
 }
 
 create_corps_commander = {
-	name = "Ernst-Eberhard Hell"
+	name = "Helmuth von Moltke"
 	picture = "Portrait_Germany_Ernst-Eberhard_Hell.dds"
 	traits = { winter_specialist fortress_buster }
 	skill = 3
@@ -349,7 +340,7 @@ create_corps_commander = {
 }
 
 create_navy_leader = {
-	name = "Karl Dönitz"
+	name = "Reinhard Scheer"
 		picture = "Portrait_Germany_Karl_Donitz.dds"
 	traits = { seawolf }
 	skill = 5

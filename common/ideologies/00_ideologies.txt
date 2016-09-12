@@ -15,6 +15,9 @@ ideologies = {
 
 			constitutionalism = {
 			}
+			
+			rexism = {
+			}
 		}
 		
 		dynamic_faction_names = {
@@ -26,7 +29,7 @@ ideologies = {
 			"FACTION_NAME_DEMOCRATIC_6"
 		}
 		
-		color = { 0 0 255 }
+		color = { 80 180 100 }
 		
 		rules = {
 			can_declare_war_on_same_ideology = no
@@ -57,6 +60,43 @@ ideologies = {
 		ai_democratic = yes # uses the democratic AI behaviour
 	}
 
+	fascism = {
+	
+		types = {
+			
+			absolutism = {
+			}
+
+			imperialism = {
+			}
+
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_FASCIST_1"
+			"FACTION_NAME_FASCIST_2"
+			"FACTION_NAME_FASCIST_3"
+			"FACTION_NAME_FASCIST_4"
+			"FACTION_NAME_FASCIST_5"
+		}
+		
+		color = { 255 128 0 }
+		
+		war_impact_on_world_tension = 1.0			#evil!
+		faction_impact_on_world_tension = 1.0
+		
+		rules = {
+			can_force_government = no
+			can_send_volunteers = yes
+			can_puppet = yes
+		}
+		
+		modifiers = {
+			justify_war_goal_when_in_major_war_time = -0.80
+		}
+
+		ai_fascist = yes # uses the fascist AI behaviour
+	}
 
 	communism = {
 		
@@ -108,55 +148,12 @@ ideologies = {
 		}
 
 	}
-
-	fascism = {
-	
-		types = {
-		
-			nazism = {
-			}
-			
-			fascism_ideology = {
-			}
-			
-			falangism = {
-			}
-			
-			rexism = {
-			}
-		}
-		
-		dynamic_faction_names = {
-			"FACTION_NAME_FASCIST_1"
-			"FACTION_NAME_FASCIST_2"
-			"FACTION_NAME_FASCIST_3"
-			"FACTION_NAME_FASCIST_4"
-			"FACTION_NAME_FASCIST_5"
-		}
-		
-		color = { 150 75 0 }
-		
-		war_impact_on_world_tension = 1.0			#evil!
-		faction_impact_on_world_tension = 1.0
-		
-		rules = {
-			can_force_government = no
-			can_send_volunteers = yes
-			can_puppet = yes
-		}
-		
-		modifiers = {
-			justify_war_goal_when_in_major_war_time = -0.80
-		}
-
-		ai_fascist = yes # uses the fascist AI behaviour
-	}
 	
 	neutrality = {
 	
 		types = {
 		
-                        oligarchism  = {
+            oligarchism  = {
 			}
 			
 			moderatism = {
@@ -166,6 +163,15 @@ ideologies = {
 			}
 
 			despotism = {
+			}
+			
+			nazism = {
+			}
+			
+			falangism = {
+			}
+			
+			fascism_ideology = {
 			}
 		}
 
@@ -199,50 +205,5 @@ ideologies = {
 		can_be_boosted = yes
 
 		ai_fascist = yes # 
-	}
-	
-	monarchy = {
-	
-		types = {
-			
-			absolutism = {
-			}
-
-			imperialism = {
-			}
-
-		}
-
-		dynamic_faction_names = {
-			"FACTION_NAME_NONALIGNED_1"
-			"FACTION_NAME_NONALIGNED_2"
-			"FACTION_NAME_NONALIGNED_3"
-			"FACTION_NAME_NONALIGNED_4"
-			"FACTION_NAME_NONALIGNED_5"
-		}
-		
-		color = { 102 0 102 }
-		
-		
-		war_impact_on_world_tension = 0.25		#no major danger
-		faction_impact_on_world_tension = 0.1
-		
-		rules = {
-			can_force_government = no
-			can_puppet = yes
-			can_send_volunteers = yes
-		}
-		
-		modifiers = {
-			drift_defence_factor = 0.3
-			join_faction_tension = 0.0	
-		}
-		
-		faction_modifiers = {
-		}
-
-		can_be_boosted = no
-
-		ai_democratic = yes # 
 	}
 }

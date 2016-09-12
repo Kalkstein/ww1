@@ -28,7 +28,7 @@ focus_tree = {
 	focus = {
 	    id = BUL_reform_government
 		icon = GFX_goal_generic_demand_territory
-		mutually_exclusive = { focus = BUL_support_monarchy }
+		mutually_exclusive = { focus = BUL_support_fascism }
 		prerequisite = { focus = BUL_strengthen_state }
 		x = 15
 		y = 1
@@ -39,7 +39,7 @@ focus_tree = {
 	}
 	
 	focus = {
-	    id = BUL_support_monarchy
+	    id = BUL_support_fascism
 		icon = GFX_goal_generic_political_pressure
 		mutually_exclusive = { focus = BUL_reform_government }
 		prerequisite = { focus = BUL_strengthen_state }
@@ -48,10 +48,10 @@ focus_tree = {
 		cost = 10
 		completion_reward = {
 		    add_popularity = {
-					ideology = monarchy
+					ideology = fascism
 					popularity = 0.2
 				}
-			add_ideas = BUL_keep_monarchy_idea #Monarchism support +0.03 daily 
+			add_ideas = BUL_keep_fascism_idea #Monarchism support +0.03 daily 
 		}
 	}
 	
@@ -84,7 +84,7 @@ focus_tree = {
 	focus = {
 	    id = BUL_strengthen_ties
 		icon = GFX_goal_generic_improve_relations
-		prerequisite = { focus = BUL_support_monarchy }
+		prerequisite = { focus = BUL_support_fascism }
 		x = 25
 		y = 2
 		cost = 10

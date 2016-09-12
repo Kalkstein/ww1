@@ -11,7 +11,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = monarchy
+				has_government = fascism
 			}
 			
 			picture = ethnic_tensions_pic
@@ -31,7 +31,7 @@ ideas = {
 
 			allowed_civil_war = {
 				NOT = {
-					has_government = monarchy
+					has_government = fascism
 				}
 			}
 
@@ -49,7 +49,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = monarchy
+				has_government = fascism
 			}
 			
 			picture = generic_production_bonus
@@ -70,7 +70,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = monarchy
+				has_government = fascism
 			}
 			
 			picture = generic_manpower_bonus
@@ -89,7 +89,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = monarchy
+				has_government = fascism
 			}
 			
 			picture = generic_infantry_bonus
@@ -107,7 +107,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = monarchy
+				has_government = fascism
 			}
 			
 			picture = generic_infantry_bonus

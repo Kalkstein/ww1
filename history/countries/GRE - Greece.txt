@@ -91,11 +91,7 @@ set_politics = {
 		}
 
 		fascism = {
-			popularity = 5
-		}
-
-		monarchy = {
-			popularity = 40
+			popularity = 45
 		}
 
 		neutrality = {
@@ -148,7 +144,7 @@ create_country_leader = {
 	desc = "POLITICS_GEORGIOS_KOSMIDIS_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
 	expire = "1965.1.1"
-	ideology = nazism
+	ideology = absolutism
 	traits = {
 		#
 	}

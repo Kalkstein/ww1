@@ -1,8 +1,8 @@
 bookmarks = {
 	bookmark = {
-		name = "BATTEN_DOWN_THE_HATCHES_NAME"
+		name = "Debug"
 		desc = "BATTEN_DOWN_THE_HATCHES_DESC"
-		date = 1910.4.10.12
+		date = 1914.6.25
 		picture = "GFX_select_date_1910.dds"
 		default_country = "GER"
 		default = yes
@@ -33,7 +33,7 @@ bookmarks = {
 			history = "GER_BATTEN_DOWN_THE_HATCHES_DESC"
 			ideology = fascism
 			ideas = {
-				
+				united_germany
 			}
 		}
 		"ITA"={

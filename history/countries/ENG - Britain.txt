@@ -97,23 +97,11 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "King George V"
-	desc = "POLITICS_GEORGE_V_DESC"
-	picture = "Portrait_England_George_V.dds"
-	expire = "1936.1.20"
-	ideology = constitutionalism
-	traits = {
-		dislikes_germany
-		union_man
-	}
-}
-
-create_country_leader = {
 	name = "Oswald Mosley"
 	desc = "POLITICS_OSWALD_MOSLEY_DESC"
 	picture = "Portrait_Britain_Oswald_Mosley.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = nazism
 	traits = {
 
 	}

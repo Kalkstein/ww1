@@ -33,7 +33,7 @@ set_politics = {
 		}
 
 		fascism = {
-			popularity = 0
+			popularity = 10
 		}
 		
 		communism = {
@@ -42,10 +42,6 @@ set_politics = {
 
 		neutrality = {
 			popularity = 60
-		}
-		
-		monarchy = {
-			popularity = 10
 		}
 	}
 	
@@ -82,7 +78,7 @@ create_country_leader = {
 	desc = "POLITICS_VIDKUN_QUISLING_DESC"
 	picture = "Portrait_Norway_Vidkun_Quisling.dds"
 	expire = "1965.1.1"
-	ideology = nazism
+	ideology = imperialism
 	traits = {
 		#
 	}

@@ -415,15 +415,15 @@ news_event = {
 
 # Attentat von Sarajevo
 news_event = {
-	id = ww1.1
-	title = ww1.1.t
-	desc = ww1.1.d
+	id = news.100
+	title = news.100.t
+	desc = news.100.d
 	picture = GFX_news_event_048
 	
 	major = yes
 	
 	trigger = {
-		date > 1914.5.28
+		date > 1914.6.28
 		NOT = {
 			has_global_flag = ass_sarajevo
 		}
@@ -445,25 +445,25 @@ news_event = {
 	}
 	
 	option = {
-		name = ww1.1.a
+		name = news.100.a
 	}
 }
 
 # Krieg
 news_event = {
-	id = ww1.2
-	title = ww1.2.t
-	desc = ww1.2.d
+	id = news.101
+	title = news.101.t
+	desc = news.101.d
 	picture = GFX_news_event_048
 	
 	major = yes
 	
 	trigger = {
-		date > 1914.6.28
+		date > 1914.7.28
 		has_global_flag = ass_sarajevo
 		NOT = { has_global_flag = war_sarajevo }
-		country_exists = GER
-		country_exists = FRA
+		country_exists = AUS
+		country_exists = SER
 	}
 	
 	mean_time_to_happen = {
@@ -472,17 +472,23 @@ news_event = {
 	
 	immediate = {
 		set_global_flag = war_sarajevo 
+		AUS = {
+			create_wargoal = {
+				target = SER
+				type = puppet_wargoal_focus
+			}
+		}
 	}
 	
 	option = {
-		name = ww1.2.a
+		name = news.101.a
 		trigger = { 
 			NOT = { TAG = AUS }
 		}
 	}
 	
 	option = {
-		name = ww1.2.b
+		name = news.101.b
 		trigger = { 
 			TAG = AUS
 		}
@@ -490,6 +496,220 @@ news_event = {
 			declare_war_on = {
 				target = SER
 				type = puppet_wargoal_focus
+			}
+		}
+	}
+}
+
+news_event = {
+	id = news.102
+	title = news.102.t
+	desc = news.102.d
+	picture = GFX_news_event_048
+	
+	major = yes
+	
+	trigger = {
+		date > 1914.7.30
+		has_global_flag = war_sarajevo
+		NOT = { has_global_flag = rus_mobil }
+		country_exists = GER
+		country_exists = SOV
+		country_exists = FRA
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		set_global_flag = rus_mobil 
+		GER = {
+			create_wargoal = {
+				target = SOV
+				type = topple_government
+			}
+			create_wargoal = {
+				target = FRA
+				type = topple_government
+			}
+		}
+	}
+	
+	option = {
+		name = news.102.a
+		trigger = { 
+			NOT = { TAG = GER }
+		}
+	}
+	
+	option = {
+		name = news.102.b
+		trigger = { 
+			TAG = GER
+		}
+		GER = {
+			declare_war_on = {
+				target = SOV
+				type = topple_government
+			}
+			declare_war_on = {
+				target = FRA
+				type = topple_government
+			}
+		}
+	}
+}
+
+news_event = {
+	id = news.103
+	title = news.103.t
+	desc = news.103.d
+	picture = GFX_news_event_048
+	
+	major = yes
+	
+	trigger = {
+		date > 1914.8.2
+		has_global_flag = rus_mobil
+		NOT = { has_global_flag = sch_lux }
+		country_exists = GER
+		country_exists = LUX
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		set_global_flag = sch_lux 
+		GER = {
+			create_wargoal = {
+				target = LUX
+				type = annex_everything
+			}
+		}
+	}
+	
+	option = {
+		name = news.103.a
+		trigger = { 
+			NOT = { TAG = GER }
+		}
+	}
+	
+	option = {
+		name = news.103.b
+		trigger = { 
+			TAG = GER
+		}
+		GER = {
+			declare_war_on = {
+				target = LUX
+				type = annex_everything
+			}
+		}
+	}
+}
+
+news_event = {
+	id = news.104
+	title = news.104.t
+	desc = news.104.d
+	picture = GFX_news_event_048
+	
+	major = no
+	
+	trigger = {
+		date > 1914.8.2
+		has_global_flag = rus_mobil
+		TAG = BEL
+		NOT = { OR = {
+			has_global_flag = bel_yes
+			has_global_flag = bel_no
+		} }
+		country_exists = GER
+		country_exists = BEL
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = news.104.a
+		ai_chance = {
+			base = 5
+		}
+		set_global_flag = bel_no 
+	}
+	
+	option = {
+		name = news.104.b
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 5
+				is_historical_focus_on = no
+			}
+		}
+		set_global_flag = bel_yes 
+		BEL = {
+			diplomatic_relation = {
+				country = GER
+				relation = military_access
+				active = yes
+			}
+		}
+	}
+}
+
+news_event = {
+	id = news.105
+	title = news.105.t
+	desc = news.105.d
+	picture = GFX_news_event_048
+	
+	major = yes
+	
+	trigger = {
+		date > 1914.8.3
+		has_global_flag = bel_no
+		NOT = { has_global_flag = sch_bel }
+		country_exists = GER
+		country_exists = LUX
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		set_global_flag = sch_bel
+		GER = {
+			create_wargoal = {
+				target = BEL
+				type = topple_government
+			}
+		}
+	}
+	
+	option = {
+		name = news.105.a
+		trigger = { 
+			NOT = { TAG = GER }
+		}
+	}
+	
+	option = {
+		name = news.105.b
+		trigger = { 
+			TAG = GER
+		}
+		GER = {
+			declare_war_on = {
+				target = BEL
+				type = topple_government
 			}
 		}
 	}

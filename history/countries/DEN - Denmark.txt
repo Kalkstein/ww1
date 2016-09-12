@@ -29,15 +29,11 @@ set_politics = {
 		}
 
 		fascism = {
-			popularity = 0
+			popularity = 30
 		}
 		
 		communism = {
 			popularity = 0
-		}
-
-		monarchy = {
-			popularity = 30
 		}
 
 		neutrality = {
@@ -91,7 +87,7 @@ create_country_leader = {
 	desc = "POLITICS_FRITS_CLAUSEN_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
 	expire = "1965.1.1"
-	ideology = nazism
+	ideology = imperialism
 	traits = {
 		#
 	}

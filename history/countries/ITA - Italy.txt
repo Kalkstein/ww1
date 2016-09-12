@@ -49,18 +49,15 @@ set_politics = {
 		}
 
 		fascism = {
-			popularity = 20
+			popularity = 85
 		}
 
 		communism = {
 			popularity = 5
 		}
-
-		monarchy = {
-			popularity = 65
 	}
-}
-	ruling_party = monarchy
+
+	ruling_party = fascism
 	last_election = "1909.3.26"
 	election_frequency = 60
 	elections_allowed = no
