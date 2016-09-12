@@ -146,7 +146,7 @@ equipments = {
 		}
 	}
 
-	support_artillery = {
+	support_artillery_equipment = {
 		is_archetype = yes
 		type = {
 			artillery
