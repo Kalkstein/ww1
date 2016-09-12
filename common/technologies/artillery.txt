@@ -874,7 +874,7 @@ technologies = {
 
 support_artillery_1 = {
 		enable_equipments = {
-			support_artillery_equipment_1
+			motorized_rocket_equipment_1
 		}
 
 		path = {

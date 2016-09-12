@@ -145,7 +145,7 @@ sub_units = {
 	}
 	
 support_artillery_brigade = {
-		sprite = artillery
+		sprite = support_artillery
 		map_icon_category = infantry
 		priority = 1198
 		active = yes
@@ -168,7 +168,7 @@ support_artillery_brigade = {
 
 		manpower = 500
 		need = {
-			support_artillery_equipment = 36
+			motorized_rocket_equipment = 36
 		}
 		
 		max_strength = 0.6
