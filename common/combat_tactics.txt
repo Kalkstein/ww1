@@ -868,7 +868,7 @@ tactic_mask_eba = {
 	defender = -0.1
 }
 
-tactic_mask_gas = {
+tactic_mask_chlor = {
 	trigger = {
 		phase = no
 	}
