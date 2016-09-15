@@ -478,6 +478,8 @@ country_event = {
 		days = 1
 	}
 	
+	fire_only_once = yes
+	
 	immediate = {
 		set_global_flag = blank_cheque
 	}
@@ -526,6 +528,8 @@ country_event = {
 	}
 	
 	mean_time_to_happen = { days = 1 }
+	
+	fire_only_once = yes
 	
 	immediate = {
 		set_global_flag = aus_ultimatum
@@ -585,6 +589,8 @@ country_event = {
 	}
 	
 	mean_time_to_happen = { days = 1 }
+	
+	fire_only_once = yes
 	
 	immediate = {
 		set_global_flag = aus_ultimatum
@@ -647,6 +653,8 @@ country_event = {
 	
 	mean_time_to_happen = { days = 1 }
 	
+	fire_only_once = yes
+	
 	immediate = {
 		set_global_flag = russia_annex
 	}
@@ -657,6 +665,10 @@ country_event = {
 		trigger = {
 			tag = SOV
 		} 
+		FRA = {
+			add_to_faction = SER
+			add_to_faction = MNT
+		}
 		set_global_flag = russia_help
 	}
 	
@@ -700,11 +712,13 @@ country_event = {
 		}
 	}
 	
+	mean_time_to_happen = { days = 1 }
+	
+	fire_only_once = yes
+	
 	immediate = {
 		set_global_flag = russia_puppet
 	}
-	
-	mean_time_to_happen = { days = 1 }
 	
 	option = {
 	    name = july_crisis.122.a
@@ -760,6 +774,8 @@ country_event = {
 		days = 1
 	}
 	
+	fire_only_once = yes
+	
 	immediate = {
 		set_global_flag = response_annex
 	}
@@ -807,6 +823,8 @@ country_event = {
 	mean_time_to_happen = {
 		days = 1
 	}
+	
+	fire_only_once = yes
 	
 	immediate = {
 		set_global_flag = response_puppet
@@ -1027,6 +1045,8 @@ country_event = {
 		days = 1
 	}
 	
+	fire_only_once = yes
+	
 	immediate = {
 		set_global_flag = call_to_arms
 	}
@@ -1043,8 +1063,7 @@ country_event = {
 	    name = july_crisis.160.b
 		ai_chance = { factor = 30 }
 		trigger = {
-			tag = GER
-		} 
+			tag = GER 
 			NOT = {
 			has_global_flag = blank_cheque_yes
 			}
@@ -1116,6 +1135,8 @@ country_event = {
 		days = 30
 	}
 	
+	fire_only_once = yes
+	
 	immediate = {
 		set_global_flag = inde_slav_start
 	}
@@ -1140,6 +1161,8 @@ country_event = {
 	mean_time_to_happen = {
 		days = 30
 	}
+	
+	fire_only_once = yes
 	
 	immediate = {
 		set_global_flag = inde_cro
@@ -1191,6 +1214,8 @@ country_event = {
 	
 	is_triggered_only = yes
 	
+	fire_only_once = yes
+	
 	immediate = {
 		set_global_flag = inde_gal
 		80 = { add_core_of = SOV }
@@ -1239,6 +1264,12 @@ country_event = {
 		}
 	}
 	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	fire_only_once = yes
+	
 	option = {
 		name = news.321.a
 		trigger = {
@@ -1280,6 +1311,8 @@ country_event = {
 	mean_time_to_happen = {
 		days = 30
 	}
+	
+	fire_only_once = yes
 	
 	immediate = {
 		set_global_flag = inde_hun
@@ -1361,6 +1394,8 @@ country_event = {
 	mean_time_to_happen = {
 		days = 30
 	}
+	
+	fire_only_once = yes
 	
 	immediate = {
 		set_global_flag = inde_cze
