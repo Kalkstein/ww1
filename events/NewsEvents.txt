@@ -1,10 +1,12 @@
 ﻿###########################
-# News Events
+# News Events             #
 ###########################
 
 add_namespace = news
 add_namespace = july_crisis
 add_namespace = flavor_news
+
+#########################################################################################################################################################
 
 # Begin of the Balcan War
 news_event = {
@@ -31,27 +33,27 @@ news_event = {
 	option = {
 	    name = news.1.a 
 		trigger = {
-			 TAG = TUR 
+			 tag = TUR 
 		}
 	}
 	option = {
 	    name = news.1.b
 		trigger = {
-			TAG = BUL 
-			TAG = GRE 
-			TAG = MNT 
-			TAG = YUG
+			tag = BUL 
+			tag = GRE 
+			tag = MNT 
+			tag = YUG
 		}
 	}
 	option = {
 	    name = news.1.c 
 		trigger = {
 			NOT = {
-			TAG = BUL 
-			TAG = GRE 
-			TAG = MNT 
-			TAG = YUG
-			TAG = TUR 
+			tag = BUL 
+			tag = GRE 
+			tag = MNT 
+			tag = YUG
+			tag = TUR 
 			}
 		}
 	}
@@ -87,28 +89,28 @@ news_event = {
 	option = {
 		name = news.64.a
 		trigger = {
-			TAG = TUR
+			tag = TUR
 		}
 	}
 	option = {
 		name = news.64.b
 		trigger = { 
-		TAG = BUL
-		TAG = SER
-		TAG = GRE
-		TAG = ALB
-		TAG = MNT
+		tag = BUL
+		tag = SER
+		tag = GRE
+		tag = ALB
+		tag = MNT
 		}
 	}
 	option = {
 		name = news.64.c
 		trigger = { 
-		NOT = { TAG = BUL }
-		NOT = { TAG = ALB }
-		NOT = { TAG = GRE }
-		NOT = { TAG = MNT }
-		NOT = { TAG = YUG }
-		NOT = { TAG = TUR }
+		NOT = { tag = BUL }
+		NOT = { tag = ALB }
+		NOT = { tag = GRE }
+		NOT = { tag = MNT }
+		NOT = { tag = YUG }
+		NOT = { tag = TUR }
 		}
 	}
 }
@@ -143,28 +145,28 @@ news_event = {
 	option = {
 		name = news.3.a
 		trigger = {
-			TAG = TUR
+			tag = TUR
 		}
 	}
 	option = {
 		name = news.3.b
 		trigger = { 
-		TAG = BUL
-		TAG = SER
-		TAG = GRE
-		TAG = ALB
-		TAG = MNT
+		tag = BUL
+		tag = SER
+		tag = GRE
+		tag = ALB
+		tag = MNT
 		}
 	}
 	option = {
 		name = news.3.c
 		trigger = { 
-		NOT = { TAG = BUL }
-		NOT = { TAG = ALB }
-		NOT = { TAG = GRE }
-		NOT = { TAG = MNT }
-		NOT = { TAG = YUG }
-		NOT = { TAG = TUR }
+		NOT = { tag = BUL }
+		NOT = { tag = ALB }
+		NOT = { tag = GRE }
+		NOT = { tag = MNT }
+		NOT = { tag = YUG }
+		NOT = { tag = TUR }
 		}
 	}
 }
@@ -196,15 +198,15 @@ news_event = {
 	# Wir werden die Mittelmächte von der Erde tilgen!
 		name = news.4.a
 		trigger = {
-		TAG = SOV
+		tag = SOV
 		}
 	}
 	option = {
 	# Besorgnisseregend
 		name = news.4.b
 		trigger = { 
-		TAG = AUS
-		TAG = GER
+		tag = AUS
+		tag = GER
 		}
 	}
 	
@@ -212,19 +214,19 @@ news_event = {
 	# Eine sinnvolle Entscheidung
 		name = news.4.c
 		trigger = { 
-		TAG = ENG
-		TAG = FRA
+		tag = ENG
+		tag = FRA
 		}
 	}
 	
 	option = {
 		name = news.4.e
 		trigger = { 
-		NOT = { TAG = ENG }
-		NOT = { TAG = FRA }
-		NOT = { TAG = AUS }
-		NOT = { TAG = GER }
-		NOT = { TAG = SOV }
+		NOT = { tag = ENG }
+		NOT = { tag = FRA }
+		NOT = { tag = AUS }
+		NOT = { tag = GER }
+		NOT = { tag = SOV }
 		}
 	}
 }
@@ -254,15 +256,15 @@ news_event = {
 	# Sehr besorgniserregend
 		name = news.4.a
 		trigger = {
-		TAG = ENG
-		TAG = FRA
+		tag = ENG
+		tag = FRA
 		}
 	}
 	option = {
 	# Besorgnisseregend
 		name = news.4.b
 		trigger = { 
-		TAG = SOV
+		tag = SOV
 		}
 	}
 	
@@ -270,19 +272,19 @@ news_event = {
 	# Eine sinnvolle Entscheidung
 		name = news.4.c
 		trigger = { 
-		TAG = GER
-		TAG = AUS
+		tag = GER
+		tag = AUS
 		}
 	}
 	
 	option = {
 		name = news.4.e
 		trigger = { 
-		NOT = { TAG = ENG }
-		NOT = { TAG = FRA }
-		NOT = { TAG = AUS }
-		NOT = { TAG = GER }
-		NOT = { TAG = SOV }
+		NOT = { tag = ENG }
+		NOT = { tag = FRA }
+		NOT = { tag = AUS }
+		NOT = { tag = GER }
+		NOT = { tag = SOV }
 		}
 	}
 }
@@ -302,8 +304,8 @@ news_event = {
 	    name = news.238.a 
 		trigger = {
 			NOT = {
-			    TAG = TUR 
-				TAG = BUL 
+			    tag = TUR 
+				tag = BUL 
 			}
 		}
 	}
@@ -324,11 +326,11 @@ news_event = {
 		name = news.239.a
 		trigger = {
 		    NOT = {
-				TAG = BUL 
-				TAG = GRE 
-				TAG = MNT 
-				TAG = YUG 
-				TAG = TUR
+				tag = BUL 
+				tag = GRE 
+				tag = MNT 
+				tag = YUG 
+				tag = TUR
 			}
 		}
 	}
@@ -336,7 +338,7 @@ news_event = {
 	option = {
 		name = news.239.b 
 		trigger = {
-			TAG = TUR
+			tag = TUR
 		}
 	}
 }
@@ -357,8 +359,8 @@ news_event = {
 		trigger = {
 			NOT = {
 				OR = {
-					TAG = BUL 
-					TAG = TUR
+					tag = BUL 
+					tag = TUR
 					is_in_faction_with = BUL 
 				}
 			}
@@ -368,7 +370,7 @@ news_event = {
 	option = {
 		name = news.240.b 
 		trigger = {
-			TAG = TUR 
+			tag = TUR 
 		}
 	}
 	
@@ -396,9 +398,9 @@ news_event = {
 		trigger = {
 		    NOT = { 
 			    OR = {
-					TAG = BUL 
+					tag = BUL 
 					is_in_faction_with = FRA 
-					TAG = FRA
+					tag = FRA
 				}
 			}
 		}
@@ -409,17 +411,19 @@ news_event = {
 		trigger = {
 		    OR = {
 				is_in_faction_with = FRA
-				TAG = FRA
+				tag = FRA
 			}
 		}
 	}
 }
 
+########################################################################################################################################################
+
 # Franz Ferdinand is assasinated
 news_event = {
-	id = july_crisis.00
-	title = july_crisis.00.t 
-	desc = july_crisis.00.d 
+	id = july_crisis.100
+	title = july_crisis.100.t 
+	desc = july_crisis.100.d 
 	picture = GFX_news_event_010 
 	
 	major = yes
@@ -443,13 +447,19 @@ news_event = {
 	option = {
 	    name = july_crisis.100.a 
 	}
+	option = {
+	name = july_crisis.100.b
+		trigger = {
+			tag = AUS
+		}
+	}
 }
 	
 # The Blank Cheque
-news_event = {
-	id = july_crisis.10
-	title = july_crisis.10.t 
-	desc = july_crisis.10.d 
+country_event = {
+	id = july_crisis.110
+	title = july_crisis.110.t 
+	desc = july_crisis.110.d 
 	picture = GFX_news_event_011 
 	
 	major = yes
@@ -457,11 +467,11 @@ news_event = {
 	trigger = {
 		has_global_flag = ass_sarajevo
 		NOT = { has_global_flag = blank_cheque }
+		tag = GER
 		date > 1914.6.28
 		country_exists = GER
 		country_exists = AUS
 		country_exists = SER
-		TAG = GER
 	}
 	
 	mean_time_to_happen = {
@@ -473,31 +483,43 @@ news_event = {
 	}
 	
 	option = {
-	    name = july_crisis.10.a 
+	    name = july_crisis.110.a
+		ai_chance = { factor = 85 }
+		trigger = {
+			tag = GER
+		}
 		set_global_flag = blank_cheque_yes
 	}
 	
 	option = {
-	    name = july_crisis.10.b 
+	    name = july_crisis.110.b
+		ai_chance = { factor = 15 }
+		trigger = {
+			tag = GER
+		}
 		set_global_flag = blank_cheque_no
+		GER = {
+			add_national_unity = -0.05
+		}
 	}
+}
 	
 # Austro-Serbian Ultimatum (German Support)
-news_event = {
-	id = july_crisis.11
-	title = july_crisis.11.t 
-	desc = july_crisis.11.d 
+country_event = {
+	id = july_crisis.111
+	title = july_crisis.111.t 
+	desc = july_crisis.111.d 
 	picture = GFX_news_event_012 
 	
 	major = yes
 	
 	trigger = {
 		has_global_flag = blank_cheque_yes
-		NOT = { has_global_flag = aus_ultimatum_ger }
+		NOT = { has_global_flag = aus_ultimatum }
+		tag = AUS
 		date > 1914.6.28
 		country_exists = AUS
 		country_exists = SER
-		TAG = AUS
 		AUS = {
 			NOT = { has_war_with = SER }
 		}
@@ -506,72 +528,105 @@ news_event = {
 	mean_time_to_happen = { days = 1 }
 	
 	immediate = {
-		set_global_flag = aus_ultimatum_ger
+		set_global_flag = aus_ultimatum
 	}
 	
 	option = {
-	    name = july_crisis.11.a
+	    name = july_crisis.111.a
+		ai_chance = { factor = 70 }
+		trigger = {
+			tag = AUS
+		}
 		set_global_flag = ultimatum_annex
 	}
 	
 	option = {
-	    name = july_crisis.11.b
+	    name = july_crisis.111.b
+		ai_chance = { factor = 30 }
+		trigger = {
+			tag = AUS
+		}
 		set_global_flag = ultimatum_puppet
 	}
 	
 	option = {
-	    name = july_crisis.11.c
+	    name = july_crisis.111.c
+		ai_chance = { factor = 0 }
+		trigger = {
+			tag = AUS
+		}
 		set_global_flag = ultimatum_no
+		AUS = {
+			add_national_unity = -0.1
+		}
+		custom_effect_tooltip = austria_tt.1
 	}
+}
 	
 # Austro-Serbian Ultimatum (No German Support)
-news_event = {
-	id = july_crisis.12
-	title = july_crisis.12.t 
-	desc = july_crisis.12.d 
+country_event = {
+	id = july_crisis.112
+	title = july_crisis.112.t 
+	desc = july_crisis.112.d 
 	picture = GFX_news_event_012 
 	
 	major = yes
 	
 	trigger = {
 		has_global_flag = blank_cheque_no
-		NOT = { has_global_flag = aus_ultimatum_alone }
+		NOT = { has_global_flag = aus_ultimatum }
+		tag = AUS
 		date > 1914.6.28
 		country_exists = AUS
 		country_exists = SER
-		TAG = AUS
 		AUS = {
-			NOT = { has_war_with = SER
-			}
+			NOT = { has_war_with = SER }
 		}
-	}
-	
-	immediate = {
-		set_global_flag = aus_ultimatum_alone
 	}
 	
 	mean_time_to_happen = { days = 1 }
 	
+	immediate = {
+		set_global_flag = aus_ultimatum
+	}
+	
 	option = {
-		name = july_crisis.12.a
+		name = july_crisis.112.a
+		ai_chance = { factor = 25 }
+		trigger = {
+			tag = AUS
+		}
 		set_global_flag = ultimatum_annex
 	}
 	
 	option = {
-		name = july_crisis.12.b
+		name = july_crisis.112.b
+		ai_chance = { factor = 70 }
+		trigger = {
+			tag = AUS
+		}
 		set_global_flag = ultimatum_puppet
 	}
 	
 	option = {
-		name = july_crisis.12.c 
+		name = july_crisis.112.c
+		ai_chance = { factor = 5 }
+		trigger = {
+			tag = AUS
+		} 
 		set_global_flag = ultimatum_no
+		AUS = {
+			add_national_unity = -0.1
+		}
+		custom_effect_tooltip = austria_tt.1
 	}
+}
 	
 # Big Brother Russia (Annex)
-news_event = {
-	id = july_crisis.21
-	title = july_crisis.21.t 
-	desc = july_crisis.21.d 
+country_event = {
+	id = july_crisis.121
+	title = july_crisis.121.t 
+	desc = july_crisis.121.d 
 	picture = GFX_news_event_013 
 	
 	major = yes
@@ -579,45 +634,54 @@ news_event = {
 	trigger = {
 		has_global_flag = ultimatum_annex
 		NOT = { has_global_flag = russia_annex }
+		tag = SOV
 		date > 1914.6.28
 		country_exists = SOV
 		country_exists = AUS
 		country_exists = SER
-		TAG = SOV
-		SOV = {
-			NOT = { has_war_with = AUS }
-		}
 		AUS = {
 			NOT = { has_war_with = SER }
+			NOT = { has_war_with = SOV }
 		}
 	}
+	
+	mean_time_to_happen = { days = 1 }
 	
 	immediate = {
 		set_global_flag = russia_annex
 	}
 	
-	mean_time_to_happen = { days = 1 }
-	
 	option = {
-		name = july_crisis.21.a 
+		name = july_crisis.121.a
+		ai_chance = { factor = 90 }
+		trigger = {
+			tag = SOV
+		} 
 		set_global_flag = russia_help
 	}
 	
 	option = {
-	    name = july_crisis.21.b 
+	    name = july_crisis.121.b
+		ai_chance = { factor = 10 }
+		trigger = {
+			tag = SOV
+		} 
 		SER = {
 			set_rule = { can_create_factions = yes }
 			create_faction = panslavic_faction
 			add_to_faction = MNT
 		}
+		SOV = {
+			add_national_unity = -0.2
+		}
 	}
 }
 	
 # Big Brother Russia (Puppet)
-news_event = {
-	id = july_crisis.22
-	title = july_crisis.22.t 
-	desc = july_crisis.22.d 
+country_event = {
+	id = july_crisis.122
+	title = july_crisis.122.t 
+	desc = july_crisis.122.d 
 	picture = GFX_news_event_013 
 	
 	major = yes
@@ -625,14 +689,14 @@ news_event = {
 	trigger = {
 		has_global_flag = ultimatum_puppet
 		NOT = { has_global_flag = russia_puppet }
+		tag = SOV
 		date > 1914.6.28
 		country_exists = SOV
 		country_exists = AUS
 		country_exists = SER
-		TAG = SOV
 		AUS = {
 			NOT = { has_war_with = SER }
-			NOT = { has_war_with = AUS }
+			NOT = { has_war_with = SOV }
 		}
 	}
 	
@@ -643,7 +707,11 @@ news_event = {
 	mean_time_to_happen = { days = 1 }
 	
 	option = {
-	    name = july_crisis.22.a
+	    name = july_crisis.122.a
+		ai_chance = { factor = 90 }
+		trigger = {
+			tag = SOV
+		} 
 		FRA = {
 			add_to_faction = SER
 			add_to_faction = MNT
@@ -651,19 +719,27 @@ news_event = {
 	}
 	
 	option = {
-	    name = july_crisis.22.b
+	    name = july_crisis.122.b
+		ai_chance = { factor = 10 }
+		trigger = {
+			tag = SOV
+		} 
 		SER = {
 			set_rule = { can_create_factions = yes }
 			create_faction = panslavic_faction
 			add_to_faction = MNT
 		}
+		SOV = {
+			add_national_unity = -0.2
+		}
 	}
+}
 	
 # Serbian Response (annex)
-news_event = {
-	id = july_crisis.31
-	title = july_crisis.31.t 
-	desc = july_crisis.31.d 
+country_event = {
+	id = july_crisis.131
+	title = july_crisis.131.t 
+	desc = july_crisis.131.d 
 	picture = GFX_news_event_014 
 	
 	major = yes
@@ -671,6 +747,7 @@ news_event = {
 	trigger = {
 		has_global_flag = ultimatum_annex
 		NOT = { has_global_flag = response_annex }
+		tag = SER
 		date > 1914.6.28
 		country_exists = AUS
 		country_exists = SER
@@ -688,36 +765,29 @@ news_event = {
 	}
 	
 	option = {
-	    name = july_crisis.31.a 
+	    name = july_crisis.131.a
+		ai_chance = { factor = 0 }
 		trigger = {
-			TAG = SER
-		}
+			tag = SER
+		} 
 		set_global_flag = annex_accept
 	}
 	
 	option = {
-	    name = july_crisis.31.b 
+	    name = july_crisis.131.b
+		ai_chance = { factor = 100 }
 		trigger = {
-			TAG = SER
-		}
+			tag = SER
+		} 
 		set_global_flag = ultimatum_reject
-	}
-	
-	option = {
-	    name = july_crisis.31.c
-		trigger = {
-			NOT = {
-				TAG = SER
-			}
-		}
 	}
 }
 	
 # Serbian Response (puppet)
-news_event = {
-	id = july_crisis.32
-	title = july_crisis.32.t 
-	desc = july_crisis.32.d 
+country_event = {
+	id = july_crisis.132
+	title = july_crisis.132.t 
+	desc = july_crisis.132.d 
 	picture = GFX_news_event_014 
 	
 	major = yes
@@ -725,6 +795,7 @@ news_event = {
 	trigger = {
 		has_global_flag = ultimatum_puppet
 		NOT = { has_global_flag = response_puppet }
+		tag = SER
 		date > 1914.6.28
 		country_exists = AUS
 		country_exists = SER
@@ -742,18 +813,20 @@ news_event = {
 	}
 	
 	option = {
-	    name = july_crisis.32.a 
+	    name = july_crisis.132.a
+		ai_chance = { factor = 0 }
 		trigger = {
-			TAG = SER
-		}
+			tag = SER
+		} 
 		set_global_flag = puppet_accept
 	}
 	
 	option = {
-	    name = july_crisis.32.b 
+	    name = july_crisis.132.b
+		ai_chance = { factor = 100 }
 		trigger = {
-			TAG = SER
-		}
+			tag = SER
+		} 
 		set_global_flag = ultimatum_reject
 		SER = {
 			set_rule = { can_create_factions = yes }
@@ -761,35 +834,26 @@ news_event = {
 			add_to_faction = MNT
 		}
 	}
-	
-	option = {
-	    name = july_crisis.32.c
-		trigger = {
-			NOT = {
-				TAG = SER
-			}
-		}
-	}
 }
 	
 # Crisis Averted (annex)
 news_event = {
-	id = july_crisis.41
-	title = july_crisis.41.t 
-	desc = july_crisis.41.d 
+	id = july_crisis.141
+	title = july_crisis.141.t 
+	desc = july_crisis.141.d 
 	picture = GFX_news_event_015 
 	
 	major = yes
 	
 	trigger = {
-	has_global_flag = annex_accept
-	NOT = { has_global_flag = averted_annex }
-	date > 1914.6.28
-	country_exists = AUS
+		has_global_flag = annex_accept
+		NOT = { has_global_flag = averted_annex }
+		tag = AUS
+		date > 1914.6.28
+		country_exists = AUS
 		country_exists = SER
 		AUS = {
-			NOT = { has_war_with = SER
-			}
+			NOT = { has_war_with = SER }
 		}
 	}
 	
@@ -799,30 +863,42 @@ news_event = {
 	
 	immediate = {
 		set_global_flag = averted_annex
-	}
-	
-	option = {
-	    name = july_crisis.41.a 
-		trigger = {
-			TAG = AUS
+		AUS = {
+		annex_country = { target = SER }
 		}
-		AUS = { annex = SER }
 	}
 	
 	option = {
-	    name = july_crisis.41.b
+	    name = july_crisis.141.a 
+		trigger = {
+			tag = AUS
+		}
+	}
+	
+	option = {
+	    name = july_crisis.141.b
 		trigger = {
 			NOT = {
-				TAG = AUS
+				tag = AUS
+				is_in_faction_with = AUS
 			}
 		}
 	}
+	option = {
+	 name = july_crisis.141.c
+	 trigger = {
+			NOT = { tag = AUS
+			}
+			is_in_faction_with = AUS
+		}
+	}
+}
 
 # Crisis Averted (puppet)
 news_event = {
-    id = july_crisis.42
-	title = july_crisis.42.t 
-	desc = july_crisis.42.d 
+    id = july_crisis.142
+	title = july_crisis.142.t 
+	desc = july_crisis.142.d 
 	picture = GFX_news_event_015 
 	
 	major = yes
@@ -830,6 +906,7 @@ news_event = {
 	trigger = {
 		has_global_flag = puppet_accept
 		NOT = { has_global_flag = averted_puppet }
+		tag = AUS
 		date > 1914.6.28
 		country_exists = AUS
 		country_exists = SER
@@ -844,31 +921,40 @@ news_event = {
 	
 	immediate = {
 		set_global_flag = averted_puppet
-	}
-	
-	option = {
-	    name = july_crisis.42.a 
-		trigger = {
-			TAG = AUS
-		}
 		AUS = { puppet = SER }
 	}
 	
 	option = {
-	    name = july_crisis.42.b
+	    name = july_crisis.142.a 
+		trigger = {
+			tag = AUS
+		}
+	}
+	
+	option = {
+	    name = july_crisis.142.b
 		trigger = {
 			NOT = {
-				TAG = AUS
+				tag = AUS
 			}
+		}
+	}
+	
+	option = {
+	 name = july_crisis.142.c
+	 trigger = {
+			NOT = { tag = AUS
+			}
+			is_in_faction_with = AUS
 		}
 	}
 }
 
 # Some Damned Foolish Thing in the Balkans
 news_event = {
-	id = july_crisis.50
-	title = july_crisis.50.t 
-	desc = july_crisis.50.d 
+	id = july_crisis.150
+	title = july_crisis.150.t 
+	desc = july_crisis.150.d 
 	picture = GFX_news_event_016 
 	
 	major = yes
@@ -876,6 +962,7 @@ news_event = {
 	trigger = {
 		has_global_flag = ultimatum_reject
 		NOT = { has_global_flag = balkans }
+		tag = AUS
 		date > 1914.6.28
 		country_exists = AUS
 		country_exists = SER
@@ -893,9 +980,9 @@ news_event = {
 	}
 	
 	option = {
-	    name = july_crisis.50.a 
+	    name = july_crisis.150.a 
 		trigger = {
-			TAG = AUS
+			tag = AUS
 		}
 		AUS = {
 			create_wargoal = {
@@ -909,18 +996,18 @@ news_event = {
 		}
 	}
 	option = {
-		name = july_crisis.50.b
+		name = july_crisis.150.b
 		trigger = {
-			NOT = { TAG =  AUS }
+			NOT = { tag =  AUS }
 		}
 	}
 }
 	
 # Call to Arms
-news_event = {
-	id = july_crisis.60
-	title = july_crisis.60.t 
-	desc = july_crisis.60.d 
+country_event = {
+	id = july_crisis.160
+	title = july_crisis.160.t 
+	desc = july_crisis.160.d 
 	picture = GFX_news_event_017 
 	
 	major = yes
@@ -928,9 +1015,12 @@ news_event = {
 	trigger = {
 		date > 1914.6.28
 		NOT = { has_global_flag = call_to_arms }
-		TAG = GER
+		tag = GER
 		country_exists = GER
 		country_exists = AUS
+		AUS = {
+			has_war_with = SER
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -942,24 +1032,33 @@ news_event = {
 	}
 	
 	option = {
-	    name = july_crisis.60.a 
+	    name = july_crisis.160.a 
+		ai_chance = { factor = 70 }
+		trigger = {
+			tag = GER
+		} 
 	}
 	
 	option = {
-	    name = july_crisis.60.b
+	    name = july_crisis.160.b
+		ai_chance = { factor = 30 }
 		trigger = {
+			tag = GER
+		} 
 			NOT = {
-				has_global_flag = blank_cheque_yes
+			has_global_flag = blank_cheque_yes
 			}
 		}
+		GER = {
+			remove_from_faction = AUS }
 	}
 }
 	
 # The Great War Has Begun
 news_event = {
-	id = july_crisis.59
-	title = july_crisis.59.t 
-	desc = july_crisis.59.d 
+	id = july_crisis.159
+	title = july_crisis.159.t 
+	desc = july_crisis.159.d 
 	picture = GFX_news_event_018 
 	
 	major = yes
@@ -968,17 +1067,11 @@ news_event = {
 		date > 1914.6.28
 		NOT = { has_global_flag = war_began }
 		country_exists = AUS
-		country_exists = GER
 		country_exists = SOV	
 		country_exists = FRA
 		country_exists = SER
 		country_exists = MNT
 		AUS = {
-			has_war_with = SOV
-			has_war_with = FRA
-			has_war_with = SER
-		}
-		GER = {
 			has_war_with = SOV
 			has_war_with = FRA
 			has_war_with = SER
@@ -991,9 +1084,6 @@ news_event = {
 	
 	immediate = {
 		set_global_flag = war_began
-	}
-	
-	immediate = {
 		SER = {
 			set_rule = { can_create_factions = yes }
 			create_faction = panslavic_faction
@@ -1002,9 +1092,319 @@ news_event = {
 	}
 	
 	option = {
-	    name = july_crisis.59.a 
+	    name = july_crisis.159.a 
 	}
 }
+
+###########################################################################################################################################################
+
+# Slavic Independence Event Chain (HIDDEN)
+country_event = {
+    id = news.300
+	hidden = yes
+	
+	major = yes
+	
+	trigger = {
+		has_global_flag = ultimatum_no
+		NOT = { has_global_flag = inde_slav_start }
+		date > 1915.7.10
+		country_exists = AUS
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	immediate = {
+		set_global_flag = inde_slav_start
+	}
+}
+
+# Croatian Revolt
+country_event = {
+    id = news.310
+	title = news.310.t 
+	desc = news.310.d 
+	picture = GFX_news_event_033
+	
+	major = yes
+	
+	trigger = {
+		has_global_flag = inde_slav_start
+		NOT = { has_global_flag = inde_cro }
+		date > 1915.7.10
+		country_exists = AUS
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	immediate = {
+		set_global_flag = inde_cro
+		103 = { add_core_of = CRO }
+		CRO = { transfer_state = 103 }
+		104 = { add_core_of = CRO }
+		CRO = { transfer_state = 104 }
+		109 = { add_core_of = CRO }
+		CRO = { transfer_state = 109 }
+		163 = { add_core_of = CRO }
+		CRO = { transfer_state = 163 }
+	}
+	
+	option = {
+		name = news.310.a 
+		trigger = {
+			tag = AUS
+		AUS = {
+		create_wargoal = {
+				target = CRO
+				type = annex_wargoal_focus
+			}
+			declare_war_on = {
+				target = CRO
+				type = annex_wargoal_focus
+			}
+		}
+	}
+	
+	option = {
+		name = news.310.b
+		trigger = {
+			tag = AUS
+		103 = { remove_core_of = AUS }
+		104 = { remove_core_of = AUS }
+		109 = { remove_core_of = AUS }
+		163 = { remove_core_of = AUS }
+	}
+}
+
+# Russian Ultimatum
+country_event = {
+	id news.320
+	title = news.320.t
+	desc = news 321.d
+	picture = GFX_news_event_034
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		set_global_flag = inde_gal
+		80 = { add_core_of = SOV }
+		88 = { add_core_of = SOV }
+		89 = { add_core_of = SOV }
+		91 = { add_core_of = SOV }	
+	}
+	
+	option = {
+		name = news.320.a
+		trigger = {
+		tag = AUS
+		}
+		set_global_flag = inde_gal
+	}
+	
+	option = {
+		name = news.320.b
+		trigger = {
+		tag = AUS
+		}
+		80 = { remove_core_of = AUS }
+		SOV = { transfer_state = 80 }
+		88 = { remove_core_of = AUS }
+		SOV = { transfer_state = 88 }
+		89 = { remove_core_of = AUS }
+		SOV = { transfer_state = 89 }
+		91 = { remove_core_of = AUS }
+		SOV = { transfer_state = 91 }
+	}
+}
+
+# War for Galicia
+country_event = {
+	id news.321
+	title = news.321.t
+	desc = news 321.d
+	picture = GFX_news_event_035
+	
+	major = yes
+	
+	trigger = {
+		has_global_flag = inde_gal
+		SOV = {
+			NOT = { has_war_with = AUS }
+		}
+	}
+	
+	option = {
+		name = news.321.a
+		trigger = {
+			tag = SOV
+		SOV = {
+			create_wargoal = {
+					type = take_state_focus
+					target = AUS
+					generator = { 80 88 89 91 }
+				}
+			declare_war_on = {
+				target = AUS
+				type = puppet_wargoal_focus
+			}
+		}
+	}
+}
+
+# Hungarian Revolt
+country_event = {
+    id = news.330
+	title = news.330.t 
+	desc = news.330.d 
+	picture = GFX_news_event_036
+	
+	major = yes
+	
+	trigger = {
+		has_global_flag = inde_slav_start
+		has_global_flag = inde_cro
+		NOT = { has_global_flag = inde_hun }
+		date > 1915.7.10
+		country_exists = AUS
+		AUS = {
+			has_war_with = SOV
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	immediate = {
+		set_global_flag = inde_hun
+		43 = { add_core_of = HUN }
+		HUN = { transfer_state = 43 }
+		45 = { add_core_of = HUN }
+		HUN = { transfer_state = 45 }
+		70 = { add_core_of = HUN }
+		HUN = { transfer_state = 70 }
+		71 = { add_core_of = HUN }
+		HUN = { transfer_state = 71 }
+		73 = { add_core_of = HUN }
+		HUN = { transfer_state = 73 }
+		76 = { add_core_of = HUN }
+		HUN = { transfer_state = 76 }
+		82 = { add_core_of = HUN }
+		HUN = { transfer_state = 82 }
+		83 = { add_core_of = HUN }
+		HUN = { transfer_state = 83 }
+		84 = { add_core_of = HUN }
+		HUN = { transfer_state = 84 }
+		154 = { add_core_of = HUN }
+		HUN = { transfer_state = 154 }
+		155 = { add_core_of = HUN }
+		HUN = { transfer_state = 155 }
+		664 = { add_core_of = HUN }
+		HUN = { transfer_state = 664 }
+	}
+	
+	option = {
+		name = news.330.a
+		trigger = {
+			tag = AUS
+		AUS = {
+		create_wargoal = {
+				target = HUN
+				type = puppet_wargoal_focus
+			}
+			declare_war_on = {
+				target = HUN
+				type = puppet_wargoal_focus
+			}
+		}
+	}
+	
+	option = {
+		name = news.330.b
+		43 = { remove_core_of = AUS }
+		45 = { remove_core_of = AUS }
+		70 = { remove_core_of = AUS }
+		71 = { remove_core_of = AUS }
+		73 = { remove_core_of = AUS }
+		76 = { remove_core_of = AUS }
+		82 = { remove_core_of = AUS }
+		84 = { remove_core_of = AUS }
+		154 = { remove_core_of = AUS }
+		155 = { remove_core_of = AUS }
+		664 = { remove_core_of = AUS }
+	}
+}
+
+# Czech Revolt
+country_event = {
+    id = news.340
+	title = news.340.t 
+	desc = news.340.d 
+	picture = GFX_news_event_037
+	
+	major = yes
+	
+	trigger = {
+		has_global_flag = inde_slav_start
+		has_global_flag = inde_hun
+		NOT = { has_global_flag = inde_cze }
+		date > 1915.7.10
+		country_exists = AUS
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	immediate = {
+		set_global_flag = inde_cze
+		9 = { add_core_of = CZE }
+		CZE = { transfer_state = 9 }
+		69 = { add_core_of = CZE }
+		CZE = { transfer_state = 69 }
+		72 = { add_core_of = CZE }
+		CZE = { transfer_state = 72 }
+		74 = { add_core_of = CZE }
+		CZE = { transfer_state = 74 }
+		75 = { add_core_of = CZE }
+		CZE = { transfer_state = 75 }
+	}
+	
+	option = {
+		name = news.340.a
+		trigger = {
+			tag = AUS
+		AUS = {
+		create_wargoal = {
+				target = CZE
+				type = puppet_wargoal_focus
+			}
+			declare_war_on = {
+				target = CZE
+				type = puppet_wargoal_focus
+			}
+		}
+	}
+	
+	option = {
+		name = news.340.b
+		trigger = {
+			tag = AUS
+		9 = { remove_core_of = AUS }
+		69 = { remove_core_of = AUS }
+		72 = { remove_core_of = AUS }
+		74 = { remove_core_of = AUS }
+		75 = { remove_core_of = AUS }
+	}	
+}
+
+###########################################################################################################################
 
 # The Rutherford Model
 news_event = {
@@ -1016,12 +1416,13 @@ news_event = {
 	major = yes
 	
 	trigger = {
-		date > 1910.4.10
+		date > 1911.1.10
+		date < 1914.6.10
 		NOT = { has_global_flag = rutherford_model }
 	}
 	
 	mean_time_to_happen = {
-		days = 350
+		days = 30
 	}
 	
 	immediate = {
@@ -1043,12 +1444,13 @@ news_event = {
 	major = yes
 	
 	trigger = {
-		date > 1910.7.10
+		date > 1911.6.10
+		date < 1914.6.10
 		NOT = { has_global_flag = machu_pichu }
 	}
 	
 	mean_time_to_happen = {
-		days = 350
+		days = 30
 	}
 	
 	immediate = {
@@ -1058,6 +1460,7 @@ news_event = {
 	option = {
 		name = flavor_news.2.a 
 	}
+}
 	
 # Mona Lisa Stolen
 news_event = {
@@ -1069,19 +1472,21 @@ news_event = {
 	major = yes
 	
 	trigger = {
-		date > 1910.12.10
+		date > 1911.7.10
+		date < 1914.6.10
 		NOT = { has_global_flag = mona_lisa }
 	}
 	
 	mean_time_to_happen = {
-		days = 350
+		days = 30
 	}
 	
 	immediate = {
 		set_global_flag = mona_lisa
 		random_list = {
-			80 = { set_global_flag = mona_lisa_gone }
-			20 = { set_global_flag = mona_lisa_found }
+			hidden = yes
+			30 = { set_global_flag = mona_lisa_gone }
+			70 = { set_global_flag = mona_lisa_found }
 		}
 	}
 	
@@ -1100,14 +1505,15 @@ news_event = {
 	major = yes
 	
 	trigger = {
-		date > 1913.1.10
+		date > 1913.11.10
+		date < 1914.6.10
 		NOT = { has_global_flag = mona_lisa_return }
 		NOT = { has_global_flag = mona_lisa_gone}
 		has_global_flag = mona_lisa_found
 	}
 	
 	mean_time_to_happen = {
-		days = 350
+		days = 30
 	}
 	
 	immediate = {
@@ -1129,12 +1535,13 @@ news_event = {
 	major = yes
 	
 	trigger = {
-		date > 1910.4.10
+		date > 1911.2.10
+		date < 1914.6.10
 		NOT = { has_global_flag = triangle_fire }
 	}
 	
 	mean_time_to_happen = {
-		days = 350
+		days = 30
 	}
 	
 	immediate = {
@@ -1154,12 +1561,13 @@ news_event = {
 	major = yes
 	
 	trigger = {
-		date > 1911.5.10
+		date > 1912.3.10
+		date < 1914.6.10
 		NOT = { has_global_flag = titanic }
 	}
 	
 	mean_time_to_happen = {
-		days = 350
+		days = 30
 	}
 	
 	immediate = {
@@ -1217,12 +1625,13 @@ news_event = {
 	major = yes
 	
 	trigger = {
-		date > 1911.5.10
+		date > 1912.2.10
+		date < 1914.6.10
 		NOT = { has_global_flag = piltdown }
 	}
 	
 	mean_time_to_happen = {
-		days = 350
+		days = 30
 	}
 	
 	immediate = {
@@ -1247,9 +1656,9 @@ news_event = {
 		date > 1914.12.25
 		country_exists = GER
 		country_exists = FRA
+		GER = { has_war_with = FRA }
 		NOT = {
 			has_global_flag = christmas
-			GER = { has_war_with = FRA }
 		}
 	}
 	
@@ -1276,14 +1685,14 @@ news_event = {
 	major = yes
 	
 	trigger = {
-		date > 1914.1.10
+		date > 1914.12.10
 		NOT = {
 			has_global_flag = birth_of_a_naiton
 		}
 	}
 	
 	mean_time_to_happen = {
-		days = 350
+		days = 30
 	}
 	
 	immediate = {
@@ -1305,12 +1714,12 @@ news_event = {
 	major = yes
 	
 	trigger = {
-		date > 1912.8.10
+		date > 1914.7.10
 		NOT = { has_global_flag = ellen_axson_death }
 	}
 	
 	mean_time_to_happen = {
-		days = 350
+		days = 30
 	}
 	
 	immediate = {
@@ -1332,13 +1741,13 @@ news_event = {
 	major = yes
 	
 	trigger = {
-		date > 1914.6.1
+		date > 1914.8.10
 		has_global_flag = ellen_axson_death
 		NOT = { has_global_flag = edith_galt }
 	}
 	
 	mean_time_to_happen = {
-		days = 100
+		days = 30
 	}
 	
 	immediate = {
@@ -1360,7 +1769,7 @@ news_event = {
 	major = yes
 	
 	trigger = {
-		date > 1916.1.10
+		date > 1916.3.10
 		NOT = { has_global_flag = dada }
 		country_exists = GER
 		country_exists = FRA
@@ -1371,7 +1780,7 @@ news_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 100
+		days = 30
 	}
 	
 	immediate = {
@@ -1381,6 +1790,7 @@ news_event = {
 	option = {
 		name = flavor_news.12.a 
 	}
+}
 	
 # The Pulitzer Prizes
 news_event = {
@@ -1407,6 +1817,7 @@ news_event = {
 	option = {
 		name = flavor_news.13.a 
 	}
+}
 	
 # The Spanish Flu
 news_event = {
@@ -1418,12 +1829,12 @@ news_event = {
 	major = yes
 	
 	trigger = {
-		date > 1916.10.10
+		date > 1917.12.10
 		NOT = { has_global_flag = influenza }
 	}
 	
 	mean_time_to_happen = {
-		days = 350
+		days = 30
 	}
 	
 	immediate = {
