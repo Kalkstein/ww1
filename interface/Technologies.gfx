@@ -28,6 +28,27 @@ spriteTypes = {
 	}
 	
 	SpriteType = {
+		name = "GFX_machine_gun_medium"
+		texturefile = "gfx/interface/technologies/machine_gun.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_machine_gun_2_medium"
+		texturefile = "gfx/interface/technologies/machine_gun_2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_machine_gun_3_medium"
+		texturefile = "gfx/interface/technologies/machine_gun_3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_machine_gun_4_medium"
+		texturefile = "gfx/interface/technologies/machine_gun_4.dds"
+	}
+	
+	
+	SpriteType = {
 		name = "GFX_rocket_interceptor_equipment_3_medium"
 		texturefile = "gfx/interface/technologies/rocket_interceptor_3.dds"
 	}		
