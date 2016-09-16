@@ -871,5 +871,64 @@ technologies = {
 #			cat_anti_tank
 #		}
 #	}
+
+support_artillery_1 = {
+		enable_equipments = {
+			motorized_rocket_equipment_1
+		}
+
+		path = {
+			leads_to_tech = support_artillery_2
+			research_cost_coeff = 1
+		}
+
+		start_year = 1905
+
+		research_cost = 1.5
+
+		folder = {
+			name = artillery_folder
+			position = { x = 17 y = 0 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	support_artillery_2 = {
+
+		support_artillery = {
+			soft_attack = 0.1
+		}
+		support_artillery_brigade = {
+			soft_attack = 0.1
+		}
+
+		path = {
+			research_cost_coeff = 1
+		}
+
+		start_year = 1910
+
+		research_cost = 1.5
+
+		folder = {
+			name = artillery_folder
+			position = { x = 14 y = 2.5 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	
 }

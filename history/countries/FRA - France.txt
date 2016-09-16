@@ -71,9 +71,6 @@ add_ideas = {
 }
 
 create_faction = Triple_Entente
-add_to_faction = SOV
-add_to_faction = ENG
-give_guarantee = SOV
 
 create_country_leader = {
 	name = "Raymond Poincaré"

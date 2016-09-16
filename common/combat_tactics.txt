@@ -806,3 +806,92 @@ tactic_barrage = { #Superior firepower attacker tactic
 	attacker = 0.1
 	defender = -0.2	
 }
+
+tactic_gas_eba = {
+	trigger = {
+		phase = no
+	}
+	
+	active = no
+	
+	base = 4
+	picture = tactic_gas1
+	
+	countered_by = tactic_mask_eba
+	
+	defender = -0.1	
+}
+
+tactic_gas_chlor = {
+	trigger = {
+		phase = no
+	}
+	
+	active = no
+	
+	base = 4
+	picture = tactic_gas2
+	
+	countered_by = tactic_mask_chlor
+	
+	attacker = -0.1
+	defender = -0.8
+}
+
+tactic_gas_bunt = {
+	trigger = {
+		phase = no
+	}
+	
+	active = no
+	
+	base = 4
+	picture = tactic_gas3
+	
+	countered_by = tactic_mask_bunt
+	
+	attacker = -0.1
+	defender = -1
+}
+
+tactic_mask_eba = {
+	trigger = {
+		phase = no
+	}
+	
+	active = no
+	
+	base = 4
+	picture = tactic_gas1
+	
+	attacker = -0.1
+	defender = -0.1
+}
+
+tactic_mask_chlor = {
+	trigger = {
+		phase = no
+	}
+	
+	active = no
+	
+	base = 4
+	picture = tactic_gas2
+	
+	attacker = -0.1
+	defender = -0.1
+}
+
+tactic_mask_bunt = {
+	trigger = {
+		phase = no
+	}
+	
+	active = no
+	
+	base = 4
+	picture = tactic_gas3
+	
+	attacker = -0.1
+	defender = -0.1
+}

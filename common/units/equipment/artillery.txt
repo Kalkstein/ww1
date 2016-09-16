@@ -145,25 +145,16 @@ equipments = {
 			steel = 1
 		}
 	}
-	
+
 	#Katyusha 
 	motorized_rocket_equipment = {
 		is_archetype = yes
 		type = { 
 			artillery
-			motorized
-			rocket
 		}
 		group_by = archetype
 		
 		interface_category = interface_category_land
-		
-		upgrades = {
-			ART_reliability_upgrade
-			ART_SA_upgrade
-			ART_HA_upgrade
-			ART_defence_upgrade
-		}
 		
 		#Misc Abilities
 		reliability = 0.8
@@ -182,8 +173,7 @@ equipments = {
 		
 		build_cost_ic = 12
 		resources = {
-			oil = 1
-			rubber = 1
+			tungsten = 1
 			steel = 1
 		}
 	}

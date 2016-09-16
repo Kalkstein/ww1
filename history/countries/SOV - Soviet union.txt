@@ -64,8 +64,7 @@ add_ideas = {
 	army_problems
 }
 
-give_guarantee = YUG
-give_guarantee = FRA
+give_guarantee = SER
 
 create_country_leader = {
 	name = "Tsar Nicholas II"
