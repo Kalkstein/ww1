@@ -1,22 +1,27 @@
 spriteTypes = {	
 
 	### generic equipment tech ###
-
-	SpriteType = {
-		name = "GFX_sniper_medium"
-		texturefile = "gfx/interface/technologies/sniper.dds"
-	}
-
-	SpriteType = {
-		name = "GFX_flamethrower_medium"
-		texturefile = "gfx/interface/technologies/flamethrower.dds"
-	}
 	
 	SpriteType = {
 		name = "GFX_improved_infantry_weapons_4_medium"
 		texturefile = "gfx/interface/technologies/improved_infantry_weapons_4.dds"
 	}
 	
+	SpriteType = {
+		name = "GFX_sniper_medium"
+		texturefile = "gfx/interface/technologies/sniper.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_explosives_team_medium"
+		texturefile = "gfx/interface/technologies/explosives_team.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_flamethrower_medium"
+		texturefile = "gfx/interface/technologies/flamethrower.dds"
+	}
+
 	SpriteType = {
 		name = "GFX_field_grey_medium"
 		texturefile = "gfx/interface/technologies/field_grey.dds"

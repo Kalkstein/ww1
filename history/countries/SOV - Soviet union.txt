@@ -2,7 +2,7 @@
 
 oob = "SOV_1910"
 
-set_research_slots = 3
+set_research_slots = 2
 
 # Starting tech
 set_technology = {
@@ -32,18 +32,21 @@ set_national_unity = 0.55
 set_politics = {
 
 	parties = {
-		neutral = { 
-			popularity = 20
+		democratic = { 
+			popularity = 55
 		}
 		
 		communism = {
 			popularity = 25
 		}
 
-		democratic = {
-			popularity = 55
+		fascism = {
+			popularity = 0
 		}
 
+		neutrality = {
+			popularity = 20
+		}
 	}
 	
 	ruling_party = democratic
@@ -61,15 +64,14 @@ add_ideas = {
 	army_problems
 }
 
-give_guarantee = YUG
-give_guarantee = FRA
+give_guarantee = SER
 
 create_country_leader = {
 	name = "Tsar Nicholas II"
 	desc = "POLITICS_NICHOLAS_II_DESC"
 	picture = "Portrait_Soviet_Nicholas.dds"
 	expire = "1965.3.1"
-	ideology = imperialism
+	ideology = rexism
 	traits = {
 		weak_autocrat
 	}
