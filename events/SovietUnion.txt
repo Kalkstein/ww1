@@ -393,6 +393,7 @@ country_event = {
 	}
 		}
 	# Revisit : Rückkehr von Lenin als Event einfügen
+	# Revisit 3 : das ganze hier ausdifferenzieren
 	
 	option = {
 		name = soviet.20.a
@@ -499,7 +500,7 @@ country_event = {
 		name = soviet.24.b
 		custom_effect_tooltip = soviet.24.b_tt
 	set_politics = {
-	ruling_party = democratic
+	ruling_party = neutral
 	}
 }
 }
@@ -740,13 +741,7 @@ country_event = {
 
 	is_triggered_only = yes
 	
-	trigger = {
-	has_idea = religious_army
-	communism < 35
-	fascism < 45
-	has_war = yes
-	any_war_score < 0
-	}
+	is_triggered_only = yes
 		
 	option = {
 		name = soviet.32.a
@@ -926,13 +921,9 @@ country_event = {
 	is_triggered_only = yes
 		
 	option = {
-		# revisit 2 : Auf in die neue Zeit!
-		name = soviet.40.a
-		custom_effect_tooltip = soviet.40.a_tt
-		hidden_effect = {
-			remove_ideas = modernizing_army_5
-			add_ideas = loyal_officers
-		}
+		# revisit 2 : Seit wann lassen wir uns was sagen?
+		name = soviet.45.a
+		custom_effect_tooltip = soviet.45.a_tt
 	}
 }
 
@@ -1370,7 +1361,7 @@ country_event = {
 		name = soviet.64.a
 		# revisit 2 : die Mittelmächte um Hilfe fragen
 		trigger = {
-		BUL = { NOT = { has_government = democracy } }
+		BUL = { NOT = { has_government = neutral } }
 		}
 		GER = { add_opinion_modifier = { target = BUL modifier = a_potential_ally } }
 		AUS = { add_opinion_modifier = { target = BUL modifier = a_potential_ally } }
@@ -1380,7 +1371,7 @@ country_event = {
 	option = {
 		name = soviet.64.b
 		trigger = {
-		BUL = { has_government = democracy }
+		BUL = { has_government = neutral }
 		}
 		ENG = { add_opinion_modifier = { target = BUL modifier = threatened_democracy } }
 		FRA = { add_opinion_modifier = { target = BUL modifier = threatened_democracy } }
@@ -1488,11 +1479,10 @@ country_event = {
 	title = soviet.67.t
 	desc = soviet.67.d
 	picture = GFX_report_event_soldiers_marching
-	# revisit 2 : Nach dem zum Erliegen kommen unserer Offensive hat sich unser Planungsvorteil in Luft aufgelöst, unser Generalstab
+	# revisit 2 : Nach dem ersten Kriegsmonat hat sich unsere Planung in Luft aufgelöst, unser Generalstab
 	# ist so inkompetent wie eh und je
 	trigger = {
 	has_war_with = GER
-	SOV = { has_aggressive_war = yes }
 	}
 	
 	mean_time_to_happen = { days = 28 }
@@ -1528,28 +1518,6 @@ country_event = {
 			}
 	}
 
-country_event = {
-	id = soviet.69
-	title = soviet.69.t
-	desc = soviet.69.d
-	picture = GFX_report_event_soldiers_marching
-	# revisit 2 : Mit den Angriffen deutscher Truppen auf unsere Grenzen haben sich unsere Planungen 
-	# für eine Offensive in Luft aufgelöst
-	trigger = {
-	has_war_with = GER
-	NOT = { has_aggresive_war = yes }
-	}
-	
-	mean_time_to_happen = { days = 2 }
-	
-	option = {
-		name = soviet.69.a
-		# Jetzt gilt es Gott zu vertrauen!
-		remove_ideas = allied_planning
-		FRA = { remove_ideas = allied_planning }
-		ENG = { remove_ideas = allied_planning }
-	}
-}
 
 country_event = {
 	id = soviet.70
@@ -1704,10 +1672,8 @@ country_event = {
 		load_oob = "SOV_preventiv_war_early_mobilization"
 		GER = { country_event = { id = soviet.78 days = 1 } }
 		AUS = { country_event = { id = soviet.79 days = 2 } }
-		set_politics = {
-			economy = { law = war_economy }
-			mobilization_laws = { law = extensive_conscription }
-		}
+		add_ideas = war_economy 
+		add_ideas = extensive_conscription
 	}
 	option = {
 		name = soviet.71.b
@@ -1736,7 +1702,7 @@ country_event = {
 		add_ideas = extensive_conscription 
 		}
 	}
-}
+
 
 country_event = {
 	id = soviet.78
@@ -1787,10 +1753,8 @@ country_event = {
 	option = {
 		name = soviet.79.a
 		# United we stand together
-		set_politics = {
-			economy = { law = war_economy }
-			mobilization_laws = { law = extensive_conscription }
-		}
+		add_ideas = war_economy 
+		add_ideas = extensive_conscription 
 		AUS = { add_opinion_modifier = { target = SOV modifier = russian_attack } }
 	}
 }
@@ -1810,6 +1774,7 @@ country_event = {
 		# I think we cant do anything
 		add_ideas = { everyone_deserts }
 		set_global_flag = russian_army_moulders
+		# revisit 3 : Event einfügen bei dem die Deutschen wieder Hoffnung schöpfen
 	}
 }
 
@@ -1826,7 +1791,6 @@ country_event = {
 		name = soviet.81.a
 		# I think we cant do anything
 		add_ideas = { exploited_workers }
-		set_global_flag = russian_army_moulders
 	}
 }
 
@@ -1853,6 +1817,362 @@ country_event = {
 				idea = a_imperial_war
 				days = 365
 			}
+	}
+}
+
+country_event = {
+	id = soviet.83
+	title = soviet.83.t
+	desc = soviet.83.d
+	picture = GFX_report_event_soldiers_marching
+	# Das Volk läuft zu den Kommunisten
+	
+	trigger = {
+	has_completed_focus = SOV_total_mobilization
+	communism > 0.3
+	202 = { NOT = { is_controlled_by = SOV } }
+	202 = { is_owned_by = SOV }
+	12 = { NOT = { is_controlled_by = SOV } }
+	12 = { is_owned_by = SOV }
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+		name = soviet.83.a
+		# The Monarchy will stay
+		hidden_effect = {
+		country_event = { id = soviet.14 days = 4 }
+		country_event = { id = soviet.20 days = 10 }
+		add_ideas = communist_salvation
+	}
+}
+}
+
+country_event = {
+	id = soviet.84
+	title = soviet.84.t
+	desc = soviet.84.d
+	picture = GFX_report_event_soldiers_marching
+	# Die Große Offensive hat begonnen, wir werden den Feind zermalmen!
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.84.a
+		# Mit dem Zar und Gott zum Sieg!
+		add_timed_idea = { idea = improved_army_spirit days = 42 }
+		# revisit 0 : einfügen das bei erfolgreicher Offensive es weitergeht, bei nicht erfolgreicher Katastrophe
+		# außerdem Event für Russland wenn Deutschland Wind kriegt
+		}
+}
+
+country_event = {
+	id = soviet.85
+	title = soviet.85.t
+	desc = soviet.85.d
+	picture = GFX_report_event_soldiers_marching
+	# revisit 2: Es scheint so das die Russen im Osten eine große Offensive vorbereiten, alle unsere Spione berichten
+	# übereinstimmendes
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	option = {
+		name = soviet.85.a
+		# We will defend ourselvs!
+		GER = { add_timed_idea = { idea = defense_in_the_east days = 28 } }
+		hidden_effect = {
+		country_event = { id = soviet.86 days = 28 }
+		}
+	}
+}
+
+country_event = {
+	id = soviet.86
+	title = soviet.86.t
+	desc = soviet.86.d
+	picture = GFX_report_event_soldiers_marching
+	# revisit 2: Der Ansturm und Kampfgeist der Russen erlahmt und damit auch der Verteidigungswille unser Soldaten, sie sind erschöpft
+	# und nun machen alle wieder Dienst wie normal, keiner strengt sich mehr zusätzlich an, selbst wenn noch heftige Kämpfe laufen
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.86.a
+		trigger = {
+		64 = { NOT = { is_controlled_by = SOV } }
+		64 = { is_owned_by = GER }
+		}
+		# A succesfull defense
+	}
+	option = {
+		name = soviet.86.b
+		trigger = {
+		64 = { is_controlled_by = SOV }
+		64 = { is_owned_by = GER }
+		}
+		# The offensive was a catastrophe
+	}
+}
+
+country_event = {
+	id = soviet.87
+	title = soviet.87.t
+	desc = soviet.87.d
+	picture = GFX_report_event_soldiers_marching
+	# revisit 2 : Die Öffentlichkeit und vor allem das Bildungsbürgertum empören sich über die Abkehr von der Entente, sie 
+	# empfinden es als Verrat, vor allem an den Slawen, die wir beschützen sollten
+	
+	is_triggered_only = yes
+	 
+	option = {
+	# revisit 2 : Sie haben kein Verständnis
+		name = soviet.87.a
+		add_timed_idea = { idea = disappointed_panslavists days = 182 } 
+	}
+}
+
+country_event = {
+	id = soviet.88
+	title = soviet.88.t
+	desc = soviet.88.d
+	picture = GFX_report_event_soldiers_marching
+	# revisit 2 : Die Russen scheinen sich von den Alliierten abzuwenden, es wär in unserem besten Interesse sie dabei
+	# zu entstützen, zum Beispiel indem wir ihnen Konzessionen auf dem Balkan machen und ihre Ambitionen befriedigen
+	
+	is_triggered_only = yes
+	 
+	option = {
+	# revisit 2 : Klingt gut
+		name = soviet.88.a
+		ai_chance = {
+		factor = 75 
+		modifier = {
+		factor = 100
+		GER = { has_war_with = FRA }
+				}
+			}
+		}
+		SOV = { country_event = { id = soviet.89 days = 2 } }
+	}
+	
+	option = {
+	# revisit 2 : Lasst die Russen machen was sie wollen
+		name = soviet.88.b
+		ai_chance = {
+		factor = 25 
+		modifier = {
+		factor = 100
+		OR = {
+		24 = { is_controlled_by = GER } 
+		24 = { is_controlled_by = AUS } 
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = soviet.89
+	title = soviet.89.t
+	desc = soviet.89.d
+	picture = GFX_report_event_soldiers_marching
+	# revisit 2 : Die Österreicher haben uns heute mit Rückendeckung der Deutschen ein Angebot gemacht, die Ansprüche auf dem
+	# Balkan sollen endgültig abgesteckt werden, nützlich wenn wir uns zurückziehen wollen, die Engländer dürfen natürlich
+	# nichts erfahren
+	
+	is_triggered_only = yes
+	 
+	option = {
+	# revisit 2 : Nehmt an!
+		name = soviet.89.a
+		ai_chance = {
+		factor = 100
+		}
+		give_guarantee = BUL
+		give_guarantee = SER
+		AUS = { give_guarantee = ROM }
+		AUS = { add_opinion_modifier = { target = SOV modifier = a_good_cooperation } }
+		SOV = { add_opinion_modifier = { target = AUS modifier = a_good_cooperation } }
+		hidden_effect = { 
+		random_list = {
+		15 = { 
+		SOV = { country_event = { id = soviet.90 days = 9 } } 
+		every_other_country = {
+		limit = { is_in_faction_with = FRA 
+		NOT = { tag = SOV } }
+		country_event = { id = soviet.91 days = 8 }
+		}
+		FRA = { country_event = { id = soviet.91 days = 8 } }
+		SOV = { country_event = { id = soviet.94 days = 12 } } 
+		}
+		}
+		set_global_flag = russian_retreat
+		}
+	}
+	
+	option = {
+	# revisit 2 : Darauf werden wir uns nicht einlassen!
+		name = soviet.89.b
+		ai_chance = {
+		factor = 0
+		}
+		AUS = { add_opinion_modifier = { target = SOV modifier = rejected_offer } }
+		# revisit 1 : event einfügen wo das DR das ganze erklärt bekommt, auch bei 89.a
+		hidden_effect = {
+		SOV = { country_event = { id = soviet.92 days = 9 } }
+		every_other_country = {
+		limit = { is_in_faction_with = FRA 
+		NOT = { tag = SOV } }
+		country_event = { id = soviet.91 days = 8 }
+		}
+		FRA = { country_event = { id = soviet.91 days = 8 } }
+		}
+	}
+}
+
+country_event = {
+	id = soviet.90
+	title = soviet.90.t
+	desc = soviet.90.d
+	picture = GFX_report_event_soldiers_marching
+	# revisit 2 : Durch irgendeine Indiskretion in der inkompetenten Österreischichen oder in unserer noch viel inkompetenteren
+	# Bürokratie ist die Sache mit den Österreichern rauusgekommen, erwartungsgemäß sind die Engländer und Franzosen 
+	# ziemlich sauer und haben uns sogar aus der Fraktion verstoßen! Die Öffentlichkeit ist ebenfalls sauer
+	
+	is_triggered_only = yes
+	 
+	option = {
+	# revisit 2 : Übertreibts nicht!
+		name = soviet.90.a
+		add_timed_idea = { idea = treaty_with_austria days = 182 } 
+		remove_from_faction = SOV
+		SOV = { add_opinion_modifier = { target = ENG modifier = exaggerating_allies } }
+		if = {
+		limit = { ENG = { is_in_faction_with = FRA } }
+		SOV = { add_opinion_modifier = { target = FRA modifier = exaggerating_allies } }
+		}
+	}
+}
+
+country_event = {
+	id = soviet.91
+	title = soviet.91.t
+	desc = soviet.91.d
+	picture = GFX_report_event_soldiers_marching
+	# revisit 2 : Heute sind uns Informationen zugespielt worden, die Russen haben was mit den Öst. zu schaffen...
+	
+	is_triggered_only = yes
+	 
+	option = {
+	# revisit 2 : Dafür gibts nur eine Lösung
+		name = soviet.91.a
+		add_opinion_modifier = { target = SOV modifier = the_definition_of_illoyal } 
+	}
+}
+
+country_event = {
+	id = soviet.92
+	title = soviet.92.t
+	desc = soviet.92.d
+	picture = GFX_report_event_soldiers_marching
+	# revisit 2 : Nachdem wir das Öst. Angebot abgelehnt haben ist diese Konversation natürlich zufällig zu den Engländern gekommen..
+	
+	is_triggered_only = yes
+	 
+	option = {
+	# revisit 2 : Verdammt sein sie !
+		name = soviet.92.a
+		remove_from_faction = SOV
+		add_timed_idea = { idea = treaty_with_austria days = 182 } 
+		every_other_country = {
+		limit = { is_in_faction_with = FRA 
+		NOT = { tag = SOV } }
+		country_event = { id = soviet.91 days = 8 }
+		}
+		SOV = { add_opinion_modifier = { target = FRA modifier = exaggerating_allies } }
+	}
+}
+
+country_event = {
+	id = soviet.93
+	title = soviet.93.t
+	desc = soviet.93.d
+	picture = GFX_report_event_soldiers_marching
+	# revisit 2 : Die Russen haben uns heute offenbar eigenmächtig ein Angebot gemacht, die Ansprüche auf dem
+	# Balkan sollen endgültig abgesteckt werden, extrem nützlich um Russland aus einem eventuellen Kreig mit den
+	# Allierten rauszuhalten
+	
+	is_triggered_only = yes
+	 
+	option = {
+	# revisit 2 : Nehmt an!
+		name = soviet.93.a
+		ai_chance = {
+		factor = 99
+		}
+		SOV = { give_guarantee = BUL }
+		SOV = { give_guarantee = SER }
+		AUS = { give_guarantee = ROM }
+		SOV = { add_opinion_modifier = { target = AUS modifier = a_good_cooperation } }
+		AUS = { add_opinion_modifier = { target = SOV modifier = a_good_cooperation } }
+		hidden_effect = { 
+		random_list = {
+		15 = { 
+		SOV = { country_event = { id = soviet.90 days = 9 } } 
+		every_other_country = {
+		limit = { is_in_faction_with = FRA }
+		country_event = { id = soviet.91 days = 8 }
+		}
+		FRA = { country_event = { id = soviet.91 days = 8 } }
+		SOV = { country_event = { id = soviet.94 days = 12 } } 
+		}
+		}
+		set_global_flag = russian_retreat
+		}
+	}
+	
+	option = {
+	# revisit 2 : Darauf werden wir uns nicht einlassen! Leitet das zu den Engländern weiter
+		name = soviet.93.b
+		ai_chance = {
+		factor = 1
+		modifier = {
+		factor = 100
+		OR = {
+		24 = { is_controlled_by = GER } 
+		24 = { is_controlled_by = AUS } 
+				}
+			}
+		}
+		SOV = { add_opinion_modifier = { target = AUS modifier = rejected_offer } }
+		# revisit 1 : event einfügen wo das DR das ganze erklärt bekommt
+		hidden_effect = {
+		SOV = { country_event = { id = soviet.92 days = 9 } }
+		FRA = { country_event = { id = soviet.91 days = 8 } }
+		every_other_country = {
+		limit = { is_in_faction_with = FRA 
+		NOT = { tag = SOV } }
+		country_event = { id = soviet.91 days = 8 }
+		}
+		}
+	}
+}
+
+country_event = {
+	id = soviet.94
+	title = soviet.94.t
+	desc = soviet.94.d
+	picture = GFX_report_event_soldiers_marching
+	# revisit 2 : Die Öffentlichkeit empört sich über das Abkommen mit den Österreichern, es gab große Demonstrationen
+	
+	is_triggered_only = yes
+	 
+	option = {
+	# revisit 2 : Ja ja
+		name = soviet.94.a
+		add_timed_idea = { idea = angry_bourgeosie days = 182 }
 	}
 }
 

@@ -31,7 +31,7 @@ focus_tree = {
 		}
 		available = {
 			has_war = no
-			democratic > 0.30
+			neutral > 0.30
 			communism > 0.30
 		}
 		completion_reward = {
@@ -175,46 +175,36 @@ focus_tree = {
 		}
 		completion_reward = {
 		11 = {
-			custom_effect_tooltip = russian_forts
-			hidden_effect = {
-				add_building_construction = {
-					type = bunker
-					level = 5
-					province = 6296
-					instant_build = yes
-					}
+			add_building_construction = {
+				type = bunker
+				level = 5
+				province = 6296
+				instant_build = yes
 				}
 			}
 		97 = {
-			custom_effect_tooltip = russian_forts
-			hidden_effect = {
-				add_building_construction = {
-					type = bunker
-					level = 5
-					province = 3393
-					instant_build = yes
-					}
-				add_building_construction = {
-					type = bunker
-					level = 3
-					province = 11357
-					instant_build = yes
-					}	
+			add_building_construction = {
+				type = bunker
+				level = 5
+				province = 3393
+				instant_build = yes
 				}
+			add_building_construction = {
+				type = bunker
+				level = 3
+				province = 11357
+				instant_build = yes
+				}	
 			}
 		92 = {
-			custom_effect_tooltip = russian_forts
-			hidden_effect = {
-				add_building_construction = {
-					type = bunker
-					level = 4
-					province = 3521
-					instant_build = yes
-					}
+			add_building_construction = {
+				type = bunker
+				level = 4
+				province = 3521
+				instant_build = yes
 				}
 			}
 			
-		}
 	}
 	
 	focus = {
@@ -352,13 +342,13 @@ focus_tree = {
 		completion_reward = {
 		add_ideas = unlimited_tsar_power
 		if = {
-		limit = { fascism < 0.3 }
+		limit = { democratic < 0.3 }
 		hidden_effect = {
 			country_event = { id = soviet.12 days = 14 }
 		}				
 		}
 		if = {
-		limit = { fascism > 0.3 }
+		limit = democratic > 0.3 }
 		hidden_effect = {
 		country_event = { id = soviet.11 days = 14 }				
 			}
@@ -417,7 +407,7 @@ focus_tree = {
 		country_event = { id = soviet.16 days = 5 }
 		}
 		if = {
-		limit = { fascism < 0.3 }
+		limit = { democratic < 0.3 }
 				hidden_effect = {
 				country_event = { id = soviet.12 days = 5 }
 				}
@@ -524,7 +514,7 @@ focus = {
 		has_war = yes
 		any_war_score < 0
 		communism < 35
-		fascism < 45
+		neutrality < 45
 		}
 		hidden_effect = {
 			country_event = { id = soviet.32 days = 14 }
@@ -553,7 +543,7 @@ focus = {
 		available = {
 		has_war = yes
 		any_war_score < -14
-		fascism > 0.45
+		democratic > 0.45
 		communism < 0.35
 		}
 		completion_reward = {
@@ -758,8 +748,9 @@ focus = {
 	AUS = { add_opinion_modifier = { target = SOV modifier = russian_saber_rattling } }
 	GER = { add_opinion_modifier = { target = SOV modifier = russian_saber_rattling } }
 	set_rule = {
-				can_send_volunteers = yes
-			}
+	can_send_volunteers = yes
+	}
+	# revisit 1 : Weltspannung steigern einfügen, 7%
 	hidden_effect = {country_event = { id = soviet.45 days = 2 } }
 	}
 }
@@ -831,7 +822,7 @@ focus = {
 	prerequisite = { focus = SOV_cooperate_with_bulgaria }
 	bypass = {
 	BUL = {
-			is_in_faction_with = SOV
+		is_in_faction_with = SOV
 		}
 	}
 	available = {
@@ -842,8 +833,8 @@ focus = {
 	NOT = { is_in_faction_with = AUS }
 	}
 	cancel = {
-			has_war_with = BUL
-			NOT = { country_exists = BUL }
+		has_war_with = BUL
+		NOT = { country_exists = BUL }
 		}	
 	cancel_if_invalid = no
 	completion_reward = {
@@ -865,10 +856,8 @@ focus = {
 				}
 		modifier = {
 				factor = 0
-				OR = {
-					ROM = {
-					is_in_faction_with = AUS
-						}
+				ROM = {
+				is_in_faction_with = AUS
 					}
 				}
 		}
@@ -959,11 +948,16 @@ focus = {
 	664 = { add_claim_by = SOV }
 	75 = { add_claim_by = SOV }
 	9 = { add_claim_by = SOV }
+	if = {
+	limit = {
+	is_in_faction_with = SER
+	}
 	104 = { add_claim_by = SER }
 	109 = { add_claim_by = SER }
 	103 = { add_claim_by = SER }
 	102 = { add_claim_by = SER }
 	45 = { add_claim_by = SER }
+	}
 	}
 }
 
@@ -983,8 +977,6 @@ focus = {
 	country_exists = TUR
 	OR = {
 	has_global_flag = balkan_war
-	}
-	OR = {
 	has_global_flag = balkan_war_over
 	}
 	SOV = { NOT = { is_in_faction_with = TUR } }
@@ -1161,7 +1153,7 @@ focus = {
 		modifier = {
 		factor = 10
 		communism > 0.35
-		democratic > 0.25
+		neutrality > 0.25
 	}
 	}
 	
@@ -1227,21 +1219,27 @@ focus = {
 		factor = 0
 		modifier = {
 		factor = 1000
-		90 = { NOT = { is_controlled_by = SOV } }
+		202 = { NOT = { is_controlled_by = SOV } }
+		202 = { is_owned_by = SOV }
+		13 = { NOT = { is_controlled_by = SOV } }
+		13 = { is_owned_by = SOV }	
 		}
 	}
-	prerequisite = { focus = SOV_a_offensive_war }
+	prerequisite = { focus = SOV_a_offensive_war focus = SOV_slavic_treaty focus = SOV_smash_the_ottomans }
+	
 	
 	available = {
 	has_war_with = GER
+	10 = { NOT = { is_controlled_by = SOV } }
+	10 = { is_owned_by = SOV }
+	11 = { NOT = { is_controlled_by = SOV } }
+	11 = { is_owned_by = SOV }	
 	}
 	cancel_if_invalid = yes
 	
 	completion_reward = {
-	add_idea = conscription_of_the_weakest
-	set_politics = {
-	law = tot_economic_mobilisation 
-	}	
+	add_ideas = conscription_of_the_weakest
+	add_ideas = tot_economic_mobilisation 
 	hidden_effect = {
 	country_event = { id = soviet.80 days = 40 } 
 	country_event = { id = soviet.81 days = 5 } 
@@ -1251,7 +1249,8 @@ focus = {
 
 focus = {
 	id = SOV_a_great_offensive
-	icon = GFX_goal_generic_forceful_treaty
+	icon = GFX_goal_anti_comintern_pact
+	# revisit 2 : WIr haben uns sogar britische Offiziere geholt um bei der Planung zu helfen
 	x = 25
 	y = 7
 	cost = 10
@@ -1260,40 +1259,318 @@ focus = {
 		modifier = {
 		factor = 1000
 		90 = { NOT = { is_controlled_by = SOV } }
+		90 = { is_owned_by = SOV }
 		}
 	}
 	prerequisite = { focus = SOV_a_offensive_war }
 	
 	available = {
 	has_war_with = GER
+	64 = { NOT = { is_controlled_by = SOV } }
+	64 = { is_owned_by = SOV }
 	}
+	cancel_if_invalid = yes
+	
+	completion_reward = {
+	SOV = { add_timed_idea = { idea = a_great_offensive days = 42 } }
+	GER = { country_event = { id = soviet.85 days = 14 } }
+	AUS = { country_event = { id = soviet.85 days = 14 } }
+	country_event = { id = soviet.84 days = 28 } 
+	}
+}
+
+# revisit 3 : Den Fokus mit dem Friedensvertrag reinmachen, siehe "Focus Tree Russia"
+
+focus = {
+	id = SOV_withdraw_from_international_politics
+	icon = GFX_goal_generic_forceful_treaty
+	x = 17
+	y = 0
+	cost = 10
+	ai_will_do = {
+		factor = 0
+	}	
+
+	mutually_exclusive = { focus = SOV_support_panslavism }
+	
+	available = {
+	has_war = no
+	}
+	
 	cancel_if_invalid = no
 	
 	completion_reward = {
+	ENG = { add_opinion_modifier = { target = SOV modifier = unloyal_ally } }
+	FRA = { add_opinion_modifier = { target = SOV modifier = unloyal_ally } }
+	hidden_effect = {
+	country_event = { id = soviet.87 days = 3 }
+	AUS = { country_event = { id = soviet.88 days = 21 } }
+	}
 	}
 }
 
 focus = {
-	id = SOV_try_to_get_a_peace_deal
+	id = SOV_define_balkan_interests
 	icon = GFX_goal_generic_forceful_treaty
-	x = 23
-	y = 8
+	x = 18
+	y = 1
 	cost = 10
 	ai_will_do = {
-		factor = 0
-		modifier = {
-		factor = 1000
-		90 = { NOT = { is_controlled_by = SOV } }
-		}
-	}
-	prerequisite = { focus = SOV_a_offensive_war }
+		factor = 10
+	}	
+
+	mutually_exclusive = { focus = SOV_retire_from_entente }
+	prerequisite = { focus = SOV_withdraw_from_international_politics }
 	
 	available = {
-	has_war_with = GER
+	has_war = no
+	country_exists = AUS
 	}
+	
+	bypass = { has_global_flag = russian_retreat }
+	
 	cancel_if_invalid = no
 	
 	completion_reward = {
+	if = {
+	limit = { NOT = { has_global_flag = russian_retreat } }
+	AUS = { country_event = { id = soviet.93 days = 2 } }
+	}
+	}
+}
+
+focus = {
+	id = SOV_non_agression_pact_with_the_central_powers
+	icon = GFX_goal_generic_major_alliance
+	x = 18
+	y = 2
+	cost = 500
+	ai_will_do = {
+		factor = 10
+	}	
+
+	prerequisite = { focus = SOV_define_balkan_interests }
+	
+	available = {
+	NOT = { has_war_with = GER }
+	country_exists = GER
+	}
+	
+	cancel_if_invalid = no
+	
+	completion_reward = {
+	# revisit 0 : Hier das ganze einfügen
+	}
+}
+
+focus = {
+	id = SOV_retire_from_entente
+	icon = GFX_goal_generic_demand_territory
+	x = 16
+	y = 1
+	cost = 10
+	ai_will_do = {
+		factor = 0
+	}	
+
+	mutually_exclusive = { focus = SOV_withdraw_from_international_politics }
+	prerequisite = { focus = SOV_withdraw_from_international_politics }
+	
+	available = {
+	has_war = no
+	}
+	
+	cancel_if_invalid = no
+	
+	completion_reward = {
+	SOV = {
+		if = {
+				limit = {
+					is_faction_leader = yes
+				}
+				dismantle_faction = yes
+		}
+		if = {
+				limit = {
+					is_in_faction  = yes
+				}
+				remove_from_faction = SOV
+			}
+		}
+	ENG = { add_opinion_modifier = { target = SOV modifier = the_definition_of_illoyal } }
+	FRA = { add_opinion_modifier = { target = SOV modifier = the_definition_of_illoyal } }	
+	
+	}
+}
+
+focus = {
+	id = SOV_focus_on_defense
+	icon = GFX_goal_generic_forceful_treaty
+	x = 16
+	y = 2
+	cost = 10
+	ai_will_do = {
+		factor = 500
+	}	
+
+	prerequisite = { focus = SOV_retire_from_entente }
+	
+	available = {
+	has_war = no
+	
+	}
+	
+	cancel_if_invalid = no
+	
+	completion_reward = {
+	add_ideas = defensive_army
+	custom_effect_tooltip = SOV_massive_fort_build_up
+	add_timed_idea = { idea = new_slavery days = 140 }
+	hidden_effect = {
+	if = {
+	limit = { 12 = { is_controlled_by = SOV } }
+	12 = {
+		add_building_construction = {
+			type = bunker
+			level = 4
+			province = 9340
+			instant_build = yes
+			}
+		}
+	}
+	if = {
+	limit = { 202 = { is_controlled_by = SOV } }
+	202 = {
+		add_building_construction = {
+			type = bunker
+			level = 5
+			province = 525
+			instant_build = yes
+			}
+		}
+	}
+	if = {
+	limit = { 206 = { is_controlled_by = SOV } }
+	206 = {
+		add_building_construction = {
+			type = bunker
+			level = 5
+			province = 11370
+			instant_build = yes
+			}
+		}
+	}
+	if = {
+	limit = { 194 = { is_controlled_by = SOV } }
+	194 = {
+		add_building_construction = {
+			type = bunker
+			level = 4
+			province = 3203
+			instant_build = yes
+			}
+		}
+	}
+	if = {
+	limit = { 207 = { is_controlled_by = SOV } }
+	207 = {
+		add_building_construction = {
+			type = bunker
+			level = 4
+			province = 9323
+			instant_build = yes
+			}
+		}
+	}
+	if = {
+	limit = { 242 = { is_controlled_by = SOV } }
+	242 = {
+		add_building_construction = {
+			type = bunker
+			level = 5
+			province = 306
+			instant_build = yes
+			}
+		}
+	}
+	if = {
+	limit = { 191 = { is_controlled_by = SOV } }
+	191 = {
+		add_building_construction = {
+			type = bunker
+			level = 7
+			province = 4640
+			instant_build = yes
+			}
+		}
+	}
+	if = {
+	limit = { 10 = { is_controlled_by = SOV } }
+	10 = {
+		add_building_construction = {
+			type = bunker
+			level = 7
+			province = 3544
+			instant_build = yes
+			}
+		}
+	}
+	if = {
+	limit = { 87 = { is_controlled_by = SOV } }
+	87 = {
+		add_building_construction = {
+			type = bunker
+			level = 6
+			province = 9508
+			instant_build = yes
+			}
+		}
+	}
+	if = {
+	limit = { 205 = { is_controlled_by = SOV } }
+	205 = {
+		add_building_construction = {
+			type = bunker
+			level = 7
+			province = 3263
+			instant_build = yes
+			}
+		}
+	}
+	if = {
+	limit = { 219 = { is_controlled_by = SOV } }
+	219 = {
+		add_building_construction = {
+			type = bunker
+			level = 7
+			province = 9302
+			instant_build = yes
+			}
+		}
+	}
+	if = {
+	limit = { 247 = { is_controlled_by = SOV } }
+	247 = {
+		add_building_construction = {
+			type = bunker
+			level = 6
+			province = 6245
+			instant_build = yes
+			}
+		}
+	}
+	if = {
+	limit = { 246 = { is_controlled_by = SOV } }
+	246 = {
+		add_building_construction = {
+			type = bunker
+			level = 4
+			province = 11349
+			instant_build = yes
+			}
+		}
+	}
+	}
 	}
 }
 

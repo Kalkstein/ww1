@@ -17,8 +17,8 @@ ideas = {
 					}
 					
 				allowed_civil_war = {
-					has_government = monarchism
 					has_government = democratic
+					has_government = neutral
 					}
 			
 			picture = generic_manpower_bonus
@@ -39,8 +39,8 @@ ideas = {
 			}
 					
 				allowed_civil_war = {
-					has_government = monarchism
 					has_government = democratic
+					has_government = neutral
 					has_government = communism
 					}
 			
@@ -63,8 +63,8 @@ ideas = {
 			}
 					
 				allowed_civil_war = {
-					has_government = monarchism
 					has_government = democratic
+					has_government = neutral
 					}
 			
 			picture = sisu
@@ -95,8 +95,8 @@ ideas = {
 			}
 					
 				allowed_civil_war = {
-					has_government = monarchism
 					has_government = democratic
+					has_government = neutral
 					}
 			
 			picture = trotskyite_plot_purged
@@ -116,15 +116,15 @@ ideas = {
 			}
 					
 				allowed_civil_war = {
-					has_government = monarchism
 					has_government = democratic
+					has_government = neutral
 					}
 			
 			picture = generic_manpower_bonus
 
 			modifier = {
-				democratic_drift = 0.03
-				fascism_drift = -0.05
+				neutrality_drift = 0.03
+				democratic_drift = -0.05
 				}
 			
 		}
@@ -137,8 +137,8 @@ ideas = {
 			}
 					
 				allowed_civil_war = {
-					has_government = monarchism
 					has_government = democratic
+					has_government = neutral
 					has_government = communism
 					}
 			
@@ -166,7 +166,7 @@ ideas = {
 			}
 					
 				allowed_civil_war = {
-					has_government = monarchism
+					has_government = democratic
 					}
 			
 			picture = officers_purged
@@ -186,7 +186,7 @@ ideas = {
 			}
 					
 				allowed_civil_war = {
-					has_government = monarchism
+					has_government = democratic
 					}
 			
 			picture = officers_purged
@@ -207,7 +207,7 @@ ideas = {
 			}
 					
 				allowed_civil_war = {
-					has_government = monarchism
+					has_government = democratic
 					}
 			
 			picture = generic_manpower_bonus
@@ -227,8 +227,8 @@ ideas = {
 			}
 					
 				allowed_civil_war = {
-					has_government = monarchism
-					has_government = democracy
+					has_government = democratic
+					has_government = neutral
 					}
 			
 			picture = officers_purged
@@ -249,7 +249,7 @@ ideas = {
 			}
 					
 				allowed_civil_war = {
-					has_government = monarchism
+					has_government = democratic
 					}
 			
 			picture = generic_manpower_bonus
@@ -257,7 +257,7 @@ ideas = {
 			modifier = {
 			industrial_capacity_factory = -0.95
 			communism_drift = 0.1
-			fascism_drift = -0.1
+			democratic_drift = -0.1
 			}
 		}
 		
@@ -271,13 +271,13 @@ ideas = {
 			}
 					
 				allowed_civil_war = {
-					has_government = monarchism
+					has_government = democratic
 					}
 			
 			picture = generic_manpower_bonus
 
 			modifier = {
-			fascism_drift = -1
+			democratic_drift = -1
 			communism_drift = 0.8
 			}
 		}
@@ -292,15 +292,15 @@ ideas = {
 			}
 					
 				allowed_civil_war = {
-					has_government = monarchism
+					has_government = democratic
 					}
 			
 			picture = generic_manpower_bonus
 
 			modifier = {
-			fascism_drift = -0.5
+			democratic_drift = -0.5
 			communism_drift = 0.5
-			democratic_drift = 0.5
+			neutrality_drift = 0.5
 			
 			}
 		}
@@ -315,13 +315,13 @@ ideas = {
 			}
 					
 				allowed_civil_war = {
-					has_government = monarchism
+					has_government = democratic
 					}
 			
 			picture = generic_manpower_bonus
 
 			modifier = {
-			fascism_drift = -0.5
+			democratic_drift = -0.5
 			communism_drift = 1
 			
 			}
@@ -336,15 +336,15 @@ ideas = {
 			}
 					
 				allowed_civil_war = {
-					has_government = monarchism
+					has_government = democratic
 					}
 			
 			picture = generic_manpower_bonus
 
 			modifier = {
-			fascism_drift = -0.10
+			democratic_drift = -0.10
 			communism_drift = 0.05
-			democratic_drift = 0.05			
+			neutrality_drift = 0.05			
 			army_attack_factor = -0.15
 			army_defence_factor = -0.05
 			}
@@ -359,13 +359,13 @@ ideas = {
 			}
 					
 				allowed_civil_war = {
-					has_government = monarchism
+					has_government = democratic
 					}
 			
 			picture = generic_manpower_bonus
 
 			modifier = {
-			fascism_drift = -0.1
+			democratic_drift = -0.1
 			communism_drift = 0.1
 			army_attack_factor = -0.30
 			army_defence_factor = -0.10
@@ -382,13 +382,13 @@ ideas = {
 			}
 					
 				allowed_civil_war = {
-					has_government = monarchism
+					has_government = democratic
 					}
 			
 			picture = generic_manpower_bonus
 
 			modifier = {
-			fascism_drift = 0.02
+			democratic_drift = 0.02
 			political_power_factor = 0.2
 			}
 		}
@@ -400,7 +400,7 @@ ideas = {
 				always = no # added via focus
 			}
 			allowed_civil_war = {
-					has_government = monarchism
+					has_government = democratic
 					}
 			
 			picture = generic_manpower_bonus
@@ -423,7 +423,7 @@ ideas = {
 				always = no # added via focus
 			}
 			allowed_civil_war = {
-					has_government = monarchism
+					has_government = democratic
 					}
 			
 			picture = generic_manpower_bonus
@@ -444,7 +444,7 @@ ideas = {
 				}
 				
 			allowed_civil_war = {
-					has_government = monarchism
+					has_government = democratic
 					}	
 			
 			picture = socialist_science_focus
@@ -462,7 +462,7 @@ ideas = {
 				}
 				
 			allowed_civil_war = {
-					has_government = neutrality
+					has_government = facist
 					}	
 			
 			picture = socialist_science_focus
@@ -478,7 +478,7 @@ ideas = {
 				always = no # added via focus
 				}
 			allowed_civil_war = {
-					has_government = monarchism
+					has_government = democratic
 					}	
 			picture = generic_manpower_bonus
 
@@ -494,12 +494,12 @@ ideas = {
 				always = no # added via focus
 				}
 			allowed_civil_war = {
-					has_government = monarchism
+					has_government = democratic
 					}
 			picture = generic_manpower_bonus
 
 			modifier = {
-			democratic_drift = 0.04
+			neutrality_drift = 0.04
 			communism_drift = -0.03
 			}
 		}
@@ -510,7 +510,7 @@ ideas = {
 				}
 			
 			allowed_civil_war = {
-				has_government = monarchism
+				has_government = democratic
 				}
 				
 			removal_cost = -1
@@ -518,7 +518,7 @@ ideas = {
 			picture = generic_manpower_bonus
 			
 			modifier = {
-				democratic_drift = 0.05
+				neutrality_drift = 0.05
 			}
 		}	
 		new_officials = {
@@ -528,7 +528,7 @@ ideas = {
 				}
 			
 			allowed_civil_war = {
-				has_government = monarchism
+				has_government = democratic
 				}
 				
 			removal_cost = -1
@@ -549,7 +549,7 @@ ideas = {
 				}
 			
 			allowed_civil_war = {
-				has_government = monarchism
+				has_government = democratic
 				}
 				
 			removal_cost = -1
@@ -570,7 +570,7 @@ ideas = {
 				}
 			
 			allowed_civil_war = {
-				has_government = monarchism
+				has_government = democratic
 				}
 				
 			removal_cost = -1
@@ -591,7 +591,7 @@ ideas = {
 				}
 			
 			allowed_civil_war = {
-				has_government = monarchism
+				has_government = democratic
 				}
 				
 			removal_cost = -1
@@ -612,7 +612,7 @@ ideas = {
 				}
 			
 			allowed_civil_war = {
-				has_government = monarchism
+				has_government = democratic
 				}
 				
 			removal_cost = -1
@@ -633,7 +633,7 @@ ideas = {
 				}
 			
 			allowed_civil_war = {
-				has_government = monarchism
+				has_government = democratic
 				}
 				
 			removal_cost = -1
@@ -654,8 +654,8 @@ ideas = {
 				}
 			
 			allowed_civil_war = {
-				has_government = monarchism
-				has_government = democracy
+				has_government = democratic
+				has_government = neutral
 				}
 				
 			removal_cost = -1
@@ -673,7 +673,7 @@ ideas = {
 				}
 			
 			allowed_civil_war = {
-				has_government = monarchism
+				has_government = democratic
 				}
 				
 			removal_cost = -1
@@ -681,8 +681,8 @@ ideas = {
 			picture = generic_manpower_bonus
 			
 			modifier = {
-			fascism_drift = 0.5
-			democratic_drift = 0.2
+			democratic_drift = 0.5
+			neutrality_drift = 0.2
 			}
 		}
 		
@@ -692,8 +692,8 @@ ideas = {
 				always = no # added via focus
 				}
 			allowed_civil_war = {
-					has_government = monarchism
-					has_government = democracy
+					has_government = democratic
+					has_government = neutral
 					has_government = communism
 					}	
 			picture = generic_manpower_bonus
@@ -709,7 +709,7 @@ ideas = {
 				always = no # added via focus
 				}
 			allowed_civil_war = {
-					has_government = monarchism
+					has_government = democratic
 					}	
 			picture = generic_manpower_bonus
 
@@ -726,12 +726,12 @@ ideas = {
 				always = no # added via focus
 				}
 			allowed_civil_war = {
-					has_government = monarchism
+					has_government = democratic
 					}	
 			picture = generic_manpower_bonus
 
 			modifier = {
-			fascism_drift = 0.03
+			democratic_drift = 0.03
 			unity_factor = 0.10
 			}
 		}
@@ -742,7 +742,7 @@ ideas = {
 				always = no # added via focus
 				}
 			allowed_civil_war = {
-					has_government = monarchism
+					has_government = democratic
 					}	
 			picture = generic_manpower_bonus
 
@@ -759,7 +759,7 @@ ideas = {
 				}
 				
 			allowed_civil_war = {
-					has_government = monarchism
+					has_government = democratic
 					}	
 			
 			picture = socialist_science_focus
@@ -777,14 +777,14 @@ ideas = {
 				}
 				
 			allowed_civil_war = {
-					has_government = monarchism
+					has_government = democratic
 					}	
 			
 			picture = socialist_science_focus
 
 			modifier = {
 				communism_drift = -0.02
-				democratic_drift = -0.02
+				neutrality_drift = -0.02
 				}
 		}
 		
@@ -796,15 +796,15 @@ ideas = {
 				}
 				
 			allowed_civil_war = {
-					has_government = monarchism
+					has_government = democratic
 					}	
 			
 			picture = socialist_science_focus
 
 			modifier = {
 				communism_drift = 0.02
-				democratic_drift = 0.05
-				fascism_drift = -0.05
+				neutrality_drift = 0.05
+				democratic_drift = -0.05
 				}
 		}
 		
@@ -816,7 +816,7 @@ ideas = {
 				}
 				
 			allowed_civil_war = {
-					has_government = monarchism
+					has_government = democratic
 					}	
 			
 			picture = socialist_science_focus
@@ -834,8 +834,8 @@ ideas = {
 				}
 				
 			allowed_civil_war = {
-					has_government = monarchism
-					has_government = democracy
+					has_government = democratic
+					has_government = neutral
 					# Revisit : Focus bei Republik Russland adden der diesen Effekt wegmacht, dafür aber weniger Nationale Einheit bringt
 					}	
 			
@@ -855,7 +855,7 @@ ideas = {
 				}
 				
 			allowed_civil_war = {
-					has_government = monarchism
+					has_government = democratic
 					}	
 			
 			picture = socialist_science_focus
@@ -873,7 +873,7 @@ ideas = {
 				}
 				
 			allowed_civil_war = {
-					has_government = monarchism
+					has_government = democratic_drift
 					}	
 			
 			picture = generic_manpower_bonus
@@ -891,7 +891,7 @@ ideas = {
 				}
 				
 			allowed_civil_war = {
-					has_government = monarchism
+					has_government = democratic
 					}	
 			
 			picture = generic_manpower_bonus
@@ -911,8 +911,8 @@ ideas = {
 				}
 				
 			allowed_civil_war = {
-					has_government = democracy
-					has_government = monarchism
+					has_government = neutral
+					has_government = democratic
 					}	
 			
 			picture = generic_manpower_bonus
@@ -930,8 +930,8 @@ ideas = {
 				}
 				
 			allowed_civil_war = {
-					has_government = monarchism
-					has_government = democracy
+					has_government = democratic
+					has_government = neutral
 					}	
 			
 			picture = generic_manpower_bonus
@@ -949,8 +949,8 @@ ideas = {
 				}
 				
 			allowed_civil_war = {
-					has_government = monarchism
-					has_government = democracy
+					has_government = democratic
+					has_government = neutral
 					}	
 			
 			picture = generic_manpower_bonus
@@ -968,8 +968,8 @@ ideas = {
 				}
 				
 			allowed_civil_war = {
-					has_government = monarchism
-					has_government = democracy
+					has_government = democratic
+					has_government = neutral
 					}	
 			
 			picture = generic_manpower_bonus
@@ -987,8 +987,8 @@ ideas = {
 				}
 				
 			allowed_civil_war = {
-					has_government = monarchism
-					has_government = democracy
+					has_government = democratic
+					has_government = neutral
 					}	
 			
 			picture = generic_manpower_bonus
@@ -1009,8 +1009,8 @@ russian_mass_army = {
 				}
 				
 			allowed_civil_war = {
-					has_government = monarchism
-					has_government = democracy
+					has_government = democratic
+					has_government = neutral
 					has_government = communism
 					# revisit : reinmachen das bei den Staaten nach der Revolution diese Idee per Fokus entfernt werden kann
 					}	
@@ -1032,8 +1032,8 @@ drafted_peasant_childs = {
 				}
 				
 			allowed_civil_war = {
-					has_government = monarchism
 					has_government = democracy
+					has_government = neutral
 					has_government = communism
 					# revisit 3 : reinmachen das bei den Staaten nach der Revolution diese Idee per Fokus entfernt werden kann
 					}	
@@ -1054,8 +1054,8 @@ religious_army = {
 				}
 				
 			allowed_civil_war = {
-					has_government = monarchism
 					has_government = democracy
+					has_government = neutral
 					# revisit 3 : reinmachen das bei den Staaten nach der Revolution diese Idee per Fokus entfernt werden kann
 					}	
 			
@@ -1074,8 +1074,8 @@ ruthenia_defence = {
 				}
 				
 			allowed_civil_war = {
-				has_government = monarchism
 				has_government = democracy
+				has_government = neutral
 				# revisit 3 : reinmachen das bei den Staaten nach der Revolution diese Idee per Fokus entfernt werden kann
 				# revisit 3 : Den kommunisten einen Fokus geben der einen ähnlichen Effekt hat und Defence_of_the_revolution heißt
 					}	
@@ -1096,13 +1096,13 @@ thoughts_about_incompetence = {
 				}
 				
 			allowed_civil_war = {
-				has_government = monarchism
+				has_government = democratic
 					}	
 			
 			picture = generic_manpower_bonus
 
 			modifier = {
-				democratic_drift = 0.04
+				neutrality_drift = 0.04
 				}
 		}
 
@@ -1115,8 +1115,8 @@ new_officers = {
 			}
 					
 				allowed_civil_war = {
-					has_government = monarchism
-					has_government = democratic
+					has_government = democracy
+					has_government = neutral
 					}
 			
 			picture = sisu
@@ -1146,8 +1146,8 @@ new_officers_2 = {
 			}
 					
 				allowed_civil_war = {
-					has_government = monarchism
 					has_government = democratic
+					has_government = neutral
 					}
 			
 			picture = sisu
@@ -1177,8 +1177,8 @@ new_officers_3 = {
 			}
 					
 				allowed_civil_war = {
-					has_government = monarchism
-					has_government = democratic
+					has_government = democracy
+					has_government = neutral
 					}
 			
 			picture = sisu
@@ -1208,8 +1208,8 @@ new_officers_4 = {
 			}
 					
 				allowed_civil_war = {
-					has_government = monarchism
-					has_government = democratic
+					has_government = democracy
+					has_government = neutral
 					}
 			
 			picture = sisu
@@ -1239,8 +1239,8 @@ modernizing_army = {
 			}
 					
 				allowed_civil_war = {
-					has_government = monarchism
-					has_government = democratic
+					has_government = democracy
+					has_government = neutral
 					has_government = communism
 					}
 			
@@ -1265,8 +1265,8 @@ modernizing_army_2 = {
 			}
 					
 				allowed_civil_war = {
-					has_government = monarchism
-					has_government = democratic
+					has_government = democracy
+					has_government = neutral
 					has_government = communism
 					}
 			
@@ -1291,8 +1291,8 @@ modernizing_army_3 = {
 			}
 					
 				allowed_civil_war = {
-					has_government = monarchism
-					has_government = democratic
+					has_government = democracy
+					has_government = neutral
 					has_government = communism
 					}
 			
@@ -1317,8 +1317,8 @@ modernizing_army_4 = {
 			}
 					
 				allowed_civil_war = {
-					has_government = monarchism
-					has_government = democratic
+					has_government = democracy
+					has_government = neutral
 					has_government = communism
 					}
 			
@@ -1343,8 +1343,8 @@ modernizing_army_5 = {
 			}
 					
 				allowed_civil_war = {
-					has_government = monarchism
-					has_government = democratic
+					has_government = democracy
+					has_government = neutral
 					has_government = communism
 					}
 			
@@ -1369,8 +1369,8 @@ loyal_officers = {
 			}
 					
 				allowed_civil_war = {
-					has_government = monarchism
-					has_government = democratic
+					has_government = democracy
+					has_government = neutral
 					has_government = communism
 				# revisit 3 : den neuen Staaten im Fokus Tree ein Werkzeug geben diesen Effekt zu entfernen "Offizierssäuberung"	
 					}
@@ -1378,7 +1378,7 @@ loyal_officers = {
 			picture = officers_purged
 			
 			modifier = {
-				fascism_drift = 0.03
+				democratic_drift = 0.03
 			}
 		}
 		
@@ -1391,8 +1391,8 @@ foreign_officers = {
 		}
 					
 		allowed_civil_war = {
-			has_government = monarchism
-			has_government = democratic	
+			has_government = democracy
+			has_government = neutral
 		}
 			
 		picture = officers_purged
@@ -1410,8 +1410,8 @@ trained_army = {
 			}
 					
 				allowed_civil_war = {
-					has_government = monarchism
-					has_government = democratic
+					has_government = democracy
+					has_government = neutral
 					has_government = communism
 # revisit 3 : den neuen Staaten im Fokus Tree ein Werkzeug geben diesen Effekt zu entfernen "Soldatensäuberung"					
 					}
@@ -1419,7 +1419,7 @@ trained_army = {
 			picture = generic_manpower_bonus
 			
 			modifier = {
-				fascism_drift = 0.02
+				democratic_drift = 0.02
 				army_attack_factor = 0.10
 				army_defence_factor = 0.10
 				army_org_factor = 0.10
@@ -1436,14 +1436,14 @@ slavism_euphoria = {
 		}
 					
 		allowed_civil_war = {
-			has_government = monarchism
-			has_government = democratic	
+			has_government = democracy
+			has_government = neutral
 		}
 			
 		picture = officers_purged
 		
 		modifier = {
-		fascism_drift = 0.02			
+		democratic_drift = 0.02			
 		}
 	}
 
@@ -1456,13 +1456,13 @@ slavism_euphoria = {
 		}
 					
 		allowed_civil_war = {
-			has_government = monarchism	
+			has_government = democracy
 		}
 			
 		picture = officers_purged
 		
 		modifier = {
-		fascism_drift = 0.04			
+		democratic_drift = 0.04			
 		}
 	}
 
@@ -1475,13 +1475,13 @@ slavism_euphoria = {
 		}
 					
 		allowed_civil_war = {
-			has_government = monarchism	
+			has_government = democracy
 		}
 			
 		picture = officers_purged
 		
 		modifier = {
-		fascism_drift = -0.03		
+		democratic_drift = -0.03		
 		}
 	}
 	
@@ -1494,13 +1494,13 @@ slavism_euphoria = {
 		}
 					
 		allowed_civil_war = {
-			has_government = monarchism	
+			has_government = democracy
 		}
 			
 		picture = sisu
 		
 		modifier = {
-		fascism_drift = -0.05		
+		democratic_drift = -0.05		
 		}
 	}
 	
@@ -1513,13 +1513,13 @@ slavism_euphoria = {
 		}
 					
 		allowed_civil_war = {
-			has_government = monarchism	
+			has_government = democracy
 		}
 			
 		picture = sisu
 		
 		modifier = {
-		fascism_drift = 0.05		
+		democratic_drift = 0.05		
 		}
 	}
 	
@@ -1532,8 +1532,8 @@ slavism_euphoria = {
 		}
 					
 		allowed_civil_war = {
-			has_government = monarchism
-			has_government = democratic
+			has_government = democracy
+			has_government = neutral
 		}
 			
 		picture = sisu
@@ -1553,13 +1553,13 @@ slavism_euphoria = {
 		}
 					
 		allowed_civil_war = {
-			has_government = monarchism
+			has_government = democracy
 		}
 			
 		picture = officers_purged
 		
 		modifier = {
-		fascism_drift = 0.06		
+		democratic_drift = 0.06		
 		}
 	}
 
@@ -1572,13 +1572,13 @@ slavism_euphoria = {
 		}
 					
 		allowed_civil_war = {
-			has_government = monarchism
+			has_government = democracy
 		}
 			
 		picture = officers_purged
 		
 		modifier = {
-		fascism_drift = 0.10		
+		democratic_drift = 0.10		
 		}
 	}
 	
@@ -1591,14 +1591,14 @@ slavism_euphoria = {
 		}
 					
 		allowed_civil_war = {
-			has_government = monarchism
-			has_government = democratic
+			has_government = democracy
+			has_government = neutral
 		}
 			
 		picture = officers_purged
 		
 		modifier = {
-		fascism_drift = 0.08		
+		democratic_drift = 0.08		
 		}
 	}
 	
@@ -1611,14 +1611,14 @@ slavism_euphoria = {
 		}
 					
 		allowed_civil_war = {
-			has_government = monarchism
-			has_government = democratic
+			has_government = democracy
+			has_government = neutral
 		}
 			
 		picture = officers_purged
 		
 		modifier = {
-		fascism_drift = -0.05
+		democratic_drift = -0.05
 		communism_drift = 0.05
 		}
 	}
@@ -1632,8 +1632,8 @@ slavism_euphoria = {
 		}
 					
 		allowed_civil_war = {
-			has_government = monarchism
-			has_government = democratic
+			has_government = democracy
+			has_government = neutral
 		}
 			
 		picture = general_staff
@@ -1652,13 +1652,13 @@ slavism_euphoria = {
 		}
 					
 		allowed_civil_war = {
-			has_government = monarchism
+			has_government = democracy
 		}
 			
 		picture = general_staff
 		
 		modifier = {
-		fascism_drift = 0.10
+		democratic_drift = 0.10
 		}
 	
 	}
@@ -1672,7 +1672,7 @@ slavism_euphoria = {
 		}
 					
 		allowed_civil_war = {
-			has_government = monarchism
+			has_government = democracy
 		}
 			
 		picture = general_staff
@@ -1692,7 +1692,7 @@ slavism_euphoria = {
 		}
 					
 		allowed_civil_war = {
-			has_government = monarchism
+			has_government = democracy
 		}
 			
 		picture = general_staff
@@ -1713,7 +1713,7 @@ slavism_euphoria = {
 		}
 					
 		allowed_civil_war = {
-			has_government = monarchism
+			has_government = democracy
 		}
 			
 		picture = general_staff
@@ -1726,7 +1726,6 @@ slavism_euphoria = {
 	}
 	
 	lame_hqs = {
-	
 	removal_cost = -1
 			
 		allowed = {
@@ -1734,7 +1733,7 @@ slavism_euphoria = {
 		}
 					
 		allowed_civil_war = {
-			has_government = monarchism
+			has_government = democracy
 		}
 			
 		picture = general_staff
@@ -1743,8 +1742,172 @@ slavism_euphoria = {
 		max_planning = -0.2
 		planning_speed = -0.25
 		}
-	
 	}
+	
+	
+	communist_salvation = {
+	removal_cost = -1
+			
+		allowed = {
+			always = no # added via focus
+		}
+					
+		allowed_civil_war = {
+			has_government = democracy
+			has_government = neutral
+		}
+			
+		picture = general_staff
+		
+		modifier = {
+		communism_drift = 0.2
+		neutrality_drift = 0.05
+		democratic_drift = -0.25
+		}
+	}
+	
+	a_great_offensive = {
+	removal_cost = -1
+			
+		allowed = {
+			always = no # added via focus
+		}
+					
+		allowed_civil_war = {
+			has_government = democracy
+			has_government = neutral
+			has_government = communism
+		}
+			
+		picture = general_staff
+		
+		modifier = {
+		max_planning = 0.5
+		planning_speed = 0.3
+		}
+	}
+	
+	improved_army_spirit = {
+	removal_cost = -1
+			
+		allowed = {
+			always = no # added via focus
+		}
+					
+		allowed_civil_war = {
+			has_government = democracy
+			has_government = neutral
+			has_government = communism
+		}
+			
+		picture = general_staff
+		
+		modifier = {
+		army_attack_factor = 0.2
+		army_morale_factor = 0.15
+		}
+	}
+	
+	defense_in_the_east = {
+	removal_cost = -1
+			
+		allowed = {
+			always = no # added via focus
+		}
+					
+		allowed_civil_war = {
+			has_government = democracy
+			has_government = neutral
+			has_government = communism
+		}
+			
+		picture = general_staff
+		
+		modifier = {
+		army_attack_factor = 0.2
+		army_morale_factor = 0.15
+		}
+	}
+	
+	disappointed_panslavists = {
+	removal_cost = -1
+			
+		allowed = {
+			always = no # added via focus
+		}
+					
+		allowed_civil_war = {
+			has_government = democracy
+			has_government = neutral
+		}
+			
+		picture = general_staff
+		
+		modifier = {
+		democratic_drift = -0.05
+		neutrality_drift = 0.05
+		}
+	}
+	
+	treaty_with_austria = {
+	removal_cost = -1
+			
+		allowed = {
+			always = no # added via focus
+		}
+					
+		allowed_civil_war = {
+			has_government = democracy
+		}
+			
+		picture = general_staff
+		
+		modifier = {
+		democratic_drift = -0.05
+		neutrality_drift = 0.05
+		}
+	}
+	
+	angry_bourgeosie = {
+	removal_cost = -1
+			
+		allowed = {
+			always = no # added via focus
+		}
+					
+		allowed_civil_war = {
+			has_government = democracy
+		}
+			
+		picture = general_staff
+		
+		modifier = {
+		democratic_drift = -0.08
+		neutrality_drift = 0.05
+		}
+	}
+	
+	defensive_army = {
+	removal_cost = -1
+			
+		allowed = {
+			always = no # added via focus
+		}
+					
+		allowed_civil_war = {
+			has_government = democracy
+			has_government = neutral
+		}
+			
+		picture = general_staff
+		
+		modifier = {
+		army_defence_factor = 0.12
+		army_attack_factor = -0.12
+		}
+	}
+	
+	
 	
 }
 }			
