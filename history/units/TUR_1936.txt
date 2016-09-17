@@ -561,7 +561,7 @@ units = {
 
 	division = {
 		name = "Yunan Garnizon"
-		location = 3401
+		location = 10840
 		division_template = "Dag Tugayi" 
 		start_experience_factor = 0.25
 		force_equipment_variants = { infantry_equipment_0 = { owner = "TUR" } }

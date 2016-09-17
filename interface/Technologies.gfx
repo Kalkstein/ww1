@@ -1,22 +1,27 @@
 spriteTypes = {	
 
 	### generic equipment tech ###
-
-	SpriteType = {
-		name = "GFX_sniper_medium"
-		texturefile = "gfx/interface/technologies/sniper.dds"
-	}
-
-	SpriteType = {
-		name = "GFX_flamethrower_medium"
-		texturefile = "gfx/interface/technologies/flamethrower.dds"
-	}
 	
 	SpriteType = {
 		name = "GFX_improved_infantry_weapons_4_medium"
 		texturefile = "gfx/interface/technologies/improved_infantry_weapons_4.dds"
 	}
 	
+	SpriteType = {
+		name = "GFX_sniper_medium"
+		texturefile = "gfx/interface/technologies/sniper.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_explosives_team_medium"
+		texturefile = "gfx/interface/technologies/explosives_team.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_flamethrower_medium"
+		texturefile = "gfx/interface/technologies/flamethrower.dds"
+	}
+
 	SpriteType = {
 		name = "GFX_field_grey_medium"
 		texturefile = "gfx/interface/technologies/field_grey.dds"
@@ -26,6 +31,27 @@ spriteTypes = {
 		name = "GFX_winter_clothing_medium"
 		texturefile = "gfx/interface/technologies/winter_clothing.dds"
 	}
+	
+	SpriteType = {
+		name = "GFX_machine_gun_medium"
+		texturefile = "gfx/interface/technologies/machine_gun.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_machine_gun_2_medium"
+		texturefile = "gfx/interface/technologies/machine_gun_2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_machine_gun_3_medium"
+		texturefile = "gfx/interface/technologies/machine_gun_3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_machine_gun_4_medium"
+		texturefile = "gfx/interface/technologies/machine_gun_4.dds"
+	}
+	
 	
 	SpriteType = {
 		name = "GFX_rocket_interceptor_equipment_3_medium"

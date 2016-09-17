@@ -34,27 +34,27 @@ news_event = {
 	option = {
 	    name = news.1.a 
 		trigger = {
-			 tag = TUR 
+			 TAG = TUR 
 		}
 	}
 	option = {
 	    name = news.1.b
 		trigger = {
-			tag = BUL 
-			tag = GRE 
-			tag = MNT 
-			tag = YUG
+			TAG = BUL 
+			TAG = GRE 
+			TAG = MNT 
+			TAG = YUG
 		}
 	}
 	option = {
 	    name = news.1.c 
 		trigger = {
 			NOT = {
-			tag = BUL 
-			tag = GRE 
-			tag = MNT 
-			tag = YUG
-			tag = TUR 
+			TAG = BUL 
+			TAG = GRE 
+			TAG = MNT 
+			TAG = YUG
+			TAG = TUR 
 			}
 		}
 	}
@@ -90,28 +90,28 @@ news_event = {
 	option = {
 		name = news.64.a
 		trigger = {
-			tag = TUR
+			TAG = TUR
 		}
 	}
 	option = {
 		name = news.64.b
 		trigger = { 
-		tag = BUL
-		tag = SER
-		tag = GRE
-		tag = ALB
-		tag = MNT
+		TAG = BUL
+		TAG = SER
+		TAG = GRE
+		TAG = ALB
+		TAG = MNT
 		}
 	}
 	option = {
 		name = news.64.c
 		trigger = { 
-		NOT = { tag = BUL }
-		NOT = { tag = ALB }
-		NOT = { tag = GRE }
-		NOT = { tag = MNT }
-		NOT = { tag = YUG }
-		NOT = { tag = TUR }
+		NOT = { TAG = BUL }
+		NOT = { TAG = ALB }
+		NOT = { TAG = GRE }
+		NOT = { TAG = MNT }
+		NOT = { TAG = YUG }
+		NOT = { TAG = TUR }
 		}
 	}
 }
@@ -146,28 +146,28 @@ news_event = {
 	option = {
 		name = news.3.a
 		trigger = {
-			tag = TUR
+			TAG = TUR
 		}
 	}
 	option = {
 		name = news.3.b
 		trigger = { 
-		tag = BUL
-		tag = SER
-		tag = GRE
-		tag = ALB
-		tag = MNT
+		TAG = BUL
+		TAG = SER
+		TAG = GRE
+		TAG = ALB
+		TAG = MNT
 		}
 	}
 	option = {
 		name = news.3.c
 		trigger = { 
-		NOT = { tag = BUL }
-		NOT = { tag = ALB }
-		NOT = { tag = GRE }
-		NOT = { tag = MNT }
-		NOT = { tag = YUG }
-		NOT = { tag = TUR }
+		NOT = { TAG = BUL }
+		NOT = { TAG = ALB }
+		NOT = { TAG = GRE }
+		NOT = { TAG = MNT }
+		NOT = { TAG = YUG }
+		NOT = { TAG = TUR }
 		}
 	}
 }
@@ -199,15 +199,15 @@ news_event = {
 	# Wir werden die Mittelmächte von der Erde tilgen!
 		name = news.4.a
 		trigger = {
-		tag = SOV
+		TAG = SOV
 		}
 	}
 	option = {
 	# Besorgnisseregend
 		name = news.4.b
 		trigger = { 
-		tag = AUS
-		tag = GER
+		TAG = AUS
+		TAG = GER
 		}
 	}
 	
@@ -215,19 +215,19 @@ news_event = {
 	# Eine sinnvolle Entscheidung
 		name = news.4.c
 		trigger = { 
-		tag = ENG
-		tag = FRA
+		TAG = ENG
+		TAG = FRA
 		}
 	}
 	
 	option = {
 		name = news.4.e
 		trigger = { 
-		NOT = { tag = ENG }
-		NOT = { tag = FRA }
-		NOT = { tag = AUS }
-		NOT = { tag = GER }
-		NOT = { tag = SOV }
+		NOT = { TAG = ENG }
+		NOT = { TAG = FRA }
+		NOT = { TAG = AUS }
+		NOT = { TAG = GER }
+		NOT = { TAG = SOV }
 		}
 	}
 }
@@ -257,15 +257,15 @@ news_event = {
 	# Sehr besorgniserregend
 		name = news.4.a
 		trigger = {
-		tag = ENG
-		tag = FRA
+		TAG = ENG
+		TAG = FRA
 		}
 	}
 	option = {
 	# Besorgnisseregend
 		name = news.4.b
 		trigger = { 
-		tag = SOV
+		TAG = SOV
 		}
 	}
 	
@@ -273,19 +273,19 @@ news_event = {
 	# Eine sinnvolle Entscheidung
 		name = news.4.c
 		trigger = { 
-		tag = GER
-		tag = AUS
+		TAG = GER
+		TAG = AUS
 		}
 	}
 	
 	option = {
 		name = news.4.e
 		trigger = { 
-		NOT = { tag = ENG }
-		NOT = { tag = FRA }
-		NOT = { tag = AUS }
-		NOT = { tag = GER }
-		NOT = { tag = SOV }
+		NOT = { TAG = ENG }
+		NOT = { TAG = FRA }
+		NOT = { TAG = AUS }
+		NOT = { TAG = GER }
+		NOT = { TAG = SOV }
 		}
 	}
 }
@@ -305,8 +305,8 @@ news_event = {
 	    name = news.238.a 
 		trigger = {
 			NOT = {
-			    tag = TUR 
-				tag = BUL 
+			    TAG = TUR 
+				TAG = BUL 
 			}
 		}
 	}
@@ -327,11 +327,11 @@ news_event = {
 		name = news.239.a
 		trigger = {
 		    NOT = {
-				tag = BUL 
-				tag = GRE 
-				tag = MNT 
-				tag = YUG 
-				tag = TUR
+				TAG = BUL 
+				TAG = GRE 
+				TAG = MNT 
+				TAG = YUG 
+				TAG = TUR
 			}
 		}
 	}
@@ -339,7 +339,7 @@ news_event = {
 	option = {
 		name = news.239.b 
 		trigger = {
-			tag = TUR
+			TAG = TUR
 		}
 	}
 }
@@ -360,8 +360,8 @@ news_event = {
 		trigger = {
 			NOT = {
 				OR = {
-					tag = BUL 
-					tag = TUR
+					TAG = BUL 
+					TAG = TUR
 					is_in_faction_with = BUL 
 				}
 			}
@@ -371,7 +371,7 @@ news_event = {
 	option = {
 		name = news.240.b 
 		trigger = {
-			tag = TUR 
+			TAG = TUR 
 		}
 	}
 	
@@ -399,9 +399,9 @@ news_event = {
 		trigger = {
 		    NOT = { 
 			    OR = {
-					tag = BUL 
+					TAG = BUL 
 					is_in_faction_with = FRA 
-					tag = FRA
+					TAG = FRA
 				}
 			}
 		}
@@ -412,7 +412,7 @@ news_event = {
 		trigger = {
 		    OR = {
 				is_in_faction_with = FRA
-				tag = FRA
+				TAG = FRA
 			}
 		}
 	}
@@ -451,7 +451,7 @@ news_event = {
 	option = {
 	name = july_crisis.100.b
 		trigger = {
-			tag = AUS
+			TAG = AUS
 		}
 	}
 }
@@ -468,7 +468,7 @@ country_event = {
 	trigger = {
 		has_global_flag = ass_sarajevo
 		NOT = { has_global_flag = blank_cheque }
-		tag = GER
+		TAG = GER
 		country_exists = GER
 		country_exists = AUS
 		country_exists = SER
@@ -496,7 +496,7 @@ country_event = {
 		ai_chance = { factor = 15 }
 		set_global_flag = blank_cheque_no
 		GER = {
-			add_national_unity = -0.05
+			add_political_power = -500
 		}
 		custom_effect_tooltip = germany_tt.02
 	}
@@ -514,7 +514,7 @@ country_event = {
 	trigger = {
 		has_global_flag = blank_cheque_yes
 		NOT = { has_global_flag = aus_ultimatum }
-		tag = AUS
+		TAG = AUS
 		country_exists = AUS
 		country_exists = SER
 		AUS = {
@@ -532,24 +532,24 @@ country_event = {
 	
 	option = {
 	    name = july_crisis.111.a
-		ai_chance = { factor = 70 }
-		set_global_flag = ultimatum_annex
+		ai_chance = { factor = 100 } # historical demands
+		set_global_flag = ultimatum_invest
 		custom_effect_tooltip = austria_tt.01
 	}
 	
 	option = {
 	    name = july_crisis.111.b
-		ai_chance = { factor = 30 }
-		set_global_flag = ultimatum_puppet
+		ai_chance = { factor = 0 } # rowdy alternate history
+		set_global_flag = ultimatum_split
 		custom_effect_tooltip = austria_tt.02
 	}
 	
 	option = {
 	    name = july_crisis.111.c
-		ai_chance = { factor = 0 }
+		ai_chance = { factor = 0 } # conciliatory alternate history
 		set_global_flag = ultimatum_no
 		AUS = {
-			add_national_unity = -0.1
+			add_political_power = -1000
 		}
 		custom_effect_tooltip = austria_tt.03
 	}
@@ -567,7 +567,7 @@ country_event = {
 	trigger = {
 		has_global_flag = blank_cheque_no
 		NOT = { has_global_flag = aus_ultimatum }
-		tag = AUS
+		TAG = AUS
 		country_exists = AUS
 		country_exists = SER
 		AUS = {
@@ -585,24 +585,24 @@ country_event = {
 	
 	option = {
 		name = july_crisis.112.a
-		ai_chance = { factor = 25 }
-		set_global_flag = ultimatum_annex
+		ai_chance = { factor = 100 }
 		custom_effect_tooltip = austria_tt.01
+		set_global_flag = ultimatum_invest
 	}
 	
 	option = {
 		name = july_crisis.112.b
-		ai_chance = { factor = 70 }
-		set_global_flag = ultimatum_puppet
+		ai_chance = { factor = 0 }
 		custom_effect_tooltip = austria_tt.02
+		set_global_flag = ultimatum_split
 	}
 	
 	option = {
 		name = july_crisis.112.c
-		ai_chance = { factor = 5 }
+		ai_chance = { factor = 0 }
 		set_global_flag = ultimatum_no
 		AUS = {
-			add_national_unity = -0.1
+			add_political_power = -500
 		}
 		custom_effect_tooltip = austria_tt.03
 	}
@@ -619,12 +619,10 @@ news_event = {
 	
 	trigger = {
 		OR = {
-		has_global_flag = ultimatum_annex
-		has_global_flag = ultimatum_puppet
+			has_global_flag = ultimatum_split
+			has_global_flag = ultimatum_invest
 		}
-		NOT = {
-		has_global_flag = ult_aus_news
-		}
+		NOT = { has_global_flag = ult_aus_news }
 	}
 	
 	mean_time_to_happen = { days = 1 }
@@ -637,7 +635,7 @@ news_event = {
 		name = july_crisis.113.a
 		trigger = {
 			OR = {
-				tag = Aus
+				TAG = AUS
 				is_in_faction_with = AUS
 			}
 		}
@@ -664,9 +662,7 @@ news_event = {
 	
 	trigger = {
 		has_global_flag = ultimatum_no
-		NOT = {
-		has_global_flag = ult_aus_news_no
-		}
+		NOT = { has_global_flag = ult_aus_news_no }
 	}
 	
 	mean_time_to_happen = { days = 1 }
@@ -679,7 +675,7 @@ news_event = {
 		name = july_crisis.114.a
 		trigger = {
 			OR = {
-				tag = Aus
+				TAG = Aus
 				is_in_faction_with = AUS
 			}
 		}
@@ -695,7 +691,7 @@ news_event = {
 	}
 }
 	
-# Big Brother Russia (Annex)
+# Big Brother Russia (split)
 country_event = {
 	id = july_crisis.121
 	title = july_crisis.121.t 
@@ -705,9 +701,9 @@ country_event = {
 	major = yes
 	
 	trigger = {
-		has_global_flag = ultimatum_annex
-		NOT = { has_global_flag = russia_annex }
-		tag = SOV
+		has_global_flag = ultimatum_split
+		NOT = { has_global_flag = russia_split }
+		TAG = SOV
 		country_exists = SOV
 		country_exists = AUS
 		country_exists = SER
@@ -722,7 +718,7 @@ country_event = {
 	fire_only_once = yes
 	
 	immediate = {
-		set_global_flag = russia_annex
+		set_global_flag = russia_split
 	}
 	
 	option = {
@@ -750,7 +746,7 @@ country_event = {
 	}
 }
 	
-# Big Brother Russia (Puppet)
+# Big Brother Russia (invest)
 country_event = {
 	id = july_crisis.122
 	title = july_crisis.122.t 
@@ -760,9 +756,9 @@ country_event = {
 	major = yes
 	
 	trigger = {
-		has_global_flag = ultimatum_puppet
-		NOT = { has_global_flag = russia_puppet }
-		tag = SOV
+		has_global_flag = ultimatum_invest
+		NOT = { has_global_flag = russia_invest }
+		TAG = SOV
 		country_exists = SOV
 		country_exists = AUS
 		country_exists = SER
@@ -777,14 +773,14 @@ country_event = {
 	fire_only_once = yes
 	
 	immediate = {
-		set_global_flag = russia_puppet
+		set_global_flag = russia_invest
 	}
 	
 	option = {
 	    name = july_crisis.122.a
 		ai_chance = { factor = 90 }
 		trigger = {
-			tag = SOV
+			TAG = SOV
 		} 
 		FRA = {
 			add_to_faction = SER
@@ -808,7 +804,7 @@ country_event = {
 	}
 }
 	
-# Serbian Response (annex)
+# Serbian Response (split)
 country_event = {
 	id = july_crisis.131
 	title = july_crisis.131.t 
@@ -818,13 +814,13 @@ country_event = {
 	major = yes
 	
 	trigger = {
-		has_global_flag = ultimatum_annex
 		OR = {
 			has_global_flag = russia_help
 			has_global_flag = russia_help_no
 		}
-		NOT = { has_global_flag = response_annex }
-		tag = SER
+		has_global_flag = ultimatum_split
+		NOT = { has_global_flag = response_split }
+		TAG = SER
 		country_exists = AUS
 		country_exists = SER
 		AUS = {
@@ -839,25 +835,25 @@ country_event = {
 	fire_only_once = yes
 	
 	immediate = {
-		set_global_flag = response_annex
+		set_global_flag = response_split
 	}
 	
 	option = {
 	    name = july_crisis.131.a
 		ai_chance = { factor = 0 }
-		set_global_flag = annex_accept
-		serbia_tt.01
+		set_global_flag = split_accept
+		custom_effect_tooltip = serbia_tt.01
 	}
 	
 	option = {
 	    name = july_crisis.131.b
 		ai_chance = { factor = 100 }
 		set_global_flag = ultimatum_reject
-		serbia_tt.02
+		custom_effect_tooltip = serbia_tt.02
 	}
 }
 	
-# Serbian Response (puppet)
+# Serbian Response (invest)
 country_event = {
 	id = july_crisis.132
 	title = july_crisis.132.t 
@@ -867,13 +863,13 @@ country_event = {
 	major = yes
 	
 	trigger = {
-		has_global_flag = ultimatum_puppet
 		OR = {
 			has_global_flag = russia_help
 			has_global_flag = russia_help_no
 		}
-		NOT = { has_global_flag = response_puppet }
-		tag = SER
+		has_global_flag = ultimatum_invest
+		NOT = { has_global_flag = response_invest }
+		TAG = SER
 		country_exists = AUS
 		country_exists = SER
 		AUS = {
@@ -888,25 +884,29 @@ country_event = {
 	fire_only_once = yes
 	
 	immediate = {
-		set_global_flag = response_puppet
+		set_global_flag = response_invest
 	}
 	
 	option = {
 	    name = july_crisis.132.b
 		ai_chance = { factor = 0 }
-		set_global_flag = puppet_accept
-		serbia_tt.01
+		custom_effect_tooltip = serbia_tt.01
+		set_global_flag = invest_accept
+		SER = {
+			add_political_power = -500
+			add_national_unity = -0.5
+		}
 	}
 	
 	option = {
 	    name = july_crisis.132.a
 		ai_chance = { factor = 100 }
 		set_global_flag = ultimatum_reject
-		serbia_tt.02
+		custom_effect_tooltip = serbia_tt.02
 	}
 }
 	
-# Crisis Averted (annex)
+# Crisis Averted (split)
 news_event = {
 	id = july_crisis.141
 	title = july_crisis.141.t 
@@ -916,9 +916,9 @@ news_event = {
 	major = yes
 	
 	trigger = {
-		has_global_flag = annex_accept
-		NOT = { has_global_flag = averted_annex }
-		tag = AUS
+		has_global_flag = split_accept
+		NOT = { has_global_flag = averted_split }
+		TAG = AUS
 		country_exists = AUS
 		country_exists = SER
 		AUS = {
@@ -931,17 +931,15 @@ news_event = {
 	}
 	
 	immediate = {
-		set_global_flag = averted_annex
-		AUS = {
-		annex_country = { target = SER }
-		}
+		set_global_flag = averted_split
+		BUL = { transfer_state = 108 }  # TODO more detailed?
 	}
 	
 	option = {
 	    name = july_crisis.141.a 
 		trigger = {
 			OR = {
-				tag = AUS
+				TAG = AUS
 				is_in_faction_with = AUS
 			}
 		}
@@ -951,14 +949,22 @@ news_event = {
 	    name = july_crisis.141.b
 		trigger = {
 			NOT = {
-				tag = AUS
+				TAG = AUS
 				is_in_faction_with = AUS
 			}
 		}
 	}
+	
+	option = {
+	 name = july_crisis.141.c
+	 trigger = {
+			NOT = { TAG = AUS }
+			is_in_faction_with = AUS
+		}
+	}
 }
 
-# Crisis Averted (puppet)
+# Crisis Averted (invest)
 news_event = {
     id = july_crisis.142
 	title = july_crisis.142.t 
@@ -968,9 +974,9 @@ news_event = {
 	major = yes
 	
 	trigger = {
-		has_global_flag = puppet_accept
-		NOT = { has_global_flag = averted_puppet }
-		tag = AUS
+		has_global_flag = invest_accept
+		NOT = { has_global_flag = averted_invest }
+		TAG = AUS
 		country_exists = AUS
 		country_exists = SER
 		AUS = {
@@ -983,15 +989,14 @@ news_event = {
 	}
 	
 	immediate = {
-		set_global_flag = averted_puppet
-		AUS = { puppet = SER }
+		set_global_flag = averted_invest
 	}
 	
 	option = {
 	    name = july_crisis.142.a 
 		trigger = {
 			OR = {
-				tag = AUS
+				TAG = AUS
 				is_in_faction_with = AUS
 			}
 		}
@@ -1001,9 +1006,17 @@ news_event = {
 	    name = july_crisis.142.b
 		trigger = {
 			NOT = {
-				tag = AUS
+				TAG = AUS
 				is_in_faction_with = AUS
 			}
+		}
+	}
+	
+	option = {
+	 name = july_crisis.142.c
+	 trigger = {
+			NOT = { TAG = AUS }
+			is_in_faction_with = AUS
 		}
 	}
 }
@@ -1038,23 +1051,23 @@ news_event = {
 	option = {
 	    name = july_crisis.150.a 
 		trigger = {
-			tag = AUS
+			TAG = AUS
 		}
 		AUS = {
 			create_wargoal = {
 				target = SER
-				type = puppet_wargoal_focus
+				type = topple_government
 			}
 			declare_war_on = {
 				target = SER
-				type = puppet_wargoal_focus
+				type = topple_government
 			}
 		}
 	}
 	option = {
 		name = july_crisis.150.b
 		trigger = {
-			NOT = { tag =  AUS }
+			NOT = { TAG =  AUS }
 		}
 	}
 }
@@ -1070,7 +1083,7 @@ country_event = {
 	
 	trigger = {
 		NOT = { has_global_flag = call_to_arms }
-		tag = GER
+		TAG = GER
 		country_exists = GER
 		country_exists = AUS
 		AUS = {
@@ -1206,7 +1219,7 @@ country_event = {
 	option = {
 		name = news.310.a 
 		trigger = {
-			tag = AUS
+			TAG = AUS
 		}
 		AUS = {
 		create_wargoal = {
@@ -1223,7 +1236,7 @@ country_event = {
 	option = {
 		name = news.310.b
 		trigger = {
-			tag = AUS
+			TAG = AUS
 		}
 		103 = { remove_core_of = AUS }
 		104 = { remove_core_of = AUS }
@@ -1256,7 +1269,7 @@ country_event = {
 	option = {
 		name = news.320.a
 		trigger = {
-		tag = AUS
+		TAG = AUS
 		}
 		set_global_flag = inde_gal
 	}
@@ -1264,7 +1277,7 @@ country_event = {
 	option = {
 		name = news.320.b
 		trigger = {
-		tag = AUS
+		TAG = AUS
 		}
 		80 = { remove_core_of = AUS }
 		SOV = { transfer_state = 80 }
@@ -1302,7 +1315,7 @@ country_event = {
 	option = {
 		name = news.321.a
 		trigger = {
-			tag = SOV
+			TAG = SOV
 		}
 		SOV = {
 			create_wargoal = {
@@ -1375,7 +1388,7 @@ country_event = {
 	option = {
 		name = news.330.a
 		trigger = {
-			tag = AUS
+			TAG = AUS
 		}
 		AUS = {
 		create_wargoal = {
@@ -1446,7 +1459,7 @@ country_event = {
 	option = {
 		name = news.340.a
 		trigger = {
-			tag = AUS
+			TAG = AUS
 		}
 		AUS = {
 		create_wargoal = {
@@ -1463,7 +1476,7 @@ country_event = {
 	option = {
 		name = news.340.b
 		trigger = {
-			tag = AUS
+			TAG = AUS
 		9 = { remove_core_of = AUS }
 		69 = { remove_core_of = AUS }
 		72 = { remove_core_of = AUS }
