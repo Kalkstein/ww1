@@ -23,15 +23,22 @@ ideas = {
 		}
 		
 		retarded_officers = {
+			
 			removal_cost = -1
 	
 			allowed = {
 				always = no 
 			}
 
-			allowed_civil_war = yes
+			allowed_civil_war = {
+				always = yes
+			}
 			
 			picture = officers_purged_pic
+			
+			research_bonus = {
+				land_doctrine = -0.5
+			}
 			
 			modifier = {
 				army_org_Factor = -0.25
@@ -39,18 +46,25 @@ ideas = {
 		}
 		
 		officers_purged = {
+			
 			removal_cost = -1
 	
 			allowed = {
 				always = no 
 			}
 
-			allowed_civil_war = yes
+			allowed_civil_war = {
+				always = yes
+			}
 			
 			picture = officers_purged_pic
 			
+			
+			research_bonus = {
+				land_doctrine = -1
+			}
 			modifier = {
-				army_org_Factor = -0.5
+				army_org_Factor = -0.75
 			}
 		}
 	}
@@ -95,36 +109,36 @@ ideas = {
 
 	theorist = {
 
-	TUR_mehmet_gunaltay = {
+		TUR_mehmet_gunaltay = {
 				
-		picture = generic_army_europe_2
+			picture = generic_army_europe_2
 
-		allowed = {
-			original_tag = TUR
-		}
+			allowed = {
+				original_tag = TUR
+			}
 		
-		research_bonus = {
-			land_doctrine = 0.07
-		}
+			research_bonus = {
+				land_doctrine = 0.07
+			}
 		
-		traits = { military_theorist }
-	}
+			traits = { military_theorist }
+		}
 
-	TUR_refik_saydam = {
+		TUR_refik_saydam = {
 				
-		picture = generic_political_advisor_europe_1
+			picture = generic_political_advisor_europe_1
 
-		allowed = {
-			original_tag = TUR
-		}
+			allowed = {
+				original_tag = TUR
+			}
 		
-		research_bonus = {
-			air_doctrine = 0.07
-		}
+			research_bonus = {
+				air_doctrine = 0.07
+			}
 		
-		traits = { air_warfare_theorist }
-	}
-}
+			traits = { air_warfare_theorist }
+		}
+	}	
 
 	army_chief = {
 
