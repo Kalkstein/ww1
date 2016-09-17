@@ -269,13 +269,12 @@ franco_russian_alliance = {
 	ai_strategy = {
 		type = befriend
 		id = "FRA"
-		value = 200
+		value = 0
 	}
 
 	ai_strategy = {
 		type = alliance
 		id = "FRA"
-		value = 200
+		value = 0
 	}
 }
-		
