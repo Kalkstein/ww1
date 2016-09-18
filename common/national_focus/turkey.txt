@@ -1089,7 +1089,7 @@ focus_tree = {
 			factor = 39
 		}	
 		completion_reward = {
-			remove_ideas = officers_purged
+			country_event = { id = turkey.1 }
 		}
 	}
 	
