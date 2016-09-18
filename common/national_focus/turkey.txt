@@ -949,10 +949,9 @@ focus_tree = {
 		}
 	}
 	
-	
 	focus = {
-		id = TUR_catch_technological_residue
-		icon = GFX_goal_generic_demand_territory
+		id = TUR_purge_the_officers
+		icon = GFX_goal_generic_war_with_comintern
 		prerequisite = { focus = TUR_army_modernisation }
 		available = {
 			TUR = {
@@ -960,8 +959,31 @@ focus_tree = {
 			}
 		}
 		
-		x = 11
+		x = 12
 		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 39
+		}	
+		completion_reward = {
+			remove_ideas = retarded_officers
+			add_ideas = officers_purged
+		}
+	}
+	
+	
+	focus = {
+		id = TUR_catch_technological_residue
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = TUR_purge_the_officers }
+		available = {
+			TUR = {
+			has_government = fascism
+			}
+		}
+		
+		x = 11
+		y = 2
 		cost = 10
 		ai_will_do = {
 			factor = 39
@@ -982,7 +1004,7 @@ focus_tree = {
 		}
 		
 		x = 11
-		y = 2
+		y = 3
 		cost = 10
 		ai_will_do = {
 			factor = 39
@@ -994,54 +1016,6 @@ focus_tree = {
 				uses = 1
 				category = light_fighter
 			}
-		}
-	}
-	
-	focus = {
-		id = TUR_the_new_machine
-		icon = GFX_goal_generic_army_tanks
-		prerequisite = { focus = TUR_control_the_skies }
-		available = {
-			TUR = {
-			has_government = fascism
-			}
-		}
-		
-		x = 11
-		y = 3
-		cost = 10
-		ai_will_do = {
-			factor = 39
-		}	
-		completion_reward = {
-			add_tech_bonus = {
-				name = TUR_tank_bonus
-				bonus = 0.50
-				uses = 1
-				category = armor
-			}
-		}
-	}
-	
-	focus = {
-		id = TUR_purge_the_officers
-		icon = GFX_goal_generic_war_with_comintern
-		prerequisite = { focus = TUR_army_modernisation }
-		available = {
-			TUR = {
-			has_government = fascism
-			}
-		}
-		
-		x = 13
-		y = 1
-		cost = 10
-		ai_will_do = {
-			factor = 39
-		}	
-		completion_reward = {
-			remove_ideas = retarded_officers
-			add_ideas = officers_purged
 		}
 	}
 	
@@ -1072,8 +1046,8 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = TUR_officers_traing_program
-		icon = GFX_goal_generic_small_arms
+		id = TUR_german_tactics
+		icon = GFX_goal_generic_army_doctrines
 		prerequisite = { focus = TUR_doctrine_effort }
 		available = {
 			TUR = {
@@ -1088,13 +1062,40 @@ focus_tree = {
 			factor = 39
 		}	
 		completion_reward = {
+			add_tech_bonus = {
+				name = TUR_doctrine_bonus
+				bonus = 0.50
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	
+	focus = {
+		id = TUR_officers_traing_program
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = TUR_german_tactics }
+		prerequisite = { focus = TUR_control_the_skies }
+		available = {
+			TUR = {
+			has_government = fascism
+			}
+		}
+		
+		x = 12
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 39
+		}	
+		completion_reward = {
 			remove_ideas = officers_purged
 		}
 	}
 	
 	focus = {
-		id = TUR_german_tactics
-		icon = GFX_goal_generic_army_doctrines
+		id = TUR_the_new_machine
+		icon = GFX_goal_generic_army_tanks
 		prerequisite = { focus = TUR_officers_traing_program }
 		available = {
 			TUR = {
@@ -1102,18 +1103,18 @@ focus_tree = {
 			}
 		}
 		
-		x = 13
-		y = 4
+		x = 12
+		y = 5
 		cost = 10
 		ai_will_do = {
 			factor = 39
 		}	
 		completion_reward = {
 			add_tech_bonus = {
-				name = TUR_doctrine_bonus
+				name = TUR_tank_bonus
 				bonus = 0.50
 				uses = 1
-				category = land_doctrine
+				category = armor
 			}
 		}
 	}
