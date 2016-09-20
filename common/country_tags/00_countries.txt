@@ -103,3 +103,4 @@ GEO = "countries/Georgia.txt"
 #KAZ = "countries/Kazakhstan.txt" #For a later time
 AZR = "countries/Azerbaijan.txt"
 ARM = "countries/Armenia.txt"
+MOR = "countries/Morocco.txt"
