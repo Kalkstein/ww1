@@ -28,7 +28,7 @@ focus_tree = {
 	focus = {
 	    id = BUL_reform_government
 		icon = GFX_goal_generic_demand_territory
-		mutually_exclusive = { focus = BUL_support_fascism }
+		mutually_exclusive = { focus = BUL_support_monarchy }
 		prerequisite = { focus = BUL_strengthen_state }
 		x = 15
 		y = 1
@@ -39,7 +39,7 @@ focus_tree = {
 	}
 	
 	focus = {
-	    id = BUL_support_fascism
+	    id = BUL_support_monarchy
 		icon = GFX_goal_generic_political_pressure
 		mutually_exclusive = { focus = BUL_reform_government }
 		prerequisite = { focus = BUL_strengthen_state }
@@ -51,7 +51,7 @@ focus_tree = {
 					ideology = fascism
 					popularity = 0.2
 				}
-			add_ideas = BUL_keep_fascism_idea #Monarchism support +0.03 daily 
+			add_ideas = BUL_keep_monarchy_idea #Monarchism support +0.03 daily 
 		}
 	}
 	
@@ -84,7 +84,7 @@ focus_tree = {
 	focus = {
 	    id = BUL_strengthen_ties
 		icon = GFX_goal_generic_improve_relations
-		prerequisite = { focus = BUL_support_fascism }
+		prerequisite = { focus = BUL_support_monarchy }
 		x = 25
 		y = 2
 		cost = 10
@@ -141,11 +141,11 @@ focus_tree = {
 					technology = infantry_weapons
 				}
 				add_tech_bonus = {
-					name = armor_bonus
-					bonus = 0.3
-					uses = 2
-					category = armor
-				}
+				name = land_doc_bonus
+					bonus = 0.4 
+					uses = 2 
+					category = land_doctrine 
+			}
 			}
 		}
 	}
@@ -303,7 +303,6 @@ focus_tree = {
 		y = 4
 		cost = 10
 		completion_reward = {
-			FRA = { add_opinion_modifier = { target = ROOT modifier = BUL_entente_friends } }
 			every_country = {
 			    limit = {
 			        is_in_faction_with = FRA
@@ -733,7 +732,7 @@ focus_tree = {
 		cost = 10
 		completion_reward = { 
 		        SOV= {
-				    add_ideas = BUL_russian_communism_idea
+				    add_timed_idea = { idea = BUL_russian_communism_idea days = 730 }
 				}
 		}
 	}
@@ -773,7 +772,7 @@ focus_tree = {
 						}
 					}
 					TUR = {
-						country_event = { id = bulgaria.6 days = 1 }
+						country_event = { id = bulgaria.24 days = 1 }
 					}
 			}
 		
@@ -805,7 +804,7 @@ focus_tree = {
 				is_puppet = no
 			}
 			GRE = {
-			    exist = yes
+			    exists = yes
 				is_in_faction = no
 				has_war = no
 				is_puppet = no
@@ -989,7 +988,7 @@ focus_tree = {
 		cost = 10 
 		completion_reward = {
 		    add_political_power = 100
-			add_ideas = partisan_suppression_focus_idea
+			add_ideas = partisan_suppression_focus
 		}
 	}
 	
@@ -1045,7 +1044,7 @@ focus_tree = {
 					name = industrial_bonus
 					bonus = 0.5
 				    uses = 1
-					technology = industry
+					category = industry
 				}
 				add_tech_bonus = {
 					name = electronics_bonus
@@ -1130,7 +1129,7 @@ focus_tree = {
 		cost = 10 
 		completion_reward = {
 			GER = {
-				add_ideas = BUL_communism_support_idea
+				add_timed_idea = { idea = BUL_communism_support_idea days = 400 } 
 			}
 		}
 	}
@@ -1371,11 +1370,12 @@ focus_tree = {
 					level = 3
 					instant_build = yes
 					add_extra_state_shared_building_slots = 3
+				}
 				add_building_construction = {
 					type = industrial_complex
 					level = 3
 					instant_build = yes
-					}
+					add_extra_state_shared_building_slots = 3
 				}
 			}
 		}
@@ -1521,9 +1521,27 @@ focus_tree = {
 	}
 	
 	focus = {
+		id = BUL_crown_ferdinand 
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = BUL_develop_constantinople }
+		available = {
+			has_government = fascism
+		}
+		x = 25 
+		y = 11 
+		cost = 10 
+		completion_reward = {
+			custom_effect_tooltip = BUL_crown_ferdinand_tt
+			hidden_effect = {
+				country_event = bulgaria.25 
+			}
+		}
+	}
+	
+	focus = {
 		id = BUL_the_great_war 
 		icon = GFX_goal_support_fascism
-		prerequisite = { focus = BUL_fortify_thrace focus = BUL_abandon_macedonia focus = BUL_macedonia_or_war }
+		prerequisite = { focus = BUL_fortify_thrace focus = BUL_abandon_macedonia focus = BUL_macedonia_or_war focus = BUL_war_with_ottomans }
 		available = {
 			has_global_flag = {
 				great_war
@@ -1548,7 +1566,7 @@ focus_tree = {
 		y = 14 
 		cost = 10 
 		completion_reward = {
-			add_ideas = BUL_wwi_neutral_idea
+			add_ideas = neutrality_idea
 		}
 	}
 	
@@ -1557,6 +1575,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_mil_factory
 		mutually_exclusive = { focus = BUL_neutral_world_war }
 		prerequisite = { focus = BUL_the_great_war }
+		prerequisite = { focus = BUL_more_mil_research }
 		x = 31 
 		y = 14
 		cost = 10 
@@ -1959,7 +1978,7 @@ focus_tree = {
 		y = 17 
 		cost = 10 
 		completion_reward = {
-			add_ideas = complete_neutrality_idea
+			add_ideas = BUL_complete_neutrality_idea
 		}
 	}
 	
@@ -2230,7 +2249,7 @@ focus_tree = {
 		y = 18 
 		cost = 10 
 		completion_reward = {
-			SOV = { add_ideas = BUL_destabilizing_russia_idea }
+			SOV = { add_timed_idea = { idea = BUL_destabilizing_russia_idea days = 365 } }
 		}
 	}
 	
@@ -2302,7 +2321,7 @@ focus_tree = {
 					name = infantry_weapons_bonus
 					bonus = 0.5
 					uses = 1 
-					technology = infantry_weapons
+					category = infantry_weapons 
 				}
 		}
 	}
@@ -2329,9 +2348,9 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = land_doc_bonus
-					bonus = 0.3
-					uses = 3 
-					category = land_doctrine 
+				bonus = 0.3
+				uses = 3
+				category = land_doctrine
 			}
 		}
 	}
@@ -2363,11 +2382,300 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = BUL_mountaineers 
-		icon = GFX_goal_generic_special_forces
+		id = BUL_international_involvment 
+		icon = GFX_goal_generic_dangerous_deal
 		prerequisite = { focus = BUL_propaganda }
 		x = 38 
 		y = 3 
+		cost = 10 
+		completion_reward = {
+			set_rule = { can_send_volunteers = yes }
+			add_ideas = volunteer_corps_focus
+	}
+	
+	focus = { 
+		id = BUL_superior_arty 
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = { focus = BUL_train_army }
+		x = 40 
+		y = 3 
+		cost = 10 
+		completion_reward = {
+			add_tech_bonus = {
+				name = BUL_arty_1 
+				bonus = 0.5 
+				uses = 1 
+				technology = gw_artillery 
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_start_coastal_defence
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = BUL_international_involvment }
+		x = 38 
+		y = 3 
+		cost = 10 
+		completion_reward ={
+			77 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 3
+					instant_build =  yes
+					province = 11597
+				}
+			}
+			211 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 3
+					instant_build =  yes
+					province = 9783
+				}
+			}
+			211 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 3
+					instant_build =  yes
+					province = 9919
+				}
+			}
+			211 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 3
+					instant_build =  yes
+					province = 9902 
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_early_machineguns
+		icon = GFX_goal_generic_secret_weapon
+		prerequisite = { focus = BUL_start_coastal_defence }
+		x = 36 
+		y = 4 
+		cost = 10 
+		completion_reward = {
+			add_tech_bonus = {
+					name = machine_gun_bonus
+					bonus = 0.4
+					uses = 1
+					technology = machine_gun 
+					technology = machine_gun_2 
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_support_battalions
+		icon = GFX_goal_generic_special_forces
+		prerequisite = { focus = BUL_superior_arty }
+		prerequisite = { focus = BUL_start_coastal_defence }
+		x = 38 
+		y = 4 
+		cost = 10 
+		completion_reward = {
+			add_tech_bonus = {
+					name = BUL_support_bouns 
+					bonus = 0.3
+					uses = 2
+					technology = tech_recon
+					technology = tech_recon2  
+					technology = tech_engineers2 
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_qfr 
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = { focus = BUL_superior_arty }
+		x = 40 
+		y = 4 
+		cost = 10 
+		completion_reward = {
+			add_tech_bonus = {
+				name = artillery_bonus
+				bonus = 0.5
+				uses = 1
+				category = artillery 
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_improved_balloon 
+		icon = GFX_goal_generic_build_airforce
+		prerequisite = { focus = BUL_superior_arty } 
+		x = 44 
+		y = 4 
+		cost = 10 
+		completion_reward = {
+			add_tech_bonus = {
+				name = BUL_balloons
+				bonus = 0.4
+				uses = 1
+				technology = ballon2
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_infantry_equipment 
+		icon = GFX_goal_generic_build_tank
+		prerequisite = { focus = BUL_early_machineguns }
+		x = 36 
+		y = 5 
+		cost = 10 
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.3
+				uses = 2
+				technology = improved_infantry_weapons_1
+				technology = improved_infantry_weapons_2
+				technology = improved_machine_gun_1
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_learn_balkan_war_1 
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = BUL_support_battalions }
+		available = {
+			has_global_flag = balkan_war_1 
+		}
+		x = 38 
+		y = 5 
+		cost = 10 
+		completion_reward = {
+			add_tech_bonus = {
+				name = land_doc_bonus
+					bonus = 0.5
+					uses = 2 
+					category = land_doctrine 
+			}
+		}
+	}
+	
+	focus = { 
+		id = BUL_field_hospitals 
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = BUL_qfr }
+		x = 40 
+		y = 5 
+		cost = 10 
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.5
+				uses = 1
+				technology = tech_field_hospital
+				technology = tech_field_hospital2
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_early_planes 
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = BUL_improved_balloon }
+		available = { 
+			date > 1913.01.01 
+		}
+		x = 42 
+		y = 5 
+		cost = 5
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.25
+				uses = 1
+				technology = fighter1
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_zeppelins 
+		icon = GFX_goal_generic_air_naval_bomber
+		prerequisite = { focus = BUL_improved_balloon }
+		available = {
+			date > 1912.01.01 
+		}
+		x = 44 
+		y = 5 
+		cost = 10 
+		completion_reward = {
+			add_tech_bonus = {
+					name = zeppelin_bonus 
+					ahead_reduction = 0.5 
+					technology = zeppelin1 
+				}
+		}
+	}
+	
+	focus = {
+		id = BUL_fortifications
+		icon = GFX_goal_generic_construct_military
+		mutually_exclusive = { focus = BUL_offensive }
+		prerequisite = { focus = BUL_infantry_equipment }
+		x = 32
+		y = 6 
+		cost = 10 
+		completion_reward = { 
+			add_ideas = BUL_forts_idea 
+			add_ideas = BUL_hristo_lukov
+			48 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build =  yes
+					province = 949
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_offensive
+		icon = GFX_goal_generic_army_doctrines
+		mutually_exclusive = { focus = BUL_fortifications }
+		prerequisite = { focus = BUL_infantry_equipment }
+		x = 34 
+		y = 6 
+		cost = 10 
+		completion_reward = {
+			add_ideas = BUL_increased_offensive
+		}
+	}
+	
+	focus = {
+		id = BUL_army_reforms 
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = BUL_learn_balkan_war_1 }
+		x = 38 
+		y = 6 
+		cost = 10 
+		completion_reward = {
+			add_ideas = BUL_blagoi_ivanov
+			add_ideas = BUL_kiril_dimitrov_yanchule
+			add_ideas = BUL_kiril_stanchev
+		}
+	}
+	
+	focus = {
+		id = BUL_mountaineers 
+		icon = GFX_goal_generic_special_forces
+		prerequisite = { focus = BUL_field_hospitals }
+		x = 40  
+		y = 6
 		cost = 10 
 		completion_reward = {
 			add_tech_bonus = {
@@ -2378,4 +2686,597 @@ focus_tree = {
 			}
 		}
 	}
+	
+	focus = {
+		id = BUL_air_branch
+		icon = GFX_goal_generic_air_doctrine
+		prerequisite = { focus = BUL_early_planes }
+		x = 42 
+		y = 6 
+		cost = 10 
+		completion_reward = {
+			air_experience = 10 
+			add_ideas = BUL_vasil_boydev
+			add_ideas = BUL_asen_dobrev_nikolov
+			add_ideas = BUL_stoyan_stoyanov
+			add_ideas = BUL_ivan_gaidimitriv
+		}
+	}
+	
+	focus = {
+		id = BUL_wonder_of_flight
+		icon = GFX_goal_generic_air_production
+		prerequisite = { focus = BUL_zeppelins }
+		x = 44 
+		y = 6 
+		cost = 10 
+		completion_reward = {
+			add_ideas = BUL_air_wonder_idea
+		}
+	}
+	
+	focus = { 
+		id = BUL_air_doctrine_1
+		icon = GFX_goal_generic_air_doctrine
+		prerequisite = { focus = BUL_improved_balloon }
+		x = 46
+		y = 6 
+		cost = 10 
+		completion_reward = {
+			add_tech_bonus = {
+				name = air_doctrine_bonus 
+				bonus = 0.5
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_continue_coastal_forts 
+		icon = GFX_goal_generic_defence
+		prerequisite = { focus = BUL_fortifications }
+		x = 32 
+		y = 7 
+		cost = 10 
+		completion_reward = { 
+			77 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 3
+					instant_build =  yes
+					province = 11597
+				}
+			}
+			211 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 3
+					instant_build =  yes
+					province = 9783
+				}
+			}
+			211 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 3
+					instant_build =  yes
+					province = 9919
+				}
+			}
+			211 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 3
+					instant_build =  yes
+					province = 9902 
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_cheaper_weapons 
+		icon = GFX_goal_generic_production2
+		prerequisite = { focus = BUL_offensive }
+		x = 34 
+		y = 7 
+		cost = 10 
+		completion_reward = {
+			add_ideas = BUL_cheap_weapons_idea 
+		}
+	}
+	
+	focus = {
+		id = BUL_improve_sf
+		icon = GFX_goal_generic_wolf_pack 
+		prerequisite = { focus = BUL_offensive }
+		x = 36 
+		y = 7 
+		cost = 10 
+		completion_reward = {
+			add_tech_bonus = {
+				name = BUL_mountaineers
+				bonus = 0.4
+				uses = 2
+				technology = tech_mountaineers2
+				technology = marines2
+				technology = paratroopers2 
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_enhance_training 
+		icon = GFX_goal_rhineland 
+		prerequisite = { focus = BUL_army_reforms }
+		x = 38
+		y = 7 
+		cost = 10 
+		completion_reward = {
+			army_experience = 25 
+			add_ideas = BUL_better_training_idea 
+		}
+	}
+	
+	focus = {
+		id = BUL_advanced_weapons
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = BUL_mountaineers }
+		x = 40 
+		y = 7 
+		cost = 10 
+		completion_reward = {
+			add_tech_bonus = {
+				name = BUL_better_tech
+				bonus = 0.5
+				uses = 1
+				technology = improved_infantry_weapons_2
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_more_airbases
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = BUL_air_branch }
+		x = 42 
+		y = 7 
+		cost = 10 
+		complete_tooltip = {
+			add_building_construction = {
+				type = air_base
+				level = 2
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					capital_scope = {
+						NOT = {
+							free_building_slots = {
+								building = air_base
+								size > 1
+							}
+						}
+					}
+				}
+				random_owned_state = {
+					limit = {
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_heavy_aircraft 
+		icon = GFX_goal_generic_air_bomber
+		prerequisite = { focus = BUL_wonder_of_flight }
+		x = 44 
+		y = 7 
+		cost = 10 
+		completion_reward = {
+			add_tech_bonus = {
+				name = BUL_heavy_aircraft 
+				bonus = 0.4 
+				uses = 1
+				technology = tactical_bomber1
+				technology = heavy_fighter1
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_air_doctrine_2 
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = BUL_air_doctrine_1 }
+		x = 46 
+		y = 7 
+		cost = 10 
+		completion_reward = {
+			add_tech_bonus = {
+				name = air_doctrine_bonus 
+				bonus = 0.4
+				uses = 2
+				category = air_doctrine
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_fortify_capital
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = BUL_continue_coastal_forts }
+		x = 32 
+		y = 8 
+		cost = 10 
+		completion_reward = {
+			48 = {
+				add_building_construction = {
+						type = bunker
+						level = 8
+						instant_build =  yes
+						province = 949
+				}	
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_more_military_industry 
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = BUL_cheaper_weapons }
+		x = 34 
+		y = 8 
+		cost = 10 
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = production_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = arms_factory
+						size < 2
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_experimental_equipment 
+		icon = GFX_goal_generic_secret_weapon
+		prerequisite = { focus = BUL_improve_sf }
+		x = 36 
+		y = 8 
+		cost = 10 
+		completion_reward = {
+			add_tech_bonus = {
+				name = steel_helmet_bonus 
+				bonus = 0.5
+				uses = 1
+				technology = steel_helmet
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_air_designers
+		icon = GFX_goal_generic_air_fighter2
+		prerequisite = { focus = BUL_more_airbases }
+		x = 40
+		y = 8 
+		cost = 10 
+		completion_reward = {
+			add_ideas = albatros_flugzeugwerke
+			add_ideas = gothaer_waggonfabrik
+			add_ideas = zeppelin_staaken
+		}
+	}
+	
+	focus = {
+		id = BUL_improved_fighters
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = BUL_more_airbases }
+		available = {
+			date > 1915.01.01 
+		}
+		x = 42 
+		y = 8 
+		cost = 10 
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 0.25
+				ahead_reduction = 0.5 
+				technology = fighter2
+			}
+		}
+	}
+	
+	focus = { 
+		id = BUL_foreign_planes
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = BUL_heavy_aircraft }
+		prerequisite = { focus = BUL_air_doctrine_2 }
+		x = 44 
+		y = 8 
+		cost = 10 
+		completion_reward = {
+			air_experience = 5
+			custom_effect_tooltip = BUL_foreign_planes_tt
+			hidden_effect = {
+				add_manpower = 50
+			GER = {
+					send_equipment = {
+						target = BUL 
+						type = fighter_equipment
+						amount = 50
+					}
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_late_aircraft 
+		icon = GFX_goal_generic_air_production
+		prerequisite = { focus = BUL_air_designers }
+		prerequisite = { focus = BUL_improved_fighters }
+		prerequisite = { focus = BUL_foreign_planes }
+		available = {
+			date > 1916.01.08 
+		}
+		x = 42 
+		y = 9 
+		cost = 10 
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 0.5
+				ahead_reduction = 0.75 
+				technology = fighter2
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_more_mil_research
+		icon = GFX_focus_research
+		prerequisite = { focus = BUL_fortify_capital focus = BUL_more_military_industry }
+		x = 32 
+		y = 10 
+		cost = 10 
+		completion_reward = {
+			add_research_slot = 1
+			army_experience = 5 
+			air_experience = 5 
+			navy_experience = 5 
+		}
+	}
+	
+	focus = {
+		id = BUL_gas_snipers
+		icon = GFX_focus_wonderweapons
+		prerequisite = { focus = BUL_more_military_industry }
+		prerequisite = { focus = BUL_experimental_equipment }
+		x = 35 
+		y = 10 
+		cost = 20 
+		completion_reward = {
+			add_tech_bonus = {
+				name = gas+sniper_bonus
+				bonus = 0.4 
+				uses = 2  
+				technology = sniper
+				technology = explosives_team
+			}
+		}
+	}
+	
+	focus = { 
+		id = BUL_more_artillery
+		icon = GFX_goal_generic_army_artillery2 
+		prerequisite = { focus = BUL_experimental_equipment }
+		prerequisite = { focus = BUL_enhance_training }
+		x = 38 
+		y = 10 
+		cost = 10 
+		completion_reward = {
+			add_tech_bonus = {
+				name = artillery_bonus
+				bonus = 0.3 
+				uses = 3  
+				category = artillery
+			}
+			add_tech_bonus = {
+				name = artillery_bonus
+				bonus = 0.5  
+				ahead_reduction = 1 
+				category = artillery
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_late_bombers 
+		icon = GFX_goal_generic_air_bomber
+		prerequisite = { focus = BUL_late_aircraft }
+		x = 40 
+		y = 10 
+		cost = 10 
+		completion_reward = {
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 0.4 
+				ahead_reduction = 0.5 
+				technology = tactical_bomber3 
+				
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_late_cas
+		icon = GFX_goal_generic_CAS 
+		prerequisite = { focus = BUL_late_aircraft }
+		x = 44 
+		y = 10 
+		cost = 10 
+		completion_reward = { 
+			add_tech_bonus = {
+				name = cas_bonus
+				bonus = 0.4 
+				ahead_reduction = 0.5 
+				technology = CAS3 
+				
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_flamethrowers
+		icon = GFX_goal_generic_secret_weapon
+		prerequisite = { focus = BUL_gas_snipers }
+		x = 35
+		y = 11 
+		cost = 5  
+		completion_reward = {
+			add_tech_bonus = {
+				name = flamethrower_bonus
+				bonus = 0.5  
+				uses = 1  
+				technology = flamethrower
+				
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_learn_balkan_war_2 
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = BUL_more_artillery }
+		available = {
+			has_global_flag = balkan_war_2_over 
+		}
+		bypass = {
+			has_global_flag = no_balkan_war_2 
+		}
+		x = 38 
+		y = 11 
+		cost = 20 
+		completion_reward = {
+			army_experience = 10 
+			add_tech_bonus = {
+				name = land_doc_bonus
+					bonus = 0.5
+					uses = 3
+					category = land_doctrine 
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_tanks 
+		icon = GFX_goal_demand_sudetenland
+		prerequisite = { focus = BUL_flamethrowers }
+		prerequisite = { focus = BUL_learn_balkan_war_2 }
+		available= { 
+			date > 1917.06.01 
+		}
+		x = 38 
+		y = 12 
+		cost = 20 
+		completion_reward = {
+			add_tech_bonus = {
+				name = armour_bonus 
+				bonus = 0.35 
+				uses = 1 
+				technology = gwtank
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_late_zeppelins 
+		icon = GFX_goal_generic_air_naval_bomber
+		prerequisite = { focus = BUL_late_aircraft }
+		x = 42 
+		y = 12 
+		cost = 10 
+		completion_reward = {
+			add_tech_bonus = {
+				name = zeppelin_bonus 
+				bonus = 0.45  
+				uses = 1 
+				technology = zeppelin3
+			}
+		}
+	}
+	
+	###End of Army/Air Subtree### 
+	
+	###Navy Subtree### 
+	
+	focus = {
+		id = BUL_navy 
+	}
+	
+	
+		
+	
 	
