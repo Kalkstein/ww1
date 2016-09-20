@@ -219,7 +219,6 @@ technologies = {
 			modifier = {
 				factor = 0
 				has_war = yes
-				has_tech = dispersed_industry
 			}
 		}
 		
@@ -379,7 +378,6 @@ technologies = {
 			modifier = {
 				factor = 0
 				has_war = yes
-				has_tech = concentrated_industry
 			}
 		}
 		

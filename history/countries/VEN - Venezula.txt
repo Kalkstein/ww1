@@ -28,7 +28,7 @@ set_country_flag = monroe_doctrine
 	oob = "VEN_1939"
 	set_technology = {
 		interwar_artillery_1 = 1
-		infantry_weapons_1 = 1
+		infantry_weapons1 = 1
 		infantry_weapons_2 = 1
 
 		#doctrines
@@ -54,8 +54,7 @@ set_country_flag = monroe_doctrine
 		improved_oil_plant = 1
 		construction1 = 1
 		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
+		frontline_fortification = 1
 	}
 }
 

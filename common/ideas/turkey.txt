@@ -2,7 +2,7 @@ ideas = {
 
 	country = {
 		
-		ethnic_tensions = {
+		ethnic_tensions_tur = {
 			
 			removal_cost = -1
 	

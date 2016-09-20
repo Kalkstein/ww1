@@ -28,7 +28,7 @@ set_convoys = 5
 	
 	oob = "DOM_1939"
 	set_technology = {
-		infantry_weapons_1 = 1
+		infantry_weapons1 = 1
 
 		#doctrines
 		air_superiority = 1
@@ -52,8 +52,7 @@ set_convoys = 5
 		oil_plant = 1
 		construction1 = 1
 		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
+		frontline_fortification = 1
 	}
 }
 

@@ -93,12 +93,12 @@ ideas = {
 				always = yes 
 			}
 			
+			research_bonus = {
+				land_doctrine = 0.1 
+			}
+			
 			modifier = {
-				research_bonus = {
-					land_doctrine = 0.1 
-				}
 				army_org_factor = 0.15
-				
 			}
 		}
 		BUL_complete_neutrality_idea = {

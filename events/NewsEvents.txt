@@ -1177,10 +1177,9 @@ country_event = {
 	
 	option = {
 		name = news.310.a 
-		trigger = {
-			tag = AUS
+		trigger = { tag = AUS }
 		AUS = {
-		create_wargoal = {
+			create_wargoal = {
 				target = CRO
 				type = annex_wargoal_focus
 			}
@@ -1346,7 +1345,7 @@ country_event = {
 		trigger = {
 			tag = AUS
 		AUS = {
-		create_wargoal = {
+			create_wargoal = {
 				target = HUN
 				type = puppet_wargoal_focus
 			}
@@ -1415,7 +1414,7 @@ country_event = {
 		trigger = {
 			tag = AUS
 		AUS = {
-		create_wargoal = {
+			create_wargoal = {
 				target = CZE
 				type = puppet_wargoal_focus
 			}

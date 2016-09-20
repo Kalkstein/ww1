@@ -266,24 +266,24 @@ ideas = {
 			}
 		}
 					
-		Giovanni_agnelli = {
-			
-			
-			allowed = {
-				original_tag = "ITA"
-			}
-
-			picture = generic_political_advisor_europe_2
-						
-			traits = { war_industrialist }
-	
-			on_add = {				
-			}
-				
-			ai_will_do = {
-				factor = 1
-			}
-		}
+#		Giovanni_agnelli = {
+#			
+#			
+#			allowed = {
+#				original_tag = "ITA"
+#			}
+#
+#			picture = generic_political_advisor_europe_2
+#						
+#			traits = { war_industrialist }
+#	
+#			on_add = {				
+#			}
+#				
+#			ai_will_do = {
+#				factor = 1
+#			}
+#		}
 					
 		Paolo_spingardi = {
 			
@@ -565,21 +565,21 @@ ideas = {
 			}
 		}
 		
-		Marziale_cerutti = {
-			
-			
-			allowed = {
-				original_tag = ITA
-			}
-			
-
-			
-			traits = { air_air_combat_training_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+#		Marziale_cerutti = {
+#			
+#			
+#			allowed = {
+#				original_tag = ITA
+#			}
+#			
+#
+#			
+#			traits = { air_air_combat_training_2 }
+#			
+#			ai_will_do = {
+#				factor = 1
+#			}
+#		}
 		
 		silvio_scaroni = {
 			

@@ -23,7 +23,7 @@ technologies = {
 		}
 		
 		path = {
-			leads_to_tech = infantry_weapons_1
+			leads_to_tech = infantry_weapons1
 			research_cost_coeff = 1
 		}		
 
@@ -43,14 +43,14 @@ technologies = {
 		}
 	}
 	
-	infantry_weapons_1 = {
+	infantry_weapons1 = {
 
 		enable_equipments = {
 			infantry_equipment_1
 		}
 				
 		path = {
-			leads_to_tech = improved_infantry_weapons_1
+			leads_to_tech = improved_infantry_weapons1
 			research_cost_coeff = 1
 		}		
 
@@ -70,7 +70,7 @@ technologies = {
 		}
 	}	
 	
-	improved_infantry_weapons_1 = {
+	improved_infantry_weapons1 = {
 
 		category_light_infantry = {
 			soft_attack = 0.05

@@ -15,7 +15,7 @@ add_ideas = {
 
 set_technology = {
 	infantry_weapons = 1
-	infantry_weapons_1 = 1
+	infantry_weapons1 = 1
 	tech_support = 1		
 	tech_recon = 1
 	tech_engineers = 1
@@ -142,9 +142,7 @@ create_import = {
 		construction1 = 1
 		construction2 = 1
 		construction3 = 1
-		concentrated_industry = 1
-		concentrated_industry2 = 1
-		concentrated_industry3 = 1
+		hinterland_fortification = 1
 	}
 }
 

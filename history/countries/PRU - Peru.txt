@@ -36,7 +36,7 @@ set_convoys = 5
 	set_technology = {
 		tactical_bomber1 = 1
 		interwar_artillery_1 = 1
-		infantry_weapons_1 = 1
+		infantry_weapons1 = 1
 		infantry_weapons_2 = 1
 
 		#doctrines
@@ -60,8 +60,7 @@ set_convoys = 5
 		oil_plant = 1
 		construction1 = 1
 		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
+		frontline_fortification = 1
 	}
 }
 

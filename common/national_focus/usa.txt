@@ -18,20 +18,20 @@ focus_tree = {
 	default = no
 
 	focus = {
-		id = USA_issue_foriegn_aid
+		id = USA_issue_foreign_aid
 		icon = GFX_goal_generic_national_unity
 		x = 1
 		y = 0
 		cost = 10
 		completion_reward = {
-			add_ideas = foriegn_aid_focus
+			add_ideas = foreign_aid_focus
 		}
 	}
 	
 	focus = {
 		id = USA_strategy_meetings
 		icon = GFX_goal_generic_position_armies
-		prerequisite = { focus = USA_issue_foriegn_aid }
+		prerequisite = { focus = USA_issue_foreign_aid }
 		x = 1
 		y = 1
 		cost = 10

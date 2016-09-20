@@ -52,8 +52,7 @@ set_convoys = 20
 		improved_oil_plant = 1
 		construction1 = 1
 		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
+		frontline_fortification = 1
 	}
 }
 

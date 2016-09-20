@@ -42,8 +42,7 @@ set_technology = {
 		synth_oil_experiments = 1
 		construction1 = 1
 		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
+		frontline_fortification = 1
 	}
 }
 

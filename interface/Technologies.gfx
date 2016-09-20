@@ -104,7 +104,7 @@ spriteTypes = {
 	}		
 	
 	SpriteType = {
-		name = "GFX_infantry_weapons_1_medium"
+		name = "GFX_infantry_weapons1_medium"
 		texturefile = "gfx/interface/technologies/infantry1.dds"
 	}		
 	
@@ -443,7 +443,7 @@ spriteTypes = {
 	}	
 	
 	SpriteType = {
-		name = "GFX_improved_infantry_weapons_1_medium"
+		name = "GFX_improved_infantry_weapons1_medium"
 		texturefile = "gfx/interface/technologies/infantry_weapons.dds"
 	}	
 
@@ -1565,52 +1565,52 @@ spriteTypes = {
 	}	
 	
 	SpriteType = {
-		name = "GFX_concentrated_industry_medium"
+		name = "GFX_hinterland_fortification_medium"
 		texturefile = "gfx/interface/technologies/concentrated_industry.dds"
 	}	
 	
 	SpriteType = {
-		name = "GFX_concentrated_industry2_medium"
+		name = "GFX_hinterland_fortification_2_medium"
 		texturefile = "gfx/interface/technologies/concentrated_industry2.dds"
 	}	
 
 	SpriteType = {
-		name = "GFX_concentrated_industry3_medium"
+		name = "GFX_hinterland_fortification_3_medium"
 		texturefile = "gfx/interface/technologies/concentrated_industry3.dds"
 	}	
 	
 	SpriteType = {
-		name = "GFX_concentrated_industry4_medium"
+		name = "GFX_hinterland_fortification_4_medium"
 		texturefile = "gfx/interface/technologies/concentrated_industry4.dds"
 	}	
 	
 	SpriteType = {
-		name = "GFX_concentrated_industry5_medium"
+		name = "GFX_hinterland_fortification_5_medium"
 		texturefile = "gfx/interface/technologies/concentrated_industry5.dds"
 	}	
 	
 	SpriteType = {
-		name = "GFX_dispersed_industry_medium"
+		name = "GFX_frontline_fortification_medium"
 		texturefile = "gfx/interface/technologies/dispersed_industry.dds"
 	}	
 
 	SpriteType = {
-		name = "GFX_dispersed_industry2_medium"
+		name = "GFX_frontline_fortification_2_medium"
 		texturefile = "gfx/interface/technologies/dispersed_industry2.dds"
 	}	
 	
 	SpriteType = {
-		name = "GFX_dispersed_industry3_medium"
+		name = "GFX_frontline_fortification_3_medium"
 		texturefile = "gfx/interface/technologies/dispersed_industry3.dds"
 	}	
 	
 	SpriteType = {
-		name = "GFX_dispersed_industry4_medium"
+		name = "GFX_frontline_fortification_4_medium"
 		texturefile = "gfx/interface/technologies/dispersed_industry4.dds"
 	}	
 	
 	SpriteType = {
-		name = "GFX_dispersed_industry5_medium"
+		name = "GFX_frontline_fortification_5_medium"
 		texturefile = "gfx/interface/technologies/dispersed_industry5.dds"
 	}	
 
