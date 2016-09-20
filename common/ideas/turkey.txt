@@ -67,6 +67,121 @@ ideas = {
 				army_org_Factor = -0.75
 			}
 		}
+		
+		officers_purged_2 = {
+			
+			removal_cost = -1
+	
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = officers_purged_2_pic
+			
+			
+			research_bonus = {
+				land_doctrine = -0.8
+			}
+			modifier = {
+				army_org_Factor = -0.7
+			}
+		}
+		
+		officers_purged_3 = {
+			
+			removal_cost = -1
+	
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = officers_purged_3_pic
+			
+			
+			research_bonus = {
+				land_doctrine = -0.65
+			}
+			modifier = {
+				army_org_Factor = -0.6
+			}
+		}
+		
+		officers_purged_4 = {
+			
+			removal_cost = -1
+	
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = officers_purged_4_pic
+			
+			
+			research_bonus = {
+				land_doctrine = -0.5
+			}
+			modifier = {
+				army_org_Factor = -0.5
+			}
+		}
+		
+		officers_purged_5 = {
+			
+			removal_cost = -1
+	
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = officers_purged_5_pic
+			
+			
+			research_bonus = {
+				land_doctrine = -0.4
+			}
+			modifier = {
+				army_org_Factor = -0.75
+			}
+		}
+		
+		officers_purged_6 = {
+			
+			removal_cost = -1
+	
+			allowed = {
+				always = no 
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = officers_purged_6_pic
+			
+			
+			research_bonus = {
+				land_doctrine = -0.2
+			}
+			modifier = {
+				army_org_Factor = -0.3
+			}
+		}
 	}
 
 	

@@ -692,11 +692,9 @@ focus_tree = {
 			factor = 39
 		}	
 		completion_reward = {
-		add_national_unity = 0.05
+			add_national_unity = 0.05
 		}
 	}
-	
-
 	
 	focus = {
 		id = TUR_reclaim_bulgaria
@@ -786,7 +784,7 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
-		add_political_power = 50
+			add_political_power = 50
 		}
 	}
 	
@@ -866,7 +864,7 @@ focus_tree = {
 			factor = 0
 		}	
 		completion_reward = {
-
+			
 		}
 	}
 	
@@ -922,9 +920,163 @@ focus_tree = {
 			factor = 0
 		}	
 		completion_reward = {
-
+			
 		}
 	}
+	
+	focus = {
+		id = TUR_heirs_to_byzantium
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = TUR_young_turk_revolution }
+		available = {
+			TUR = {
+				is_puppet = no
+			}
+		}
+		
+		x = 13
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+		completion_reward = {
+			add_national_unity = 0.05
+		}
+	}
+	
+	focus = {
+		id = TUR_control_the_balkans
+		icon = GFX_goal_generic_position_armies
+		prerequisite = { focus = TUR_heirs_to_byzantium }
+		available = {
+			TUR = {
+				is_puppet = no
+			}
+		}
+		
+		x = 13
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = TUR_control_the_mediterranean_islands
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = TUR_control_the_balkans }
+		available = {
+			TUR = {
+				is_puppet = no
+			}
+		}
+		
+		x = 12
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = TUR_control_the_mediterranean_coastlines
+		icon = GFX_goal_demand_sudetenland
+		prerequisite = { focus = TUR_control_the_mediterranean_islands }
+		available = {
+			TUR = {
+				is_puppet = no
+			}
+		}
+		
+		x = 12
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	
+	focus = {
+		id = TUR_conquer_the_heart_of_the_western_empire
+		icon = GFX_goal_generic_alliance
+		prerequisite = { focus = TUR_control_the_balkans }
+		available = {
+			TUR = {
+				is_puppet = no
+			}
+		}
+		
+		x = 14
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	
+	focus = {
+		id = TUR_conquer_the_land_between_west_and_east
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = TUR_conquer_the_heart_of_the_western_empire }
+		available = {
+			TUR = {
+				is_puppet = no
+			}
+		}
+		
+		x = 14
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	
+	focus = {
+		id = TUR_conquer_all_formor_lands_of_the_empire
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = TUR_conquer_the_land_between_west_and_east }
+		prerequisite = { focus = TUR_control_the_mediterranean_coastlines }
+		available = {
+			TUR = {
+				is_puppet = no
+			}
+		}
+		
+		x = 13
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}	
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	
+	
+	
+	
+	
+	
 	
 	
 ### End ###
@@ -933,12 +1085,10 @@ focus_tree = {
 		id = TUR_army_modernisation
 		icon = GFX_goal_generic_army_doctrines
 		available = {
-			TUR = {
-			has_government = fascism
-			}
+
 		}
 		
-		x = 12
+		x = 22
 		y = 0
 		cost = 10
 		ai_will_do = {
@@ -949,19 +1099,37 @@ focus_tree = {
 		}
 	}
 	
+	focus = {
+		id = TUR_purge_the_officers
+		icon = GFX_goal_generic_war_with_comintern
+		prerequisite = { focus = TUR_army_modernisation }
+		available = {
+
+		}
+		
+		x = 22
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 39
+		}	
+		completion_reward = {
+			remove_ideas = retarded_officers
+			add_ideas = officers_purged
+		}
+	}
+	
 	
 	focus = {
 		id = TUR_catch_technological_residue
 		icon = GFX_goal_generic_demand_territory
-		prerequisite = { focus = TUR_army_modernisation }
+		prerequisite = { focus = TUR_purge_the_officers }
 		available = {
-			TUR = {
-			has_government = fascism
-			}
+
 		}
 		
-		x = 11
-		y = 1
+		x = 21
+		y = 2
 		cost = 10
 		ai_will_do = {
 			factor = 39
@@ -976,13 +1144,11 @@ focus_tree = {
 		icon = GFX_goal_generic_air_fighter
 		prerequisite = { focus = TUR_catch_technological_residue }
 		available = {
-			TUR = {
-			has_government = fascism
-			}
+
 		}
 		
-		x = 11
-		y = 2
+		x = 21
+		y = 3
 		cost = 10
 		ai_will_do = {
 			factor = 39
@@ -998,65 +1164,39 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = TUR_the_new_machine
-		icon = GFX_goal_generic_army_tanks
-		prerequisite = { focus = TUR_control_the_skies }
+		id = TUR_doctrine_effort
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = TUR_purge_the_officers }
 		available = {
-			TUR = {
-			has_government = fascism
-			}
+
 		}
 		
-		x = 11
-		y = 3
+		x = 23
+		y = 2
 		cost = 10
 		ai_will_do = {
 			factor = 39
 		}	
 		completion_reward = {
 			add_tech_bonus = {
-				name = TUR_tank_bonus
+				name = TUR_doctrine_bonus
 				bonus = 0.50
 				uses = 1
-				category = armor
+				category = land_doctrine
 			}
 		}
 	}
 	
 	focus = {
-		id = TUR_purge_the_officers
-		icon = GFX_goal_generic_war_with_comintern
-		prerequisite = { focus = TUR_army_modernisation }
+		id = TUR_german_tactics
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = TUR_doctrine_effort }
 		available = {
-			TUR = {
-			has_government = fascism
-			}
+
 		}
 		
-		x = 13
-		y = 1
-		cost = 10
-		ai_will_do = {
-			factor = 39
-		}	
-		completion_reward = {
-			remove_ideas = retarded_officers
-			add_ideas = officers_purged
-		}
-	}
-	
-	focus = {
-		id = TUR_doctrine_effort
-		icon = GFX_goal_generic_allies_build_infantry
-		prerequisite = { focus = TUR_purge_the_officers }
-		available = {
-			TUR = {
-			has_government = fascism
-			}
-		}
-		
-		x = 13
-		y = 2
+		x = 23
+		y = 3
 		cost = 10
 		ai_will_do = {
 			factor = 39
@@ -1074,46 +1214,43 @@ focus_tree = {
 	focus = {
 		id = TUR_officers_traing_program
 		icon = GFX_goal_generic_small_arms
-		prerequisite = { focus = TUR_doctrine_effort }
+		prerequisite = { focus = TUR_german_tactics }
+		prerequisite = { focus = TUR_control_the_skies }
 		available = {
-			TUR = {
-			has_government = fascism
-			}
+
 		}
 		
-		x = 13
-		y = 3
-		cost = 10
-		ai_will_do = {
-			factor = 39
-		}	
-		completion_reward = {
-			remove_ideas = officers_purged
-		}
-	}
-	
-	focus = {
-		id = TUR_german_tactics
-		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = TUR_officers_traing_program }
-		available = {
-			TUR = {
-			has_government = fascism
-			}
-		}
-		
-		x = 13
+		x = 22
 		y = 4
 		cost = 10
 		ai_will_do = {
 			factor = 39
 		}	
 		completion_reward = {
+			country_event = { id = turkey.1 }
+		}
+	}
+	
+	focus = {
+		id = TUR_the_new_machine
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = TUR_officers_traing_program }
+		available = {
+
+		}
+		
+		x = 22
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 39
+		}	
+		completion_reward = {
 			add_tech_bonus = {
-				name = TUR_doctrine_bonus
+				name = TUR_tank_bonus
 				bonus = 0.50
 				uses = 1
-				category = land_doctrine
+				category = armor
 			}
 		}
 	}

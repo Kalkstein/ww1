@@ -31,15 +31,15 @@ focus_tree = {
 		}
 		available = {
 			has_war = no
-			neutral > 0.30
+			neutrality > 0.30
 			communism > 0.30
 		}
 		completion_reward = {
-		add_political_power = 120
-		SOV = { add_timed_idea = { idea = democratic_reformers days = 365 }
-		}
-		remove_ideas = hate_of_the_peasants
-		add_ideas = distrustful_peasants
+			add_political_power = 120
+			SOV = { add_timed_idea = { idea = democratic_reformers days = 365 }
+			}
+			remove_ideas = hate_of_the_peasants
+			add_ideas = distrustful_peasants
 		}
 	}	
 	
@@ -57,7 +57,7 @@ focus_tree = {
 			has_war = no
 		}
 		completion_reward = {
-		SOV = { add_timed_idea = { idea = hope_for_reforms days = 365 } }
+			SOV = { add_timed_idea = { idea = hope_for_reforms days = 365 } }
 		}
 	}
 	
@@ -75,11 +75,11 @@ focus_tree = {
 			has_war = no
 		}
 		completion_reward = {
-		add_political_power = 120
-		remove_ideas = inefficient_bureaucracy
-		SOV = { add_timed_idea = { idea = new_officials days = 2190 } }
-		hidden_effect = {
-		country_event = { id = soviet.1 days = 365 }
+			add_political_power = 120
+			remove_ideas = inefficient_bureaucracy
+			SOV = { add_timed_idea = { idea = new_officials days = 2190 } }
+			hidden_effect = {
+				country_event = { id = soviet.1 days = 365 }
 			}
 		}
 	}
@@ -98,8 +98,8 @@ focus_tree = {
 			has_war = no
 		}
 		completion_reward = {
-		add_research_slot = 1
-		SOV = { add_timed_idea = { idea = free_universities days = 365 } }
+			add_research_slot = 1
+			SOV = { add_timed_idea = { idea = free_universities days = 365 } }
 		}
 	}
 	
@@ -117,11 +117,11 @@ focus_tree = {
 			has_war = no
 		}
 		completion_reward = {
-		SOV = { add_timed_idea = { idea = hope_for_democracy days = 14 } }
-		remove_ideas = raising_workers
-		remove_ideas = new_bourgeoisie
-		country_event = { id = soviet.18 hours = 6 }
-		country_event = { id = soviet.19 days = 14 }
+			SOV = { add_timed_idea = { idea = hope_for_democracy days = 14 } }
+			remove_ideas = raising_workers
+			remove_ideas = new_bourgeoisie
+			country_event = { id = soviet.18 hours = 6 }
+			country_event = { id = soviet.19 days = 14 }
 		}			
 	}
 	
@@ -140,8 +140,8 @@ focus_tree = {
 			has_war = no
 		}
 		completion_reward = {
-		remove_ideas = distrustful_peasants
-		add_ideas = free_peasants
+			remove_ideas = distrustful_peasants
+			add_ideas = free_peasants
 		}
 	}
 	
@@ -156,7 +156,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-		add_ideas = rural_exodus
+			add_ideas = rural_exodus
 		}
 	}
 	
@@ -174,37 +174,37 @@ focus_tree = {
 			factor = 500
 		}
 		completion_reward = {
-		11 = {
-			add_building_construction = {
-				type = bunker
-				level = 5
-				province = 6296
-				instant_build = yes
+			11 = {
+				add_building_construction = {
+					type = bunker
+					level = 5
+					province = 6296
+					instant_build = yes
 				}
 			}
-		97 = {
-			add_building_construction = {
-				type = bunker
-				level = 5
-				province = 3393
-				instant_build = yes
+			97 = {
+				add_building_construction = {
+					type = bunker
+					level = 5
+					province = 3393
+					instant_build = yes
 				}
-			add_building_construction = {
-				type = bunker
-				level = 3
-				province = 11357
-				instant_build = yes
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 11357
+					instant_build = yes
 				}	
 			}
-		92 = {
-			add_building_construction = {
-				type = bunker
-				level = 4
-				province = 3521
-				instant_build = yes
+			92 = {
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 3521
+					instant_build = yes
 				}
 			}
-			
+		}
 	}
 	
 	focus = {
@@ -218,8 +218,8 @@ focus_tree = {
 			factor = 0 
 		}
 		completion_reward = {
-		add_ideas = satisfied_bourgeoisie
-		# Revisit 1 : Berater hinzufügen
+			add_ideas = satisfied_bourgeoisie
+			# Revisit 1 : Berater hinzufügen
 		}
 	}
 	
@@ -237,12 +237,12 @@ focus_tree = {
 			has_war = no
 		}
 		completion_reward = {
-		add_ideas = communist_priests
-		remove_ideas = free_peasants
-		SOV = { add_timed_idea = { idea = progressing_agriculture days = 1825 } }
-		hidden_effect = {
-		country_event = { id = soviet.35 days = 365 }
-		}
+			add_ideas = communist_priests
+			remove_ideas = free_peasants
+			SOV = { add_timed_idea = { idea = progressing_agriculture days = 1825 } }
+			hidden_effect = {
+				country_event = { id = soviet.35 days = 365 }
+			}
 		}
 	}
 	
@@ -257,10 +257,10 @@ focus_tree = {
 			factor = 5
 		}
 		completion_reward = {
-		SOV = { add_timed_idea = { idea = imprisoned_communists days = 365 } }
-		hidden_effect = {
-		country_event = { id = soviet.7 days = 7 }
-		}
+			SOV = { add_timed_idea = { idea = imprisoned_communists days = 365 } }
+			hidden_effect = {
+				country_event = { id = soviet.7 days = 7 }
+			}
 		}
 	}
 	
@@ -295,18 +295,18 @@ focus_tree = {
 			factor = 5
 		}
 		completion_reward = {
-		add_ideas = forbidden_critic
-		hidden_effect = {
-		country_event = { id = soviet.9 days = 1 }
-		country_event = { id = soviet.8 days = 4 }
-		}
+			add_ideas = forbidden_critic
+			hidden_effect = {
+				country_event = { id = soviet.9 days = 1 }
+				country_event = { id = soviet.8 days = 4 }
+			}
 		if = {
-		limit = { has_war = yes }
-		hidden_effect = {
-		country_event = { id = soviet.25 days = 7 }}
-		}
-	}	
-}
+			limit = { has_war = yes }
+			hidden_effect = {
+				country_event = { id = soviet.25 days = 7 }}
+			}
+		}	
+	}
 	
 	focus = {
 		id = SOV_strenghten_country_nobility
@@ -340,21 +340,21 @@ focus_tree = {
 			has_war = yes
 		}
 		completion_reward = {
-		add_ideas = unlimited_tsar_power
-		if = {
-		limit = { democratic < 0.3 }
-		hidden_effect = {
-			country_event = { id = soviet.12 days = 14 }
-		}				
-		}
-		if = {
-		limit = democratic > 0.3 }
-		hidden_effect = {
-		country_event = { id = soviet.11 days = 14 }				
+			add_ideas = unlimited_tsar_power
+			if = {
+				limit = { democratic < 0.3 }
+				hidden_effect = {
+					country_event = { id = soviet.12 days = 14 }
+				}			
+			}
+			if = {
+				limit = { democratic > 0.3 }
+				hidden_effect = {
+					country_event = { id = soviet.11 days = 14 }				
+				}
 			}
 		}
-	}	
-}	
+	}
 	
 	focus = {
 		id = SOV_suppress_subversive_parties
@@ -367,27 +367,27 @@ focus_tree = {
 			factor = 5
 		}
 		available = {
-		has_war = yes }
-		completion_reward = {
-		add_ideas = purged_communists
-		hidden_effect = {
-				country_event = { id = soviet.14 hours = 6 }
+			has_war = yes 
 		}
-		if = {
-		limit = { has_war = yes
-		any_war_score < 5 }
-		hidden_effect = {
-				country_event = { id = soviet.11 days = 2 }
-				# Revisit : Hier extra Event einfügen für kommunistischen Putsch einfügen, damit neuer Text reinkann
+		completion_reward = {
+			add_ideas = purged_communists
+			hidden_effect = {
+				country_event = { id = soviet.14 hours = 6 }
+			}
+			if = {
+				limit = { has_war = yes
+				any_war_score < 5 }
+				hidden_effect = {
+					country_event = { id = soviet.11 days = 2 }
+					# Revisit : Hier extra Event einfügen für kommunistischen Putsch einfügen, damit neuer Text reinkann
 				}
-		}		
-		# Revisit : hier die nationalen Aufstände einfügen:
-		# Ukraine, Polen, Finnen
-		# Möglichkeit einfügen Narodniki zu verfolgen, endet in weniger kommunistischer Beliebtheit, aber mit Streiks und Bauernaufstand
+			}		
+			# Revisit : hier die nationalen Aufstände einfügen:
+			# Ukraine, Polen, Finnen
+			# Möglichkeit einfügen Narodniki zu verfolgen, endet in weniger kommunistischer Beliebtheit, aber mit Streiks und Bauernaufstand
+		}
 	}
-}	
 	
-		
 	focus = {
 		id = SOV_rule_of_terror
 		icon = GFX_goal_generic_CAS
@@ -401,15 +401,15 @@ focus_tree = {
 			factor = 5
 		}
 		completion_reward = {
-		remove_ideas = general_strike
-		hidden_effect = {
-		country_event = { id = soviet.15 days = 1 }
-		country_event = { id = soviet.16 days = 5 }
-		}
-		if = {
-		limit = { democratic < 0.3 }
-				hidden_effect = {
-				country_event = { id = soviet.12 days = 5 }
+			remove_ideas = general_strike
+			hidden_effect = {
+				country_event = { id = soviet.15 days = 1 }
+				country_event = { id = soviet.16 days = 5 }
+			}
+			if = {
+				limit = { democratic < 0.3 }
+					hidden_effect = {
+					country_event = { id = soviet.12 days = 5 }
 				}
 			}
 		}	
@@ -428,26 +428,28 @@ focus_tree = {
 			factor = 5
 		}
 		completion_reward = {
-		add_ideas = drafting_resistant_peasants
-		hidden_effect = {
-		country_event = { id = soviet.15 days = 1 }
-		country_event = { id = soviet.17 days = 14 }
-		}	
-		if = {
-		limit = {
-		communism < 35 }		
-		hidden_effect = { country_event = { id = soviet.12 days = 14 } }
+			add_ideas = drafting_resistant_peasants
+			hidden_effect = {
+				country_event = { id = soviet.15 days = 1 }
+				country_event = { id = soviet.17 days = 14 }
+			}	
+			if = {
+				limit = { communism < 35 }		
+				hidden_effect = { 
+					country_event = { id = soviet.12 days = 14 }
+				}
+			}
+			if = {
+				limit = { communism > 35 }
+				hidden_effect = {
+					country_event = { id = soviet.11 days = 14 }
+				}
+			}
+			# revisit 3 : die ganzen putschereignisse hier eventuell noch spezieller zugeschnitten machen
 		}
-		if = {
-		limit = { communism > 35 }
-		hidden_effect = {
-		country_event = { id = soviet.11 days = 14 } }
-		}
-		# revisit 3 : die ganzen putschereignisse hier eventuell noch spezieller zugeschnitten machen
-	}
 	}
 
-focus = {
+	focus = {
 		id = SOV_easier_equipment
 		icon = GFX_goal_generic_axis_build_infantry
 		x = 2
@@ -463,11 +465,11 @@ focus = {
 				bonus = 0.5
 				uses = 1
 				category = infantry_weapons
+			}
 		}
 	}
-	}
 
-focus = {
+	focus = {
 		id = SOV_mass_army
 		icon = GFX_goal_generic_axis_build_infantry
 		prerequisite = { focus = SOV_easier_equipment }
@@ -482,7 +484,7 @@ focus = {
 		}
 	}
 
-focus = {
+	focus = {
 		id = SOV_draft_peasant_childs
 		icon = GFX_goal_generic_axis_build_infantry
 		prerequisite = { focus = SOV_mass_army }
@@ -497,7 +499,7 @@ focus = {
 		}
 	}
 
-focus = {
+	focus = {
 		id = SOV_religious_indoctrination
 		icon = GFX_goal_generic_axis_build_infantry
 		prerequisite = { focus = SOV_draft_peasant_childs }
@@ -509,23 +511,23 @@ focus = {
 		}
 		completion_reward = {
 			add_ideas = religious_army
-		if = {
-		limit = {
-		has_war = yes
-		any_war_score < 0
-		communism < 35
-		neutrality < 45
-		}
-		hidden_effect = {
-			country_event = { id = soviet.32 days = 14 }
-		}
-		}
-		if = {
-		limit = { communism > 35 }
-		hidden_effect = {
-			country_event = { id = soviet.33 days = 14 }
-		}
-		}
+			if = {
+				limit = {
+					has_war = yes
+					any_war_score < 0
+					communism < 35
+					neutrality < 45
+				}
+				hidden_effect = {
+					country_event = { id = soviet.32 days = 14 }
+				}
+			}
+			if = {
+				limit = { communism > 35 }
+				hidden_effect = {
+					country_event = { id = soviet.33 days = 14 }
+				}
+			}
 		}
 	}
 	
@@ -553,7 +555,7 @@ focus = {
 	
 # Moderne Armee Treee
 	
-focus = {
+	focus = {
 		id = SOV_study_the_russo_japanese_war
 		icon = GFX_goal_generic_small_arms
 		x = 4
@@ -566,17 +568,16 @@ focus = {
 		prerequisite = { focus = SOV_end_aristocratic_supremacy }
 		
 		completion_reward = {
-		add_tech_bonus = {
+			add_tech_bonus = {
 				bonus = 0.5
 				uses = 2
 				category = land_doctrine
 			}
-			SOV = { add_timed_idea = { idea = thoughts_about_incompetence days = 365 }	
+			SOV = { add_timed_idea = { idea = thoughts_about_incompetence days = 365 }	}
 		}
-	}
-}	
+	}	
 
-focus = {
+	focus = {
 		id = SOV_new_officers_corps
 		icon = GFX_goal_generic_small_arms
 		x = 4
@@ -589,15 +590,15 @@ focus = {
 		prerequisite = { focus = SOV_end_aristocratic_supremacy }
 		
 		completion_reward = {
-		SOV = { add_timed_idea = { idea = new_officers days = 1825 } }
-		hidden_effect = {
-		country_event = { id = soviet.26 days = 365 }
-		country_event = { id = soviet.30}
-		}
+			SOV = { add_timed_idea = { idea = new_officers days = 1825 } }
+			hidden_effect = {
+				country_event = { id = soviet.26 days = 365 }
+				country_event = { id = soviet.30}
+			}
 		}
 	}	
 	
-focus = {
+	focus = {
 		id = SOV_new_production_techniques
 		icon = GFX_goal_generic_small_arms
 		x = 4
@@ -610,19 +611,17 @@ focus = {
 		prerequisite = { focus = SOV_new_officers_corps }
 		
 		completion_reward = {
-		add_tech_bonus = {
+			add_tech_bonus = {
 				name = infantry_weapons_bonus
 				bonus = 0.5
 				uses = 2
 				category = infantry_weapons
 				category = artillery
 			}
-		add_tech_bonus = {
-				add_tech_bonus = {
+			add_tech_bonus = {
 				bonus = 0.5
 				uses = 1
 				category = land_doctrine
-			}
 			}	
 		}
 	}
@@ -646,23 +645,23 @@ focus = {
 		prerequisite = { focus = SOV_new_production_techniques }
 		
 		completion_reward = {
-		SOV = { add_timed_idea = { idea = modernizing_army days = 1825 } }
-		remove_ideas = army_problems
-		add_tech_bonus = {
+			SOV = { add_timed_idea = { idea = modernizing_army days = 1825 } }
+			remove_ideas = army_problems
+			add_tech_bonus = {
 				name = infantry_weapons_bonus
 				bonus = 0.5
 				uses = 1
 				category = infantry_weapons
 				category = artillery
 			}
-		hidden_effect = {
-		country_event = { id = soviet.40 days = 365 }
-		country_event = { id = soviet.39}
-		}
+			hidden_effect = {
+				country_event = { id = soviet.40 days = 365 }
+				country_event = { id = soviet.39}
+			}
 		}
 	}
 	
-focus = {
+	focus = {
 		id = SOV_state_research_labs
 		icon = GFX_focus_research
 		prerequisite = { focus = SOV_rationalised_administration }
@@ -674,11 +673,11 @@ focus = {
 			factor = 20 
 		}
 		completion_reward = {
-		add_research_slot = 1
+			add_research_slot = 1
 		}
 	}
 
-focus = {
+	focus = {
 		id = raise_training_time
 		icon = GFX_focus_research
 		prerequisite = { focus = SOV_modernize_military }
@@ -689,11 +688,11 @@ focus = {
 			factor = 20 
 		}
 		completion_reward = {
-		add_ideas = { trained_army }
+			add_ideas = { trained_army }
 		}
 	}
 
-focus = {
+	focus = {
 		id = SOV_hire_foreign_officers
 		icon = GFX_focus_research
 		prerequisite = { focus = SOV_state_research_labs }
@@ -704,11 +703,11 @@ focus = {
 			factor = 20 
 		}
 		completion_reward = {
-		add_ideas = foreign_officers
+			add_ideas = foreign_officers
 		}
 	}
 
-focus = {
+	focus = {
 		id = SOV_new_weapons
 		icon = GFX_goal_generic_army_tanks
 		prerequisite = { focus = SOV_hire_foreign_officers }
@@ -719,12 +718,12 @@ focus = {
 			factor = 20 
 		}
 		completion_reward = {
-		add_tech_bonus = {
+			add_tech_bonus = {
 				name = armor_bonus
 				bonus = 0.5
 				uses = 2
 				category = armor
-			# Reivisit ! : Hier noch den Flugzeugbonus reinmachen sobald feststeht wie die Tchniken heißen	
+				# Reivisit ! : Hier noch den Flugzeugbonus reinmachen sobald feststeht wie die Tchniken heißen	
 			}
 		}
 	}	
@@ -732,300 +731,304 @@ focus = {
 # Diplomatie
 # Entente-Mitglied
 
-focus = {
-	id = SOV_support_panslavism
-	icon = GFX_goal_generic_demand_territory
-	x = 22
-	y = 0
-	cost = 10
-	ai_will_do = {
-		factor = 30
+	focus = {
+		id = SOV_support_panslavism
+		icon = GFX_goal_generic_demand_territory
+		x = 22
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 30
+		}
+		completion_reward = {
+			SOV = { add_timed_idea = { idea = slavism_euphoria days = 365 } }
+			SER = { add_opinion_modifier = { target = SOV modifier = russian_support } }
+			BUL = { add_opinion_modifier = { target = SOV modifier = russian_support } }
+			AUS = { add_opinion_modifier = { target = SOV modifier = russian_saber_rattling } }
+			GER = { add_opinion_modifier = { target = SOV modifier = russian_saber_rattling } }
+			set_rule = {
+				can_send_volunteers = yes
+			}
+			# revisit 1 : Weltspannung steigern einfügen, 7%
+			hidden_effect = {
+				country_event = { id = soviet.45 days = 2 } 
+			}
+		}
 	}
-	completion_reward = {
-	SOV = { add_timed_idea = { idea = slavism_euphoria days = 365 } }
-	SER = { add_opinion_modifier = { target = SOV modifier = russian_support } }
-	BUL = { add_opinion_modifier = { target = SOV modifier = russian_support } }
-	AUS = { add_opinion_modifier = { target = SOV modifier = russian_saber_rattling } }
-	GER = { add_opinion_modifier = { target = SOV modifier = russian_saber_rattling } }
-	set_rule = {
-	can_send_volunteers = yes
-	}
-	# revisit 1 : Weltspannung steigern einfügen, 7%
-	hidden_effect = {country_event = { id = soviet.45 days = 2 } }
-	}
-}
 
-focus = {
-	id = SOV_support_balkan_league
-	icon = GFX_goal_generic_territory_or_war
-	# desc: Da das O. R. ein Verbündeter Deutschlands ist sollten wir für seine Schwächung sorgen
-	x = 22
-	y = 1
-	cost = 1
-	ai_will_do = {
-		factor = 30
+	focus = {
+		id = SOV_support_balkan_league
+		icon = GFX_goal_generic_territory_or_war
+		# desc: Da das O. R. ein Verbündeter Deutschlands ist sollten wir für seine Schwächung sorgen
+		x = 22
+		y = 1
+		cost = 1
+		ai_will_do = {
+			factor = 30
+		}
+		prerequisite = { focus = SOV_support_panslavism }
+		available = {
+			TUR = { has_war = yes }
+			BUL = { has_war = yes }
+		}
+		completion_reward = {
+			SER = { add_opinion_modifier = { target = SOV modifier = russian_support } }
+			BUL = { add_opinion_modifier = { target = SOV modifier = russian_support } }
+			# Revisit 3 : Speziell zugeschnittene Boni einfügen
+		}
 	}
-	prerequisite = { focus = SOV_support_panslavism }
-	available = {
-	TUR = { has_war = yes }
-	BUL = { has_war = yes }
-	}
-	completion_reward = {
-	SER = { add_opinion_modifier = { target = SOV modifier = russian_support } }
-	BUL = { add_opinion_modifier = { target = SOV modifier = russian_support } }
-	# Revisit 3 : Speziell zugeschnittene Boni einfügen
-	}
-}
 
-focus = {
-	id = SOV_cooperate_with_bulgaria
-	icon = GFX_goal_molotov_ribbentrop_pact
-	x = 20
-	y = 2
-	cost = 1
-	ai_will_do = {
-		factor = 5
-	}
-	prerequisite = { focus = SOV_support_balkan_league }
-	available = {
-	BUL = { has_war = no }
-	has_war = no
-	is_puppet = no
-	country_exists = BUL
-	}
-	cancel = {
-				has_war_with = BUL
-				NOT = { country_exists = BUL }
+	focus = {
+		id = SOV_cooperate_with_bulgaria
+		icon = GFX_goal_molotov_ribbentrop_pact
+		x = 20
+		y = 2
+		cost = 1
+		ai_will_do = {
+			factor = 5
+		}
+		prerequisite = { focus = SOV_support_balkan_league }
+		available = {
+			BUL = { has_war = no }
+			has_war = no
+			is_puppet = no
+			country_exists = BUL
+		}
+		cancel = {
+			has_war_with = BUL
+			NOT = { country_exists = BUL }
+		}	
+		cancel_if_invalid = no
+		completion_reward = {
+			BUL = { country_event = { id = soviet.46 days = 1 }}
+			hidden_effect = {
+				AUS = { country_event = { id = soviet.54 hours = 6 }}
+			}
+		}
 	}	
-	cancel_if_invalid = no
-	completion_reward = {
-	BUL = { country_event = { id = soviet.46 days = 1 }}
-	hidden_effect = {
-	AUS = { country_event = { id = soviet.54 hours = 6 }}
-	}
-	}
-}	
 
-focus = {
-	id = SOV_alliance_with_bulgaria
-	icon = GFX_goal_generic_dangerous_deal
-	x = 20
-	y = 3
-	cost = 10
-	ai_will_do = {
-		factor = 20
-		modifier = {
+	focus = {
+		id = SOV_alliance_with_bulgaria
+		icon = GFX_goal_generic_dangerous_deal
+		x = 20
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 20
+			modifier = {
 				factor = 0
 				has_war = yes
 			}
-	}
-	prerequisite = { focus = SOV_cooperate_with_bulgaria }
-	bypass = {
-	BUL = {
-		is_in_faction_with = SOV
+		}
+		prerequisite = { focus = SOV_cooperate_with_bulgaria }
+		bypass = {
+			BUL = {
+				is_in_faction_with = SOV
+			}
+		}
+		available = {
+			BUL = { has_war = no }
+			has_war = no
+			is_puppet = no
+			country_exists = BUL
+			NOT = { is_in_faction_with = AUS }
+		}
+		cancel = {
+			has_war_with = BUL
+			NOT = { country_exists = BUL }
+		}	
+		cancel_if_invalid = no
+		completion_reward = {
+			BUL = { country_event = { id = soviet.49 days = 1 }}
 		}
 	}
-	available = {
-	BUL = { has_war = no }
-	has_war = no
-	is_puppet = no
-	country_exists = BUL
-	NOT = { is_in_faction_with = AUS }
-	}
-	cancel = {
-		has_war_with = BUL
-		NOT = { country_exists = BUL }
-		}	
-	cancel_if_invalid = no
-	completion_reward = {
-	BUL = { country_event = { id = soviet.49 days = 1 }}
-	}
-}
 
-focus = {
-	id = SOV_war_against_romania
-	icon = GFX_goal_generic_forceful_treaty
-	x = 22
-	y = 4
-	cost = 10
-	ai_will_do = {
-		factor = 20
-		modifier = {
+	focus = {
+		id = SOV_war_against_romania
+		icon = GFX_goal_generic_forceful_treaty
+		x = 22
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 20
+			modifier = {
 				factor = 0
-					has_war_with = AUS 
-				}
-		modifier = {
+				has_war_with = AUS 
+			}
+			modifier = {
 				factor = 0
 				ROM = {
-				is_in_faction_with = AUS
-					}
+					is_in_faction_with = AUS
 				}
+			}
 		}
-	prerequisite = { focus = SOV_alliance_with_bulgaria }
-	available = {
-	is_puppet = no
-	country_exists = ROM
-	}
-	bypass = {
-		79 = { is_owned_by = SOV }
-		46 = { is_owned_by = BUL }
-		39 = { is_owned_by = BUL }
-	}
-	cancel = {
+		prerequisite = { focus = SOV_alliance_with_bulgaria }
+		available = {
+			is_puppet = no
+			country_exists = ROM
+		}
+		bypass = {
+			79 = { is_owned_by = SOV }
+			46 = { is_owned_by = BUL }
+			39 = { is_owned_by = BUL }
+		}
+		cancel = {
 			NOT = { country_exists = ROM }
 		}
-	cancel_if_invalid = yes
-	completion_reward = {
-	79 = { add_claim_by = SOV }
-	39 = { add_claim_by = BUL }
-	46 = { add_claim_by = BUL }
-	hidden_effect = {
-	AUS = { country_event = { id = soviet.53 hours = 1 }}}
-	}
-}	
-
-focus = {
-	id = SOV_slavic_treaty
-	icon = GFX_goal_generic_dangerous_deal
-	x = 20
-	y = 4
-	cost = 10
-	ai_will_do = {
-		factor = 20	
-	}
-	prerequisite = { focus = SOV_alliance_with_bulgaria }
-	bypass = {
-	SER = {
-	is_in_faction_with = SOV
-	}}
-	available = {
-	has_war = no
-	SER = { has_war = no }
-	is_puppet = no
-	country_exists = SER
-	}
-	cancel = {
-		has_war_with = SER
-		NOT = { country_exists = SER }
-	}
-	cancel_if_invalid = no
-	completion_reward = {
-	SER = { country_event = { id = soviet.52 days = 1 }}
-	}
-}
-
-focus = {
-	id = SOV_free_the_slavs
-	icon = GFX_goal_generic_dangerous_deal
-	x = 20
-	y = 7
-	cost = 10
-	ai_will_do = {
-		factor = 20	
-	}
-	prerequisite = { focus = SOV_slavic_treaty  focus = SOV_a_offensive_war }
-	available = { 
-	has_war_with = AUS
-	has_war_with = GER
-	}
-	cancel = {
-		has_war_with = SER
-		NOT = { country_exists = SER }
-	}
-	cancel_if_invalid = no
-	select_effect = {
-			country_event = { id = soviet.59 days = 20 }
-		}
-	completion_reward = {
-	85 = { add_claim_by = SOV }
-	17 = { add_claim_by = SOV }
-	88 = { add_claim_by = SOV }
-	91 = { add_claim_by = SOV }
-	39 = { add_claim_by = SOV }
-	71 = { add_claim_by = SOV }
-	70 = { add_claim_by = SOV }
-	72 = { add_claim_by = SOV }
-	664 = { add_claim_by = SOV }
-	75 = { add_claim_by = SOV }
-	9 = { add_claim_by = SOV }
-	if = {
-	limit = {
-	is_in_faction_with = SER
-	}
-	104 = { add_claim_by = SER }
-	109 = { add_claim_by = SER }
-	103 = { add_claim_by = SER }
-	102 = { add_claim_by = SER }
-	45 = { add_claim_by = SER }
-	}
-	}
-}
-
-focus = {
-	id = SOV_smash_the_ottomans
-	icon = GFX_goal_generic_territory_or_war
-	x = 22
-	y = 2
-	cost = 10
-	ai_will_do = {
-		factor = 50	
-	}
-	prerequisite = { focus = SOV_support_balkan_league }
-	available = {
-	has_war = no
-	is_puppet = no
-	country_exists = TUR
-	OR = {
-	has_global_flag = balkan_war
-	has_global_flag = balkan_war_over
-	}
-	SOV = { NOT = { is_in_faction_with = TUR } }
-	}
-	cancel_if_invalid = yes
-	
-	select_effect = {
-		if = {
-		limit = { NOT = { has_war_with = GER } } 
-		AUS = { country_event = { id = soviet.61 days = 20 } }
+		cancel_if_invalid = yes
+		completion_reward = {
+			79 = { add_claim_by = SOV }
+			39 = { add_claim_by = BUL }
+			46 = { add_claim_by = BUL }
+			hidden_effect = {
+				AUS = { country_event = { id = soviet.53 hours = 1 }}
+			}
 		}
 	}	
+
+	focus = {
+		id = SOV_slavic_treaty
+		icon = GFX_goal_generic_dangerous_deal
+		x = 20
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 20	
+		}
+		prerequisite = { focus = SOV_alliance_with_bulgaria }
+		bypass = {
+			SER = {
+			is_in_faction_with = SOV
+			}
+		}
+		available = {
+			has_war = no
+			SER = { has_war = no }
+			is_puppet = no
+			country_exists = SER
+		}
+		cancel = {
+			has_war_with = SER
+			NOT = { country_exists = SER }
+		}
+		cancel_if_invalid = no
+		completion_reward = {
+			SER = { country_event = { id = soviet.52 days = 1 }}
+		}
+	}
+
+	focus = {
+		id = SOV_free_the_slavs
+		icon = GFX_goal_generic_dangerous_deal
+		x = 20
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 20	
+		}
+		prerequisite = { focus = SOV_slavic_treaty  focus = SOV_a_offensive_war }
+		available = { 
+			has_war_with = AUS
+			has_war_with = GER
+		}
+		cancel = {
+			has_war_with = SER
+			NOT = { country_exists = SER }
+		}
+		cancel_if_invalid = no
+		select_effect = {
+				country_event = { id = soviet.59 days = 20 }
+		}
+		completion_reward = {
+			85 = { add_claim_by = SOV }
+			17 = { add_claim_by = SOV }
+			88 = { add_claim_by = SOV }
+			91 = { add_claim_by = SOV }
+			39 = { add_claim_by = SOV }
+			71 = { add_claim_by = SOV }
+			70 = { add_claim_by = SOV }
+			72 = { add_claim_by = SOV }
+			664 = { add_claim_by = SOV }
+			75 = { add_claim_by = SOV }
+			9 = { add_claim_by = SOV }
+			if = {
+				limit = {
+					is_in_faction_with = SER
+				}
+				104 = { add_claim_by = SER }
+				109 = { add_claim_by = SER }
+				103 = { add_claim_by = SER }
+				102 = { add_claim_by = SER }
+				45 = { add_claim_by = SER }
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_smash_the_ottomans
+		icon = GFX_goal_generic_territory_or_war
+		x = 22
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 50	
+		}
+		prerequisite = { focus = SOV_support_balkan_league }
+		available = {
+			has_war = no
+			is_puppet = no
+			country_exists = TUR
+			OR = {
+				has_global_flag = balkan_war
+				has_global_flag = balkan_war_over
+			}
+			SOV = { NOT = { is_in_faction_with = TUR } }
+		}
+		cancel_if_invalid = yes
 	
-	completion_reward = {
-	AUS = { add_opinion_modifier = { target = SOV modifier = russian_saber_rattling } }
-	GER = { add_opinion_modifier = { target = SOV modifier = russian_saber_rattling } }
-	TUR = { add_opinion_modifier = { target = SOV modifier = russian_saber_rattling } }
-	if = {
-		limit = {
-			TUR = { owns_state = 354 }
+		select_effect = {
+			if = {
+				limit = { NOT = { has_war_with = GER } } 
+				AUS = { country_event = { id = soviet.61 days = 20 } }
+			}
+		}	
+	
+		completion_reward = {
+			AUS = { add_opinion_modifier = { target = SOV modifier = russian_saber_rattling } }
+			GER = { add_opinion_modifier = { target = SOV modifier = russian_saber_rattling } }
+			TUR = { add_opinion_modifier = { target = SOV modifier = russian_saber_rattling } }
+			if = {
+				limit = {
+					TUR = { owns_state = 354 }
+				}
+				SOV = { 354 = { add_claim_by = SOV } }
+			}
+			if = {
+				limit = {
+					TUR = { owns_state = 353 }
+				}
+				SOV = { 353 = { add_claim_by = SOV } }
+			}
+			if = {
+				limit = {
+					TUR = { owns_state = 355 }
+				}
+				SOV = { 355 = { add_claim_by = SOV } }
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						has_global_flag = balkan_war
+						NOT = { has_global_flag = balkan_war_over }
+					}
+					BUL = { add_opinion_modifier = { target = SOV modifier = russia_takes_the_reward } }
+					GRE = { add_opinion_modifier = { target = SOV modifier = russia_takes_the_reward } }
+					SER = { add_opinion_modifier = { target = SOV modifier = russia_takes_the_reward } }	
+					MNT = { add_opinion_modifier = { target = SOV modifier = russia_takes_the_reward } }	
+				}
+			}
 		}
-		SOV = { 354 = { add_claim_by = SOV } }
-		}
-	if = {
-		limit = {
-			TUR = { owns_state = 353 }
-		}
-		SOV = { 353 = { add_claim_by = SOV } }
-		}
-	if = {
-		limit = {
-			TUR = { owns_state = 355 }
-		}
-		SOV = { 355 = { add_claim_by = SOV } }
-		}
-	hidden_effect = {
-	if = {
-		limit = {
-			has_global_flag = balkan_war
-			NOT = { has_global_flag = balkan_war_over }
-		}
-		BUL = { add_opinion_modifier = { target = SOV modifier = russia_takes_the_reward } }
-		GRE = { add_opinion_modifier = { target = SOV modifier = russia_takes_the_reward } }
-		SER = { add_opinion_modifier = { target = SOV modifier = russia_takes_the_reward } }	
-		MNT = { add_opinion_modifier = { target = SOV modifier = russia_takes_the_reward } }	
-		}
-	}
-	}
-}	
+	}	
 	
 focus = {
 	id = SOV_take_the_dardanelles
