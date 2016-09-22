@@ -1,21 +1,15 @@
-﻿capital = 13
+﻿capital = 329
 
-oob = "EST_1936"
+oob = "TAN_1936"
 
-set_research_slots = 3
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
 
 add_ideas = {
 	limited_conscription
 }
-
-set_technology = {
-	infantry_weapons = 1
-	infantry_weapons1 = 1
-	early_fighter = 1
-	early_submarine = 1
-}
-
-set_convoys = 5
 
 1939.1.1 = {
 
@@ -26,38 +20,26 @@ set_convoys = 5
 	complete_national_focus = equipment_effort
 	complete_national_focus = motorization_effort
 	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = large_navy
+	complete_national_focus = construction_effort_2
+	complete_national_focus = production_effort_2
+	complete_national_focus = infrastructure_effort
 	complete_national_focus = industrial_effort
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
 	
-	oob = "EST_1939"
+	oob = "TAN_1939"
 	set_technology = {
-		tech_recon = 1
-		tech_support = 1		
-		tech_engineers = 1
-		fighter1 = 1
-		early_bomber = 1
-		CAS1 = 1
-		gw_artillery = 1
-		interwar_artillery_1 = 1
-		basic_submarine = 1
+		infantry_weapons = 1
 
 		#doctrines
-		air_superiority = 1
 		grand_battle_plan = 1
 		trench_warfare = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-		convoy_sailing = 1
 
 		#electronics
 		electronic_mechanical_engineering = 1
 		radio = 1
 		radio_detection = 1
 		mechanical_computing = 1
-		computing_machine = 1
 
 		#industry
 		basic_machine_tools = 1
@@ -65,10 +47,8 @@ set_convoys = 5
 		advanced_machine_tools = 1
 		synth_oil_experiments = 1
 		oil_plant = 1
-		improved_oil_plant = 1
 		construction1 = 1
 		construction2 = 1
-		frontline_fortification = 1
 	}
 }
 
@@ -76,27 +56,36 @@ set_politics = {
 
 	parties = {
 		democratic = { 
-			popularity = 20
+			popularity = 0
+			banned = yes
 		}
 
 		fascism = {
-			popularity = 15
+			popularity = 0
+			banned = yes
 		}
 		
 		communism = {
-			popularity = 5
+			popularity = 100
 			#banned = no #default is no
-		}
-		
-		neutrality = { 
-			popularity = 60
 		}
 	}
 	
-	ruling_party = neutrality
-	last_election = "1932.5.21"
+	ruling_party = communism
+	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Salchak Toka"
+	desc = "POLITICS_SALCHAK_TOKA_DESC"
+	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_1.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+		#
+	}
 }
 
 1939.1.1 = {
@@ -104,37 +93,24 @@ set_politics = {
 
 		parties = {
 			democratic = { 
-				popularity = 20
+				popularity = 0
+				banned = yes
 			}
 
 			fascism = {
-				popularity = 15
+				popularity = 0
+				banned = yes
 			}
 			
 			communism = {
-				popularity = 5
+				popularity = 100
 				#banned = no #default is no
-			}
-			
-			neutrality = { 
-				popularity = 60
 			}
 		}
 		
-		ruling_party = neutrality
-		last_election = "1938.2.25"
+		ruling_party = communism
+		last_election = "1936.1.1"
 		election_frequency = 48
 		elections_allowed = no
-	}
-}
-
-create_country_leader = {
-	name = "Konstantin Päts"
-	desc = "POLITICS_KONSTANTIN_PATS_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-		#
 	}
 }

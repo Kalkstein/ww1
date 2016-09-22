@@ -1370,13 +1370,11 @@ focus_tree = {
 					type = infrastructure
 					level = 3
 					instant_build = yes
-					add_extra_state_shared_building_slots = 3
 				}
 				add_building_construction = {
 					type = industrial_complex
 					level = 3
 					instant_build = yes
-					add_extra_state_shared_building_slots = 3
 				}
 			}
 		}
@@ -2392,6 +2390,7 @@ focus_tree = {
 		completion_reward = {
 			set_rule = { can_send_volunteers = yes }
 			add_ideas = volunteer_corps_focus
+		}
 	}
 	
 	focus = { 
@@ -2565,7 +2564,7 @@ focus_tree = {
 		}
 	}
 	
-	focus = { 
+	focus = {
 		id = BUL_field_hospitals 
 		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = BUL_qfr }
@@ -3049,7 +3048,7 @@ focus_tree = {
 		}
 	}
 	
-	focus = { 
+	focus = {
 		id = BUL_foreign_planes
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = BUL_heavy_aircraft }
@@ -3129,7 +3128,7 @@ focus_tree = {
 		}
 	}
 	
-	focus = { 
+	focus = {
 		id = BUL_more_artillery
 		icon = GFX_goal_generic_army_artillery2 
 		prerequisite = { focus = BUL_experimental_equipment }
@@ -3276,6 +3275,7 @@ focus_tree = {
 	focus = {
 		id = BUL_navy 
 	}
+}
 	
 	
 		
