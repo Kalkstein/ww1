@@ -1247,7 +1247,7 @@ country_event = {
 
 # Russian Ultimatum
 country_event = {
-	id news.320
+	id = news.320
 	title = news.320.t
 	desc = news.321.d
 	picture = GFX_news_event_034
