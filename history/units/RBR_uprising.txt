@@ -1,0 +1,235 @@
+﻿division_template = {
+	name = "Peasants Division"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	priority = 10
+}
+
+division_template = {
+	name = "Workers Division"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		artillery = { x = 3 y = 0 }
+	}
+	priority = 5
+}
+
+units = {
+	division = {
+		name = "1.Peasants Division"
+		location = 9488
+		division_template = "Peasants Division"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "2.Peasants Division"
+		location = 11476
+		division_template = "Peasants Division"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "3.Peasants Division"
+		location = 11459
+		division_template = "Peasants Division"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "4.Peasants Division"
+		location = 484
+		division_template = "Peasants Division"
+		start_experience_factor = 0.3
+	}
+	
+		division = {
+		name = "5.Peasants Division"
+		location = 3478
+		division_template = "Peasants Division"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "6.Peasants Division"
+		location = 3505
+		division_template = "Peasants Division"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "7.Peasants Division"
+		location = 11527
+		division_template = "Peasants Division"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "8.Peasants Division"
+		location = 3582
+		division_template = "Peasants Division"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "9.Peasants Division"
+		location = 6506
+		division_template = "Peasants Division"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "10.Peasants Division"
+		location = 9502
+		division_template = "Peasants Division"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "11.Peasants Division"
+		location = 11555
+		division_template = "Peasants Division"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "12.Peasants Division"
+		location = 6494
+		division_template = "Peasants Division"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "1. Workers Division"
+		location = 413
+		division_template = "Peasants Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.7
+	}
+		division = {
+		name = "2. Workers Divsion"
+		location = 413
+		division_template = "Workers Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.7
+	}
+		division = {
+		name = "15.Peasants Division"
+		location = 11475
+		division_template = "Peasants Division"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "16.Peasants Division"
+		location = 6428
+		division_template = "Peasants Division"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "17.Peasants Division"
+		location = 3567
+		division_template = "Peasants Division"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "18.Peasants Division"
+		location = 6587
+		division_template = "Peasants Division"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "19.Peasants Division"
+		location = 6492
+		division_template = "Peasants Division"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "20.Peasants Division"
+		location = 9326
+		division_template = "Peasants Division"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "3.Workers Division"
+		location = 483
+		division_template = "Workers Divison"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.7
+	}
+		division = {
+		name = "22.Peasants Division"
+		location = 3578
+		division_template = "Peasants Division"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "4.Workers Division"
+		location = 326
+		division_template = "Workers Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.7
+	}
+		division = {
+		name = "24.Peasants Division"
+		location = 11459
+		division_template = "Peasants Division"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "25.Peasants Division"
+		location = 9502
+		division_template = "Peasants Division"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "26.Peasants Division"
+		location = 3567
+		division_template = "Peasants Division"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "5.Workers Division"
+		location = 413
+		division_template = "Workers Division"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "28.Peasants Division"
+		location = 483
+		division_template = "Peasants Division"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "29.Peasants Division"
+		location = 3578
+		division_template = "Peasants Division"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "6.Workers Division"
+		location = 326
+		division_template = "Workers Division"
+		start_experience_factor = 0.3
+	}
+}
+
+### Starting Equipment ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "RBR"
+		}
+		requested_factories = 10
+		progress = 0.28
+		efficiency = 100
+	}
+}
