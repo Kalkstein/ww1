@@ -137,7 +137,10 @@ ideas = {
 			}
 					
 			allowed_civil_war = {
-				yes
+				has_government = communism
+				has_government = democratic
+				has_government = neutrality
+				has_government = facism
 				}
 			
 			picture = officers_purged
