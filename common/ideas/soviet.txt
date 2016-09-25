@@ -8,20 +8,6 @@ ideas = {
 	#Starting Effects
 	
 	country = {
-		GER_support_communism_in_russia_idea = {
-		
-			removal_cost = -1
-			
-			allowed = {
-				always = no #added via focus
-			}
-			
-			picture = generic_intel_bonus
-			
-			modifier = {
-				communism_drift = 0.05
-			}
-		}
 		hate_of_the_peasants = {
 				
 			removal_cost = -1
@@ -52,11 +38,11 @@ ideas = {
 			always = no # added via focus
 			}
 					
-				allowed_civil_war = {
-					has_government = democratic
-					has_government = neutral
-					has_government = communism
-					}
+			allowed_civil_war = {
+				has_government = democratic
+				has_government = neutral
+				has_government = communism
+				}
 			
 			picture = generic_manpower_bonus
 
@@ -64,6 +50,7 @@ ideas = {
 				political_power_factor = -0.3
 				research_time_factor = 0.3
 				production_speed_buildings_factor = -0.30
+				production_factory_efficiency_gain_factor = -0.30
 				}
 			
 		}
@@ -76,10 +63,10 @@ ideas = {
 				always = no # added via focus
 			}
 					
-				allowed_civil_war = {
-					has_government = democratic
-					has_government = neutral
-					}
+			allowed_civil_war = {
+				has_government = democratic
+				has_government = neutral
+				}
 			
 			picture = sisu
 
@@ -96,7 +83,6 @@ ideas = {
 				artillery = -0.30
 				motorized_equipment = -0.30
 				air_equipment = -0.30 
-				# revisit 1 : Hier einen Malus bei Planning Speed einfügen, die deutschen haben da einen positiven Effekt
 				}
 		}
 		
@@ -108,10 +94,10 @@ ideas = {
 				always = no # added via focus
 			}
 					
-				allowed_civil_war = {
-					has_government = democratic
-					has_government = neutral
-					}
+			allowed_civil_war = {
+				has_government = democratic
+				has_government = neutral
+				}
 			
 			picture = trotskyite_plot_purged
 
@@ -129,10 +115,10 @@ ideas = {
 				always = no # added via focus
 			}
 					
-				allowed_civil_war = {
-					has_government = democratic
-					has_government = neutral
-					}
+			allowed_civil_war = {
+				has_government = democratic
+				has_government = neutral
+				}
 			
 			picture = generic_manpower_bonus
 
@@ -147,14 +133,15 @@ ideas = {
 			removal_cost = -1
 			
 			allowed = {
-				always = no # added via focus
+				always = no 
 			}
 					
-				allowed_civil_war = {
-					has_government = democratic
-					has_government = neutral
-					has_government = communism
-					}
+			allowed_civil_war = {
+				has_government = communism
+				has_government = democratic
+				has_government = neutrality
+				has_government = facism
+				}
 			
 			picture = officers_purged
 
@@ -553,6 +540,7 @@ ideas = {
 			political_power_factor = -0.3
 			research_time_factor = 0.3
 			production_speed_buildings_factor = -0.30
+			production_factory_efficiency_gain_factor = -0.30
 			unity_factor = -0.07
 			}
 		}
@@ -574,6 +562,7 @@ ideas = {
 			political_power_factor = -0.25
 			research_time_factor = 0.25
 			production_speed_buildings_factor = -0.25
+			production_factory_efficiency_gain_factor = -0.25
 			unity_factor = -0.07
 			}
 		}
@@ -595,6 +584,7 @@ ideas = {
 			political_power_factor = -0.20
 			research_time_factor = 0.20
 			production_speed_buildings_factor = -0.20
+			production_factory_efficiency_gain_factor = -0.20
 			unity_factor = -0.07
 			}
 		}
@@ -616,6 +606,7 @@ ideas = {
 			political_power_factor = -0.15
 			research_time_factor = 0.15
 			production_speed_buildings_factor = -0.15
+			production_factory_efficiency_gain_factor = -0.15
 			unity_factor = -0.05
 			}
 		}
@@ -637,6 +628,7 @@ ideas = {
 			political_power_factor = -0.10
 			research_time_factor = 0.10
 			production_speed_buildings_factor = -0.10
+			production_factory_efficiency_gain_factor = -0.10
 			unity_factor = -0.03
 			}
 		}
@@ -658,6 +650,7 @@ ideas = {
 			political_power_factor = -0.05
 			research_time_factor = 0.05
 			production_speed_buildings_factor = -0.05
+			production_factory_efficiency_gain_factor = -0.05
 			unity_factor = -0.01
 			}
 		}
@@ -1921,6 +1914,486 @@ slavism_euphoria = {
 		}
 	}
 	
+	cowardly_government = {
+	removal_cost = -1
+			
+		allowed = {
+			always = no # added via focus
+		}
+					
+		allowed_civil_war = {
+			has_government = democracy
+			has_government = neutral
+		}
+			
+		picture = general_staff
+		
+		modifier = {
+		democratic_drift = -0.05
+		neutrality_drift = 0.05
+		}
+	}
+	
+	a_peaceful_country = {
+	removal_cost = -1
+			
+		allowed = {
+			always = no # added via focus
+		}
+					
+		allowed_civil_war = {
+			has_government = democracy
+			has_government = neutral
+		}
+			
+		picture = general_staff
+		
+		modifier = {
+		democratic_drift = 0.02
+		neutrality_drift = 0.01
+		communism_drift = -0.03
+		
+		}
+	}
+	
+	a_defensive_army = {
+	removal_cost = -1
+			
+		allowed = {
+			always = no # added via focus
+		}
+					
+		allowed_civil_war = {
+			has_government = democracy
+			has_government = neutral
+		}
+			
+		picture = general_staff
+		
+		modifier = {
+		army_core_defence_factor = 0.3
+		army_core_attack_factor = 0.15
+		training_time_army_factor = 0.25
+		conscription_factor = -0.2
+		}
+	}
+	
+	a_neutral_russia = {
+	removal_cost = -1
+			
+		allowed = {
+			always = no # added via focus
+		}
+					
+		allowed_civil_war = {
+			has_government = democracy
+			has_government = neutral
+		}
+			
+		picture = general_staff
+		
+		modifier = {
+			justify_war_goal_time = 1.00
+			generate_wargoal_tension = 1.00
+			join_faction_tension = 0.20
+			lend_lease_tension = 0.50
+			send_volunteers_tension = 0.20
+			guarantee_tension = 0.75
+		}
+	}
+	
+	underprivileged_people = {
+	removal_cost = -1
+			
+		allowed = {
+			always = no # added via focus
+		}
+					
+		allowed_civil_war = {
+			has_government = democracy
+			has_government = neutral
+		}
+			
+		picture = sour_loser
+		
+		modifier = {
+		communism_drift = 0.05
+		democratic_drift = -0.03
+		}
+	}
+	
+	happy_industrialists = {
+	removal_cost = -1
+			
+		allowed = {
+			always = no # added via focus
+		}
+					
+		allowed_civil_war = {
+			has_government = democracy
+			has_government = neutral
+		}
+			
+		picture = sour_loser
+		
+		modifier = {
+		democratic_drift = 0.02
+		neutrality_drift = -0.02
+		}
+	}
+	
+	subventions_for_industrialists = {
+	removal_cost = -1
+			
+		allowed = {
+			always = no # added via focus
+		}
+					
+		allowed_civil_war = {
+			has_government = democracy
+			has_government = neutral
+		}
+			
+		picture = general_staff
+		
+		modifier = {
+		production_speed_industrial_complex_factor = 0.25
+		production_speed_arms_factory_factor = 0.15
+		political_power_factor = -0.1
+		}
+	}
+	
+	subventions_for_industrialists2 = {
+	removal_cost = -1
+			
+		allowed = {
+			always = no # added via focus
+		}
+					
+		allowed_civil_war = {
+			has_government = democracy
+			has_government = neutral
+		}
+			
+		picture = general_staff
+		
+		modifier = {
+		production_speed_industrial_complex_factor = 0.17
+		production_speed_arms_factory_factor = 0.10
+		political_power_factor = -0.1
+		}
+	}
+	
+	arms_cities = {
+	removal_cost = -1
+			
+		allowed = {
+			always = no # added via focus
+		}
+					
+		allowed_civil_war = {
+			has_government = democracy
+			has_government = neutral
+		}
+			
+		picture = general_staff
+		
+		equipment_bonus = {
+				infantry_equipment = {
+				build_cost_ic = -0.1 
+				instant = yes
+				}
+			}
+	}
+	
+	easy_equipment = {
+	removal_cost = -1
+			
+		allowed = {
+			always = no # added via focus
+		}
+					
+		allowed_civil_war = {
+			has_government = democracy
+			has_government = neutral
+		}
+			
+		picture = general_staff
+		
+		equipment_bonus = {
+			infantry_equipment = {
+			build_cost_ic = -0.1 instant = yes
+			}
+		}
+	}
+	
+	suppressed_workers = {
+	removal_cost = -1
+			
+		allowed = {
+			always = no # added via focus
+		}
+					
+		allowed_civil_war = {
+			has_government = democracy
+			has_government = neutral
+		}
+			
+		picture = general_staff
+		
+		modifier = {
+		industrial_capacity_factory = 0.1
+		}
+	}
+	
+	menschewik_success = {
+	removal_cost = -1
+			
+		allowed = {
+			always = no # added via focus
+		}
+					
+		allowed_civil_war = {
+			has_government = democracy
+			has_government = neutral
+		}
+			
+		picture = general_staff
+		
+		modifier = {
+		neutrality_drift = 0.30
+		democratic_drift = -0.30
+		}
+	}
+	
+	horror_about_penal_colonies = {
+	removal_cost = -1
+			
+		allowed = {
+			always = no # added via focus
+		}
+					
+		allowed_civil_war = {
+			has_government = democracy
+			has_government = neutral
+		}
+			
+		picture = general_staff
+		
+		modifier = {
+		democratic_drift = -0.10
+		neutrality_drift = 0.05
+		communism_drift = 0.05
+		}
+	}
+	
+	penal_colonies = {
+	removal_cost = -1
+			
+		allowed = {
+			always = no # added via focus
+		}
+					
+		allowed_civil_war = {
+			has_government = democracy
+		}
+			
+		picture = general_staff
+		
+		modifier = {
+		production_speed_infrastructure_factor = 0.10
+		}
+	}
+	
+	extended_railroad_network = {
+	removal_cost = -1
+			
+		allowed = {
+			always = no # added via focus
+		}
+					
+		allowed_civil_war = {
+		has_government = facist
+		has_government = democratic
+		has_government = neutrality
+		has_government = communism
+		}
+			
+		picture = general_staff
+		
+		modifier = {
+		production_speed_industrial_complex_factor = 0.1
+		local_resources_factor = 0.10
+		communism_drift = 0.02
+		}
+	}
+	
+	peasant_workers = {
+	removal_cost = -1
+			
+		allowed = {
+			always = no # added via focus
+		}
+					
+		allowed_civil_war = {
+		NOT = { has_government = communism }
+		}
+			
+		picture = general_staff
+		
+		modifier = {
+		production_speed_infrastructure_factor = 0.1
+		communism_drift = 0.01
+		}
+	}
+	
+	more_crop_export = {
+	removal_cost = -1
+			
+		allowed = {
+			always = no # added via focus
+		}
+					
+		allowed_civil_war = {
+		NOT = { has_government = communism }
+		}
+			
+		picture = general_staff
+		
+		modifier = {
+		production_speed_buildings_factor = 0.1
+		communism_drift = 0.02
+		}
+	}
+	
+	foreign_machines = {
+	removal_cost = -1
+			
+		allowed = {
+			always = no # added via focus
+		}
+					
+		allowed_civil_war = {
+		has_government = communism
+		has_government = democratic
+		has_government = neutrality
+		has_government = facist
+		}
+			
+		picture = general_staff
+		
+		modifier = {
+		production_factory_efficiency_gain_factor = 0.10
+		}
+	}
+	
+	underdeveloped_russia = {
+	removal_cost = -1
+			
+		allowed = {
+			always = no # added via focus
+		}
+					
+		allowed_civil_war = {
+		has_government = communism
+		has_government = democratic
+		has_government = neutrality
+		has_government = facist
+		}
+
+		picture = general_staff
+		
+		modifier = {
+		neutrality_drift = 0.10
+		democratic_drift = -0.10
+		}
+	}
+	
+	weak_government = {
+	removal_cost = -1
+			
+		allowed = {
+			always = no # added via focus
+		}
+					
+		allowed_civil_war = {
+		has_government = communism
+		has_government = democratic
+		has_government = neutrality
+		has_government = facist
+		}
+
+		picture = general_staff
+		
+		modifier = {
+		democratic_drift = -0.05
+		communism_drift = 0.10
+		}
+	}
+	
+	workforce_from_central_russia = {
+	removal_cost = -1
+			
+		allowed = {
+			always = no # added via focus
+		}
+					
+		allowed_civil_war = {
+		has_government = communism
+		has_government = democratic
+		has_government = neutrality
+		has_government = facist
+		}
+			
+		picture = general_staff
+		
+		modifier = {
+		political_power_factor = -0.05
+		production_speed_buildings_factor = 0.15
+		communism_drift = 0.01
+		}
+	}
+	
+	no_peace = {
+	removal_cost = -1
+			
+		allowed = {
+			always = no # added via focus
+		}
+					
+		allowed_civil_war = {
+		has_government = communism
+		}
+			
+		picture = general_staff
+		
+		modifier = {
+		political_power_factor = -0.10
+		communism_drift = -0.07
+		neutrality_drift = 0.07
+		attrition = 0.1
+		}
+	}
+	
+	army_revolt = {
+	removal_cost = -1
+			
+		allowed = {
+			always = no # added via focus
+		}
+					
+		allowed_civil_war = {
+		has_government = neutrality
+		has_government = democratic
+		}
+			
+		picture = general_staff
+		
+		modifier = {
+		army_attack_factor = -0.50
+		attrition = 0.20
+		}
+	}
 	
 	
 }
