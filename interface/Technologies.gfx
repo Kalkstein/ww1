@@ -8,6 +8,11 @@ spriteTypes = {
 	}
 	
 	SpriteType = {
+		name = "GFX_steel_helmet_medium"
+		texturefile = "gfx/interface/technologies/steel_helmet.dds"
+	}
+	
+	SpriteType = {
 		name = "GFX_sniper_medium"
 		texturefile = "gfx/interface/technologies/sniper.dds"
 	}
@@ -51,6 +56,58 @@ spriteTypes = {
 		name = "GFX_machine_gun_4_medium"
 		texturefile = "gfx/interface/technologies/machine_gun_4.dds"
 	}
+	
+	SpriteType = {
+		name = "GFX_frontline_fortification_medium"
+		texturefile = "gfx/interface/technologies/frontline_fortification.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_frontline_fortification_2_medium"
+		texturefile = "gfx/interface/technologies/frontline_fortification_2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_frontline_fortification_3_medium"
+		texturefile = "gfx/interface/technologies/frontline_fortification_3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_frontline_fortification_4_medium"
+		texturefile = "gfx/interface/technologies/frontline_fortification_4.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_frontline_fortification_5_medium"
+		texturefile = "gfx/interface/technologies/frontline_fortification_5.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_hinterland_fortification_medium"
+		texturefile = "gfx/interface/technologies/hinterland_fortification.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_hinterland_fortification_2_medium"
+		texturefile = "gfx/interface/technologies/hinterland_fortification_2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_hinterland_fortification_3_medium"
+		texturefile = "gfx/interface/technologies/hinterland_fortification_3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_hinterland_fortification_4_medium"
+		texturefile = "gfx/interface/technologies/hinterland_fortification_4.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_hinterland_fortification_5_medium"
+		texturefile = "gfx/interface/technologies/hinterland_fortification_5.dds"
+	}
+	
+	
 	
 	
 	SpriteType = {
@@ -1562,56 +1619,6 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_streamlined_line_medium"
 		texturefile = "gfx/interface/technologies/streamlined_line.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_hinterland_fortification_medium"
-		texturefile = "gfx/interface/technologies/concentrated_industry.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_hinterland_fortification_2_medium"
-		texturefile = "gfx/interface/technologies/concentrated_industry2.dds"
-	}	
-
-	SpriteType = {
-		name = "GFX_hinterland_fortification_3_medium"
-		texturefile = "gfx/interface/technologies/concentrated_industry3.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_hinterland_fortification_4_medium"
-		texturefile = "gfx/interface/technologies/concentrated_industry4.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_hinterland_fortification_5_medium"
-		texturefile = "gfx/interface/technologies/concentrated_industry5.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_frontline_fortification_medium"
-		texturefile = "gfx/interface/technologies/dispersed_industry.dds"
-	}	
-
-	SpriteType = {
-		name = "GFX_frontline_fortification_2_medium"
-		texturefile = "gfx/interface/technologies/dispersed_industry2.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_frontline_fortification_3_medium"
-		texturefile = "gfx/interface/technologies/dispersed_industry3.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_frontline_fortification_4_medium"
-		texturefile = "gfx/interface/technologies/dispersed_industry4.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_frontline_fortification_5_medium"
-		texturefile = "gfx/interface/technologies/dispersed_industry5.dds"
 	}	
 
 	SpriteType = {
