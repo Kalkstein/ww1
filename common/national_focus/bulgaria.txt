@@ -1129,7 +1129,7 @@ focus_tree = {
 		cost = 10 
 		completion_reward = {
 			GER = {
-				add_timed_idea = { idea = BUL_communism_support_idea days = 400 } 
+				add_idea = BUL_communism_support_idea 
 			}
 		}
 	}
@@ -1365,16 +1365,17 @@ focus_tree = {
 		cost = 10 
 		completion_reward = {
 			341 = {
-				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = infrastructure
 					level = 3
 					instant_build = yes
+					add_extra_state_shared_building_slots = 3
 				}
 				add_building_construction = {
 					type = industrial_complex
 					level = 3
 					instant_build = yes
+					add_extra_state_shared_building_slots = 3
 				}
 			}
 		}
@@ -2248,7 +2249,9 @@ focus_tree = {
 		y = 18 
 		cost = 10 
 		completion_reward = {
-			SOV = { add_timed_idea = { idea = BUL_destabilizing_russia_idea days = 365 } }
+			SOV = {
+				add_idea = BUL_destabilizing_russia_idea 
+			}
 		}
 	}
 	
@@ -2390,7 +2393,6 @@ focus_tree = {
 		completion_reward = {
 			set_rule = { can_send_volunteers = yes }
 			add_ideas = volunteer_corps_focus
-		}
 	}
 	
 	focus = { 
@@ -2537,7 +2539,7 @@ focus_tree = {
 				name = infantry_weapons_bonus
 				bonus = 0.3
 				uses = 2
-				technology = improved_infantry_weapons1
+				technology = improved_infantry_weapons_1
 				technology = improved_infantry_weapons_2
 				technology = improved_machine_gun_1
 			}
@@ -2564,7 +2566,7 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
+	focus = { 
 		id = BUL_field_hospitals 
 		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = BUL_qfr }
@@ -3048,7 +3050,7 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
+	focus = { 
 		id = BUL_foreign_planes
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = BUL_heavy_aircraft }
@@ -3128,7 +3130,7 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
+	focus = { 
 		id = BUL_more_artillery
 		icon = GFX_goal_generic_army_artillery2 
 		prerequisite = { focus = BUL_experimental_equipment }
@@ -3274,8 +3276,346 @@ focus_tree = {
 	
 	focus = {
 		id = BUL_navy 
+		icon = GFX_goal_generic_build_nay 
+		x = 50
+		y = 0 
+		cost = 10 
+		
+		available = {
+			any_state = {
+				is_coastal = yes
+				is_controlled_by = ROOT
+			}
+		}
+
+		complete_tooltip = {
+			navy_experience = 10 
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+			}
+		}
+		
+		completion_reward = {
+			navy_experience = 10
+			if = {
+				limit = {
+					NOT = {
+						any_owned_state = {
+							dockyard > 0
+							free_building_slots = {
+								building = dockyard
+								size > 1
+								include_locked = yes
+							}
+						}
+					}
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_coastal = yes
+						free_building_slots = {
+							building = dockyard
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
 	}
-}
+	
+	focus = {
+		id = BUL_engineer_academy 
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = BUL_navy }
+		x = 50 
+		y = 1 
+		cost = 10 
+		completion_reward = {
+			navy_experience = 5 
+			add_ideas = BUL_engineers_idea
+		}
+	}
+	
+	focus = {
+		id = BUL_heavier_navy 
+		icon = GFX_goal_generic_navy_anti_submarine 
+		mutually_exclusive = { focus = BUL_lighter_navy }
+		prerequisite = { focus = BUL_engineer_academy }
+		x = 48 
+		y = 2 
+		cost = 10 
+		completion_reward = {
+			add_tech_bonus = {
+				name =  battle_heavy_cruiser_bonus 
+				bonus = 0.40 
+				uses = 1 
+				technology = early_heavy_cruiser
+				technology = early_battlecruiser
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_lighter_navy
+		icon = BUL_light_navy_submarine 
+		mutually_exclusive = { focus = BUL_heavier_navy }
+		prerequisite = { focus = BUL_engineer_academy }
+		x = 52 
+		y = 2 
+		cost = 10 
+		completion_reward= {
+			add_tech_bonus = {
+					name = light_ship_bonus 
+					bonus = 0.50 
+					uses = 1 
+					technology = early_destroyer
+					technology = early_submarine
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_battleships
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite = { focus = BUL_heavier_navy }
+		x = 48 
+		y = 3 
+		cost = 10 
+		completion_reward = {
+			add_tech_bonus = {
+					name = battleship_bonus 
+					bonus = 0.50 
+					ahead_reduction = 0.75  
+					technology = improved_battleship
+			}
+			add_tech_bonus = {
+				name = battleship_bonus 
+				bonus = 0.5 
+				uses = 1 
+				technology = early_battleship
+				technology = basic_battleship 
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_submarines 
+		icon = GFX_goal_generic_navy_submarines 
+		prerequisite = { focus = BUL_lighter_navy }
+		x = 52 
+		y = 3 
+		cost = 10 
+		completion_reward = {
+			add_tech_bonus = {
+				name = submarine_bonus
+				bonus = 0.4 
+				uses = 2 
+				technology = basic_submarine
+				technology = improved_submarine 
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_restructure_navy 
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = BUL_battleships focus = BUL_submarines }
+		available = {
+			211 = {
+				owner = {
+					original_tag = BUL 
+				}
+				controller = {
+					original_tag = BUL 
+				}
+			}
+		}
+		x = 50 
+		y = 4 
+		cost = 10
+		completion_reward = {
+			211 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build =  yes
+				}
+				add_building_construction = {
+					type = naval_base
+					level = 3
+					instant_build =  yes
+					province = 9783 
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_maritime_special_schools
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		prerequisite = { focus = BUL_restructure_navy }
+		x = 50 
+		y = 6
+		cost = 10 
+		completion_reward = {
+			add_tech_bonus = {
+				name = naval_doc_bonus
+				bonus = 0.5 
+				uses = 1 
+				category = naval_doctrine 
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_large_dockyards
+		icon = GFX_goal_generic_construction
+		mutually_exclusive = { focus = BUL_small_dockyards }
+		prerequisite = { focus = BUL_maritime_special_schools }
+		x = 48 
+		y = 7
+		cost = 10 
+		completion_reward = {
+			add_ideas = BUL_large_dockyards_idea 
+		}
+	}
+	
+	focus = {
+		id = BUL_small_dockyards 
+		icon = GFX_goal_generic_production2
+		mutually_exclusive = { focus = BUL_large_dockyards }
+		prerequisite = { focus = BUL_maritime_special_schools }
+		x = 52 
+		y = 7 
+		cost = 10 
+		completion_reward = {
+			add_ideas = BUL_small_dockyards_idea
+		}
+	}
+	
+	focus = {
+		id = BUL_heavy_navy_tactics
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		prerequisite = { focus = BUL_large_dockyards }
+		x = 48 
+		y = 8 
+		cost = 10 
+		completion_reward = {
+			add_tech_bonus = {
+				name = fleet_in_being_bonus
+				bonus = 0.5 
+				uses = 2  
+				category = fleet_in_being_tree 
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_light_navy_tactics
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		prerequisite = { focus = BUL_small_dockyards }
+		x = 52 
+		y = 8 
+		cost = 10 
+		completion_reward = {
+			add_tech_bonus = {
+				name = trade_interdiction_bonus
+				bonus = 0.35 
+				uses = 3  
+				category = trade_interdiction_tree 
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_marines 
+		icon = GFX_goal_generic_amphibious_assault
+		prerequisite = { focus = BUL_heavy_navy_tactics focus = BUL_light_navy_tactics }
+		x = 50 
+		y = 9 
+		cost = 10 
+		completion_reward = {
+			add_tech_bonus = {
+				name = marine_bonus 
+				bonus = 0.5 
+				uses 1 
+				technology = marines
+				technology = marines2
+				technology = marines3
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_war_with_gb
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = BUL_marines }
+		x = 48
+		y = 10 
+		cost = 5 
+		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = ENG 
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_war_with_russia
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = BUL_marines }
+		x = 52 
+		y = 10 
+		cost = 5
+		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = SOV  
+			}
+		}
+		
+	}
+	
+	focus = {
+		id = BUL_german_sub
+		icon = GFX_goal_generic_navy_submarines
+		prerequisite = { focus = BUL_light_navy_tactics focus = BUL_heavy_navy_tactics }
+		prerequisite = { focus = BUL_marines }
+		x = 54  
+		y = 10
+		cost = 10 
+		completion_reward = {
+			 GER = {
+					country_event = { id = bulgaria.26 days = 1 }
+					custom_effect_tooltip = needs_approval
+				}
+				effect_tooltip = {
+					GER = {
+						send_equipment = {
+							target = BUL 
+							type = submarine_3
+							amount = 1
+						}
+					}
+				}
+		}
+	}
+	
 	
 	
 		
