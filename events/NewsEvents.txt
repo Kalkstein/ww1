@@ -1203,7 +1203,7 @@ country_event = {
 
 # Russian Ultimatum
 country_event = {
-	id news.320
+	id = news.320
 	title = news.320.t
 	desc = news 321.d
 	picture = GFX_news_event_034
@@ -1248,7 +1248,7 @@ country_event = {
 
 # War for Galicia
 country_event = {
-	id news.321
+	id = news.321
 	title = news.321.t
 	desc = news 321.d
 	picture = GFX_news_event_035
