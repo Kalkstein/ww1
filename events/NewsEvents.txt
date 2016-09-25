@@ -5,7 +5,6 @@
 add_namespace = news
 add_namespace = july_crisis
 add_namespace = flavor_news
-add_namespace = agadir
 
 #########################################################################################################################################################
 
@@ -1292,7 +1291,7 @@ country_event = {
 
 # War for Galicia
 country_event = {
-	id news.321
+	id = news.321
 	title = news.321.t
 	desc = news 321.d
 	picture = GFX_news_event_035
