@@ -1198,6 +1198,7 @@ country_event = {
 		104 = { remove_core_of = AUS }
 		109 = { remove_core_of = AUS }
 		163 = { remove_core_of = AUS }
+		}
 	}
 }
 
@@ -1272,6 +1273,7 @@ country_event = {
 		name = news.321.a
 		trigger = {
 			tag = SOV
+		}
 		SOV = {
 			create_wargoal = {
 					type = take_state_focus
@@ -1344,6 +1346,7 @@ country_event = {
 		name = news.330.a
 		trigger = {
 			tag = AUS
+		}
 		AUS = {
 			create_wargoal = {
 				target = HUN
@@ -1413,6 +1416,7 @@ country_event = {
 		name = news.340.a
 		trigger = {
 			tag = AUS
+		}
 		AUS = {
 			create_wargoal = {
 				target = CZE
@@ -1434,7 +1438,8 @@ country_event = {
 		72 = { remove_core_of = AUS }
 		74 = { remove_core_of = AUS }
 		75 = { remove_core_of = AUS }
-	}	
+		}	
+	}
 }
 
 ###########################################################################################################################
