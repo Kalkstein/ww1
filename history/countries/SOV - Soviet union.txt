@@ -108,7 +108,7 @@ create_field_marshal = {
 	name = "Aleksei Brusilov"
 	id = 410
 		picture = "Portrait_Soviet_Semyon_Budyonny.dds"
-	traits = {  offensive_doctrine commando }
+	traits = {  offensive_doctrine }
 	skill = 4
 
 	
