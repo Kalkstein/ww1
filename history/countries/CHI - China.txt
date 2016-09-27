@@ -10,7 +10,6 @@ set_technology = {
 }
 
 add_ideas = {
-	german_advisors
 	CHI_communist_uprisings
 }
 
