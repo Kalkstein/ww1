@@ -612,20 +612,6 @@ technologies = {
 
 		# can build ICBMs?
 		
-		enable_equipments = {
-			rocket_interceptor_equipment_3
-			guided_missile_equipment_3
-		}
-		
-		rocket_artillery = {
-			soft_attack = 0.05
-		}
-		rocket_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		motorized_rocket_brigade = {
-			soft_attack = 0.05
-		}
 		
 		research_cost = 1.5
 		start_year = 1916
