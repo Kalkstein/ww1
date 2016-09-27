@@ -1129,7 +1129,7 @@ focus_tree = {
 		cost = 10 
 		completion_reward = {
 			GER = {
-				add_idea = BUL_communism_support_idea 
+				add_ideas = BUL_communism_support_idea 
 			}
 		}
 	}
@@ -1367,16 +1367,27 @@ focus_tree = {
 			341 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 3
+					level = 5
 					instant_build = yes
-					add_extra_state_shared_building_slots = 3
 				}
 				add_building_construction = {
 					type = industrial_complex
 					level = 3
 					instant_build = yes
-					add_extra_state_shared_building_slots = 3
 				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 3
 			}
 		}
 	}
@@ -2250,7 +2261,7 @@ focus_tree = {
 		cost = 10 
 		completion_reward = {
 			SOV = {
-				add_idea = BUL_destabilizing_russia_idea 
+				add_ideas = BUL_destabilizing_russia_idea 
 			}
 		}
 	}
@@ -2393,6 +2404,7 @@ focus_tree = {
 		completion_reward = {
 			set_rule = { can_send_volunteers = yes }
 			add_ideas = volunteer_corps_focus
+		}
 	}
 	
 	focus = { 
@@ -3276,7 +3288,7 @@ focus_tree = {
 	
 	focus = {
 		id = BUL_navy 
-		icon = GFX_goal_generic_build_nay 
+		icon = GFX_goal_generic_build_navy 
 		x = 50
 		y = 0 
 		cost = 10 
@@ -3354,7 +3366,7 @@ focus_tree = {
 		icon = GFX_goal_generic_navy_anti_submarine 
 		mutually_exclusive = { focus = BUL_lighter_navy }
 		prerequisite = { focus = BUL_engineer_academy }
-		x = 48 
+		x = 49
 		y = 2 
 		cost = 10 
 		completion_reward = {
@@ -3370,10 +3382,10 @@ focus_tree = {
 	
 	focus = {
 		id = BUL_lighter_navy
-		icon = BUL_light_navy_submarine 
+		icon = GFX_goal_generic_navy_cruiser 
 		mutually_exclusive = { focus = BUL_heavier_navy }
 		prerequisite = { focus = BUL_engineer_academy }
-		x = 52 
+		x = 51 
 		y = 2 
 		cost = 10 
 		completion_reward= {
@@ -3391,7 +3403,7 @@ focus_tree = {
 		id = BUL_battleships
 		icon = GFX_goal_generic_navy_battleship
 		prerequisite = { focus = BUL_heavier_navy }
-		x = 48 
+		x = 49 
 		y = 3 
 		cost = 10 
 		completion_reward = {
@@ -3413,9 +3425,9 @@ focus_tree = {
 	
 	focus = {
 		id = BUL_submarines 
-		icon = GFX_goal_generic_navy_submarines 
+		icon = GFX_goal_generic_navy_submarine 
 		prerequisite = { focus = BUL_lighter_navy }
-		x = 52 
+		x = 51 
 		y = 3 
 		cost = 10 
 		completion_reward = {
@@ -3475,7 +3487,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = naval_doc_bonus
 				bonus = 0.5 
-				uses = 1 
+				uses = 2  
 				category = naval_doctrine 
 			}
 		}
@@ -3486,7 +3498,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construction
 		mutually_exclusive = { focus = BUL_small_dockyards }
 		prerequisite = { focus = BUL_maritime_special_schools }
-		x = 48 
+		x = 49
 		y = 7
 		cost = 10 
 		completion_reward = {
@@ -3499,7 +3511,7 @@ focus_tree = {
 		icon = GFX_goal_generic_production2
 		mutually_exclusive = { focus = BUL_large_dockyards }
 		prerequisite = { focus = BUL_maritime_special_schools }
-		x = 52 
+		x = 51 
 		y = 7 
 		cost = 10 
 		completion_reward = {
@@ -3511,13 +3523,13 @@ focus_tree = {
 		id = BUL_heavy_navy_tactics
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		prerequisite = { focus = BUL_large_dockyards }
-		x = 48 
+		x = 49 
 		y = 8 
 		cost = 10 
 		completion_reward = {
 			add_tech_bonus = {
 				name = fleet_in_being_bonus
-				bonus = 0.5 
+				bonus = 0.4 
 				uses = 2  
 				category = fleet_in_being_tree 
 			}
@@ -3528,7 +3540,7 @@ focus_tree = {
 		id = BUL_light_navy_tactics
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		prerequisite = { focus = BUL_small_dockyards }
-		x = 52 
+		x = 51
 		y = 8 
 		cost = 10 
 		completion_reward = {
@@ -3552,7 +3564,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = marine_bonus 
 				bonus = 0.5 
-				uses 1 
+				uses = 1 
 				technology = marines
 				technology = marines2
 				technology = marines3
@@ -3562,9 +3574,9 @@ focus_tree = {
 	
 	focus = {
 		id = BUL_war_with_gb
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_goal_generic_major_war
 		prerequisite = { focus = BUL_marines }
-		x = 48
+		x = 49
 		y = 10 
 		cost = 5 
 		completion_reward = {
@@ -3577,9 +3589,9 @@ focus_tree = {
 	
 	focus = {
 		id = BUL_war_with_russia
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_goal_generic_major_war 
 		prerequisite = { focus = BUL_marines }
-		x = 52 
+		x = 51 
 		y = 10 
 		cost = 5
 		completion_reward = {
@@ -3593,9 +3605,11 @@ focus_tree = {
 	
 	focus = {
 		id = BUL_german_sub
-		icon = GFX_goal_generic_navy_submarines
+		icon = GFX_goal_generic_navy_submarine
 		prerequisite = { focus = BUL_light_navy_tactics focus = BUL_heavy_navy_tactics }
-		prerequisite = { focus = BUL_marines }
+		available = {
+			is_in_faction_with = GER 
+		}
 		x = 54  
 		y = 10
 		cost = 10 
@@ -3615,6 +3629,126 @@ focus_tree = {
 				}
 		}
 	}
+	
+	focus = {
+		id = BUL_order_cruisers 
+		icon = GFX_goal_generic_construction2 
+		mutually_exclusive = { focus = BUL_order_battleships }
+		prerequisite = { focus = BUL_german_sub }
+		bypass = {
+			AND = {
+				has_war_with = GER 
+				has_war_with = SOV 
+				has_war_with = AUS 
+				has_war_with = FRA 
+			}
+		}
+		x = 53 
+		y = 11 
+		cost = 15 
+		completion_reward = {
+			if = {
+				limit = {
+					NOT= {
+						has_war_with = GER 
+					}
+				}
+				GER = {
+					country_event = { id = bulgaria.27 days = 1 }
+				}
+			}
+			if = {
+				limit = {
+					has_war_with = GER 
+					NOT = {
+						has_war_with = SOV 
+					}
+				}
+				SOV = {
+					country_event = { id = bulgaria.27 days = 1 }
+				}
+			}
+			if = {
+				limit = {
+					AND = {
+						has_war_with = GER 
+						has_war_with = SOV 
+					}
+				}
+				AUS = {
+					country_event = { id = bulgaria.27 days = 1 }
+				}
+			}
+			if = {
+				limit = {
+					AND = {
+						has_war_with = GER 
+						has_war_with = SOV 
+						has_war_with = AUS 
+					}
+				}
+				FRA = {
+					country_event = { id = bulgaria.27 days = 1 }
+				}
+			}
+		}
+	}
+	
+	focus = { 
+		id = BUL_order_battleships
+		icon = GFX_goal_generic_navy_battleship
+		mutually_exclusive = { focus = BUL_order_cruisers }
+		prerequisite = { focus = BUL_german_sub }
+		x = 55 
+		y = 11 
+		completion_reward = {
+			if = {
+				limit = {
+					NOT= {
+						has_war_with = GER 
+					}
+				}
+				GER = {
+					country_event = { id = bulgaria.28 days = 1 }
+				}
+			}
+			if = {
+				limit = {
+					has_war_with = GER 
+					NOT = {
+						has_war_with = SOV 
+					}
+				}
+				SOV = {
+					country_event = { id = bulgaria.28 days = 1 }
+				}
+			}
+			if = {
+				limit = {
+					AND = {
+						has_war_with = GER 
+						has_war_with = SOV 
+					}
+				}
+				AUS = {
+					country_event = { id = bulgaria.28 days = 1 }
+				}
+			}
+			if = {
+				limit = {
+					AND = {
+						has_war_with = GER 
+						has_war_with = SOV 
+						has_war_with = AUS 
+					}
+				}
+				FRA = {
+					country_event = { id = bulgaria.28 days = 1 }
+				}
+			}
+		}
+	}
+	
 	
 	
 	

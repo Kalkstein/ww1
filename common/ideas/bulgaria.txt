@@ -93,10 +93,11 @@ ideas = {
 				always = yes 
 			}
 			
+			research_bonus = {
+				land_doctrine = 0.07
+			}
+			
 			modifier = {
-				research_bonus = {
-					land_doctrine = 0.1 
-				}
 				army_org_factor = 0.15
 				
 			}
@@ -274,7 +275,6 @@ ideas = {
 			modifier = {
 				naval_retreat_speed = 0.15 
 				navy_capital_ship_defence_factor = 0.1
-				navy_experience_gain_factor = 0.20 
 			}
 		}
 		BUL_large_dockyards_idea = {
