@@ -499,3 +499,7 @@
  country_capitulated.0.b:0 "These are dark times"
  country_capitulated.0.c:0 "Uncertain times"
  GAME_OVER_TT:0 "§RThe game will end for you.§!"
+ 
+ republicans_chosen:0 "Call the Republic!"
+ communists_chosen:0 "Working Men of All Countries, Unite!"
+ monarchists_chosen:0 "The Kaiser waives his privileges!"

@@ -85,7 +85,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Konrad Adenauer"
+	name = "Friedrich Ebert"
 	desc = "POLITICS_KONRAD_ADENAUER_DESC"
 	picture = "Portrait_Germany_Konrad_Adenauer.dds"
 	expire = "1965.1.1"
@@ -95,7 +95,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Friedrich Ebert"
+	name = "Karl Liebknecht"
 	desc = "POLITICS_WILHELM_PIECK_DESC"
 	picture = "Portrait_Germany_Wilhelm_Pieck.dds"
 	expire = "1965.1.1"
