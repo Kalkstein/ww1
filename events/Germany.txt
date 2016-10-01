@@ -4,6 +4,106 @@
 
 add_namespace = germany
 
+# Schlieffenplan
+country_event = {
+	id = germany.1
+	title = germany.1.t
+	desc = germany.1.d
+	picture = GFX_report_event_degaulle_churchill
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = GER
+		has_war = yes
+		has_war_with = SOV
+		country_exists = FRA
+		OR = {
+			NOT = { has_war_with = FRA }
+			AND = {
+				country_exists = BEL
+				NOT = { has_war_with = BEL }
+			}
+			AND = {
+				country_exists = LUX
+				NOT = { has_war_with = LUX }
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 15
+	}
+	
+	option = {
+		name = germany.1.a
+		ai_chance = { factor = 100 }
+		trigger = {
+			country_exists = FRA
+			country_exists = BEL
+			NOT = {
+				has_war_with = FRA
+				has_war_with = BEL
+			}
+		}
+		create_wargoal = {
+			target = FRA
+			type = topple_government
+		}
+		declare_war_on = {
+			target = FRA
+			type = topple_government
+		}
+		BEL = {
+			add_to_war = { targeted_alliance = FRA enemy = GER } 
+		}
+		LUX = {
+			add_to_war = { targeted_alliance = FRA enemy = GER } 
+		}
+	}
+	option = {
+		name = germany.1.b
+		ai_chance = { factor = 0 }
+		trigger = {
+			country_exists = FRA
+			NOT = { has_war_with = FRA }
+		}
+		create_wargoal = {
+			target = FRA
+			type = topple_government
+		}
+		declare_war_on = {
+			target = FRA
+			type = topple_government
+		}
+	}
+	option = {
+		name = germany.1.c
+		ai_chance = { factor = 0 }
+		trigger = {
+			has_war_with = FRA
+			OR = {
+				NOT = { has_war_with = BEL }
+				NOT = { has_war_with = LUX }
+			}
+		}
+		BEL = {
+			add_to_war = { targeted_alliance = FRA enemy = GER } 
+		}
+		LUX = {
+			add_to_war = { targeted_alliance = FRA enemy = GER } 
+		}
+	}
+	option = {
+		name = germany.1.d
+		ai_chance = { factor = 0 }
+		FRA = {
+			add_national_unity = 0.5
+		}
+	}
+}
+
+
 # Italy joins central powers for South Tyrol 
 country_event = {
 	id = germany.4
@@ -77,6 +177,7 @@ country_event = {
 	trigger = {
 		tag = GER
 		has_government = fascism
+		has_war = yes
 		OR = {
 			has_global_flag = sov_revolution
 			GER = { communism > 0.5 }
@@ -85,7 +186,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 356
+		days = 178
 	}
 
 	immediate = {
@@ -224,7 +325,7 @@ country_event = {
 				parties = {
 					democratic = { popularity = 40 }
 					fascism = { popularity = 56 }
-					neutral = { popularity = 2 }
+					neutrality = { popularity = 2 }
 				}
 			}
 		}

@@ -1061,7 +1061,8 @@ country_event = {
 		ai_chance = { factor = 70 }
 		trigger = {
 			tag = GER
-		} 
+		}
+		add_to_war = { targeted_alliance = AUS enemy = SER } 
 	}
 	
 	option = {
