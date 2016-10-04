@@ -352,14 +352,15 @@ technologies = {
 	artillery5_1 = {
 		xor = {
 			artillery5_2
-			artillery5_3
 		}
 
 		artillery = {
-			soft_attack = 0.1
+			breakthrough = 0.2
+			supply_consumption_factor = 0.1
 		}
 		artillery_brigade = {
-			soft_attack = 0.1
+			breakthrough = 0.2
+			supply_consumption_factor = 0.1
 		}
 		
 		research_cost = 1
@@ -383,13 +384,14 @@ technologies = {
 	artillery5_2 = {
 		xor = {
 			artillery5_1
-			artillery5_3
 		}
 
 		artillery = {
+			soft_attack = 0.2
 			hard_attack = 0.1
 		}
 		artillery_brigade = {
+			soft_attack = 0.2
 			hard_attack = 0.1
 		}
 		
@@ -400,37 +402,6 @@ technologies = {
 		folder = {
 			name = artillery_folder
 			position = { x = -6 y = 12 }
-		}
-		
-		categories = {
-			artillery
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	artillery5_3 = {
-		xor = {
-			artillery5_1
-			artillery5_2
-		}
-
-		artillery = {
-			breakthrough = 0.1
-		}
-		artillery_brigade = {
-			breakthrough = 0.1
-		}
-		
-		research_cost = 1
-
-		start_year = 1917
-		
-		folder = {
-			name = artillery_folder
-			position = { x = -4 y = 12 }
 		}
 		
 		categories = {
