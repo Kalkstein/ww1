@@ -201,7 +201,7 @@ units = {
 	### Ejército de África ###
 	division = {			
 		name = "Circunscripción Occidental"		
-		location = 9945  #Ceuta
+		location = 8244
 		division_template = "División de Infantería"		# garrison division, lower equipment, experience
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
@@ -209,7 +209,7 @@ units = {
 	}			
 	division = {			
 		name = "Circunscripción Oriental"		
-		location = 12100  #Melilla
+		location = 9979
 		division_template = "División de Infantería"		# garrison division, lower equipment, experience
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8

@@ -4,6 +4,106 @@
 
 add_namespace = germany
 
+# Schlieffenplan
+country_event = {
+	id = germany.1
+	title = germany.1.t
+	desc = germany.1.d
+	picture = GFX_report_event_degaulle_churchill
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = GER
+		has_war = yes
+		has_war_with = SOV
+		country_exists = FRA
+		OR = {
+			NOT = { has_war_with = FRA }
+			AND = {
+				country_exists = BEL
+				NOT = { has_war_with = BEL }
+			}
+			AND = {
+				country_exists = LUX
+				NOT = { has_war_with = LUX }
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 15
+	}
+	
+	option = {
+		name = germany.1.a
+		ai_chance = { factor = 100 }
+		trigger = {
+			country_exists = FRA
+			country_exists = BEL
+			NOT = {
+				has_war_with = FRA
+				has_war_with = BEL
+			}
+		}
+		create_wargoal = {
+			target = FRA
+			type = topple_government
+		}
+		declare_war_on = {
+			target = FRA
+			type = topple_government
+		}
+		BEL = {
+			add_to_war = { targeted_alliance = FRA enemy = GER } 
+		}
+		LUX = {
+			add_to_war = { targeted_alliance = FRA enemy = GER } 
+		}
+	}
+	option = {
+		name = germany.1.b
+		ai_chance = { factor = 0 }
+		trigger = {
+			country_exists = FRA
+			NOT = { has_war_with = FRA }
+		}
+		create_wargoal = {
+			target = FRA
+			type = topple_government
+		}
+		declare_war_on = {
+			target = FRA
+			type = topple_government
+		}
+	}
+	option = {
+		name = germany.1.c
+		ai_chance = { factor = 0 }
+		trigger = {
+			has_war_with = FRA
+			OR = {
+				NOT = { has_war_with = BEL }
+				NOT = { has_war_with = LUX }
+			}
+		}
+		BEL = {
+			add_to_war = { targeted_alliance = FRA enemy = GER } 
+		}
+		LUX = {
+			add_to_war = { targeted_alliance = FRA enemy = GER } 
+		}
+	}
+	option = {
+		name = germany.1.d
+		ai_chance = { factor = 0 }
+		FRA = {
+			add_national_unity = 0.5
+		}
+	}
+}
+
+
 # Italy joins central powers for South Tyrol 
 country_event = {
 	id = germany.4
@@ -58,4 +158,177 @@ country_event = {
 	}
 	}
 	
+}
+
+
+###########################
+# REVOLUTION
+###########################
+# 5 9 28 42 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 74 75 85 86 188 541 546 633 646 647 684 725 726 737 743 744 750 751 752 755 756 758 759 
+
+country_event = {
+	id = germany.100
+	title = germany.100.t
+	desc = germany.100.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = GER
+		has_government = fascism
+		has_war = yes
+		OR = {
+			has_global_flag = sov_revolution
+			GER = { communism > 0.5 }
+		}
+		date > 1917.4.8
+	}
+	
+	mean_time_to_happen = {
+		days = 178
+	}
+
+	immediate = {
+		event_target:being_attacked = { white_peace = ROOT }
+		dismantle_faction = yes
+		set_rule = { can_create_factions = no }
+	}
+	
+	option = { # Support Republicans
+		name = germany.100.a
+		hidden_effect = {
+			set_capital = 64
+			start_civil_war = {
+				ruling_party = democratic
+				ideology = communism
+				size = 0.5
+				capital = 64
+				states = { 50 52 56 58 59 61 62 756 }
+			}
+			random_other_country = {
+				limit = {
+					original_tag = GER
+					has_government = communism
+				}
+				#load_oob = "SPR_Civil_War"
+				set_equipment_fraction = 0.5
+				set_national_unity = 1
+				set_politics = {
+					ruling_party = communism
+					elections_allowed = no
+					parties = {
+						communism = { popularity = 100 }
+					}
+				}
+			}
+			news_event = { hours = 6 id = news.63 }
+			set_global_flag = ger_rev_dem
+			#load_oob = "SPA_Civil_War"
+			set_equipment_fraction = 0.5
+			set_national_unity = 0.5
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+				last_election = "1911.1.1"
+				election_frequency = 12
+				parties = {
+					democratic = { popularity = 76.2 }
+					fascism = { popularity = 23.8 }
+				}
+			}
+		}
+		custom_effect_tooltip = republicans_chosen
+	}
+	option = { # Support Communists
+		name = germany.100.b
+		hidden_effect = {
+			set_capital = 58
+			start_civil_war = {
+				ruling_party = communism
+				ideology = democratic
+				size = 0.5
+				capital = 64
+				states = { 5 9 28 42 51 53 54 55 57 60 63 64 65 66 67 68 69 74 75 85 86 188 541 546 633 646 647 684 725 726 737 743 744 750 751 752 755 758 759 }
+			}
+			random_other_country = {
+				limit = {
+					original_tag = GER
+					has_government = democratic
+				}
+				#load_oob = "SPR_Civil_War"
+				set_equipment_fraction = 0.5
+				set_national_unity = 0.5
+				set_politics = {
+					ruling_party = democratic
+					elections_allowed = yes
+					last_election = "1911.1.1"
+					election_frequency = 12
+					parties = {
+						democratic = { popularity = 76.2 }
+						fascism = { popularity = 23.8 }
+					}
+				}
+			}
+			news_event = { hours = 6 id = news.63 }
+			set_global_flag = ger_rev_com
+			#load_oob = "SPA_Civil_War"
+			set_equipment_fraction = 0.5
+			set_national_unity = 1
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+				parties = {
+					communism = { popularity = 100 }
+				}
+			}
+		}
+		custom_effect_tooltip = communists_chosen
+	}
+	option = { # Support Monarchists
+		name = germany.100.a
+		set_national_unity = 0.3
+		hidden_effect = {
+			set_capital = 64
+			start_civil_war = {
+				ruling_party = fascism
+				ideology = communism
+				size = 0.5
+				capital = 64
+				states = { 50 52 56 58 59 61 62 756 }
+			}
+			random_other_country = {
+				limit = {
+					original_tag = GER
+					has_government = communism
+				}
+				#load_oob = "SPR_Civil_War"
+				set_equipment_fraction = 0.5
+				set_national_unity = 1
+				set_politics = {
+					ruling_party = communism
+					elections_allowed = no
+					parties = {
+						communism = { popularity = 100 }
+					}
+				}
+			}
+			news_event = { hours = 6 id = news.63 }
+			set_global_flag = ger_rev_mon
+			#load_oob = "SPA_Civil_War"
+			set_equipment_fraction = 0.5
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = yes
+				last_election = "1911.1.1"
+				election_frequency = 12
+				parties = {
+					democratic = { popularity = 40 }
+					fascism = { popularity = 56 }
+					neutrality = { popularity = 2 }
+				}
+			}
+		}
+		custom_effect_tooltip = monarchists_chosen
+	}
 }

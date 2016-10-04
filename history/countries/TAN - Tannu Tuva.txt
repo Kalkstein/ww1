@@ -49,8 +49,6 @@ add_ideas = {
 		oil_plant = 1
 		construction1 = 1
 		construction2 = 1
-		concentrated_industry = 1
-		concentrated_industry2 = 1
 	}
 }
 

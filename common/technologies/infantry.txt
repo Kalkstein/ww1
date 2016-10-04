@@ -23,7 +23,7 @@ technologies = {
 		}
 		
 		path = {
-			leads_to_tech = infantry_weapons_1
+			leads_to_tech = infantry_weapons1
 			research_cost_coeff = 1
 		}		
 
@@ -43,14 +43,14 @@ technologies = {
 		}
 	}
 	
-	infantry_weapons_1 = {
+	infantry_weapons1 = {
 
 		enable_equipments = {
 			infantry_equipment_1
 		}
 				
 		path = {
-			leads_to_tech = improved_infantry_weapons_1
+			leads_to_tech = improved_infantry_weapons1
 			research_cost_coeff = 1
 		}		
 
@@ -70,7 +70,7 @@ technologies = {
 		}
 	}	
 	
-	improved_infantry_weapons_1 = {
+	improved_infantry_weapons1 = {
 
 		category_light_infantry = {
 			soft_attack = 0.05
@@ -263,7 +263,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		path = {
-			leads_to_tech = gas_mask
+			leads_to_tech = explosives_team
 			research_cost_coeff = 1
 		}
 
@@ -311,10 +311,11 @@ technologies = {
 		}
 	}
 	
-	gas_mask = {
-
-		category_light_infantry = {
-			defense = 0.05 
+	explosives_team = {
+		
+		category_all_infantry = {
+			hard_attack = 0.05
+			breakthrough = 0.025
 		}
 		
 		path = {
@@ -322,13 +323,14 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
+		
 		research_cost = 1.5
 		start_year = 1915
 		folder = {
 			name = infantry_folder
 			position = { x = 2 y = @1915 }
 		}
-		
+
 		categories = {
 			infantry_weapons
 		}

@@ -2,7 +2,7 @@
 
 oob = "SOV_1910"
 
-set_research_slots = 2
+set_research_slots = 3
 
 # Starting tech
 set_technology = {
@@ -108,7 +108,7 @@ create_field_marshal = {
 	name = "Aleksei Brusilov"
 	id = 410
 		picture = "Portrait_Soviet_Semyon_Budyonny.dds"
-	traits = {  offensive_doctrine commando }
+	traits = {  offensive_doctrine }
 	skill = 4
 
 	

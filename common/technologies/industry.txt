@@ -11,12 +11,12 @@ technologies = {
 		}
 		
 		path = {
-			leads_to_tech = concentrated_industry 
+			leads_to_tech = frontline_fortification
 			research_cost_coeff = 1
 		}
 
 		path = {
-			leads_to_tech = dispersed_industry
+			leads_to_tech = hinterland_fortification
 			research_cost_coeff = 1
 		}
 		
@@ -188,20 +188,19 @@ technologies = {
 		}
 	}
 	
-	concentrated_industry = {
+	frontline_fortification = {
 
-		industrial_capacity_factory = 0.2
-		global_building_slots_factor = 0.20
+		max_dig_in = 2
 		
 		path = {
-			leads_to_tech = concentrated_industry2 
+			leads_to_tech = frontline_fortification_2
 			research_cost_coeff = 1
 		}
 		
 		research_cost = 2
 		
 		XOR = {
-			dispersed_industry
+			hinterland_fortification
 		}
 		
 		folder = {
@@ -220,7 +219,6 @@ technologies = {
 			modifier = {
 				factor = 0
 				has_war = yes
-				has_tech = dispersed_industry
 			}
 		}
 		
@@ -233,13 +231,12 @@ technologies = {
 		}
 	}
 	
-	concentrated_industry2 = {
+	frontline_fortification_2 = {
 
-		industrial_capacity_factory = 0.2
-		global_building_slots_factor = 0.20
+		max_dig_in = 2
 		
 		path = {
-			leads_to_tech = concentrated_industry3 
+			leads_to_tech = frontline_fortification_3
 			research_cost_coeff = 1
 		}
 		
@@ -264,13 +261,12 @@ technologies = {
 		}
 	}
 	
-	concentrated_industry3 = {
+	frontline_fortification_3 = {
 
-		industrial_capacity_factory = 0.2
-		global_building_slots_factor = 0.20
+		dig_in_speed_factor = 0.02
 		
 		path = {
-			leads_to_tech = concentrated_industry4 
+			leads_to_tech = frontline_fortification_4 
 			research_cost_coeff = 1
 		}
 		
@@ -295,13 +291,12 @@ technologies = {
 		}
 	}
 	
-	concentrated_industry4 = {
+	frontline_fortification_4 = {
 
-		industrial_capacity_factory = 0.2
-		global_building_slots_factor = 0.20
+		max_dig_in = 4
 		
 		path = {
-			leads_to_tech = concentrated_industry5
+			leads_to_tech = frontline_fortification_5
 			research_cost_coeff = 1
 		}
 		
@@ -326,10 +321,9 @@ technologies = {
 		}
 	}
 	
-	concentrated_industry5 = {
+	frontline_fortification_5 = {
 
-		industrial_capacity_factory = 0.2
-		global_building_slots_factor = 0.20
+		dig_in_speed_factor = 0.04
 		
 		research_cost = 2
 		start_year = 1917
@@ -352,22 +346,20 @@ technologies = {
 		}
 	}
 	
-	dispersed_industry = {
+	hinterland_fortification = {
 
-		industrial_capacity_factory = 0.1
-		line_change_production_efficiency_factor = 0.1
-		industry_air_damage_factor = -0.1
-		global_building_slots_factor = 0.2
+		production_speed_bunker_factor = 0.02
+		production_speed_coastal_bunker_factor = 0.02
 		
 		path = {
-			leads_to_tech = dispersed_industry2 
+			leads_to_tech = hinterland_fortification_2 
 			research_cost_coeff = 1
 		}
 		
 		research_cost = 2
 		
 		XOR = {
-			concentrated_industry
+			frontline_fortification
 		}
 		
 		folder = {
@@ -386,7 +378,6 @@ technologies = {
 			modifier = {
 				factor = 0
 				has_war = yes
-				has_tech = concentrated_industry
 			}
 		}
 		
@@ -399,15 +390,13 @@ technologies = {
 		}
 	}
 	
-	dispersed_industry2 = {
+	hinterland_fortification_2 = {
 
-		industrial_capacity_factory = 0.1
-		line_change_production_efficiency_factor = 0.1
-		industry_air_damage_factor = -0.1
-		global_building_slots_factor = 0.2
+		production_speed_bunker_factor = 0.03
+		production_speed_coastal_bunker_factor = 0.03
 		
 		path = {
-			leads_to_tech = dispersed_industry3 
+			leads_to_tech = hinterland_fortification_3
 			research_cost_coeff = 1
 		}
 		
@@ -432,15 +421,13 @@ technologies = {
 		}
 	}
 	
-	dispersed_industry3 = {
+	hinterland_fortification_3 = {
 
-		industrial_capacity_factory = 0.1
-		line_change_production_efficiency_factor = 0.1
-		industry_air_damage_factor = -0.1
-		global_building_slots_factor = 0.2
+		production_speed_bunker_factor = 0.04
+		production_speed_coastal_bunker_factor = 0.04
 		
 		path = {
-			leads_to_tech = dispersed_industry4 
+			leads_to_tech = hinterland_fortification_4 
 			research_cost_coeff = 1
 		}
 		
@@ -465,15 +452,13 @@ technologies = {
 		}
 	}
 	
-	dispersed_industry4 = {
+	hinterland_fortification_4 = {
 
-		industrial_capacity_factory = 0.1
-		line_change_production_efficiency_factor = 0.1
-		industry_air_damage_factor = -0.1
-		global_building_slots_factor = 0.2
+		production_speed_bunker_factor = 0.05
+		production_speed_coastal_bunker_factor = 0.05
 		
 		path = {
-			leads_to_tech = dispersed_industry5 
+			leads_to_tech = hinterland_fortification_5 
 			research_cost_coeff = 1
 		}
 		
@@ -498,13 +483,10 @@ technologies = {
 		}
 	}
 	
-	dispersed_industry5 = {
+	hinterland_fortification_5 = {
 
-		industrial_capacity_factory = 0.1
-		line_change_production_efficiency_factor = 0.1
-		industry_air_damage_factor = -0.1
-		global_building_slots_factor = 0.2
-		
+		production_speed_bunker_factor = 0.06
+		production_speed_coastal_bunker_factor = 0.06
 		
 		research_cost = 2
 		start_year = 1917

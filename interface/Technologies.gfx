@@ -1,22 +1,32 @@
 spriteTypes = {	
 
 	### generic equipment tech ###
-
-	SpriteType = {
-		name = "GFX_sniper_medium"
-		texturefile = "gfx/interface/technologies/sniper.dds"
-	}
-
-	SpriteType = {
-		name = "GFX_flamethrower_medium"
-		texturefile = "gfx/interface/technologies/flamethrower.dds"
-	}
 	
 	SpriteType = {
 		name = "GFX_improved_infantry_weapons_4_medium"
 		texturefile = "gfx/interface/technologies/improved_infantry_weapons_4.dds"
 	}
 	
+	SpriteType = {
+		name = "GFX_steel_helmet_medium"
+		texturefile = "gfx/interface/technologies/steel_helmet.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_sniper_medium"
+		texturefile = "gfx/interface/technologies/sniper.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_explosives_team_medium"
+		texturefile = "gfx/interface/technologies/explosives_team.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_flamethrower_medium"
+		texturefile = "gfx/interface/technologies/flamethrower.dds"
+	}
+
 	SpriteType = {
 		name = "GFX_field_grey_medium"
 		texturefile = "gfx/interface/technologies/field_grey.dds"
@@ -26,6 +36,79 @@ spriteTypes = {
 		name = "GFX_winter_clothing_medium"
 		texturefile = "gfx/interface/technologies/winter_clothing.dds"
 	}
+	
+	SpriteType = {
+		name = "GFX_machine_gun_medium"
+		texturefile = "gfx/interface/technologies/machine_gun.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_machine_gun_2_medium"
+		texturefile = "gfx/interface/technologies/machine_gun_2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_machine_gun_3_medium"
+		texturefile = "gfx/interface/technologies/machine_gun_3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_machine_gun_4_medium"
+		texturefile = "gfx/interface/technologies/machine_gun_4.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_frontline_fortification_medium"
+		texturefile = "gfx/interface/technologies/frontline_fortification.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_frontline_fortification_2_medium"
+		texturefile = "gfx/interface/technologies/frontline_fortification_2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_frontline_fortification_3_medium"
+		texturefile = "gfx/interface/technologies/frontline_fortification_3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_frontline_fortification_4_medium"
+		texturefile = "gfx/interface/technologies/frontline_fortification_4.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_frontline_fortification_5_medium"
+		texturefile = "gfx/interface/technologies/frontline_fortification_5.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_hinterland_fortification_medium"
+		texturefile = "gfx/interface/technologies/hinterland_fortification.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_hinterland_fortification_2_medium"
+		texturefile = "gfx/interface/technologies/hinterland_fortification_2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_hinterland_fortification_3_medium"
+		texturefile = "gfx/interface/technologies/hinterland_fortification_3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_hinterland_fortification_4_medium"
+		texturefile = "gfx/interface/technologies/hinterland_fortification_4.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_hinterland_fortification_5_medium"
+		texturefile = "gfx/interface/technologies/hinterland_fortification_5.dds"
+	}
+	
+	
+	
 	
 	SpriteType = {
 		name = "GFX_rocket_interceptor_equipment_3_medium"
@@ -78,7 +161,7 @@ spriteTypes = {
 	}		
 	
 	SpriteType = {
-		name = "GFX_infantry_weapons_1_medium"
+		name = "GFX_infantry_weapons1_medium"
 		texturefile = "gfx/interface/technologies/infantry1.dds"
 	}		
 	
@@ -417,7 +500,7 @@ spriteTypes = {
 	}	
 	
 	SpriteType = {
-		name = "GFX_improved_infantry_weapons_1_medium"
+		name = "GFX_improved_infantry_weapons1_medium"
 		texturefile = "gfx/interface/technologies/infantry_weapons.dds"
 	}	
 
@@ -1536,56 +1619,6 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_streamlined_line_medium"
 		texturefile = "gfx/interface/technologies/streamlined_line.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_concentrated_industry_medium"
-		texturefile = "gfx/interface/technologies/concentrated_industry.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_concentrated_industry2_medium"
-		texturefile = "gfx/interface/technologies/concentrated_industry2.dds"
-	}	
-
-	SpriteType = {
-		name = "GFX_concentrated_industry3_medium"
-		texturefile = "gfx/interface/technologies/concentrated_industry3.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_concentrated_industry4_medium"
-		texturefile = "gfx/interface/technologies/concentrated_industry4.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_concentrated_industry5_medium"
-		texturefile = "gfx/interface/technologies/concentrated_industry5.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_dispersed_industry_medium"
-		texturefile = "gfx/interface/technologies/dispersed_industry.dds"
-	}	
-
-	SpriteType = {
-		name = "GFX_dispersed_industry2_medium"
-		texturefile = "gfx/interface/technologies/dispersed_industry2.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_dispersed_industry3_medium"
-		texturefile = "gfx/interface/technologies/dispersed_industry3.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_dispersed_industry4_medium"
-		texturefile = "gfx/interface/technologies/dispersed_industry4.dds"
-	}	
-	
-	SpriteType = {
-		name = "GFX_dispersed_industry5_medium"
-		texturefile = "gfx/interface/technologies/dispersed_industry5.dds"
 	}	
 
 	SpriteType = {

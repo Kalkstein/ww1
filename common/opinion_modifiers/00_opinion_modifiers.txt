@@ -628,5 +628,79 @@ opinion_modifiers = {
 	BUL_reject_entente = { value = -40 }
 	BUL_russia_no_help = {value = -25 }
 	
+	# Russian focus tree
+	
+	russian_saber_rattling = { value = -50 }
+	
+	russian_support = { value = 30 }
+	
+	cooperation = { value = 50 }
+	
+	bulgaria_refuses = { value = -50 }
+	
+	serbia_refuses = { value = -50 }
+	
+	slavic_alliance = { value = 50 }
+	
+	austrian_help = { value = 50 }
+	
+	left_alone = { value = -50 }
+	
+	russia_takes_the_reward = { value = -50 }
+	
+	central_powers_support = { value = 30 }
+	
+	russian_war_fault = { value = -50 }
+	
+	threatened_democracy = { value = 50 }
+	
+	a_potential_ally = { value = 50 }
+	
+	russian_expansionism = { value = -30 }
+	
+	stabbed_by_central_powers = { value = -50 }
+	
+	allied_support = { value = 50 }
+	
+	stabbed_by_allies = { value = -50 }
+	
+	russian_stabilizer = { value = 30 }
+	
+	austrian_guarantee = { value = 30 }
+	
+	russian_ally = { value = 30 }
+	
+	russian_enemy = { value = -50 }
+	
+	a_insane_plan = { value = -50 }
+	
+	russian_warmongers = { value = -30 }
+	
+	together_we_are_strong = { value = 50 }
+	
+	a_good_plan = { value = 50 }
+	
+	not_used_chances = { value = -30 }
+	
+	russian_attack = { value = -70 }
+	
+	unloyal_ally = { value = -20 }
+	
+	rejected_offer =  { value = -50 }
+	
+	a_good_cooperation = { value = 80 }
+	
+	the_definition_of_illoyal = { value = -100 }
+	
+	exaggerating_allies = { value = -50 }
+	
+	russian_backstabbing = { value = -150 }
+	
+	a_good_treaty = { value = 50 }
+	
+	backstabbers = { value = -50 }
+	
+	strong_minded_germans = { value = 30 }
+	
 	
 }	

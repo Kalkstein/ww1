@@ -17,7 +17,7 @@ ideas = {
 				political_power_gain = 1
 			}
 		}
-		BUL_keep_fascism_idea = {
+		BUL_keep_monarchy_idea = {
 			picture = generic_intel_bonus 
 			removal_cost = -1 
 			
@@ -46,7 +46,7 @@ ideas = {
 			}
 			
 			modifier = { 
-				communism_drift = 0.03
+				communism_drift = 0.09
 			}
 		}
 		BUL_armed_neutrality_idea = {
@@ -60,9 +60,266 @@ ideas = {
 			allowed_civil_war = {
 				always = yes 
 			}
+			
+			modifier = {
+				conscription = 0.04
+			}
 		}
-	}
+		BUL_communism_support_idea = {
+			picture = generic_communism_drift_bonus
+			removal_cost = -1 
+			
+			allowed = {
+				always = no 
+			}
+			
+			allowed_civil_war = {
+				always = yes 
+			}
+			
+			modifier = {
+				communism_drift = 0.04
+			}
+		}
+		BUL_turkish_military_advisors_idea = {
+			picture = generic_infantry_bonus 
+			removal_cost = -1 
+			
+			allowed = {
+				always = no 
+			}
+			
+			allowed_civil_war = {
+				always = yes 
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.07
+			}
+			
+			modifier = {
+				army_org_factor = 0.15
+				
+			}
+		}
+		BUL_complete_neutrality_idea = {
+			picture = neutrality_idea
+			removal_cost = -1 
+			
+			allowed = {
+				always = no 
+			}
+			
+			allowed_civil_war = {
+				always = yes 
+			}
+			
+			modifier = {
+				unity_factor = 0.2 
+				communism_acceptance = 85
+				democratic_acceptance = 85
+				enemy_partisan_effect = -0.1
+			}
+		}
+		BUL_destabilizing_russia_idea = {
+			picture = generic_spy_coup
+			removal_cost = -1 
+			
+			allowed = {
+				always = no 
+			}
+			
+			allowed_civil_war = {
+				always = yes 
+			}
+			
+			modifier = {
+				unity_factor = -0.2
+				enemy_partisan_effect = 0.02 
+				communism_drift = 0.03 
+			}
+		}
+		BUL_prussia_idea = {
+			picture = triumphant_will
+			removal_cost = -1 
+			
+			allowed = {
+				always = no 
+			}
+			
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			modifier = {
+				unity_factor = 0.1 
+				army_org_Factor = 0.1
+				consumer_goods_factor = -0.05
+				planning_speed = 0.25 
+			}
+		}
+		BUL_military_propaganda_idea = {
+			picture = generic_morale_bonus 
+			removal_cost = -1 
+			
+			allowed = {
+				always = no 
+			}
+			
+			allowed_civil_war = {
+				always = yes 
+			}
+			
+			modifier = {
+				conscription = 0.004 
+				unity_factor = 0.05 
+			}
+		}
+		BUL_air_wonder_idea = {
+			picture = air_support_focus 
+			removal_cost = -1 
+			
+			allowed = {
+				always = no 
+			}
+			
+			allowed_civil_war = {
+				always = yes 
+			}
+			
+			modifier = {
+				conscription = 0.01 
+			}
+		}
+		BUL_forts_idea = {
+			picture = generic_wall_line 
+			removal_cost = -1 
+			
+			allowed = {
+				always= no 
+			}
+			
+			allowed_civil_war = {
+				always = yes 
+			}
+			
+			modifier = {
+				production_speed_bunker_factor = 0.15
+				production_speed_coastal_bunker_factor = 0.15
+			}
+		}
+		BUL_increased_offensive = {
+			picture = generic_infantry_bonus
+			removal_cost = -1 
+			
+			allowed = {
+				always = no 
+			}
+			
+			allowed_civil_war = {
+				always = yes 
+			}
+			
+			modifier = {
+				army_org_factor = 0.05 
+				max_planning = 0.1 
+			}
+		}
+		BUL_cheap_weapons_idea = {
+			picture = FRA_factory_strikes 
+			removal_cost = -1
+			
+			allowed = {
+				always = no 
+			}
+			
+			allowed_civil_war = {
+				always = yes 
+			}
+			
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+		BUL_better_training_idea = {
+			picture = generic_morale_bonus
+			removal_cost = -1 
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes 
+			}
+			
+			modifier = {
+				army_org_factor = 0.1 
+				planning_speed = 0.05 
+			}
+		}
+		BUL_engineers_idea = {
+			picture = escort_effort_focus 
+			removal_cost = -1
+			
+			allowed = {
+				always = no 
+			}
+			
+			allowed_civil_war = {
+				always = yes 
+			}
+			
+			modifier = {
+				naval_retreat_speed = 0.15 
+				navy_capital_ship_defence_factor = 0.1
+			}
+		}
+		BUL_large_dockyards_idea = {
+			picture = generic_navy_bonus 
+			removal_cost = -1 
+			
+			allowed = {
+				always = no 
+			}
+			
+			allowed_civil_war = {
+				always = yes 
+			}
+			
+			equipment_bonus = {
+
+				capital_ship = {
+					build_cost_ic = -0.15 instant = yes
+				}
+			}
+		}
+		BUL_small_dockyards_idea = {
+			picture = generic_navy_bonus
+			removal_cost = -1 
+			
+			allowed = {
+				always = no 
+			}
+			
+			allowed_civil_war = {
+				always = yes 
+			}
+			
+			equipment_bonus = {
+
+				screen_ship = {
+					build_cost_ic = -0.8 instant = yes
+				}
+				submarine = {
+					build_cost_ic = -0.8 instant = yes
+				}
+			}
+		}
 		
+	}
 	political_advisor = {
 
 		BUL_konstantin_muraviev = {
@@ -130,7 +387,9 @@ ideas = {
 			allowed = {
 				original_tag = BUL
 			}
-			
+			available = {
+				has_completed_focus = BUL_fortifications
+			}
 
 			
 			traits = { army_chief_defensive_2 }
@@ -149,7 +408,9 @@ ideas = {
 			allowed = {
 				original_tag = BUL
 			}
-						
+			available = {
+				has_completed_focus = BUL_air_branch 
+			}			
 			traits = { air_chief_ground_support_2 }
 			
 			ai_will_do = {
@@ -162,6 +423,9 @@ ideas = {
 
 			allowed = {
 				original_tag = BUL
+			}
+			available = {
+				has_completed_focus = BUL_air_branch 
 			}
 			
 			traits = { air_chief_safety_2 }
@@ -212,6 +476,9 @@ ideas = {
 			allowed = {
 				original_tag = BUL
 			}
+			available = {
+				has_completed_focus = BUL_air_branch
+			}
 			
 			traits = { air_air_combat_training_2 }
 			
@@ -227,6 +494,9 @@ ideas = {
 			allowed = {
 				original_tag = BUL
 			}
+			available = {
+				has_completed_focus = BUL_army_reforms
+			}
 					
 			traits = { army_regrouping_2 }
 			
@@ -241,6 +511,9 @@ ideas = {
 			
 			allowed = {
 				original_tag = BUL
+			}
+			available = {
+				has_completed_focus = BUL_army_reforms
 			}
 					
 			traits = { army_infantry_2 }
@@ -267,15 +540,16 @@ ideas = {
 	}	
 	aircraft_manufacturer = { 
 		
-		designer = yes
+		designer = yes	
 		
-		dar = {
+		albatros_flugzeugwerke = {
 			
 			picture = generic_air_manufacturer_1
 
 			
 			allowed = {
-				original_tag = BUL
+				has_completed_focus = BUL_air_designers 
+				original_tag = BUL 
 			}
 						
 			research_bonus = {
@@ -284,12 +558,47 @@ ideas = {
 			
 			traits = { light_aircraft_manufacturer }
 			
-			# licenced Focke-Wulf Fw 44, built own trainers DAR 6 and DAR 9.
-			
 			ai_will_do = {
 				factor = 1
 			}
-		}	
+		}
+		gothaer_waggonfabrik = {
+			
+			picture = generic_air_manufacturer_2 
+			
+			allowed = {
+				original_tag = BUL 
+				has_completed_focus = BUL_air_designers
+			}
+			
+			research_bonus = {
+				air_equipment = 0.10 
+			}
+			
+			traits = { medium_aircraft_manufacturer }
+			ai_will_do = {
+				factor = 1 
+			}
+		}
+		zeppelin_staaken = {
+		
+			picture = generic_air_manufacturer_3 
+			
+			allowed = {
+				original_tag = BUL 
+				has_completed_focus = BUL_air_designers
+			}
+			
+			research_bonus = {
+				air_equipment = 0.10 
+			}
+			
+			traits = { heavy_aircraft_manufacturer }
+			ai_will_do = {
+				factor = 1 
+			}
+		}
+		
 	}
 
 
@@ -300,6 +609,9 @@ ideas = {
 
 			allowed = {
 				original_tag = BUL
+			}
+			available = {
+				has_completed_focus = BUL_army_reforms
 			}
 			
 			research_bonus = {
@@ -315,6 +627,9 @@ ideas = {
 			
 			allowed = {
 				original_tag = BUL
+			}
+			available = {
+				has_completed_focus = BUL_air_branch
 			}
 			
 			research_bonus = {

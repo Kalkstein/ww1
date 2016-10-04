@@ -5,7 +5,7 @@ oob = "GER_1910"
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
-	infantry_weapons_1 = 1
+	infantry_weapons1 = 1
 	tech_recon = 1
 	tech_support = 1
 	tech_engineers = 1
@@ -43,7 +43,7 @@ set_politics = {
 		}
 		
 		fascism = {
-			popularity = 27.5
+			popularity = 32.5
 		}
 
 		neutrality = {
@@ -51,7 +51,7 @@ set_politics = {
 		}
 		
 		communism = {
-			popularity = 28.9
+			popularity = 23.9
 		}
 	}
 
@@ -67,7 +67,7 @@ add_to_faction = GER
 add_to_faction = AUS
 
 add_ideas = {
-	united_germany
+	GER_call_for_suffrage_reform_idea
 	limited_exports
 	extensive_conscription
 	partial_economic_mobilisation
@@ -85,7 +85,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Konrad Adenauer"
+	name = "Friedrich Ebert"
 	desc = "POLITICS_KONRAD_ADENAUER_DESC"
 	picture = "Portrait_Germany_Konrad_Adenauer.dds"
 	expire = "1965.1.1"
@@ -95,7 +95,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Friedrich Ebert"
+	name = "Karl Liebknecht"
 	desc = "POLITICS_WILHELM_PIECK_DESC"
 	picture = "Portrait_Germany_Wilhelm_Pieck.dds"
 	expire = "1965.1.1"

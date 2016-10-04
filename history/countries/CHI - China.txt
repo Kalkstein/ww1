@@ -10,7 +10,6 @@ set_technology = {
 }
 
 add_ideas = {
-	german_advisors
 	CHI_communist_uprisings
 }
 
@@ -86,9 +85,7 @@ set_convoys = 40
 		construction1 = 1
 		construction2 = 1
 		construction3 = 1
-		concentrated_industry = 1
-		concentrated_industry2 = 1
-		concentrated_industry3 = 1
+		hinterland_fortification = 1
 	}
 }
 

@@ -6,7 +6,7 @@ ideas = {
 			removal_cost = -1
 			
 			allowed = {
-				always = yes
+				original_tag = GER
 			}
 
 			allowed_civil_war = {
@@ -157,31 +157,6 @@ ideas = {
 			traits = { kaiser }
 		}
 		
-		united_germany = {
-			
-			allowed = {
-				original_tag = GER
-			}
-
-			allowed_civil_war = {
-				NOT ={
-					has_government = communism
-				}
-				NOT = {
-					any_country = {
-						original_tag = GER
-						has_government = democratic 
-						NOT = {
-							tag = ROOT
-						}
-					}
-				}
-			}
-			
-			removal_cost = -1
-			
-			traits = { united_ger_trait }
-		}
 		
 		triumphant_will = {
 			

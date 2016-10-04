@@ -16,7 +16,7 @@ focus_tree = {
 			#### Indsutry Branch ####
 			#########################
 			
-focus = {
+	focus = {
 		id = AUS_continue_industrialization
 		icon = GFX_goal_generic_production
 		x = 1
