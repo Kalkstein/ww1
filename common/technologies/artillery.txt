@@ -15,11 +15,6 @@ technologies = {
 			leads_to_tech = interwar_artillery_2
 			research_cost_coeff = 1
 		}
-
-		path = {
-			leads_to_tech = interwar_anti_tank
-			research_cost_coeff = 1
-		}
 		
 		start_year = 1905
 		
@@ -602,6 +597,10 @@ technologies = {
 #	}		
 
 	rocket_artillery4 = {
+		path = {
+			leads_to_tech = interwar_anti_tank
+			research_cost_coeff = 1
+		}
 	
 		enable_equipments = {
 			rocket_artillery_equipment_2
@@ -648,11 +647,11 @@ technologies = {
 		
 		research_cost = 1.5
 
-		start_year = 1918
+		start_year = 1917
 		
 		folder = {
 			name = artillery_folder
-			position = { x = 7 y = 14 }
+			position = { x = 7 y = 12 }
 		}
 		
 		ai_will_do = {
