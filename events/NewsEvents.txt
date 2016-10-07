@@ -425,12 +425,12 @@ news_event = {
 	title = july_crisis.100.t 
 	desc = july_crisis.100.d 
 	picture = GFX_news_event_010 
+	fire_only_once = yes
 	
 	major = yes
 	
 	trigger = {
 		date > 1914.5.1
-		NOT = { has_global_flag = ass_sarajevo }
 		country_exists = AUS
 		country_exists = SER
 		AUS = {
@@ -466,7 +466,6 @@ country_event = {
 	
 	trigger = {
 		has_global_flag = ass_sarajevo
-		NOT = { has_global_flag = blank_cheque }
 		tag = GER
 		date > 1914.6.28
 		country_exists = GER
@@ -479,10 +478,6 @@ country_event = {
 	}
 	
 	fire_only_once = yes
-	
-	immediate = {
-		set_global_flag = blank_cheque
-	}
 	
 	option = {
 	    name = july_crisis.110.a
@@ -517,7 +512,6 @@ country_event = {
 	
 	trigger = {
 		has_global_flag = blank_cheque_yes
-		NOT = { has_global_flag = aus_ultimatum }
 		tag = AUS
 		date > 1914.6.28
 		country_exists = AUS
@@ -530,10 +524,6 @@ country_event = {
 	mean_time_to_happen = { days = 1 }
 	
 	fire_only_once = yes
-	
-	immediate = {
-		set_global_flag = aus_ultimatum
-	}
 	
 	option = {
 	    name = july_crisis.111.a
@@ -578,7 +568,6 @@ country_event = {
 	
 	trigger = {
 		has_global_flag = blank_cheque_no
-		NOT = { has_global_flag = aus_ultimatum }
 		tag = AUS
 		date > 1914.6.28
 		country_exists = AUS
@@ -591,10 +580,6 @@ country_event = {
 	mean_time_to_happen = { days = 1 }
 	
 	fire_only_once = yes
-	
-	immediate = {
-		set_global_flag = aus_ultimatum
-	}
 	
 	option = {
 		name = july_crisis.112.a
@@ -639,7 +624,6 @@ country_event = {
 	
 	trigger = {
 		has_global_flag = ultimatum_split
-		NOT = { has_global_flag = russia_split }
 		tag = SOV
 		date > 1914.6.28
 		country_exists = SOV
@@ -654,10 +638,6 @@ country_event = {
 	mean_time_to_happen = { days = 1 }
 	
 	fire_only_once = yes
-	
-	immediate = {
-		set_global_flag = russia_split
-	}
 	
 	option = {
 		name = july_crisis.121.a
@@ -700,7 +680,6 @@ country_event = {
 	
 	trigger = {
 		has_global_flag = ultimatum_invest
-		NOT = { has_global_flag = russia_invest }
 		tag = SOV
 		date > 1914.6.28
 		country_exists = SOV
@@ -715,10 +694,6 @@ country_event = {
 	mean_time_to_happen = { days = 1 }
 	
 	fire_only_once = yes
-	
-	immediate = {
-		set_global_flag = russia_invest
-	}
 	
 	option = {
 	    name = july_crisis.122.a
@@ -760,7 +735,6 @@ country_event = {
 	
 	trigger = {
 		has_global_flag = ultimatum_split
-		NOT = { has_global_flag = response_split }
 		tag = SER
 		date > 1914.6.28
 		country_exists = AUS
@@ -775,10 +749,6 @@ country_event = {
 	}
 	
 	fire_only_once = yes
-	
-	immediate = {
-		set_global_flag = response_split
-	}
 	
 	option = {
 	    name = july_crisis.131.a
@@ -810,7 +780,6 @@ country_event = {
 	
 	trigger = {
 		has_global_flag = ultimatum_invest
-		NOT = { has_global_flag = response_invest }
 		tag = SER
 		date > 1914.6.28
 		country_exists = AUS
@@ -825,10 +794,6 @@ country_event = {
 	}
 	
 	fire_only_once = yes
-	
-	immediate = {
-		set_global_flag = response_invest
-	}
 	
 	option = {
 	    name = july_crisis.132.a
@@ -869,7 +834,6 @@ news_event = {
 	
 	trigger = {
 		has_global_flag = split_accept
-		NOT = { has_global_flag = averted_split }
 		tag = AUS
 		date > 1914.6.28
 		country_exists = AUS
@@ -886,7 +850,6 @@ news_event = {
 	}
 	
 	immediate = {
-		set_global_flag = averted_split
 		BUL = { transfer_state = 108 }  # TODO more detailed?
 	}
 	
@@ -926,7 +889,6 @@ news_event = {
 	
 	trigger = {
 		has_global_flag = invest_accept
-		NOT = { has_global_flag = averted_invest }
 		tag = AUS
 		date > 1914.6.28
 		country_exists = AUS
@@ -941,10 +903,6 @@ news_event = {
 	}
 	
 	fire_only_once = yes
-	
-	immediate = {
-		set_global_flag = averted_invest
-	}
 	
 	option = {
 	    name = july_crisis.142.a 
@@ -982,7 +940,6 @@ news_event = {
 	
 	trigger = {
 		has_global_flag = ultimatum_reject
-		NOT = { has_global_flag = balkans }
 		tag = AUS
 		date > 1914.6.28
 		country_exists = AUS
@@ -996,10 +953,6 @@ news_event = {
 	
 	mean_time_to_happen = {
 		days = 1
-	}
-	
-	immediate = {
-		set_global_flag = balkans
 	}
 	
 	option = {
@@ -1037,7 +990,6 @@ country_event = {
 	
 	trigger = {
 		date > 1914.6.28
-		NOT = { has_global_flag = call_to_arms }
 		tag = GER
 		country_exists = GER
 		country_exists = AUS
@@ -1051,10 +1003,6 @@ country_event = {
 	}
 	
 	fire_only_once = yes
-	
-	immediate = {
-		set_global_flag = call_to_arms
-	}
 	
 	option = {
 	    name = july_crisis.160.a 
@@ -1090,7 +1038,6 @@ news_event = {
 	
 	trigger = {
 		date > 1914.6.28
-		NOT = { has_global_flag = war_began }
 		country_exists = AUS
 		country_exists = SOV	
 		country_exists = FRA
@@ -1110,7 +1057,6 @@ news_event = {
 	}
 	
 	immediate = {
-		set_global_flag = war_began
 		SER = {
 			set_rule = { can_create_factions = yes }
 			create_faction = panslavic_faction
@@ -1129,12 +1075,12 @@ news_event = {
 country_event = {
     id = news.300
 	hidden = yes
+	fire_only_once = yes
 	
 	major = yes
 	
 	trigger = {
 		has_global_flag = ultimatum_no
-		NOT = { has_global_flag = inde_slav_start }
 		date > 1915.7.10
 		country_exists = AUS
 	}
@@ -1142,8 +1088,6 @@ country_event = {
 	mean_time_to_happen = {
 		days = 30
 	}
-	
-	fire_only_once = yes
 	
 	immediate = {
 		set_global_flag = inde_slav_start
@@ -1156,12 +1100,12 @@ country_event = {
 	title = news.310.t 
 	desc = news.310.d 
 	picture = GFX_news_event_033
+	fire_only_once = yes
 	
 	major = yes
 	
 	trigger = {
 		has_global_flag = inde_slav_start
-		NOT = { has_global_flag = inde_cro }
 		date > 1915.7.10
 		country_exists = AUS
 	}
@@ -1169,8 +1113,6 @@ country_event = {
 	mean_time_to_happen = {
 		days = 30
 	}
-	
-	fire_only_once = yes
 	
 	immediate = {
 		set_global_flag = inde_cro
@@ -1203,6 +1145,7 @@ country_event = {
 		name = news.310.b
 		trigger = {
 			tag = AUS
+		}
 		103 = { remove_core_of = AUS }
 		104 = { remove_core_of = AUS }
 		109 = { remove_core_of = AUS }
@@ -1281,6 +1224,7 @@ country_event = {
 		name = news.321.a
 		trigger = {
 			tag = SOV
+		}
 		SOV = {
 			create_wargoal = {
 					type = take_state_focus
@@ -1353,6 +1297,7 @@ country_event = {
 		name = news.330.a
 		trigger = {
 			tag = AUS
+		}
 		AUS = {
 			create_wargoal = {
 				target = HUN
@@ -1422,6 +1367,7 @@ country_event = {
 		name = news.340.a
 		trigger = {
 			tag = AUS
+		}
 		AUS = {
 			create_wargoal = {
 				target = CZE
@@ -1438,6 +1384,7 @@ country_event = {
 		name = news.340.b
 		trigger = {
 			tag = AUS
+		}
 		9 = { remove_core_of = AUS }
 		69 = { remove_core_of = AUS }
 		72 = { remove_core_of = AUS }
