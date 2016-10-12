@@ -14,7 +14,7 @@ ideas = {
 			}
 			
 			modifier = {
-				political_power_gain = 1
+				political_power_gain_factor = 0.15
 			}
 		}
 		BUL_keep_monarchy_idea = {
@@ -398,6 +398,74 @@ ideas = {
 			
 			modifier = {
 				research_time_factor = -0.03
+			}
+		}
+		BUL_gre_helps = {
+			picture = combined_bomber_offensive
+			removal_cost = -1 
+			
+			allowed = {
+				always = no 
+			}
+			
+			allowed_civil_war = {
+				always = no 
+			}
+			
+			cancel = {
+				has_war = no 
+			}
+			
+			modifier = {
+				industrial_capacity_factory =  0.04
+			}
+		}
+		BUL_protests_1_idea = {
+			picture = FRA_factory_strikes
+			removal_cost = -1 
+			
+			allowed = {
+				always = no 
+			}
+			
+			allowed_civil_war = {
+				always = no 
+			}
+			
+			modifier = {
+				industrial_capacity_factory =  -0.05 
+			}
+		}
+		BUL_protests_2_idea = {
+			picture = FRA_factory_strikes
+			removal_cost = -1 
+			
+			allowed = {
+				always = no 
+			}
+			
+			allowed_civil_war = {
+				always = no 
+			}
+			
+			modifier = {
+				industrial_capacity_factory =  -0.09
+			}
+		}
+		BUL_protests_3_idea = {
+			picture = FRA_factory_strikes
+			removal_cost = -1 
+			
+			allowed = {
+				always = no 
+			}
+			
+			allowed_civil_war = {
+				always = no 
+			}
+			
+			modifier = {
+				industrial_capacity_factory =  -0.1
 			}
 		}
 		

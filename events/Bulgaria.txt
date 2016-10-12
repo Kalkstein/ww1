@@ -156,6 +156,13 @@ country_event = {
 		BUL = {
 		    add_to_faction = ROOT
 		}
+		ROOT = {
+				add_ai_strategy = {
+					type = alliance
+					id = "BUL"
+					value = 200
+				}
+			}
 	}
  	
 	option = {
@@ -234,9 +241,8 @@ country_event = {
 	option = {
 	    name = bulgaria.11.a 
 		ai_chance = { factor = 100 }
-		set_global_flag = BUL_russia_helps
-		add_political_power = -30 
-		custom_effect_tooltip = BUL_russia_will_help
+		immediate = {
+			set_global_flag = BUL_russia_helps
 		}
 	}
 	
@@ -249,5 +255,1127 @@ country_event = {
 					modifier = BUL_russia_no_help
 				}
 		}
+	}
+}
+
+country_event = {
+	id = bulgaria.12
+	title = bulgaria.12.t
+	desc = bulgaria.12.d 
+	picture = GFX_report_event_soldiers_marching
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = bulgaria.12.a 
+		hidden_effect = { load_oob = BUL_general_mob_1 }
+	}
+}
+
+country_event = {
+	id = bulgaria.13
+	title = bulgaria.13.t
+	desc = bulgaria.13.d 
+	picture = GFX_news_event_generic_read_write
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = bulgaria.13.a 
+		ai_chance = {
+			base = 15 
+			modifier = {
+				add = -15 
+				BUL = { has_army_size = { size < 20 } }
+			}
+			modifier = {
+				add = -100 
+				TUR = {
+					OR = {
+						is_in_faction_with = GER 
+						is_in_faction_with = FRA 
+					}
+				}
+			}
+			modifier = {
+				add = 100 
+				AND = {
+					BUL = { has_army_size = { size > 20 } }
+					SER = { has_army_size = { size > 20 } }
+					GRE = { has_army_size = { size > 15 } }
+					MNT = { has_army_size = { size > 10 } } 
+				}
+			}
+		}
+		if = {
+			limit = {
+				746 = {
+					OR = {
+						is_controlled_by = TUR
+						any_other_country = {
+							controls_state = 746
+							is_in_faction_with = TUR
+							TUR = { is_faction_leader = yes }
+						}
+					}
+				}
+			}
+			SER = { transfer_state = 746 }
+		}
+		if = {
+			limit = {
+				106 = {
+					OR = {
+						is_controlled_by = TUR
+						any_other_country = {
+							controls_state = 106
+							is_in_faction_with = TUR
+							TUR = { is_faction_leader = yes }
+						}
+					}
+				}
+			}
+			BUL = { transfer_state = 106 }
+			106 = { add_core_of = BUL }
+		}
+		if = {
+			limit = {
+				184  = {
+					OR = {
+						is_controlled_by = TUR
+						any_other_country = {
+							controls_state = 184
+							is_in_faction_with = TUR
+							TUR = { is_faction_leader = yes }
+						}
+					}
+				}
+			}
+			BUL = { transfer_state = 184 }
+			184 = { add_core_of = BUL }
+		}
+		if = {
+			limit = {
+				731 = {
+					OR = {
+						is_controlled_by = TUR
+						any_other_country = {
+							controls_state = 731
+							is_in_faction_with = TUR
+							TUR = { is_faction_leader = yes }
+						}
+					}
+				}
+			}
+			GRE = { transfer_state = 731 }
+		}
+		if = {
+			limit = {
+				185 = {
+					OR = {
+						is_controlled_by = TUR
+						any_other_country = {
+							controls_state = 185
+							is_in_faction_with = TUR
+							TUR = { is_faction_leader = yes }
+						}
+					}
+				}
+			}
+			GRE = { transfer_state = 185 }
+		}
+		if = {
+			limit = {
+				748 = {
+					OR = {
+						is_controlled_by = TUR
+						any_other_country = {
+							controls_state = 748
+							is_in_faction_with = TUR
+							TUR = { is_faction_leader = yes }
+						}
+					}
+				}
+			}
+			MNT = { transfer_state = 748 }
+		}
+		if = {
+			limit = {
+				44 = {
+					OR = {
+						is_controlled_by = TUR
+						any_other_country = {
+							controls_state = 44
+							is_in_faction_with = TUR
+							TUR = { is_faction_leader = yes }
+						}
+					}
+				}
+			}
+			ALB = { transfer_state = 44 }
+		}
+		if = {
+			limit = {
+				747 = {
+					OR = {
+						is_controlled_by = TUR
+						any_other_country = {
+							controls_state = 747
+							is_in_faction_with = TUR
+							TUR = { is_faction_leader = yes }
+						}
+					}
+				}
+			}
+			ALB = { transfer_state = 747 }
+		}
+	}
+	option = {
+		name = bulgaria.13.b 
+		ai_chance = {
+			base = 85 
+			modifier = {
+				add = -85 
+				AND = {
+					BUL = { has_army_size = { size > 20 } }
+					SER = { has_army_size = { size > 20 } }
+					GRE = { has_army_size = { size > 15 } }
+					MNT = { has_army_size = { size > 10 } } 
+				}
+			}
+		}
+		BUL = {
+			country_event = { id = bulgaria.29 days = 1 }
+		}
+	}
+}
+
+country_event = {
+	id = bulgaria.14 
+	title = bulgaria.14.t 
+	desc = bulgaria.14.d 
+	picture = GFX_report_event_lithuania_army
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = bulgaria.14.a 
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		if = {
+			limit = {
+				746 = {
+					OR = {
+						is_controlled_by = TUR
+						any_other_country = {
+							controls_state = 746
+							is_in_faction_with = TUR
+							TUR = { is_faction_leader = yes }
+						}
+					}
+				}
+			}
+			SER = { transfer_state = 746 }
+		}
+		if = {
+			limit = {
+				106 = {
+					OR = {
+						is_controlled_by = TUR
+						any_other_country = {
+							controls_state = 106
+							is_in_faction_with = TUR
+							TUR = { is_faction_leader = yes }
+						}
+					}
+				}
+			}
+			BUL = { transfer_state = 106 }
+			106 = { add_core_of = BUL }
+		}
+		if = {
+			limit = {
+				184  = {
+					OR = {
+						is_controlled_by = TUR
+						any_other_country = {
+							controls_state = 184
+							is_in_faction_with = TUR
+							TUR = { is_faction_leader = yes }
+						}
+					}
+				}
+			}
+			BUL = { transfer_state = 184 }
+			184 = { add_core_of = BUL }
+		}
+		if = {
+			limit = {
+				731 = {
+					OR = {
+						is_controlled_by = TUR
+						any_other_country = {
+							controls_state = 731
+							is_in_faction_with = TUR
+							TUR = { is_faction_leader = yes }
+						}
+					}
+				}
+			}
+			GRE = { transfer_state = 731 }
+		}
+		if = {
+			limit = {
+				185 = {
+					OR = {
+						is_controlled_by = TUR
+						any_other_country = {
+							controls_state = 185
+							is_in_faction_with = TUR
+							TUR = { is_faction_leader = yes }
+						}
+					}
+				}
+			}
+			GRE = { transfer_state = 185 }
+		}
+	}
+	option = {
+		name = bulgaria.14.b 
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 3
+				strength_ratio = {
+					tag = BUL
+					ratio > 0.7
+				}
+			}
+			modifier = {
+				factor = 0.1
+				any_other_country = {
+					is_major = yes
+					is_in_faction_with = TUR
+				}
+			}
+		}
+		BUL = { country_event = { id = bulgaria.30 days = 1 } 
+			if = {
+				limit = {
+					is_in_faction_with = TUR
+					is_faction_leader = yes
+				}
+				remove_from_faction = TUR
+			}			
+		}		
+		hidden_effect = {
+			news_event = { hours = 1 id = news.242 }
+		}
+		effect_tooltip = {
+			BUL = {
+				declare_war_on = {
+					target = TUR
+					type = take_state
+					generator = { 106 }
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = bulgaria.15 
+	title = bulgaria.15.t 
+	desc = bulgaria.15.d 
+	picture = GFX_report_event_journalists_speech
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = bulgaria.15.a 
+		ai_chance = {
+			factor = 1 
+			modifier = {
+				factor = 100
+				strength_ratio = {
+					tag = BUL
+					ratio > 3
+				}
+			}	
+		}
+		BUL = { country_event = { id = bulgaria.31 days = 1 } }
+		effect_tooltip = {
+			BUL = {
+				transfer_state = 341
+				remove_state_claim = 341 
+			}
+		}
+	}
+	option = {
+		name = bulgaria.15.b 
+		ai_chance = {
+			factor = 99 
+			modifier = {
+				factor = 0
+				strength_ratio = {
+					tag = BUL
+					ratio > 3
+				}
+			}
+		}
+		BUL = { country_event = { id = bulgaria.32 days = 1  } }
+		effect_tooltip = {
+			BUL = {
+				declare_war_on = {
+					target = TUR
+					type = take_state
+					generator = { 341 }
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = bulgaria.16 
+	title = bulgaria.16.t 
+	desc = bulgaria.16.d 
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = bulgaria.16.a 
+		ai_chance = {
+			factor = 80 
+			modifier = {
+				factor = 0
+				strength_ratio = {
+					tag = BUL
+					ratio > 2
+				}
+			}
+			modifier = {
+				factor = 0 
+				has_war = yes 
+			}
+		}
+		BUL = {
+			add_opinion_modifier = { target = BUL modifier = BUL_reject_macedonia_peace }
+		}
+	}
+	option = {
+		name = bulgaria.16.b 
+		ai_chance = {
+			factor = 20 
+			modifier = {
+				factor = 3
+				strength_ratio = {
+					tag = BUL
+					ratio > 2
+				}
+			}
+			modifier = {
+				factor = 2
+				has_war = yes 
+			}
+		}
+		BUL = {
+			country_event = { id = bulgaria.33 days = 1 }
+		}
+		effect_tooltip = {
+			BUL = {
+				transfer_state = 106 
+				remove_state_claim = 106 
+			}
+		}
+	}
+}
+
+country_event = {
+	id = bulgaria.17 
+	title = bulgaria.17.t 
+	desc = bulgaria.17.d 
+	picture = GFX_report_event_soldiers_marching
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = bulgaria.17.a 
+		ai_chance = {
+			factor = 50			
+			modifier = {
+				factor = 2
+				strength_ratio = {
+					tag = BUL
+					ratio > 2
+				}
+			}
+			modifier = {
+				factor = 0 
+				is_historical_focus_on = yes 
+			}
+		}
+		BUL = {
+			country_event = { id = bulgaria.34 days = 1 }
+		}
+		effect_tooltip = {
+			BUL = {
+				transfer_state = 106 
+				remove_state_claim = 106 
+			}
+		}
+	}
+	option = {
+		name = bulgaria.17.b 
+		ai_chance = {
+			factor = 50  
+			modifier = {
+				factor = 0.1
+				strength_ratio = {
+					tag = BUL
+					ratio > 2
+				}
+			}
+			modifier = {
+				factor = 3
+				is_historical_focus_on = yes 
+			}
+		}
+		BUL = {
+			country_event = { id = bulgaria.35 days = 1 }
+		}
+		effect_tooltip = {
+			BUL = {
+				declare_war_on = {
+					target = SER
+					type = take_state
+					generator = { 106 }
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = bulgaria.18 
+	title = bulgaria.18.t 
+	desc = bulgaria.18.d 
+	picture = GFX_report_event_french_british_officers
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = bulgaria.18.a 
+		ai_chance = {
+			factor = 80 
+			modifier = {
+				factor = 2 
+				has_war = yes 
+			}
+		}
+		add_to_faction = BUL 
+	}
+	option = {
+		name = bulgaria.18.b 
+		ai_chance = {
+			factor = 20 
+			modifier = {
+				factor = 0 
+				has_war = yes 
+			}
+		}
+		BUL = {
+			add_opinion_modifier = { target = FRA modifier = BUL_rejected_entente }
+		}
+	}
+}
+
+country_event = {
+	id = bulgaria.19 
+	title = bulgaria.19.t 
+	desc = bulgaria.19.d 
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = bulgaria.19.a 
+		ai_chance = {
+			factor = 80 
+			modifier = {
+				factor = 2 
+				has_war = yes 
+			}
+		}
+		add_to_faction = BUL 
+	}
+	option = {
+		name = bulgaria.19.b 
+		ai_chance = {
+			factor = 20 
+			modifier = {
+				factor = 0 
+				has_war = yes 
+			}
+		}
+		BUL = {
+			add_opinion_modifier = { target = GER modifier = BUL_reject_centrals }
+		}
+	}
+}
+
+country_event = {
+	id = bulgaria.20 
+	title = bulgaria.20.t 
+	desc = bulgaria.20.d 
+	picture = GFX_report_event_finnish_soviet_pact 
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = bulgaria.20.a 
+		ai_chance = {
+			base = 20 
+		}
+		FRA = {
+			add_to_faction = GRE 
+		}
+		GRE = {
+			declare_war_on = {
+					target = GER 
+					type = puppet_wargoal
+			}
+		}
+	}
+	option = {
+		name = bulgaria.20.b 
+		ai_chance = {
+			factor = 40 
+		}
+		every_country = {
+			limit = {
+				is_in_faction_with = FRA 
+				has_war_with = GER 
+			}
+			add_ideas = BUL_gre_helps 
+		}
+	}
+	option = {
+		name = bulgaria.20.c 
+		ai_chance = {
+			factor = 40 
+		}
+		BUL = {
+			add_opinion_modifier = { target = GRE modifier = BUL_gre_no_helps }
+		}
+	}
+}
+
+country_event = {
+	id = bulgaria.21 
+	title = bulgaria.21.t 
+	desc = bulgaria.21.d 
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = bulgaria.21.a 
+		ai_chance = {
+			factor = 100 
+		}
+		add_tech_bonus = {
+			name = infantry_weapons 
+			bonus = 0.6 
+			uses = 1 
+			category = infantry_weapons
+		}
+		add_tech_bonus = {
+			name = industry_bonus
+			bonus = 0.6 
+			uses = 1 
+			category = industry 
+		}
+	}
+	option = {
+		name = bulgaria.21.b 
+		ai_chance = {
+			factor = 0 
+		}
+	}
+}
+
+country_event = {
+	id = bulgaria.22 
+	title = bulgaria.22.t 
+	desc = bulgaria.22.d 
+	picture = GFX_report_event_physics_lab_02 
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = bulgaria.22.a 
+		ai_chance = {
+			factor = 100 
+		}
+		add_tech_bonus = {
+			name = infantry_weapons 
+			bonus = 0.6 
+			uses = 1 
+			category = infantry_weapons
+		}
+		add_tech_bonus = {
+			name = industry_bonus
+			bonus = 0.6 
+			uses = 1 
+			category = industry 
+		}
+	}
+	option = {
+		name = bulgaria.22.b 
+		ai_chance = {
+			factor = 0 
+		}
+	}
+}
+
+country_event = {
+	id = bulgaria.23 
+	title = bulgaria.23.t 
+	desc = bulgaria.23.d 
+	picture = GFX_report_event_chinese_army_training
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = bulgaria.23.a 
+		ai_chance = {
+			factor = 40 
+		}
+		BUL = {
+			give_military_access = ROM
+		}
+	}
+	option = {
+		name = bulgaria.23.b 
+		ai_chance = {
+			factor = 60 
+		}
+		BUL = {
+			add_opinion_modifier = { target = ROM modifier = BUL_rom_declines }
+		}
+	}
+}
+
+country_event = {
+	id = bulgaria.24 
+	title = bulgaria.24.t 
+	desc = bulgaria.24.d 
+	picture = GFX_report_event_finnish_soviet_pact
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = bulgaria.24.a 
+		ai_chance = {
+			factor = 60 
+			modifier = {
+				factor = 2 
+				BUL = { has_army_size = { size > 20 } }
+			}
+		}
+		BUL = {
+			add_to_faction = TUR 
+		}
+	}
+	option = {
+		name = bulgaria.24.b 
+		ai_chance = {
+			factor = 40 
+		}
+		BUL = {
+			add_opinion_modifier = { target = TUR modifier = BUL_tur_refused }
+		}
+	}
+}
+
+country_event = {
+	id = bulgaria.25 
+	title = bulgaria.25.t 
+	desc = bulgaria.25.d 
+	picture = GFX_report_event_royal_parade 
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = bulgaria.25.a 
+		add_national_unity = 0.05 
+		add_political_power = 150 
+		341 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction  = {
+				type = industrial_complex
+				level = 2 
+				instant_build = yes 
+			}
+		}
+		add_named_threat = { threat = -5 name = BUL_ferdinand_crowned }
+	}
+}
+
+country_event = {
+	id = bulgaria.26 
+	title = bulgaria.26.t 
+	desc = bulgaria.26.d 
+	picture = GFX_report_event_merchant_ship_01 
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = bulgaria.26.a 
+		ai_chance = {
+			factor = 70
+		}
+		send_equipment = {
+			target = BUL 
+			type = submarine_3
+			amount = 1
+		}
+	}
+	option = {
+		name = bulgaria.26.b 
+		ai_chance = {
+			factor = 30 
+		}
+	}
+}
+
+country_event = {
+	id = bulgaria.27 
+	title = bulgaria.27.t 
+	desc = bulgaria.27.d 
+	picture = GFX_report_event_merchant_ship_01
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = bulgaria.27.a 
+		ai_chance = {
+			factor = 70 
+		}
+		send_equipment = {
+			target = BUL 
+			type = basic_light_cruiser
+			amount = 1 
+		}
+		send_equipment = {
+			target = BUL 
+			type = basic_heavy_cruiser
+			amount = 1 
+		}
+	}
+	option = {
+		name = bulgaria.27.b 
+		ai_chance = {
+			factor = 30 
+		}
+	}
+}
+ 
+country_event = {
+	id = bulgaria.28
+	title = bulgaria.28.t 
+	desc = bulgaria.28.d 
+	picture = GFX_report_event_merchant_ship_01
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = bulgaria.28.a 
+		ai_chance = {
+			factor = 70 
+		}
+		send_equipment = {
+			target = BUL 
+			type = basic_battleship
+			amount = 1 
+		}
+	}
+	option = {
+		name = bulgaria.28.b 
+		ai_chance = {
+			factor = 30 
+		}
+	}
+}
+
+country_event = {
+	id = bulgaria.29 
+	title = bulgaria.29.t 
+	desc = bulgaria.29.d 
+	picture = GFX_report_event_soldiers_marching
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = bulgaria.29.a 
+		unlock_national_focus = BUL_general_mobilization
+		add_ideas = war_economy
+		hidden_effect = {
+			load_oob = BUL_general_mob_1
+		}
+	}
+}
+
+#Turkey Refuses Ultimatum 
+country_event = {
+	id = bulgaria.30 
+	title = bulgaria.30.t 
+	desc = bulgaria.30.d 
+	picture = GFX_report_event_soldiers_marching
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = bulgaria.30.a 
+		declare_war_on = {
+					target = TUR
+					type = take_state
+					generator = { 106 }
+		}
+	}
+}
+
+#Turkey Cedes Constantinople 
+country_event = {
+	id = bulgaria.31 
+	title = bulgaria.31.t 
+	desc = bulgaria.31.d 
+	picture = GFX_news_event_generic_read_write
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = bulgaria.31.a 
+		transfer_state = 341 
+		remove_state_claim = 341 
+	}
+}
+
+country_event = {
+	id = bulgaria.32 
+	title = bulgaria.32.t 
+	desc = bulgaria.32.d 
+	picture = GFX_report_event_lithuania_army
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = bulgaria.32.a 
+		ai_chance = {
+			factor = 99
+			modifier = {
+				factor = 0
+				strength_ratio = {
+					tag = TUR 
+					ratio > 1.5
+				}
+			}
+		}
+		declare_war_on = {
+			target = TUR
+			type = take_state
+			generator = { 341 }
+		}
+	}
+	option = {
+		name = bulgaria.32.b 
+		ai_chance = {
+			factor = 1 
+			modifier = {
+				factor = 99
+				strength_ratio = {
+					tag = TUR 
+					ratio > 1.5
+				}
+			}
+		}
+		add_national_unity = -0.1 
+	}
+}
+
+#Serbia Cedes Macedonia Peacefully 
+country_event = {
+	id = bulgaria.33 
+	title = bulgaria.33.t 
+	desc = bulgaria.33.d 
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = bulgaria.33.a
+		transfer_state = 106 
+		remove_state_claim = 106 
+	}
+}
+
+#Serbia Cedes Macedonia when Threatened
+country_event = {
+	id = bulgaria.34
+	title = bulgaria.34.t 
+	desc = bulgaria.34.d 
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = bulgaria.34.a
+		transfer_state = 106 
+		remove_state_claim = 106 
+	}
+}
+
+country_event = {
+	id = bulgaria.35 
+	title = bulgaria.35.t 
+	desc = bulgaria.35.d 
+	picture = GFX_report_event_polish_army
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = bulgaria.35.a 
+		ai_chance = {
+			factor = 90 
+			modifier = {
+				factor = 0
+				strength_ratio = {
+					tag = SER
+					ratio > 2
+				}
+			}
+		}
+		declare_war_on = {
+			target = SER
+			type = take_state
+			generator = { 106 }
+		}
+		set_global_flag = balkan_war_2 
+	}
+	option = {
+		name = bulgaria.35.b 
+		ai_chance = {
+			factor = 10 
+			modifier = {
+			factor = 9.5
+				strength_ratio = {
+					tag = SER
+					ratio > 2
+				}
+			}
+		}
+		add_national_unity = -0.15 
+		add_political_power = -200 
+	}
+}
+
+country_event = {
+	id = bulgaria.36 
+	title = bulgaria.36.t 
+	desc = bulgaria.36.d 
+	picture = GFX_report_event_worker_protests
+	
+	trigger = {
+		OR = {
+			has_country_flag = extreme_militarization 
+			has_country_flag = extreme_industrialization
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 80 
+	}
+	
+	immediate = {
+		remove_country_flag = extreme_industrialization 
+		remove_country_flag extreme_militarization 
+		set_country_flag = BUL_protests_1 
+	}
+	
+	fire_only_once = yes 
+	
+	option = {
+		name = bulgaria.36.a 
+		add_timed_ideas = { idea = BUL_protests_1_idea days = 80 }
+	}
+}
+
+country_event = {
+	id = bulgaria.37 
+	title = bulgaria.37.t 
+	desc = bulgaria.37.d 
+	picture = GFX_report_event_gathering_protest
+	
+	trigger = {
+		OR = {
+			has_country_flag = extreme_militarization2
+			has_country_flag = extreme_industrialization2
+		}
+		has_country_flag = BUL_protests_1
+	}
+	
+	mean_time_to_happen = {
+		days = 300 
+	}
+	
+	immediate = {
+		remove_country_flag = extreme_industrialization2
+		remove_country_flag extreme_militarization2 
+		remove_country_flag = BUL_protests_1 
+		set_country_flag = BUL_protests_2 
+	}
+	
+	fire_only_once = yes 
+	
+	option = {
+		name = bulgaria.37.a 
+		add_timed_ideas = { idea = BUL_protests_2_idea days = 100 }
+	}
+}
+
+country_event = {
+	id = bulgaria.38 
+	title = bulgaria.38 
+	desc = bulgaria.38 
+	picture = GFX_report_event_burma_road 
+	
+	trigger = {
+		has_country_flag = extreme_militarization3
+		has_country_flag = extreme_industrialization3
+		has_country_flag = BUL_protests_2 
+	}
+	
+	mean_time_to_happen = {
+		days = 1000
+	}
+	
+	immediate = {
+		remove_country_flag = extreme_industrialization3
+		remove_country_flag extreme_militarization3
+		remove_country_flag = BUL_protests_2 
+	}
+	
+	fire_only_once = yes 
+	
+	option = {
+		name = bulgaria.38.a 
+		add_timed_ideas = { idea = BUL_protests_3_idea days = 90 }
 	}
 }

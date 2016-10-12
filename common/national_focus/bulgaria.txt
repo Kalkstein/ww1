@@ -1282,6 +1282,7 @@ focus_tree = {
 		y = 9 
 		cost = 10 
 		completion_reward = {
+			add_state_claim = 341 
 			TUR = {
 				country_event = { id = bulgaria.15 days = 1 }
 				add_national_unity = -0.05
