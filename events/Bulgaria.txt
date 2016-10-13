@@ -253,7 +253,7 @@ country_event = {
 		    add_opinion_modifier = {
 					target = ROOT
 					modifier = BUL_russia_no_help
-				}
+			}
 		}
 	}
 }
@@ -1304,8 +1304,8 @@ country_event = {
 	}
 	
 	immediate = {
-		remove_country_flag = extreme_industrialization 
-		remove_country_flag extreme_militarization 
+		clr_country_flag = extreme_industrialization 
+		clr_country_flag extreme_militarization 
 		set_country_flag = BUL_protests_1 
 	}
 	
@@ -1336,9 +1336,9 @@ country_event = {
 	}
 	
 	immediate = {
-		remove_country_flag = extreme_industrialization2
-		remove_country_flag extreme_militarization2 
-		remove_country_flag = BUL_protests_1 
+		clr_country_flag = extreme_industrialization2
+		clr_country_flag extreme_militarization2 
+		clr_country_flag = BUL_protests_1 
 		set_country_flag = BUL_protests_2 
 	}
 	
@@ -1367,15 +1367,15 @@ country_event = {
 	}
 	
 	immediate = {
-		remove_country_flag = extreme_industrialization3
-		remove_country_flag extreme_militarization3
-		remove_country_flag = BUL_protests_2 
+		clr_country_flag = extreme_industrialization3
+		clr_country_flag extreme_militarization3
+		clr_country_flag = BUL_protests_2 
 	}
 	
 	fire_only_once = yes 
 	
 	option = {
 		name = bulgaria.38.a 
-		add_timed_ideas = { idea = BUL_protests_3_idea days = 90 }
+		add_timed_idea = { idea = BUL_protests_3_idea days = 90 }
 	}
 }

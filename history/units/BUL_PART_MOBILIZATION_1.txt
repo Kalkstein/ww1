@@ -1,54 +1,3 @@
-division_template = {
-	name = "Pekhotna Divizija"			# Infantry Division
-
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		infantry = { x = 0 y = 3 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-		infantry = { x = 1 y = 3 }
-		artillery = { x = 2 y = 0 }
-		artillery = { x = 2 y = 1 }
-		artillery = { x = 3 y = 0 }
-		artillery = { x = 3 y = 1 }
-		cavalry = { x = 4 y = 0 }
-		cavalry = { x = 4 y = 1 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 }   
-	}
-}
-
-division_template = {
-	name = "Golyam Pekhotna Divizija" #Large Infantry Division
-	
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		infantry = { x = 0 y = 3 }
-		infantry = { x = 0 y = 4 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-		infantry = { x = 1 y = 3 }
-		infantry = { x = 1 y = 4 }
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		artillery = { x = 3 y = 0 }
-		artillery = { x = 3 y = 1 }
-		artillery = { x = 3 y = 2 }
-		artillery = { x = 3 y = 3 }
-		cavalry = { x = 4 y = 0 }
-		cavalry = { x = 4 y = 1 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 }
-	}
-}
 
 division_template = {
 	name = "Kavaleriiska Divizija" 			# Cavalry Division
@@ -69,18 +18,18 @@ division_template = {
 
 units = {
 	division = {
-		name = "7-ma Diviziya Rilski Pekhoten"
+		name = "2-ra Diviziya Rilski Kavaleriĭska"
 		location = 935 
-		division_template = "Golyam Pekhotna Divizija"
+		division_template = "Kavaleriiska Divizija"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
 
 	}
 
 	division = {
-		name = "2-ra Trakiĭska Pekhotna Diviziya"
+		name = "3-ma Trakiĭska Kavaleriĭska Diviziya"
 		location = 935
-		division_template = "Pekhotna Divizija"
+		division_template = "Kavaleriiska Divizija"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.8
 
