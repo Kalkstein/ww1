@@ -2856,10 +2856,21 @@ focus_tree = {
 		y = 7 
 		cost = 10 
 		complete_tooltip = {
-			add_building_construction = {
-				type = air_base
-				level = 2
-				instant_build = yes
+			random_owned_state = {
+				limit = { has_state_flag = BUL_airbases_1 }
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = { has_state_flag = BUL_airbases_2 }
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
 			}
 		}
 
@@ -2870,7 +2881,7 @@ focus_tree = {
 						NOT = {
 							free_building_slots = {
 								building = air_base
-								size > 1
+								size > 3
 							}
 						}
 					}
@@ -2887,6 +2898,21 @@ focus_tree = {
 						level = 2
 						instant_build = yes
 					}
+					set_state_flag = BUL_airbases_1
+				}
+				random_owned_state = {
+					limit = {
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+					set_state_flag = BUL_airbases_2
 				}
 			}
 		}
