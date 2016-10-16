@@ -14,7 +14,7 @@ ideas = {
 			}
 			
 			modifier = {
-				political_power_gain = 1
+				political_power_gain_factor = 0.15
 			}
 		}
 		BUL_keep_monarchy_idea = {
@@ -311,11 +311,161 @@ ideas = {
 			equipment_bonus = {
 
 				screen_ship = {
-					build_cost_ic = -0.8 instant = yes
+					build_cost_ic = -0.08 instant = yes
 				}
 				submarine = {
-					build_cost_ic = -0.8 instant = yes
+					build_cost_ic = -0.08 instant = yes
 				}
+			}
+		}
+		BUL_faster_mil_construction_idea = {
+			picture = generic_production_bonus
+			removal_cost = -1 
+			
+			allowed = {
+				always = no 
+			}
+			
+			allowed_civil_war = {
+				always = yes 
+			}
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+			}
+		}
+		BUL_protectionist_laws_idea = {
+			picture = generic_production_bonus
+			removal_cost = -1 
+			
+			allowed = {
+				always = no 
+			}
+			
+			allowed_civil_war = {
+				always = yes 
+			}
+			
+			modifier = {
+				industrial_capacity_factory =  0.05
+				production_speed_industrial_complex_factor = 0.05
+			}
+		}
+		BUL_everyone_to_factories_idea = {
+			picture = generic_disjointed_gov
+			removal_cost = -1 
+			
+			allowed = {
+				always = no 
+			}
+			
+			allowed_civil_war = {
+				always = yes 
+			}
+			
+			modifier = { 
+				industrial_capacity_factory =  0.15 
+				conscription = -0.003
+			}
+		}
+		BUL_faster_railways_idea = {
+			picture = generic_production_bonus
+			removal_cost = -1 
+			
+			allowed = {
+				always = no 
+			}
+			
+			allowed_civil_war = { 
+				always = yes 
+			}
+			
+			modifier = {
+				production_speed_infrastructure_factor = 0.1
+			}
+		}
+		BUL_foreign_researchers_idea = {
+			picture = generic_research_bonus
+			removal_cost = -1
+			
+			allowed = {
+				always = no 
+			}
+			
+			allowed_civil_war = {
+				always = yes 
+			}
+			
+			modifier = {
+				research_time_factor = -0.03
+			}
+		}
+		BUL_gre_helps = {
+			picture = combined_bomber_offensive
+			removal_cost = -1 
+			
+			allowed = {
+				always = no 
+			}
+			
+			allowed_civil_war = {
+				always = no 
+			}
+			
+			cancel = {
+				has_war = no 
+			}
+			
+			modifier = {
+				industrial_capacity_factory =  0.04
+			}
+		}
+		BUL_protests_1_idea = {
+			picture = FRA_factory_strikes
+			removal_cost = -1 
+			
+			allowed = {
+				always = no 
+			}
+			
+			allowed_civil_war = {
+				always = no 
+			}
+			
+			modifier = {
+				industrial_capacity_factory =  -0.05 
+			}
+		}
+		BUL_protests_2_idea = {
+			picture = FRA_factory_strikes
+			removal_cost = -1 
+			
+			allowed = {
+				always = no 
+			}
+			
+			allowed_civil_war = {
+				always = no 
+			}
+			
+			modifier = {
+				industrial_capacity_factory =  -0.09
+			}
+		}
+		BUL_protests_3_idea = {
+			picture = FRA_factory_strikes
+			removal_cost = -1 
+			
+			allowed = {
+				always = no 
+			}
+			
+			allowed_civil_war = {
+				always = no 
+			}
+			
+			modifier = {
+				industrial_capacity_factory =  -0.1
 			}
 		}
 		

@@ -9,9 +9,9 @@ add_namespace = flavor_news
 #########################################################################################################################################################
 
 news_event = {
-	id = news.999
-	title = news.999.t
-	desc = news.999.d
+	id = news.1
+	title = news.1.t
+	desc = news.1.d
 	picture = GFX_news_event_001
 	fire_only_once = yes
 	major = yes
@@ -19,62 +19,11 @@ news_event = {
 		date > 1910.1.1
 	}
 	option = {
-	    name = news.999.a
+	    name = news.1.a
 	}
 }
 
 #########################################################################################################################################################
-
-# Begin of the Balcan War
-news_event = {
-	id = news.1 
-	title = news.1.t 
-	desc = news.1.d 
-	picture = GFX_report_event_soldiers_marching
-	
-	major = no 
-	
-	trigger = {
-	TUR = {
-	has_war_with = BUL
-	has_war_with = YUG
-	has_war_with = GRE
-	}
-	}
-	
-	fire_only_once = yes
-	
-	immediate = {
-	set_global_flag = balkan_war
-	}
-	option = {
-	    name = news.1.a 
-		trigger = {
-			 tag = TUR 
-		}
-	}
-	option = {
-	    name = news.1.b
-		trigger = {
-			tag = BUL 
-			tag = GRE 
-			tag = MNT 
-			tag = YUG
-		}
-	}
-	option = {
-	    name = news.1.c 
-		trigger = {
-			NOT = {
-			tag = BUL 
-			tag = GRE 
-			tag = MNT 
-			tag = YUG
-			tag = TUR 
-			}
-		}
-	}
-}
 
 news_event = {
 	id = news.2
@@ -425,6 +374,35 @@ news_event = {
 		    OR = {
 				is_in_faction_with = FRA
 				tag = FRA
+			}
+		}
+	}
+}
+
+#Turkey Rejects Balkan League Demands
+news_event = {
+	id = news.242
+	title = news.242.t 
+	desc = news.242.d 
+	picture = GFX_news_event_soldiers_marching
+	
+	major = yes 
+	
+	is_triggered_only = yes 
+	
+	immediate = {
+		set_global_flag = balkan_war
+	}
+	
+	option = {
+		name = news.242.a 
+		trigger = {
+			NOT = {
+				OR = {
+					tag = BUL 
+					tag = TUR 
+					is_in_faction_with = BUL 
+				}
 			}
 		}
 	}

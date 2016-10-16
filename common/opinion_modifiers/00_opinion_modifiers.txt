@@ -626,7 +626,13 @@ opinion_modifiers = {
 	BUL_tur_friends = { value = 50 }
 	BUL_entente_friends = { value = 30 }
 	BUL_reject_entente = { value = -40 }
-	BUL_russia_no_help = {value = -25 }
+	BUL_russia_no_help = { value = -25 }
+	BUL_reject_macedonia_peace = { value = -35 }
+	BUL_reject_centrals = { value = -30 }
+	BUL_gre_no_helps = { value = -25 }
+	BUL_rom_declines = { value = -25 }
+	BUL_tur_refused = { value = -40 }
+	
 	
 	# Russian focus tree
 	

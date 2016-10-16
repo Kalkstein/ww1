@@ -473,7 +473,8 @@ focus_tree = {
 		y = 4
 		cost = 10
 		completion_reward = {
-		    SOV = {
+		    add_national_unity = -10 
+			SOV = {
 			    country_event = { id = bulgaria.11 days = 1}
 			    custom_effect_tooltip = baltic_league_with_russia 
 			}
@@ -913,7 +914,7 @@ focus_tree = {
 		
 		x = 27
 		y = 5
-		cost = 20
+		cost = 6
 		completion_reward = {
 		    set_rule = { can_create_factions = yes }
 			create_faction = balkan_league 
@@ -1128,9 +1129,7 @@ focus_tree = {
 		y = 7 
 		cost = 10 
 		completion_reward = {
-			GER = {
-				add_ideas = BUL_communism_support_idea 
-			}
+			GER = { add_timed_idea = { idea = BUL_communism_support_idea days = 365 } } 
 		}
 	}
 	
@@ -1172,7 +1171,7 @@ focus_tree = {
 		prerequisite = { focus = BUL_partially_mobilize }
 		x = 27 
 		y = 7 
-		cost = 5 
+		cost = 10
 		completion_reward = {
 			add_ideas = war_economy 
 			add_named_threat = { threat = 5 name = BUL_mob } 
@@ -1284,6 +1283,7 @@ focus_tree = {
 		y = 9 
 		cost = 10 
 		completion_reward = {
+			add_state_claim = 341 
 			TUR = {
 				country_event = { id = bulgaria.15 days = 1 }
 				add_national_unity = -0.05
@@ -1321,7 +1321,7 @@ focus_tree = {
 		}
 		x = 27 
 		y = 9 
-		cost = 10 
+		cost = 5
 		completion_reward = {
 			add_state_claim = 106 
 		}
@@ -1427,7 +1427,7 @@ focus_tree = {
 		}
 		x = 29 
 		y = 10 
-		cost = 10 
+		cost = 7
 		completion_reward = {
 			custom_effect_tooltip = BUL_leave_league
 		
@@ -1478,7 +1478,7 @@ focus_tree = {
 		}
 		x = 29
 		y = 11 
-		cost = 10 
+		cost = 5
 		completion_reward = {
 			SER = {
 				country_event = { id = bulgaria.17 days = 1 }
@@ -1562,7 +1562,7 @@ focus_tree = {
 		}
 		x = 27 
 		y = 13 
-		cost = 10 
+		cost = 6 
 		completion_reward = {
 			add_political_power = 120 
 		}
@@ -1589,7 +1589,7 @@ focus_tree = {
 		prerequisite = { focus = BUL_more_mil_research }
 		x = 31 
 		y = 14
-		cost = 10 
+		cost = 4 
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = production_effort_tt
@@ -1736,7 +1736,7 @@ focus_tree = {
 		}
 		x = 29 
 		y = 15 
-		cost = 10 
+		cost = 1 
 		completion_reward = {
 			FRA = {
 				country_event = { id = bulgaria.18 days = 1 }
@@ -1761,7 +1761,7 @@ focus_tree = {
 		}
 		x = 34
 		y = 15 
-		cost = 10 
+		cost = 1 
 		completion_reward = {
 			GER = {
 				country_event = { id = bulgaria.19 days = 1 }
@@ -2259,11 +2259,10 @@ focus_tree = {
 		x = 34 
 		y = 18 
 		cost = 10 
-		completion_reward = {
-			SOV = {
-				add_ideas = BUL_destabilizing_russia_idea 
-			}
+		 completion_reward = {
+			SOV = { add_timed_idea = { idea = BUL_destabilizing_russia_idea days = 365 } } 
 		}
+
 	}
 	
 	###End of the Political Sub-Tree###
@@ -2345,7 +2344,7 @@ focus_tree = {
 		prerequisite = { focus = BUL_expand_military_industry }
 		x = 39 
 		y = 1 
-		cost = 10 
+		cost = 3
 		completion_reward = {
 			add_ideas = BUL_prussia_idea
 		}
@@ -2357,7 +2356,7 @@ focus_tree = {
 		prerequisite = { focus = BUL_expand_military_industry }
 		x = 41 
 		y = 1 
-		cost = 10 
+		cost = 3
 		completion_reward = {
 			add_tech_bonus = {
 				name = land_doc_bonus
@@ -2374,7 +2373,7 @@ focus_tree = {
 		prerequisite = { focus = BUL_prussia_of_balkans }
 		x = 38 
 		y = 2 
-		cost = 10 
+		cost = 4
 		completion_reward = {
 			add_ideas = BUL_military_propaganda_idea
 		}
@@ -2526,6 +2525,9 @@ focus_tree = {
 		id = BUL_improved_balloon 
 		icon = GFX_goal_generic_build_airforce
 		prerequisite = { focus = BUL_superior_arty } 
+		bypass = {
+			has_tech = ballon2 
+		}
 		x = 44 
 		y = 4 
 		cost = 10 
@@ -2551,7 +2553,7 @@ focus_tree = {
 				name = infantry_weapons_bonus
 				bonus = 0.3
 				uses = 2
-				technology = improved_infantry_weapons_1
+				technology = improved_infantry_weapons1
 				technology = improved_infantry_weapons_2
 				technology = improved_machine_gun_1
 			}
@@ -2563,7 +2565,10 @@ focus_tree = {
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = BUL_support_battalions }
 		available = {
-			has_global_flag = balkan_war_1 
+			OR = {
+				has_global_flag = balkan_war
+				has_global_flag = balkan_war_over
+			}
 		}
 		x = 38 
 		y = 5 
@@ -2603,6 +2608,9 @@ focus_tree = {
 		available = { 
 			date > 1913.01.01 
 		}
+		bypass = {
+			has_tech = fighter1
+		}
 		x = 42 
 		y = 5 
 		cost = 5
@@ -2622,6 +2630,9 @@ focus_tree = {
 		prerequisite = { focus = BUL_improved_balloon }
 		available = {
 			date > 1912.01.01 
+		}
+		bypass = {
+			has_tech = zeppelin1
 		}
 		x = 44 
 		y = 5 
@@ -2858,10 +2869,21 @@ focus_tree = {
 		y = 7 
 		cost = 10 
 		complete_tooltip = {
-			add_building_construction = {
-				type = air_base
-				level = 2
-				instant_build = yes
+			random_owned_state = {
+				limit = { has_state_flag = BUL_airbases_1 }
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = { has_state_flag = BUL_airbases_2 }
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
 			}
 		}
 
@@ -2872,7 +2894,7 @@ focus_tree = {
 						NOT = {
 							free_building_slots = {
 								building = air_base
-								size > 1
+								size > 3
 							}
 						}
 					}
@@ -2889,6 +2911,21 @@ focus_tree = {
 						level = 2
 						instant_build = yes
 					}
+					set_state_flag = BUL_airbases_1
+				}
+				random_owned_state = {
+					limit = {
+						free_building_slots = {
+							building = air_base
+							size > 1
+						}
+					}
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+					set_state_flag = BUL_airbases_2
 				}
 			}
 		}
@@ -3124,7 +3161,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = BUL_gas_snipers
+		id = BUL_gas_explosives
 		icon = GFX_focus_wonderweapons
 		prerequisite = { focus = BUL_more_military_industry }
 		prerequisite = { focus = BUL_experimental_equipment }
@@ -3205,7 +3242,7 @@ focus_tree = {
 	focus = {
 		id = BUL_flamethrowers
 		icon = GFX_goal_generic_secret_weapon
-		prerequisite = { focus = BUL_gas_snipers }
+		prerequisite = { focus = BUL_gas_explosives }
 		x = 35
 		y = 11 
 		cost = 5  
@@ -3607,6 +3644,7 @@ focus_tree = {
 		id = BUL_german_sub
 		icon = GFX_goal_generic_navy_submarine
 		prerequisite = { focus = BUL_light_navy_tactics focus = BUL_heavy_navy_tactics }
+		prerequisite = { focus = BUL_naval_expansion }
 		available = {
 			is_in_faction_with = GER 
 		}
@@ -3749,9 +3787,2961 @@ focus_tree = {
 		}
 	}
 	
+	###End of the Navy Subtree ### 
 	
+	###Industry SubTree### 
 	
-	
+	focus = {
+		id = BUL_freedom_armament 
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 65 
+		y = 0 
+		cost = 10
+
+		available_if_capitulated = yes
 		
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = production_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = arms_factory
+						size < 3
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			random_owned_state = {
+				limit = { has_state_flag = BUL_armament_0 }
+				add_extra_state_shared_building_slots = 1 
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = BUL_armament_0
+			}
+		}
+	}
 	
+	focus = {
+		id = BUL_prioritize_military 
+		icon = GFX_goal_generic_build_tank 
+		prerequisite = { focus = BUL_freedom_armament }
+		x = 61
+		y = 1 
+		cost = 10 
+		
+		available_if_capitulated = yes
+		
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = production_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = arms_factory
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			random_owned_state = {
+				limit = { has_state_flag = BUL_military_prioritize }
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 2
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 2
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = BUL_military_prioritize
+			}
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.25 
+				uses = 1 
+				category = infantry_weapons
+			}
+		}
+	}
 	
+	focus = {
+		id = BUL_agricultural_investment 
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = BUL_freedom_armament }
+		x = 69 
+		y = 1 
+		cost = 10 
+		complete_tooltip = {
+			random_owned_state = {
+				limit = { has_state_flag = BUL_agriculture_1 }
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		}		
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 2
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = BUL_agriculture_1
+			}
+			add_tech_bonus = {
+				name = industry_bonus 
+				bonus = 0.5 
+				uses = 1 
+				category = industry 
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_extreme_militarization 
+		icon = GFX_goal_generic_forceful_treaty
+		mutually_exclusive = { focus = BUL_moderate_militarization focus = BUL_extreme_civilian_construction }
+		prerequisite = { focus = BUL_prioritize_military }
+		x = 59
+		y = 2 
+		cost = 10
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = production_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = arms_factory
+						size < 2
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			random_owned_state = {
+				limit = { has_state_flag = BUL_extreme_militarization_1 }
+				add_extra_state_shared_building_slots = 2 
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = { has_state_flag = BUL_extreme_militarization_2 }
+				add_extra_state_shared_building_slots = 2 
+				add_building_construction = {
+					type = arms_factory 
+					level = 2
+					instant_build = yes 
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = BUL_extreme_militarization_1
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 1 
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = BUL_extreme_militarization_2
+			}
+			custom_effect_tooltip = BUL_may_resist_tt
+			hidden_effect = {
+				BUL = {
+					set_country_flag = extreme_militarization 
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_moderate_militarization
+		icon = GFX_goal_generic_construct_mil_factory
+		mutually_exclusive = { focus = BUL_extreme_militarization }
+		prerequisite = { focus = BUL_prioritize_military }
+		x = 63 
+		y = 2 
+		cost = 10 
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = production_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = arms_factory
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+		
+		complete_tooltip = {
+			random_owned_state = {
+				limit = { has_state_flag = BUL_moderate_militarization_1 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = { has_state_flag = BUL_moderate_militarization_1 }
+				add_extra_state_shared_building_slots = 1 
+				add_building_construction = {
+					type = arms_factory 
+					level = 1
+					instant_build = yes 
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = BUL_moderate_militarization_1
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = BUL_moderate_militarization_1
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_light_industry 
+		icon = GFX_goal_generic_construct_civ_factory
+		mutually_exclusive = { focus = BUL_extreme_civilian_construction }
+		prerequisite = { focus = BUL_agricultural_investment }
+		x = 67
+		y = 2 
+		cost = 10 
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+			random_state = {
+				limit = { has_state_flag = BUL_light_industry_1 }
+				add_extra_state_shared_building_slots = 1 
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}	
+			}
+			random_state = {
+				limit = { has_state_flag = BUL_light_industry_2 }
+				add_extra_state_shared_building_slots =1 
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}	
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1 
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = BUL_light_industry_1
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1 
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = BUL_light_industry_2
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_extreme_civilian_construction
+		icon = GFX_goal_generic_political_pressure
+		mutually_exclusive = { focus = BUL_light_industry focus = BUL_extreme_militarization }
+		prerequisite = { focus = BUL_agricultural_investment }
+		x = 71 
+		y = 2 
+		cost = 10 
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 4
+						include_locked = yes
+					}					
+				}
+			}
+		}
+
+		complete_tooltip = {
+			random_owned_state = {
+				limit = { has_state_flag = BUL_extreme_civilian_construction_1 } 
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = { has_state_flag = BUL_extreme_civilian_construction_2 } 
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = BUL_extreme_civilian_construction_1
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = BUL_extreme_civilian_construction_2
+			}
+			custom_effect_tooltip = BUL_may_resist_tt
+			hidden_effect = {
+				BUL = {
+					set_country_flag = extreme_industrialization
+				}
+			}
+		}
+	}
+	
+	focus = {
+		 id = BUL_extreme_militarization2
+		 icon = GFX_goal_generic_construct_mil_factory
+		 prerequisite = { focus = BUL_extreme_militarization }
+		 x = 59 
+		 y = 3 
+		 cost = 10 
+		 bypass = {
+			custom_trigger_tooltip = {
+				tooltip = production_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = arms_factory
+						size < 3
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			random_owned_state = {
+				limit = { has_state_flag = BUL_extreme_militarization_3 }
+				add_extra_state_shared_building_slots = 2 
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = { has_state_flag = BUL_extreme_militarization_4 }
+				add_extra_state_shared_building_slots = 3 
+				add_building_construction = {
+					type = arms_factory 
+					level = 3 
+					instant_build = yes 
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = BUL_extreme_militarization_3
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 2
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 2
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = BUL_extreme_militarization_4
+			}
+			hidden_effect = {
+				BUL = {
+					set_country_flag = extreme_militarization2
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_develop_arsenal
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = BUL_moderate_militarization }
+		x = 63 
+		y = 3 
+		cost = 10 
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = production_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = arms_factory
+						size < 1
+						include_locked = yes
+					}
+				}
+			}
+		}
+		
+		complete_tooltip = {
+			random_owned_state = {
+				limit = { has_state_flag = BUL_moderate_militarization_3 }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 48 }
+				limit = {									
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = BUL_moderate_militarization_3
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_ministry_of_railways
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = BUL_freedom_armament }
+		x = 65 
+		y = 3 
+		cost = 10 
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			48 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3 
+					instant_build = yes 
+				}
+			}
+			211 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2 
+					instant_build = yes 
+				}
+			}
+			212 = {
+				add_building_construction = {
+					type = infrastructure 
+					level = 2 
+					instant_build = yes 
+				}
+			}
+			77 = {
+				add_building_construction = {
+					type = infrastructure 
+					level = 1 
+					instant_build = yes 
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_invest_beer_industry 
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = BUL_light_industry }
+		x = 67 
+		y = 3 
+		cost = 10 
+		
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+			random_state = {
+				limit = { has_state_flag = bulgarian_beer }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}	
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2 
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = bulgarian_beer
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_extreme_civilian_construction2 
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = BUL_extreme_civilian_construction }
+		x = 71 
+		y = 3 
+		cost = 10 
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = construction_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = industrial_complex
+						size < 4
+						include_locked = yes
+					}					
+				}
+			}
+		}
+
+		complete_tooltip = {
+			random_owned_state = {
+				limit = { has_state_flag = BUL_extreme_civilian_construction_3 } 
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = { has_state_flag = BUL_extreme_civilian_construction_4 } 
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = BUL_extreme_civilian_construction_3
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = BUL_extreme_civilian_construction_4
+			}
+			hidden_effect = {
+				BUL = {
+					set_country_flag = extreme_industrialization2
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_complete_extreme_militarization
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = BUL_extreme_militarization2 }
+		x = 59 
+		y = 4 
+		cost = 10 
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = production_effort_tt
+				all_owned_state = {
+					free_building_slots = {
+						building = arms_factory
+						size < 3
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		complete_tooltip = {
+			random_owned_state = {
+				limit = { has_state_flag = BUL_extreme_militarization_4 }
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = { has_state_flag = BUL_extreme_militarization_6 }
+				add_extra_state_shared_building_slots = 3 
+				add_building_construction = {
+					type = arms_factory 
+					level = 3 
+					instant_build = yes 
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 2
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 2
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = BUL_extreme_militarization_5
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 2
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 2
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = BUL_extreme_militarization_6
+			}
+			hidden_effect = {
+				BUL = {
+					set_country_flag = extreme_militarization3
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_improved_mil_construction
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = BUL_develop_arsenal }
+		x = 63 
+		y = 4 
+		cost = 10 
+		completion_reward = {
+			add_ideas = BUL_faster_mil_construction_idea
+		}
+	}
+	
+	focus = {
+		id = BUL_pass_protectionist_laws
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = BUL_invest_beer_industry }
+		x = 67 
+		y = 4 
+		cost = 10 
+		completion_reward = {
+			add_ideas = BUL_protectionist_laws_idea
+		}
+	}
+	
+	focus = {
+		id = BUL_everyone_to_the_factories
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = BUL_extreme_civilian_construction2 }
+		x = 71 
+		y = 4 
+		cost = 10 
+		completion_reward = {
+			add_ideas = BUL_everyone_to_factories_idea
+		}
+	}
+	
+	focus = {
+		id = BUL_develop_army 
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = BUL_complete_extreme_militarization focus = BUL_improved_mil_construction }
+		x = 61 
+		y = 5 
+		cost = 5 
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.5 
+				uses = 1
+				technology = infantry_weapons
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_expand_railway 
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = BUL_ministry_of_railways }
+		x = 65 
+		y = 5 
+		cost = 10 
+		completion_reward = {
+			48 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			211 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			212 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			77 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_finish_industrialization
+		icon = GFX_goal_generic_production2
+		prerequisite = { focus = BUL_pass_protectionist_laws focus = BUL_everyone_to_the_factories }
+		x = 69 
+		y = 5 
+		cost = 5 
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5 
+				uses = 1 
+				category = industry 
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_naval_expansion 
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = BUL_develop_army }
+		x = 60 
+		y = 7 
+		cost = 10 
+		available = {
+			any_state = {
+				is_coastal = yes
+				is_controlled_by = ROOT
+			}
+		}
+
+		complete_tooltip = {
+			random_owned_state = {	
+				limit = { has_state_flag = BUL_naval_expansion_1 }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						any_owned_state = {
+							dockyard > 0
+							free_building_slots = {
+								building = dockyard
+								size > 1
+								include_locked = yes
+							}
+						}
+					}
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_coastal = yes
+						free_building_slots = {
+							building = dockyard
+							size > 1
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+					set_state_flag = BUL_naval_expansion_1
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_factory_research 
+		icon = GFX_focus_research
+		prerequisite = { focus = BUL_finish_industrialization }
+		x = 70  
+		y = 7
+		cost = 10 
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	
+	focus = {
+		id = BUL_two_year_plan
+		icon = GFX_goal_generic_construct_civilian
+		mutually_exclusive = { focus = BUL_four_year_plan }
+		prerequisite = { focus = BUL_develop_army }
+		prerequisite = { focus = BUL_finish_industrialization }
+		prerequisite = { focus = BUL_expand_railway }
+		x = 64 
+		y = 7 
+		cost = 1.5 
+		completion_reward = {
+			custom_effect_tooltip = BUL_2_year_plan_tt 
+		}
+	}
+	
+	focus = {
+		id = BUL_four_year_plan
+		icon = GFX_goal_generic_construction2
+		mutually_exclusive = { focus = BUL_two_year_plan }
+		prerequisite = { focus = BUL_develop_army }
+		prerequisite = { focus = BUL_finish_industrialization }
+		prerequisite = { focus = BUL_expand_railway }
+		x = 66 
+		y = 7
+		cost = 3
+		completion_reward = {
+			custom_effect_tooltip = BUL_4_year_plan_tt 
+		}
+	}
+	
+	focus = {
+		id = BUL_2_year_plan_industry
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = BUL_two_year_plan }
+		x = 61
+		y = 8 
+		cost = 10 
+		complete_tooltip = {
+			random_owned_state = {
+				limit = { has_state_flag = BUL_2ypi_1 }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = BUL_2ypi_1 
+			}
+		}
+		
+	}
+	
+	focus = {
+		id = BUL_2_year_plan_military
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = BUL_two_year_plan }
+		x = 63 
+		y = 8 
+		cost = 10 
+		complete_tooltip = {
+			random_owned_state = {
+				limit = { has_state_flag = BUL_2ypm_1 }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = BUL_2ypm_1 
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_4_year_plan_industry
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = BUL_four_year_plan }
+		x = 65 
+		y = 8 
+		cost = 10 
+		complete_tooltip = {
+			random_owned_state = {
+				limit = { has_state_flag = BUL_4ypi_1 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = BUL_4ypi_1 
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_4_year_plan_military
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = BUL_four_year_plan }
+		x = 67 
+		y = 8 
+		cost = 10 
+		complete_tooltip = {
+			random_owned_state = {
+				limit = { has_state_flag = BUL_4ypm_1 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = BUL_4ypm_1 
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_start_balkan_line
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = BUL_four_year_plan }
+		x = 69
+        y = 8 
+		cost = 10 
+		completion_reward = {
+			48 = {
+				add_extra_state_shared_building_slots = 2 
+				add_building_construction = {
+					type = infrastructure
+					level = 2 
+					instant_build = yes 
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_2_year_plan_industry2
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = BUL_2_year_plan_industry }
+		x = 61 
+		y = 9 
+		cost =  10 
+		complete_tooltip = {
+			random_owned_state = {
+				limit = { has_state_flag = BUL_2ypi_2 }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = BUL_2ypi_2 
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_2_year_plan_military2
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = BUL_2_year_plan_military }
+		x = 63 
+		y = 9 
+		cost = 10 
+		complete_tooltip = {
+			random_owned_state = {
+				limit = { has_state_flag = BUL_2ypm_2 }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = BUL_2ypm_2 
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_4_year_plan_industry2
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = BUL_4_year_plan_industry }
+		x = 65 
+		y = 9 
+		cost = 10 
+		complete_tooltip = {
+			random_owned_state = {
+				limit = { has_state_flag = BUL_4ypi_2 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = BUL_4ypi_2 
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_4_year_plan_military2 
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = BUL_4_year_plan_military }
+		x = 67
+		y = 9 
+		cost = 10 
+		complete_tooltip = {
+			random_owned_state = {
+				limit = { has_state_flag = BUL_4ypm_2 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = BUL_4ypm_2 
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_sofia_belgrade
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = BUL_start_balkan_line }
+		available = {
+			NOT = {
+				has_war_with = SER 
+			}
+		}
+		cancel_if_invalid = yes 
+		x = 69 
+		y = 9 
+		cost = 10 
+		completion_reward = {
+			 48 = {
+				add_building_construction = {
+					type = infrastructure 
+					level = 1 
+					instant_build = yes 
+				}
+			 }
+			 108 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1 
+					instant_build = yes 
+				}
+			 }
+			 107 = {
+				add_building_construction = {
+					type = infrastructure 
+					level = 3 
+					instant_build = yes 
+				}
+			 }
+		}
+	}
+	
+	focus = {
+		id = BUL_expand_varna
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = BUL_naval_expansion }
+		x = 57 
+		y = 9 
+		cost = 10 
+		completion_reward = {
+			211 = {
+				add_extra_state_shared_building_slots = 1 
+				add_building_construction = {
+					type = dockyard
+					level = 1 
+					instant_build = yes 
+				}
+				add_building_construction = {
+					type = naval_base
+					level = 3
+					instant_build =  yes
+					province = 9783 
+				}
+			}
+			
+		}
+	}
+	
+	focus = {
+		id = BUL_defense_of_varna 
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = BUL_expand_varna }
+		x = 57 
+		y = 10 
+		cost = 10 
+		completion_reward = {
+			211 = {
+				add_building_construction = {
+					type = bunker 
+					level = 5
+					instant_build =  yes
+					province = 9783 
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 5
+					instant_build =  yes
+					province = 9783 
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_2_year_plan_industry3 
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = BUL_2_year_plan_industry2 }
+		x = 61 
+		y = 10 
+		cost = 10 
+		complete_tooltip = {
+			random_owned_state = {
+				limit = { has_state_flag = BUL_2ypi_3 }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = BUL_2ypi_3 
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_2_year_plan_military3 
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = BUL_2_year_plan_military2 }
+		x = 63 
+		y = 10 
+		cost = 10 
+		complete_tooltip = {
+			random_owned_state = {
+				limit = { has_state_flag = BUL_2ypm_3 }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = BUL_2ypm_3 
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_4_year_plan_industry3 
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = BUL_4_year_plan_industry2 }
+		x = 65 
+		y = 10 
+		cost = 10 
+		complete_tooltip = {
+			random_owned_state = {
+				limit = { has_state_flag = BUL_4ypi_3 }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = { has_state_flag = BUL_4ypi_4 }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = BUL_4ypi_3
+			}
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = BUL_4ypi_4
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_4_year_plan_military3 
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = BUL_4_year_plan_military2 }
+		x = 67 
+		y = 10 
+		cost = 10 
+		complete_tooltip = {
+			random_owned_state = {
+				limit = { has_state_flag = BUL_4ypm_3 }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = { has_state_flag = BUL_4ypm_4 }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = BUL_4ypm_3 
+			}
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = BUL_4ypm_4 
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_sofia_instanbul 
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = BUL_sofia_belgrade }
+		available = { 
+			OR = {
+				NOT = {
+					has_war_with = TUR 
+				}
+				341 = {
+					owner = {
+						original_tag = BUL 
+					}
+					controller = {
+						original_tag = BUL 
+					}
+				}
+			}
+		}
+		x = 69 
+		y = 10 
+		cost = 10 
+		completion_reward = {
+			48 = {
+				add_building_construction = {
+					type = infrastructure 
+					level = 1 
+					instant_build = yes 
+				}
+			}
+			211 = {
+				add_building_construction = {
+					type = infrastructure 
+					level = 1 
+					instant_build = yes 
+				}
+			}
+			212 = {
+				add_building_construction = {
+					type = infrastructure 
+					level = 1 
+					instant_build = yes 
+				}
+			}
+			341 = {
+				add_building_construction = {
+					type = infrastructure 
+					level = 3 
+					instant_build = yes 
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_2_year_plan_industry4 
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = BUL_2_year_plan_industry3 }
+		x = 61 
+		y = 11 
+		cost = 10 
+		complete_tooltip = {
+			random_owned_state = {
+				limit = { has_state_flag = BUL_2ypi_4 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = BUL_2ypi_4
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_2_year_plan_military4
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = BUL_2_year_plan_military3 }
+		x = 63 
+		y = 11 
+		cost = 10 
+		complete_tooltip = {
+			random_owned_state = {
+				limit = { has_state_flag = BUL_2ypm_4 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = BUL_2ypm_4 
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_4_year_plan_industry4
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = BUL_4_year_plan_industry3 }
+		x = 65 
+		y = 11 
+		cost = 10 
+		complete_tooltip = {
+			random_owned_state = {
+				limit = { has_state_flag = BUL_4ypi_5 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = { has_state_flag = BUL_4ypi_6 }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = BUL_4ypi_5
+			}
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = BUL_4ypi_6
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_4_year_plan_military4
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = BUL_4_year_plan_military3 }
+		x = 67 
+		y = 11 
+		cost = 10 
+		complete_tooltip = {
+			random_owned_state = {
+				limit = { has_state_flag = BUL_4ypm_5 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = { has_state_flag = BUL_4ypm_6 }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1 
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = BUL_4ypm_5 
+			}
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = BUL_4ypm_6
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_invest_in_railway_building 
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = BUL_sofia_instanbul }
+		x = 69 
+		y = 11 
+		completion_reward = {
+			add_ideas = BUL_faster_railways_idea
+		}
+	}
+	
+	focus = {
+		id = BUL_complete_2_year_plan
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = BUL_2_year_plan_industry4 }
+		prerequisite = { focus = BUL_2_year_plan_military4 }
+		x = 62 
+		y = 12 
+		cost = 25 
+		complete_tooltip = {
+			random_owned_state = {
+				limit = { has_state_flag = BUL_2ypi_5 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = { has_state_flag = BUL_2ypm_5 }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2 
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = BUL_2ypi_5 
+			}
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = BUL_2ypm_5
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_4_year_plan_industry5 
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = BUL_4_year_plan_industry4 }
+		x = 65
+		y = 11 
+		cost = 20   
+		complete_tooltip = {
+			random_owned_state = {
+				limit = { has_state_flag = BUL_4ypi_7 }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = { has_state_flag = BUL_4ypi_8 }
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = BUL_4ypi_7
+			}
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 2
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = BUL_4ypi_8
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_4_year_plan_military5
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = BUL_4_year_plan_military4 }
+		x = 67 
+		y = 11 
+		cost = 20 
+		complete_tooltip = {
+			random_owned_state = {
+				limit = { has_state_flag = BUL_4ypm_7 }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = { has_state_flag = BUL_4ypm_8 }
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = BUL_4ypm_7
+			}
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 2
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 2
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = BUL_4ypm_8
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_lines_to_greece 
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = BUL_invest_in_railway_building }
+		available = {
+			OR = {
+				NOT = {
+					has_war_with = GRE 
+				}
+				47 = {
+					owner = {
+						original_tag = BUL 
+					}
+					controller = { 
+						original_tag = BUL 
+					}
+				}
+			}
+			OR = {
+				NOT = {
+					has_war_with = TUR 
+				}
+				AND = { 
+					731 = {
+						owner = {
+							original_tag = BUL 
+						}
+						controller = {
+							original_tag = BUL 
+						}
+					}
+					185 = {
+						owner = {
+							original_tag = BUL 
+						}
+						controller = {
+							original_tag = BUL 
+						}
+					}
+				}
+				AND = {
+					731 = {
+						owner = {
+							original_tag = BUL 
+						}
+						controller = {
+							original_tag = BUL 
+						}
+					}
+					185 = {
+						owner = {
+							original_tag = GRE 
+						}
+						controller = {
+							original_tag = GRE 
+						}
+					}
+				}
+				AND = {
+					731 = {
+						owner = {
+							original_tag = GRE 
+						}
+						controller = {
+							original_tag = GRE  
+						}
+					}
+					185 = {
+						owner = {
+							original_tag = GRE  
+						}
+						controller = {
+							original_tag = GRE 
+						}
+					}
+				}
+			}
+		}
+		x = 69 
+		y = 11 
+		cost = 20 
+		completion_reward = {
+			48 = {
+				add_building_construction = {
+					type = infrastructure 
+					level = 2
+					instant_build = yes 
+				}
+			}
+			731 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3 
+					instant_build = yes 
+				}
+			}
+			185 = {
+				add_building_construction = {
+					type = infrastructure 
+					level = 3 
+					instant_build = yes 
+				}
+			}
+			47 = {
+				add_building_construction = {
+					type = infrastructure 
+					level = 3 
+					instant_build = yes 
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_hire_foreign_researchers
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = BUL_4_year_plan_industry5 }
+		prerequisite = { focus = BUL_4_year_plan_military5 }
+		prerequisite = { focus = BUL_lines_to_greece }
+		x = 66 
+		y = 12 
+		cost = 10 
+		completion_reward = {
+			add_ideas = BUL_foreign_researchers_idea
+		}
+	}
+	
+	focus = {
+		id = BUL_expand_sofia_university
+		icon = GFX_focus_research
+		prerequisite = { focus = BUL_hire_foreign_researchers }
+		x = 66 
+		y = 13 
+		cost = 10 
+		completion_reward = {
+			add_research_slot = 1 
+		}
+	}
