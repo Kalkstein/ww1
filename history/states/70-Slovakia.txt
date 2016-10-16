@@ -4,10 +4,6 @@ state={
 	manpower = 1230500
 	
 	state_category = city
-	
-	resources={
-		tungsten=2
-	}
 
 	history={
 		owner = AUS

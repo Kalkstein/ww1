@@ -4,6 +4,10 @@ state={
 	name="STATE_34"
 	manpower = 3381300
 	
+	resources={
+		chromium=130
+	}
+	
 	state_category = large_city
 
 	history={

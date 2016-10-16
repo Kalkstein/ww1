@@ -1,6 +1,9 @@
 ﻿#Removed this regex from original localisation file:
 #( *(germany|china|spain|italy|france|soviet|finland|japan|romania|baltic|hungary|bulgaria|italy|usa|news|britain|yugoslavia|poland|greece|turkey)\..*:.*\n| *(CHI|FRA|spanish|JAP)_.*\n)
 l_english:
+ news.999.t:0 "The War To End All Wars"
+ news.999.d:0 "Welcome to this mod. This game incorporates the time span of First World War and thereby tries to stay preferably close to reality. World War One was shaped by trench warfare and poison gas attacks. Aviation was in it's infancy, battleships celebrate their peak of existence and firstly submarines get used broadly by military. The age of colonism nears it's end and many old-imperialists eye on the German Empire. About June 1914 the Assasination of Sarajevo will pull Central Powers and Entente into the World War. The victors will make history.\n§RTHIS MOD YET IS IN DEVELOPMENT AND MAY CONTAIN ERRORS!$!"
+ news.999.a:0 "Let's go!"
  july_crisis.100.t:0 "Assassination in Sarajevo!"
  july_crisis.100.d:0 "Earlier this week, Archduke Franz Ferdinand of Austria, heir presumptive to Austro-Hungarian throne, and his wife, Sophie, Duchess of Hohenberg, visited the Bosnian city of Sarajevo. Today he was murdered by an assassin believed to be associated with the prominent Serbian Nationalist Terrorist group, the Black Hand. Investigations point to Serbian Government not being attributed to the incident, but the assasin acted out of his radical eagerness. How exactly they will go about dealing with this crisis is up to them, but tensions in the region are not expected to cool down any time soon."
  july_crisis.100.a:0 "This can't be good..."

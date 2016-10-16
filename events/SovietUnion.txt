@@ -733,13 +733,15 @@ country_event = {
 	title = soviet.32.t
 	desc = soviet.32.d
 	picture = GFX_report_event_soldiers_marching
+
+	fire_only_once = yes
 	
 	trigger = {
-	has_idea = religious_army
-	communism < 35
-	fascism < 45
-	has_war = yes
-	any_war_score < 0
+		has_idea = religious_army
+		communism < 35
+		fascism < 45
+		has_war = yes
+		any_war_score < 0
 	}
 		
 	option = {

@@ -8,6 +8,23 @@ add_namespace = flavor_news
 
 #########################################################################################################################################################
 
+news_event = {
+	id = news.999
+	title = news.999.t
+	desc = news.999.d
+	picture = GFX_news_event_001
+	fire_only_once = yes
+	major = yes
+	trigger = {
+		date > 1910.1.1
+	}
+	option = {
+	    name = news.999.a
+	}
+}
+
+#########################################################################################################################################################
+
 # Begin of the Balcan War
 news_event = {
 	id = news.1 
@@ -192,8 +209,6 @@ news_event = {
 		days = 2
 	}
 	
-	fire_only_once = yes
-	
 	option = {
 	# Wir werden die Mittelmächte von der Erde tilgen!
 		name = news.4.a
@@ -249,8 +264,6 @@ news_event = {
 	mean_time_to_happen = {
 		days = 14
 	}
-	
-	fire_only_once = yes
 	
 	option = {
 	# Sehr besorgniserregend
@@ -1157,7 +1170,7 @@ country_event = {
 country_event = {
 	id = news.320
 	title = news.320.t
-	desc = news 321.d
+	desc = news.321.d
 	picture = GFX_news_event_034
 	
 	major = yes
@@ -1202,7 +1215,7 @@ country_event = {
 country_event = {
 	id = news.321
 	title = news.321.t
-	desc = news 321.d
+	desc = news.321.d
 	picture = GFX_news_event_035
 	
 	major = yes
@@ -1473,7 +1486,7 @@ news_event = {
 	immediate = {
 		set_global_flag = mona_lisa
 		random_list = {
-			hidden = yes
+			#hidden = yes
 			30 = { set_global_flag = mona_lisa_gone }
 			70 = { set_global_flag = mona_lisa_found }
 		}
@@ -1639,6 +1652,8 @@ news_event = {
 	desc = flavor_news.8.d 
 	picture = GFX_news_event_026 
 	
+	fire_only_once = yes
+	
 	major = yes
 	
 	trigger = {
@@ -1646,17 +1661,10 @@ news_event = {
 		country_exists = GER
 		country_exists = FRA
 		GER = { has_war_with = FRA }
-		NOT = {
-			has_global_flag = christmas
-		}
 	}
 	
 	mean_time_to_happen = {
 		days = 1
-	}
-	
-	immediate = {
-		set_global_flag = christmas
 	}
 	
 	option = {
@@ -1783,24 +1791,21 @@ news_event = {
 	
 # The Pulitzer Prizes
 news_event = {
-    	id = flavor_news.13
+	id = flavor_news.13
 	title = flavor_news.13.t 
 	desc = flavor_news.13.d 
 	picture = GFX_news_event_031 
+	
+	fire_only_once = yes
 	
 	major = yes
 	
 	trigger = {
 		date > 1917.6.4
-		NOT = { has_global_flag = pulitzer_prizz }
 	}
 	
 	mean_time_to_happen = {
 		days = 1
-	}
-	
-	immediate = {
-		set_global_flag = pulitzer_prize
 	}
 	
 	option = {

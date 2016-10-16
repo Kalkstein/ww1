@@ -5,6 +5,10 @@ state = {
 	manpower = 2735383
 
 	state_category = city
+	
+	resources={
+		tungsten=8
+	}
 
 	history = {
 		owner = AUS

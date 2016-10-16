@@ -510,24 +510,25 @@ technologies = {
 	}
 	
 	synth_oil_experiments = {
-
-		enable_building = {
-			building = synthetic_refinery
-			level = 1
-		}
-		
-		#production_oil_factor = 0.1 #Can increase oil output - not used though.
 		
 		path = {
 			leads_to_tech = oil_plant 
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = rubber_1 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = salpeter_1 
+			research_cost_coeff = 1
+		}
 		
 		research_cost = 3
-		start_year = 1914
+		start_year = 1910
 		folder = {
 			name = industry_folder
-			position = { x = 0 y = 0 }
+			position = { x = 2 y = 0 }
 		}
 		
 		categories = {
@@ -543,16 +544,12 @@ technologies = {
 			}
 			modifier = {
 				factor = 0.5
-				oil > 20
+				rubber > 10
 			}	
 			modifier = {
 				factor = 0.5
-				oil > 30
+				tungsten > 10
 			}			
-		}
-		
-		ai_research_weights = {
-			oil = -2.0
 		}
 	}
 	
@@ -560,7 +557,7 @@ technologies = {
 
 		enable_building = {
 			building = synthetic_refinery
-			level = 2
+			level = 1
 		}
 		
 		path = {
@@ -568,8 +565,8 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.5
-		start_year = 1916
+		research_cost = 1
+		start_year = 1914
 		
 		folder = {
 			name = industry_folder
@@ -606,15 +603,56 @@ technologies = {
 
 		enable_building = {
 			building = synthetic_refinery
-			level = 3
+			level = 2
 		}
 		
 		path = {
-			leads_to_tech = advanced_oil_plant 
+			leads_to_tech = advanced_oil_plant
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.5
+		research_cost = 1
+		start_year = 1916
+		
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 4 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.5
+				oil > 10
+			}
+			modifier = {
+				factor = 0.5
+				oil > 20
+			}	
+			modifier = {
+				factor = 0.5
+				oil > 30
+			}			
+		}
+		
+		ai_research_weights = {
+			oil = -2.0
+		}
+	}
+	
+	advanced_oil_plant = {
+
+		enable_building = {
+			building = synthetic_refinery
+			level = 3
+		}
+		
+		research_cost = 1
 		start_year = 1918
 		
 		folder = {
@@ -645,6 +683,270 @@ technologies = {
 		
 		ai_research_weights = {
 			oil = -2.0
+		}
+	}
+	
+	rubber_1 = {
+
+		enable_building = {
+			building = rocket_site
+			level = 1
+		}
+		
+		path = {
+			leads_to_tech = rubber_2 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 1914
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 2 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.5
+				rubber > 10
+			}
+			modifier = {
+				factor = 0.5
+				rubber > 20
+			}	
+			modifier = {
+				factor = 0.5
+				rubber > 30
+			}			
+		}
+		
+		ai_research_weights = {
+			rubber = -2.0
+		}
+	}
+	
+	rubber_2 = {
+
+		enable_building = {
+			building = rocket_site
+			level = 2
+		}
+		
+		path = {
+			leads_to_tech = rubber_3 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 1916
+		
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 4 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.5
+				rubber > 10
+			}
+			modifier = {
+				factor = 0.5
+				rubber > 20
+			}	
+			modifier = {
+				factor = 0.5
+				rubber > 30
+			}			
+		}
+		
+		ai_research_weights = {
+			rubber = -2.0
+		}
+	}
+	
+	rubber_3 = {
+
+		enable_building = {
+			building = rocket_site
+			level = 3
+		}
+		
+		research_cost = 1
+		start_year = 1918
+		
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 6 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.5
+				rubber > 10
+			}
+			modifier = {
+				factor = 0.5
+				rubber > 20
+			}	
+			modifier = {
+				factor = 0.5
+				rubber > 30
+			}			
+		}
+		
+		ai_research_weights = {
+			rubber = -2.0
+		}
+	}
+	
+	salpeter_1 = {
+
+		enable_building = {
+			building = nuclear_reactor
+			level = 1
+		}
+		
+		path = {
+			leads_to_tech = salpeter_2 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 1914
+		folder = {
+			name = industry_folder
+			position = { x = 4 y = 2 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.5
+				tungsten > 10
+			}
+			modifier = {
+				factor = 0.5
+				tungsten > 20
+			}	
+			modifier = {
+				factor = 0.5
+				tungsten > 30
+			}			
+		}
+		
+		ai_research_weights = {
+			tungsten = -2.0
+		}
+	}
+	
+	salpeter_2 = {
+
+		enable_building = {
+			building = nuclear_reactor
+			level = 2
+		}
+		
+		path = {
+			leads_to_tech = salpeter_3 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 1916
+		
+		folder = {
+			name = industry_folder
+			position = { x = 4 y = 4 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.5
+				tungsten > 10
+			}
+			modifier = {
+				factor = 0.5
+				tungsten > 20
+			}	
+			modifier = {
+				factor = 0.5
+				tungsten > 30
+			}			
+		}
+		
+		ai_research_weights = {
+			tungsten = -2.0
+		}
+	}
+	
+	salpeter_3 = {
+
+		enable_building = {
+			building = nuclear_reactor
+			level = 3
+		}
+		
+		research_cost = 1
+		start_year = 1918
+		
+		folder = {
+			name = industry_folder
+			position = { x = 4 y = 6 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.5
+				tungsten > 10
+			}
+			modifier = {
+				factor = 0.5
+				tungsten > 20
+			}	
+			modifier = {
+				factor = 0.5
+				tungsten > 30
+			}			
+		}
+		
+		ai_research_weights = {
+			tungsten = -2.0
 		}
 	}
 	

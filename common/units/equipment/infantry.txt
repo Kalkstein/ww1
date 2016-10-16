@@ -41,6 +41,7 @@ equipments = {
 		build_cost_ic = 0.3
 		resources = {
 			steel = 2
+			chromium = 1
 		}
 		
 	}
@@ -94,6 +95,7 @@ equipments = {
 		build_cost_ic = 0.75
 		resources = {
 			steel = 3
+			chromium = 1
 		}
 	}
 	
@@ -118,6 +120,7 @@ equipments = {
 		build_cost_ic = 1
 		resources = {
 			steel = 4
+			chromium = 1
 		}
 	}
 }

@@ -6,11 +6,6 @@ state={
 	
 	state_category = town
 	
-	resources={
-		tungsten=2
-
-	}
-
 	history={
 		owner = CHI
 		buildings = {

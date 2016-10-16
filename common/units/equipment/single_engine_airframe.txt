@@ -179,7 +179,7 @@ equipments = {
 		
 		build_cost_ic = 5
 		resources = {
-			tungsten = 1
+			chromium = 1
 		}
 		
 		manpower = 5

@@ -190,22 +190,20 @@ country_event = {
 	}
 
 	immediate = {
-		event_target:being_attacked = { white_peace = ROOT }
 		dismantle_faction = yes
 		set_rule = { can_create_factions = no }
+		every_enemy_country  = { white_peace = ROOT }
 	}
 	
 	option = { # Support Republicans
 		name = germany.100.a
+		start_civil_war = {
+			ruling_party = democratic
+			ideology = communism
+			states = { 50 52 56 58 59 61 62 756 }
+		}
+		set_national_unity = 0.5
 		hidden_effect = {
-			set_capital = 64
-			start_civil_war = {
-				ruling_party = democratic
-				ideology = communism
-				size = 0.5
-				capital = 64
-				states = { 50 52 56 58 59 61 62 756 }
-			}
 			random_other_country = {
 				limit = {
 					original_tag = GER
@@ -226,7 +224,6 @@ country_event = {
 			set_global_flag = ger_rev_dem
 			#load_oob = "SPA_Civil_War"
 			set_equipment_fraction = 0.5
-			set_national_unity = 0.5
 			set_politics = {
 				ruling_party = democratic
 				elections_allowed = yes
@@ -238,19 +235,18 @@ country_event = {
 				}
 			}
 		}
-		custom_effect_tooltip = republicans_chosen
 	}
 	option = { # Support Communists
 		name = germany.100.b
+		start_civil_war = {
+			ruling_party = communism
+			ideology = democratic
+			capital = 64
+			states = { 5 9 28 42 51 53 54 55 57 60 63 64 65 66 67 68 69 74 75 85 86 188 541 546 633 646 647 684 725 726 737 743 744 750 751 752 755 758 759 }
+		}
+		set_national_unity = 1
 		hidden_effect = {
 			set_capital = 58
-			start_civil_war = {
-				ruling_party = communism
-				ideology = democratic
-				size = 0.5
-				capital = 64
-				states = { 5 9 28 42 51 53 54 55 57 60 63 64 65 66 67 68 69 74 75 85 86 188 541 546 633 646 647 684 725 726 737 743 744 750 751 752 755 758 759 }
-			}
 			random_other_country = {
 				limit = {
 					original_tag = GER
@@ -274,7 +270,6 @@ country_event = {
 			set_global_flag = ger_rev_com
 			#load_oob = "SPA_Civil_War"
 			set_equipment_fraction = 0.5
-			set_national_unity = 1
 			set_politics = {
 				ruling_party = communism
 				elections_allowed = no
@@ -283,20 +278,16 @@ country_event = {
 				}
 			}
 		}
-		custom_effect_tooltip = communists_chosen
 	}
 	option = { # Support Monarchists
-		name = germany.100.a
+		name = germany.100.c
+		start_civil_war = {
+			ruling_party = fascism
+			ideology = communism
+			states = { 50 52 56 58 59 61 62 756 }
+		}
 		set_national_unity = 0.3
 		hidden_effect = {
-			set_capital = 64
-			start_civil_war = {
-				ruling_party = fascism
-				ideology = communism
-				size = 0.5
-				capital = 64
-				states = { 50 52 56 58 59 61 62 756 }
-			}
 			random_other_country = {
 				limit = {
 					original_tag = GER
@@ -329,6 +320,5 @@ country_event = {
 				}
 			}
 		}
-		custom_effect_tooltip = monarchists_chosen
 	}
 }
