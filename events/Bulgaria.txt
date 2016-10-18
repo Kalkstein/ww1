@@ -241,6 +241,7 @@ country_event = {
 	option = {
 	    name = bulgaria.11.a 
 		ai_chance = { factor = 100 }
+		add_political_power = -100
 		immediate = {
 			set_global_flag = BUL_russia_helps
 		}
