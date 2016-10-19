@@ -920,15 +920,12 @@ focus_tree = {
 			create_faction = balkan_league 
 			SER = {
 			    country_event = { id = bulgaria.7 days = 1 }
-				custom_effect_tooltip = balkan_league_invite
 			}
 			GRE = {
 			    country_event = { id = bulgaria.7 days = 1 }
-				custom_effect_tooltip = balkan_league_invite
 			}
 			MNT = {
 			    country_event = { id = bulgaria.7 days = 1 }
-				custom_effect_tooltip = balkan_league_invite
 			}
 		
 			hidden_effect = {

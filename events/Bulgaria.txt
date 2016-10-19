@@ -24,10 +24,10 @@ country_event = {
 					technology = infantry_weapons
 				}
 				add_tech_bonus = {
-					name = armor_bonus
-					bonus = 0.3
-					uses = 2
-					category = armor
+					name = land_doc_bonus
+					bonus = 0.4 
+					uses = 2 
+					category = land_doctrine 
 				}
 		}
 	}
@@ -139,7 +139,23 @@ country_event = {
 	option = {
 	    name = bulgaria.6.a 
 		unlock_national_focus = BUL_own_democratic_faction
+		set_rule = { can_create_factions = yes }
     }
+	option = {
+		name = bulgaria.6.b 
+		GER = {
+			country_event = { id = bulgaria.19 days = 1 }
+		}
+	}
+	option = {
+		name = bulgaria.6.c 
+		unlock_national_focus = BUL_improve_tur_relations
+		TUR = { add_opinion_modifier = { target = ROOT modifier = BUL_tur_friends } }
+	}
+	option = {
+		name = bulgaria.6.e 
+	}
+	
 }
 
 country_event = {
@@ -152,7 +168,13 @@ country_event = {
 	
 	option = {
 	    name = bulgaria.7.a 
-		ai_chance = { factor = 100 }
+		ai_chance = { 
+			base = 100
+			modifier = {
+				add = -75
+				is_in_faction = yes 
+			}
+		}
 		BUL = {
 		    add_to_faction = ROOT
 		}
@@ -167,7 +189,13 @@ country_event = {
  	
 	option = {
 	    name = bulgaria.7.b 
-		ai_chance = {factor = 0 }
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 75
+				is_in_faction = yes 
+			}
+		}
 		BUL = { country_event = { id = bulgaria.8 days = 1} }
 	}
 }
@@ -182,6 +210,9 @@ country_event = {
 	
 	option = {
 	    name = bulgaria.8.a 
+		BUL = {
+			add_opinion_modifier = { target = ROOT modifier = BUL_reject_league }
+		}
 	}
 }
 
@@ -195,15 +226,27 @@ country_event = {
 	
 	option = {
 	    name = bulgaria.9.a 
-		ai_chance = { factor = 55 }
+		ai_chance = {
+			base = 55 
+			modifier = {
+				add = 30 
+				government = democratic
+			}
+		}
 		BUL = {
-		    add_to_faction = YUG
+		    add_to_faction = SER 
 		}
 	}
  	
 	option = {
 	    name = bulgaria.9.b 
-		ai_chance = {factor = 45 }
+		ai_chance = { 
+			base = 45
+			modifier = {
+				add = 30 
+				is_in_faction = yes 
+			}
+		}
 	}
 }
 
@@ -217,7 +260,13 @@ country_event = {
 	
 	option = {
 	    name = bulgaria.10.a 
-		ai_chance = { factor = 55 }
+		ai_chance = {
+			base = 55 
+			modifier = {
+				add = 30 
+				government = democratic
+			}
+		}
 		BUL = {
 		    add_to_faction = GRE
 		}
@@ -225,7 +274,13 @@ country_event = {
  	
 	option = {
 	    name = bulgaria.10.b 
-		ai_chance = {factor = 45 }
+		ai_chance = { 
+			base = 45
+			modifier = {
+				add = 30 
+				is_in_faction = yes 
+			}
+		}
 	}
 }
 
@@ -820,10 +875,6 @@ country_event = {
 		name = bulgaria.19.b 
 		ai_chance = {
 			factor = 20 
-			modifier = {
-				factor = 0 
-				has_war = yes 
-			}
 		}
 		BUL = {
 			add_opinion_modifier = { target = GER modifier = BUL_reject_centrals }
