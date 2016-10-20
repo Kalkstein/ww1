@@ -842,7 +842,7 @@ technologies = {
 #		}
 #	}
 
-support_artillery_1 = {
+	support_artillery_1 = {
 		enable_equipments = {
 			motorized_rocket_equipment_1
 		}
@@ -854,7 +854,7 @@ support_artillery_1 = {
 
 		start_year = 1905
 
-		research_cost = 1.5
+		research_cost = 0.8
 
 		folder = {
 			name = artillery_folder
@@ -880,16 +880,17 @@ support_artillery_1 = {
 		}
 
 		path = {
+			#leads_to_tech = support_artillery_3
 			research_cost_coeff = 1
 		}
 
-		start_year = 1910
+		start_year = 1911
 
-		research_cost = 1.5
+		research_cost = 0.8
 
 		folder = {
 			name = artillery_folder
-			position = { x = 14 y = 2.5 }
+			position = { x = 14 y =	4 }
 		}
 		
 		categories = {
@@ -901,4 +902,48 @@ support_artillery_1 = {
 		}
 	}
 	
+#	support_artillery_3{
+#		support_artillery = {
+#			soft_attack = 0.1
+#		}
+#		support_artillery_brigade = {
+#			soft_attack = 0.1
+#		}
+#
+#		path = {
+#			leads_to_tech = support_artillery_4
+#			research_cost_coeff = 1
+#		}
+#
+#		start_year = 1912
+#
+#	}
+#
+#	support_artillery_4{
+#		1914, Equipment
+#	}
+#
+#	support_artillery_5{
+#		support_artillery = {
+#			soft_attack = 0.1
+#		}
+#		support_artillery_brigade = {
+#			soft_attack = 0.1
+#		}
+#
+#		path = {
+#			leads_to_tech = support_artillery_6
+#			research_cost_coeff = 1
+#		}
+#
+#		start_year = 1915
+#	}
+#	
+#	support_artillery_6{
+#		1917, equipment
+#	}
+#
+#	support_artillery_7{
+#		1918, upgrade
+#	}
 }
