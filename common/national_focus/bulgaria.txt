@@ -450,7 +450,7 @@ focus_tree = {
 		cost = 10
 		completion_reward = {
 			add_political_power = 50
-				custom_effect_tooltip = baltic_league_without_russia
+				custom_effect_tooltip = balkan_league_without_russia
 			}
 
 	}
@@ -476,7 +476,7 @@ focus_tree = {
 		    add_national_unity = -10 
 			SOV = {
 			    country_event = { id = bulgaria.11 days = 1}
-			    custom_effect_tooltip = baltic_league_with_russia 
+			    custom_effect_tooltip = balkan_league_with_russia 
 			}
 	    }
 	}
@@ -765,13 +765,13 @@ focus_tree = {
 		cost = 10 
 		completion_reward = {
 		    set_rule = { can_create_factions = yes }
-			create_faction = turco_bulgarian_faction
 			if = {
 					limit = {
 						TUR = {
 							is_in_faction = no
 						}
 					}
+					create_faction = turco_bulgarian_faction
 					TUR = {
 						country_event = { id = bulgaria.24 days = 1 }
 					}

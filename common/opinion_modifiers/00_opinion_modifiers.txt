@@ -633,6 +633,7 @@ opinion_modifiers = {
 	BUL_rom_declines = { value = -25 }
 	BUL_tur_refused = { value = -40 }
 	BUL_reject_league = { value = -45 }
+	BUL_sent_ships = { value = 30 }
 	
 	
 	# Russian focus tree

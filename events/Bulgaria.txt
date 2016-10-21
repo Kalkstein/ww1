@@ -110,6 +110,7 @@ country_event = {
 	
 	option = {
 	    name = bulgaria.4.a 
+		custom_effect_tooltip = BUL_mob_tt
 		hidden_effect = { load_oob = BUL_PART_MOBILIZATION_1 }
 	}
 }
@@ -297,6 +298,7 @@ country_event = {
 	    name = bulgaria.11.a 
 		ai_chance = { factor = 100 }
 		add_political_power = -100
+		custom_effect_tooltip = BUL_help_tt
 		immediate = {
 			set_global_flag = BUL_russia_helps
 		}
@@ -324,6 +326,7 @@ country_event = {
 	
 	option = {
 		name = bulgaria.12.a 
+		BUL_mob_tt
 		hidden_effect = { load_oob = BUL_general_mob_1 }
 	}
 }
@@ -337,7 +340,26 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = {
-		name = bulgaria.13.a 
+		name = bulgaria.13.a
+		ai_chance = {
+			base = 85 
+			modifier = {
+				add = -85 
+				AND = {
+					BUL = { has_army_size = { size > 20 } }
+					SER = { has_army_size = { size > 20 } }
+					GRE = { has_army_size = { size > 15 } }
+					MNT = { has_army_size = { size > 10 } } 
+				}
+			}
+		}
+		BUL = {
+			country_event = { id = bulgaria.29 days = 1 }
+		}
+	}
+	
+	option = {
+		name = bulgaria.13.b
 		ai_chance = {
 			base = 15 
 			modifier = {
@@ -484,24 +506,6 @@ country_event = {
 				}
 			}
 			ALB = { transfer_state = 747 }
-		}
-	}
-	option = {
-		name = bulgaria.13.b 
-		ai_chance = {
-			base = 85 
-			modifier = {
-				add = -85 
-				AND = {
-					BUL = { has_army_size = { size > 20 } }
-					SER = { has_army_size = { size > 20 } }
-					GRE = { has_army_size = { size > 15 } }
-					MNT = { has_army_size = { size > 10 } } 
-				}
-			}
-		}
-		BUL = {
-			country_event = { id = bulgaria.29 days = 1 }
 		}
 	}
 }
@@ -655,9 +659,26 @@ country_event = {
 	option = {
 		name = bulgaria.15.a 
 		ai_chance = {
+			factor = 99 
+		}
+		BUL = { country_event = { id = bulgaria.32 days = 1  } }
+		effect_tooltip = {
+			BUL = {
+				declare_war_on = {
+					target = TUR
+					type = take_state
+					generator = { 341 }
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = bulgaria.15.b
+		ai_chance = {
 			factor = 1 
 			modifier = {
-				factor = 100
+				factor = 50
 				strength_ratio = {
 					tag = BUL
 					ratio > 3
@@ -669,29 +690,6 @@ country_event = {
 			BUL = {
 				transfer_state = 341
 				remove_state_claim = 341 
-			}
-		}
-	}
-	option = {
-		name = bulgaria.15.b 
-		ai_chance = {
-			factor = 99 
-			modifier = {
-				factor = 0
-				strength_ratio = {
-					tag = BUL
-					ratio > 3
-				}
-			}
-		}
-		BUL = { country_event = { id = bulgaria.32 days = 1  } }
-		effect_tooltip = {
-			BUL = {
-				declare_war_on = {
-					target = TUR
-					type = take_state
-					generator = { 341 }
-				}
 			}
 		}
 	}
@@ -722,8 +720,25 @@ country_event = {
 			}
 		}
 		BUL = {
+			country_event = { id = bulgaria.39 days = 1 }
 			add_opinion_modifier = { target = BUL modifier = BUL_reject_macedonia_peace }
 		}
+		effect_tooltip = {
+			if = {
+				limit = {
+					SER = {
+						is_in_faction_with = BUL 
+					}
+					BUL = {
+						is_faction_leader = yes 
+					}
+				}
+				BUL = {
+					remove_from_faction = SER 
+				}
+			}
+		}
+		custom_effect_tooltip = BUL_may_declare_war_tt
 	}
 	option = {
 		name = bulgaria.16.b 
@@ -762,33 +777,7 @@ country_event = {
 	is_triggered_only = yes 
 	
 	option = {
-		name = bulgaria.17.a 
-		ai_chance = {
-			factor = 50			
-			modifier = {
-				factor = 2
-				strength_ratio = {
-					tag = BUL
-					ratio > 2
-				}
-			}
-			modifier = {
-				factor = 0 
-				is_historical_focus_on = yes 
-			}
-		}
-		BUL = {
-			country_event = { id = bulgaria.34 days = 1 }
-		}
-		effect_tooltip = {
-			BUL = {
-				transfer_state = 106 
-				remove_state_claim = 106 
-			}
-		}
-	}
-	option = {
-		name = bulgaria.17.b 
+		name = bulgaria.17.a
 		ai_chance = {
 			factor = 50  
 			modifier = {
@@ -813,6 +802,32 @@ country_event = {
 					type = take_state
 					generator = { 106 }
 				}
+			}
+		}
+	}
+	option = {
+		name = bulgaria.17.b
+		ai_chance = {
+			factor = 50			
+			modifier = {
+				factor = 2
+				strength_ratio = {
+					tag = BUL
+					ratio > 2
+				}
+			}
+			modifier = {
+				factor = 0 
+				is_historical_focus_on = yes 
+			}
+		}
+		BUL = {
+			country_event = { id = bulgaria.34 days = 1 }
+		}
+		effect_tooltip = {
+			BUL = {
+				transfer_state = 106 
+				remove_state_claim = 106 
 			}
 		}
 	}
@@ -863,7 +878,7 @@ country_event = {
 	option = {
 		name = bulgaria.19.a 
 		ai_chance = {
-			factor = 80 
+			factor = 100
 			modifier = {
 				factor = 2 
 				has_war = yes 
@@ -874,7 +889,7 @@ country_event = {
 	option = {
 		name = bulgaria.19.b 
 		ai_chance = {
-			factor = 20 
+			factor = 0
 		}
 		BUL = {
 			add_opinion_modifier = { target = GER modifier = BUL_reject_centrals }
@@ -897,12 +912,6 @@ country_event = {
 		}
 		FRA = {
 			add_to_faction = GRE 
-		}
-		GRE = {
-			declare_war_on = {
-					target = GER 
-					type = puppet_wargoal
-			}
 		}
 	}
 	option = {
@@ -1010,8 +1019,8 @@ country_event = {
 		ai_chance = {
 			factor = 40 
 		}
-		BUL = {
-			give_military_access = ROM
+		ROM = {
+			give_military_access = BUL
 		}
 	}
 	option = {
@@ -1044,6 +1053,13 @@ country_event = {
 		}
 		BUL = {
 			add_to_faction = TUR 
+		}
+		TUR = {
+			add_ai_strategy = {
+					type = alliance
+					id = "BUL"
+					value = 200
+			}
 		}
 	}
 	option = {
@@ -1092,7 +1108,7 @@ country_event = {
 	option = {
 		name = bulgaria.26.a 
 		ai_chance = {
-			factor = 70
+			factor = 90
 		}
 		send_equipment = {
 			target = BUL 
@@ -1103,7 +1119,7 @@ country_event = {
 	option = {
 		name = bulgaria.26.b 
 		ai_chance = {
-			factor = 30 
+			factor = 10 
 		}
 	}
 }
@@ -1131,6 +1147,9 @@ country_event = {
 			type = basic_heavy_cruiser
 			amount = 1 
 		}
+		BUL = {
+			add_opinion_modifier = { target = ROOT modifier = BUL_sent_ships }
+		}
 	}
 	option = {
 		name = bulgaria.27.b 
@@ -1151,18 +1170,21 @@ country_event = {
 	option = {
 		name = bulgaria.28.a 
 		ai_chance = {
-			factor = 70 
+			factor = 90
 		}
 		send_equipment = {
 			target = BUL 
 			type = basic_battleship
 			amount = 1 
 		}
+		BUL = {
+			add_opinion_modifier = { target = ROOT modifier = BUL_sent_ships }
+		}
 	}
 	option = {
 		name = bulgaria.28.b 
 		ai_chance = {
-			factor = 30 
+			factor = 10 
 		}
 	}
 }
@@ -1254,7 +1276,7 @@ country_event = {
 				factor = 99
 				strength_ratio = {
 					tag = TUR 
-					ratio > 1.5
+					ratio > 3
 				}
 			}
 		}
@@ -1429,5 +1451,89 @@ country_event = {
 	option = {
 		name = bulgaria.38.a 
 		add_timed_idea = { idea = BUL_protests_3_idea days = 90 }
+	}
+}
+
+country_event = {
+	id = bulgaria.39 
+	title = bulgaria.39.t 
+	desc = bulgaria.39.d 
+	picture = GFX_report_event_journalists_speech
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = bulgaria.39.a 
+		ai_chance = {
+			factor = 40 
+		}
+		if = {
+			limit = {
+				is_faction_leader = yes 
+				SER = {
+					is_in_faction_with = BUL 
+				}
+			}
+			remove_from_faction = SER 
+		}
+	}
+	option = {
+		name = bulgaria.39.b 
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0 
+				strength_ratio = {
+					tag = SER
+					ratio > 2
+				}
+			}
+			modifier = {
+				factor = 0.5 
+				is_in_faction_with = SER 
+			}
+		}
+		if = {
+			limit = {
+				is_faction_leader = yes 
+				SER = {
+					is_in_faction_with = BUL 
+				}
+			}
+			remove_from_faction = SER 
+		}
+		if = {
+			limit = {
+				is_faction_leader = no 
+				SER = {
+					is_in_faction_with = BUL 
+				}
+			}
+			any_other_country = {
+				limit = {
+					is_in_faction_with = SER 
+					is_faction_leader = yes 
+				}
+				remove_from_faction = BUL 
+			}
+		}
+		BUL = {
+			declare_war_on = {
+					target = SER 
+					type = take_state
+					generator = { 106 }
+				}
+		}
+	}
+	option = {
+		name = bulgaria.39.c 
+		ai_chance = {
+			factor = 40
+		}
+		add_national_unity = -0.1
+		 add_popularity = {
+					ideology = fascism
+					popularity = -0.1
+		}
 	}
 }
