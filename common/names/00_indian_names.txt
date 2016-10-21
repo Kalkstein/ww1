@@ -1,0 +1,28 @@
+﻿### Names generation for aces ###
+# Surnames can be male/female dependent or general. Fe. in Polish some surnames has different endings depending on the gender.
+# Names and Surnames are randomly picked and will sometimes repeat, but will never repeat in combinations for example there will never be generated another "John Smith".
+# Assigning the callsign is random - may be assigned or not. If we use the callsign, it will never be assigned to anyone again. Callsigns are not obligatory to script.
+# Picking up a gender is random, and is influenced by the amount of names scripted.
+
+###############################################################
+# Added Philippines Names 
+###############################################################
+
+RAJ = {
+	male = {
+		names = { 
+			Aarav Aarush Ayush Advik Arnav Aniruddh Bhavin Chirag Kerav Sam Sabhas Shalin Darshit Devansh Dhruv Divit Divyansh Eshan Faiyaz Hansh Harikiran Himmat Indrjit Indranil Jayesh Kiaan Lakshit Lakshay Madhup
+                        Mitul Neerav Nishith Ojas Pranay Priyansh Rachit Reyansh Ranbir Sahil Samar Shaan Shlok Shray Shreyas Tushar Uthkarsh Vaibhav Vihaan Vivann Yakshit
+		}
+	}
+	female = {
+		names = {
+			Additri Aaryahi Adah Advika Ahana Anika Anvi Aradhya Bhavya Charvi Drishya Eva Hrishita Inaya Ira Jivika Jiya Kashvi Kavya Keya Khushi Kiara Mahika Mishti Myra Navya Neysa Nitya Pari Parinaaz Pihu Prisha Saanvi Sana Sara
+                        Shanaya Siya Tanya Tara Tiya Vanya Vardaniya Vedika Vritika Yashvi Zara 
+		}
+	}
+	surnames = {
+		Vaidya Kumar Lal Sharma Shan Jai Pal Aggarwal Raje Chande Chander Nara Rai Nath Goel Bhat Raji Anand Suri Kapoor Chandra Patel Verma Malhotra Sai Engineer Arun Madan Srini Prasad Sara Rana Raman Subram Mehta Subramani Sethi Vijaya Malik Narayan Mittal Nita Kishore Roy Chaundhary Charan Nigam Sen Subramanian Nirmal Pawan Manohar Sahni Lalit
+	}
+	callsigns = { "Tiger of Mumbai" "The Terror" "Bahadur" "Baba" "Laddie" "Yellow One" "Jumbo" "Hatyaara" "Baaz" "Darinda" "Nidar" }
+}

@@ -1,6 +1,6 @@
 ﻿capital = 439
 
-oob = "RAJ_1936"
+oob = "RAJ_1910"
 
 # Starting tech
 set_technology = {
@@ -187,9 +187,60 @@ create_country_leader = {
 	}
 }
 
-create_field_marshal = {
+create_corps_commander = {
 	name = "Edward Quinan"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
-	traits = { logistics_wizard  }
+	portrait_path = "gfx/leaders/RAJ/Portrait_Edward_Quinan.dds"
+	traits = {  }
 	skill = 2
+}
+
+create_field_marshal = {
+	name = "Sir Claude Auchinleck"
+	portrait_path = "gfx/leaders/ENG/Portrait_Britain_Claude_Auchinleck.dds"
+	traits = { inspirational_leader  }
+	skill = 5
+}
+
+create_navy_leader = {
+	name = "Vice Admiral Ram Dass Katari"
+		picture = "gfx/leaders/RAJ/Portrait_Vice_Admiral_Ram_Dass_Katari.dds"
+	traits = { blockade_runner spotter }
+	skill = 3
+}
+
+create_corps_commander = {
+	name = "Bahadur Kohoon of Jaisalmer"
+	portrait_path = "gfx/leaders/Asia/Portrait_Asia_Generic_land_2.dds"
+	traits = { jungle_rat }
+	skill = 2
+}
+
+create_corps_commander = {
+	name = "Bahadur Aly of Patiala"
+	portrait_path = "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
+	traits = {  }
+	skill = 2
+}
+
+create_field_marshal = {
+	name = "Baird of Stonehaven"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+	traits = { old_guard defensive_doctrine  }
+	skill = 4
+}
+
+create_field_marshal = {
+	name = "Cariappa"
+	portrait_path = "gfx/leaders/Asia/Portrait_Asia_Generic_land_3.dds"
+	traits = { logistics_wizard }
+	skill = 5
+}
+
+
+
+
+add_ideas = {
+ RAJ_religious_conflict
+ RAJ_caste_system
+ RAJ_corrupted_railroad
 }
