@@ -4,9 +4,6 @@ state={
 	state_category = rural
 	
 	name="STATE_545"
-	resources={
-		chromium=64
-	}
 
 	history={
 		owner = ENG

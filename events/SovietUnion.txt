@@ -1728,7 +1728,6 @@ country_event = {
 		AUS = { country_event = { id = soviet.79 days = 2 } }
 		add_ideas = war_economy 
 		add_ideas = extensive_conscription 
-		}
 	}
 }
 
@@ -1849,13 +1848,3 @@ country_event = {
 			}
 	}
 }
-
-
-
-
-
-
-
-
-
-
