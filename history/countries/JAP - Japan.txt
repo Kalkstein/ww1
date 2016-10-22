@@ -41,7 +41,6 @@ set_technology = {
 	basic_carrier = 1
 	transport = 1
 	trench_warfare = 1
-	base_strike = 1
 	synth_oil_experiments = 1
 }
 
@@ -120,8 +119,6 @@ create_import = {
 		grand_battle_plan = 1
 		prepared_defense = 1
 		grand_assault = 1
-		carrier_primacy = 1
-		carrier_task_forces = 1
 
 		#electronics
 		electronic_mechanical_engineering = 1

@@ -28,7 +28,6 @@ set_technology = {
 	early_battleship = 1
 	early_battlecruiser = 1
 	mobile_warfare = 1
-	trade_interdiction = 1
 	formation_flying = 1
 	synth_oil_experiments = 1
 	transport = 1
@@ -68,9 +67,6 @@ set_national_unity = 0.7
 		delay = 1
 		elastic_defence = 1
 		schwerpunk = 1
-		convoy_interdiction_ti = 1
-		unrestricted_submarine_warfare = 1
-		raider_patrols = 1
 		#air
 		formation_flying = 1		
 		dive_bombing = 1
