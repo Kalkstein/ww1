@@ -557,6 +557,183 @@ technologies = {
 		}
 	}
 	
+#	antitank1 = {
+#
+#		anti_tank = {
+#			hard_attack = 0.1
+#			ap_attack = 0.2
+#		}
+#		anti_tank_brigade = {
+#			hard_attack = 0.1
+#			ap_attack = 0.2
+#		}
+#		
+#		path = {
+#			leads_to_tech = antitank2
+#			research_cost_coeff = 1
+#		}
+#		
+#		research_cost = 1
+#
+#		start_year = 1939
+#		
+#		folder = {
+#			name = artillery_folder
+#			position = { x = 7 y = 4 }
+#		}
+#		
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		
+#		categories = {
+#			artillery
+#			cat_anti_tank
+#		}
+#	}
+#	
+#	antitank2 = {
+#		
+#		enable_equipments = {
+#			anti_tank_equipment_2
+#		}
+#		
+#		#anti_tank = {
+#		#	hard_attack = 0.1
+#		#	ap_attack = 0.05
+#		#}
+#		#anti_tank_brigade = {
+#		#	hard_attack = 0.1
+#		#	ap_attack = 0.05
+#		#}
+#		
+#		path = {
+#			leads_to_tech = antitank3
+#			research_cost_coeff = 1
+#		}
+#		
+#		research_cost = 1
+#
+#		start_year = 1940
+#		
+#		folder = {
+#			name = artillery_folder
+#			position = { x = 7 y = 6 }
+#		}
+#		
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		
+#		categories = {
+#			artillery
+#			cat_anti_tank
+#		}
+#	}
+#	
+#	antitank3 = {
+#
+#		anti_tank = {
+#			hard_attack = 0.1
+#			ap_attack = 0.1
+#		}
+#		anti_tank_brigade = {
+#			hard_attack = 0.1
+#			ap_attack = 0.1
+#		}
+#		
+#		path = {
+#			leads_to_tech = antitank4
+#			research_cost_coeff = 1
+#		}
+#		
+#		research_cost = 1
+#
+#		start_year = 1941
+#		
+#		folder = {
+#			name = artillery_folder
+#			position = { x = 7 y = 8 }
+#		}
+#		
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		
+#		categories = {
+#			artillery
+#			cat_anti_tank
+#		}
+#	}
+#	
+#	antitank4 = {
+#
+#		anti_tank = {
+#			hard_attack = 0.1
+#			ap_attack = 0.1
+#		}
+#		anti_tank_brigade = {
+#			hard_attack = 0.1
+#			ap_attack = 0.1
+#		}
+#	
+#		path = {
+#			leads_to_tech = antitank5
+#			research_cost_coeff = 1
+#		}
+#		
+#		research_cost = 1
+#
+#		start_year = 1942
+#		
+#		folder = {
+#			name = artillery_folder
+#			position = { x = 7 y = 10 }
+#		}
+#		
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		
+#		categories = {
+#			artillery
+#			cat_anti_tank
+#		}
+#	}
+#	
+#	antitank5 = {
+#			
+#		enable_equipments = {
+#			anti_tank_equipment_3
+#		}	
+#			
+#		#anti_tank = {
+#		#	hard_attack = 0.1
+#		#	ap_attack = 0.05
+#		#}
+#		#anti_tank_brigade = {
+#		#	hard_attack = 0.1
+#		#	ap_attack = 0.05
+#		#}
+#		
+#		research_cost = 1
+#
+#		start_year = 1943
+#		
+#		folder = {
+#			name = artillery_folder
+#			position = { x = 7 y = 12 }
+#		}
+#		
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		
+#		categories = {
+#			artillery
+#			cat_anti_tank
+#		}
+#	}
 
 	support_artillery_1 = {
 		enable_equipments = {
@@ -570,7 +747,7 @@ technologies = {
 
 		start_year = 1905
 
-		research_cost = 1.5
+		research_cost = 0.8
 
 		folder = {
 			name = artillery_folder
@@ -596,16 +773,17 @@ technologies = {
 		}
 
 		path = {
+			#leads_to_tech = support_artillery_3
 			research_cost_coeff = 1
 		}
 
-		start_year = 1910
+		start_year = 1911
 
-		research_cost = 1.5
+		research_cost = 0.8
 
 		folder = {
 			name = artillery_folder
-			position = { x = 14 y = 2.5 }
+			position = { x = 14 y =	4 }
 		}
 		
 		categories = {
@@ -617,4 +795,48 @@ technologies = {
 		}
 	}
 	
+#	support_artillery_3{
+#		support_artillery = {
+#			soft_attack = 0.1
+#		}
+#		support_artillery_brigade = {
+#			soft_attack = 0.1
+#		}
+#
+#		path = {
+#			leads_to_tech = support_artillery_4
+#			research_cost_coeff = 1
+#		}
+#
+#		start_year = 1912
+#
+#	}
+#
+#	support_artillery_4{
+#		1914, Equipment
+#	}
+#
+#	support_artillery_5{
+#		support_artillery = {
+#			soft_attack = 0.1
+#		}
+#		support_artillery_brigade = {
+#			soft_attack = 0.1
+#		}
+#
+#		path = {
+#			leads_to_tech = support_artillery_6
+#			research_cost_coeff = 1
+#		}
+#
+#		start_year = 1915
+#	}
+#	
+#	support_artillery_6{
+#		1917, equipment
+#	}
+#
+#	support_artillery_7{
+#		1918, upgrade
+#	}
 }
