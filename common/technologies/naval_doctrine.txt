@@ -156,7 +156,7 @@ technologies = {
 		}
 
 		path = {
-			leads_to_tech = unristricted_submarine_warfare
+			leads_to_tech = unrestricted_submarine_warfare
 			research_cost_coeff = 1
 		}
 		
@@ -182,7 +182,7 @@ technologies = {
 		}
 	}
 	
-	unristricted_submarine_warfare = {
+	unrestricted_submarine_warfare = {
 
 		submarine = {
 			max_organisation = 10
