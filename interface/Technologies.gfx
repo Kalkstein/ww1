@@ -132,6 +132,23 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/hinterland_fortification_5.dds"
 	}
 	
+	SpriteType = {
+		name = "GFX_rubber_medium"
+		texturefile = "gfx/interface/technologies/rubber.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_rubber_2_medium"
+		texturefile = "gfx/interface/technologies/rubber_2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_rubber_3_medium"
+		texturefile = "gfx/interface/technologies/rubber_3.dds"
+	}
+	
+	
+	
 	
 	
 	

@@ -655,11 +655,11 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		path = {
-			leads_to_tech = rubber_1 
+			leads_to_tech = rubber
 			research_cost_coeff = 1
 		}
 		path = {
-			leads_to_tech = salpeter_1 
+			leads_to_tech = salpeter
 			research_cost_coeff = 1
 		}
 		
@@ -825,7 +825,7 @@ technologies = {
 		}
 	}
 	
-	rubber_1 = {
+	rubber = {
 
 		enable_building = {
 			building = rocket_site
@@ -957,7 +957,7 @@ technologies = {
 		}
 	}
 	
-	salpeter_1 = {
+	salpeter = {
 
 		enable_building = {
 			building = nuclear_reactor
