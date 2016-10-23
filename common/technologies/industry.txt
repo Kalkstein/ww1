@@ -20,6 +20,11 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
+		path = {
+			leads_to_tech = agriculture
+			research_cost_coeff = 1
+		}
+		
 		research_cost = 1.5
 		start_year = 1910
 		folder = {
@@ -106,10 +111,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		path = {
-			leads_to_tech =  industrial_fortitude
-			research_cost_coeff = 1
-		}
+
 		
 		
 		research_cost = 1.5
@@ -118,6 +120,39 @@ technologies = {
 		folder = {
 			name = industry_folder
 			position = { x = 2 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 6
+		}
+		
+		categories = {
+			industry
+		}
+	}
+	
+	industrial_organisation_3 = {
+	
+		global_building_slots_factor = 0.20
+		industrial_capacity_factory = 0.1
+
+		path = {
+			leads_to_tech =  industrial_organisation_2
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech =  industrial_fortitude
+			research_cost_coeff = 1
+		}
+		
+		
+		research_cost = 1.5
+		start_year = 1916
+		
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 8 }
 		}
 		
 		ai_will_do = {
@@ -140,11 +175,11 @@ technologies = {
 		
 		
 		research_cost = 1.5
-		start_year = 1914
+		start_year = 1916
 		
 		folder = {
 			name = industry_folder
-			position = { x = 4 y = 6 }
+			position = { x = 4 y = 8 }
 		}
 		
 		ai_will_do = {
@@ -162,39 +197,11 @@ technologies = {
 		
 		
 		research_cost = 1.5
-		start_year = 1914
+		start_year = 1917
 		
 		folder = {
 			name = industry_folder
-			position = { x = 4 y = 8 }
-		}
-		
-		ai_will_do = {
-			factor = 6
-		}
-		
-		categories = {
-			industry
-		}
-	}
-	
-	industrial_organisation_3 = {
-	
-		global_building_slots_factor = 0.20
-		industrial_capacity_factory = 0.1
-
-		path = {
-			leads_to_tech =  industrial_organisation_2
-			research_cost_coeff = 1
-		}
-		
-		
-		research_cost = 1.5
-		start_year = 1916
-		
-		folder = {
-			name = industry_folder
-			position = { x = 2 y = 8 }
+			position = { x = 4 y = 10 }
 		}
 		
 		ai_will_do = {
@@ -312,6 +319,93 @@ technologies = {
 		folder = {
 			name = industry_folder
 			position = { x = 1 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 4
+		}
+		
+		categories = {
+			industry
+		}
+		
+		ai_research_weights = {
+			offensive = -1.0
+		}
+	}
+	
+	agriculture = {
+
+		MONTHLY_POPULATION = 0.05
+		
+		path = {
+			leads_to_tech = agriculture_2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		
+
+		folder = {
+			name = industry_folder
+			position = { x = 4 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 4
+		}
+		
+		categories = {
+			industry
+		}
+		
+		ai_research_weights = {
+			offensive = -1.0
+		}
+	}
+	
+	agriculture_2 = {
+
+		MONTHLY_POPULATION = 0.1
+		
+			path = {
+			leads_to_tech = agriculture_3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1912
+		
+
+		folder = {
+			name = industry_folder
+			position = { x = 4 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 4
+		}
+		
+		categories = {
+			industry
+		}
+		
+		ai_research_weights = {
+			offensive = -1.0
+		}
+	}
+	
+	agriculture_3 = {
+
+		MONTHLY_POPULATION = 0.15
+		
+		research_cost = 2
+		start_year = 1912
+		
+
+		folder = {
+			name = industry_folder
+			position = { x = 4 y = 6 }
 		}
 		
 		ai_will_do = {
