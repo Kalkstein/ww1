@@ -1813,8 +1813,8 @@ units = {
 		ship = { name = "SMS Fürst Bismarck" definition = heavy_cruiser equipment = { heavy_cruiser_2 = { amount = 1 owner = GER } } }
 		ship = { name = "SMS Prinz Heinrich" definition = heavy_cruiser equipment = { heavy_cruiser_2 = { amount = 1 owner = GER } } }
 		ship = { name = "SMS Blücher" definition = heavy_cruiser equipment = { heavy_cruiser_2 = { amount = 1 owner = GER } } }
-		ship = { name = "SMS Von der Tann" definition = heavy_cruiser equipment = { heavy_cruiser_2 = { amount = 1 owner = GER } } }
-		ship = { name = "SMS Moltke" definition = heavy_cruiser equipment = { heavy_cruiser_2 = { amount = 1 owner = GER } } }
+		ship = { name = "SMS Von der Tann" definition = battle_cruiser equipment = { battle_cruiser_2 = { amount = 1 owner = GER } } }
+		ship = { name = "SMS Moltke" definition = battle_cruiser equipment = { battle_cruiser_2 = { amount = 1 owner = GER } } }
 		ship = { name = "SMS Prinz Adalbert" definition = heavy_cruiser equipment = { heavy_cruiser_2 = { amount = 1 owner = GER } } }
 		ship = { name = "SMS Friedrich Carl" definition = heavy_cruiser equipment = { heavy_cruiser_2 = { amount = 1 owner = GER } } }
 		ship = { name = "SMS Roon" definition = heavy_cruiser equipment = { heavy_cruiser_2 = { amount = 1 owner = GER version_name = "Roon" } } }
