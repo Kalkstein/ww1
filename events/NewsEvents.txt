@@ -277,6 +277,14 @@ news_event = {
 	id = news.239 
 	title = news.239.t 
 	desc = news.239.d 
+	desc = {
+		text = news.239.d
+		trigger = { NOT = { tag = TUR } }
+	}
+	desc = {
+		text = news.239.d_2
+		trigger = { tag = TUR }
+	}
 	picture = GFX_news_event_018 
 	
 	major = yes 

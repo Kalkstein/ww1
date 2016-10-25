@@ -217,7 +217,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		x = 27
 		y = 3
-		cost = 10
+		cost = 5
 		completion_reward = {
 		    TUR = { add_opinion_modifier = { target = ROOT modifier = BUL_claims } } #-50 opinion modifier
 		}	    
@@ -473,7 +473,7 @@ focus_tree = {
 		y = 4
 		cost = 10
 		completion_reward = {
-		    add_national_unity = -10 
+		    add_national_unity = -0.1
 			SOV = {
 			    country_event = { id = bulgaria.11 days = 1}
 			    custom_effect_tooltip = balkan_league_with_russia 
@@ -612,6 +612,7 @@ focus_tree = {
 		prerequisite = { focus = BUL_own_democratic_faction }
 		available = {
 		    has_war = no
+			is_faction_leader = yes 
 			NOT = {
 			    has_war_with = GRE 
 				}
@@ -732,7 +733,7 @@ focus_tree = {
 		y = 5
 		cost = 10
 		completion_reward = { 
-		        SOV= {
+		        SOV = {
 				    add_timed_idea = { idea = BUL_russian_communism_idea days = 730 }
 				}
 		}
@@ -914,7 +915,7 @@ focus_tree = {
 		
 		x = 27
 		y = 5
-		cost = 6
+		cost = 1
 		completion_reward = {
 		    set_rule = { can_create_factions = yes }
 			create_faction = balkan_league 
@@ -986,7 +987,7 @@ focus_tree = {
 		cost = 10 
 		completion_reward = {
 		    add_political_power = 100
-			add_ideas = partisan_suppression_focus
+			custom_effect_tooltip = BUL_to_be_expanded_tt
 		}
 	}
 	
@@ -1178,7 +1179,7 @@ focus_tree = {
 				BUL = {
 					country_event = { id = bulgaria.12 days = 1 }
 				}
-				news_event = { hours = 6 id = news.242 }
+				news_event = { hours = 6 id = news.240 }
 			}
 		}
 	}
@@ -1306,6 +1307,7 @@ focus_tree = {
 		}
 		cancel_if_invalid = yes 
 		bypass = {
+			has_global_flag = balkan_war_over
 			NOT = { 
 				106 = {
 					owner = {
@@ -1411,6 +1413,7 @@ focus_tree = {
 		mutually_exclusive = { focus = BUL_macedonia_peace }
 		prerequisite = { focus = BUL_macedonia }
 		bypass = {
+			has_global_flag = balkan_war_over
 			NOT = {
 				106 = {
 					owner = {
