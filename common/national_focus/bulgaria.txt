@@ -220,6 +220,7 @@ focus_tree = {
 		cost = 5
 		completion_reward = {
 		    TUR = { add_opinion_modifier = { target = ROOT modifier = BUL_claims } } #-50 opinion modifier
+			add_state_claim = 106 
 		}	    
 	}
 
