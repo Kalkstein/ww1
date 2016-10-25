@@ -473,7 +473,7 @@ focus_tree = {
 		y = 4
 		cost = 10
 		completion_reward = {
-		    add_national_unity = -10 
+		    add_national_unity = -0.1
 			SOV = {
 			    country_event = { id = bulgaria.11 days = 1}
 			    custom_effect_tooltip = balkan_league_with_russia 
@@ -612,6 +612,7 @@ focus_tree = {
 		prerequisite = { focus = BUL_own_democratic_faction }
 		available = {
 		    has_war = no
+			is_faction_leader = yes 
 			NOT = {
 			    has_war_with = GRE 
 				}
@@ -732,7 +733,7 @@ focus_tree = {
 		y = 5
 		cost = 10
 		completion_reward = { 
-		        SOV= {
+		        SOV = {
 				    add_timed_idea = { idea = BUL_russian_communism_idea days = 730 }
 				}
 		}
@@ -986,7 +987,7 @@ focus_tree = {
 		cost = 10 
 		completion_reward = {
 		    add_political_power = 100
-			add_ideas = partisan_suppression_focus
+			custom_effect_tooltip = BUL_to_be_expanded_tt
 		}
 	}
 	

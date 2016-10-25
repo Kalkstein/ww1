@@ -61,8 +61,8 @@ country_event = {
 		ai_chance = { factor = 5 }
 		BUL = {
 		    country_event = { id = bulgaria.6 days = 1 }
-			add_opinion_modifier = { target = FRA modifier = BUL_rejected_entente }
-			}
+			add_opinion_modifier = { target = FRA modifier = BUL_reject_entente }
+		}
 	}
 }
 
@@ -82,7 +82,7 @@ country_event = {
 					name = industry_bonus
 					bonus = 0.5
 				    uses = 1
-					technology = industry
+					category = industry
 				}
 				add_tech_bonus = {
 					name = electronics_bonus
@@ -231,7 +231,7 @@ country_event = {
 			base = 55 
 			modifier = {
 				add = 30 
-				government = democratic
+				has_government = democratic
 			}
 		}
 		BUL = {
@@ -265,7 +265,7 @@ country_event = {
 			base = 55 
 			modifier = {
 				add = 30 
-				government = democratic
+				has_government = democratic
 			}
 		}
 		BUL = {
@@ -299,7 +299,7 @@ country_event = {
 		ai_chance = { factor = 100 }
 		add_political_power = -100
 		custom_effect_tooltip = BUL_help_tt
-		immediate = {
+		hidden_effect = {
 			set_global_flag = BUL_russia_helps
 		}
 	}
@@ -326,7 +326,7 @@ country_event = {
 	
 	option = {
 		name = bulgaria.12.a 
-		BUL_mob_tt
+		custom_effect_tooltip = BUL_mob_tt
 		hidden_effect = { load_oob = BUL_general_mob_1 }
 	}
 }
@@ -862,7 +862,7 @@ country_event = {
 			}
 		}
 		BUL = {
-			add_opinion_modifier = { target = FRA modifier = BUL_rejected_entente }
+			add_opinion_modifier = { target = FRA modifier = BUL_reject_entente }
 		}
 	}
 }
@@ -1387,7 +1387,7 @@ country_event = {
 	
 	option = {
 		name = bulgaria.36.a 
-		add_timed_ideas = { idea = BUL_protests_1_idea days = 80 }
+		add_timed_idea = { idea = BUL_protests_1_idea days = 80 }
 	}
 }
 
@@ -1420,7 +1420,7 @@ country_event = {
 	
 	option = {
 		name = bulgaria.37.a 
-		add_timed_ideas = { idea = BUL_protests_2_idea days = 100 }
+		add_timed_idea = { idea = BUL_protests_2_idea days = 100 }
 	}
 }
 
@@ -1509,7 +1509,7 @@ country_event = {
 					is_in_faction_with = BUL 
 				}
 			}
-			any_other_country = {
+			every_country = {
 				limit = {
 					is_in_faction_with = SER 
 					is_faction_leader = yes 
