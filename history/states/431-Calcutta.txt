@@ -8,6 +8,7 @@ state={
 	
 	resources={
 		steel=20
+		tungsten=16
 	}
 
 	history={
@@ -22,7 +23,7 @@ state={
 			}
 		}
 		victory_points = {
-			4245 5 
+			4245 20 
 		}
 
 	}

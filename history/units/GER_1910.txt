@@ -1,5 +1,5 @@
 ﻿division_template = {
-	name = "Armee-Korps"
+	name = "Armeekorps"
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -31,7 +31,7 @@
 	}
 }
 division_template = {
-	name = "Kolonien-Division"
+	name = "Kolonialdivision"
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -43,7 +43,7 @@ division_template = {
 	}
 }
 division_template = {
-	name = "Kavallerie-Division" 	
+	name = "Kavalleriedivision" 	
 	regiments = {
 		cavalry = { x = 0 y = 0 }
         	cavalry = { x = 0 y = 1 }
@@ -57,7 +57,7 @@ division_template = {
 	}
 }
 division_template = {
-	name = "Gebirgsjäger-Brigade"		
+	name = "Gebirgsjägerbrigade"		
 	regiments = {
 		mountaineers = { x = 0 y = 0 }
 	        mountaineers = { x = 0 y = 1 }
@@ -88,7 +88,7 @@ units = {
 	division= {	
 		name = "1. Kaiserliche Division"
 		location = 6521
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 1.0
 		start_equipment_factor = 1.0
 
@@ -97,7 +97,7 @@ units = {
 	division= {	
 		name = "2. Kaiserliche Division"
 		location = 6521
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 1.0
 		start_equipment_factor = 1.0
 
@@ -106,7 +106,7 @@ units = {
 	division= {	
 		name = "3. Kaiserliche Division"
 		location = 6521
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 1.0
 		start_equipment_factor = 1.0
 
@@ -115,7 +115,7 @@ units = {
 	division= {	
 		name = "4. Kaiserliche Division"
 		location = 6521
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 1.0
 		start_equipment_factor = 1.0
 
@@ -124,7 +124,7 @@ units = {
 	division= {	
 		name = "5. Kaiserliche Division"
 		location = 6521
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 1.0
 		start_equipment_factor = 1.0
 
@@ -133,7 +133,7 @@ units = {
 	division= {	
 		name = "6. Kaiserliche Division"
 		location = 6521
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 1.0
 		start_equipment_factor = 1.0
 
@@ -142,7 +142,7 @@ units = {
 	division= {	
 		name = "7. Kaiserliche Division"
 		location = 6521
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 1.0
 		start_equipment_factor = 1.0
 
@@ -151,7 +151,7 @@ units = {
 	division= {	
 		name = "8. Kaiserliche Division"
 		location = 6521
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 1.0
 		start_equipment_factor = 1.0
 
@@ -160,7 +160,7 @@ units = {
 	division= {	
 		name = "9. Kaiserliche Division"
 		location = 6521
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 1.0
 		start_equipment_factor = 1.0
 
@@ -169,7 +169,7 @@ units = {
 	division= {	
 		name = "10. Kaiserliche Division"
 		location = 6521
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 1.0
 		start_equipment_factor = 1.0
 
@@ -178,7 +178,7 @@ units = {
 	division= {	
 		name = "11. Kaiserliche Division"
 		location = 6521
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 1.0
 		start_equipment_factor = 1.0
 
@@ -187,7 +187,7 @@ units = {
 	division= {	
 		name = "12. Kaiserliche Division"
 		location = 6521
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 1.0
 		start_equipment_factor = 1.0
 
@@ -196,7 +196,7 @@ units = {
 	division= {	
 		name = "13. Kaiserliche Division"
 		location = 6521
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 1.0
 		start_equipment_factor = 1.0
 
@@ -205,7 +205,7 @@ units = {
 	division= {	
 		name = "14. Kaiserliche Division"
 		location = 6521
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 1.0
 		start_equipment_factor = 1.0
 
@@ -214,7 +214,7 @@ units = {
 	division= {	
 		name = "15. Kaiserliche Division"
 		location = 6521
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 1.0
 		start_equipment_factor = 1.0
 
@@ -223,7 +223,7 @@ units = {
 	division= {	
 		name = "16. Kaiserliche Division"
 		location = 6521
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 1.0
 		start_equipment_factor = 1.0
 
@@ -232,7 +232,7 @@ units = {
 	division= {	
 		name = "17. Kaiserliche Division"
 		location = 6521
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 1.0
 		start_equipment_factor = 1.0
 
@@ -241,7 +241,7 @@ units = {
 	division= {	
 		name = "18. Kaiserliche Division"
 		location = 6521
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 1.0
 		start_equipment_factor = 1.0
 
@@ -250,7 +250,7 @@ units = {
 	division= {	
 		name = "19. Kaiserliche Division"
 		location = 6521
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 1.0
 		start_equipment_factor = 1.0
 
@@ -259,232 +259,232 @@ units = {
 	division= {	
 		name = "20. Kaiserliche Division"
 		location = 6521
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 1.0
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "1. Preussische Armee"
+		name = "1. Preußische Armee"
 		location = 6332
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.4
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "2. Preussische Armee"
+		name = "2. Preußische Armee"
 		location = 6332
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.4
 		start_equipment_factor = 1.0
 
 	}
 	
 	division= {	
-		name = "3. Preussische Armee"
+		name = "3. Preußische Armee"
 		location = 6332
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.4
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "4. Preussische Armee"
+		name = "4. Preußische Armee"
 		location = 6332
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.4
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "5. Preussische Armee"
+		name = "5. Preußische Armee"
 		location = 6332
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.4
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "6. Preussische Armee"
+		name = "6. Preußische Armee"
 		location = 6332
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.4
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "7. Preussische Armee"
+		name = "7. Preußische Armee"
 		location = 6332
-		division_template = "Kavallerie-Division"
+		division_template = "Kavalleriedivision"
 		start_experience_factor = 0.4
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "8. Preussische Armee"
+		name = "8. Preußische Armee"
 		location = 6332
-		division_template = "Kavallerie-Division"
+		division_template = "Kavalleriedivision"
 		start_experience_factor = 0.4
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "Preussische Grenzer Infanterie"
+		name = "Preußische Grenzer-Infanterie"
 		location = 9346
-		division_template = "Gebirgsjäger-Brigade"
+		division_template = "Gebirgsjägerbrigade"
 		start_experience_factor = 0.6
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "Preussische Grenzer Infanterie"
+		name = "Preußische Grenzer-Infanterie"
 		location = 9346
-		division_template = "Gebirgsjäger-Brigade"
+		division_template = "Gebirgsjägerbrigade"
 		start_experience_factor = 0.6
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "Preussische Grenzer Infanterie"
+		name = "Preußische Grenzer-Infanterie"
 		location = 6375
-		division_template = "Gebirgsjäger-Brigade"
+		division_template = "Gebirgsjägerbrigade"
 		start_experience_factor = 0.6
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "Preussische Grenzer Infanterie"
+		name = "Preußische Grenzer-Infanterie"
 		location = 6375
-		division_template = "Gebirgsjäger-Brigade"
+		division_template = "Gebirgsjägerbrigade"
 		start_experience_factor = 0.6
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "Preussische Grenzer Infanterie"
+		name = "Preußische Grenzer-Infanterie"
 		location = 9372
-		division_template = "Gebirgsjäger-Brigade"
+		division_template = "Gebirgsjägerbrigade"
 		start_experience_factor = 0.6
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "Preussische Grenzer Infanterie"
+		name = "Preußische Grenzer-Infanterie"
 		location = 9372
-		division_template = "Gebirgsjäger-Brigade"
+		division_template = "Gebirgsjägerbrigade"
 		start_experience_factor = 0.6
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "Preussische Grenzer Infanterie"
+		name = "Preußische Grenzer-Infanterie"
 		location = 11386
-		division_template = "Gebirgsjäger-Brigade"
+		division_template = "Gebirgsjägerbrigade"
 		start_experience_factor = 0.6
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "Preussische Grenzer Infanterie"
+		name = "Preußische Grenzer-Infanterie"
 		location = 11386
-		division_template = "Gebirgsjäger-Brigade"
+		division_template = "Gebirgsjägerbrigade"
 		start_experience_factor = 0.6
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "Preussische Grenzer Infanterie"
+		name = "Preußische Grenzer-Infanterie"
 		location = 9327
-		division_template = "Gebirgsjäger-Brigade"
+		division_template = "Gebirgsjägerbrigade"
 		start_experience_factor = 0.6
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "Preussische Grenzer Infanterie"
+		name = "Preußische Grenzer-Infanterie"
 		location = 9327
-		division_template = "Gebirgsjäger-Brigade"
+		division_template = "Gebirgsjägerbrigade"
 		start_experience_factor = 0.6
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "Preussische Grenzer Infanterie"
+		name = "Preußische Grenzer-Infanterie"
 		location = 3384
-		division_template = "Gebirgsjäger-Brigade"
+		division_template = "Gebirgsjägerbrigade"
 		start_experience_factor = 0.6
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "Preussische Grenzer Infanterie"
+		name = "Preußische Grenzer-Infanterie"
 		location = 3384
-		division_template = "Gebirgsjäger-Brigade"
+		division_template = "Gebirgsjägerbrigade"
 		start_experience_factor = 0.6
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "Preussische Grenzer Infanterie"
+		name = "Preußische Grenzer-Infanterie"
 		location = 281
-		division_template = "Gebirgsjäger-Brigade"
+		division_template = "Gebirgsjägerbrigade"
 		start_experience_factor = 0.6
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "Preussische Grenzer Infanterie"
+		name = "Preußische Grenzer-Infanterie"
 		location = 281
-		division_template = "Gebirgsjäger-Brigade"
+		division_template = "Gebirgsjägerbrigade"
 		start_experience_factor = 0.6
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "Preussische Grenzer Infanterie"
+		name = "Preußische Grenzer-Infanterie"
 		location = 3288
-		division_template = "Gebirgsjäger-Brigade"
+		division_template = "Gebirgsjägerbrigade"
 		start_experience_factor = 0.6
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "Preussische Grenzer Infanterie"
+		name = "Preußische Grenzer-Infanterie"
 		location = 3288
-		division_template = "Gebirgsjäger-Brigade"
+		division_template = "Gebirgsjägerbrigade"
 		start_experience_factor = 0.6
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "Preussische Grenzer Infanterie"
+		name = "Preußische Grenzer-Infanterie"
 		location = 3288
-		division_template = "Gebirgsjäger-Brigade"
+		division_template = "Gebirgsjägerbrigade"
 		start_experience_factor = 0.6
 		start_equipment_factor = 1.0
 
@@ -493,7 +493,7 @@ units = {
 	division= {	
 		name = "1. Magdeburgische Kavallerie"
 		location = 3522
-		division_template = "Kavallerie-Division"
+		division_template = "Kavalleriedivision"
 		start_experience_factor = 0.25
 		start_equipment_factor = 1.0
 
@@ -502,7 +502,7 @@ units = {
 	division= {	
 		name = "2. Magdeburgische Kavallerie"
 		location = 3522
-		division_template = "Kavallerie-Division"
+		division_template = "Kavalleriedivision"
 		start_experience_factor = 0.25
 		start_equipment_factor = 1.0
 
@@ -511,7 +511,7 @@ units = {
 	division= {	
 		name = "3. Magdeburgische Kavallerie"
 		location = 3522
-		division_template = "Kavallerie-Division"
+		division_template = "Kavalleriedivision"
 		start_experience_factor = 0.25
 		start_equipment_factor = 1.0
 
@@ -520,106 +520,106 @@ units = {
 	division= {	
 		name = "4. Magdeburgische Kavallerie"
 		location = 3522
-		division_template = "Kavallerie-Division"
+		division_template = "Kavalleriedivision"
 		start_experience_factor = 0.25
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "1. Danzig Wache"
+		name = "1. Danziger Wache"
 		location = 362
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "2. Danzig Wache"
+		name = "2. Danziger Wache"
 		location = 362
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "3. Danzig Wache"
+		name = "3. Danziger Wache"
 		location = 362
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "4. Danzig Wache"
+		name = "4. Danziger Wache"
 		location = 362
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "5. Danzig Wache"
+		name = "5. Danziger Wache"
 		location = 362
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "1. Hamburg Wache"
+		name = "1. Hamburger Wache"
 		location = 9347
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "2. Hamburg Wache"
+		name = "2. Hamburger Wache"
 		location = 9347
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "3. Hamburg Wache"
+		name = "3. Hamburger Wache"
 		location = 9347
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "4. Hamburg Wache"
+		name = "4. Hamburger Wache"
 		location = 9347
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "5. Hamburg Wache"
+		name = "5. Hamburger Wache"
 		location = 9347
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "6. Hamburg Wache"
+		name = "6. Hamburger Wache"
 		location = 9347
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 
@@ -627,9 +627,9 @@ units = {
 
 
 	division= {	
-		name = "1. Hamburgische Kavallerie"
+		name = "1. Hamburger Kavallerie"
 		location = 9347
-		division_template = "Kavallerie-Division"
+		division_template = "Kavalleriedivision"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 
@@ -638,7 +638,7 @@ units = {
 	division= {	
 		name = "1. Rheinische Armee"
 		location = 6488
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 
@@ -647,7 +647,7 @@ units = {
 	division= {	
 		name = "2. Rheinische Armee"
 		location = 6488
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 
@@ -656,7 +656,7 @@ units = {
 	division= {	
 		name = "4. Rheinische Armee"
 		location = 495
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 
@@ -665,7 +665,7 @@ units = {
 	division= {	
 		name = "5. Rheinische Armee"
 		location = 495
-		division_template = "Kavallerie-Division"
+		division_template = "Kavalleriedivision"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 
@@ -674,7 +674,7 @@ units = {
 	division= {	
 		name = "6. Rheinische Armee"
 		location = 587
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 
@@ -683,7 +683,7 @@ units = {
 	division= {	
 		name = "7. Rheinische Armee"
 		location = 587
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 
@@ -692,7 +692,7 @@ units = {
 	division= {	
 		name = "8. Rheinische Armee"
 		location = 587
-		division_template = "Kavallerie-Division"
+		division_template = "Kavalleriedivision"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 
@@ -701,7 +701,7 @@ units = {
 	division= {	
 		name = "9. Rheinische Armee"
 		location = 6488
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 
@@ -710,7 +710,7 @@ units = {
 	division= {	
 		name = "10. Rheinische Armee"
 		location = 6488
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 
@@ -719,7 +719,7 @@ units = {
 	division= {	
 		name = "1. Bayerische Armee"
 		location = 692
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 
@@ -728,7 +728,7 @@ units = {
 	division= {	
 		name = "2. Bayerische Armee"
 		location = 692
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 
@@ -737,7 +737,7 @@ units = {
 	division= {	
 		name = "3. Bayerische Armee"
 		location = 692
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 
@@ -746,7 +746,7 @@ units = {
 	division= {	
 		name = "4. Bayerische Armee"
 		location = 692
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 
@@ -755,7 +755,7 @@ units = {
 	division= {	
 		name = "5. Bayerische Armee"
 		location = 3571
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 
@@ -764,7 +764,7 @@ units = {
 	division= {	
 		name = "1. Bayerische Kavallerie"
 		location = 3571
-		division_template = "Kavallerie-Division"
+		division_template = "Kavalleriedivision"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 
@@ -773,7 +773,7 @@ units = {
 	division= {	
 		name = "2. Bayerische Kavallerie"
 		location = 3571
-		division_template = "Kavallerie-Division"
+		division_template = "Kavalleriedivision"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 
@@ -782,160 +782,160 @@ units = {
 	division= {	
 		name = "3. Bayerische Kavallerie"
 		location = 3571
-		division_template = "Kavallerie-Division"
+		division_template = "Kavalleriedivision"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "1. Sächsischen Armee"
+		name = "1. Sächsische Armee"
 		location = 3535
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "2. Sächsischen Armee"
+		name = "2. Sächsische Armee"
 		location = 3535
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "4. Sächsischen Armee"
+		name = "4. Sächsische Armee"
 		location = 3535
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "5. Sächsischen Armee"
+		name = "5. Sächsische Armee"
 		location = 3535
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "6. Sächsischen Armee"
+		name = "6. Sächsische Armee"
 		location = 3535
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "7. Sächsischen Armee"
+		name = "7. Sächsische Armee"
 		location = 3535
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "8. Sächsischen Armee"
+		name = "8. Sächsische Armee"
 		location = 3535
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "9. Sächsischen Armee"
+		name = "9. Sächsische Armee"
 		location = 3535
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "10. Sächsischen Armee"
+		name = "10. Sächsische Armee"
 		location = 3535
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "11. Sächsischen Armee"
+		name = "11. Sächsische Armee"
 		location = 3535
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "1. Frankische Armee"
+		name = "1. Fränkische Armee"
 		location = 11544
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.25
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "2. Frankische Armee"
+		name = "2. Fränkische Armee"
 		location = 11544
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.25
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "3. Frankische Armee"
+		name = "3. Fränkische Armee"
 		location = 11544
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.25
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "4. Frankische Armee"
+		name = "4. Fränkische Armee"
 		location = 11544
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.25
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "5. Frankische Armee"
+		name = "5. Fränkische Armee"
 		location = 11544
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.25
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "1. Sächsischen Kavallerie"
+		name = "1. Sächsische Kavallerie"
 		location = 3535
-		division_template = "Kavallerie-Division"
+		division_template = "Kavalleriedivision"
 		start_experience_factor = 0.8
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "2. Sächsischen Kavallerie"
+		name = "2. Sächsische Kavallerie"
 		location = 3535
-		division_template = "Kavallerie-Division"
+		division_template = "Kavalleriedivision"
 		start_experience_factor = 0.8
 		start_equipment_factor = 1.0
 
@@ -944,7 +944,7 @@ units = {
 	division= {	
 		name = "1. Schlesische Kavallerie"
 		location = 9570
-		division_template = "Kavallerie-Division"
+		division_template = "Kavalleriedivision"
 		start_experience_factor = 0.8
 		start_equipment_factor = 1.0
 
@@ -953,97 +953,97 @@ units = {
 	division= {	
 		name = "2. Schlesische Kavallerie"
 		location = 9570
-		division_template = "Kavallerie-Division"
+		division_template = "Kavalleriedivision"
 		start_experience_factor = 0.8
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "1. Schlesischen Armee"
+		name = "1. Schlesische Armee"
 		location = 9570
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.35
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "2. Schlesischen Armee"
+		name = "2. Schlesische Armee"
 		location = 9570
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.35
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "3. Schlesischen Armee"
+		name = "3. Schlesische Armee"
 		location = 9570
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.35
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "4. Schlesischen Armee"
+		name = "4. Schlesische Armee"
 		location = 9570
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.35
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "5. Schlesischen Armee"
+		name = "5. Schlesische Armee"
 		location = 9570
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.35
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "6. Schlesischen Armee"
+		name = "6. Schlesische Armee"
 		location = 9570
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.35
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "7. Schlesischen Armee"
+		name = "7. Schlesische Armee"
 		location = 9570
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.35
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "8. Schlesischen Armee"
+		name = "8. Schlesische Armee"
 		location = 9570
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.35
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "9. Schlesischen Armee"
+		name = "9. Schlesische Armee"
 		location = 9570
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.35
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "10. Schlesischen Armee"
+		name = "10. Schlesische Armee"
 		location = 9570
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.35
 		start_equipment_factor = 1.0
 
@@ -1052,7 +1052,7 @@ units = {
 	division= {	
 		name = "Polnische Legion"
 		location = 479
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.0
 		start_equipment_factor = 0.5
 
@@ -1062,7 +1062,7 @@ units = {
 	division= {	
 		name = "Polnische Legion"
 		location = 3295
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.0
 		start_equipment_factor = 0.5
 
@@ -1071,7 +1071,7 @@ units = {
 	division= {	
 		name = "Polnische Legion"
 		location = 243
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.0
 		start_equipment_factor = 0.5
 
@@ -1080,7 +1080,7 @@ units = {
 	division= {	
 		name = "Polnische Legion"
 		location = 3381
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.0
 		start_equipment_factor = 0.5
 
@@ -1089,7 +1089,7 @@ units = {
 	division= {	
 		name = "Polnische Legion"
 		location = 17
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.0
 		start_equipment_factor = 0.5
 
@@ -1098,7 +1098,7 @@ units = {
 	division= {	
 		name = "Polnische Legion"
 		location = 9532
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.0
 		start_equipment_factor = 0.5
 
@@ -1107,7 +1107,7 @@ units = {
 	division= {	
 		name = "Polnische Legion"
 		location = 3283
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.0
 		start_equipment_factor = 0.5
 
@@ -1116,7 +1116,7 @@ units = {
 	division= {	
 		name = "Polnische Legion"
 		location = 6462
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.0
 		start_equipment_factor = 0.5
 
@@ -1125,7 +1125,7 @@ units = {
 	division= {	
 		name = "Polnische Legion"
 		location = 11467
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.0
 		start_equipment_factor = 0.5
 
@@ -1134,7 +1134,7 @@ units = {
 	division= {	
 		name = "Polnische Legion"
 		location = 11467
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.0
 		start_equipment_factor = 0.5
 
@@ -1143,7 +1143,7 @@ units = {
 	division= {	
 		name = "Polnische Legion"
 		location = 479
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.0
 		start_equipment_factor = 0.5
 
@@ -1152,7 +1152,7 @@ units = {
 	division= {	
 		name = "Polnische Legion"
 		location = 6462
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.0
 		start_equipment_factor = 0.5
 
@@ -1161,7 +1161,7 @@ units = {
 	division= {	
 		name = "Polnische Legion"
 		location = 3283
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.0
 		start_equipment_factor = 0.5
 
@@ -1170,7 +1170,7 @@ units = {
 	division= {	
 		name = "Polnische Legion"
 		location = 9532
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.0
 		start_equipment_factor = 0.5
 
@@ -1179,7 +1179,7 @@ units = {
 	division= {	
 		name = "Polnische Legion"
 		location = 17
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.0
 		start_equipment_factor = 0.5
 
@@ -1188,7 +1188,7 @@ units = {
 	division= {	
 		name = "Polnische Legion"
 		location = 3381
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.0
 		start_equipment_factor = 0.5
 
@@ -1197,7 +1197,7 @@ units = {
 	division= {	
 		name = "Polnische Legion"
 		location = 243
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.0
 		start_equipment_factor = 0.5
 
@@ -1206,169 +1206,169 @@ units = {
 	division= {	
 		name = "Polnische Legion"
 		location = 3295
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.0
 		start_equipment_factor = 0.5
 
 	}
 
 	division= {	
-		name = "1. Alsace-Armee"
+		name = "1. Elsass-Armee"
 		location = 1346
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.6
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "2. Alsace-Armee"
+		name = "2. Elsass-Armee"
 		location = 1346
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.6
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "3. Alsace-Armee"
+		name = "3. Elsass-Armee"
 		location = 1346
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.6
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "4. Alsace-Armee"
+		name = "4. Elsass-Armee"
 		location = 678
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.6
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "5. Alsace-Armee"
+		name = "5. Elsass-Armee"
 		location = 6529
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.6
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "6. Alsace-Armee"
+		name = "6. Elsass-Armee"
 		location = 9559
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.6
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "7. Alsace-Armee"
+		name = "7. Elsass-Armee"
 		location = 9559
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.6
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "8. Alsace-Armee"
+		name = "8. Elsass-Armee"
 		location = 11502
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.6
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "9. Alsace-Armee"
+		name = "9. Elsass-Armee"
 		location = 3629
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.6
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "10. Alsace-Armee"
+		name = "10. Elsass-Armee"
 		location = 1346
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.6
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "11. Alsace-Armee"
+		name = "11. Elsass-Armee"
 		location = 1346
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.6
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "12. Alsace-Armee"
+		name = "12. Elsass-Armee"
 		location = 1346
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.6
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "13. Alsace-Armee"
+		name = "13. Elsass-Armee"
 		location = 678
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.6
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "14. Alsace-Armee"
+		name = "14. Elsass-Armee"
 		location = 6529
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.6
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "15. Alsace-Armee"
+		name = "15. Elsass-Armee"
 		location = 9559
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.6
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "16. Alsace-Armee"
+		name = "16. Elsass-Armee"
 		location = 9559
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.6
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "17. Alsace-Armee"
+		name = "17. Elsass-Armee"
 		location = 11502
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.6
 		start_equipment_factor = 1.0
 
 	}
 
 	division= {	
-		name = "18. Alsace-Armee"
+		name = "18. Elsass-Armee"
 		location = 3629
-		division_template = "Armee-Korps"
+		division_template = "Armeekorps"
 		start_experience_factor = 0.6
 		start_equipment_factor = 1.0
 
@@ -1380,7 +1380,7 @@ units = {
 	division= {
 		name = "1. Togoland Armee"
 		location = 1951
-		division_template = "Kolonien-Division"
+		division_template = "Kolonialdivision"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.4
 
@@ -1389,7 +1389,7 @@ units = {
 	division= {
 		name = "2. Togoland Armee"
 		location = 1951
-		division_template = "Kolonien-Division"
+		division_template = "Kolonialdivision"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.4
 
@@ -1398,7 +1398,7 @@ units = {
 	division= {
 		name = "3. Togoland Armee"
 		location = 1951
-		division_template = "Kolonien-Division"
+		division_template = "Kolonialdivision"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.4
 
@@ -1407,7 +1407,7 @@ units = {
 	division= {
 		name = "1. Kamerun Armee"
 		location = 5036
-		division_template = "Kolonien-Division"
+		division_template = "Kolonialdivision"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.4
 
@@ -1416,7 +1416,7 @@ units = {
 	division= {
 		name = "2. Kamerun Armee"
 		location = 5036
-		division_template = "Kolonien-Division"
+		division_template = "Kolonialdivision"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.4
 
@@ -1425,7 +1425,7 @@ units = {
 	division= {
 		name = "3. Kamerun Armee"
 		location = 5036
-		division_template = "Kolonien-Division"
+		division_template = "Kolonialdivision"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.4
 
@@ -1434,7 +1434,7 @@ units = {
 	division= {
 		name = "4. Kamerun Armee"
 		location = 5036
-		division_template = "Kolonien-Division"
+		division_template = "Kolonialdivision"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.4
 
@@ -1443,7 +1443,7 @@ units = {
 	division= {
 		name = "5. Kamerun Armee"
 		location = 5036
-		division_template = "Kolonien-Division"
+		division_template = "Kolonialdivision"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.4
 
@@ -1452,7 +1452,7 @@ units = {
 	division= {
 		name = "1. Namibia Armee"
 		location = 10978
-		division_template = "Kolonien-Division"
+		division_template = "Kolonialdivision"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.4
 
@@ -1461,7 +1461,7 @@ units = {
 	division= {
 		name = "2. Namibia Armee"
 		location = 10978
-		division_template = "Kolonien-Division"
+		division_template = "Kolonialdivision"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.4
 
@@ -1470,7 +1470,7 @@ units = {
 	division= {
 		name = "3. Namibia Armee"
 		location = 10978
-		division_template = "Kolonien-Division"
+		division_template = "Kolonialdivision"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.4
 
@@ -1479,7 +1479,7 @@ units = {
 	division= {
 		name = "4. Namibia Armee"
 		location = 10978
-		division_template = "Kolonien-Division"
+		division_template = "Kolonialdivision"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.4
 
@@ -1488,7 +1488,7 @@ units = {
 	division= {
 		name = "5. Namibia Armee"
 		location = 2229
-		division_template = "Kolonien-Division"
+		division_template = "Kolonialdivision"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.4
 
@@ -1497,7 +1497,7 @@ units = {
 	division= {
 		name = "6. Namibia Armee"
 		location = 2229
-		division_template = "Kolonien-Division"
+		division_template = "Kolonialdivision"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.4
 
@@ -1506,7 +1506,7 @@ units = {
 	division= {
 		name = "1. Ost-Afrika Armee"
 		location = 2196
-		division_template = "Kolonien-Division"
+		division_template = "Kolonialdivision"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.4
 
@@ -1515,7 +1515,7 @@ units = {
 	division= {
 		name = "2. Ost-Afrika Armee"
 		location = 2196
-		division_template = "Kolonien-Division"
+		division_template = "Kolonialdivision"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.4
 
@@ -1524,7 +1524,7 @@ units = {
 	division= {
 		name = "3. Ost-Afrika Armee"
 		location = 2196
-		division_template = "Kolonien-Division"
+		division_template = "Kolonialdivision"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.4
 
@@ -1533,7 +1533,7 @@ units = {
 	division= {
 		name = "4. Ost-Afrika Armee"
 		location = 2196
-		division_template = "Kolonien-Division"
+		division_template = "Kolonialdivision"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.4
 
@@ -1542,7 +1542,7 @@ units = {
 	division= {
 		name = "5. Ost-Afrika Armee"
 		location = 2220
-		division_template = "Kolonien-Division"
+		division_template = "Kolonialdivision"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.4
 
@@ -1551,7 +1551,7 @@ units = {
 	division= {
 		name = "6. Ost-Afrika Armee"
 		location = 2220
-		division_template = "Kolonien-Division"
+		division_template = "Kolonialdivision"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.4
 
@@ -1560,7 +1560,7 @@ units = {
 	division= {
 		name = "7. Ost-Afrika Armee"
 		location = 2220
-		division_template = "Kolonien-Division"
+		division_template = "Kolonialdivision"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.4
 
@@ -1569,7 +1569,7 @@ units = {
 	division= {
 		name = "8. Ost-Afrika Armee"
 		location = 9962
-		division_template = "Kolonien-Division"
+		division_template = "Kolonialdivision"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.4
 
@@ -1578,7 +1578,7 @@ units = {
 	division= {
 		name = "1. Papua Armee"
 		location = 12237
-		division_template = "Kolonien-Division"
+		division_template = "Kolonialdivision"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.4
 
@@ -1587,7 +1587,7 @@ units = {
 	division= {
 		name = "2. Papua Armee"
 		location = 12237
-		division_template = "Kolonien-Division"
+		division_template = "Kolonialdivision"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.4
 
@@ -1596,7 +1596,7 @@ units = {
 	division= {
 		name = "3. Papua Armee"
 		location = 12237
-		division_template = "Kolonien-Division"
+		division_template = "Kolonialdivision"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.4
 
@@ -1605,7 +1605,7 @@ units = {
 	division= {
 		name = "4. Papua Armee"
 		location = 12237
-		division_template = "Kolonien-Division"
+		division_template = "Kolonialdivision"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.4
 
@@ -1614,7 +1614,7 @@ units = {
 	division= {
 		name = "5. Papua Armee"
 		location = 12237
-		division_template = "Kolonien-Division"
+		division_template = "Kolonialdivision"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.4
 
@@ -1623,7 +1623,7 @@ units = {
 	division= {
 		name = "6. Papua Armee"
 		location = 12237
-		division_template = "Kolonien-Division"
+		division_template = "Kolonialdivision"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.4
 
@@ -1632,7 +1632,7 @@ units = {
 	division= {
 		name = "7. Papua Armee"
 		location = 12237
-		division_template = "Kolonien-Division"
+		division_template = "Kolonialdivision"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.4
 
@@ -1641,7 +1641,7 @@ units = {
 	division= {
 		name = "8. Papua Armee"
 		location = 12237
-		division_template = "Kolonien-Division"
+		division_template = "Kolonialdivision"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.4
 
@@ -1650,7 +1650,7 @@ units = {
 	division= {
 		name = "9. Papua Armee"
 		location = 4226
-		division_template = "Kolonien-Division"
+		division_template = "Kolonialdivision"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.4
 
@@ -1659,7 +1659,7 @@ units = {
 	division= {
 		name = "10. Papua Armee"
 		location = 4226
-		division_template = "Kolonien-Division"
+		division_template = "Kolonialdivision"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.4
 
@@ -1668,7 +1668,7 @@ units = {
 	division= {
 		name = "1. Pazifik Armee"
 		location = 4357
-		division_template = "Kolonien-Division"
+		division_template = "Kolonialdivision"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.4
 
@@ -1677,7 +1677,7 @@ units = {
 	division= {
 		name = "2. Pazifik Armee"
 		location = 13028
-		division_template = "Kolonien-Division"
+		division_template = "Kolonialdivision"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.4
 
@@ -1686,7 +1686,7 @@ units = {
 	division= {
 		name = "3. Pazifik Armee"
 		location = 13031
-		division_template = "Kolonien-Division"
+		division_template = "Kolonialdivision"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.4
 
@@ -1695,7 +1695,7 @@ units = {
 	division= {
 		name = "4. Pazifik Armee"
 		location = 2489
-		division_template = "Kolonien-Division"
+		division_template = "Kolonialdivision"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.4
 
@@ -1704,7 +1704,7 @@ units = {
 	division= {
 		name = "5. Pazifik Armee"
 		location = 13036
-		division_template = "Kolonien-Division"
+		division_template = "Kolonialdivision"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.4
 
@@ -1713,7 +1713,7 @@ units = {
 	division= {
 		name = "6. Pazifik Armee"
 		location = 13035
-		division_template = "Kolonien-Division"
+		division_template = "Kolonialdivision"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.4
 
@@ -1722,7 +1722,7 @@ units = {
 	division= {
 		name = "7. Pazifik Armee"
 		location = 13038
-		division_template = "Kolonien-Division"
+		division_template = "Kolonialdivision"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.4
 
@@ -1731,7 +1731,7 @@ units = {
 	division= {
 		name = "8. Pazifik Armee"
 		location = 13041
-		division_template = "Kolonien-Division"
+		division_template = "Kolonialdivision"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.4
 
@@ -1740,7 +1740,7 @@ units = {
 	division= {
 		name = "9. Pazifik Armee"
 		location = 13043
-		division_template = "Kolonien-Division"
+		division_template = "Kolonialdivision"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.4
 
@@ -1749,7 +1749,7 @@ units = {
 	division= {
 		name = "10. Pazifik Armee"
 		location = 13040
-		division_template = "Kolonien-Division"
+		division_template = "Kolonialdivision"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.4
 
@@ -1758,7 +1758,7 @@ units = {
 	division= {
 		name = "11. Pazifik Armee"
 		location = 3995
-		division_template = "Kolonien-Division"
+		division_template = "Kolonialdivision"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.4
 
@@ -1767,70 +1767,208 @@ units = {
 
 	##### NAVAL UNITS #####
 	navy = {
-		name = "Kriegsmarine"
+		name = "Hochseeflotte"
 		base = 241
 		location = 241  # Wilhemshaven
-		ship = { name = "Deutschland" definition = heavy_cruiser  equipment = { heavy_cruiser_1 = { amount = 1 owner = GER version_name = "Deutschland Class" } } }	
-		ship = { name = "Admiral Scheer" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = GER version_name = "Deutschland Class" } } }
-		ship = { name = "Nürnberg" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = GER } } } 		
-		ship = { name = "Leipzig" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER version_name = "Königsberg Class" } } }		
-		ship = { name = "Königsberg" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER version_name = "Königsberg Class" } } }			
-		ship = { name = "Karlsruhe" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER version_name = "Königsberg Class" } } }	
-		ship = { name = "Köln" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER version_name = "Königsberg Class" } } }			
-		ship = { name = "Emden" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER } } }
-		# 1. Torpedobootflottille
-		ship = { name = "Jaguar" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
-		ship = { name = "Leopard" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
-		ship = { name = "Luchs" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
-		ship = { name = "Tiger" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
-	}
-
-	navy = {
-		name = "Ostseeflotte"
-		base = 6332
-		location = 6332  # Konigsberg
-		ship = { name = "Schleswig-Holstein" definition = battleship equipment = { battleship_1 = { amount = 1 owner = GER } } }
-		ship = { name = "Schlesien" definition = battleship equipment = { battleship_1 = { amount = 1 owner = GER } } }		
-		# 2. Torpedobootflottille
-		ship = { name = "Möwe" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
-		ship = { name = "Albatros" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
-		ship = { name = "Seeadler" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
-		ship = { name = "Greif" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
-		# 3. Torpedobootflottille
-		ship = { name = "Falke" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
-		ship = { name = "Kondor" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
-		ship = { name = "Wolf" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
-		ship = { name = "Iltis" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+		ship = { name = "SMS Mars" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+		ship = { name = "SMS Blitz" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER version_name = "Blitz" } } }
+		ship = { name = "SMS Pfeil" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER version_name = "Blitz" } } }
+		ship = { name = "SMS Grille" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+		ship = { name = "SMS Zieten" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+		ship = { name = "SMS Greif" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+		ship = { name = "SMS Hela" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = GER } } }
+		ship = { name = "SMS Meteor" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = GER version_name = "Meteor" } } }
+		ship = { name = "SMS Comet" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = GER version_name = "Meteor" } } }
+		ship = { name = "SMS Jagd" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+		ship = { name = "SMS Libau" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = GER } } }
+		ship = { name = "SMS Vulkan" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = GER } } }
+		ship = { name = "SMS Comet" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = GER version_name = "Meteor" } } }
+		ship = { name = "SMH Glyndwr" definition = carrier equipment = { carrier_1 = { amount = 1 owner = GER } }
+			air_wings = {
+				cv_fighter_equipment_1 =  { owner = "GER" amount = 4 }
+			}
+		}
+		ship = { name = "SMH Oswlad" definition = carrier equipment = { carrier_1 = { amount = 1 owner = GER } }
+			air_wings = {
+				cv_fighter_equipment_1 =  { owner = "GER" amount = 4 }
+			}
+		}
+		ship = { name = "SMH Santa Elena" definition = carrier equipment = { carrier_1 = { amount = 1 owner = GER } }
+			air_wings = {
+				cv_fighter_equipment_1 =  { owner = "GER" amount = 6 }
+			}
+		}
+		ship = { name = "SMH Adeline Hugo Stinnes 3" definition = carrier equipment = { carrier_1 = { amount = 1 owner = GER } }
+			air_wings = {
+				cv_fighter_equipment_1 =  { owner = "GER" amount = 3 }
+			}
+		}
+		ship = { name = "SMH Answald" definition = carrier equipment = { carrier_1 = { amount = 1 owner = GER } }
+			air_wings = {
+				cv_fighter_equipment_1 =  { owner = "GER" amount = 6 }
+			}
+		}
+		ship = { name = "SMS Otter" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = GER } } }
+		ship = { name = "SMS Kaiserin Augusta" definition = heavy_cruiser equipment = { heavy_cruiser_2 = { amount = 1 owner = GER } } }
+		ship = { name = "SMS Fürst Bismarck" definition = heavy_cruiser equipment = { heavy_cruiser_2 = { amount = 1 owner = GER } } }
+		ship = { name = "SMS Prinz Heinrich" definition = heavy_cruiser equipment = { heavy_cruiser_2 = { amount = 1 owner = GER } } }
+		ship = { name = "SMS Blücher" definition = heavy_cruiser equipment = { heavy_cruiser_2 = { amount = 1 owner = GER } } }
+		ship = { name = "SMS Von der Tann" definition = heavy_cruiser equipment = { heavy_cruiser_2 = { amount = 1 owner = GER } } }
+		ship = { name = "SMS Moltke" definition = heavy_cruiser equipment = { heavy_cruiser_2 = { amount = 1 owner = GER } } }
+		ship = { name = "SMS Prinz Adalbert" definition = heavy_cruiser equipment = { heavy_cruiser_2 = { amount = 1 owner = GER } } }
+		ship = { name = "SMS Friedrich Carl" definition = heavy_cruiser equipment = { heavy_cruiser_2 = { amount = 1 owner = GER } } }
+		ship = { name = "SMS Roon" definition = heavy_cruiser equipment = { heavy_cruiser_2 = { amount = 1 owner = GER version_name = "Roon" } } }
+		ship = { name = "SMS Yorck" definition = heavy_cruiser equipment = { heavy_cruiser_2 = { amount = 1 owner = GER version_name = "Roon" } } }
+		ship = { name = "SMS Gneisenau" definition = heavy_cruiser equipment = { heavy_cruiser_2 = { amount = 1 owner = GER version_name = "Scharnhorst" } } }
+		ship = { name = "SMS Scharnhorst" definition = heavy_cruiser equipment = { heavy_cruiser_2 = { amount = 1 owner = GER version_name = "Scharnhorst" } } }
+		ship = { name = "SMS Freya" definition = heavy_cruiser equipment = { heavy_cruiser_2 = { amount = 1 owner = GER version_name = "Victoria Louise" } } }
+		ship = { name = "SMS Hertha" definition = heavy_cruiser equipment = { heavy_cruiser_2 = { amount = 1 owner = GER version_name = "Victoria Louise" } } }
+		ship = { name = "SMS Victoria Louise" definition = heavy_cruiser equipment = { heavy_cruiser_2 = { amount = 1 owner = GER version_name = "Victoria Louise" } } }
+		ship = { name = "SMS Vineta" definition = heavy_cruiser equipment = { heavy_cruiser_2 = { amount = 1 owner = GER version_name = "Victoria Louise" } } }
+		ship = { name = "SMS Hansa" definition = heavy_cruiser equipment = { heavy_cruiser_2 = { amount = 1 owner = GER version_name = "Victoria Louise" } } }
+		ship = { name = "SMS Helgoland" definition = battleship equipment = { SH_battleship_1 = { amount = 1 owner = GER version_name = "Helgoland" } } }
+		ship = { name = "SMS Ostfriesland" definition = battleship equipment = { SH_battleship_1 = { amount = 1 owner = GER version_name = "Helgoland" } } }
+		ship = { name = "SMS Thüringen" definition = battleship equipment = { SH_battleship_1 = { amount = 1 owner = GER version_name = "Helgoland" } } }
+		ship = { name = "SMS Oldenburg" definition = battleship equipment = { SH_battleship_1 = { amount = 1 owner = GER version_name = "Helgoland" } } }
+		ship = { name = "SMS Nassau" definition = battleship equipment = { SH_battleship_1 = { amount = 1 owner = GER version_name = "Nassau" } } }
+		ship = { name = "SMS Posen" definition = battleship equipment = { SH_battleship_1 = { amount = 1 owner = GER version_name = "Nassau" } } }
+		ship = { name = "SMS Rheinland" definition = battleship equipment = { SH_battleship_1 = { amount = 1 owner = GER version_name = "Nassau" } } }
+		ship = { name = "SMS Westfalen" definition = battleship equipment = { SH_battleship_1 = { amount = 1 owner = GER version_name = "Nassau" } } }
+		ship = { name = "SMS Seeadler" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER } } }
+		ship = { name = "SMS Kaiser Wilhelm der Große" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = GER } } }
+		ship = { name = "SMS Victoria Luise" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = GER } } }
+		ship = { name = "SMS Kronprinz Wilhelm" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = GER } } }
+		ship = { name = "SMS Meteor" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = GER } } }
+		ship = { name = "SMS Prinz Eitel Friedrich" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = GER } } }
+		ship = { name = "SMS Iltis" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = GER } } }
+		ship = { name = "SMS Wolf" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = GER } } }
+		ship = { name = "SMS Ayesha" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = GER } } }
+		ship = { name = "SMS Berlin" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = GER } } }
+		ship = { name = "SMS Cormoran" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = GER } } }
+		ship = { name = "SMS Deutschland" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = GER } } }
+		ship = { name = "SMS Preußen" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = GER } } }
+		ship = { name = "SMS Hohenzollern" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+		ship = { name = "SMS Hohenzollern" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = GER } } }
+		ship = { name = "SMS Hyäne" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+		ship = { name = "SMS Wolf" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+		ship = { name = "SMS Berlin" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = GER version_name = "Bremen" } } }
+		ship = { name = "SMS Bremen" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = GER version_name = "Bremen" } } }
+		ship = { name = "SMS Hamburg" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = GER version_name = "Bremen" } } }
+		ship = { name = "SMS Lübeck" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = GER version_name = "Bremen" } } }
+		ship = { name = "SMS München" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = GER version_name = "Bremen" } } }
+		ship = { name = "SMS Danzig" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = GER version_name = "Bremen" } } }
+		ship = { name = "SMS Leipzig" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = GER version_name = "Bremen" } } }
+		ship = { name = "SMS Bussard" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = GER version_name = "Bussard" } } }
+		ship = { name = "SMS Falke" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = GER version_name = "Bussard" } } }
+		ship = { name = "SMS Condor" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = GER version_name = "Bussard" } } }
+		ship = { name = "SMS Vormoran" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = GER version_name = "Bussard" } } }
+		ship = { name = "SMS Seeadler" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = GER version_name = "Bussard" } } }
+		ship = { name = "SMS Geier" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = GER version_name = "Bussard" } } }
+		ship = { name = "SMS Dresden" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = GER version_name = "Dresden" } } }
+		ship = { name = "SMS Emden" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = GER version_name = "Dresden" } } }
+		ship = { name = "SMS Gefion" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = GER } } }
+		ship = { name = "SMS Gazelle" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = GER version_name = "Gazelle" } } }
+		ship = { name = "SMS Niobe" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = GER version_name = "Gazelle" } } }
+		ship = { name = "SMS Nymphe" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = GER version_name = "Gazelle" } } }
+		ship = { name = "SMS Amazone" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = GER version_name = "Gazelle" } } }
+		ship = { name = "SMS Ariadne" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = GER version_name = "Gazelle" } } }
+		ship = { name = "SMS Medusa" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = GER version_name = "Gazelle" } } }
+		ship = { name = "SMS Thetis" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = GER version_name = "Gazelle" } } }
+		ship = { name = "SMS Arcona" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = GER version_name = "Gazelle" } } }
+		ship = { name = "SMS Frauenlob" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = GER version_name = "Gazelle" } } }
+		ship = { name = "SMS Undine" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = GER version_name = "Gazelle" } } }
+		ship = { name = "SMS Kolberg" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = GER version_name = "Kolberg" } } }
+		ship = { name = "SMS Augsburg" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = GER version_name = "Kolberg" } } }
+		ship = { name = "SMS Cöln" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = GER version_name = "Kolberg" } } }
+		ship = { name = "SMS Mainz" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = GER version_name = "Kolberg" } } }
+		ship = { name = "SMSKönigsberg " definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = GER version_name = "Königsberg" } } }
+		ship = { name = "SMS Nürnberg" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = GER version_name = "Königsberg" } } }
+		ship = { name = "SMS Stuttgart" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = GER version_name = "Königsberg" } } }
+		ship = { name = "SMS Stettin" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = GER version_name = "Königsberg" } } }
+		ship = { name = "SMS Schwalbe" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER version_name = "Schwalbe" } } }
+		ship = { name = "SMS Sperber" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER version_name = "Schwalbe" } } }
+		ship = { name = "SMS Moltke" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER } } }
+		ship = { name = "SMS Stein" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER } } }
+		ship = { name = "SMS Charlotte" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER } } }
+		ship = { name = "SMS Nixe" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER } } }
+		ship = { name = "SMS Irene" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER } } }
+		ship = { name = "SMS Prinzeß Wilhelm" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER } } }
+		ship = { name = "SMS Siegfried" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER version_name = "Siegfried" } } }
+		ship = { name = "SMS Beowulf" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER version_name = "Siegfried" } } }
+		ship = { name = "SMS Frithjof" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER version_name = "Siegfried" } } }
+		ship = { name = "SMS Heimdall" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER version_name = "Siegfried" } } }
+		ship = { name = "SMS Hildebrand" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER version_name = "Siegfried" } } }
+		ship = { name = "SMS Hagen" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER version_name = "Siegfried" } } }
+		ship = { name = "SMS Odin" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER version_name = "Siegfried" } } }
+		ship = { name = "SMS Ägir" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER version_name = "Siegfried" } } }
+		ship = { name = "SMS Brandenburg" definition = battleship equipment = { battleship_1 = { amount = 1 owner = GER version_name = "Brandenburg" } } }
+		ship = { name = "SMS Kurfürst Friedrich Wilhelm" definition = battleship equipment = { battleship_1 = { amount = 1 owner = GER version_name = "Brandenburg" } } }
+		ship = { name = "SMS Wörth" definition = battleship equipment = { battleship_1 = { amount = 1 owner = GER version_name = "Brandenburg" } } }
+		ship = { name = "SMS Braunschweig" definition = battleship equipment = { battleship_2 = { amount = 1 owner = GER version_name = "Braunschweig" } } }
+		ship = { name = "SMS Elsass" definition = battleship equipment = { battleship_2 = { amount = 1 owner = GER version_name = "Braunschweig" } } }
+		ship = { name = "SMS Hessen" definition = battleship equipment = { battleship_2 = { amount = 1 owner = GER version_name = "Braunschweig" } } }
+		ship = { name = "SMS Preußen" definition = battleship equipment = { battleship_2 = { amount = 1 owner = GER version_name = "Braunschweig" } } }
+		ship = { name = "SMS Lothringen" definition = battleship equipment = { battleship_2 = { amount = 1 owner = GER version_name = "Braunschweig" } } }
+		ship = { name = "SMS Deutschland" definition = battleship equipment = { battleship_2 = { amount = 1 owner = GER version_name = "Deutschland" } } }
+		ship = { name = "SMS Hannover" definition = battleship equipment = { battleship_2 = { amount = 1 owner = GER version_name = "Deutschland" } } }
+		ship = { name = "SMS Pommern" definition = battleship equipment = { battleship_2 = { amount = 1 owner = GER version_name = "Deutschland" } } }
+		ship = { name = "SMS Schlesien" definition = battleship equipment = { battleship_2 = { amount = 1 owner = GER version_name = "Deutschland" } } }
+		ship = { name = "SMS Schleswig-Holstein" definition = battleship equipment = { battleship_2 = { amount = 1 owner = GER version_name = "Deutschland" } } }
+		ship = { name = "SMS Kaiser Friedrich III." definition = battleship equipment = { battleship_2 = { amount = 1 owner = GER version_name = "Kaiser Friedrich" } } }
+		ship = { name = "SMS Kaiser Wilhelm II." definition = battleship equipment = { battleship_2 = { amount = 1 owner = GER version_name = "Kaiser Friedrich" } } }
+		ship = { name = "SMS Kaiser Karl der Große" definition = battleship equipment = { battleship_2 = { amount = 1 owner = GER version_name = "Kaiser Friedrich" } } }
+		ship = { name = "SMS Kaiser Wilhelm der Große" definition = battleship equipment = { battleship_2 = { amount = 1 owner = GER version_name = "Kaiser Friedrich" } } }
+		ship = { name = "SMS Kaiser Barbarossa" definition = battleship equipment = { battleship_2 = { amount = 1 owner = GER version_name = "Kaiser Friedrich" } } }
+		ship = { name = "SMS Wittelsbach" definition = battleship equipment = { battleship_2 = { amount = 1 owner = GER version_name = "Wittelsbach" } } }
+		ship = { name = "SMS Mecklenburg" definition = battleship equipment = { battleship_2 = { amount = 1 owner = GER version_name = "Wittelsbach" } } }
+		ship = { name = "SMS Schwaben" definition = battleship equipment = { battleship_2 = { amount = 1 owner = GER version_name = "Wittelsbach" } } }
+		ship = { name = "SMS Wettin" definition = battleship equipment = { battleship_2 = { amount = 1 owner = GER version_name = "Wittelsbach" } } }
+		ship = { name = "SMS Zähringen" definition = battleship equipment = { battleship_2 = { amount = 1 owner = GER version_name = "Wittelsbach" } } }
+		ship = { name = "SMS Rhein" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER } } }
+		ship = { name = "SMS Nautilus" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = GER } } }
+		ship = { name = "SMS Albatross" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = GER } } }
+		ship = { name = "SMS Pelikan" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER } } }
+		ship = { name = "SMS Biene" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER version_name = "Wespe" } } }
+		ship = { name = "SMS Mücke" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER version_name = "Wespe" } } }
+		ship = { name = "SMS Scorpion" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER version_name = "Wespe" } } }
+		ship = { name = "SMS Basilisk" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER version_name = "Wespe" } } }
+		ship = { name = "SMS Crocodill" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER version_name = "Wespe" } } }
+		ship = { name = "SMS Natter" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER version_name = "Wespe" } } }
+		ship = { name = "SMS Hummel" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER version_name = "Wespe" } } }
+		ship = { name = "SMS Weißenburg" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER } } }
+		ship = { name = "SMS König Wilhelm" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER } } }
+		ship = { name = "SMS Oldenburg" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER } } }
+		ship = { name = "SMS Sachsen" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER version_name = "Sachsen" } } }
+		ship = { name = "SMS Bayern" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER version_name = "Sachsen" } } }
+		ship = { name = "SMS Württemberg" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER version_name = "Sachsen" } } }
+		ship = { name = "SMS Baden" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = GER version_name = "Sachsen" } } }
+		ship = { name = "SMS Loreley" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+		ship = { name = "SMS Alice Roosevelt" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+		ship = { name = "SMS Carmen" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+		ship = { name = "SMS Sleipner" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+		ship = { name = "SMS Schneewittchen" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
+		ship = { name = "SMS H" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = GER } } }
+		ship = { name = "SMS K" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = GER } } }
+		ship = { name = "SM U 1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GER } } }
+		ship = { name = "SM U 2" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GER } } }
+		ship = { name = "SM U 3" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GER } } }
+		ship = { name = "SM U 4" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GER } } }
+		ship = { name = "SM U 9" definition = submarine equipment = { submarine_1 = { amount = 1 owner = GER } } }
 	}
 	
 	navy = {
-		name = "Unterseebootsflotte Weddigen"
-		base = 6389
-		location = 6389  # Kiel
-		# 1. Unterseebootsflottille
-		ship = { name = "U-7" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }
-		ship = { name = "U-8" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }
-		ship = { name = "U-9" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }
-		ship = { name = "U-10" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }
-		# 4. Unterseebootsflottille
-		ship = { name = "U-11" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }
-		ship = { name = "U-12" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }
-		ship = { name = "U-13" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }
-		ship = { name = "U-17" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }
-	}
-
-	navy = {
-		name = "Unterseeboots-Schule"
-		base = 241
-		location = 241  # Wilhemshaven
-		# 2. Unterseebootsflottille
-		ship = { name = "U-1" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }
-		ship = { name = "U-2" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }
-		ship = { name = "U-3" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }
-		# 3. Unterseebootsflottille
-		ship = { name = "U-4" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }
-		ship = { name = "U-5" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }
-		ship = { name = "U-6" definition = submarine equipment = { submarine_2 = { amount = 1 owner = GER } } }
+		name = "III. Seebatallion"
+		base = 10000
+		location = 10000  # Tsingtau
+		ship = { name = "SMS Tsingtau" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = GER version_name = "Tsingtau" } } }
+		ship = { name = "SMS Vaterland" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = GER version_name = "Tsingtau" } } }
+		ship = { name = "SMS Iltis" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER version_name = "Iltis" } } }
+		ship = { name = "SMS Jaguar" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER version_name = "Iltis" } } }
+		ship = { name = "SMS Luchs" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER version_name = "Iltis" } } }
+		ship = { name = "SMS Tiger" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER version_name = "Iltis" } } }
+		ship = { name = "SMS Panther" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER version_name = "Iltis" } } }
+		ship = { name = "SMS Eber" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER version_name = "Iltis" } } }
+		ship = { name = "SMS Taku" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GER } } }
 	}
 }
 

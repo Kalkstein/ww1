@@ -1316,8 +1316,6 @@ focus_tree = {
 				bonus = 0.5
 				uses = 1
 				technology = convoy_sailing
-				technology = convoy_sailing_ti
-				technology = convoy_sailing_bs
 			}
 		}
 	}
@@ -1347,10 +1345,8 @@ focus_tree = {
 			add_tech_bonus = {
 				name = ITA_escort_effort
 				bonus = 0.5
-				uses = 2
+				uses = 1
 				technology = convoy_escorts
-				technology = convoy_escorts_bs
-				technology = escort_carriers
 			}
 		}
 	}
@@ -1385,7 +1381,6 @@ focus_tree = {
 				technology = submarine_operations
 				technology = undersea_blockade
 				technology = convoy_interdiction
-				technology = submarine_offensive
 			}
 		}
 	}

@@ -28,7 +28,6 @@ set_technology = {
 	early_carrier = 1
 	basic_carrier = 1
 	transport = 1
-	base_strike = 1
 
 }
 

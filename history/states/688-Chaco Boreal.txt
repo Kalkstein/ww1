@@ -10,7 +10,7 @@ state={
 	}
 
 	history={
-		owner = PAR
+		owner = BOL
 		buildings = {
 			infrastructure = 2
 		}

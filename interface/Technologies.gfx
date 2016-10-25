@@ -58,6 +58,31 @@ spriteTypes = {
 	}
 	
 	SpriteType = {
+		name = "GFX_industrial_organisation_medium"
+		texturefile = "gfx/interface/technologies/concentrated_industry.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_industrial_organisation_2_medium"
+		texturefile = "gfx/interface/technologies/concentrated_industry3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_industrial_organisation_3_medium"
+		texturefile = "gfx/interface/technologies/concentrated_industry5.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_industrial_fortitude_medium"
+		texturefile = "gfx/interface/technologies/dispersed_industry4.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_industrial_fortitude_2_medium"
+		texturefile = "gfx/interface/technologies/dispersed_industry5.dds"
+	}
+	
+	SpriteType = {
 		name = "GFX_frontline_fortification_medium"
 		texturefile = "gfx/interface/technologies/frontline_fortification.dds"
 	}
@@ -106,6 +131,23 @@ spriteTypes = {
 		name = "GFX_hinterland_fortification_5_medium"
 		texturefile = "gfx/interface/technologies/hinterland_fortification_5.dds"
 	}
+	
+	SpriteType = {
+		name = "GFX_rubber_medium"
+		texturefile = "gfx/interface/technologies/rubber.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_rubber_2_medium"
+		texturefile = "gfx/interface/technologies/rubber_2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_rubber_3_medium"
+		texturefile = "gfx/interface/technologies/rubber_3.dds"
+	}
+	
+	
 	
 	
 	

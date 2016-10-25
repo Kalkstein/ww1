@@ -13,6 +13,7 @@ set_technology = {
 	gw_artillery = 1
 	early_fighter = 1
 	fighter1 = 1
+	cv_fighter1 = 1
 	early_bomber = 1
 	tactical_bomber1 = 1
 	ballon1 = 1
@@ -24,8 +25,12 @@ set_technology = {
 	early_light_cruiser = 1
 	basic_light_cruiser = 1
 	early_heavy_cruiser = 1
+	basic_heavy_cruiser = 1
 	early_battleship = 1
+	basic_battleship = 1
 	early_battlecruiser = 1
+	heavy_battleship = 1
+	early_carrier = 1
 	synth_oil_experiments = 1
 	transport = 1
 	mobile_warfare = 1
@@ -389,70 +394,271 @@ create_navy_leader = {
 
 
 ### Ship Variants ###
-## 1936 Start ##
-# Light Cruisers #
+## 1910 Start ##
+### SH Variants
 create_equipment_variant = {
-	name = "Königsberg Class"
-	type = light_cruiser_1
+	name = "Helgoland"
+	type = SH_battleship_1
 	parent_version = 0
 	upgrades = {
 		ship_reliability_upgrade = 2
+		ship_engine_upgrade = 1
+		ship_armor_upgrade = 3
+		ship_gun_upgrade = 3
+	}
+}
+create_equipment_variant = {
+	name = "Nassau"
+	type = SH_battleship_1
+	parent_version = 1
+	upgrades = {
+		ship_reliability_upgrade = 3
 		ship_engine_upgrade = 2
+		ship_armor_upgrade = 4
 		ship_gun_upgrade = 2
-		ship_anti_air_upgrade = 2
+	}
+}
+#### BB Variants
+create_equipment_variant = {
+	name = "Brandenburg"
+	type = battleship_1
+	parent_version = 0
+	upgrades = {
+		ship_reliability_upgrade = 2
+		ship_engine_upgrade = 1
+		ship_armor_upgrade = 3
+		ship_gun_upgrade = 3
 	}
 	obsolete = yes
 }
-# Heavy Cruisers #
 create_equipment_variant = {
-	name = "Deutschland Class"
-	type = heavy_cruiser_1
+	name = "Braunschweig"
+	type = battleship_2
+	parent_version = 0
+	upgrades = {
+		ship_reliability_upgrade = 2
+		ship_engine_upgrade = 1
+		ship_armor_upgrade = 3
+		ship_gun_upgrade = 3
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Deutschland"
+	type = battleship_2
+	parent_version = 1
+	upgrades = {
+		ship_reliability_upgrade = 4
+		ship_engine_upgrade = 2
+		ship_armor_upgrade = 4
+		ship_gun_upgrade = 4
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Wittelsbach"
+	type = battleship_2
+	parent_version = 2
+	upgrades = {
+		ship_reliability_upgrade = 3
+		ship_engine_upgrade = 2
+		ship_armor_upgrade = 5
+		ship_gun_upgrade = 4
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Kaiser Friedrich"
+	type = battleship_2
+	parent_version = 3
+	upgrades = {
+		ship_reliability_upgrade = 5
+		ship_engine_upgrade = 3
+		ship_armor_upgrade = 5
+		ship_gun_upgrade = 5
+	}
+}
+#### CA Variants
+create_equipment_variant = {
+	name = "Scharnhorst"
+	type = heavy_cruiser_2
 	parent_version = 0
 	upgrades = {
 		ship_reliability_upgrade = 1
 		ship_engine_upgrade = 1
-		ship_armor_upgrade = 1
+		ship_armor_upgrade = 3
+		ship_gun_upgrade = 3
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Roon"
+	type = heavy_cruiser_2
+	parent_version = 1
+	upgrades = {
+		ship_reliability_upgrade = 4
+		ship_engine_upgrade = 2
+		ship_armor_upgrade = 2
 		ship_gun_upgrade = 2
 	}
 }
-
-## 1939 Start ##
-1939.1.1 = {
-	# Submarines #
-	create_equipment_variant = {
-		name = "Type VIIA"
-		type = submarine_2
-		parent_version = 0
-		upgrades = {
-			ship_reliability_upgrade = 1
-			sub_engine_upgrade = 1
-			sub_stealth_upgrade = 1
-			sub_torpedo_upgrade = 1
-		}
+create_equipment_variant = {
+	name = "Victoria Louise"
+	type = heavy_cruiser_2
+	parent_version = 2
+	upgrades = {
+		ship_reliability_upgrade = 3
+		ship_engine_upgrade = 2
+		ship_armor_upgrade = 4
+		ship_gun_upgrade = 4
 	}
-	# Destroyer #
-	create_equipment_variant = {
-		name = "Zerstörer 1936"
-		type = destroyer_2
-		parent_version = 0
-		upgrades = {
-			ship_torpedo_upgrade = 2
-			destroyer_engine_upgrade = 2
-			ship_ASW_upgrade = 2
-			ship_anti_air_upgrade = 2
-		}
+}
+#### CL Variants
+create_equipment_variant = {
+	name = "Siegfried"
+	type = light_cruiser_1
+	parent_version = 0
+	upgrades = {
+		ship_reliability_upgrade = 2
+		ship_engine_upgrade = 1
+		ship_gun_upgrade = 1
+		ship_anti_air_upgrade = 1
 	}
-	# Heavy Cruisers #
-	#create_equipment_variant = {
-	#	name = "Deutschland Class"
-	#	type = heavy_cruiser_1
-	#	parent_version = 0
-	#	upgrades = {
-	#		ship_reliability_upgrade = 1
-	#		ship_engine_upgrade = 1
-	#		ship_armor_upgrade = 1
-	#		ship_gun_upgrade = 2
-	#	}
-	#	obsolete = yes
-	#}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Sachsen"
+	type = light_cruiser_1
+	parent_version = 1
+	upgrades = {
+		ship_reliability_upgrade = 3
+		ship_engine_upgrade = 1
+		ship_gun_upgrade = 2
+		ship_anti_air_upgrade = 1
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Wespe"
+	type = light_cruiser_1
+	parent_version = 2
+	upgrades = {
+		ship_reliability_upgrade = 2
+		ship_engine_upgrade = 4
+		ship_gun_upgrade = 1
+		ship_anti_air_upgrade = 1
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Bremen"
+	type = light_cruiser_2
+	parent_version = 0
+	upgrades = {
+		ship_reliability_upgrade = 1
+		ship_engine_upgrade = 2
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Bussard"
+	type = light_cruiser_2
+	parent_version = 1
+	upgrades = {
+		ship_reliability_upgrade = 3
+	}
+}
+create_equipment_variant = {
+	name = "Gazelle"
+	type = light_cruiser_2
+	parent_version = 2
+	upgrades = {
+		ship_reliability_upgrade = 2
+		ship_engine_upgrade = 2
+		ship_gun_upgrade = 2
+		ship_anti_air_upgrade = 1
+	}
+}
+create_equipment_variant = {
+	name = "Dresden"
+	type = light_cruiser_2
+	parent_version = 3
+	upgrades = {
+		ship_reliability_upgrade = 2
+		ship_engine_upgrade = 4
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Kolberg"
+	type = light_cruiser_2
+	parent_version = 4
+	upgrades = {
+		ship_reliability_upgrade = 3
+		ship_gun_upgrade = 1
+		ship_engine_upgrade = 4
+	}
+}
+create_equipment_variant = {
+	name = "Königsberg"
+	type = light_cruiser_2
+	parent_version = 5
+	upgrades = {
+		ship_reliability_upgrade = 5
+		ship_gun_upgrade = 1
+		ship_anti_air_upgrade = 1
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Schwalbe"
+	type = light_cruiser_2
+	parent_version = 6
+	upgrades = {
+		ship_reliability_upgrade = 6
+		ship_gun_upgrade = 1
+		ship_anti_air_upgrade = 2
+	}
+}
+#### DD Variants
+create_equipment_variant = {
+	name = "Blitz"
+	type = destroyer_1
+	parent_version = 0
+	upgrades = {
+		destroyer_engine_upgrade = 1
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Iltis"
+	type = destroyer_1
+	parent_version = 1
+	upgrades = {
+		ship_torpedo_upgrade = 1
+		destroyer_engine_upgrade = 2
+		ship_ASW_upgrade = 1
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Meteor"
+	type = destroyer_2
+	parent_version = 0
+	upgrades = {
+		destroyer_engine_upgrade = 2
+		ship_ASW_upgrade = 1
+	}
+}
+create_equipment_variant = {
+	name = "Tsingtau"
+	type = destroyer_2
+	parent_version = 1
+	upgrades = {
+		ship_torpedo_upgrade = 2
+		destroyer_engine_upgrade = 3
+		ship_ASW_upgrade = 2
+		ship_anti_air_upgrade = 1
+	}
+	obsolete = yes
 }
