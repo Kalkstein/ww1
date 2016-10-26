@@ -1,0 +1,775 @@
+focus_tree = {
+	id = BRA_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = BRA
+		}
+	}
+	
+	default = no
+	
+	
+	focus = {
+		id = BRA_born_of_industry
+		icon = GFX_goal_generic_production
+		x = 3
+		y = 0
+		cost = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+			add_tech_bonus = {
+				name = construction_tech_bonus
+				bonus = 0.5
+				uses = 1
+				category = construction_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = BRA_brazilian_precursors
+		icon = GFX_goal_generic_production
+		x = 1
+		y = 1
+		cost = 10
+		prerequisite = { focus = BRA_born_of_industry }
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+			add_tech_bonus = {
+				name = construction_tech_bonus
+				bonus = 0.5
+				uses = 1
+				category = construction_tech
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_matarazzo_industries
+		icon = GFX_goal_generic_production
+		x = 0
+		y = 2
+		cost = 10
+		prerequisite = { focus = BRA_brazilian_precursors }
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+			add_tech_bonus = {
+				name = construction_tech_bonus
+				bonus = 0.5
+				uses = 1
+				category = construction_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = BRA_matrinelle_industries
+		icon = GFX_goal_generic_production
+		x = 0
+		y = 3
+		cost = 10
+		prerequisite = { focus = BRA_matarazzo_industries }
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+			add_tech_bonus = {
+				name = construction_tech_bonus
+				bonus = 0.5
+				uses = 1
+				category = construction_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = BRA_military_industry
+		icon = GFX_goal_generic_production
+		x = 2
+		y = 2
+		cost = 10
+		prerequisite = { focus = BRA_brazilian_precursors }
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+			add_tech_bonus = {
+				name = construction_tech_bonus
+				bonus = 0.5
+				uses = 1
+				category = construction_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = BRA_military_complex
+		icon = GFX_goal_generic_production
+		x = 2
+		y = 3
+		cost = 10
+		prerequisite = { focus = BRA_military_industry }
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+			add_tech_bonus = {
+				name = construction_tech_bonus
+				bonus = 0.5
+				uses = 1
+				category = construction_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = BRA_nationalsation_of_industry
+		icon = GFX_goal_generic_production
+		x = 1
+		y = 4
+		cost = 10
+		prerequisite = { focus = BRA_military_complex }
+		prerequisite = { focus = BRA_matrinelle_industries }
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+			add_tech_bonus = {
+				name = construction_tech_bonus
+				bonus = 0.5
+				uses = 1
+				category = construction_tech
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_light_ltda
+		icon = GFX_goal_generic_production
+		x = 6
+		y = 1
+		cost = 10
+		prerequisite = { focus = BRA_born_of_industry }
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+			add_tech_bonus = {
+				name = construction_tech_bonus
+				bonus = 0.5
+				uses = 1
+				category = construction_tech
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_port_of_santos
+		icon = GFX_goal_generic_production
+		x = 4
+		y = 2
+		cost = 10
+		prerequisite = { focus = BRA_light_ltda }
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+			add_tech_bonus = {
+				name = construction_tech_bonus
+				bonus = 0.5
+				uses = 1
+				category = construction_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = BRA_reforming_port_of_bahia
+		icon = GFX_goal_generic_production
+		x = 4
+		y = 3
+		cost = 10
+		prerequisite = { focus = BRA_port_of_santos }
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+			add_tech_bonus = {
+				name = construction_tech_bonus
+				bonus = 0.5
+				uses = 1
+				category = construction_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = BRA_reforming_port_of_rio
+		icon = GFX_goal_generic_production
+		x = 6
+		y = 2
+		cost = 10
+		prerequisite = { focus = BRA_light_ltda }
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+			add_tech_bonus = {
+				name = construction_tech_bonus
+				bonus = 0.5
+				uses = 1
+				category = construction_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = BRA_enlarge_port_of_rio
+		icon = GFX_goal_generic_production
+		x = 6
+		y = 3
+		cost = 10
+		prerequisite = { focus = BRA_reforming_port_of_rio }
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+			add_tech_bonus = {
+				name = construction_tech_bonus
+				bonus = 0.5
+				uses = 1
+				category = construction_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = BRA_madeira_mamore_railway
+		icon = GFX_goal_generic_production
+		x = 8
+		y = 2
+		cost = 10
+		prerequisite = { focus = BRA_light_ltda }
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+			add_tech_bonus = {
+				name = construction_tech_bonus
+				bonus = 0.5
+				uses = 1
+				category = construction_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = BRA_legacy_percival_farquhar
+		icon = GFX_goal_generic_production
+		x = 8
+		y = 3
+		cost = 10
+		prerequisite = { focus = BRA_madeira_mamore_railway }
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+			add_tech_bonus = {
+				name = construction_tech_bonus
+				bonus = 0.5
+				uses = 1
+				category = construction_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = BRA_port_railway_plan
+		icon = GFX_goal_generic_production
+		x = 6
+		y = 4
+		cost = 10
+		prerequisite = { focus = BRA_enlarge_port_of_rio
+						 focus = BRA_reforming_port_of_bahia
+						 focus = BRA_legacy_percival_farquhar }
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+			add_tech_bonus = {
+				name = construction_tech_bonus
+				bonus = 0.5
+				uses = 1
+				category = construction_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = BRA_rapid_catch_up
+		icon = GFX_goal_generic_production
+		x = 3
+		y = 5
+		cost = 10
+		prerequisite = { focus = BRA_nationalsation_of_industry }
+		prerequisite = { focus = BRA_port_railway_plan }
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+			add_tech_bonus = {
+				name = construction_tech_bonus
+				bonus = 0.5
+				uses = 1
+				category = construction_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = BRA_oil_in_salvador
+		icon = GFX_goal_generic_production
+		x = 0
+		y = 6
+		cost = 10
+		prerequisite = { focus = BRA_rapid_catch_up }
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+			add_tech_bonus = {
+				name = construction_tech_bonus
+				bonus = 0.5
+				uses = 1
+				category = construction_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = BRA_oil_in_rio
+		icon = GFX_goal_generic_production
+		x = 0
+		y = 7
+		cost = 10
+		prerequisite = { focus = BRA_oil_in_salvador }
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+			add_tech_bonus = {
+				name = construction_tech_bonus
+				bonus = 0.5
+				uses = 1
+				category = construction_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = BRA_foundation_of_petrobras
+		icon = GFX_goal_generic_production
+		x = 0
+		y = 8
+		cost = 10
+		prerequisite = { focus = BRA_oil_in_rio }
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+			add_tech_bonus = {
+				name = construction_tech_bonus
+				bonus = 0.5
+				uses = 1
+				category = construction_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = BRA_pre_salt_layer
+		icon = GFX_goal_generic_production
+		x = 0
+		y = 9
+		cost = 10
+		prerequisite = { focus = BRA_foundation_of_petrobras }
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+			add_tech_bonus = {
+				name = construction_tech_bonus
+				bonus = 0.5
+				uses = 1
+				category = construction_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = BRA_exploration_of_seringueiras
+		icon = GFX_goal_generic_production
+		x = 3
+		y = 6
+		cost = 10
+		prerequisite = { focus = BRA_rapid_catch_up }
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+			add_tech_bonus = {
+				name = construction_tech_bonus
+				bonus = 0.5
+				uses = 1
+				category = construction_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = BRA_salpeter_in_mato_grosso
+		icon = GFX_goal_generic_production
+		x = 3
+		y = 7
+		cost = 10
+		prerequisite = { focus = BRA_exploration_of_seringueiras }
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+			add_tech_bonus = {
+				name = construction_tech_bonus
+				bonus = 0.5
+				uses = 1
+				category = construction_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = BRA_alumminium_in_grao_parma
+		icon = GFX_goal_generic_production
+		x = 3
+		y = 8
+		cost = 10
+		prerequisite = { focus = BRA_salpeter_in_mato_grosso }
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+			add_tech_bonus = {
+				name = construction_tech_bonus
+				bonus = 0.5
+				uses = 1
+				category = construction_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = BRA_coal_in_minas_gerais
+		icon = GFX_goal_generic_production
+		x = 3
+		y = 9
+		cost = 10
+		prerequisite = { focus = BRA_alumminium_in_grao_parma }
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+			add_tech_bonus = {
+				name = construction_tech_bonus
+				bonus = 0.5
+				uses = 1
+				category = construction_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = BRA_steel_in_goyaz
+		icon = GFX_goal_generic_production
+		x = 6
+		y = 6
+		cost = 10
+		prerequisite = { focus = BRA_rapid_catch_up }
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+			add_tech_bonus = {
+				name = construction_tech_bonus
+				bonus = 0.5
+				uses = 1
+				category = construction_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = BRA_steel_in_minas_gerias
+		icon = GFX_goal_generic_production
+		x = 6
+		y = 7
+		cost = 10
+		prerequisite = { focus = BRA_steel_in_goyaz }
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+			add_tech_bonus = {
+				name = construction_tech_bonus
+				bonus = 0.5
+				uses = 1
+				category = construction_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = BRA_rio_doce_vale
+		icon = GFX_goal_generic_production
+		x = 6
+		y = 8
+		cost = 10
+		prerequisite = { focus = BRA_steel_in_minas_gerias }
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+			add_tech_bonus = {
+				name = construction_tech_bonus
+				bonus = 0.5
+				uses = 1
+				category = construction_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = BRA_extra_research_slot
+		icon = GFX_goal_generic_production
+		x = 6
+		y = 9
+		cost = 10
+		prerequisite = { focus = BRA_rio_doce_vale }
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+			add_tech_bonus = {
+				name = construction_tech_bonus
+				bonus = 0.5
+				uses = 1
+				category = construction_tech
+			}
+		}
+	}
+}
