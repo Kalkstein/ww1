@@ -431,6 +431,7 @@ technologies = {
 	
 		enable_subunits = {
 			machinegun
+			machinegun_company
 		}
 		
 		enable_equipments = {
