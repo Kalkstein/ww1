@@ -345,6 +345,15 @@ create_equipment_variant = {
 }
 #### CL Variants
 create_equipment_variant = {
+	name = "Armored Cruiser"
+	type = light_cruiser_2
+	parent_version = 0
+	upgrades = {
+		ship_engine_upgrade = 3
+		ship_gun_upgrade = 1
+	}
+}
+create_equipment_variant = {
 	name = "Cressy"
 	type = light_cruiser_1
 	parent_version = 0
@@ -363,18 +372,9 @@ create_equipment_variant = {
 	obsolete = yes
 }
 create_equipment_variant = {
-	name = "Armored Cruiser"
-	type = light_cruiser_1
-	parent_version = 2
-	upgrades = {
-		ship_engine_upgrade = 3
-		ship_gun_upgrade = 1
-	}
-}
-create_equipment_variant = {
 	name = "2nd Class AC"
 	type = light_cruiser_1
-	parent_version = 3
+	parent_version = 2
 	upgrades = {
 		ship_reliability_upgrade = 1
 		ship_engine_upgrade = 2
@@ -383,7 +383,7 @@ create_equipment_variant = {
 create_equipment_variant = {
 	name = "3nd Class AC"
 	type = light_cruiser_1
-	parent_version = 4
+	parent_version = 3
 	upgrades = {
 		ship_reliability_upgrade = 1
 		ship_anti_air_upgrade = 1

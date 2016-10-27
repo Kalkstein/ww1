@@ -570,27 +570,27 @@ units = {
 		ship = { name = "HMS Minotaur" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = ENG } } }
 		ship = { name = "HMS Shannon" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = ENG } } }
 		ship = { name = "HMS Defence" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = ENG } } }
-		ship = { name = "HMS Blake" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG version_name = "Armored Cruiser" } } }
-		ship = { name = "HMS Blenheim" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG version_name = "Armored Cruiser" } } }
-		ship = { name = "HMS Edgar" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG version_name = "Armored Cruiser" } } }
-		ship = { name = "HMS Royal Arthur" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG version_name = "Armored Cruiser" } } }
-		ship = { name = "HMS Hawke" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG version_name = "Armored Cruiser" } } }
-		ship = { name = "HMS Crescent" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG version_name = "Armored Cruiser" } } }
-		ship = { name = "HMS Endymion" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG version_name = "Armored Cruiser" } } }
-		ship = { name = "HMS Grafton" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG version_name = "Armored Cruiser" } } }
-		ship = { name = "HMS St. George" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG version_name = "Armored Cruiser" } } }
-		ship = { name = "HMS Gibraltar" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG version_name = "Armored Cruiser" } } }
-		ship = { name = "HMS Theseus" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG version_name = "Armored Cruiser" } } }
-		ship = { name = "HMS Powerful" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG version_name = "Armored Cruiser" } } }
-		ship = { name = "HMS Terrible" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG version_name = "Armored Cruiser" } } }
-		ship = { name = "HMS Diadem" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG version_name = "Armored Cruiser" } } }
-		ship = { name = "HMS Niobe" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG version_name = "Armored Cruiser" } } }
-		ship = { name = "HMS Andromeda" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG version_name = "Armored Cruiser" } } }
-		ship = { name = "HMS Europa" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG version_name = "Armored Cruiser" } } }
-		ship = { name = "HMS Argonaut" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG version_name = "Armored Cruiser" } } }
-		ship = { name = "HMS Amphritite" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG version_name = "Armored Cruiser" } } }
-		ship = { name = "HMS Ariadne" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG version_name = "Armored Cruiser" } } }
-		ship = { name = "HMS Spartiate" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG version_name = "Armored Cruiser" } } }
+		ship = { name = "HMS Blake" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = ENG version_name = "Armored Cruiser" } } }
+		ship = { name = "HMS Blenheim" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = ENG version_name = "Armored Cruiser" } } }
+		ship = { name = "HMS Edgar" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = ENG version_name = "Armored Cruiser" } } }
+		ship = { name = "HMS Royal Arthur" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = ENG version_name = "Armored Cruiser" } } }
+		ship = { name = "HMS Hawke" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = ENG version_name = "Armored Cruiser" } } }
+		ship = { name = "HMS Crescent" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = ENG version_name = "Armored Cruiser" } } }
+		ship = { name = "HMS Endymion" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = ENG version_name = "Armored Cruiser" } } }
+		ship = { name = "HMS Grafton" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = ENG version_name = "Armored Cruiser" } } }
+		ship = { name = "HMS St. George" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = ENG version_name = "Armored Cruiser" } } }
+		ship = { name = "HMS Gibraltar" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = ENG version_name = "Armored Cruiser" } } }
+		ship = { name = "HMS Theseus" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = ENG version_name = "Armored Cruiser" } } }
+		ship = { name = "HMS Powerful" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = ENG version_name = "Armored Cruiser" } } }
+		ship = { name = "HMS Terrible" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = ENG version_name = "Armored Cruiser" } } }
+		ship = { name = "HMS Diadem" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = ENG version_name = "Armored Cruiser" } } }
+		ship = { name = "HMS Niobe" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = ENG version_name = "Armored Cruiser" } } }
+		ship = { name = "HMS Andromeda" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = ENG version_name = "Armored Cruiser" } } }
+		ship = { name = "HMS Europa" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = ENG version_name = "Armored Cruiser" } } }
+		ship = { name = "HMS Argonaut" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = ENG version_name = "Armored Cruiser" } } }
+		ship = { name = "HMS Amphritite" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = ENG version_name = "Armored Cruiser" } } }
+		ship = { name = "HMS Ariadne" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = ENG version_name = "Armored Cruiser" } } }
+		ship = { name = "HMS Spartiate" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = ENG version_name = "Armored Cruiser" } } }
 		ship = { name = "HMS Apollo" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG version_name = "2nd Class AC" } } }
 		ship = { name = "HMS Aeolus" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG version_name = "2nd Class AC" } } }
 		ship = { name = "HMS Andromache" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = ENG version_name = "2nd Class AC" } } }
