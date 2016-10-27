@@ -1,15 +1,15 @@
 focus_tree = {
-	id = german_focus
-
+	id = GER_focus
+	
 	country = {
 		factor = 0
-
+		
 		modifier = {
 			add = 10
 			tag = GER
 		}
 	}
-
+	
 	default = no
 
 	focus = {

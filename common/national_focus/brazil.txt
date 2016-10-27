@@ -123,7 +123,7 @@ focus_tree = {
 	
 	focus = {
 		id = BRA_military_industry
-		icon = GFX_goal_generic_production
+		icon = GFX_goal_generic_construct_mil_factory
 		x = 2
 		y = 2
 		cost = 10
@@ -150,7 +150,7 @@ focus_tree = {
 	
 	focus = {
 		id = BRA_military_complex
-		icon = GFX_goal_generic_production
+		icon = GFX_goal_generic_construction2
 		x = 2
 		y = 3
 		cost = 10
@@ -423,7 +423,7 @@ focus_tree = {
 	
 	focus = {
 		id = BRA_rapid_catch_up
-		icon = GFX_goal_generic_production
+		icon = GFX_focus_research
 		x = 3
 		y = 5
 		cost = 10
@@ -434,18 +434,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_tech_bonus = {
-				name = industrial_bonus
-				bonus = 0.5
-				uses = 1
-				category = industry
-			}
-			add_tech_bonus = {
-				name = construction_tech_bonus
-				bonus = 0.5
-				uses = 1
-				category = construction_tech
-			}
+			add_research_slot = 1
 		}
 	}
 	
@@ -748,7 +737,7 @@ focus_tree = {
 	
 	focus = {
 		id = BRA_extra_research_slot
-		icon = GFX_goal_generic_production
+		icon = GFX_focus_research
 		x = 6
 		y = 9
 		cost = 10
@@ -758,18 +747,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_tech_bonus = {
-				name = industrial_bonus
-				bonus = 0.5
-				uses = 1
-				category = industry
-			}
-			add_tech_bonus = {
-				name = construction_tech_bonus
-				bonus = 0.5
-				uses = 1
-				category = construction_tech
-			}
+			add_research_slot = 1
 		}
 	}
 }
