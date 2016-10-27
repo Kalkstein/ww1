@@ -14,12 +14,42 @@ technologies = {
 			leads_to_tech = CAS1
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = airfields
+			research_cost_coeff = 1
+		}
 		
 		research_cost = 6
 		start_year = 1910
 		folder = {
 			name = air_techs_folder
 			position = { x = -2 y = 2 }
+		}
+		
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	airfields = {
+	
+		enable_building = {
+			building = air_base
+			level = 1
+		}
+		
+		
+		research_cost = 6
+		start_year = 1910
+		folder = {
+			name = air_techs_folder
+			position = { x = 2 y = 2 }
 		}
 		
 		categories = {
