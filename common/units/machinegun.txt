@@ -1,5 +1,5 @@
 sub_units = {
-	signal_company = {
+	machinegun_company = {
 		sprite = infantry
 		map_icon_category = infantry
 		priority = 0
@@ -24,6 +24,7 @@ sub_units = {
 		max_strength = 1
 		max_organisation = 20
 		default_morale = 0.3
+		soft_attack = 12
 		manpower = 500
 		training_time = 120
 
@@ -32,16 +33,14 @@ sub_units = {
 		supply_consumption = 0.02
 		can_be_parachuted = yes
 		
-		# Important Ability
-		initiative = 0.05
+		
 		
 		essential = {
-			support_equipment
-			motorized_equipment
+			machine_gun_equipment
 		}
 
 		need = {
-			support_equipment = 50
+			machine_gun_equipment = 100
 		}
 
 	}

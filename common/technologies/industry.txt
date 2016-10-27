@@ -141,12 +141,6 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		path = {
-			leads_to_tech =  industrial_fortitude
-			research_cost_coeff = 1
-		}
-		
-		
 		research_cost = 1.5
 		start_year = 1916
 		
@@ -167,13 +161,7 @@ technologies = {
 	industrial_fortitude = {
 	
 		industry_air_damage_factor = -0.1
-		
-		path = {
-			leads_to_tech =  industrial_fortitude_2
-			research_cost_coeff = 1
-		}
-		
-		
+
 		research_cost = 1.5
 		start_year = 1916
 		
@@ -438,7 +426,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = 6 y = 2 }
+			position = { x = 8 y = 2 }
 		}
 		
 		ai_will_do = {
@@ -478,7 +466,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = 6 y = 4 }
+			position = { x = 8 y = 4 }
 		}
 		
 		ai_will_do = {
@@ -508,7 +496,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = 6 y = 6 }
+			position = { x = 8 y = 6 }
 		}
 		
 		ai_will_do = {
@@ -538,7 +526,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = 6 y = 8 }
+			position = { x = 8 y = 8 }
 		}
 		
 		ai_will_do = {
@@ -563,7 +551,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = 6 y = 10 }
+			position = { x = 8 y = 10 }
 		}
 		
 		ai_will_do = {
@@ -581,8 +569,8 @@ technologies = {
 	
 	hinterland_fortification = {
 
-		production_speed_bunker_factor = 0.02
-		production_speed_coastal_bunker_factor = 0.02
+		production_speed_bunker_factor = 0.05
+		production_speed_coastal_bunker_factor = 0.05
 		
 		path = {
 			leads_to_tech = hinterland_fortification_2 
@@ -597,7 +585,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = 8 y = 2 }
+			position = { x = 6 y = 2 }
 		}
 		
 		ai_will_do = {
@@ -625,8 +613,8 @@ technologies = {
 	
 	hinterland_fortification_2 = {
 
-		production_speed_bunker_factor = 0.03
-		production_speed_coastal_bunker_factor = 0.03
+		production_speed_bunker_factor = 0.075
+		production_speed_coastal_bunker_factor = 0.075
 		
 		path = {
 			leads_to_tech = hinterland_fortification_3
@@ -638,7 +626,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = 8 y = 4 }
+			position = { x = 6 y = 4 }
 		}
 		
 		ai_will_do = {
@@ -656,8 +644,8 @@ technologies = {
 	
 	hinterland_fortification_3 = {
 
-		production_speed_bunker_factor = 0.04
-		production_speed_coastal_bunker_factor = 0.04
+		production_speed_bunker_factor = 0.1
+		production_speed_coastal_bunker_factor = 0.1
 		
 		path = {
 			leads_to_tech = hinterland_fortification_4 
@@ -669,7 +657,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = 8 y = 6 }
+			position = { x = 6 y = 6 }
 		}
 		
 		ai_will_do = {
@@ -687,11 +675,16 @@ technologies = {
 	
 	hinterland_fortification_4 = {
 
-		production_speed_bunker_factor = 0.05
-		production_speed_coastal_bunker_factor = 0.05
+		production_speed_bunker_factor = 0.15
+		production_speed_coastal_bunker_factor = 0.15
 		
 		path = {
 			leads_to_tech = hinterland_fortification_5 
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech =  industrial_fortitude
 			research_cost_coeff = 1
 		}
 		
@@ -700,7 +693,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = 8 y = 8 }
+			position = { x = 6 y = 8 }
 		}
 		
 		ai_will_do = {
@@ -718,15 +711,20 @@ technologies = {
 	
 	hinterland_fortification_5 = {
 
-		production_speed_bunker_factor = 0.06
-		production_speed_coastal_bunker_factor = 0.06
+		production_speed_bunker_factor = 0.2
+		production_speed_coastal_bunker_factor = 0.2
+		
+		path = {
+			leads_to_tech =  industrial_fortitude_2
+			research_cost_coeff = 1
+		}
 		
 		research_cost = 2
 		start_year = 1917
 		
 		folder = {
 			name = industry_folder
-			position = { x = 8 y = 10 }
+			position = { x = 6 y = 10 }
 		}
 		
 		ai_will_do = {
