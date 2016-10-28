@@ -3,6 +3,9 @@ state={
 	id=295
 	name="STATE_295" # Leopoldville
 	manpower = 3540948
+	resources={
+		rubber=42
+	}
 	
 	state_category = rural
 	

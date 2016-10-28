@@ -668,7 +668,75 @@ units = {
 		ship = { name = "HMS Gloucester" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = ENG } } }
 		ship = { name = "HMS Liverpool" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = ENG } } }
 		ship = { name = "HMS Bristol" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = ENG } } }
-		ship = { name = "HMS " definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = ENG } } }
+		ship = { name = "HMS Quail" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "B-Class" } } }
+		ship = { name = "HMS Thrasher" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "B-Class" } } }
+		ship = { name = "HMS Virago" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "B-Class" } } }
+		ship = { name = "HMS Earnest" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "B-Class" } } }
+		ship = { name = "HMS Griffon" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "B-Class" } } }
+		ship = { name = "HMS Locust" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "B-Class" } } }
+		ship = { name = "HMS Panther" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "B-Class" } } }
+		ship = { name = "HMS Seal" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "B-Class" } } }
+		ship = { name = "HMS Wolf" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "B-Class" } } }
+		ship = { name = "HMS Express" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "B-Class" } } }
+		ship = { name = "HMS Orwell" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "B-Class" } } }
+		ship = { name = "HMS Lively" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "B-Class" } } }
+		ship = { name = "HMS Sprightly" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "B-Class" } } }
+		ship = { name = "HMS Spiteful" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "B-Class" } } }
+		ship = { name = "HMS Peterel" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "B-Class" } } }
+		ship = { name = "HMS Kangaroo" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "B-Class" } } }
+		ship = { name = "HMS Myrmidon" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "B-Class" } } }
+		ship = { name = "HMS Syren" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "B-Class" } } }
+		ship = { name = "HMS Albacore" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "B-Class" } } }
+		ship = { name = "HMS Bonetta" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "B-Class" } } }
+		ship = { name = "HMS Arab" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "B-Class" } } }
+		ship = { name = "HMS Success" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "B-Class" } } }
+		ship = { name = "HMS Desperate" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "D-Class" } } }
+		ship = { name = "HMS Fame" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "D-Class" } } }
+		ship = { name = "HMS Foam" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "D-Class" } } }
+		ship = { name = "HMS Mallard" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "D-Class" } } }
+		ship = { name = "HMS Angler" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "D-Class" } } }
+		ship = { name = "HMS Ariel" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "D-Class" } } }
+		ship = { name = "HMS Coquette" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "D-Class" } } }
+		ship = { name = "HMS Cynet" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "D-Class" } } }
+		ship = { name = "HMS Cynthia" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "D-Class" } } }
+		ship = { name = "HMS Stag" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "D-Class" } } }
+		ship = { name = "HMS Star" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "C-Class" } } }
+		ship = { name = "HMS Whiting" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "C-Class" } } }
+		ship = { name = "HMS Bat" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "C-Class" } } }
+		ship = { name = "HMS Crane" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "C-Class" } } }
+		ship = { name = "HMS Flying Fish" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "C-Class" } } }
+		ship = { name = "HMS Fawn" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "C-Class" } } }
+		ship = { name = "HMS Flirt" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "C-Class" } } }
+		ship = { name = "HMS Violet" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "C-Class" } } }
+		ship = { name = "HMS Sylvia" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "C-Class" } } }
+		ship = { name = "HMS Lee" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "C-Class" } } }
+		ship = { name = "HMS Gipsy" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "C-Class" } } }
+		ship = { name = "HMS Fairy" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "C-Class" } } }
+		ship = { name = "HMS Osprey" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "C-Class" } } }
+		ship = { name = "HMS Leven" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "C-Class" } } }
+		ship = { name = "HMS Falcon" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "C-Class" } } }
+		ship = { name = "HMS Ostrich" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "C-Class" } } }
+		ship = { name = "HMS Avon" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "C-Class" } } }
+		ship = { name = "HMS Bittern" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "C-Class" } } }
+		ship = { name = "HMS Otter" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "C-Class" } } }
+		ship = { name = "HMS Leopard" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "C-Class" } } }
+		ship = { name = "HMS Vixen" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "C-Class" } } }
+		ship = { name = "HMS Cheerful" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "C-Class" } } }
+		ship = { name = "HMS Mermaid" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "C-Class" } } }
+		ship = { name = "HMS Greyhound" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "C-Class" } } }
+		ship = { name = "HMS Racehorse" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "C-Class" } } }
+		ship = { name = "HMS Roebuck" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "C-Class" } } }
+		ship = { name = "HMS Brazen" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "C-Class" } } }
+		ship = { name = "HMS Electra" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "C-Class" } } }
+		ship = { name = "HMS Recruit" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "C-Class" } } }
+		ship = { name = "HMS Vulture" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "C-Class" } } }
+		ship = { name = "HMS Kestrel" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "C-Class" } } }
+		ship = { name = "HMS Thorn" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "C-Class" } } }
+		ship = { name = "HMS Vigilant" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "C-Class" } } }
+		ship = { name = "HMS Bulfinch" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "C-Class" } } }
+		ship = { name = "HMS Dove" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "C-Class" } } }
+		ship = { name = "HMS Velox" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "C-Class" } } }
+		ship = { name = "HMS Albatross" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ENG version_name = "C-Class" } } }
 	}
 }
 

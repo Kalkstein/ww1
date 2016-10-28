@@ -390,3 +390,33 @@ create_equipment_variant = {
 		ship_engine_upgrade = 1
 	}
 }
+#### DD Variants
+create_equipment_variant = {
+	name = "D-Class"
+	type = destroyer_1
+	parent_version = 0
+	upgrades = {
+		destroyer_engine_upgrade = 1
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "C-Class"
+	type = destroyer_1
+	parent_version = 1
+	upgrades = {
+		ship_torpedo_upgrade = 1
+		destroyer_engine_upgrade = 1
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "B-Class"
+	type = destroyer_1
+	parent_version = 2
+	upgrades = {
+		ship_anti_air_upgrade = 1
+		ship_torpedo_upgrade = 1
+		destroyer_engine_upgrade = 1
+	}
+}
