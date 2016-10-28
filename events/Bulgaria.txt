@@ -507,6 +507,9 @@ country_event = {
 			}
 			ALB = { transfer_state = 747 }
 		}
+		BUL = {
+			add_named_threat = { threat = 10 name = BUL_bad_peace }
+		}
 	}
 }
 

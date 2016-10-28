@@ -1388,6 +1388,7 @@ focus_tree = {
 					instant_build = yes
 				}
 				add_extra_state_shared_building_slots = 3
+				add_core_of = BUL
 			}
 		}
 	}
@@ -1454,8 +1455,8 @@ focus_tree = {
 		cost = 10 
 		completion_reward = {
 			remove_state_claim = 106
-			add_political_power = 140
-			add_national_unity = 0.05
+			add_political_power = -140
+			add_national_unity = -0.05
 		}
 		
 	}
