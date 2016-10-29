@@ -1485,8 +1485,8 @@ country_event = {
 	# revisit 2 : Nach dem zum Erliegen kommen unserer Offensive hat sich unser Planungsvorteil in Luft aufgelöst, unser Generalstab
 	# ist so inkompetent wie eh und je
 	trigger = {
-	has_war_with = GER
-	SOV = { has_aggressive_war = yes }
+		has_war_with = GER
+		SOV = { has_offensive_war = yes }
 	}
 	
 	mean_time_to_happen = { days = 28 }
@@ -1530,8 +1530,8 @@ country_event = {
 	# revisit 2 : Mit den Angriffen deutscher Truppen auf unsere Grenzen haben sich unsere Planungen 
 	# für eine Offensive in Luft aufgelöst
 	trigger = {
-	has_war_with = GER
-	NOT = { has_aggresive_war = yes }
+		has_war_with = GER
+		NOT = { has_offensive_war = yes }
 	}
 	
 	mean_time_to_happen = { days = 2 }
@@ -1698,10 +1698,8 @@ country_event = {
 		load_oob = "SOV_preventiv_war_early_mobilization"
 		GER = { country_event = { id = soviet.78 days = 1 } }
 		AUS = { country_event = { id = soviet.79 days = 2 } }
-		set_politics = {
-			economy = { law = war_economy }
-			mobilization_laws = { law = extensive_conscription }
-		}
+		add_ideas = war_economy 
+		add_ideas = extensive_conscription 
 	}
 	option = {
 		name = soviet.71.b
@@ -1780,10 +1778,8 @@ country_event = {
 	option = {
 		name = soviet.79.a
 		# United we stand together
-		set_politics = {
-			economy = { law = war_economy }
-			mobilization_laws = { law = extensive_conscription }
-		}
+		add_ideas = war_economy 
+		add_ideas = extensive_conscription 
 		AUS = { add_opinion_modifier = { target = SOV modifier = russian_attack } }
 	}
 }
