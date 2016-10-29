@@ -1458,6 +1458,8 @@ news_event = {
 		NOT = { has_global_flag = mona_lisa }
 	}
 	
+	fire_only_once = yes
+	
 	mean_time_to_happen = {
 		days = 30
 	}
@@ -1478,16 +1480,14 @@ news_event = {
 
 # Mona Lisa Returned
 news_event = {
-	id = flavor_news.4
-	title = flavor_news.4.t 
-	desc = flavor_news.4.d 
+	id = flavor_news.41
+	title = flavor_news.41.t 
+	desc = flavor_news.41.d 
 	picture = GFX_news_event_001
 	
 	trigger = {
 		date > 1913.11.10
 		date < 1914.6.10
-		NOT = { has_global_flag = mona_lisa_return }
-		NOT = { has_global_flag = mona_lisa_gone}
 		has_global_flag = mona_lisa_found
 	}
 	
@@ -1495,9 +1495,31 @@ news_event = {
 		days = 30
 	}
 	
-	immediate = {
-		set_global_flag = mona_lisa_return
+	fire_only_once = yes
+	
+	option = {
+		name = flavor_news.4.a 
 	}
+}
+
+# Mona Lisa Lost
+news_event = {
+	id = flavor_news.42
+	title = flavor_news.42.t 
+	desc = flavor_news.42.d 
+	picture = GFX_news_event_001
+	
+	trigger = {
+		date > 1913.11.10
+		date < 1914.6.10
+		has_global_flag = mona_lisa_gone
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	fire_only_once = yes
 	
 	option = {
 		name = flavor_news.4.a 

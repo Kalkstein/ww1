@@ -144,7 +144,7 @@ sub_units = {
 		}
 	}
 	
-support_artillery_brigade = {
+	support_artillery_brigade = {
 		sprite = support_artillery
 		map_icon_category = infantry
 		priority = 1198

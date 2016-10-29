@@ -5,9 +5,9 @@ add_namespace = agadir
 
 # Moroccan Civil War
 country_event = {
-	id = Agadir.100
-	title = Agadir.100.t 
-	desc = Agadir.100.d 
+	id = agadir.100
+	title = agadir.100.t 
+	desc = agadir.100.d 
 	picture = GFX_agadir_event_001 
 	
 	major = yes
@@ -36,7 +36,7 @@ country_event = {
 	
 	#Support Pro-Central Powers
 	option = {
-	    name = Agadir.100.a
+	    name = agadir.100.a
 		trigger = { is_ai = no }
 		hidden_effect = {
 			set_capital = 462
@@ -67,7 +67,7 @@ country_event = {
 	
 	#Support Pro-Entente
 	option = {
-	    name = Agadir.100.b
+	    name = agadir.100.b
 		hidden_effect = {
 			set_capital = 461
 				start_civil_war = {
@@ -98,7 +98,7 @@ country_event = {
 	}
 }
 
-# Agadir News
+# agadir News
 news.event = {
 	id = agadir.101
 	title = agadir.101.t 

@@ -64,7 +64,7 @@ add_ideas = {
 	civilian_economy
 	disarmed_nation
 	free_trade
-	home_of_the_free
+#	home_of_the_free
 }
 
 
