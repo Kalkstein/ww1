@@ -150,16 +150,65 @@ create_country_leader = {
 	}
 }
 
-create_corps_commander = {
-	name = "Vasil Tenev Boydev"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
-	traits = { panzer_leader }
+create_field_marshal = {
+	name = "Nikola Zhekov"
+	portrait_path = "gfx/leaders/BUL/Portrait_Nikola_Zhekov.dds"
+	traits = { offensive_doctrine }
 	skill = 3
 }
 
+create_corps_commander = {
+	name = "Georgi Todorov"
+	portrait_path = "gfx/leaders/BUL/Portrait_Georgi_Todorov.dds"
+	traits = {  }
+	skill = 2
+}
+
+create_corps_commander = {
+	name = "Mihail Savov"
+	portrait_path = "gfx/leaders/BUL/Portrait_Mihail_Savov.dds"
+	traits = { trait_mountaineer hill_fighter }
+	skill = 2 
+}
+
+create_corps_commander = {
+	name = "Ivan Fichev"
+	portrait_path = "gfx/leaders/BUL/Portrait_Ivan_Fichev.dds"
+	traits = { trickster }
+	skill = 2 
+}
+
 create_field_marshal = {
-	name = "Georgi Nikolov Popov"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = { defensive_doctrine }
-	skill = 4
+	name = "Nikola Ivanov"
+	portrait_path = "gfx/leaders/BUL/Portrait_Nikola_Ivanov.dds"
+	traits = { inspirational_leader offensive_doctrine fast_planner }
+	skill = 4 
+}
+
+create_corps_commander = {
+	name = "Stiliyan Kovachev"
+	portrait_path = "gfx/leaders/BUL/Portrait_Stiliyan_Kovachev.dds"
+	traits = {  }
+	skill = 1 
+}
+
+create_field_marshal = {
+	name = "Konstantin Zhostov"
+	portrait_path = "gfx/leaders/BUL/Portrait_Konstantin_Zhostov.dds"
+	traits = {  }
+	skill = 2 
+}
+
+create_corps_commander = {
+	name = "Vladimir Vazov"
+	portrait_path = "gfx/leaders/BUL/Portrait_Vladimir_Vazov.dds"
+	traits = { inspirational_leader }
+	skill = 2 
+}
+
+create_corps_commander = {
+	name = "Stefan Toshev"
+	portrait_path = "gfx/leaders/BUL/Portrait_Stefan_Toshev.dds"
+	traits = {  }
+	skill = 1 
 }
