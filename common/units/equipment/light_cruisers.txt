@@ -9,7 +9,7 @@ equipments = {
 			ship_reliability_upgrade
 			ship_engine_upgrade
 			ship_gun_upgrade
-			ship_anti_air_upgrade
+			ship_armor_upgrade
 		}
 		
 		interface_category = interface_category_screen_ships
