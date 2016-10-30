@@ -218,7 +218,8 @@ ideas = {
 			picture = generic_democratic_drift_bonus
 	
 			modifier = {
-				trade_opinion_factor = 0.2
+				neutrality_drift = -0.02
+				communism_drift = -0.02
 			}
 		}
 	
