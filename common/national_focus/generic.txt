@@ -83,7 +83,7 @@ focus_tree = {
 	}
 	focus = {
 		id = further_industrilization
-		icon = GFX_goal_generic_production
+		icon = GFX_goal_generic_construct_civilian
 		prerequisite = { focus=beginnings_of_industrialization }
 		x = 0
 		y = 1
@@ -185,7 +185,7 @@ focus_tree = {
 	}
 	focus = {
 		id = completed_industrilization
-		icon = GFX_goal_generic_production
+		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus=further_industrilization }
 		x = 0
 		y = 2
@@ -382,7 +382,7 @@ focus_tree = {
 	}
 	focus = {
 		id = german_trade_deals
-		icon = GFX_goal_generic_production
+		icon = GFX_goal_generic_neutrality_focus
 		prerequisite = { focus=completed_industrilization focus=international_railway }
 	    mutually_exclusive = { focus=british_trade_deals focus=become_self_sufficent}
 		x= 1
@@ -395,10 +395,10 @@ focus_tree = {
 		
 		completion_reward = {
 			add_tech_bonus = {
-				name = armor_bonus
+				name = air_bonus
 				bonus = 0.25
 				uses = 2
-				category = armor
+				category = light_fighter
 			}
 			add_tech_bonus = {
 				name = infantry_weapons_bonus
@@ -440,7 +440,7 @@ focus_tree = {
 	}
 	focus = {
 		id = british_trade_deals
-		icon = GFX_goal_generic_production
+		icon = GFX_goal_generic_neutrality_focus
 		prerequisite = { focus=completed_industrilization focus=international_railway }
 	    mutually_exclusive = { focus=german_trade_deals focus=become_self_sufficent}
 		x= 3
@@ -617,7 +617,7 @@ focus_tree = {
 	
 	focus = {
 		id = research_breakthrough
-		icon = GFX_goal_generic_production
+		icon = GFX_focus_research
 		prerequisite = {focus=german_trade_deals focus=british_trade_deals}
 		x= 2
 		y= 5
@@ -652,7 +652,7 @@ focus_tree = {
 	}
 	focus = {
 		id = national_economic_boom
-		icon = GFX_goal_generic_production
+		icon = GFX_goal_generic_construction
 		prerequisite = { focus=become_self_sufficent}
 		mutually_exclusive = {focus=become_self_sufficent}
 		x= 7
@@ -723,27 +723,6 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-		}
-	}
-	
-	focus = {
-		id = create_our_own_alliance
-		icon = GFX_goal_generic_production
-		prerequisite = { focus=national_economic_boom focus=state_militarization}
-		x= 6
-		y= 5
-		cost = 10
-		
-		ai_will_do = {
-			factor=1
-		}
-		
-		completion_reward = {
-			if = {
-				limit = { NOT = { has_idea = neutrality_idea } }
-				set_rule = { can_create_factions = yes }
-			}
-			add_political_power = 300
 		}
 	}
 
