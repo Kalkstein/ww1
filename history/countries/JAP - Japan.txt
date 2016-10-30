@@ -12,6 +12,7 @@ add_ideas = {
 	limited_conscription
 	partial_economic_mobilisation
 }
+puppet = KOR
 
 set_technology = {
 	infantry_weapons = 1
