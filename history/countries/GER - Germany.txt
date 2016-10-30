@@ -522,7 +522,7 @@ create_equipment_variant = {
 		ship_reliability_upgrade = 1
 		ship_engine_upgrade = 1
 		ship_gun_upgrade = 1
-		ship_anti_air_upgrade = 1
+		ship_armor_upgrade = 1
 	}
 	obsolete = yes
 }
@@ -534,7 +534,7 @@ create_equipment_variant = {
 		ship_reliability_upgrade = 2
 		ship_engine_upgrade = 1
 		ship_gun_upgrade = 1
-		ship_anti_air_upgrade = 1
+		ship_armor_upgrade = 1
 	}
 	obsolete = yes
 }
@@ -546,7 +546,7 @@ create_equipment_variant = {
 		ship_reliability_upgrade = 1
 		ship_engine_upgrade = 3
 		ship_gun_upgrade = 1
-		ship_anti_air_upgrade = 1
+		ship_armor_upgrade = 1
 	}
 	obsolete = yes
 }
@@ -576,7 +576,7 @@ create_equipment_variant = {
 		ship_reliability_upgrade = 1
 		ship_engine_upgrade = 1
 		ship_gun_upgrade = 1
-		ship_anti_air_upgrade = 1
+		ship_armor_upgrade = 1
 	}
 }
 create_equipment_variant = {
@@ -606,7 +606,7 @@ create_equipment_variant = {
 	upgrades = {
 		ship_reliability_upgrade = 4
 		ship_gun_upgrade = 1
-		ship_anti_air_upgrade = 1
+		ship_armor_upgrade = 1
 	}
 	obsolete = yes
 }
@@ -617,7 +617,7 @@ create_equipment_variant = {
 	upgrades = {
 		ship_reliability_upgrade = 5
 		ship_gun_upgrade = 1
-		ship_anti_air_upgrade = 1
+		ship_armor_upgrade = 1
 	}
 }
 #### DD Variants
@@ -658,7 +658,7 @@ create_equipment_variant = {
 		ship_torpedo_upgrade = 1
 		destroyer_engine_upgrade = 2
 		ship_ASW_upgrade = 1
-		ship_anti_air_upgrade = 1
+		ship_armor_upgrade = 1
 	}
 	obsolete = yes
 }
