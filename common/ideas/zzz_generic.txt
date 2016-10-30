@@ -22,6 +22,26 @@ ideas = {
 				fascism_drift = 0.1
 			}
 		}
+	
+		ententism = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+			modifier = {
+				democratic_drift = 0.1
+			}
+		}
 
 		internationalism = {
 			
