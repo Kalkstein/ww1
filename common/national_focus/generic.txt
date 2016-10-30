@@ -13,8 +13,8 @@ focus_tree = {
 	focus = {
 		id = beginnings_of_industrialization
 		icon = GFX_goal_generic_production
-		x = 2
-		y = 1
+		x = 0
+		y = 0
 		cost = 10
 		
 		ai_will_do = {
@@ -85,8 +85,8 @@ focus_tree = {
 		id = further_industrilization
 		icon = GFX_goal_generic_production
 		prerequisite = { focus=beginnings_of_industrialization }
-		x = 2
-		y = 2
+		x = 0
+		y = 1
 		cost = 10
 		
 		ai_will_do = {
@@ -187,8 +187,8 @@ focus_tree = {
 		id = completed_industrilization
 		icon = GFX_goal_generic_production
 		prerequisite = { focus=further_industrilization }
-		x = 2
-		y = 3
+		x = 0
+		y = 2
 		cost = 10
 		
 		ai_will_do = {
@@ -300,8 +300,8 @@ focus_tree = {
 	focus = {
 		id = national_railway
 		icon = GFX_goal_generic_construct_infrastructure
-		x = 3
-		y = 2
+		x = 6
+		y = 0
 		cost = 10
 		
 		ai_will_do = {
@@ -342,8 +342,8 @@ focus_tree = {
 		id = international_railway
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus=national_railway }
-		x = 3
-		y = 3
+		x = 6
+		y = 2
 		cost = 10
 		
 		ai_will_do = {
@@ -386,7 +386,7 @@ focus_tree = {
 		prerequisite = { focus=completed_industrilization focus=international_railway }
 	    mutually_exclusive = { focus=british_trade_deals focus=become_self_sufficent}
 		x= 1
-		y= 4
+		y= 3
 		cost = 10
 		
 		ai_will_do = {
@@ -443,8 +443,8 @@ focus_tree = {
 		icon = GFX_goal_generic_production
 		prerequisite = { focus=completed_industrilization focus=international_railway }
 	    mutually_exclusive = { focus=german_trade_deals focus=become_self_sufficent}
-		x= 2
-		y= 4
+		x= 3
+		y= 3
 		cost = 10
 		
 		ai_will_do = {
@@ -511,8 +511,8 @@ focus_tree = {
 		icon = GFX_goal_generic_production
 		prerequisite = { focus=completed_industrilization focus=international_railway }
 	    mutually_exclusive = { focus=german_trade_deals focus=british_trade_deals}
-		x= 4
-		y= 4
+		x= 6
+		y= 3
 		cost = 10
 		
 		ai_will_do = {
@@ -587,7 +587,7 @@ focus_tree = {
 		icon = GFX_goal_generic_production
 		prerequisite = { focus=german_trade_deals}
 		x= 1
-		y= 5
+		y= 4
 		cost = 10
 		
 		ai_will_do = {
@@ -602,8 +602,8 @@ focus_tree = {
 		id = triple_entente_alignment
 		icon = GFX_goal_generic_production
 		prerequisite = { focus=british_trade_deals}
-		x= 2
-		y= 5
+		x= 3
+		y= 4
 		cost = 10
 		
 		ai_will_do = {
@@ -614,13 +614,31 @@ focus_tree = {
 			
 		}
 	}
+	
+	focus = {
+		id = research_breakthrough
+		icon = GFX_goal_generic_production
+		prerequisite = {focus=german_trade_deals focus=british_trade_deals}
+		x= 2
+		y= 5
+		cost=10
+		
+		ai_will_do = {
+			factor=1
+		}
+		
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	
 	focus = {
 		id = state_militarization
 		icon = GFX_goal_generic_production
 		prerequisite = { focus=become_self_sufficent}
 		mutually_exclusive={focus=become_self_sufficent}
-		x= 3
-		y= 5
+		x= 5
+		y= 4
 		cost = 10
 		
 		ai_will_do = {
@@ -637,8 +655,8 @@ focus_tree = {
 		icon = GFX_goal_generic_production
 		prerequisite = { focus=become_self_sufficent}
 		mutually_exclusive = {focus=become_self_sufficent}
-		x= 5
-		y= 5
+		x= 7
+		y= 4
 		cost = 10
 		
 		ai_will_do = {
@@ -707,12 +725,13 @@ focus_tree = {
 			}
 		}
 	}
+	
 	focus = {
 		id = create_our_own_alliance
 		icon = GFX_goal_generic_production
 		prerequisite = { focus=national_economic_boom focus=state_militarization}
-		x= 3
-		y= 6
+		x= 6
+		y= 5
 		cost = 10
 		
 		ai_will_do = {
@@ -727,22 +746,7 @@ focus_tree = {
 			add_political_power = 300
 		}
 	}
-	focus = {
-		id = research_breakthrough
-		icon = GFX_goal_generic_production
-		prerequisite = {focus=german_trade_deals focus=british_trade_deals}
-		x=2
-		y=6
-		cost=10
-		
-		ai_will_do = {
-			factor=1
-		}
-		
-		completion_reward = {
-			add_research_slot = 1
-		}
-	}
+
 	
 	focus = {
 		id = naval_effort
