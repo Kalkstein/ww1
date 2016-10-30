@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
  winter_clothing:0 "Winter Clothing"
  winter_clothing_desc:0 "Obsolete winter clothes made of wool. Not really effective but better than nothing."
  field_grey:0 "Field grey"
@@ -463,7 +463,7 @@ l_english:
  rocket_artillery3:0 "Heavy Artillery Mk2"
  rocket_artillery3_desc:0 "Improving range and impact, we can mount heavier guns. This way we can hurl heavier shells giving us even more deffense in combat."
  rocket_artillery4_desc:0 "Heavy fixed artillery pieces which are exelent for deffending."
- support_artillery_1:0 Support Artillery I
+ support_artillery_1:0 "Support Artillery I"
  support_artillery_1_desc:0 "Support artillery is much cheaper then field artillery and easier to move around on the battlefield. The downside is that it is not as effective as field artillery."
  support_artillery_2:0 "ADD NAME HERE"
  support_artillery_2_desc:0 "ADD UPGRADE HERE"
