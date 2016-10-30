@@ -265,21 +265,21 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "marines_tree"
-				position = { x = 140 y = 1325 }
+				position = { x = 140 y = 1200 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 
 			gridboxtype = {
 				name = "paratroopers_tree"
-				position = { x = 140 y = 1550 }
+				position = { x = 140 y = 1400 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 
 			gridboxtype = {
 				name = "tech_mountaineers_tree"
-				position = { x = 140 y = 1750 }
+				position = { x = 140 y = 1600 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}

@@ -73,7 +73,7 @@ technologies = {
 
 		folder = {
 			name = naval_doctrine_folder
-			position = { x = 1 y = 2 }
+			position = { x = -1 y = 2 }
 		}
 		
 		ai_will_do = {
@@ -88,10 +88,7 @@ technologies = {
 	
 	attack_armend_vessels = {
 
-		submarine = {
-			max_organisation = 10
-			surface_detection = 0.2
-		}
+		navy_submarine_attack_factor = 0.1
 
 		path = {
 			leads_to_tech = sea_mines
@@ -107,7 +104,7 @@ technologies = {
 		
 		folder = {
 			name = naval_doctrine_folder
-			position = { x = -1 y = 4 }
+			position = { x = -3 y = 4 }
 		}
 		
 		ai_will_do = {
@@ -135,7 +132,7 @@ technologies = {
 		
 		folder = {
 			name = naval_doctrine_folder
-			position = { x = -1 y = 6 }
+			position = { x = -3 y = 6 }
 		}
 		
 		ai_will_do = {
@@ -169,7 +166,7 @@ technologies = {
 		
 		folder = {
 			name = naval_doctrine_folder
-			position = { x = 1 y = 4 }
+			position = { x = -1 y = 4 }
 		}
 		
 		ai_will_do = {
@@ -206,7 +203,7 @@ technologies = {
 		
 		folder = {
 			name = naval_doctrine_folder
-			position = { x = 1 y = 6 }
+			position = { x = -1 y = 6 }
 		}
 		
 		ai_will_do = {
@@ -241,7 +238,7 @@ technologies = {
 		
 		folder = {
 			name = naval_doctrine_folder
-			position = { x = 1 y = 8 }
+			position = { x = -1 y = 8 }
 		}
 		
 		ai_will_do = {
@@ -271,7 +268,7 @@ technologies = {
 		
 		folder = {
 			name = naval_doctrine_folder
-			position = { x = 1 y = 10 }
+			position = { x = -1 y = 10 }
 		}
 		
 		ai_will_do = {
@@ -302,7 +299,7 @@ technologies = {
 		
 		folder = {
 			name = naval_doctrine_folder
-			position = { x = 3 y = 2 }
+			position = { x = 1 y = 2 }
 		}
 		
 		ai_will_do = {
@@ -343,7 +340,7 @@ technologies = {
 		
 		folder = {
 			name = naval_doctrine_folder
-			position = { x = 3 y = 4 }
+			position = { x = 1 y = 4 }
 		}
 		
 		ai_will_do = {
@@ -380,7 +377,7 @@ technologies = {
 		
 		folder = {
 			name = naval_doctrine_folder
-			position = { x = 3 y = 6 }
+			position = { x = 1 y = 6 }
 		}
 		
 		ai_will_do = {
@@ -403,7 +400,7 @@ technologies = {
 		convoy_escort_efficiency = 0.15
 
 		path = {
-			leads_to_tech = convoy_defense
+			leads_to_tech = submarine_trap
 			research_cost_coeff = 1
 		}
 		
@@ -416,7 +413,7 @@ technologies = {
 		
 		folder = {
 			name = naval_doctrine_folder
-			position = { x = 3 y = 8 }
+			position = { x = 1 y = 8 }
 		}
 		
 		ai_will_do = {
@@ -430,12 +427,8 @@ technologies = {
 		}
 	}
 	
-	convoy_defense = {
+	submarine_trap = {
 
-		destroyer = {
-			max_organisation = 10
-			sub_detection = 0.2
-		}
 		convoy_escort_efficiency = 0.15
 
 		
@@ -448,7 +441,7 @@ technologies = {
 		
 		folder = {
 			name = naval_doctrine_folder
-			position = { x = 3 y = 10 }
+			position = { x = 1 y = 10 }
 		}
 		
 		ai_will_do = {
@@ -461,5 +454,4 @@ technologies = {
 			naval_equipment = 1.0
 		}
 	}
-	
 }
