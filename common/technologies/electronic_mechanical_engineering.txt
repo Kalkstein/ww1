@@ -455,7 +455,7 @@ technologies = {
 
 		# boost to tank
 		light_armor = {
-			reliability = 0.05 speed = 0.05
+			reliability = 0.05 maximum_speed = 0.05
 		}
 		
 		
@@ -511,7 +511,7 @@ technologies = {
 		}
 
 		light_armor = {
-			speed = 0.20
+			maximum_speed = 0.20
 		}
 
 		#boost to tank
