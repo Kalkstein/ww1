@@ -52,7 +52,7 @@ ai_historical_focus_list_BUL = {
 		BUL_army_reforms
 		BUL_develop_arsenal
 		BUL_preemptive_romania
-		BUL_
+		BUL_pass_protectionist_laws
 	}
 }
 
