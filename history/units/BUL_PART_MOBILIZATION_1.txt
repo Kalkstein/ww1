@@ -1,4 +1,4 @@
-
+﻿
 division_template = {
 	name = "Kavaleriiska Divizija" 			# Cavalry Division
 

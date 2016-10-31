@@ -627,7 +627,8 @@ country_event = {
 				}
 			}
 		}
-		BUL = { country_event = { id = bulgaria.30 days = 1 } 
+		BUL = { 
+			country_event = { id = bulgaria.30 days = 1 } 
 			if = {
 				limit = {
 					is_in_faction_with = TUR
@@ -1225,6 +1226,75 @@ country_event = {
 					target = TUR
 					type = take_state
 					generator = { 106 }
+		}
+		hidden_effect = {
+			746 = {
+				set_state_flag = SER_claim_war_1
+			}
+			106 = {
+				set_state_flag = SER_claim_war_1 
+			}
+			184 = {
+				set_state_flag = BUL_claim_war_1
+			}
+			731 = {
+				set_state_flag = GRE_claim_war_1 
+			}
+			185 = {
+				set_state_flag = GRE_claim_war_1 
+			}
+			if = {
+				limit = {
+					182 = {
+						owner = {
+							original_tag = TUR 
+						}
+					}
+				}
+				182 = {
+					set_state_flag = GRE_claim_war_1
+				}
+			}
+			if = {
+				limit = {
+					187 = {
+						owner = {
+							original_tag = TUR 
+						}
+					}
+				}
+				187 = {
+					set_state_flag = GRE_claim_war_1
+				}
+			}
+			if = {
+				limit = {
+					183 = {
+						owner = {
+							original_tag = TUR 
+						}
+					}
+				}
+				183 = {
+					set_state_flag = GRE_claim_war_1
+				}
+			}
+			if = {
+				limit = {
+					164 = {
+						owner = {
+							original_tag = TUR 
+						}
+					}
+				}
+				164 = {
+					set_state_flag = GRE_claim_war_1
+				}
+			}
+			748 = {
+				set_state_flag = MNT_claim_war_1
+				set_state_flag = SER_claim_war_1
+			}
 		}
 	}
 }

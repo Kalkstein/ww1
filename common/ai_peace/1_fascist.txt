@@ -184,7 +184,7 @@ fascist_peace = {
 			}
 		}
 		modifier = { #The Balkan League will now (theoretically) liberate Albania
-			factor = 50 
+			factor = 500
 			OR = {
 				tag = BUL 
 				tag = SER 
@@ -522,103 +522,105 @@ fascist_peace = {
 
 # TODO: FIX THIS DAMN **** !!
 	# ROOT = Taker, FROM = State
-#	take_states = {
-#		factor = 600 #Up from 500 #200 - vanilla	
-#		
-#		modifier = { #Balkan League won't take other states
-#			factor = 0
-#			AND = {
-#				OR = {
-#					tag = GRE
-#					tag = BUL 
-#					tag = SER 
-#					tag = GRE
-#					tag = MNT
-#				}
-#				has_global_flag = balkan_war
-#			}
-#			FROM = {
-#				NOT = {
-#					OR = {
-#						state_id = 184
-#						state_id = 731
-#						state_id = 106
-#						state_id = 746
-#						state_id = 185
-#						state_id = 182
-#						state_id = 183
-#						state_id = 164
-#						state_id = 187
-#						state_id = 748 
-#					}
-#				}
-#			}
-#			
-#		}
-#		modifier = {
-#			factor = 0 
-#			AND = {
-#				tag = BUL 
-#				has_global_flag = balkan_war
-#			}
-#			FROM = {
-#				NOT = {
-#					OR = {
-#						state_id = 184 
-#						state_id = 106 
-#					}
-#				}
-#			}
-#		}
-#		modifier = {
-#			factor = 0 
-#			AND = {
-#				tag = GRE 
-#				has_global_flag = balkan_war 
-#			}
-#			FROM = {
-#				NOT = {
-#					OR = {
-#						state_id = 185 
-#						state_id = 731
-#						state_id = 187 
-#						state_id = 164 
-#						state_id = 182 
-#						state_id = 183 
-#					}
-#				}
-#			}
-#		}
-#		modifier = {
-#			factor = 0 
-#			AND = {
-#				tag = SER 
-#				has_global_flag = balkan_war
-#			}
-#			FROM = {
-#				NOT = {
-#					OR = {
-#						state_id = 106 
-#						state_id = 746 
-#						state_id = 748 
-#					}
-#				}
-#			}
-#		}
-#		modifier = {
-#			factor = 0 
-#			AND = {
-#				tag = MNT 
-#				has_global_flag = balkan_war
-#			}
-#			FROM = {
-#				NOT = {	
-#					OR ={
-#						state_id = 748
-#					}
-#				}
-#			}
-#		}
+	take_states = {
+		factor = 600 #Up from 500 #200 - vanilla	
+		
+		modifier = {
+			factor = 0 
+			AND = {
+				ROOT = { tag = BUL }
+				has_global_flag = balkan_war
+			}
+			FROM = {
+				NOT = {
+					has_state_flag = BUL_claim_war_1
+				}
+			}
+		}
+		
+		modifier = {
+			factor = 1000
+			AND = {
+				ROOT = { tag = BUL }
+				has_global_flag = balkan_war
+			}
+			FROM = {
+				has_state_flag = BUL_claim_war_1
+			}
+		}
+		
+		modifier = {
+			factor = 0 
+			AND = {
+				ROOT = { tag = SER }
+				has_global_flag = balkan_war 
+			}
+			FROM = {
+				NOT = {
+					has_state_flag = SER_claim_war_1
+				}
+			}
+		}
+		
+		modifier = {
+			factor = 1000 
+			AND = {
+				ROOT = { tag = SER }
+				has_global_flag = balkan_war
+			}
+			FROM = {
+				has_state_flag = SER_claim_war_1
+			}
+		}
+		
+		modifier = {
+			factor = 0 
+			AND = {
+				ROOT = { tag = GRE }
+				has_global_flag = balkan_war
+			}
+			FROM = {
+				NOT = {
+					has_state_flag = GRE_claim_war_1
+				}
+			}
+		}
+		
+		modifier = {
+			factor = 1000
+			AND = {
+				ROOT = { tag = GRE }
+				has_global_flag = balkan_war
+			}
+			FROM = {
+				has_state_flag = GRE_claim_war_1
+			}
+		}
+		
+		modifier = {
+			factor = 0 
+			AND = {
+				ROOT = { tag = MNT }
+				has_global_flag = balkan_war
+			}
+			FROM = {
+				NOT = {
+					has_state_flag = MNT_claim_war_1
+				}
+			}
+		}
+		
+		modifier = {
+			factor = 1000
+			AND = {
+				ROOT = { tag = MNT }
+				has_global_flag = balkan_war
+			}
+			FROM = {
+				has_state_flag = MNT_claim_war_1
+			}
+		}
+		
 		modifier = { #Japan prefers puppets for it's co-prosperity sphere instead of direct control.
 			factor = 0
 			OR = {
