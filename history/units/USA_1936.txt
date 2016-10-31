@@ -76,18 +76,18 @@ units = {
 	}
 
 	# I Army Corps #
-	division= {			
+	division= {
 		name = "26th 'Yankee' Division"		
 		location = 6732
-		division_template = "National Guard Division"
+		division_template = "Infantry Reserve Division"
 		start_experience_factor = 0.5
 		start_equipment_factor = 0.75
 
-	}			
+	}		
 	division= {			
 		name = "43rd 'Winged Victory' Division"		
 		location = 6732
-		division_template = "National Guard Division"
+		division_template = "Infantry Reserve Division"
 		start_experience_factor = 0.5
 		start_equipment_factor = 0.75
 
