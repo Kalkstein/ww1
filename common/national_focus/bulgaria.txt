@@ -1224,7 +1224,7 @@ focus_tree = {
 		prerequisite = { focus = BUL_general_mobilization }
 		x = 27 
 		y = 8 
-		cost = 10 
+		cost = 4
 		completion_reward = {
 			TUR = {
 				country_event = { id = bulgaria.14 days = 1 }
