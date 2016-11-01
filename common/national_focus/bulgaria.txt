@@ -1016,7 +1016,7 @@ focus_tree = {
 		cost = 10
 		completion_reward = {
 		    ROM = { 
-			    country_event = { id = romania.7 days = 1 }
+			    country_event = { id = bulgaria.40 days = 1 }
 			}	
 		}
     }

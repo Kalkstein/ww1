@@ -1610,3 +1610,80 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = bulgaria.40 
+	title = bulgaria.40.t 
+	desc = bulgaria.40.d 
+	picture = GFX_news_event_generic_read_write
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = bulgaria.40.a 
+		ai_chance = {
+			factor = 20 
+			modifier = {
+				factor = 2
+				strength_ratio = {
+					tag = BUL 
+					ratio > 1.5 
+				}
+			}
+		}
+		BUL = {
+			puppet = ROM 
+		}
+	}
+	option = {
+		name = bulgaria.40.b 
+		ai_chance = {
+			factor = 80
+		}
+		BUL = {
+			country_event = { id = bulgaria.41 days = 1 }
+		}
+		effect_tooltip = {
+			declare_war_on = {
+				target = ROM 
+				type = puppet_wargoal 
+			}
+		}
+	}
+}
+
+country_event = {
+	id = bulgaria.41 
+	title = bulgaria.41.t  
+	desc = bulgaria.41.d 
+	picture = GFX_report_event_journalists_speech
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = bulgaria.41.a 
+		ai_chance = {
+			factor = 80 
+			modifier = {
+				factor = 0.5 
+				strength_ratio = {
+					tag = ROM 
+					ratio > 2 
+				}
+			}
+		}
+		declare_war_on = {
+			target = ROM 
+			type = puppet_wargoal
+		}
+	}
+	option = {
+		name = bulgaria.41.b 
+		ai_chance = {
+			factor = 20 
+		}
+		add_national_unity = -0.05 
+		add_political_power = -100 
+	}
+}
+	
