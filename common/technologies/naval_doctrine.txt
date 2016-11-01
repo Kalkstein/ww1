@@ -479,7 +479,7 @@ technologies = {
 		xor = { concentrated_navy }
 		
 		path = {
-			leads_to_tech = oversea_navy
+			leads_to_tech = rangend_flexible_navy
 			research_cost_coeff = 1
 		}
 		
@@ -523,7 +523,7 @@ technologies = {
 		xor = { flexible_navy }
 		
 		path = {
-			leads_to_tech = oversea_navy
+			leads_to_tech = rangend_concentrated_navy
 			research_cost_coeff = 1
 		}
 
@@ -549,17 +549,8 @@ technologies = {
 		}
 	}
 	
-	oversea_navy = {
+	rangend_flexible_navy = {
 		
-		battleship = {
-			naval_range = 0.1
-		}
-		battle_cruiser = {
-			naval_range = 0.1
-		}
-		heavy_cruiser = {
-			naval_range = 0.1
-		}
 		light_cruiser = {
 			naval_range = 0.1
 		}
@@ -577,7 +568,40 @@ technologies = {
 
 		folder = {
 			name = naval_doctrine_folder
-			position = { x = 4 y = 4 }
+			position = { x = 3 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		ai_research_weights = {
+			naval_doctrine = -1.0
+		}
+	}
+	
+	rangend_concentrated_navy = {
+		
+		battleship = {
+			naval_range = 0.1
+		}
+		battle_cruiser = {
+			naval_range = 0.1
+		}
+		heavy_cruiser = {
+			naval_range = 0.1
+		}
+		
+		doctrine = yes	
+		research_cost = 2.5
+		
+		categories = {
+			naval_doctrine
+		}
+
+		folder = {
+			name = naval_doctrine_folder
+			position = { x = 5 y = 4 }
 		}
 		
 		ai_will_do = {
