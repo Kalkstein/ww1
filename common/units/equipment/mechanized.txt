@@ -1,6 +1,6 @@
 equipments = {
 
-	mechanized_equipment = {
+	armord_car = {
 		is_archetype = yes
 		is_buildable = no
 		type = {
@@ -37,14 +37,14 @@ equipments = {
 	}
 
 	# ~1941
-	mechanized_equipment_1 = {
+	armord_car_equipment_1 = {
 		archetype = mechanized_equipment
 		priority = 40
 		visual_level = 0
 	}
 
 	# ~1943
-	mechanized_equipment_2 = {
+	armord_car_equipment_2 = {
 		archetype = mechanized_equipment
 		parent = mechanized_equipment_1
 		priority = 40
@@ -70,7 +70,7 @@ equipments = {
 	}
 
 	# ~1945
-	mechanized_equipment_3 = {
+	armord_car_equipment_3 = {
 		archetype = mechanized_equipment
 		parent = mechanized_equipment_2
 		priority = 40
