@@ -36,6 +36,10 @@ technologies = {
 			leads_to_tech = armored_car
 			research_cost_coeff = 1
 		}
+		
+		dependencies = {
+			gas_engines = 1
+		}
 
 		research_cost = 2
 		start_year = 1900

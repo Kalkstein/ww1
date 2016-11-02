@@ -23,12 +23,7 @@ technologies = {
 		}
 		
 		path = {
-			leads_to_tech = flexible_navy
-			research_cost_coeff = 1
-		}
-		
-		path = {
-			leads_to_tech = concentrated_navy
+			leads_to_tech = battle_fleet
 			research_cost_coeff = 1
 		}
 		
@@ -206,9 +201,7 @@ technologies = {
 		
 		categories = {
 			naval_doctrine
-			fleet_in_being_tree
 			submarine_doctrine
-			cat_fleet_in_being
 		}
 		
 		folder = {
@@ -465,102 +458,75 @@ technologies = {
 		}
 	}
 	
+	battle_fleet = {
+
+		battleship = {
+			search_and_destroy_coordination = 0.25
+		}
+		battle_cruiser = {
+			search_and_destroy_coordination = 0.25
+		}
+		heavy_cruiser = {
+			search_and_destroy_coordination = 0.25
+		}
+		light_cruiser = {
+			search_and_destroy_coordination = 0.25
+		}
+		destroyer = {
+			search_and_destroy_coordination = 0.25
+		}
+		
+		path = {
+			leads_to_tech = flexible_navy
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = concentrated_navy
+			research_cost_coeff = 1
+		}
+		
+		
+		doctrine = yes	
+		research_cost = 2
+		
+		categories = {
+			naval_doctrine
+		}
+
+		folder = {
+			name = naval_doctrine_folder
+			position = { x = 4 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		ai_research_weights = {
+			naval_doctrine = -1.0
+		}
+	}
+	
 	flexible_navy = {
 
 		destroyer = {
 			max_organisation = 10	
-			search_and_destroy_coordination = 0.5
 		}
 		light_cruiser = {
 			max_organisation = 10	
-			search_and_destroy_coordination = 0.5
 		}
 		
 		xor = { concentrated_navy }
 		
 		path = {
-			leads_to_tech = rangend_flexible_navy
+			leads_to_tech = world_wide_active_fleet
 			research_cost_coeff = 1
 		}
 		
 		
 		doctrine = yes	
 		research_cost = 2
-		
-		categories = {
-			naval_doctrine
-		}
-
-		folder = {
-			name = naval_doctrine_folder
-			position = { x = 3 y = 2 }
-		}
-		
-		ai_will_do = {
-			factor = 10
-		}
-		
-		ai_research_weights = {
-			naval_doctrine = -1.0
-		}
-	}
-	
-	concentrated_navy = {
-		
-		battleship = {
-			max_organisation = 10	
-			search_and_destroy_coordination = 0.5
-		}
-		battle_cruiser = {
-			max_organisation = 10
-			search_and_destroy_coordination = 0.5
-		}
-		heavy_cruiser = {
-			max_organisation = 10	
-			search_and_destroy_coordination = 0.5
-		}
-		
-		xor = { flexible_navy }
-		
-		path = {
-			leads_to_tech = rangend_concentrated_navy
-			research_cost_coeff = 1
-		}
-
-		
-		doctrine = yes	
-		research_cost = 2
-		
-		categories = {
-			naval_doctrine
-		}
-
-		folder = {
-			name = naval_doctrine_folder
-			position = { x = 5 y = 2 }
-		}
-		
-		ai_will_do = {
-			factor = 10
-		}
-		
-		ai_research_weights = {
-			naval_doctrine = -1.0
-		}
-	}
-	
-	rangend_flexible_navy = {
-		
-		light_cruiser = {
-			naval_range = 0.1
-		}
-		destroyer = {
-			naval_range = 0.1
-		}
-
-		
-		doctrine = yes	
-		research_cost = 2.5
 		
 		categories = {
 			naval_doctrine
@@ -580,8 +546,49 @@ technologies = {
 		}
 	}
 	
-	rangend_concentrated_navy = {
+	concentrated_navy = {
 		
+		battleship = {
+			max_organisation = 10	
+		}
+		battle_cruiser = {
+			max_organisation = 10
+		}
+		heavy_cruiser = {
+			max_organisation = 10	
+		}
+		
+		xor = { flexible_navy }
+		
+		path = {
+			leads_to_tech = world_wide_active_fleet
+			research_cost_coeff = 1
+		}
+
+		
+		doctrine = yes	
+		research_cost = 2
+		
+		categories = {
+			naval_doctrine
+		}
+
+		folder = {
+			name = naval_doctrine_folder
+			position = { x = 5 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		ai_research_weights = {
+			naval_doctrine = -1.0
+		}
+	}
+	
+	world_wide_active_fleet = {
+	
 		battleship = {
 			naval_range = 0.1
 		}
@@ -590,6 +597,22 @@ technologies = {
 		}
 		heavy_cruiser = {
 			naval_range = 0.1
+		}
+		light_cruiser = {
+			naval_range = 0.1
+		}
+		destroyer = {
+			naval_range = 0.1
+		}
+
+		path = {
+			leads_to_tech = fire_focus
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = armor_focus
+			research_cost_coeff = 1
 		}
 		
 		doctrine = yes	
@@ -601,7 +624,61 @@ technologies = {
 
 		folder = {
 			name = naval_doctrine_folder
-			position = { x = 5 y = 4 }
+			position = { x = 4 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		ai_research_weights = {
+			naval_doctrine = -1.0
+		}
+	}
+	
+	fire_focus = {
+
+		navy_capital_ship_attack_factor = 0.1
+		
+		xor = { armor_focus }
+		
+		doctrine = yes	
+		research_cost = 2
+		
+		categories = {
+			naval_doctrine
+		}
+
+		folder = {
+			name = naval_doctrine_folder
+			position = { x = 3 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		ai_research_weights = {
+			naval_doctrine = -1.0
+		}
+	}
+	
+	armor_focus = {
+		
+		navy_capital_ship_defence_factor = 0.10
+		
+		xor = { fire_focus }
+
+		doctrine = yes	
+		research_cost = 2
+		
+		categories = {
+			naval_doctrine
+		}
+
+		folder = {
+			name = naval_doctrine_folder
+			position = { x = 5 y = 8 }
 		}
 		
 		ai_will_do = {
