@@ -6,7 +6,7 @@ set_research_slots = 3
 
 add_ideas = {
 	limited_conscription
-	retarded_officers
+	TUR_incompetant_officers_idea
 	ethnic_tensions
 }
 
@@ -31,11 +31,11 @@ set_politics = {
 
 	parties = {
 		democratic = { 
-			popularity = 0
+			popularity = 17
 		}
 
 		fascism = {
-			popularity = 95
+			popularity = 60
 	
 		}
 		
@@ -45,12 +45,12 @@ set_politics = {
 		}
 
 		neutrality = {
-			popularity = 5
+			popularity = 23
 		}
 	}
 	
 	ruling_party = fascism
-	last_election = "1935.2.8"
+	last_election = "1908.11.1"
 	election_frequency = 48
 	elections_allowed = no
 }
@@ -65,7 +65,7 @@ create_country_leader = {
 	desc = "POLITICS_MEHMED_V_DESC"
 	picture = "Portrait_Ottoman_Padishah_Mehmed_V.dds"
 	expire = "1965.1.1"
-	ideology = absolutism
+	ideology = ottomanism
 	traits = {
 		cornered_fox
 	}
@@ -111,34 +111,27 @@ create_country_leader = {
 	}
 }
 
-create_corps_commander = {
-	name = "Cemil Cahit Toydemir"
-	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_1.dds"
-	traits = { desert_fox }
-	skill = 3
+create_field_marshal = {
+	name = "Enver Pasha"
+	id = 2337 
+	portrait_path = "gfx/leaders/TUR/Portrait_Enver_Pasha.dds"
+	traits = { offensive_doctrine fast_planner inspirational_leader }
+	skill = 4
+}
 
+create_field_marshal = {
+	name = "Ali Rıza Pasha"
+	id = 2338
+	portrait_path = "gfx/leaders/TUR/Portrait_Ali_Riza_Pasha.dds"
+	traits = { thorough_planner }
+	skill = 2 
 }
 
 create_corps_commander = {
-	name = "Nazmi Solok"
-	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_3.dds"
-	traits = { trickster }
-	skill = 2
-
-}
-
-create_corps_commander = {
-	name = "Salih Omurtak"
-	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_4.dds"
-	traits = {  hill_fighter }
-	skill = 2
-
-}
-
-create_corps_commander = {
-	name = "Rauf Orbay"
-	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_navy_1.dds"
-	traits = {  }
+	name = "Kölemen Abdullah Pasha"
+	id = 2339 
+	portrait_path = "gfx/leaders/TUR/Portrait_Kolemen_Abdullah_Pasha.dds"
+	traits = { }
 	skill = 2
 }
 

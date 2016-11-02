@@ -22,7 +22,7 @@ ideas = {
 			}
 		}
 		
-		retarded_officers = {
+		TUR_incompetant_officers_idea = {
 			
 			removal_cost = -1
 	
@@ -34,7 +34,7 @@ ideas = {
 				always = yes
 			}
 			
-			picture = officers_purged_pic
+			picture = ide_general_staff
 			
 			research_bonus = {
 				land_doctrine = -0.5
@@ -42,10 +42,11 @@ ideas = {
 			
 			modifier = {
 				army_org_Factor = -0.25
+				planning_speed = -0.2
 			}
 		}
 		
-		officers_purged = {
+		TUR_officers_purged_idea = {
 			
 			removal_cost = -1
 	
@@ -57,7 +58,7 @@ ideas = {
 				always = yes
 			}
 			
-			picture = officers_purged_pic
+			picture = FRA_scw_intervention_republicans_focus
 			
 			
 			research_bonus = {
@@ -68,7 +69,7 @@ ideas = {
 			}
 		}
 		
-		officers_purged_2 = {
+		TUR_officers_purged_2_idea = {
 			
 			removal_cost = -1
 	
@@ -80,7 +81,7 @@ ideas = {
 				always = yes
 			}
 			
-			picture = officers_purged_2_pic
+			picture = FRA_scw_intervention_republicans_focus
 			
 			
 			research_bonus = {
@@ -91,7 +92,7 @@ ideas = {
 			}
 		}
 		
-		officers_purged_3 = {
+		TUR_officers_purged_3_idea = {
 			
 			removal_cost = -1
 	
@@ -103,7 +104,7 @@ ideas = {
 				always = yes
 			}
 			
-			picture = officers_purged_3_pic
+			picture = FRA_scw_intervention_republicans_focus
 			
 			
 			research_bonus = {
@@ -114,7 +115,7 @@ ideas = {
 			}
 		}
 		
-		officers_purged_4 = {
+		TUR_officers_purged_4_idea = {
 			
 			removal_cost = -1
 	
@@ -126,7 +127,7 @@ ideas = {
 				always = yes
 			}
 			
-			picture = officers_purged_4_pic
+			picture = FRA_scw_intervention_republicans_focus
 			
 			
 			research_bonus = {
@@ -137,7 +138,7 @@ ideas = {
 			}
 		}
 		
-		officers_purged_5 = {
+		TUR_officers_purged_5_idea = {
 			
 			removal_cost = -1
 	
@@ -149,7 +150,7 @@ ideas = {
 				always = yes
 			}
 			
-			picture = officers_purged_5_pic
+			picture = FRA_scw_intervention_republicans_focus
 			
 			
 			research_bonus = {
@@ -160,7 +161,7 @@ ideas = {
 			}
 		}
 		
-		officers_purged_6 = {
+		TUR_officers_purged_6_idea = {
 			
 			removal_cost = -1
 	
@@ -172,7 +173,7 @@ ideas = {
 				always = yes
 			}
 			
-			picture = officers_purged_6_pic
+			picture = FRA_scw_intervention_republicans_focus
 			
 			
 			research_bonus = {
@@ -180,6 +181,230 @@ ideas = {
 			}
 			modifier = {
 				army_org_Factor = -0.3
+			}
+		}
+		
+		TUR_officers_disloyal_idea = {
+			picture = FRA_scw_intervention_nationalists_focus
+			removal_cost = -1 
+			
+			allowed = {
+				always = no 
+			}
+			
+			allowed_civil_war = {
+				always = yes 
+			}
+			
+			modifier = {
+				army_org_factor = -0.05 
+				max_planning = -0.1
+			}
+		}
+		
+		TUR_politicians_disloyal_idea = {
+			picture = generic_disjointed_gov 
+			removal_cost = -1 
+			
+			allowed = {
+				always = no 
+			}
+			allowed_civil_war = {
+				always = yes 
+			}
+			
+			modifier = {
+				political_power_factor = -0.3 
+				unity_factor = -0.02 
+				democratic_drift = 0.01
+			}
+		}
+		
+		TUR_army_reform_1_idea = {
+			picture = generic_research_bonus
+			removal_cost = -1 
+			
+			allowed = {
+				always = no 
+			}
+			
+			allowed_civil_war = {
+				always = yes 
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.1 
+				infantry_weapons = 0.08 
+			}
+		}
+		
+		TUR_opposition_eliminated_idea = {
+			picture = SOV_scientist_defect
+			removal_cost = -1 
+			
+			allowed = {
+				always = no 
+			}
+			
+			allowed_civil_war = {
+				always = yes 
+			}
+			
+			modifier = {
+				political_power_factor = -0.5 
+				enemy_partisan_effect = 0.02 
+				democratic_acceptance = -40
+			}
+		}
+		
+		TUR_political_chaos = {
+			picture = generic_disjointed_gov
+			removal_cost = -1 
+			
+			allowed = {
+				always = no 
+			}
+			
+			allowed_civil_war = {
+				always = yes 
+			}
+			
+			modifier = {
+				political_power_factor = -0.2 
+				unity_factor = -0.1 
+				army_org_factor = -0.05 
+				foreign_subversive_activites = 0.5 
+			}
+		}
+		
+		TUR_political_chaos_2 = {
+			picture = generic_disjointed_gov 
+			removal_cost = -1 
+			
+			allowed = {
+				always = no 
+			}
+			
+			allowed_civil_war = {
+				always = yes 
+			}
+			
+			modifier = {
+				political_power_factor = -0.1 
+				unity_factor = -0.05 
+				foreign_subversive_activites = 0.25 
+			}
+		}
+		
+		TUR_recent_coup_idea = {
+			picture = generic_spy_political 
+			removal_cost = -1 
+			
+			allowed = {
+				always = no 
+			}
+			
+			allowed_civil_war = {
+				always = yes 
+			}
+			
+			modifier = {
+				foreign_subversive_activites = -0.5 
+				political_power_factor = -0.33 
+				unity_factor = 0.15 
+				democratic_drift = -0.03
+			}
+		}
+		TUR_janissaries_idea = {
+			picture = german_advisors 
+			removal_cost = -1 
+			
+			allowed = {
+				always = no 
+			}
+			
+			allowed_civil_war = {
+				always = yes 
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.07 
+				infantry_weapons = 0.03 
+			}
+			
+			modifier = {
+				army_attack_factor = 0.1
+				experience_gain_army_factor = 0.05 
+				training_time_army_factor = 0.1 
+				army_org_Factor = 0.05 
+				army_morale_factor = 0.04
+			}
+		}
+		TUR_ethnic_tensions = {
+			picture = ethnic_tensions_pic
+			removal_cost = -1 
+			
+			allowed = {
+				always = no  
+			}
+			
+			allowed_civil_war = {
+				always = yes 
+			}
+			
+			modifier = {
+				unity_factor = -0.25 
+				conscription = -0.005 
+			}
+		}
+		TUR_neutrality_drift = {
+			picture = neutrality_idea
+			removal_cost = -1 
+			
+			allowed = {
+				always = no 
+			}
+			
+			allowed_civil_war = {
+				always = yes 
+			}
+			
+			modifier = {
+				neutrality_drift = 0.1 
+			}
+		}
+		TUR_religious_tensions = {
+			picture = ethnic_tensions_pic
+			removal_cost = -1 
+			
+			allowed = {
+				always = no 
+			}
+			
+			allowed_civil_war = {
+				always = yes 
+			}
+			
+			modifier = {
+				unity_factor = -0.15 
+				conscription = -0.0025 
+			}
+		}
+		TUR_unified_nation_idea = {
+			picture = FRA_matignon_agreements
+			removal_cost = -1 
+			
+			allowed = {
+				always = no 
+			}
+			
+			allowed_civil_war = {
+				always = yes 
+			}
+			
+			modifier = {
+				unity_factor = 0.1 
+				conscription = 0.01 
 			}
 		}
 	}

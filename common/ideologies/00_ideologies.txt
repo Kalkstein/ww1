@@ -69,7 +69,10 @@ ideologies = {
 
 			imperialism = {
 			}
-
+			
+			ottomanism = {
+			}
+			
 		}
 		
 		dynamic_faction_names = {

@@ -642,6 +642,11 @@ opinion_modifiers = {
 	BUL_sent_ships = { value = 30 }
 	
 	
+	#Ottoman focus tree 
+	
+	TUR_refused_mission = { value = -25 decay = 1 }
+	
+	
 	# Russian focus tree
 	
 	russian_saber_rattling = { value = -50 }

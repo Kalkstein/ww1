@@ -1,8 +1,8 @@
 
 state={
-	id=343
-	name="STATE_343" # Afyon
-	manpower = 955763
+	id=349
+	name="STATE_349"
+	manpower = 592821
 	
 	state_category = rural
 
@@ -16,6 +16,6 @@ state={
 	}
 
 	provinces={
-		784 856 981 3856 3876 3983 6877 6945 9878 10041 11796 11831 11907 
+		3890 3903 3950 6919 6950 6965 9761 9777 9860 9868 11797 
 	}
 }

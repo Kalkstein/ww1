@@ -13,12 +13,11 @@ country_event = {
 	picture = GFX_report_event_soldiers_marching
 
 	is_triggered_only = yes
-	trigger = {	has_idea = officers_purged }
 
 	immediate = {
 		hidden_effect = {
-			remove_ideas = officers_purged
-			add_ideas = { officers_purged_2 }
+			remove_ideas = TUR_officers_purged_idea
+			add_ideas = { TUR_officers_purged_2_idea }
 			country_event = { id = turkey.2 days = 160 }
 		}
 	}
@@ -34,12 +33,11 @@ country_event = {
 	picture = GFX_report_event_soldiers_marching
 
 	is_triggered_only = yes
-	trigger = {	has_idea = officers_purged_2 }
 
 	immediate = {
 		hidden_effect = {
-			remove_ideas = officers_purged_2
-			add_ideas = { officers_purged_3 }
+			remove_ideas = TUR_officers_purged_2_idea 
+			add_ideas = { TUR_officers_purged_3_idea }
 			country_event = { id = turkey.3 days = 160 }
 		}
 	}
@@ -55,12 +53,11 @@ country_event = {
 	picture = GFX_report_event_soldiers_marching
 
 	is_triggered_only = yes
-	trigger = {	has_idea = officers_purged_3 }
 
 	immediate = {
 		hidden_effect = {
-			remove_ideas = officers_purged_3
-			add_ideas = { officers_purged_4 }
+			remove_ideas = TUR_officers_purged_3_idea
+			add_ideas = { TUR_officers_purged_4_idea }
 			country_event = { id = turkey.4 days = 160 }
 		}
 	}
@@ -76,12 +73,11 @@ country_event = {
 	picture = GFX_report_event_soldiers_marching
 
 	is_triggered_only = yes
-	trigger = {	has_idea = officers_purged_4 }
 
 	immediate = {
 		hidden_effect = {
-			remove_ideas = officers_purged_4
-			add_ideas = { officers_purged_5 }
+			remove_ideas = TUR_officers_purged_4_idea 
+			add_ideas = { TUR_officers_purged_5_idea }
 			country_event = { id = turkey.5 days = 160 }
 		}
 	}
@@ -97,12 +93,11 @@ country_event = {
 	picture = GFX_report_event_soldiers_marching
 
 	is_triggered_only = yes
-	trigger = {	has_idea = officers_purged_5 }
 
 	immediate = {
 		hidden_effect = {
-			remove_ideas = officers_purged_5
-			add_ideas = { officers_purged_6 }
+			remove_ideas = TUR_officers_purged_5_idea
+			add_ideas = { TUR_officers_purged_6_idea }
 			country_event = { id = turkey.6 days = 160 }
 		}
 	}
@@ -118,14 +113,391 @@ country_event = {
 	picture = GFX_report_event_soldiers_marching
 
 	is_triggered_only = yes
-	trigger = {	has_idea = officers_purged_6 }
 
 	immediate = {
 		hidden_effect = {
-			remove_ideas = officers_purged_6
+			remove_ideas = TUR_officers_purged_6_idea
 		}
 	}
 	option = {
 		name = turkey.6.a
+	}
+}
+
+#1912 Early Elections 
+country_event = {
+	id = turkey.7
+	title = turkey.7.t 
+	desc = turkey.7.d 
+	picture = GFX_report_event_election_vote 
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = turkey.7.a 
+		custom_effect_tooltip = TUR_reduce_penalty_tt 
+		hidden_effect = {
+			remove_ideas = TUR_political_chaos
+			add_ideas = TUR_political_chaos_2 
+			set_country_flag = TUR_1912_elections
+		}
+	}
+}
+
+#Coup of 1912 
+country_event = {
+	id = turkey.8 
+	title = turkey.8.t 
+	desc = turkey.8.d 
+	picture = GFX_report_event_chinese_soldiers_running
+	
+	trigger = {
+		has_country_flag = TUR_1912_elections
+		date > 1912.7.16
+		tag = TUR 
+	}
+	
+	fire_only_once = yes 
+	
+	mean_time_to_happen = {
+		days = 1 
+	}
+	
+	option = {
+		name = turkey.8.a 
+		add_timed_idea = { idea = TUR_recent_coup_idea days = 100 }
+		add_political_power = -200 
+		hidden_effect = {
+			remove_ideas = TUR_political_chaos_2 
+			add_ideas = TUR_political_chaos
+			set_country_flag = TUR_1912_coup
+			clr_country_flag = TUR_1912_elections
+		}
+	}
+}
+
+#Coup of 1913 
+country_event = {
+	id = turkey.9 
+	title = turkey.9.t 
+	desc = turkey.9.d 
+	picture = GFX_report_event_czech_soldiers_01 
+	fire_only_once = yes 
+	
+	trigger = {
+		has_country_flag = TUR_1912_coup
+		has_global_flag = balkan_war_over
+		date > 1913.1.12 
+		tag = TUR 
+	}
+	
+	mean_time_to_happen = {
+		days = 1 
+	}
+	
+	option = {
+		name = turkey.9.a 
+		add_timed_idea = { idea = TUR_recent_coup_idea days = 100 }
+		add_political_power = -200 
+		set_country_flag = TUR_1913_coup
+	}
+}
+
+#Young Turks Purged Phase I (High Ranking Members)
+country_event = {
+	id = turkey.10 
+	title = turkey.10.t 
+	desc = turkey.10.d 
+	picture = GFX_report_event_soviet_purge_trial
+	
+	trigger = {
+		tag = TUR
+		NOT = { has_completed_focus = TUR_root_out_young_turks }
+		focus_progress = {
+			focus = TUR_root_out_young_turks
+			progress > 0.25
+		}
+	}
+	
+	fire_only_once = yes 
+	
+	mean_time_to_happen = {
+		days = 1 
+	}
+	
+	option = {
+		name = turkey.10.a 
+		add_national_unity = -0.1 
+		add_political_power = -100 
+		hidden_effect = {
+			clr_country_flag = TUR_monarchy_3_flag
+		}
+	}
+}
+
+#Young Turks Purged Phase II (Officers)
+country_event = {
+	id = turkey.11 
+	title = turkey.11.t 
+	desc = turkey.11.d 
+	picture = GFX_report_event_soviet_purge_trial
+	
+	trigger = {
+		tag = TUR 
+		NOT = { has_completed_focus = TUR_root_out_young_turks }
+		focus_progress = {
+			focus = TUR_root_out_young_turks 
+			progress > 0.75 
+		}
+	}
+	
+	fire_only_once = yes 
+	
+	mean_time_to_happen = {
+		days = 1 
+	}
+	
+	option = {
+		name = turkey.10.a 
+		ai_chance = {
+			factor = 85 
+		}
+		remove_unit_leader = 2337
+		remove_unit_leader = 2338 
+		remove_unit_leader = 2339 
+		hidden_effect = {
+			clr_country_flag = TUR_monarchy_4_flag
+		}
+	}
+	
+	option = {
+		name = turkey.10.b 
+		ai_chance = {
+			factor = 15 
+		}
+		custom_effect_tooltip = TUR_civil_war_may_tt
+		hidden_effect = {
+			random_list = {
+				40 = { TUR = { clr_country_flag = TUR_monarchy_4_flag } }
+				60 = { }
+			}
+		}
+	}
+}
+
+#Ottoman Civil War
+country_event = {
+	id = turkey.11 
+	title = turkey.11.t 
+	desc = turkey.11.d 
+	picture = GFX_report_event_spain_civil_war_soldiers
+	
+	trigger = {
+		OR = {
+			has_country_flag = TUR_monarchy_1_flag
+			has_country_flag = TUR_monarchy_2_flag
+			has_country_flag = TUR_monarchy_3_flag
+			has_country_flag = TUR_monarchy_4_flag
+		}
+		date > 1915.1.1 
+	}
+	
+	fire_only_once = yes 
+	
+	mean_time_to_happen = {
+		days = 90 
+	}
+	
+	option = {
+		name = turkey.11.a 
+		hidden_effect = {
+			set_capital = 341
+			start_civil_war = {
+				ruling_party = fascism
+				ideology = neutrality
+				size = 0.5
+				capital = 49
+				states = { 49 343 346 348 349 350 353 352 680 676 291 675 455 679 293 }
+			}
+			random_country = {
+				limit = {
+					original_tag = TUR
+					has_government = neutrality
+				}
+				
+				set_national_unity = 0.6
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.37
+				}
+			}
+			news_event = { hours = 12 id = news.243 }
+			set_global_flag = ottoman_civil_war
+			
+			set_national_unity = 0.8
+			
+			add_popularity = {
+				ideology = fascism
+				popularity = 1
+			}
+		}
+		custom_effect_tooltip = TUR_civil_war_begins_tt
+	}
+}
+
+#Military Mission Request
+country_event = {
+	id = turkey.12 
+	title = turkey.12.t 
+	desc = turkey.12.d 
+	picture = GFX_report_event_british_inspect_troops
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = turkey.12.a 
+		ai_chance = {
+			factor = 95 
+				modifier = {
+				factor = 0.03 
+					has_opinion = { target = TUR value < -30 }
+				}
+		}
+		if = {
+			limit = {
+				tag = FRA 
+			}
+			TUR = { country_event = { id = turkey.13 days = 3 } }
+			effect_tooltip = {
+				TUR = {
+					add_tech_bonus = {
+						name = infantry_weapons_bonus
+						uses = 1 
+						bonus = 0.5 
+						category = infantry_weapons
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				tag = ENG
+			}
+			TUR = { country_event = { id = turkey.14 days = 3 } }
+			effect_tooltip = {
+				TUR = {
+					add_tech_bonus = {
+						name = airplane_bonus
+						uses = 1 
+						bonus = 0.5 
+						category = air_equipment
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				tag = GER
+			}
+			TUR = { country_event = { id = turkey.15 days = 3 } }
+			effect_tooltip = {
+				TUR = {
+					add_tech_bonus = {
+						name = support_bonus
+						uses = 1 
+						bonus = 0.5 
+						category = support_tech
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = turkey.12.b 
+		ai_chance = {
+			factor = 5 
+		}
+		TUR = {
+			add_opinion_modifier = {
+				target = ROOT 
+				modifier = TUR_refused_mission
+			}
+			country_event = { id = turkey.16 days = 4 }
+		}
+	}
+}
+
+#France Sends Mission 
+country_event = {
+	id = turkey.13 
+	title = turkey.13.t 
+	desc = turkey.13.d 
+	picture = GFX_report_event_degaulle_inspect_troops
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = turkey.13.a 
+		add_tech_bonus = {
+			name = infantry_weapons_bonus
+			uses = 1 
+			bonus = 0.5 
+			category = infantry_weapons
+		}
+	}
+}
+
+#Britain Sends Mission 
+country_event = {
+	id = turkey.14 
+	title = turkey.14.t 
+	desc = turkey.14.d 
+	picture = GFX_report_event_british_inspect_troops
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = turkey.14.a 
+		add_tech_bonus = {
+			name = airplane_bonus
+			uses = 1 
+			bonus = 0.5 
+			category = air_equipment
+		}
+	}
+}
+
+#Germany Sends Mission
+country_event = {
+	id = turkey.15 
+	title = turkey.15.t 
+	desc = turkey.15.d 
+	picture = GFX_report_event_german_inspect_troops
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = turkey.15.a 
+		add_tech_bonus = {
+			name = support_bonus
+			uses = 1 
+			bonus = 0.5 
+			category = support_tech
+		}		
+	}
+}
+
+#[From.GetName] Refuses Mission
+country_event = {
+	id = turkey.16 
+	title = turkey.16.t 
+	desc = turkey.16.d 
+	picture = GFX_report_event_read_write
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = turkey.16.a 
 	}
 }
