@@ -62,7 +62,54 @@ focus_tree = {
 			}
 	}
 
+	focus = {
+		id = TUR_industrial_reformation
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = TUR_baghdad_railway_effort }
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
 		
+		bypass = {
+			341 = {	
+				free_building_slots = {
+					building = industrial_complex
+						size < 3
+						include_locked = yes
+				}
+			}
+		}
+		available = {
+			341 = {
+				is_owned_by = TUR
+			}
+			344 = {
+				is_owned_by = TUR
+				}
+		}
+		completion_reward = {
+			341 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes						
+				}
+			}
+			344 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes						
+				}
+			}
+		}
+	}	
+	
 	focus = {
 		id = TUR_continue_the_railway
 		icon = GFX_goal_generic_construct_civilian
@@ -135,33 +182,256 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = TUR_develop_our_new_lands
-		icon = GFX_goal_generic_construct_civilian
-		prerequisite = { focus = TUR_reclaim_bulgaria }
+		id = TUR_military_production
+		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = TUR_continue_the_railway }
-		x = 3
+		x = 1
 		y = 2
 		cost = 10
 		ai_will_do = {
 			factor = 10
 		}
 		
+		available = {
+			346 = {
+				is_owned_by = TUR
+			}
+		}
+		completion_reward = {
+			346 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = TUR_european_fortifications
+		icon = GFX_goal_generic_construct_military
+		prerequisite = { focus = TUR_military_production }
 		bypass = {
-				49 = {
+			NOT = {
+				341 = {
+					owner = { tag = TUR }
+				}
+			}
+		}
+		x = 1 
+		y = 3 
+		cost = 10 
+		completion_reward = {
+			341 = {
+				add_building_construction = {
+					type = bunker 
+					level = 6
+					instant_build = yes 
+					province = 922 
+				}
+				add_building_construction = {
+					type = bunker 
+					level = 6
+					instant_build = yes 
+					province = 11842  
+				}
+				add_building_construction = {
+					type = bunker 
+					level = 6
+					instant_build = yes 
+					province = 3893 
+				}
+				add_building_construction = {
+					type = bunker 
+					level = 6
+					instant_build = yes 
+					province = 849
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = TUR_the_desert_push
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = TUR_military_production }
+		x = 4
+		y = 3
+		cost = 15
+		ai_will_do = {
+			factor = 10
+		}
+		
+		bypass = {
+				350 = {
 					free_building_slots = {
 						building = infrastructure
 						size < 2
 					}
 				}
 				
-				346 = {
+				352 = {
 					free_building_slots = {
 						building = infrastructure
 						size < 2
 					}
 				}
 				
-				348 = {
+				676 = {
+					free_building_slots = {
+						building = infrastructure
+						size < 2
+					}
+				}
+				
+				353 = {
+					free_building_slots = {
+						building = infrastructure
+						size < 3
+					}
+				}
+				
+				680 = {
+					free_building_slots = {
+						building = infrastructure
+						size < 1
+					}
+				}
+			}
+	
+		available = {
+			350 = {
+				is_owned_by = TUR
+			}
+			352 = {
+				is_owned_by = TUR
+			}
+			676 = {
+				is_owned_by = TUR 
+			}
+			680 = {
+				is_owned_by = TUR 
+			} 
+			353 = { 
+				is_owned_by = TUR 
+			}
+		}
+		completion_reward = {
+			350 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes						
+					}
+			}
+			352 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes						
+					}
+			}
+			676 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes						
+					}
+			}
+			680 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes						
+					}
+			}
+			353 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes						
+					}
+			}
+		}
+	}
+	
+	focus = {
+		id = TUR_civilian_supply
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = TUR_european_fortifications }
+		x = 1
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available = {
+			347 = {
+				is_owned_by = TUR
+			}
+			355 = {
+				is_owned_by = TUR
+			}
+			356 = {
+				is_owned_by = TUR
+			}
+		}
+		completion_reward = {
+			347 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			355 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			356 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = TUR_extra_slot
+		icon = GFX_focus_research
+		prerequisite = { focus = TUR_civilian_supply }
+		x = 1 
+		y = 5 
+		cost = 10 
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	
+	focus = {
+		id = TUR_reach_bagdad
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = TUR_the_desert_push }
+		x = 3
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		
+		bypass = {
+				291 = {
 					free_building_slots = {
 						building = infrastructure
 						size < 2
@@ -170,42 +440,65 @@ focus_tree = {
 			}
 	
 		available = {
-			48 = {
+			291 = {
 				is_owned_by = TUR
-			}
-			212 = {
-				is_owned_by = TUR
-			}
-			211 = {
-				is_owned_by = TUR 
 			}
 		}
-		completion_reward = {
-			211 = {
+		completion_reward = {		
+			291 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes						
 				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes						
-				}
+			}	
+		}
+	}
+	
+	focus = {
+		id = TUR_persian_gulf_harbors
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = TUR_the_desert_push }
+		x = 5
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+			
+		available = {
+			291 = {
+				is_owned_by = TUR
 			}
-			212 = {
+		}
+		completion_reward = {		
+			291 = {
 				add_building_construction = {
-					type = infrastructure
-					level = 1
+					type = naval_base
+					level = 5
+					province = 2089
 					instant_build = yes						
 				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes						
-				}
+			}	
+		}
+	}
+	
+	focus = {
+		id = TUR_construction_technology
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = TUR_extra_slot }
+		x = 1
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = construction_tech_bonus
+				bonus = 0.5
+				uses = 2
+				category = construction_tech
 			}
 		}
 	}
@@ -213,9 +506,9 @@ focus_tree = {
 	focus = {
 		id = TUR_mersin_yenice_adana_line
 		icon = GFX_goal_generic_production
-		prerequisite = { focus = TUR_continue_the_railway }
-		x = 1
-		y = 2
+		prerequisite = { focus = TUR_reach_bagdad }
+		x = 3
+		y = 6
 		cost = 10
 		ai_will_do = {
 			factor = 10
@@ -295,242 +588,127 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = TUR_construction_technology
-		icon = GFX_goal_generic_national_unity
-		prerequisite = { focus = TUR_mersin_yenice_adana_line }
-		x = 3
-		y = 3
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		completion_reward = {
-			add_tech_bonus = {
-				name = construction_tech_bonus
-				bonus = 0.5
-				uses = 2
-				category = construction_tech
-			}
-		}
-	}
-	
-	focus = {
-		id = TUR_industrial_reformation
-		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = TUR_mersin_yenice_adana_line }
-		x = 1
-		y = 3
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		
-		bypass = {
-				341 = {	free_building_slots = {
-					building = industrial_complex
-						size < 3
-						include_locked = yes
-					}
-			}
-		}
-		available = {
-			341 = {
-				is_owned_by = TUR
-			}
-			344 = {
-				is_owned_by = TUR
-				}
-		}
-		completion_reward = {
-			341 = {
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-					instant_build = yes						
-				}
-			}
-			344 = {
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes						
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = TUR_industrial_research
-		icon = GFX_focus_research
-		prerequisite = { focus = TUR_industrial_reformation }
-		x = 1
-		y = 4
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		
-		available = {
-			341 = {
-				is_owned_by = TUR
-			}
-		}
-		completion_reward = {
-			add_research_slot = 1
-		}
-	}
-	
-	
-	focus = {
-		id = TUR_the_desert_push
-		icon = GFX_goal_generic_construction
-		prerequisite = { focus = TUR_construction_technology }
-		x = 3
-		y = 4
-		cost = 20
-		ai_will_do = {
-			factor = 10
-		}
-		
-		bypass = {
-				350 = {
-					free_building_slots = {
-						building = infrastructure
-						size < 2
-					}
-				}
-				
-				352 = {
-					free_building_slots = {
-						building = infrastructure
-						size < 2
-					}
-				}
-				
-				676 = {
-					free_building_slots = {
-						building = infrastructure
-						size < 2
-					}
-				}
-			}
-	
-		available = {
-			350 = {
-				is_owned_by = TUR
-			}
-			352 = {
-				is_owned_by = TUR
-			}
-			676 = {
-				is_owned_by = TUR 
-			}
-		}
-		completion_reward = {
-			350 = {
-					add_building_construction = {
-						type = infrastructure
-						level = 2
-						instant_build = yes						
-					}
-			}
-			352 = {
-					add_building_construction = {
-						type = infrastructure
-						level = 2
-						instant_build = yes						
-					}
-			}
-			676 = {
-					add_building_construction = {
-						type = infrastructure
-						level = 2
-						instant_build = yes						
-					}
-			}
-		}
-	}
-	
-	
-	
-	focus = {
-		id = TUR_reach_bagdad
-		icon = GFX_goal_generic_construct_civilian
-		prerequisite = { focus = TUR_the_desert_push }
-		x = 3
-		y = 5
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		
-		bypass = {
-				291 = {
-					free_building_slots = {
-						building = infrastructure
-						size < 2
-					}
-				}
-			}
-	
-		available = {
-			291 = {
-				is_owned_by = TUR
-			}
-		}
-		completion_reward = {		
-			291 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes						
-				}
-			}	
-		}
-	}
-		
-	focus = {
-		id = TUR_persian_gulf_harbors
-		icon = GFX_goal_generic_construct_naval_dockyard
-		prerequisite = { focus = TUR_reach_bagdad }
-		x = 3
+		id = TUR_domestic_trade
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		prerequisite = { focus = TUR_persian_gulf_harbors }
+		x = 5
 		y = 6
 		cost = 10
 		ai_will_do = {
 			factor = 10
 		}
-			
+		
 		available = {
-			291 = {
+			183 = {
+				is_owned_by = TUR
+			}
+			454 = {
+				is_owned_by = TUR
+			}
+			677 = {
 				is_owned_by = TUR
 			}
 		}
-		completion_reward = {		
-			291 = {
+		completion_reward = {
+			183 = {
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
-					type = naval_base
-					level = 5
-					province = 2089
-					instant_build = yes						
+					type = dockyard
+					level = 1
+					instant_build = yes
 				}
-			}	
+			}
+			454 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			677 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
-	
+	focus = {
+		id = TUR_russia_border_fort
+		icon = GFX_goal_generic_construct_military
+		prerequisite = { focus = TUR_construction_technology }
+		bypass = {
+			NOT = {
+				354 = {
+					is_owned_by = TUR 
+				}
+				353 = {
+					is_owned_by = TUR 
+				}
+			}
+		}
+		x = 1 
+		y = 7 
+		cost = 10 
+		completion_reward = {
+			354 = {
+				add_building_construction = {
+					type = bunker 
+					level = 3 
+					instant_build = yes 
+					province = 7454 
+				}
+				add_building_construction = {
+					type = bunker 
+					level = 3 
+					instant_build = yes 
+					province = 10403
+				}
+				add_building_construction = {
+					type = bunker 
+					level = 3 
+					instant_build = yes 
+					province = 10472 
+				}
+			}
+			353 = {
+				add_building_construction = {
+					type = bunker 
+					level = 3 
+					instant_build = yes 
+					province = 12376 
+				}
+				add_building_construction = {
+					type = bunker 
+					level = 3 
+					instant_build = yes 
+					province = 4583 
+				}
+			}
+		}
+	}
 	
 	focus = {
 		id = TUR_mesopotamian_oil
 		icon = GFX_goal_generic_oil_refinery
-		prerequisite = { focus = TUR_persian_gulf_harbors }
-		available = {
-			TUR = {
-				controls_state = 291
+		prerequisite = { focus = TUR_russia_border_fort }
+		prerequisite = { focus = TUR_mersin_yenice_adana_line }
+		prerequisite = { focus = TUR_domestic_trade }
+		bypass = {
+			NOT = {
+				TUR = {
+					controls_state = 291 
+					controls_state = 676 
+					controls_state = 675
+				}
 			}
 		}
-		
-		x = 3
-		y = 6
+		x = 2
+		y = 8
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -541,137 +719,205 @@ focus_tree = {
 				amount = 14
 				state = 291
 			}
-		}
-	}
-
-	focus = {
-		id = TUR_military_production
-		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = TUR_construction_technology }
-		x = 5
-		y = 4
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		
-		available = {
-			346 = {
-				is_owned_by = TUR
+			add_resource = {
+				type = oil
+				amount = 5
+				state = 676
 			}
-		}
-		completion_reward = {
-			346 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
+			add_resource = {
+				type = oil
+				amount = 12
+				state = 675
 			}
 		}
 	}
 	
 	focus = {
-		id = TUR_civilian_supply
-		icon = GFX_goal_generic_production
-		prerequisite = { focus = TUR_military_production }
-		x = 5
-		y = 5
-		cost = 10
-		ai_will_do = {
-			factor = 10
+		id = TUR_improve_chemin_fer
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = TUR_mersin_yenice_adana_line }
+		prerequisite = { focus = TUR_domestic_trade }
+		bypass = {
+			OR = {
+				NOT = {
+					TUR = {
+						controls_state = 347 
+						controls_state = 343 
+						controls_state = 346 
+					}
+				}
+				AND = {
+					346 = {
+						free_building_slots = {
+							building = infrastructure
+							size < 3
+						}
+					}
+				
+					343 = {
+						free_building_slots = {
+							building = infrastructure
+							size < 3
+						}
+					}
+				
+					347 = {
+						free_building_slots = {
+							building = infrastructure
+							size < 2
+						}
+					}
+				}
+			}
 		}
-		
-		available = {
+		x = 6
+		y = 8 
+		cost = 10 
+		completion_reward = {
 			347 = {
-				is_owned_by = TUR
-			}
-			355 = {
-				is_owned_by = TUR
-			}
-			356 = {
-				is_owned_by = TUR
-			}
-		}
-		completion_reward = {
-			347 = {
-				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
+					type = infrastructure
+					level = 2 
+					instant_build = yes 
 				}
 			}
-			355 = {
-				add_extra_state_shared_building_slots = 1
+			346 = {
 				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
+					type = infrastructure 
+					level = 3 
+					instant_build = yes 
 				}
 			}
-			356 = {
-				add_extra_state_shared_building_slots = 1
+			343 = {
 				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
+					type = infrastructure 
+					level = 3 
+					instant_build = yes 
 				}
 			}
 		}
 	}
 	
 	focus = {
-		id = TUR_domestic_trade
-		icon = GFX_goal_generic_navy_doctrines_tactics
-		prerequisite = { focus = TUR_civilian_supply }
-		x = 5
-		y = 6
-		cost = 10
-		ai_will_do = {
-			factor = 10
+		id = TUR_northern_infrastructure
+		icon = GFX_goal_generic_construction2 
+		prerequisite = { focus = TUR_mersin_yenice_adana_line focus = TUR_domestic_trade }
+		bypass = {
+			OR = {
+				NOT = {
+					356 = {
+						is_owned_by = TUR 
+					}
+					355 = {
+						is_owned_by = TUR 
+					}
+					354 = {
+						is_owned_by = TUR 
+					} 
+					348 = {
+						is_owned_by = TUR 
+					} 
+					349 = {
+						is_owned_by = TUR 
+					} 
+				}
+				AND = {
+					348 = {
+						free_building_slots = {
+							building = infrastructure
+							size < 3
+						}
+					}
+				
+					349 = {
+						free_building_slots = {
+							building = infrastructure
+							size < 3
+						}
+					}
+				
+					354 = {
+						free_building_slots = {
+							building = infrastructure
+							size < 2
+						}
+						free_building_slots = {
+							building = arms_factory
+							size < 2
+						}
+					}
+					355 = {
+						free_building_slots = {
+							building = infrastructure
+							size < 4
+						}
+						free_building_slots = {
+							building = industrial_complex
+							size < 1
+						}
+					}
+					356 = {
+						free_building_slots = {
+							building = infrastructure
+							size < 4
+						}
+					}
+				}
+			}
 		}
-		
-		available = {
-			183 = {
-				is_owned_by = TUR
-			}
-			454 = {
-				is_owned_by = TUR
-			}
-			677 = {
-				is_owned_by = TUR
-			}
-		}
+		x = 4 
+		y = 8 
+		cost = 20 
 		completion_reward = {
-			183 = {
-				add_extra_state_shared_building_slots = 1
+			356 = {
 				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
+					type = infrastructure 
+					level = 4 
+					instant_build = yes 
 				}
 			}
-			454 = {
-				add_extra_state_shared_building_slots = 1
+			355 = { 
+				add_extra_state_shared_building_slots = 1 
 				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
+					type = infrastructure 
+					level = 4 
+					instant_build = yes 
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1 
+					instant_build = yes 
 				}
 			}
-			677 = {
-				add_extra_state_shared_building_slots = 1
+			354 = {
+				add_extra_state_shared_building_slots = 2 
 				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
+					type = infrastructure 
+					level = 2 
+					instant_build = yes 
+				}
+				add_building_construction = {
+					type = arms_factory 
+					level = 2 
+					instant_build = yes 
+				}
+			}
+			348 = {
+				add_building_construction = {
+					type = infrastructure 
+					level = 3 
+					instant_build = yes 
+				}
+			}
+			349 = {
+				add_building_construction = {
+					type = infrastructure 
+					level = 3 
+					instant_build = yes 
 				}
 			}
 		}
 	}
-	
 	
 ### End ###
 
