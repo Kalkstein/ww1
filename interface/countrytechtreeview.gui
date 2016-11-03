@@ -530,7 +530,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
-						text = "1900"
+						text = "1915"
 						maxWidth = 80
 						maxHeight = 32
 						format = left
@@ -543,7 +543,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
-						text = "1905"
+						text = "1916"
 						maxWidth = 80
 						maxHeight = 32
 						format = left
@@ -556,7 +556,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
-						text = "1910"
+						text = "1917"
 						maxWidth = 80
 						maxHeight = 32
 						format = left
@@ -569,7 +569,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
-						text = "1912"
+						text = "1918"
 						maxWidth = 80
 						maxHeight = 32
 						format = left
@@ -582,7 +582,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
-						text = "1914"
+						text = "1919"
 						maxWidth = 80
 						maxHeight = 32
 						format = left
@@ -595,7 +595,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
-						text = "1916"
+						text = "1920"
 						maxWidth = 80
 						maxHeight = 32
 						format = left
@@ -608,7 +608,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
-						text = "1918"
+						text = "1922"
 						maxWidth = 80
 						maxHeight = 32
 						format = left
@@ -723,19 +723,6 @@ guiTypes = {
 					format = center
 					Orientation = "UPPER_LEFT"
 				}				
-
-				instantTextBoxType = {
-					name = "armour_subtitle_medium"
-					position = { x = 207 y = 335 }
-					textureFile = ""
-					font = "hoi_33"
-					borderSize = {x = 0 y = 4}
-					text = "ARMOUR_TITLE_MEDIUM"
-					maxWidth = 200
-					maxHeight = 62
-					format = center
-					Orientation = "UPPER_LEFT"
-				}
 
 				instantTextBoxType = {
 					name = "armour_subtitle_light"
