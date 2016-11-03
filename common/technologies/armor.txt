@@ -3,7 +3,7 @@ technologies = {
 	early_armored_car = {
 
 		enable_equipments = {
-			gw_tank_equipment
+			armord_car_equipment_1
 		}
 		
 		path = {
@@ -39,7 +39,7 @@ technologies = {
 	armored_car = {
 
 		enable_equipments = {
-			
+			armord_car_equipment_2
 		}
 		
 		path = {
@@ -67,7 +67,7 @@ technologies = {
 	armored_car_1 = {
 
 		enable_equipments = {
-			
+			armord_car_equipment_3
 		}
 		
 		path = {
@@ -95,7 +95,7 @@ technologies = {
 	armored_car_2 = {
 
 		enable_equipments = {
-			
+			armord_car_equipment_4
 		}
 		
 		path = {
@@ -123,7 +123,7 @@ technologies = {
 	late_armored_car = { 
 
 		enable_equipments = {
-			
+			armord_car_equipment_5
 		}
 
 
@@ -147,7 +147,7 @@ technologies = {
 	early_tank = {
 
 		enable_equipments = {
-			
+			early_tank_equipment
 		}
 		
 		path = {
@@ -179,7 +179,7 @@ technologies = {
 	early_light_tank = {
 
 		enable_equipments = {
-			
+			early_light_tank_equipment
 		}
 		
 		path = {
@@ -207,7 +207,7 @@ technologies = {
 	light_tank = {
 
 		enable_equipments = {
-			
+			early_light_tank_equipment_2
 		}
 		
 		path = {
@@ -235,7 +235,7 @@ technologies = {
 	early_heavy_tank = {
 
 		enable_equipments = {
-			
+			early_medium_tank_equipment
 		}
 		
 		path = {
@@ -263,7 +263,7 @@ technologies = {
 	heavy_tank = {
 
 		enable_equipments = {
-			
+			early_medium_tank_equipment_2
 		}
 		
 		path = {
