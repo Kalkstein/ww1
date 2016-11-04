@@ -62,9 +62,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Anton Mussert"
-	desc = "POLITICS_ANTON_MUSSERT_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+	name = "Koningin Wilhelmina"
+	desc = "POLITICS_WILHELMINA_DESC"
+	picture = "Portrait_Holland_Wilhelmina.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
@@ -73,9 +73,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Lou de Visser"
+	name = "David Wijnkoop"
 	desc = "POLITICS_LOU_DE_VISSER_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	picture = "Portrait_Holland_David_Wijnkoop.dds"
 	expire = "1965.1.1"
 	ideology = leninism
 	traits = {
@@ -84,10 +84,10 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Koningin Wilhelmina"
+	name = "Abraham Kuijper"
 	desc = "POLITICS_WILHELMINA_DESC"
-	picture = Portrait_Holland_Wilhelmina.dds
-	expire = "1948.1.1"
+	picture = Portrait_Holland_Abraham_Kuijper.dds"
+	expire = "1925.1.1"
 	ideology = despotism
 	traits = {
 		#
