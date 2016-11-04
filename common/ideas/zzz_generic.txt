@@ -501,6 +501,25 @@ ideas = {
 				foreign_subversive_activites = -0.75
 			}			
 		}
+
+		consumer_goods = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_goods_red_bonus
+			
+			modifier = {
+				consumer_goods_factor = -0.10
+			}
+		}
 	}
 	
 	political_advisor = {
