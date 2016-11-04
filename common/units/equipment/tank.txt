@@ -143,8 +143,7 @@ equipments = {
 	
 	tank_equipment_2 = {
 		archetype = light_tank_equipment
-		parent = early_medium_tank_equipment
-		parent = 
+		parent = early_light_tank_equipment_2
 		priority = 50
 		visual_level = 1
 						
