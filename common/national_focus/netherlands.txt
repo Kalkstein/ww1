@@ -65,7 +65,7 @@ focus_tree = {
 		#}
 		completion_reward = {
 			7 = {
-			add_extra_state_shared_building_slots = 3
+			add_extra_state_shared_building_slots = 2
 			add_building_construction = {
 					type = industrial_complex
 					level = 2
@@ -137,7 +137,7 @@ focus_tree = {
 		#}
 		completion_reward = {
 			672 = {
-			add_extra_state_shared_building_slots = 4
+			add_extra_state_shared_building_slots = 3
 			add_building_construction = {
 					type = industrial_complex
 					level = 3
@@ -349,7 +349,7 @@ focus_tree = {
 	focus = {
 		id = HOL_army_focus
 		icon = GFX_goal_generic_military_sphere
-		x = 9
+		x = 10
 		y = 0
 		cost = 10
 		completion_reward = {
@@ -361,7 +361,7 @@ focus_tree = {
 		id = HOL_study_russo_japanese_war
 		icon = GFX_goal_generic_position_armies
 		prerequisite = { focus = HOL_army_focus }
-		x = 8
+		x = 9
 		y = 1
 		cost = 10
 		completion_reward = {
@@ -378,7 +378,7 @@ focus_tree = {
 		id = HOL_quick_firing_artillery
 		icon = GFX_goal_generic_army_artillery2
 		prerequisite = { focus = HOL_study_russo_japanese_war }
-		x = 8
+		x = 9
 		y = 2
 		cost = 10
 		completion_reward = {
@@ -395,7 +395,7 @@ focus_tree = {
 		id = HOL_home_military
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = HOL_army_focus }
-		x = 10
+		x = 11
 		y = 1
 		cost = 10
 		#ai_will_do = {
@@ -417,7 +417,7 @@ focus_tree = {
 		id = HOL_colonial_military
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = HOL_home_military }
-		x = 10
+		x = 11
 		y = 2
 		cost = 10
 		#ai_will_do = {
@@ -702,9 +702,9 @@ focus_tree = {
 		prerequisite = { focus = HOL_quick_firing_artillery
 						 focus = HOL_colonial_military }
 		available = {
-			date > 1912.1.1
+			has_war = yes
 		}
-		x = 9
+		x = 10
 		y = 3
 		cost = 10
 		completion_reward = {
@@ -713,14 +713,130 @@ focus_tree = {
 	}
 
 	focus = {
-		id = HOL_mobilization
-		icon = GFX_goal_generic_propaganda
-		prerequisite = { focus =  }
-		x = 10
+		id = HOL_early_mobilization
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = HOL_war_preperations }
+		x = 9
+		y = 4
+		cost = 10
+		completion_reward = {
+			add_ideas = partial_mobilization
+		}
+	}
+
+	focus = { 
+		id = HOL_consumer_goods 
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = HOL_early_mobilization }
+		x = 9
+		y = 5
+		cost = 10
+		completion_reward = {
+			add_ideas = consumer_goods
+		}
+	}
+
+	focus = {
+		id = HOL_national_unity
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = HOL_consumer_goods }
+		x = 9
 		y = 6
 		cost = 10
 		completion_reward = {
-			add_ideas = war_economy
+			add_ideas = why_we_fight_focus
+		}
+	}
+
+	focus = {
+		id = HOL_mobilization
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = HOL_national_unity }
+		available = {
+			has_war = yes
+                any_enemy_country = {
+                    ic_ratio = { 
+                        tag = ROOT 
+                        ratio > 0.5
+                    }
+                }
+		}
+		x = 9
+		y = 7
+		cost = 10
+		completion_reward = {
+			add_ideas = tot_economic_mobilisation
+		}
+	}
+
+	focus = {
+		id = HOL_military_concern
+		icon = GFX_goal_generic_axis_build_infantry
+		prerequisite = { focus = HOL_war_preperations }
+		x = 11
+		y = 4
+		cost = 10
+		completion_reward = {
+			add_tech_bonus = {
+				name = Military_concern
+				bonus = 0.50
+				uses = 2
+				category = Land_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = HOL_weapon_concern
+		icon = GFX_goal_generic_build_tank
+		prerequisite = { focus = HOL_military_concern }
+		x = 11
+		y = 5
+		cost = 10
+		completion_reward = {
+			add_tech_bonus = {
+				name = Military_concern2
+				bonus = 0.50
+				uses = 2
+				category = infantry_weapons
+			}
+		}
+	}
+
+	focus = {
+		id = HOL_special_forces
+		icon = GFX_goal_generic_special_forces
+		prerequisite = { focus = HOL_weapon_concern }
+		x = 11
+		y = 6
+		cost = 10
+		completion_reward = {
+			add_tech_bonus = {
+				name = Military_concern3
+				bonus = 0.50
+				uses = 1
+				technology = tech_mountaineers
+			}
+		}
+	}
+
+	focus = {
+		id = HOL_armored_cars
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = HOL_special_forces }
+		available = {
+			date > 1914.1.1
+		}
+		x = 11
+		y = 7
+		cost = 10
+		completion_reward = {
+			add_tech_bonus = {
+				name = Military_concern2
+				bonus = 0.50
+				uses = 1
+				category = armor
+			}
 		}
 	}
 
