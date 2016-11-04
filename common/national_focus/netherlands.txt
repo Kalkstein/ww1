@@ -471,18 +471,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = HOL_mobilization
-		icon = GFX_goal_generic_propaganda
-		prerequisite = { focus =  }
-		x = 10
-		y = 6
-		cost = 10
-		completion_reward = {
-			add_ideas = war_economy
-		}
-	}
-
-	focus = {
 		id = HOL_neutrality_focus
 		icon = GFX_goal_generic_defence
 		prerequisite = { focus = HOL_defensive }
@@ -698,16 +686,42 @@ focus_tree = {
             set_rule = { can_create_factions = yes }
             create_faction = benelux_faction
             BEL = {
-            	country_event = { id = low.1 days = 1 }
-            	country_event = { id = election.21 days = 1 }
+            	country_event = { id = low.1 days = 2 }
             	add_ideas = neutralism
             }
             LUX = {
-                country_event = { id = low.1 days = 1 }
+                country_event = { id = low.1 days = 2 }
                 add_ideas = neutralism
-                country_event = { id = election.21 days = 1 }
             }
         }
+	}
+
+	focus = {
+		id = HOL_war_preperations
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = HOL_quick_firing_artillery
+						 focus = HOL_colonial_military }
+		available = {
+			date > 1912.1.1
+		}
+		x = 9
+		y = 3
+		cost = 10
+		completion_reward = {
+			add_ideas = limited_conscription
+		}
+	}
+
+	focus = {
+		id = HOL_mobilization
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus =  }
+		x = 10
+		y = 6
+		cost = 10
+		completion_reward = {
+			add_ideas = war_economy
+		}
 	}
 
 

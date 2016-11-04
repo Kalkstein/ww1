@@ -24,8 +24,12 @@ country_event = {
 			ROOT = {
 				add_ai_strategy = {
 					type = alliance
-					id = "FRA"
+					id = "HOL"
 					value = 200
+				}
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
 				}
 			}
 			country_event = { id = low.3 days = 1 }
