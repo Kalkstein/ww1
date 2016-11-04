@@ -276,55 +276,9 @@ focus_tree = {
 
 ###
 
-	focus = {
-		id = HOL_port_of_rotterdam
-		icon = GFX_goal_generic_construct_naval_dockyard
-		
-		x = 0
-		y = 11
-		cost = 10
-		#ai_will_do = {
-		#	factor = 1
-		#}
-		completion_reward = {
-			7 = {
-				add_building_construction ={
-					type = naval_base
-					level = 3
-					instant_build = yes
-					province = 9498
-				}
-				add_building_construction ={
-						type = coastal_bunker
-						level = 3
-						instant_build = yes
-						province = 9498
-				}
-			}
-		}
-	}
+	
 
-	focus = {
-		id = HOL_increase_naval_production
-		icon = GFX_goal_generic_navy_doctrines_tactics
-		
-		x =0
-		y = 10
-		cost = 10
-		#ai_will_do = {
-		#	factor = 1
-		#}
-		completion_reward = {
-			7 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction ={
-					type = dockyard
-					level = 3
-					instant_build = yes
-				}
-			}
-		}
-	}
+	
 
 	focus = {
 		id = HOL_R_D
@@ -347,13 +301,108 @@ focus_tree = {
 	#### END ####
 
 	focus = {
+		id = HOL_air_focus
+		icon = GFX_goal_generic_air_fighter
+		x = 6
+		y = 0
+		cost = 10
+		available = {
+			date > 1914.1.1
+		}
+		completion_reward = {
+			air_experience = 25
+			
+		}
+	}
+
+	focus = {
+		id = HOL_fighters
+		icon = GFX_goal_generic_air_fighter2
+		x = 5
+		y = 1
+		cost = 10
+		prerequisite = {focus = HOL_air_focus}
+		completion_reward = {
+			add_tech_bonus = {
+				name = Air_research1
+				bonus = 0.50
+				uses = 2
+				technology = fighter1
+				technology = fighter2
+				technology = fighter3
+			}
+		}
+	}
+
+	focus = {
+		id = HOL_cas
+		icon = GFX_goal_generic_air_naval_bomber
+		x = 5
+		y = 2
+		cost = 10
+		prerequisite = {focus = HOL_fighters}
+		completion_reward = {
+			add_tech_bonus = {
+				name = Air_research1
+				bonus = 0.50
+				uses = 2
+				technology = cas1
+				technology = cas2
+				technology = cas3
+			}
+		}
+	}
+	focus = {
+		id = HOL_airbase_1
+		icon = GFX_goal_generic_production
+		x = 7
+		y = 1
+		cost = 10
+		prerequisite = {focus = HOL_air_focus}
+		completion_reward = {
+			7 = {	
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+		}
+		}
+
+	}
+
+	focus = {
+		id = HOL_airbase_2
+		icon = GFX_goal_generic_production
+		x = 7
+		y = 2
+		cost = 10
+		prerequisite = {focus = HOL_airbase_1}
+		completion_reward = {
+			7 = {	
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = air_base
+						level = 3
+						instant_build = yes
+					}
+		}
+		}
+
+	}
+
+
+	#### END ####
+
+	focus = {
 		id = HOL_army_focus
 		icon = GFX_goal_generic_military_sphere
-		x = 10
+		x = 11
 		y = 0
 		cost = 10
 		completion_reward = {
-			army_experience = 20
+			army_experience = 25
 		}
 	}
 
@@ -361,7 +410,7 @@ focus_tree = {
 		id = HOL_study_russo_japanese_war
 		icon = GFX_goal_generic_position_armies
 		prerequisite = { focus = HOL_army_focus }
-		x = 9
+		x = 10
 		y = 1
 		cost = 10
 		completion_reward = {
@@ -375,11 +424,23 @@ focus_tree = {
 	}
 
 	focus = {
+		id = HOL_general_staff
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = HOL_study_russo_japanese_war }
+		x = 10 
+		y = 2
+		cost = 10
+		completion_reward = {
+			army_experience = 25
+		}
+	}
+
+	focus = {
 		id = HOL_quick_firing_artillery
 		icon = GFX_goal_generic_army_artillery2
-		prerequisite = { focus = HOL_study_russo_japanese_war }
-		x = 9
-		y = 2
+		prerequisite = { focus = HOL_general_staff }
+		x = 10
+		y = 3
 		cost = 10
 		completion_reward = {
 			add_tech_bonus = {
@@ -392,21 +453,43 @@ focus_tree = {
 	}
 
 	focus = {
-		id = HOL_home_military
+		id = HOL_capital_military
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = HOL_army_focus }
-		x = 11
+		x = 12
 		y = 1
 		cost = 10
 		#ai_will_do = {
 		#	factor = 1
 		#}
 		completion_reward = {
-			35 = {
-			add_extra_state_shared_building_slots = 3
+			7 = {
+			add_extra_state_shared_building_slots = 2
 			add_building_construction = {
 					type = arms_factory
-					level = 3
+					level = 2
+					instant_build = yes
+					}
+			}
+		}
+	}
+
+	focus = {
+		id = HOL_home_military
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = HOL_capital_military }
+		x = 12
+		y = 2
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+		completion_reward = {
+			35 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+					type = arms_factory
+					level = 2
 					instant_build = yes
 					}
 			}
@@ -417,8 +500,8 @@ focus_tree = {
 		id = HOL_colonial_military
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = HOL_home_military }
-		x = 11
-		y = 2
+		x = 12
+		y = 3
 		cost = 10
 		#ai_will_do = {
 		#	factor = 1
@@ -440,9 +523,13 @@ focus_tree = {
 		icon = GFX_goal_generic_small_arms
 		prerequisite = { focus = HOL_quick_firing_artillery 
 						 focus = HOL_colonial_military }
+		mutually_exclusive = {focus = HOL_offensive}
 		x = 6
-		y = 3
+		y = 4
 		cost = 10
+		completion_reward = {
+			add_political_power = 150
+		}
 	}
 
 	focus = {
@@ -451,10 +538,11 @@ focus_tree = {
 		prerequisite = { focus = HOL_defensive }
 		mutually_exclusive = { focus = HOL_neutrality_focus }
 		x = 7
-		y = 4
+		y = 5
 		cost = 10
 		completion_reward = {
 			add_ideas = ententism
+			add_political_power = 150
 		}
 	}
 
@@ -463,7 +551,7 @@ focus_tree = {
 		icon = GFX_goal_generic_military_deal
 		prerequisite = { focus = HOL_entente }
 		x = 7
-		y = 5
+		y = 6
 		cost = 10
 		completion_reward = {
 			FRA = { country_event = { id = france.31 } }
@@ -476,10 +564,11 @@ focus_tree = {
 		prerequisite = { focus = HOL_defensive }
 		mutually_exclusive = { focus = HOL_entente }
 		x = 5
-		y = 4
+		y = 5
 		cost = 10
 		completion_reward = {
 			add_ideas = neutralism
+			add_political_power = 150
 		}
 	}
 
@@ -488,7 +577,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_military
 		prerequisite = { focus = HOL_neutrality_focus }
 		x = 5
-		y = 5
+		y = 6
 		cost = 10
 		completion_reward = {
 			36 = {
@@ -540,7 +629,7 @@ focus_tree = {
 		prerequisite = { focus = HOL_fortify_the_german_border }
 		mutually_exclusive = { focus = HOL_improve_benelux }
 		x = 6
-		y = 6
+		y = 7
 		cost = 10
 		completion_reward = {
 			7 = {
@@ -585,7 +674,7 @@ focus_tree = {
 		icon = GFX_goal_generic_navy_cruiser
 		prerequisite = { focus = HOL_fortify_belgian_border }
 		x = 6
-		y = 7
+		y = 8
 		cost = 10
 		completion_reward = {
 			7 = {
@@ -657,7 +746,7 @@ focus_tree = {
 		prerequisite = { focus = HOL_fortify_the_german_border }
 		mutually_exclusive = { focus = HOL_fortify_belgian_border }
 		x = 4
-		y = 6
+		y = 7
 		cost = 10
 		completion_reward = {
 			BEL = {
@@ -680,7 +769,7 @@ focus_tree = {
 		icon = GFX_goal_generic_major_alliance
 		prerequisite = { focus = HOL_improve_benelux }
 		x = 4
-		y = 7
+		y = 8
 		cost = 10
 		completion_reward = {
             set_rule = { can_create_factions = yes }
@@ -704,8 +793,8 @@ focus_tree = {
 		available = {
 			has_war = yes
 		}
-		x = 10
-		y = 3
+		x = 11
+		y = 4
 		cost = 10
 		completion_reward = {
 			add_ideas = limited_conscription
@@ -716,8 +805,8 @@ focus_tree = {
 		id = HOL_early_mobilization
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = HOL_war_preperations }
-		x = 9
-		y = 4
+		x = 10
+		y = 5
 		cost = 10
 		completion_reward = {
 			add_ideas = partial_economic_mobilisation
@@ -728,8 +817,8 @@ focus_tree = {
 		id = HOL_consumer_goods 
 		icon = GFX_goal_generic_consumer_goods
 		prerequisite = { focus = HOL_early_mobilization }
-		x = 9
-		y = 5
+		x = 10
+		y = 6
 		cost = 10
 		completion_reward = {
 			add_ideas = consumer_goods
@@ -740,8 +829,8 @@ focus_tree = {
 		id = HOL_national_unity
 		icon = GFX_goal_generic_demand_territory
 		prerequisite = { focus = HOL_consumer_goods }
-		x = 9
-		y = 6
+		x = 10
+		y = 7
 		cost = 10
 		completion_reward = {
 			add_ideas = why_we_fight_focus
@@ -761,8 +850,8 @@ focus_tree = {
                     }
                 }
 		}
-		x = 9
-		y = 7
+		x = 10
+		y = 8
 		cost = 10
 		completion_reward = {
 			add_ideas = tot_economic_mobilisation
@@ -773,8 +862,8 @@ focus_tree = {
 		id = HOL_military_concern
 		icon = GFX_goal_generic_axis_build_infantry
 		prerequisite = { focus = HOL_war_preperations }
-		x = 11
-		y = 4
+		x = 12
+		y = 5
 		cost = 10
 		completion_reward = {
 			add_tech_bonus = {
@@ -790,8 +879,8 @@ focus_tree = {
 		id = HOL_weapon_concern
 		icon = GFX_goal_generic_build_tank
 		prerequisite = { focus = HOL_military_concern }
-		x = 11
-		y = 5
+		x = 12
+		y = 6
 		cost = 10
 		completion_reward = {
 			add_tech_bonus = {
@@ -807,8 +896,8 @@ focus_tree = {
 		id = HOL_special_forces
 		icon = GFX_goal_generic_special_forces
 		prerequisite = { focus = HOL_weapon_concern }
-		x = 11
-		y = 6
+		x = 12
+		y = 7
 		cost = 10
 		completion_reward = {
 			add_tech_bonus = {
@@ -827,8 +916,8 @@ focus_tree = {
 		available = {
 			date > 1914.1.1
 		}
-		x = 11
-		y = 7
+		x = 12
+		y = 8
 		cost = 10
 		completion_reward = {
 			add_tech_bonus = {
@@ -840,13 +929,155 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = HOL_politics
+		icon = GFX_goal_generic_demand_territory
+		mutually_exclusive = {focus = HOL_defensive}
+		x = 16
+		y = 0
+		cost = 10
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = HOL_socialism
+		icon = GFX_goal_support_democracy
+		prerequisite = { focus = HOL_politics }
+		mutually_exclusive = {focus = HOL_nationalism }
+		x = 15
+		y = 1
+		cost = 10
+		completion_reward = {
+			add_ideas = internationalism
+			add_political_power = 70
+		}
+	}
+
+	focus = {
+		id = HOL_social_society
+		icon = GFX_goal_generic_national_unity
+		prerequisite = {focus = HOL_socialism}
+		x = 15
+		y = 2
+		cost = 10
+		completion_reward = {
+			national_unity_factor = 0.10
+			add_political_power = 70
+		}
+	}
+
+	focus = {
+		id = HOL_nationalism
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = HOL_politics }
+		mutually_exclusive = {focus = HOL_socialism}
+		x = 17
+		y = 1
+		cost = 10
+		completion_reward = {
+			add_ideas = nationalism
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = HOL_militarism
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = {focus = HOL_nationalism}
+		x = 17
+		y = 2
+		cost = 10
+		completion_reward = {
+			add_ideas = militarism_focus
+		}
+	}
+
+	focus = {
+		id = HOL_interventionism
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = {focus = HOL_social_society
+						focus = HOL_militarism}
+		x = 16
+		y = 3
+		cost = 10
+		completion_reward = {
+			set_rule = { can_create_factions = yes }
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = HOL_offensive
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = {focus = HOL_interventionism}
+		prerequisite = {focus = HOL_quick_firing_artillery}
+		prerequisite = {focus = HOL_colonial_military}
+		mutually_exclusive = {focus = HOL_defensive}
+		x = 16
+		y = 4
+		cost = 10
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
 
 	
 
 	#### END ####
 
-
+	focus = {
+		id = HOL_increase_naval_production
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		
+		x = 21
+		y = 0
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+		completion_reward = {
+			7 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction ={
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+			navy_experience = 25
+		}
+	}
 	
+	focus = {
+		id = HOL_port_of_rotterdam
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = {focus = HOL_increase_naval_production}
+		x = 20
+		y = 1
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+		completion_reward = {
+			7 = {
+				add_building_construction ={
+					type = naval_base
+					level = 3
+					instant_build = yes
+					province = 9498
+				}
+				add_building_construction ={
+						type = coastal_bunker
+						level = 3
+						instant_build = yes
+						province = 9498
+				}
+			}
+		}
+	}
 
 	#### END ####
 }
