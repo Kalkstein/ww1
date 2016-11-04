@@ -106,16 +106,45 @@ equipments = {
 		}
 	}
 	
-	early_medium_tank_equipment = {
+	early_heavy_tank_equipment = {
 		archetype = light_tank_equipment
 		priority = 50
 		visual_level = 0
 	}
 
 	# 1941
-	early_medium_tank_equipment_2 = {
+	early_heavy_tank_equipment_2 = {
+		archetype = light_tank_equipment
+		parent = early_heavy_tank_equipment
+		priority = 50
+		visual_level = 1
+						
+		#Misc Abilities
+		maximum_speed = 6
+
+		#Defensive Abilities
+		defense = 7
+		breakthrough = 51
+		armor_value = 80
+
+		#Offensive Abilities
+		soft_attack = 20
+		hard_attack = 19
+		ap_attack = 81
+		air_attack = 0
+
+		build_cost_ic = 13
+		resources = {
+			oil = 1
+			tungsten = 2
+			steel = 3
+		}	
+	}
+	
+	tank_equipment_2 = {
 		archetype = light_tank_equipment
 		parent = early_medium_tank_equipment
+		parent = 
 		priority = 50
 		visual_level = 1
 						

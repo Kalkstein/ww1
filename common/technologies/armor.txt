@@ -3,7 +3,7 @@ technologies = {
 	early_armored_car = {
 
 		enable_equipments = {
-			armord_car_equipment_1
+			armored_car_equipment_1
 		}
 		
 		path = {
@@ -39,7 +39,7 @@ technologies = {
 	armored_car = {
 
 		enable_equipments = {
-			armord_car_equipment_2
+			armored_car_equipment_2
 		}
 		
 		path = {
@@ -67,7 +67,7 @@ technologies = {
 	armored_car_1 = {
 
 		enable_equipments = {
-			armord_car_equipment_3
+			armored_car_equipment_3
 		}
 		
 		path = {
@@ -95,7 +95,7 @@ technologies = {
 	armored_car_2 = {
 
 		enable_equipments = {
-			armord_car_equipment_4
+			armored_car_equipment_4
 		}
 		
 		path = {
@@ -123,7 +123,7 @@ technologies = {
 	late_armored_car = { 
 
 		enable_equipments = {
-			armord_car_equipment_5
+			armored_car_equipment_5
 		}
 
 
@@ -291,15 +291,15 @@ technologies = {
 	tank = {
 
 		enable_equipments = {
-			
+			tank_equipment_2
 		}
 
 
 		research_cost = 2
-		start_year = 1919
+		start_year = 1920
 		folder = {
 			name = armour_folder
-			position = { x = 4 y = 8 }
+			position = { x = 4 y = 10 }
 		}
 		
 		ai_will_do = {
