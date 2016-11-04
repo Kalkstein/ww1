@@ -54,11 +54,33 @@ focus_tree = {
 	}
 
 	focus = {
-		id = HOL_home_infrastructure
-		icon = GFX_goal_generic_construct_infrastructure
+		id = HOL_industralize_capital
+		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = HOL_home_industry_I }
 		x = 0
 		y = 2
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+		completion_reward = {
+			7 = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+					}
+			}
+		}
+	}
+
+	focus = {
+		id = HOL_home_infrastructure
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = HOL_industralize_capital }
+		x = 0
+		y = 3
 		cost = 10
 		#ai_will_do = {
 		#	factor = 1
@@ -74,28 +96,6 @@ focus_tree = {
 			36 = {
 			add_building_construction = {
 					type = infrastructure
-					level = 3
-					instant_build = yes
-					}
-			}
-		}
-	}
-
-	focus = {
-		id = HOL_home_industry_II
-		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = HOL_home_infrastructure }
-		x = 0
-		y = 3
-		cost = 10
-		#ai_will_do = {
-		#	factor = 1
-		#}
-		completion_reward = {
-			35 = {
-			add_extra_state_shared_building_slots = 3
-			add_building_construction = {
-					type = arms_factory
 					level = 3
 					instant_build = yes
 					}
@@ -125,12 +125,34 @@ focus_tree = {
 		}
 	}
 
-		focus = {
-		id = HOL_colonial_infrastructure
-		icon = GFX_goal_generic_construct_infrastructure
+	focus = {
+		id = HOL_colonial_industry_III
+		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = HOL_colonial_industry_I }
 		x = 2
 		y = 2
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+		completion_reward = {
+			672 = {
+			add_extra_state_shared_building_slots = 4
+			add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+					}
+			}
+		}
+	}
+
+	focus = {
+		id = HOL_colonial_infrastructure
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = HOL_colonial_industry_III }
+		x = 2
+		y = 3
 		cost = 10
 		#ai_will_do = {
 		#	factor = 1
@@ -153,34 +175,14 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = HOL_colonial_industry_II
-		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = HOL_colonial_infrastructure }
-		x = 2
-		y = 3
-		cost = 10
-		#ai_will_do = {
-		#	factor = 1
-		#}
-		completion_reward = {
-			672 = {
-			add_extra_state_shared_building_slots = 4
-			add_building_construction = {
-					type = arms_factory
-					level = 4
-					instant_build = yes
-					}
-			}
-		}
-	}
+	
 
 	focus = {
 		id = HOL_extra_research_slot
 		icon = GFX_focus_research
 		prerequisite = {
-			focus = HOL_colonial_industry_II
-			focus = HOL_home_industry_II
+			focus = HOL_colonial_infrastructure
+			focus = HOL_home_infrastructure
 		}
 		x = 1
 		y = 4
@@ -190,6 +192,46 @@ focus_tree = {
 		#}
 		completion_reward = {
 			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = HOL_electronic_focus
+		icon = GFX_goal_generic_production2
+		prerequisite = { focus = HOL_extra_research_slot }
+		x = 0
+		y = 5
+		cost = 10
+		completion_reward = {
+			add_tech_bonus = {
+					name = electronics_bonus
+					bonus = 0.5
+					uses = 2
+					category = electronics
+				}
+				add_tech_bonus = {
+					name = industrial_bonus
+					bonus = 0.5
+					uses = 2
+					category = industry
+				}	
+		}
+	}
+
+	focus = {
+		id = HOL_nuclear_effort
+		icon = GFX_focus_wonderweapons
+		prerequisite = { focus = HOL_electronic_focus }
+		x = 0
+		y = 6
+		cost = 10
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = nuclear_bonus
+				ahead_reduction = 0.5
+				category = nuclear
+			}
 		}
 	}
 
@@ -232,13 +274,14 @@ focus_tree = {
 		}
 	}
 
+###
+
 	focus = {
 		id = HOL_port_of_rotterdam
 		icon = GFX_goal_generic_construct_naval_dockyard
-		prerequisite = { focus = HOL_extra_research_slot}
-		prerequisite = { focus = HOL_home_industry_II }
+		
 		x = 0
-		y = 5
+		y = 11
 		cost = 10
 		#ai_will_do = {
 		#	factor = 1
@@ -264,9 +307,9 @@ focus_tree = {
 	focus = {
 		id = HOL_increase_naval_production
 		icon = GFX_goal_generic_navy_doctrines_tactics
-		prerequisite = { focus = HOL_extra_research_slot}
+		
 		x =0
-		y = 6
+		y = 10
 		cost = 10
 		#ai_will_do = {
 		#	factor = 1
@@ -288,7 +331,7 @@ focus_tree = {
 		icon = GFX_focus_research
 		prerequisite = {
 			focus = HOL_surinamese_bauxit-mines
-			focus = HOL_increase_naval_production
+			focus = HOL_nuclear_effort
 		}
 		available = {
 			num_of_factories > 50
@@ -305,8 +348,8 @@ focus_tree = {
 
 	focus = {
 		id = HOL_army_focus
-		icon = GFX_goal_generic_axis_build_infantry
-		x = 7
+		icon = GFX_goal_generic_military_sphere
+		x = 9
 		y = 0
 		cost = 10
 		completion_reward = {
@@ -318,14 +361,14 @@ focus_tree = {
 		id = HOL_study_russo_japanese_war
 		icon = GFX_goal_generic_position_armies
 		prerequisite = { focus = HOL_army_focus }
-		x = 7
+		x = 8
 		y = 1
 		cost = 10
 		completion_reward = {
 			add_tech_bonus = {
 				name = Study_russo_japanese_war
 				bonus = 0.50
-				uses = 1
+				uses = 2
 				category = Land_doctrine
 			}
 		}
@@ -335,7 +378,7 @@ focus_tree = {
 		id = HOL_quick_firing_artillery
 		icon = GFX_goal_generic_army_artillery2
 		prerequisite = { focus = HOL_study_russo_japanese_war }
-		x = 7
+		x = 8
 		y = 2
 		cost = 10
 		completion_reward = {
@@ -349,177 +392,191 @@ focus_tree = {
 	}
 
 	focus = {
-		id = HOL_defensive_focus
-		icon = GFX_goal_generic_defence
-		prerequisite = { focus = HOL_quick_firing_artillery }
-		mutually_exclusive = { focus = HOL_offensive_focus}
+		id = HOL_home_military
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = HOL_army_focus }
+		x = 10
+		y = 1
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+		completion_reward = {
+			35 = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+					}
+			}
+		}
+	}
+
+	focus = {
+		id = HOL_colonial_military
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = HOL_home_military }
+		x = 10
+		y = 2
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+		completion_reward = {
+			672 = {
+			add_extra_state_shared_building_slots = 4
+			add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+					}
+			}
+		}
+	}
+
+	focus = {
+		id = HOL_protectionism
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = HOL_quick_firing_artillery 
+						 focus = HOL_colonial_military }
 		x = 6
 		y = 3
 		cost = 10
-		completion_reward = {
-
-		}
 	}
 
 	focus = {
-		id = HOL_fortify_java
-		icon = GFX_goal_generic_fortify_city
-		prerequisite = { focus = HOL_defensive_focus }
-		prerequisite = { focus = HOL_colonial_industry_II }
-		x = 4
+		id = HOL_entente
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = HOL_protectionism }
+		mutually_exclusive = { focus = HOL_neutrality }
+		x = 5
 		y = 4
 		cost = 10
-		completion_reward = {
-			335 = {
-				add_building_construction = {
-					type = bunker
-					level = 4
-					instant_build = yes
-					province = 7381
-				}
-			}
-		}
 	}
 
 	focus = {
-		id = HOL_fortify_the_caribbean
-		icon = GFX_goal_generic_construct_military
-		prerequisite = { focus = HOL_fortify_java }
-		x = 4
+		id = HOL_join_the_triple_entente
+		icon = GFX_goal_generic_military_deal
+		prerequisite = { focus = HOL_entente }
+		x = 5
 		y = 5
 		cost = 10
 		completion_reward = {
-			695 = {
-				add_building_construction = {
-					type = coastal_bunker
-					level = 4
-					instant_build = yes
-					province = 153
-				}
-			}
+			FRA = { country_event = { id = france.31 } }
 		}
 	}
 
 	focus = {
-		id = HOL_fortify_sumatra
-		icon = GFX_goal_generic_construction2
-		prerequisite = { focus = HOL_fortify_the_caribbean }
-		x = 4
+		id = HOL_fortify_the_german_border
+		icon = GFX_goal_generic_construct_military
+		prerequisite = { focus = HOL_join_the_triple_entente }
+		x = 5
 		y = 6
 		cost = 10
 		completion_reward = {
-			672 = {
+			36 = {
 				add_building_construction = {
 					type = bunker
 					level = 2
-					instant_build = yes
-					province = 4652
+					instant_build =  yes
+					province = 11318
 				}
 				add_building_construction = {
-					type = coastal_bunker
+					type = bunker
 					level = 2
-					instant_build = yes
-					province = 4652
+					instant_build =  yes
+					province = 9309
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build =  yes
+					province = 9403
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build =  yes
+					province = 9363
+				}
+			}
+			35 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build =  yes
+					province = 11456
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build =  yes
+					province = 11562
 				}
 			}
 		}
 	}
 
 	focus = {
-		id = HOL_occupy_the_old_forts
-		icon = GFX_goal_generic_small_arms
-		prerequisite = { focus = HOL_defensive_focus }
-		x = 6
-		y = 4
+		id = HOL_fortify_belgian_border
+		icon = GFX_goal_generic_construct_military
+		prerequisite = { focus = HOL_fortify_the_german_border }
+		x = 5
+		y = 7
 		cost = 10
 		completion_reward = {
 			7 = {
 				add_building_construction = {
 					type = bunker
-					level = 4
+					level = 2
 					instant_build = yes
-					province = 391
+					province = 480
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 9431
+				}
+			}
+			35 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build =  yes
+					province = 6500
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build =  yes
+					province = 6496
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build =  yes
+					province = 3262
 				}
 			}
 		}
 	}
 
 	focus = {
-		id = HOL_offensive_focus
-		icon = GFX_goal_generic_major_war
-		prerequisite = { focus = HOL_quick_firing_artillery }
-		mutually_exclusive = { focus = HOL_defensive_focus }
-		x = 8
-		y = 3
-		cost = 10
-		completion_reward = {
-			add_political_power = 150
-		}
-	}
-
-	focus = {
-		id = HOL_mass_production
-		icon = GFX_goal_generic_production2
-		prerequisite = { focus = HOL_offensive_focus }
-		x = 8
+		id = HOL_neutrality
+		icon = GFX_goal_generic_defence
+		prerequisite = { focus = HOL_protectionism }
+		x = 7
 		y = 4
 		cost = 10
-		completion_reward = {
-			add_ideas = FRA_infantry_focus
-		}
 	}
 
-	focus = {
-		id = HOL_theoretical_warfare
-		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = HOL_mass_production }
-		x = 8
-		y = 5
-		cost = 10
-		completion_reward = {
-			add_tech_bonus = {
-				name = Theoretical_warfare
-				bonus = 0.5
-				uses = 	3
-				category = Land_doctrine
-			}
-		}
-	}
 
-	focus = {
-		id = HOL_modern_weapon_effort
-		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = HOL_offensive_focus }
-		prerequisite = { focus = HOL_naval_support }
-		x = 10
-		y = 4
-		cost = 10
-		completion_reward = {
-			add_tech_bonus = {
-				name = Modern_weapon_effort
-				bonus = 0.5
-				uses = 	2
-				category = infantry_weapons
-			}
-		}
-	}
 
-	focus = {
-		id = HOL_german_technology_sharing
-		icon = GFX_goal_generic_scientific_exchange
-		prerequisite = { focus = HOL_modern_weapon_effort }
-		x = 10
-		y = 5
-		cost = 10
-		completion_reward = {
-			add_tech_bonus = {
-				name = German_technology_shareing
-				bonus = 0.5
-				uses = 	1
-				technology = early_fighter
-			}
-		}
-	}
+
+
+	
 
 	#### END ####
 
@@ -732,37 +789,6 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = HOL_fortification_effort
-		icon = GFX_goal_generic_construct_military
-		prerequisite = { focus = HOL_goverment_reform }
-		x = 10
-		y = 2
-		cost = 10
-		completion_reward = {
-			add_ideas = deterrence
-		}
-	}
-
-	focus = {
-		id = HOL_naval_support
-		icon = GFX_goal_generic_navy_doctrines_tactics
-		prerequisite = { focus = HOL_fortification_effort }
-		x = 10
-		y = 3
-		cost = 10
-		completion_reward = {
-			7 = {
-				add_extra_state_shared_building_slots = 5
-				add_building_construction ={
-					type = dockyard
-					level = 3
-					instant_build = yes
-				}
-			}
-		}
-	}
-
 
 	focus = {
 		id = HOL_reform_suffrage
@@ -775,68 +801,7 @@ focus_tree = {
 		cost = 10
 	}
 
-	focus = {
-		id = HOL_join_the_triple_entente
-		icon = GFX_goal_generic_military_deal
-		prerequisite = { focus = HOL_reform_suffrage }
-		x = 24
-		y = 2
-		cost = 10
-		completion_reward = {
-			FRA = { country_event = { id = france.31 } }
-		}
-	}
-
-	focus = {
-		id = HOL_fortify_the_german_border
-		icon = GFX_goal_generic_military_deal
-		prerequisite = { focus = HOL_join_the_triple_entente }
-		x = 24
-		y = 3
-		cost = 10
-		completion_reward = {
-			36 = {
-				add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build =  yes
-					province = 11318
-				}
-				add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build =  yes
-					province = 9309
-				}
-				add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build =  yes
-					province = 9403
-				}
-				add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build =  yes
-					province = 9363
-				}
-			}
-			35 = {
-				add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build =  yes
-					province = 11456
-				}
-				add_building_construction = {
-					type = bunker
-					level = 2
-					instant_build =  yes
-					province = 11562
-				}
-			}
-		}
-	}
+	
 
 	#### END ####
 }
