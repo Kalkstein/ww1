@@ -607,3 +607,26 @@ country_event = {
 		add_ideas = monarchist_duma
 	}
 }
+
+# Neutral Event
+country_event = {
+	id = election.21
+	title = election.21.t
+	desc = election.21.d
+	picture = GFX_report_event_gathering_protest
+	
+	is_triggered_only = yes
+
+	trigger = {
+		neutrality > 0.5
+		is_puppet = no
+	}
+	
+	option = {	
+		name = election.21.a
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = no
+		}
+	}
+}

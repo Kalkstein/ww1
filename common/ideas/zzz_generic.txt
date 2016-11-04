@@ -63,6 +63,26 @@ ideas = {
 			}
 		}
 
+		neutralism = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = generic_defence
+			
+			modifier = {
+				neutrality_drift = 0.1
+			}
+		}
+
 		fascist_influence = {
 			
 			allowed = {

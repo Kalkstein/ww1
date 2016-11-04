@@ -436,7 +436,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = HOL_protectionism
+		id = HOL_defensive
 		icon = GFX_goal_generic_small_arms
 		prerequisite = { focus = HOL_quick_firing_artillery 
 						 focus = HOL_colonial_military }
@@ -447,19 +447,22 @@ focus_tree = {
 
 	focus = {
 		id = HOL_entente
-		icon = GFX_goal_generic_improve_relations
-		prerequisite = { focus = HOL_protectionism }
-		mutually_exclusive = { focus = HOL_neutrality }
-		x = 5
+		icon = GFX_goal_generic_major_alliance
+		prerequisite = { focus = HOL_defensive }
+		mutually_exclusive = { focus = HOL_neutrality_focus }
+		x = 7
 		y = 4
 		cost = 10
+		completion_reward = {
+			add_ideas = ententism
+		}
 	}
 
 	focus = {
 		id = HOL_join_the_triple_entente
 		icon = GFX_goal_generic_military_deal
 		prerequisite = { focus = HOL_entente }
-		x = 5
+		x = 7
 		y = 5
 		cost = 10
 		completion_reward = {
@@ -468,11 +471,36 @@ focus_tree = {
 	}
 
 	focus = {
+		id = HOL_mobilization
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus =  }
+		x = 10
+		y = 6
+		cost = 10
+		completion_reward = {
+			add_ideas = war_economy
+		}
+	}
+
+	focus = {
+		id = HOL_neutrality_focus
+		icon = GFX_goal_generic_defence
+		prerequisite = { focus = HOL_defensive }
+		mutually_exclusive = { focus = HOL_entente }
+		x = 5
+		y = 4
+		cost = 10
+		completion_reward = {
+			add_ideas = neutralism
+		}
+	}
+
+	focus = {
 		id = HOL_fortify_the_german_border
 		icon = GFX_goal_generic_construct_military
-		prerequisite = { focus = HOL_join_the_triple_entente }
+		prerequisite = { focus = HOL_neutrality_focus }
 		x = 5
-		y = 6
+		y = 5
 		cost = 10
 		completion_reward = {
 			36 = {
@@ -522,8 +550,9 @@ focus_tree = {
 		id = HOL_fortify_belgian_border
 		icon = GFX_goal_generic_construct_military
 		prerequisite = { focus = HOL_fortify_the_german_border }
-		x = 5
-		y = 7
+		mutually_exclusive = { focus = HOL_improve_benelux }
+		x = 6
+		y = 6
 		cost = 10
 		completion_reward = {
 			7 = {
@@ -564,242 +593,128 @@ focus_tree = {
 	}
 
 	focus = {
-		id = HOL_neutrality
-		icon = GFX_goal_generic_defence
-		prerequisite = { focus = HOL_protectionism }
-		x = 7
-		y = 4
+		id = HOL_coastal_defence
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = HOL_fortify_belgian_border }
+		x = 6
+		y = 7
 		cost = 10
+		completion_reward = {
+			7 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build =  yes
+					province = 3314
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build =  yes
+					province = 6366
+				}
+			}
+			36 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build =  yes
+					province = 6366
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build =  yes
+					province = 9335
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build =  yes
+					province = 11318
+				}
+			}
+			7 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build =  yes
+					province = 9431
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build =  yes
+					province = 9498
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build =  yes
+					province = 3211
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build =  yes
+					province = 68
+				}
+			}
+		}
 	}
 
+	focus = {
+		id = HOL_improve_benelux
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = HOL_fortify_the_german_border }
+		mutually_exclusive = { focus = HOL_fortify_belgian_border }
+		x = 4
+		y = 6
+		cost = 10
+		completion_reward = {
+			BEL = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = medium_increase
+				}
+			}
+			LUX = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = medium_increase
+				}
+			}
+		}
+	}
 
-
+	focus = {
+		id = HOL_form_benelux
+		icon = GFX_goal_generic_major_alliance
+		prerequisite = { focus = HOL_improve_benelux }
+		x = 4
+		y = 7
+		cost = 10
+		completion_reward = {
+            set_rule = { can_create_factions = yes }
+            create_faction = benelux_faction
+            BEL = {
+            	country_event = { id = low.1 days = 1 }
+            	country_event = { id = election.21 days = 1 }
+            	add_ideas = neutralism
+            }
+            LUX = {
+                country_event = { id = low.1 days = 1 }
+                add_ideas = neutralism
+                country_event = { id = election.21 days = 1 }
+            }
+        }
+	}
 
 
 	
 
 	#### END ####
 
-	focus = {
-		id = HOL_politics
-		icon = GFX_goal_generic_propaganda
-		x = 18
-		y = 0
-		cost = 10
-		completion_reward = {
-			add_political_power = 150
-		}
-	}
-
-	focus = {
-		id = HOL_our_way
-		icon = GFX_goal_generic_national_unity
-		prerequisite = { focus = HOL_politics }
-		mutually_exclusive = { focus = HOL_reform_suffrage }
-		mutually_exclusive = { focus = HOL_goverment_reform }
-		x = 18
-		y = 1
-		cost = 10
-	}
-
-	focus = {
-		id = HOL_claim_wallonia
-		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = { focus = HOL_our_way }
-		x = 14
-		y = 2
-		cost = 10
-		completion_reward = {
-			add_state_claim = 34
-		}
-	}
-
-	focus = {
-		id = HOL_claim_flanders
-		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = { focus = HOL_our_way }
-		x = 16
-		y = 2
-		cost = 10
-		completion_reward = {
-			add_state_claim = 6
-		}
-	}
-
-	focus = {
-		id = HOL_annex_belgium
-		icon = GFX_goal_anschluss
-		prerequisite = { focus = HOL_claim_flanders }
-		prerequisite = { focus = HOL_claim_wallonia }
-		x = 15
-		y = 3
-		cost = 2000
-		completion_reward = {
-			BEL = { country_event = { id = low.1 } }
-		}
-	}
-
-	focus = {
-		id = HOL_annex_luxembourg
-		icon = GFX_goal_anschluss
-		prerequisite = { focus = HOL_annex_belgium }
-		mutually_exclusive = {focus = HOL_claim_frisia}
-		x = 16
-		y = 4
-		cost = 10
-		completion_reward = {
-			LUX = { country_event = { id = low.2 } }
-		}
-	}
-
-	focus = {
-		id = HOL_claim_frisia
-		icon = GFX_goal_generic_propaganda
-		prerequisite = { focus = HOL_annex_belgium }
-		mutually_exclusive = {focus = HOL_annex_luxembourg}
-		x = 14
-		y = 4
-		cost = 10
-		completion_reward = {
-			add_state_claim = 56
-		}
-	}
-
-	focus = {
-		id = HOL_claim_the_rest_of_borneo
-		icon = GFX_goal_generic_propaganda
-		prerequisite = { focus = HOL_our_way }
-		x = 19
-		y = 2
-		cost = 10
-		completion_reward = {
-			add_state_claim = 333
-		}
-	}
-
-	focus = {
-		id = HOL_claim_guiana
-		icon = GFX_goal_generic_propaganda
-		prerequisite = { focus = HOL_claim_the_rest_of_borneo }
-		mutually_exclusive = {focus = HOL_claim_german_colonies}
-		x = 18
-		y = 3
-		cost = 10
-		completion_reward = {
-			add_state_claim = 523
-		}
-	}
-
-	focus = {
-		id = HOL_claim_german_colonies
-		icon = GFX_goal_generic_propaganda
-		prerequisite = { focus = HOL_claim_the_rest_of_borneo }
-		mutually_exclusive = {focus = HOL_claim_guiana}
-		x = 20
-		y = 3
-		cost = 10
-		completion_reward = {
-			add_state_claim = 737
-			add_state_claim = 743
-			add_state_claim = 750
-			add_state_claim = 647
-			add_state_claim = 684
-			add_state_claim = 646
-			add_state_claim = 633
-		}
-	}
-
-	focus = {
-		id = HOL_claim_the_caribbean
-		icon = GFX_goal_generic_propaganda
-		prerequisite = { focus = HOL_claim_guiana
-						 focus = HOL_claim_german_colonies }
-		x = 19
-		y = 4
-		cost = 10
-		completion_reward = {
-			add_state_claim = 308
-			add_state_claim = 689
-			add_state_claim = 690
-			add_state_claim = 691
-			add_state_claim = 692
-			add_state_claim = 693
-			add_state_claim = 694
-		}
-	}
-
-	focus = {
-		id = HOL_liberate_the_boer
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = HOL_our_way }
-		x = 22
-		y = 2
-		cost = 10
-		completion_reward = {
-			add_national_unity = 0.1
-		}
-	}
-
-	focus = {
-		id = HOL_a_way_to_help_them
-		icon = GFX_goal_generic_propaganda
-		prerequisite = { focus = HOL_liberate_the_boer }
-		x = 22
-		y = 3
-		cost = 10
-		completion_reward = {
-			add_state_claim = 544
-		}
-	}
-
-	focus = {
-		id = HOL_claim_south_africa
-		icon = GFX_goal_generic_propaganda
-		prerequisite = { focus = HOL_a_way_to_help_them }
-		x = 22
-		y = 4
-		cost = 10
-		completion_reward = {
-			add_state_claim = 719
-			add_state_claim = 681
-			add_state_claim = 275
-		}
-	}
-
-	focus = {
-		id = HOL_goverment_reform
-		icon = GFX_goal_generic_national_unity
-		prerequisite = { focus = HOL_politics }
-		mutually_exclusive = { focus = HOL_our_way }
-		mutually_exclusive = { focus = HOL_reform_suffrage }
-		x = 12
-		y = 1
-		cost = 10
-	}
-
-	focus = {
-		id = HOL_join_the_central_powers
-		icon = GFX_goal_generic_military_deal
-		prerequisite = { focus = HOL_goverment_reform }
-		x = 12
-		y = 2
-		cost = 10
-		completion_reward = {
-			GER = { country_event = { id = germany.125 } }
-		}
-	}
-
-
-	focus = {
-		id = HOL_reform_suffrage
-		icon = GFX_goal_generic_national_unity
-		prerequisite = { focus = HOL_politics }
-		mutually_exclusive = { focus = HOL_our_way  }
-		mutually_exclusive = { focus = HOL_goverment_reform }
-		x = 24
-		y = 1
-		cost = 10
-	}
 
 	
 

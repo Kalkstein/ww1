@@ -5,108 +5,70 @@
 add_namespace = low
 
 
-# Reunification with the Netherlands
+# Benelux Alliance
 country_event = {
 	id = low.1
 	title = low.1.t
 	desc = low.1.d
-	picture = GFX_report_event_german_troops
+	picture = GFX_news_event_treaty_signed
+
 	is_triggered_only = yes
-	
-	option = {
+
+	option = { #Enter alliance
 		name = low.1.a
 		ai_chance = {
-			base = 30
-			modifier = {
-				add = -25
-				HOL = { has_army_size = { size < 20 } }
+			factor = 99
+		}
+		HOL = {
+			add_to_faction = ROOT
+			ROOT = {
+				add_ai_strategy = {
+					type = alliance
+					id = "FRA"
+					value = 200
+				}
 			}
-			modifier = {
-				add = 100
-				HOL = { has_army_size = { size > 25 } }
-			}
-		}
-		annex_country = { target = BEL transfer_troops = yes }
-		6 = {
-			add_core_of = HOL
-		}
-		34 = {
-			add_core_of = HOL
-		}
-		295 = {
-			add_core_of = HOL
-		}
-		718 = {
-			add_core_of = HOL
-		}
-		538 = {
-			add_core_of = HOL
+			country_event = { id = low.3 days = 1 }
 		}
 	}
-	
-	option = {
+
+	option = { #Refuse
 		name = low.1.b
 		ai_chance = {
-			base = 10 
-			modifier = {
-				factor = -10
-				HOL = { has_army_size = { size < 25 } }
+			factor = 1
+		}
+		effect_tooltip = {
+			HOL = {
+				country_event = { id = low.2 }
 			}
-			modifier = {
-				add = 20
-				BEL = { has_army_size = { size < 20 } }
-			}
-		}
-		add_opinion_modifier = {
-				target = ROOT
-				modifier = protest_action_strong
-		}
-		6 = {
-			add_core_of = HOL
-		}
-		34 = {
-			add_core_of = HOL
 		}
 	}
 }
 
-# Reunification with Netherlands II
+#alliance refused
 country_event = {
 	id = low.2
 	title = low.2.t
 	desc = low.2.d
-	picture = GFX_report_event_german_troops
+	picture = GFX_news_event_desertion_poster
+	
 	is_triggered_only = yes
-	
+
 	option = {
-		ai_chance = {
-			base = 30
-			modifier = {
-				add = 100
-				HOL = { has_army_size = { size > 25 } }
-			}
-		}
 		name = low.2.a
-		annex_country = { target = LUX transfer_troops = yes }
-		8 = {
-			if = {
-				limit = { is_owned_by = LUX }
-				add_core_of = HOL
-			}
-		}
 	}
+}
+
+#alliance accepted
+country_event = {
+	id = low.3
+	title = low.3.t
+	desc = low.3.d
+	picture = GFX_news_event_treaty_signed
 	
+	is_triggered_only = yes
+
 	option = {
-		name = low.2.b
-		add_opinion_modifier = {
-			target = ROOT
-			modifier = protest_action_strong
-		}
-		8 = {
-			if = {
-				limit = { is_owned_by = LUX }
-				add_core_of = HOL
-			}
-		}
+		name = low.3.a
 	}
 }
