@@ -96,7 +96,7 @@ equipments = {
 	}
 	
 	armored_car_equipment_4 = {
-		archetype = armord_car
+		archetype = armored_car
 		parent = armored_car_equipment_3
 		priority = 40
 		visual_level = 2
