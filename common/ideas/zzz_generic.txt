@@ -558,6 +558,42 @@ ideas = {
 				invasion_preparation = -0.5
 			}
 		}
+		
+		state_militarization = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = office_of_strategic_services
+			
+			modifier = {
+				conscription = 0.05
+			}
+		}
+		
+		national_economic_boom = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = office_of_strategic_services
+			
+			modifier = {
+				production_speed_buildings_factor = 0.2
+			}
+		}
 
 		
 	}

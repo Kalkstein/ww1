@@ -68,7 +68,6 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
-		#
 	}
 }
 
@@ -79,7 +78,6 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = leninism
 	traits = {
-		#
 	}
 }
 
@@ -90,20 +88,19 @@ create_country_leader = {
 	expire = "1925.1.1"
 	ideology = despotism
 	traits = {
-		#
 	}
 }
 
 create_corps_commander = {
 	name = "Petrus Wilhelmus Best"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
 	traits = { panzer_leader fortress_buster }
 	skill = 4
 }
 
 create_navy_leader = {
 	name = "Johannes Theodorus Furstner"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
 	traits = { blockade_runner superior_tactician }
 	skill = 4
 }
