@@ -1588,22 +1588,22 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_experimental_rockets_medium"
-		texturefile = "gfx/interface/technologies/experimental_rockets.dds"
+		texturefile = "gfx/interface/technologies/gas_mask.dds"
 	}	
 	
 	SpriteType = {
 		name = "GFX_rocket_engines_medium"
-		texturefile = "gfx/interface/technologies/rocket_engines.dds"
+		texturefile = "gfx/interface/technologies/gas_mask.dds"
 	}	
 
 	SpriteType = {
 		name = "GFX_improved_rocket_engines_medium"
-		texturefile = "gfx/interface/technologies/improved_rocket_engines.dds"
+		texturefile = "gfx/interface/technologies/gas_mask.dds"
 	}	
 	
 	SpriteType = {
 		name = "GFX_advanced_rocket_engines_medium"
-		texturefile = "gfx/interface/technologies/advanced_rocket_engines.dds"
+		texturefile = "gfx/interface/technologies/gas_mask.dds"
 	}	
 	
 	SpriteType = {
