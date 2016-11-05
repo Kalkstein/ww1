@@ -76,3 +76,59 @@ country_event = {
 		name = low.3.a
 	}
 }
+
+#Dutch mobilizes armies near Belgium border
+country_event = {
+	id = low.4
+	title = low.4.t
+	desc = low.4.d
+	picture = GFX_news_event_003
+
+	is_triggered_only = yes
+
+	option = {
+		name = low.4.a
+	}
+}
+
+#Netherlands discuss intervention in Africa
+country_event = {
+	id = low.5
+	title = low.5.t
+	desc = low.5.d
+	picture = GFX_news_event_009
+
+	is_triggered_only = yes
+
+	option = {
+		name = low.5.a
+	}
+}
+
+#Netherlands discuss expansion in Indonesia
+country_event = {
+	id = low.6
+	title = low.6.t
+	desc = low.6.d
+	picture = GFX_news_event_003
+
+	is_triggered_only = yes
+
+	option = {
+		name = low.6.a
+	}
+}
+
+#Netherlands discuss intervention in Africa
+country_event = {
+	id = low.7
+	title = low.7.t
+	desc = low.7.d
+	picture = GFX_news_event_003
+
+	is_triggered_only = yes
+
+	option = {
+		name = low.7.a
+	}
+}

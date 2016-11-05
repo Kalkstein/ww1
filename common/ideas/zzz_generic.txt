@@ -520,6 +520,46 @@ ideas = {
 				consumer_goods_factor = -0.10
 			}
 		}
+
+		naval_speed = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = liberty_ships_focus
+			
+			modifier = {
+				production_speed_dockyard_factor = 0.2
+			}
+		}
+
+		amphibious_speed = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = office_of_strategic_services
+			
+			modifier = {
+				invasion_preparation = -0.5
+			}
+		}
+
+		
 	}
 	
 	political_advisor = {

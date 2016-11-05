@@ -160,6 +160,38 @@ country_event = {
 	
 }
 
+#Netherlands wants to join The Central-Powers
+country_event = {
+	id = germany.5
+	title = germany.5.t
+	desc = germany.5.d
+	picture = GFX_report_event_degaulle_churchill
+	is_triggered_only = yes
+	
+	option = {
+		name = germany.5.a
+		add_to_faction = HOL
+		FROM = {
+			add_ai_strategy = {
+				type = alliance
+				id = "GER"
+				value = 200
+			}
+		}
+	}
+	
+	option = {
+		name = germany.5.b
+		ai_chance = { factor = 0 }
+		FROM = { 
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = protest_action_strong
+			}
+		}
+	}
+}
+
 
 ###########################
 # REVOLUTION

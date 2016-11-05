@@ -524,6 +524,10 @@ focus_tree = {
 		prerequisite = { focus = HOL_quick_firing_artillery 
 						 focus = HOL_colonial_military }
 		mutually_exclusive = {focus = HOL_offensive}
+		available = {
+			has_government = neutrality
+			has_government = democratic
+		}
 		x = 6
 		y = 4
 		cost = 10
@@ -963,7 +967,7 @@ focus_tree = {
 		y = 2
 		cost = 10
 		completion_reward = {
-			national_unity_factor = 0.10
+			add_ideas = {indoctrination_focus}
 			add_political_power = 70
 		}
 	}
@@ -995,6 +999,44 @@ focus_tree = {
 	}
 
 	focus = {
+		id = HOL_improve_germany
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = HOL_militarism }
+		x = 18
+		y = 3
+		cost = 10
+		completion_reward = {
+			GER = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = medium_increase
+				}
+			}
+			HOL = {
+				add_opinion_modifier = {
+					target = GER
+					modifier = medium_increase
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = HOL_join_the_central_powers
+		icon = GFX_goal_generic_military_deal
+		prerequisite = {focus = HOL_improve_germany}
+		available = {
+			has_government = fascism
+		}
+		x = 18
+		y = 4
+		cost = 10
+		completion_reward = {
+			GER = { country_event = { id = germany.5 } }
+		}
+	}
+
+	focus = {
 		id = HOL_interventionism
 		icon = GFX_goal_generic_more_territorial_claims
 		prerequisite = {focus = HOL_social_society
@@ -1011,9 +1053,13 @@ focus_tree = {
 	focus = {
 		id = HOL_offensive
 		icon = GFX_goal_generic_political_pressure
-		prerequisite = {focus = HOL_interventionism}
-		prerequisite = {focus = HOL_quick_firing_artillery}
-		prerequisite = {focus = HOL_colonial_military}
+		prerequisite = {focus = HOL_interventionism
+		focus = HOL_quick_firing_artillery
+		focus = HOL_colonial_military}
+		available = {
+			has_government = communism
+			has_government = fascism
+		}
 		mutually_exclusive = {focus = HOL_defensive}
 		x = 16
 		y = 4
@@ -1023,8 +1069,199 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = HOL_european_expansion
+		icon = GFX_goal_generic_cavalry
+		prerequisite = {focus = HOL_offensive}
+		available = {
+			has_army_manpower = { size > 349999 }
+		}
+		x = 14
+		y = 5
+		cost = 10
+		completion_reward = {
+			BEL = {country_event = {id = low.4 } }
+		}
+	}
 
+	focus = {
+		id = HOL_take_belgium
+		icon = GFX_goal_generic_major_war
+		prerequisite = {focus = HOL_european_expansion}
+		x = 14
+		y = 6
+		cost = 10
+		completion_reward = {
+			create_wargoal = {
+					type = annex_everything
+					target = BEL
+				}
+		}
+	}
+
+	focus = {
+		id = HOL_take_luxembourg
+		icon = GFX_goal_generic_major_war
+		prerequisite = {focus = HOL_offensive}
+		x = 14
+		y = 7
+		cost = 10
+		completion_reward = {
+			create_wargoal = {
+					type = annex_everything
+					target = LUX
+				}
+		}
+	}
+
+	focus = {
+		id = HOL_unify_benelux
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = HOL_offensive }
+		x = 14
+		y = 8
+		cost = 30
+		completion_reward = {
+			add_state_core = 6
+			add_state_core = 34
+			add_state_core = 8
+		}
+	}
 	
+	focus = {
+		id = HOL_colonial_expansion
+		icon = GFX_goal_demand_sudetenland
+		prerequisite = { focus = HOL_offensive }
+		x = 18
+		y = 5
+		cost = 10
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = HOL_african_intervention
+		icon = GFX_goal_generic_position_armies
+		prerequisite = {focus = HOL_colonial_expansion}
+		x = 16
+		y = 6
+		cost = 10
+		completion_reward = {
+			POR = {country_event = { id = low.5 } }
+			SAF = {country_event = { id = low.5 } }
+		}
+	}
+
+	focus = {
+		id = HOL_african_claim1
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = {focus = HOL_african_intervention}
+		x = 16
+		y = 7
+		cost = 10
+		completion_reward = {
+			544 = { add_claim_by = HOL }
+		} 
+	}
+
+	focus = {
+		id = HOL_african_claim2
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = {focus = HOL_african_claim1}
+		x = 16
+		y = 8
+		cost = 10
+		completion_reward = {
+			719 = { add_claim_by = HOL }
+			681 = { add_claim_by = HOL }
+		} 
+	}
+
+	focus = {
+		id = HOL_indonesian_expansion
+		icon = GFX_goal_generic_position_armies
+		prerequisite = {focus = HOL_colonial_expansion}
+		x = 18
+		y = 6
+		cost = 10
+		completion_reward = {
+			AST = { country_event = { id = low.6 } }
+			ENG = { country_event = { id = low.6 } }
+		}
+	}
+
+	focus = {
+		id = HOL_indonesian_claims
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = {focus = HOL_indonesian_expansion}
+		x = 18
+		y = 7
+		cost = 10
+		completion_reward = {
+			333 = { add_claim_by = HOL }
+			336 = { add_claim_by = HOL }
+			743 = { add_claim_by = HOL }
+			523 = { add_claim_by = HOL }
+		} 
+	}
+
+	focus = {
+		id = HOL_australia
+		icon = GFX_goal_generic_major_war
+		prerequisite = {focus = HOL_indonesian_claims}
+		x = 18
+		y = 8
+		cost = 10
+		completion_reward = {
+			create_wargoal = {
+					type = annex_everything
+					target = AST
+				}
+		}
+	}
+
+	focus = {
+		id = HOL_american_expansion
+		icon = GFX_goal_generic_position_armies
+		prerequisite = {focus = HOL_colonial_expansion}
+		x = 20
+		y = 6
+		cost = 10
+		completion_reward = {
+			USA = { country_event = { id = low.7 } }
+		}
+	}
+
+	focus = {
+		id = HOL_carribean_claims
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = {focus = HOL_colonial_expansion}
+		x = 20
+		y = 7
+		cost = 10
+		completion_reward = {
+			318 = { add_claim_by = HOL }
+			319 = { add_claim_by = HOL }
+			315 = { add_claim_by = HOL }
+		}
+	}
+
+	focus = {
+		id = HOL_conquer_south_america
+		icon = GFX_goal_generic_major_war
+		prerequisite = {focus = HOL_carribean_claims}
+		x = 20
+		y = 8
+		cost = 10
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = BRA
+			}
+		}
+	}
+
 
 	#### END ####
 
@@ -1032,7 +1269,7 @@ focus_tree = {
 		id = HOL_increase_naval_production
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		
-		x = 21
+		x = 22
 		y = 0
 		cost = 10
 		#ai_will_do = {
@@ -1040,10 +1277,10 @@ focus_tree = {
 		#}
 		completion_reward = {
 			7 = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 				add_building_construction ={
 					type = dockyard
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -1076,6 +1313,316 @@ focus_tree = {
 						province = 9498
 				}
 			}
+		}
+	}
+
+	focus = {
+		id = HOL_expand_navy1
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = {focus = HOL_port_of_rotterdam}
+		x = 20
+		y = 2
+		cost = 20
+		completion_reward = {
+			7 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction ={
+					type = dockyard
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = HOL_expand_navy2
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = {focus = HOL_expand_navy1}
+		x = 20
+		y = 3
+		cost = 20
+		completion_reward = {
+			7 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction ={
+					type = dockyard
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = flexible_navy
+		icon = GFX_goal_generic_build_navy
+		prerequisite = { focus = HOL_increase_naval_production }
+		mutually_exclusive = { focus = large_navy }
+		x = 22
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				all_owned_state = {
+					OR = {
+						is_coastal = no
+						dockyard < 1
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = sub_op_bonus
+				bonus = 0.5
+				uses = 2
+				technology = unrestricted_submarine_warfare
+				technology = wolfpacks
+			}
+		}
+	}
+
+	focus = {
+		id = large_navy
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		prerequisite = { focus = HOL_increase_naval_production }
+		mutually_exclusive = { focus = flexible_navy }
+		x = 24
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				all_owned_state = {
+					OR = {
+						is_coastal = no
+						dockyard < 1
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = fleet_in_being_bonus
+				bonus = 0.5
+				uses = 2
+				category = fleet_in_being_tree
+			}
+		}
+	}
+
+	focus = {
+		id = submarine_effort
+		icon = GFX_goal_generic_navy_submarine
+		prerequisite = { focus = flexible_navy focus = large_navy }
+		x = 22
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				all_owned_state = {
+					OR = {
+						is_coastal = no
+						dockyard < 1
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = ss_bonus
+				bonus = 0.5
+				ahead_reduction = 1
+				uses = 1
+				technology = early_submarine
+				technology = basic_submarine
+				technology = improved_submarine
+				technology = advanced_submarine
+			}
+		}
+	}
+
+	focus = {
+		id = cruiser_effort
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = large_navy focus = flexible_navy }
+		x = 24
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				all_owned_state = {
+					OR = {
+						is_coastal = no
+						dockyard < 1
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = cr_bonus
+				bonus = 0.5
+				ahead_reduction = 1
+				uses = 1
+				technology = improved_light_cruiser
+				technology = advanced_light_cruiser
+				technology = improved_heavy_cruiser
+				technology = advanced_heavy_cruiser
+			}
+		}
+	}
+
+	focus = {
+		id = destroyer_effort
+		icon = GFX_goal_generic_wolf_pack
+		prerequisite = { focus = submarine_effort }
+		x = 22
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				all_owned_state = {
+					OR = {
+						is_coastal = no
+						dockyard < 1
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = dd_bonus
+				bonus = 0.5
+				ahead_reduction = 1
+				uses = 1
+				technology = early_destroyer
+				technology = basic_destroyer
+				technology = improved_destroyer
+				technology = advanced_destroyer
+			}
+		}
+	}
+
+	focus = {
+		id = capital_ships_effort
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite = { focus = cruiser_effort }
+		x = 24
+		y = 3
+		cost = 10
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				all_owned_state = {
+					OR = {
+						is_coastal = no
+						dockyard < 1
+					}
+				}
+			}
+		}
+
+		completion_reward = {
+			navy_experience = 25
+			add_tech_bonus = {
+				name = capital_ships_bonus
+				bonus = 0.5
+				ahead_reduction = 1
+				uses = 1
+				technology = basic_battlecruiser
+				technology = basic_battleship
+				technology = improved_battleship
+				technology = advanced_battleship
+				technology = heavy_battleship
+				technology = heavy_battleship2
+				technology = early_carrier
+				technology = basic_carrier
+				technology = improved_carrier
+				technology = advanced_carrier
+			}
+		}
+	}
+
+	focus = {
+		id = HOL_grand_naval_power
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		prerequisite = {focus = HOL_expand_navy focus = destroyer_effort focus = capital_ships_effort}
+		x = 22
+		y = 4
+		cost = 10
+		completion_reward = {
+			7 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_ideas = naval_speed
+
+
+		}
+	}
+
+	focus = {
+		id = HOL_fund_the_navy
+		icon = GFX_goal_generic_amphibious_assault
+		prerequisite = {focus = HOL_grand_naval_power}
+		x = 22
+		y = 5
+		cost = 10
+		completion_reward = {
+			add_tech_bonus = {
+				name = Fund_the_navy
+				bonus = 0.50
+				uses = 2
+				technology = marines
+				technology = marines2
+				technology = marines3
+			}
+			add_ideas = amphibious_speed
 		}
 	}
 
