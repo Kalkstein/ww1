@@ -1355,10 +1355,10 @@ focus_tree = {
 	}
 
 	focus = {
-		id = flexible_navy
+		id = HOL_flexible_navy
 		icon = GFX_goal_generic_build_navy
 		prerequisite = { focus = HOL_increase_naval_production }
-		mutually_exclusive = { focus = large_navy }
+		mutually_exclusive = { focus = HOL_large_navy }
 		x = 22
 		y = 1
 		cost = 10
@@ -1391,10 +1391,10 @@ focus_tree = {
 	}
 
 	focus = {
-		id = large_navy
+		id = HOL_large_navy
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		prerequisite = { focus = HOL_increase_naval_production }
-		mutually_exclusive = { focus = flexible_navy }
+		mutually_exclusive = { focus = HOL_flexible_navy }
 		x = 24
 		y = 1
 		cost = 10
@@ -1426,9 +1426,9 @@ focus_tree = {
 	}
 
 	focus = {
-		id = submarine_effort
+		id = HOL_submarine_effort
 		icon = GFX_goal_generic_navy_submarine
-		prerequisite = { focus = flexible_navy focus = large_navy }
+		prerequisite = { focus = HOL_flexible_navy focus = HOL_large_navy }
 		x = 22
 		y = 2
 		cost = 10
@@ -1464,9 +1464,9 @@ focus_tree = {
 	}
 
 	focus = {
-		id = cruiser_effort
+		id = HOL_cruiser_effort
 		icon = GFX_goal_generic_navy_cruiser
-		prerequisite = { focus = large_navy focus = flexible_navy }
+		prerequisite = { focus = HOL_large_navy focus = HOL_flexible_navy }
 		x = 24
 		y = 2
 		cost = 10
@@ -1502,9 +1502,9 @@ focus_tree = {
 	}
 
 	focus = {
-		id = destroyer_effort
+		id = HOL_destroyer_effort
 		icon = GFX_goal_generic_wolf_pack
-		prerequisite = { focus = submarine_effort }
+		prerequisite = { focus = HOL_submarine_effort }
 		x = 22
 		y = 3
 		cost = 10
@@ -1540,9 +1540,9 @@ focus_tree = {
 	}
 
 	focus = {
-		id = capital_ships_effort
+		id = HOL_capital_ships_effort
 		icon = GFX_goal_generic_navy_battleship
-		prerequisite = { focus = cruiser_effort }
+		prerequisite = { focus = HOL_cruiser_effort }
 		x = 24
 		y = 3
 		cost = 10
@@ -1587,7 +1587,7 @@ focus_tree = {
 	focus = {
 		id = HOL_grand_naval_power
 		icon = GFX_goal_generic_navy_doctrines_tactics
-		prerequisite = {focus = HOL_expand_navy focus = destroyer_effort focus = capital_ships_effort}
+		prerequisite = {focus = HOL_expand_navy2 focus = HOL_destroyer_effort focus = HOL_capital_ships_effort}
 		x = 22
 		y = 4
 		cost = 10
