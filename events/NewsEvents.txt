@@ -1119,6 +1119,7 @@ country_event = {
 		104 = { remove_core_of = AUS }
 		109 = { remove_core_of = AUS }
 		163 = { remove_core_of = AUS }
+		}
 	}
 }
 
@@ -1359,7 +1360,8 @@ country_event = {
 		72 = { remove_core_of = AUS }
 		74 = { remove_core_of = AUS }
 		75 = { remove_core_of = AUS }
-	}	
+		}	
+	}
 }
 
 ###########################################################################################################################
