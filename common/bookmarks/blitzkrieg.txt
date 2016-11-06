@@ -1,7 +1,7 @@
 bookmarks = {
 	bookmark = {
 		name = "Debug"
-		desc = "BATTEN_DOWN_THE_HATCHES_DESC"
+		desc = "DEBUG - do not use yet"
 		date = 1914.6.25
 		picture = "GFX_select_date_1910.dds"
 		default_country = "GER"
