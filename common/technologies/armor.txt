@@ -235,7 +235,7 @@ technologies = {
 	early_heavy_tank = {
 
 		enable_equipments = {
-			early_medium_tank_equipment
+			early_heavy_tank_equipment
 		}
 		
 		path = {
@@ -263,7 +263,7 @@ technologies = {
 	heavy_tank = {
 
 		enable_equipments = {
-			early_medium_tank_equipment_2
+			early_heavy_tank_equipment_2
 		}
 		
 		path = {
