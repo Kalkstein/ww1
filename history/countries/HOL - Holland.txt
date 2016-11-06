@@ -84,7 +84,8 @@ create_country_leader = {
 create_country_leader = {
 	name = "Abraham Kuijper"
 	desc = "POLITICS_WILHELMINA_DESC"
-	picture = "Portrait_Holland_Abraham_Kuijper.dds"
+	picture = Portrait_Holland_Abraham_Kuijper.dds"
+	expire = "1925.1.1"
 	ideology = despotism
 	traits = {
 	}
@@ -102,4 +103,18 @@ create_navy_leader = {
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_1.dds"
 	traits = { blockade_runner superior_tactician }
 	skill = 4
+}
+
+
+### Ship Variants ###
+
+create_equipment_variant = {
+	name = "K-XIV Class"
+	type = submarine_1
+	upgrades = {
+		ship_reliability_upgrade = 2
+		sub_engine_upgrade = 2
+		sub_stealth_upgrade = 2
+		sub_torpedo_upgrade = 2
+	}
 }
