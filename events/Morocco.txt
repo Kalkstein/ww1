@@ -1,4 +1,4 @@
-﻿
+
 add_namespace = agadir
 
 #################################################################################################
@@ -34,75 +34,81 @@ country_event = {
 		set_global_flag = mor_civil_war
 	}
 	
-	#Support Pro-Central Powers
+	#Support Pro-Entente
 	option = {
 	    name = agadir.100.a
+		hidden_effect = {
+			start_civil_war = {
+				ruling_party = Democratic
+				ideology = Fascism
+				size = 0.5
+				capital = 462
+				states = { 290 462 }
+			}
+			MOR = { transfer_state = 290 }
+			random_other_country = {
+				limit = {
+					original_tag = MOR
+					has_government = Fascism
+				}
+				load_oob = "MOR_agadir_2"
+				set_equipment_fraction = 0.4
+				set_national_unity =0.9
+			}
+			news_event = {hours = 6 id = agadir.101}
+			set_global_flag = agadir_crisis
+			set_global_flag = mor_entente_support
+			load_oob = "MOR_agadir_1"
+			set_equipment_fraction = 0.4
+			set_national_unity = 0.9
+			add_popularity = {
+				ideology = Democratic
+				popularity = 1
+			}
+		}
+		custom_effect_tooltip = morocco_tt.01
+	}
+	
+	#Support Pro-Central Powers
+	option = {
+	    name = agadir.100.b
 		trigger = { is_ai = no }
 		hidden_effect = {
 			set_capital = 462
-				start_civil_war = {
-					ruling_party = fascism
-					ideology = fascism
-					size = 0.5
-					capital = 462
-					states = { 462 }
+			start_civil_war = {
+				ideology = Democratic
+				size = 0.5
+				capital = 461
+				states = { 290 461 }
+			}
+			random_other_country = {
+				limit = {
+					original_tag = MOR
+					has_government = Democratic
 				}
+				load_oob = "MOR_agadir_1"
+				set_equipment_fraction = 0.4
+				set_national_unity =0.9
 			}
-		random_other_country = {
-			limit = {
-				original_tag = MOR
-				has_government = Democratic
-			}
-			load_oob = "MOR_agadir_01"
+			news_event = {hours = 6 id = agadir.101}
+			set_global_flag = agadir_crisis
+			load_oob = "MOR_agadir_2"
 			set_equipment_fraction = 0.4
-			set_national_unity =0.9
-		}
-		news_event = {hours = 6 id = agadir.101}
-		set_global_flag = agadir_crisis
-		load_oob = "MOR_agadir_02"
-		set_equipment_fraction = 0.4
-		set_national_unity = 0.9
-		custom_effect_tooltip = morocco_tt.02
-	}
-	
-	#Support Pro-Entente
-	option = {
-	    name = agadir.100.b
-		hidden_effect = {
-			set_capital = 461
-				start_civil_war = {
-					ruling_party = fascism
-					ideology = fascism
-					size = 0.5
-					capital = 461
-					states = { 290 461 }
-				}
+			set_national_unity = 0.9
+			add_popularity = {
+				ideology = Fascism
+				popularity = 1
 			}
-		random_other_country = {
-			limit = {
-				original_tag = MOR
-				has_government = Democratic
-			}
-			load_oob = "MOR_agadir_02"
-			set_equipment_fraction = 0.4
-			set_national_unity =0.9
 		}
-		news_event = {hours = 6 id = agadir.101}
-		set_global_flag = agadir_crisis
-		set_global_flag = mor_entente_support
-		load_oob = "MOR_agadir_01"
-		set_equipment_fraction = 0.4
-		set_national_unity = 0.9
 		custom_effect_tooltip = morocco_tt.02
-		}
 	}
 }
 
-# agadir News
-news.event = {
+# Agadir News
+news_event = {
 	id = agadir.101
 	title = agadir.101.t 
-	desc = adagir.101.d 
+	desc = agadir.101.d 
 	picture = GFX_agadir_event_002 
 	
 	major = yes
@@ -112,7 +118,7 @@ news.event = {
 	option = {
 		name = agadir.101.a
 		trigger = {
-			OR ={
+			OR = {
 				tag = GER
 				is_in_faction_with = GER
 			} 
@@ -122,7 +128,7 @@ news.event = {
 	option = {
 		name = agadir.101.b
 		trigger = {
-			OR ={
+			OR = {
 				tag = FRA
 				is_in_faction_with = FRA
 			}
@@ -138,6 +144,7 @@ news.event = {
 				is_in_faction_with = GER
 				is_in_faction_with = FRA
 			}
+		}
 	}
 }
 
@@ -145,7 +152,7 @@ news.event = {
 news.event = {
 	id = agadir.110
 	title = agadir.110.t 
-	desc = adagir.110.d 
+	desc = agadir.110.d 
 	picture = GFX_agadir_event_003 
 	
 	major = yes
@@ -162,7 +169,7 @@ news.event = {
 	option = {
 		name = agadir.110.a
 		trigger = {
-			OR ={
+			OR = {
 				tag = GER
 				is_in_faction_with = GER
 			} 
@@ -188,14 +195,15 @@ news.event = {
 				is_in_faction_with = GER
 				is_in_faction_with = FRA
 			}
+		}
 	}
 }
 
-# German Cinancial Crisis Ends
+# German Financial Crisis Ends
 news.event = {
 	id = agadir.120
 	title = agadir.120.t 
-	desc = adagir.120.d 
+	desc = agadir.120.d 
 	picture = GFX_agadir_event_004 
 	
 	major = yes
@@ -205,12 +213,12 @@ news.event = {
 		NOT = {
 			has_global_flag = ger_eco_crisis_end
 		}
-		OR ={
+		OR = {
 			MOR = {
 				states = { 290 461 462 }
 			}
-			D01 = {
-				states = { 290 461 462 }
+			NOT = {
+				country_exists = MOR
 			}
 		}
 	
@@ -226,7 +234,7 @@ news.event = {
 	option = {
 		name = agadir.120.a
 		trigger = {
-			OR ={
+			OR = {
 				tag = GER
 				is_in_faction_with = GER
 			}
@@ -236,7 +244,7 @@ news.event = {
 	option = {
 		name = agadir.120.b
 		trigger = {
-			OR ={
+			OR = {
 				tag = FRA
 				is_in_faction_with = FRA
 			}
@@ -252,6 +260,7 @@ news.event = {
 				is_in_faction_with = GER
 				is_in_faction_with = FRA
 			}
+		}
 	}
 }
 
@@ -259,7 +268,7 @@ news.event = {
 news.event = {
 	id = agadir.131
 	title = agadir.131.t 
-	desc = adagir.131.d 
+	desc = agadir.131.d 
 	picture = GFX_agadir_event_005 
 	
 	major = yes
@@ -277,7 +286,6 @@ news.event = {
 	
 	immediate = {
 		set_global_flag = agadir_over
-		}
 	}
 	
 	option = {
@@ -305,6 +313,7 @@ news.event = {
 				tag = GER
 				tag = FRA
 			}
+		}
 	}
 }
 
@@ -312,7 +321,7 @@ news.event = {
 news.event = {
 	id = agadir.132
 	title = agadir.132.t 
-	desc = adagir.132.d 
+	desc = agadir.132.d 
 	picture = GFX_agadir_event_005 
 	
 	major = yes
@@ -329,7 +338,8 @@ news.event = {
 	}
 	
 	immediate = {
-		set_global_flag = agadir_over
+		set_global_flag = {
+			agadir_over
 		}
 	}
 	

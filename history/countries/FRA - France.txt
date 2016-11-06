@@ -31,7 +31,8 @@ set_technology = {
 	mass_assault = 1
 }
 
-
+set_convoys = 300
+set_national_unity = 0.4
 
 set_politics = {
 
@@ -63,11 +64,7 @@ add_ideas = {
 	low_economic_mobilisation
 }
 
-set_convoys = 300
-set_national_unity = 0.4
 create_faction = Triple_Entente
-add_to_faction = SOV
-puppet = MOR
 
 create_country_leader = {
 	name = "Raymond Poincaré"
