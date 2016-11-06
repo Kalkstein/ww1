@@ -640,9 +640,6 @@ country_event = {
 	option = {
 		name = july_crisis.121.a
 		ai_chance = { factor = 90 }
-		trigger = {
-			tag = SOV
-		} 
 		FRA = {
 			add_to_faction = SER
 			add_to_faction = MNT
@@ -653,9 +650,6 @@ country_event = {
 	option = {
 	    name = july_crisis.121.b
 		ai_chance = { factor = 10 }
-		trigger = {
-			tag = SOV
-		} 
 		SER = {
 			set_rule = { can_create_factions = yes }
 			create_faction = panslavic_faction
@@ -696,9 +690,6 @@ country_event = {
 	option = {
 	    name = july_crisis.122.a
 		ai_chance = { factor = 90 }
-		trigger = {
-			tag = SOV
-		} 
 		FRA = {
 			add_to_faction = SER
 			add_to_faction = MNT
@@ -708,9 +699,6 @@ country_event = {
 	option = {
 	    name = july_crisis.122.b
 		ai_chance = { factor = 10 }
-		trigger = {
-			tag = SOV
-		} 
 		SER = {
 			set_rule = { can_create_factions = yes }
 			create_faction = panslavic_faction
@@ -751,18 +739,12 @@ country_event = {
 	option = {
 	    name = july_crisis.131.a
 		ai_chance = { factor = 0 }
-		trigger = {
-			tag = SER
-		} 
 		set_global_flag = split_accept
 	}
 	
 	option = {
 	    name = july_crisis.131.b
 		ai_chance = { factor = 100 }
-		trigger = {
-			tag = SER
-		} 
 		set_global_flag = ultimatum_reject
 	}
 }
@@ -796,9 +778,6 @@ country_event = {
 	option = {
 	    name = july_crisis.132.a
 		ai_chance = { factor = 0 }
-		trigger = {
-			tag = SER
-		} 
 		set_global_flag = invest_accept
 		SER = {
 			add_political_power = -500
@@ -809,15 +788,7 @@ country_event = {
 	option = {
 	    name = july_crisis.132.b
 		ai_chance = { factor = 100 }
-		trigger = {
-			tag = SER
-		} 
 		set_global_flag = ultimatum_reject
-		SER = {
-			set_rule = { can_create_factions = yes }
-			create_faction = panslavic_faction
-			add_to_faction = MNT
-		}
 	}
 }
 	
