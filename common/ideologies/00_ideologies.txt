@@ -72,9 +72,6 @@ ideologies = {
 			
 			ottomanism = {
 			}
-			despotism = {
-			}
-			
 		}
 		
 		dynamic_faction_names = {
