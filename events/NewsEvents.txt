@@ -47,6 +47,7 @@ news_event = {
 	
 	immediate = {
 		set_global_flag = balkan_war_over
+		clr_gobal_flag = balkan_war
 	}
 	
 	fire_only_once = yes
@@ -104,7 +105,7 @@ news_event = {
 	fire_only_once = yes
 	
 	immediate = {
-		set_global_flag = balcan_war_over
+		set_global_flag = balkan_war_over
 	}
 	
 	option = {
@@ -412,6 +413,77 @@ news_event = {
 				}
 			}
 		}
+	}
+}
+
+#Placeholder (news.243)
+
+#Placeholder (news.244)
+
+#Second Balkan War 
+news_event = {
+	id = news.245 
+	title = news.245.t 
+	desc = news.245.d 
+	picture = GFX_news_event_soldiers_marching
+	
+	major = yes 
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = news.245.a 
+		trigger = {
+			NOT = {
+				OR = {
+					tag = BUL 
+					is_in_faction_with = BUL 
+					has_war_with = BUL 
+				}
+			}
+		}
+		hidden_effect = {
+			48 = {
+				set_state_flag = BUL_home_flag
+			}
+			211 = {
+				set_state_flag = BUL_home_flag
+			}
+			212 = {
+				set_state_flag = BUL_home_flag
+			}
+			77 = {
+				set_state_flag = BUL_romania_flag
+			}
+		}
+	}
+}
+
+#End of the Second Balkan War (Hidden)
+news_event = {
+	id = news.246 
+	hidden = yes 
+	
+	major = yes 
+	
+	trigger = {
+		has_global_flag = balkan_war_2 
+		NOT = {
+			BUL = {
+				has_war_with = SER 
+			}
+		}
+	}
+	
+	fire_only_once = yes 
+	
+	mean_time_to_happen = {
+		days = 1 
+	}
+	
+	immediate = {
+		clr_gobal_flag = balkan_war_2
+		set_global_flag = balkan_war_2_over
 	}
 }
 
@@ -1060,6 +1132,7 @@ news_event = {
 			create_faction = panslavic_faction
 			add_to_faction = MNT
 		}
+		set_global_flag = great_war
 	}
 	
 	option = {

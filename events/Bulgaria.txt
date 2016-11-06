@@ -769,6 +769,9 @@ country_event = {
 				remove_state_claim = 106 
 			}
 		}
+		hidden_effect = {
+			set_global_flag = no_balkan_war_2
+		}
 	}
 }
 
@@ -833,6 +836,9 @@ country_event = {
 				transfer_state = 106 
 				remove_state_claim = 106 
 			}
+		}
+		hidden_effect = {
+			set_global_flag = no_balkan_war_2
 		}
 	}
 }
@@ -1405,16 +1411,23 @@ country_event = {
 				factor = 0
 				strength_ratio = {
 					tag = SER
-					ratio > 2
+					ratio < 2
 				}
+			}
+			modifier = {
+				factor = 100 
+				is_historical_focus_on = yes 
 			}
 		}
 		declare_war_on = {
 			target = SER
 			type = take_state
 			generator = { 106 }
+		} 
+		hidden_effect = {
+			news_event = { id = news.245 hours = 12 }
+			set_global_flag = balkan_war_2
 		}
-		set_global_flag = balkan_war_2 
 	}
 	option = {
 		name = bulgaria.35.b 
@@ -1427,9 +1440,16 @@ country_event = {
 					ratio > 2
 				}
 			}
+			modifier = {
+				factor = 0 
+				is_historical_focus_on = yes 
+			}
 		}
 		add_national_unity = -0.15 
 		add_political_power = -200 
+		hidden_effect = {
+			set_global_flag = no_balkan_war_2
+		}
 	}
 }
 
@@ -1549,6 +1569,9 @@ country_event = {
 			}
 			remove_from_faction = SER 
 		}
+		hidden_effect = {
+			set_global_flag = no_balkan_war_2
+		}
 	}
 	option = {
 		name = bulgaria.39.b 
@@ -1558,7 +1581,7 @@ country_event = {
 				factor = 0 
 				strength_ratio = {
 					tag = SER
-					ratio > 2
+					ratio > 3
 				}
 			}
 			modifier = {
@@ -1597,6 +1620,10 @@ country_event = {
 					generator = { 106 }
 				}
 		}
+		hidden_effect = {
+			set_global_flag = balkan_war_2
+			news_event = { id = news.245 hours = 12 }
+		}
 	}
 	option = {
 		name = bulgaria.39.c 
@@ -1607,6 +1634,9 @@ country_event = {
 		 add_popularity = {
 					ideology = fascism
 					popularity = -0.1
+		}
+		hidden_effect = {
+			set_global_flag = no_balkan_war_2
 		}
 	}
 }

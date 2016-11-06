@@ -31,6 +31,16 @@ fascist_peace = {
 				}
 				has_global_flag = balkan_war
 			}
+			AND = {
+				OR = {
+					tag = GRE 
+					tag = SER 
+					tag = MNT 
+					tag = TUR 
+					tag = ROM 
+				}
+				has_global_flag = balkan_war_2
+			}
 		}
 		#These guys have their own special peace conference AI
 		#NOT = { tag = GER }
@@ -534,6 +544,40 @@ fascist_peace = {
 			FROM = {
 				NOT = {
 					has_state_flag = BUL_claim_war_1
+				}
+			}
+		}
+		
+		modifier = {
+			factor = 0 
+			AND = {
+				has_global_flag = balkan_war_2
+				ROOT = { 
+					OR = {
+						tag = SER 
+						tag = TUR 
+						tag = MNT 
+						tag = GRE 
+					}
+				}
+			}
+			FROM = {
+				OR = {
+					has_state_flag = BUL_home_flag
+					has_state_flag = BUL_romania_flag
+				}
+			}
+		}
+		
+		modifier = {
+			factor = 0 
+			AND = {
+				has_global_flag = balkan_war_2
+				ROOT = { tag = ROM }
+			}
+			FROM = {
+				NOT = {
+					has_state_flag = BUL_romania_flag
 				}
 			}
 		}

@@ -1296,7 +1296,10 @@ focus_tree = {
 		prerequisite = { focus = BUL_turkish_ultimatum }
 		available = {
 			has_war = no
-			has_global_flag = balkan_war_over
+			custom_trigger_tooltip = { 
+				tooltip = balkan_war_over_tt
+				has_global_flag = balkan_war_over
+			}
 			106 = {
 				owner = {
 					original_tag = SER 
@@ -1308,7 +1311,10 @@ focus_tree = {
 		}
 		cancel_if_invalid = yes 
 		bypass = {
-			has_global_flag = balkan_war_over
+			custom_trigger_tooltip = {
+				tooltip = balkan_war_over_tt
+				has_global_flag = balkan_war_over
+			}
 			NOT = { 
 				106 = {
 					owner = {
@@ -1317,7 +1323,8 @@ focus_tree = {
 					controller = {
 						original_tag = SER
 					}
-			}	}
+				}
+			}
 		}
 		x = 27 
 		y = 9 
@@ -1415,7 +1422,10 @@ focus_tree = {
 		mutually_exclusive = { focus = BUL_macedonia_peace }
 		prerequisite = { focus = BUL_macedonia }
 		bypass = {
-			has_global_flag = balkan_war_over
+			custom_trigger_tooltip = {
+				tooltip = balkan_war_over_tt
+				has_global_flag = balkan_war_over
+			}
 			NOT = {
 				106 = {
 					owner = {
@@ -1556,8 +1566,11 @@ focus_tree = {
 		icon = GFX_goal_support_fascism
 		prerequisite = { focus = BUL_fortify_thrace focus = BUL_abandon_macedonia focus = BUL_macedonia_or_war focus = BUL_war_with_ottomans }
 		available = {
-			has_global_flag = {
-				great_war
+			custom_trigger_tooltip = {
+				tooltip = has_great_war
+				has_global_flag = {
+					great_war
+				}
 			}
 			has_war = no 
 			is_puppet = no 
@@ -2568,8 +2581,14 @@ focus_tree = {
 		prerequisite = { focus = BUL_support_battalions }
 		available = {
 			OR = {
-				has_global_flag = balkan_war
-				has_global_flag = balkan_war_over
+				custom_trigger_tooltip = {
+					tooltip = balkan_war_in_progress_tt
+					has_global_flag = balkan_war
+				}
+				custom_trigger_tooltip = {
+					tooltip = balkan_war_over_tt
+					has_global_flag = balkan_war_over
+				}
 			}
 		}
 		x = 38 
@@ -3264,10 +3283,16 @@ focus_tree = {
 		icon = GFX_goal_generic_army_doctrines
 		prerequisite = { focus = BUL_more_artillery }
 		available = {
-			has_global_flag = balkan_war_2_over 
+			custom_trigger_tooltip = {
+				tooltip = balkan_war_2_over_tt
+				has_global_flag = balkan_war_2_over
+			}
 		}
 		bypass = {
-			has_global_flag = no_balkan_war_2 
+			custom_trigger_tooltip = { 
+				tooltip = no_balkan_war_2_tt
+				has_global_flag = no_balkan_war_2
+			}
 		}
 		x = 38 
 		y = 11 
