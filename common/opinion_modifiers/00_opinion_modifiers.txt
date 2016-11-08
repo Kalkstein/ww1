@@ -645,7 +645,12 @@ opinion_modifiers = {
 	#Ottoman focus tree 
 	
 	TUR_refused_mission = { value = -25 decay = 1 }
-	
+	TUR_refused_tech_treaty = { value = -25 decay = 0.05 }
+	TUR_tech_treaty = { value = 25 }
+	TUR_will_build_ships = { value = 25 }
+	TUR_wont_build_ships = { value = -25 decay = 0.1 }
+	TUR_delivered_ships = { value = 30 }
+	TUR_confiscated_ships = { value = -50 decay = 0.5 }
 	
 	# Russian focus tree
 	

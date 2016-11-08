@@ -407,6 +407,40 @@ ideas = {
 				conscription = 0.01 
 			}
 		}
+		TUR_pilot_cost_idea = {
+			picture = air_war_plans_division_focus
+			removal_cost = -1 
+			
+			allowed = {
+				always = no 
+			}
+			
+			allowed_civil_war = {
+				always = yes 
+			}
+			
+			modifier = {
+				political_power_factor = -0.1 
+				experience_gain_air = 0.01
+			}
+		}
+		TUR_pilot_cost2_idea = {
+			picture = air_war_plans_division_focus
+			removal_cost = -1 
+			
+			allowed = {
+				always = no 
+			}
+			
+			allowed_civil_war = {
+				always = yes 
+			}
+			
+			modifier = {
+				political_power_factor = -0.15 
+				experience_gain_air = 0.02
+			}
+		}
 	}
 
 	
@@ -471,12 +505,70 @@ ideas = {
 			allowed = {
 				original_tag = TUR
 			}
+			
+			available = {
+				has_completed_focus = TUR_found_aircraft_school
+			}
 		
 			research_bonus = {
 				air_doctrine = 0.07
 			}
 		
 			traits = { air_warfare_theorist }
+		}
+		
+		TUR_rapid_modernization_idea = {
+			picture = generic_production_bonus 
+			removal_cost = -1 
+			
+			allowed = {
+				always = no 
+			}
+			
+			allowed_civil_war = {
+				always = yes 
+			}
+			
+			research_bonus = {
+				industry = 0.1 
+			}
+			
+			modifier = {
+				consumer_goods_factor = -0.1 
+				production_speed_industrial_complex_factor = 0.2
+				production_speed_arms_factory_factor = 0.2
+			}
+			
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+		
+		TUR_naval_race_idea = {
+			picture = generic_navy_bonus
+			removal_cost = -1 
+			
+			allowed = {
+				always = no 
+			}
+			
+			allowed_civil_war = {
+				always = yes 
+			}
+			
+			equipment_bonus = {
+				capital_ship = {
+					build_cost_ic = -0.15 instant = yes
+				}
+				screen_ship = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				submarine = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
 		}
 	}	
 
@@ -527,7 +619,9 @@ ideas = {
 				original_tag = TUR
 			}
 			
-
+			available = {
+				has_completed_focus = TUR_found_aircraft_school
+			}
 			
 			traits = { air_chief_night_operations_2 }
 			
@@ -544,7 +638,9 @@ ideas = {
 				original_tag = TUR
 			}
 			
-
+			available = {
+				has_completed_focus = TUR_found_aircraft_school
+			}
 			
 			traits = { air_chief_ground_support_2 }
 			
@@ -602,7 +698,9 @@ ideas = {
 				original_tag = TUR
 			}
 			
-
+			available = {
+				has_completed_focus = TUR_found_aircraft_school
+			}
 			
 			traits = { air_strategic_bombing_3 }
 			

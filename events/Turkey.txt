@@ -331,7 +331,7 @@ country_event = {
 					popularity = 0.37
 				}
 			}
-			news_event = { hours = 12 id = news.243 }
+			news_event = { hours = 12 id = news.244 }
 			set_global_flag = ottoman_civil_war
 			
 			set_national_unity = 0.8
@@ -499,5 +499,383 @@ country_event = {
 	
 	option = {
 		name = turkey.16.a 
+	}
+}
+
+#Recall pilots, financial difficulties 
+country_event = {
+	id = turkey.17 
+	title = turkey.17.t 
+	desc = turkey.17.d 
+	picture = GFX_report_event_journalists_speech
+	
+	trigger = {
+		tag = TUR 
+		has_global_flag = TUR_has_sent_pilots
+		date > 1911.3.1 
+	}
+	
+	fire_only_once = yes 
+	
+	mean_time_to_happen = {
+		days = 100 
+	}
+	
+	option = {
+		name = turkey.17.a #Yes recall them 
+		ai_chance = {
+			factor = 99 
+			modifier = {
+				factor = 0.5 
+				is_historical_focus_on = no 
+			}
+		}
+			air_experience = 25 
+			remove_ideas = TUR_pilot_cost_idea
+			hidden_effect = {
+				clr_global_flag = TUR_has_sent_pilots
+			}
+		
+	}
+	
+	option = {
+		name = turkey.17.b #They Stay
+		ai_chance = {
+			factor = 1 
+			modifier = {
+				is_historical_focus_on = no 
+				factor = 50 
+			}
+		}
+		add_political_power = -100
+		remove_ideas = TUR_pilot_cost_idea 
+		add_ideas = TUR_pilot_cost2_idea
+	}
+}
+
+#Pilots return because of war 
+country_event = {
+	id = turkey.18 
+	title = turkey.18.t 
+	desc = turkey.18.d 
+	picture = GFX_report_event_soldiers_marching
+	
+	trigger = {
+		tag = TUR 
+		has_global_flag = TUR_has_sent_pilots
+		has_war = yes 
+	}
+	
+	fire_only_once = yes 
+	
+	mean_time_to_happen = {
+		days = 1 
+	}
+	
+	option = {
+		name = turkey.18.a 
+		hidden_effect = {
+			remove_ideas = TUR_pilot_cost_idea
+			remove_ideas = TUR_pilot_cost2_idea
+			clr_global_flag = TUR_has_sent_pilots
+		}
+		air_experience = 30 
+	}
+}
+
+#Pilots Complete Training 
+country_event = {
+	id = turkey.19 
+	title = turkey.19.t 
+	desc = turkey.19.d 
+	picture = GFX_report_event_german_inspect_troops
+	
+	trigger = {
+		tag = TUR 
+		date > 1912.1.1 
+		has_global_flag = TUR_has_sent_pilots 
+	}
+	
+	fire_only_once = yes 
+	
+	mean_time_to_happen = {
+		days = 150 
+	}
+	
+	option = {
+		name = turkey.19.a 
+		air_experience = 40 
+		hidden_effect = {
+			remove_ideas = TUR_pilot_cost2_idea
+			remove_ideas = TUR_pilot_cost_idea
+		}
+		add_tech_bonus = {
+			name = doctrine_bonus
+			uses = 2 
+			bonus = 0.5 
+			category = air_doctrine 
+		}
+	}
+}
+
+#Turko-German Tech Treaty 
+country_event = {
+	id = turkey.20 
+	title = turkey.20.t 
+	desc = turkey.20.d 
+	picture = GFX_report_event_physics_lab_01 
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = turkey.20.a 
+		ai_chance = {
+			factor = 100
+		}
+		TUR = {
+			add_opinion_modifier = {
+				target = ROOT modifier = TUR_tech_treaty
+			}
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				uses = 1 
+				bonus = 0.5 
+				category = infantry_weapons 
+			}
+			add_tech_bonus = {
+				name = armor_bonus 
+				uses = 1 
+				ahead_reduction = 0.5 
+				bonus = 0.3 
+				category = armor 
+			}
+			add_tech_bonus = {
+				name = industry_bonus 
+				uses = 1 
+				bonus = 0.5 
+				category = industry 
+			}
+			set_country_flag = TUR_ger_accept_treaty_flag
+			country_event = { id = turkey.21 days = 1 }
+		}
+		add_tech_bonus = {
+			name = doctrine_bonus 
+			uses = 1 
+			bonus = 0.5 
+			category = land_doctrine
+		}
+	}
+	
+	option = {
+		name = turkey.20.b 
+		ai_chance = { factor = 0 }
+		add_political_power = -10 
+		TUR = {
+			add_opinion_modifier = {
+				target = ROOT modifier = TUR_refused_tech_treaty
+			}
+			country_event = { id = turkey.22 days = 1 }
+		}
+	}
+}
+
+#Germany Accepts Treaty
+country_event = {
+	id = turkey.21 
+	title = turkey.21.t 
+	desc = turkey.21.d 
+	picture = GFX_report_event_german_inspect_troops
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = turkey.21.a 
+		effect_tooltip = {
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				uses = 1 
+				bonus = 0.5 
+				category = infantry_weapons 
+			}
+			add_tech_bonus = {
+				name = armor_bonus 
+				uses = 1 
+				ahead_reduction = 0.5 
+				bonus = 0.3 
+				category = armor 
+			}
+			add_tech_bonus = {
+				name = industry_bonus 
+				uses = 1 
+				bonus = 0.5 
+				category = industry 
+			}
+		}
+	}
+}
+
+#Germany Declines Treaty 
+country_event = {
+	id = turkey.22 
+	title = turkey.22.t 
+	desc = turkey.22.d 
+	picture = GFX_report_event_read_write
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = turkey.22.a 
+	}
+}
+
+#Turkey orders the Sultan Osman-ı Evvel & Reşadiye
+country_event = {
+	id = turkey.23 
+	title = turkey.23.t 
+	desc = turkey.23.d 
+	picture = GFX_report_event_read_write
+	
+	is_triggered_only = yes 
+	
+	option = { #Accept 
+		name = turkey.23.a 
+		ai_chance = {
+			factor = 90 
+			modifier = {
+				factor = 100 
+				is_historical_focus_on = yes 
+			}
+		}
+		TUR_construct_ships_tt #The Dreadnoughts will be Constructed
+		hidden_effect = {
+			ENG = {
+				country_event = { id = turkey.24 days = 730 }
+			}
+		}
+		TUR = {
+			country_event = { id = turkey.25 days = 1 }
+			add_opinion_modifier = { target = ENG modifier = TUR_will_build_ships }
+		}
+	}
+	
+	option = {
+		name = turkey.23.b 
+		ai_chance = {
+			factor = 10 
+		}
+		TUR = {
+			country_event = { id = turkey.26 days = 1 }
+			add_opinion_modifier = { target = ENG modifier = TUR_wont_build_ships }
+		}
+	}
+}
+
+#The Ships are Done (Great Britain)
+country_event = {
+	id = turkey.24 
+	title = turkey.24.t 
+	desc = turkey.24.d 
+	picture = GFX_report_event_merchant_ship_01
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = turkey.24.a 
+		ai_chance = {
+			factor = 80 
+			modifier = {
+				factor = 0 
+				is_historical_focus_on = yes
+			}
+		}
+		send_equipment = {
+			target = TUR
+			type = heavy_battleship
+			amount = 2
+		}
+		add_political_power = 50
+		TUR = {
+			country_event = { id = turkey.27 days = 1 }
+			add_opinion_modifier = { target = ENG modifier = TUR_delivered_ships }
+			remove_opinion_modifier = { target = ENG modifier = TUR_will_build_ships }
+		}
+	}
+	
+	option = {
+		name = turkey.24.b 
+		ai_chance = {
+			factor = 20 
+		}
+		add_political_power = -50
+		TUR = {
+			country_event = { id = turkey.28 days = 1 }
+			remove_opinion_modifier = { target = ENG modifier = TUR_will_build_ships }
+			add_opinion_modifier = { target = ENG modifier = TUR_confiscated_ships }
+		}
+	}
+}
+
+#Great Britain will build ships 
+country_event = {
+	id = turkey.25 
+	title = turkey.25.t 
+	desc = turkey.25.d 
+	picture = GFX_report_event_usa_british_sailors_destroyers
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = turkey.25.a #Good 
+	}
+} 
+
+#Great Britain Won't Build Ships 
+country_event = {
+	id = turkey.26 
+	title = turkey.26.t 
+	desc = turkey.26.d 
+	picture = GFX_report_event_merchant_ship_01
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = turkey.26.a 
+	}
+}
+
+#Ships are done Great Britain Delivers
+country_event = {
+	id = turkey.27 
+	title = turkey.27.t 
+	desc = turkey.27.d 
+	picture = GFX_report_event_usa_british_sailors_destroyers
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = turkey.27.a 
+		effect_tooltip = {
+			ENG = {
+				send_equipment = {
+					target = TUR 
+					type = heavy_battleship
+					amount = 2 
+				}
+			}
+		}
+	}
+}
+
+#Ships are done Great Britain Seizes them!
+country_event = {
+	id = turkey.28 
+	title = turkey.28.t 
+	desc = turkey.28.d 
+	picture = GFX_report_event_soldiers_marching
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = turkey.28.a 
 	}
 }
