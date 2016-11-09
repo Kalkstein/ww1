@@ -1,5 +1,5 @@
-division_template = {
-	name = "Partizanët Shqiptarë" 			# Albanian Partisans
+ï»¿division_template = {
+	name = "PartizanÃ«t ShqiptarÃ«" 			# Albanian Partisans
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -26,7 +26,7 @@ division_template = {
 }
 
 division_template = {
-	name = "Partizani Kalorësi"				#Partisan Cavalry
+	name = "Partizani KalorÃ«si"				#Partisan Cavalry
 	
 	regiments = {
 		cavalry = { x = 0 y = 0 }
@@ -40,27 +40,27 @@ division_template = {
 
 units = {
 	division = {
-		name = "1. Ndarja Kalorësi 'Shkodër'"
+		name = "1. Ndarja KalorÃ«si 'ShkodÃ«r'"
 		location = 935 
-		division_template = "Partizani Kalorësi"
+		division_template = "Partizani KalorÃ«si"
 		start_experience_factor = 0.22
 		start_equipment_factor = 0.7
 
 	}
 
 	division = {
-		name = "2. Ndarja Kalorësi 'Dibër'"
+		name = "2. Ndarja KalorÃ«si 'DibÃ«r'"
 		location = 11762
-		division_template = "Partizani Kalorësi"
+		division_template = "Partizani KalorÃ«si"
 		start_experience_factor = 0.22
 		start_equipment_factor = 0.7
 
 	}	
 
 	division = {
-		name = "3. Ndarja Kalorësi 'Elbassan'"
+		name = "3. Ndarja KalorÃ«si 'Elbassan'"
 		location = 9875
-		division_template = "Partizani Kalorësi"
+		division_template = "Partizani KalorÃ«si"
 		start_experience_factor = 0.24
 		start_equipment_factor = 0.7
 
@@ -69,31 +69,31 @@ units = {
 	division = {
 		name = "Batalioni partizane Veriore"
 		location = 3896
-		division_template = "Partizanët Shqiptarë"
+		division_template = "PartizanÃ«t ShqiptarÃ«"
 		start_experience_factor = 0.241
 		start_equipment_factor = 0.87 
 	}
 	
 	division = {
-		name = "Mbrojtësit e Shqipërisë"
+		name = "MbrojtÃ«sit e ShqipÃ«risÃ«"
 		location = 9914 
-		division_template = "Partizanët Shqiptarë"
+		division_template = "PartizanÃ«t ShqiptarÃ«"
 		start_experience_factor = 0.39
 		start_equipment_factor = 1 
 	}
 	
 	division = {
-		name = "Nemërçkë Partizanët"
+		name = "NemÃ«rÃ§kÃ« PartizanÃ«t"
 		location = 6900
-		division_template = "Partizanët Shqiptarë"
+		division_template = "PartizanÃ«t ShqiptarÃ«"
 		start_experience_factor = 0.247
 		start_equipment_factor = 0.77
 	}
 	
 	division = {
-		name = "Korab Partizanët"
+		name = "Korab PartizanÃ«t"
 		location = 11762 
-		division_template = "Partizanët Shqiptarë"
+		division_template = "PartizanÃ«t ShqiptarÃ«"
 		start_experience_factor = 0.23 
 		start_equipment_factor = 0.91
 	}
