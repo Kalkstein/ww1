@@ -1676,7 +1676,7 @@ country_event = {
 		effect_tooltip = {
 			declare_war_on = {
 				target = ROM 
-				type = puppet_wargoal 
+				type = puppet_wargoal_focus 
 			}
 		}
 	}
@@ -1704,7 +1704,7 @@ country_event = {
 		}
 		declare_war_on = {
 			target = ROM 
-			type = puppet_wargoal
+			type = puppet_wargoal_focus
 		}
 	}
 	option = {

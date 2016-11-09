@@ -1281,9 +1281,9 @@ focus_tree = {
 ### End ###
 	
 	focus = {
-		id = TUR_solve_political_problems
+		id = TUR_choose_sides
 		icon = GFX_goal_generic_national_unity
-		x = 24
+		x = 34
 		y = 0
 		cost = 10
 		ai_will_do = {
@@ -1323,11 +1323,11 @@ focus_tree = {
 		id = TUR_side_with_sultan
 		icon = GFX_goal_support_fascism
 		mutually_exclusive = { focus = TUR_support_young_turks }
-		prerequisite = { focus = TUR_solve_political_problems }
+		prerequisite = { focus = TUR_choose_sides }
 		available = {
 			date < 1913.1.1
 		}
-		x = 25 
+		x = 33 
 		y = 1 
 		cost = 10 
 		completion_reward = {
@@ -1362,8 +1362,8 @@ focus_tree = {
 		id = TUR_support_young_turks 
 		icon = GFX_goal_support_democracy
 		mutually_exclusive = { focus = TUR_side_with_sultan }
-		prerequisite = { focus = TUR_solve_political_problems }
-		x = 27 
+		prerequisite = { focus = TUR_choose_sides }
+		x = 35 
 		y = 1 
 		cost = 10 
 		completion_reward = {
@@ -1439,7 +1439,7 @@ focus_tree = {
 				has_idea = TUR_politicians_disloyal_idea
 			}
 		}
-		x = 25 
+		x = 33 
 		y = 2 
 		cost = 10 
 		completion_reward = {
@@ -1459,7 +1459,7 @@ focus_tree = {
 		available = {
 			date > 1912.1.21 
 		}
-		x = 27 
+		x = 35 
 		y = 2 
 		cost = 10 
 		completion_reward = {
@@ -1506,7 +1506,7 @@ focus_tree = {
 		id = TUR_root_out_young_turks
 		icon = GFX_goal_generic_war_with_comintern
 		prerequisite = { focus = TUR_eliminate_opposition }
-		x = 25 
+		x = 33 
 		y = 3 
 		cost = 30 
 		completion_reward = {
@@ -1529,7 +1529,7 @@ focus_tree = {
 		available = {
 			has_country_flag = TUR_1913_coup
 		}
-		x = 27
+		x = 35
 		y = 3
 		cost = 10
 		ai_will_do = {
@@ -1618,7 +1618,7 @@ focus_tree = {
 		id = TUR_start_solve_ethnic_problems
 		icon = GFX_goal_generic_improve_relations
 		prerequisite = { focus = TUR_root_out_young_turks focus = TUR_permanent_solution }
-		x = 26 
+		x = 34 
 		y = 4 
 		cost = 10 
 		completion_reward = {
@@ -1637,7 +1637,7 @@ focus_tree = {
 		bypass = {
 			has_government = neutrality 
 		}
-		x = 28 
+		x = 36 
 		y = 4 
 		cost = 10 
 		completion_reward = {
@@ -1706,7 +1706,7 @@ focus_tree = {
 		id = TUR_cultural_conversion 
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = TUR_start_solve_ethnic_problems }
-		x = 26 
+		x = 34 
 		y = 5 
 		cost = 30 
 		completion_reward = {
@@ -1722,7 +1722,7 @@ focus_tree = {
 		id = TUR_solve_religious_problems
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = TUR_cultural_conversion }
-		x = 26 
+		x = 34 
 		y = 6 
 		cost = 5 
 		completion_reward = {
