@@ -66,7 +66,7 @@ create_country_leader = {
 	desc = "POLITICS_WILHELMINA_DESC"
 	picture = "Portrait_Holland_Wilhelmina.dds"
 	expire = "1965.1.1"
-	ideology = fascism_ideology
+	ideology = imperialism
 	traits = {
 	}
 }
@@ -84,7 +84,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Abraham Kuijper"
 	desc = "POLITICS_WILHELMINA_DESC"
-	picture = Portrait_Holland_Abraham_Kuijper.dds"
+	picture = "Portrait_Holland_Abraham_Kuijper.dds"
 	expire = "1925.1.1"
 	ideology = despotism
 	traits = {
