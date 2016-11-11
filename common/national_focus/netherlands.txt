@@ -525,8 +525,10 @@ focus_tree = {
 						 focus = HOL_colonial_military }
 		mutually_exclusive = {focus = HOL_offensive}
 		available = {
+			OR = {
 			has_government = neutrality
 			has_government = democratic
+		}
 		}
 		x = 6
 		y = 4
@@ -1057,8 +1059,10 @@ focus_tree = {
 		focus = HOL_quick_firing_artillery
 		focus = HOL_colonial_military}
 		available = {
+			OR = {
 			has_government = communism
 			has_government = fascism
+		}
 		}
 		mutually_exclusive = {focus = HOL_defensive}
 		x = 16
