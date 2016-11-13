@@ -12,31 +12,18 @@ country_event = {
 	
 	major = yes
 	
-	trigger = {
-		date > 1911.4.10
-		tag = MOR
-		has_defensive_war = no
-		NOT = {
-			has_global_flag = mor_civil_war
-		}
-		country_exists = FRA
-		country_exists = MOR
-		FRA = {
-			NOT = { has_war_with = MOR }
-		}
-	}
+	is_triggered_only = yes
 	
 	fire_only_once = yes
-	
-	mean_time_to_happen = { days = 80 }
 	
 	immediate = {
 		set_global_flag = mor_civil_war
 	}
 	
-	#Support Pro-Entente
+	#Support Pro-Central Powers
 	option = {
 	    name = agadir.100.a
+		trigger = { is_ai = no }
 		hidden_effect = {
 			start_civil_war = {
 				ruling_party = Democratic
@@ -57,7 +44,6 @@ country_event = {
 			}
 			news_event = {hours = 6 id = agadir.101}
 			set_global_flag = agadir_crisis
-			set_global_flag = mor_entente_support
 			load_oob = "MOR_agadir_1"
 			set_equipment_fraction = 0.4
 			set_national_unity = 0.9
@@ -69,10 +55,9 @@ country_event = {
 		custom_effect_tooltip = morocco_tt.01
 	}
 	
-	#Support Pro-Central Powers
+	#Support Pro-Entente
 	option = {
 	    name = agadir.100.b
-		trigger = { is_ai = no }
 		hidden_effect = {
 			set_capital = 462
 			start_civil_war = {
@@ -92,6 +77,7 @@ country_event = {
 			}
 			news_event = {hours = 6 id = agadir.101}
 			set_global_flag = agadir_crisis
+			set_global_flag = mor_entente_support
 			load_oob = "MOR_agadir_2"
 			set_equipment_fraction = 0.4
 			set_national_unity = 0.9
@@ -149,7 +135,7 @@ news_event = {
 }
 
 # German Financial Crisis
-news.event = {
+news_event = {
 	id = agadir.110
 	title = agadir.110.t 
 	desc = agadir.110.d 
@@ -162,7 +148,7 @@ news.event = {
 	immediate = {
 		set_global_flag = ger_eco_crisis
 		GER = {
-			add_ideas = great_depression
+			add_ideas = GER_financial_crisis
 		}
 	}
 	
@@ -200,7 +186,7 @@ news.event = {
 }
 
 # German Financial Crisis Ends
-news.event = {
+news_event = {
 	id = agadir.120
 	title = agadir.120.t 
 	desc = agadir.120.d 
@@ -227,7 +213,7 @@ news.event = {
 	immediate = {
 		set_global_flag = ger_eco_crisis_end
 		GER = {
-			remove_ideas = great_depression
+			remove_ideas = GER_financial_crisis
 		}
 	}
 	
@@ -265,7 +251,7 @@ news.event = {
 }
 
 # Entente Supporters Win
-news.event = {
+news_event = {
 	id = agadir.131
 	title = agadir.131.t 
 	desc = agadir.131.d 
@@ -303,7 +289,7 @@ news.event = {
 		FRA = {
 			annex_country = { target = MOR }
 		}
-		SPA = { transerfer_state = 290 }
+		SPR = { transfer_state = 290 }
 	}
 	
 	option = {
@@ -317,11 +303,65 @@ news.event = {
 	}
 }
 
-# German Supporters Win
-news.event = {
+# Entente Supporters Win (2)
+news_event = {
 	id = agadir.132
 	title = agadir.132.t 
 	desc = agadir.132.d 
+	picture = GFX_agadir_event_005 
+	
+	major = yes
+	
+	trigger = {
+		has_global_flag = mor_civil_war
+		NOT = {
+			has_global_flag = agadir_over
+			has_global_flag = mor_entente_support
+			MOR = {
+				states = { 290 461 462 }
+			}
+		}
+	}
+	
+	immediate = {
+		set_global_flag = agadir_over
+		MOR = { transfer_state = 290 461 462 }
+	}
+	
+	option = {
+		name = agadir.132.a
+		trigger = {
+			tag = GER 
+		}
+	}
+	
+	option = {
+		name = agadir.132.b
+		trigger = {
+			tag = FRA 
+		}
+		FRA = {
+			annex_country = { target = MOR }
+		}
+		SPR = { transfer_state = 290 }
+	}
+	
+	option = {
+		name = agadir.132.c
+		trigger = {
+			NOT = {
+				tag = GER
+				tag = FRA
+			}
+		}
+	}
+}
+
+# German Supporters Win
+news_event = {
+	id = agadir.141
+	title = agadir.141.t 
+	desc = agadir.141.d 
 	picture = GFX_agadir_event_005 
 	
 	major = yes
@@ -338,13 +378,11 @@ news.event = {
 	}
 	
 	immediate = {
-		set_global_flag = {
-			agadir_over
-		}
+		set_global_flag = agadir_over
 	}
 	
 	option = {
-		name = agadir.132.a
+		name = agadir.141.a
 		trigger = {
 			tag = GER 
 		}
@@ -354,7 +392,7 @@ news.event = {
 	}
 	
 	option = {
-		name = agadir.132.b
+		name = agadir.141.b
 		trigger = {
 			tag = FRA 
 		}
@@ -362,7 +400,61 @@ news.event = {
 	}
 	
 	option = {
-		name = agadir.132.c
+		name = agadir.141.c
+		trigger = {
+			NOT = {
+				tag = GER
+				tag = FRA
+			}
+		}
+	}
+}
+
+# German Supporters Win (2)
+news_event = {
+	id = agadir.142
+	title = agadir.142.t 
+	desc = agadir.142.d 
+	picture = GFX_agadir_event_005 
+	
+	major = yes
+	
+	trigger = {
+		has_global_flag = mor_civil_war
+			has_global_flag = mor_entente_support
+		NOT = {
+			has_global_flag = agadir_over
+			MOR = {
+				states = { 290 461 462 }
+			}
+		}
+	}
+	
+	immediate = {
+		set_global_flag = agadir_over
+		MOR = { transfer_state = 290 461 462 }
+	}
+	
+	option = {
+		name = agadir.142.a
+		trigger = {
+			tag = GER 
+		}
+		GER = {
+			puppet = MOR
+		}
+	}
+	
+	option = {
+		name = agadir.142.b
+		trigger = {
+			tag = FRA 
+		}
+		
+	}
+	
+	option = {
+		name = agadir.141.c
 		trigger = {
 			NOT = {
 				tag = GER

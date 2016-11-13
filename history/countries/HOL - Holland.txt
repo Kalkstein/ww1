@@ -104,17 +104,3 @@ create_navy_leader = {
 	traits = { blockade_runner superior_tactician }
 	skill = 4
 }
-
-
-### Ship Variants ###
-
-create_equipment_variant = {
-	name = "K-XIV Class"
-	type = submarine_1
-	upgrades = {
-		ship_reliability_upgrade = 2
-		sub_engine_upgrade = 2
-		sub_stealth_upgrade = 2
-		sub_torpedo_upgrade = 2
-	}
-}
