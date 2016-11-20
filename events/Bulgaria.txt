@@ -180,12 +180,8 @@ country_event = {
 		    add_to_faction = ROOT
 		}
 		ROOT = {
-				add_ai_strategy = {
-					type = alliance
-					id = "BUL"
-					value = 200
-				}
-			}
+			set_country_flag = accepted_league_invite_1_flag
+		}
 	}
  	
 	option = {

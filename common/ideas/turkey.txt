@@ -570,6 +570,25 @@ ideas = {
 				}
 			}
 		}
+		
+		TUR_ottoman_spirit_idea = {
+			picture = FRA_scw_intervention_republicans_focus
+			removal_cost = -1 
+			
+			allowed = {
+				always = no 
+			}
+			
+			allowed_civil_war = {
+				always = yes 
+			}
+			
+			modifier = {
+				justify_war_goal_time = -0.30
+				unity_factor = 0.1
+				army_org_factor = 0.08
+			}
+		}
 	}	
 
 	army_chief = {

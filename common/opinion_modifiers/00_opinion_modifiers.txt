@@ -652,6 +652,25 @@ opinion_modifiers = {
 	TUR_delivered_ships = { value = 30 }
 	TUR_confiscated_ships = { value = -50 decay = 0.5 }
 	ALB_sent_equipment = { value = 20 }
+	TUR_befriending_balkans = { value = 28 }
+	TUR_turns_to_west = { value = 20 decay = 1 }
+	TUR_seek_entente_mod = { value = 40 decay = 2 }
+	TUR_refuse_side = { value = -30 decay = 1 }
+	TUR_ger_accept_alliance = { value = 50 decay = 2 }
+	TUR_ger_decline_treaty = { value = -30 decay = 0.5 }
+	TUR_fra_reject_secret_deal = { value = -40 decay = 1.5 }
+	TUR_reject_demands_mod = { value = -30 }
+	TUR_drop_claim_sinai = { value = 20 decay = 1 }
+	TUR_refused_bpp = { value  = -45 decay = 1 }
+	TUR_tried_to_annex = { value = -50 decay = 1 }
+	TUR_refuse_mnt_annex = { value = -30 decay = 1 }
+	TUR_major_sanction = { trade = yes value = -65 }
+	TUR_sheltered_ships_1 = { value = 25 }
+	TUR_sheltered_ships_2 = { value = -30 }
+	TUR_refuse_fra_alliance = { value = -40 }
+	TUR_refused_balkan_alliance = { value = -29 decay = 1 }
+	TUR_no_negotiate = { value = -30 }
+	TUR_gave_gift = { value = 40 decay = 1 }
 	
 	# Russian focus tree
 	

@@ -493,7 +493,7 @@ country_event = {
 	id = turkey.16 
 	title = turkey.16.t 
 	desc = turkey.16.d 
-	picture = GFX_report_event_read_write
+	picture = GFX_report_event_generic_read_write
 	
 	is_triggered_only = yes 
 	
@@ -719,7 +719,7 @@ country_event = {
 	id = turkey.22 
 	title = turkey.22.t 
 	desc = turkey.22.d 
-	picture = GFX_report_event_read_write
+	picture = GFX_report_event_generic_read_write
 	
 	is_triggered_only = yes 
 	
@@ -733,7 +733,7 @@ country_event = {
 	id = turkey.23 
 	title = turkey.23.t 
 	desc = turkey.23.d 
-	picture = GFX_report_event_read_write
+	picture = GFX_report_event_generic_read_write
 	
 	is_triggered_only = yes 
 	
@@ -746,7 +746,7 @@ country_event = {
 				is_historical_focus_on = yes 
 			}
 		}
-		TUR_construct_ships_tt #The Dreadnoughts will be Constructed
+		custom_effect_tooltip = TUR_construct_ships_tt #The Dreadnoughts will be Constructed
 		hidden_effect = {
 			ENG = {
 				country_event = { id = turkey.24 days = 730 }
@@ -877,5 +877,1581 @@ country_event = {
 	
 	option = {
 		name = turkey.28.a 
+	}
+}
+
+#Secret German Turkish Deal 
+country_event = {
+	id = turkey.29
+	title = turkey.29.t 
+	desc = turkey.29.d 
+	picture = GFX_report_event_german_turkish_pact
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = turkey.29.a #Accept 
+		ai_chance = {
+			base = 95 
+			modifier = {
+				add = 100
+				is_historical_focus_on = yes 
+			}
+			modifier = {
+				add = -30
+				AND = {
+					is_historical_focus_on = no 
+					strength_ratio = {
+					tag = TUR
+					ratio < 0.4
+					}
+				}
+			}
+			modifier = {
+				add = 5 
+				AND = {
+				    is_historical_focus_on = no 
+					strength_ratio = {
+						tag = TUR 
+						ratio > 0.7 
+					}
+				}
+			}
+			modifier = {
+				add = -15 
+				AND = {
+					is_historical_focus_on = no 
+					TUR = { has_army_size = { size < 75 } } 
+				}
+			}
+			modifier = {
+				add = -40 
+				AND = {
+					is_historical_focus_on = no 
+					TUR = { has_government = democratic }
+				}
+			}
+		}
+		custom_effect_tooltip = TUR_secret_pact_tt #We will sign a secret pact with the Ottomans 
+		TUR = {
+			country_event = { id = turkey.30 days = 1 }
+			add_opinion_modifier = { target = GER modifier = TUR_ger_accept_alliance }
+			diplomatic_relation = { country = GER relation = non_aggression_pact }
+		}
+		if = {
+			limit = { has_global_flag = TUR_fra_decline_entente_tur }
+			TUR = { unlock_national_focus = TUR_secret_ger_deal unlock_national_focus = TUR_shelter_german_ships } 
+		}
+		add_political_power = -50 
+		hidden_effect = {
+			set_global_flag = TUR_ger_pact_flag
+		}
+	}
+	
+	option = {
+		name = turkey.29.b 
+		ai_chance = {
+			base = 5 
+			modifier = {
+				add = 30
+				AND = {
+					is_historical_focus_on = no 
+					strength_ratio = {
+					tag = TUR
+					ratio < 0.4
+					}
+				}
+			}
+			modifier = {
+				add = -5 
+				AND = {
+				    is_historical_focus_on = no 
+					strength_ratio = {
+						tag = TUR 
+						ratio > 0.7 
+					}
+				}
+			}
+			modifier = {
+				add = 15 
+				AND = {
+					is_historical_focus_on = no 
+					TUR = { has_army_size = { size < 75 } } 
+				}
+			}
+			modifier = {
+				add = 40 
+				AND = {
+					is_historical_focus_on = no 
+					TUR = { has_government = democratic }
+				}
+			}
+		}
+		TUR = {
+			country_event = { id = turkey.31 days = 1 }
+			add_opinion_modifier = { target = GER modifier = TUR_ger_decline_treaty }
+		}
+		custom_effect_tooltip = TUR_might_seek_entente_tt #The Ottomans might seek to join the Entente
+	}
+}
+
+#Germany Accepts Treaty 
+country_event = {
+	id = turkey.30 
+	title = turkey.30.t 
+	desc = turkey.30.d 
+	picture = GFX_report_event_german_turkish_pact
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = turkey.30.a #Great 
+	}
+}
+
+#Germany Declines, secret deal with Entente? 
+country_event = {
+	id = turkey.31 
+	title = turkey.31.t 
+	desc = {
+		text = turkey.31.d_1
+		trigger = { FRA =  { exists = no } }
+	}
+	desc = {
+		text = turkey.31.d_2 
+		trigger = { FRA = { exists = yes } }
+	}
+	picture = GFX_report_event_journalists_speech
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = turkey.31.a #Fine!
+		ai_chance = {
+			factor = 60 
+		}
+	}
+	
+	option = {
+		name = turkey.31.b #Let's try to strike a deal with the Entente instead 
+		trigger = {
+			FRA = {
+				exists = yes 
+			}
+		}
+		ai_chance = {
+			factor = 40 
+		}
+		FRA = {
+			country_event = { id = turkey.32 days = 1 }
+		}
+	}
+}
+
+#France recieves Ottoman deal 
+country_event = {
+	id = turkey.32
+	title = turkey.32.t 
+	desc = turkey.32.d 
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = turkey.32.a #Accept 
+		ai_chance = {
+			factor = 80 
+			modifier = {
+				factor = 20
+				strength_ratio = {
+					tag = GER 
+					ratio > 1 
+				}
+			}
+			modifier = {
+				factor = 0
+				TUR = {
+					OR = { 
+						has_wargoal_against = FRA
+						is_justifying_wargoal_against = FRA
+					}
+					NOT = {
+						is_in_faction_with = FRA
+					}
+				}
+			}
+		}
+		TUR = {
+			diplomatic_relation = { country = FRA relation = non_aggression_pact }
+			country_event = { id = turkey.33 days = 1 }
+		}
+		custom_effect_tooltip = TUR_fra_secret_deal_tt 
+		hidden_effect = {
+			set_global_flag = TUR_fra_accept_pact
+		}
+	}
+	
+	option = {
+		name = turkey.32.b #Decline
+		ai_chance = {
+			factor = 20 
+		}
+		TUR = {
+			add_opinion_modifier = { target = FRA modifier = TUR_fra_reject_secret_deal }
+			country_event = { id = turkey.34 days = 1 }
+		}
+	}
+}
+
+#France accepts secret pact 
+country_event = {
+	id = turkey.33 
+	title = turkey.33.t 
+	desc = turkey.33.d 
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = turkey.33.a #Good 
+	}
+}
+
+#France declines secret pact 
+country_event = {
+	id = turkey.34
+	title = turkey.34.t 
+	desc = turkey.34.d 
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = turkey.34.a #The will regret this 
+	}
+}
+
+#The Ottoman Empire demands Sinai
+country_event = {
+	id = turkey.35 
+	title = turkey.35.t 
+	desc = turkey.35.d 
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = turkey.35.a #Never 
+		ai_chance = {
+			base = 60 
+			modifier = {
+				add = -10 
+				strength_ratio = {
+					tag = TUR 
+					ratio > 0.6
+				}
+			}
+			modifier = {
+				add = 20 
+				TUR = {
+					has_army_size = { size < 70 }
+				}
+			}
+			modifier = {
+				add = -30 
+				TUR = { 
+					divisions_in_state = {
+						state = 454 size > 20 
+					}
+				}
+			}
+			modifier = {
+				add = 35 
+				TUR = {
+					has_war = yes 
+					all_enemy_country = { strength_ratio = { tag = TUR ratio > 1 } }
+				}
+			}
+			modifier = {
+				add = -27 
+				TUR = { 
+					is_in_faction_with = GER 
+				}
+			}
+			modifier = {
+				add = -5 
+				TUR = {
+					is_ai = no 
+				}
+			}
+			modifier = {
+				add = -20 
+				has_defensive_war = yes 
+			}
+		}
+		TUR = {
+			country_event = { id = turkey.36 days = 1 }
+			add_opinion_modifier = { target = ENG modifier = TUR_reject_demands_mod }
+		}
+		custom_effect_tooltip = TUR_may_lead_to_war_tt #May lead to war with the Ottomans 
+	}
+	
+	option = {
+		name = turkey.35.b #Very well, we concede 
+		ai_chance = {
+			base = 40 
+			modifier = {
+				add = 10 
+				strength_ratio = {
+					tag = TUR 
+					ratio > 0.6
+				}
+			}
+			modifier = {
+				add = 30 
+				TUR = { 
+					divisions_in_state = {
+						state = 454 size > 20 
+					}
+				}
+			}
+			modifier = {
+				add = -20 
+				TUR = {
+					has_army_size = { size < 70 }
+				}
+			}
+			modifier = {
+				add = -35 
+				TUR = {
+					has_war = yes 
+					all_enemy_country = { strength_ratio = { tag = TUR ratio > 1 } }
+				}
+			}
+			modifier = {
+				add = 27 
+				TUR = { 
+					is_in_faction_with = GER 
+				}
+			}
+			modifier = {
+				add = 5 
+				TUR = {
+					is_ai = no 
+				}
+			}
+			modifier = {
+				add = 20 
+				has_defensive_war = yes 
+			}
+		}
+		TUR = {
+			country_event = { id = turkey.37 days = 1 }
+		}
+		effect_tooltip = {
+			TUR = {
+				transfer_state = 453 
+			}
+		}
+		custom_effect_tooltip = TUR_may_be_emboldened_tt #The Ottomans may be emboldened by this and seek more territory from us 
+		hidden_effect = {
+			set_global_flag = TUR_eng_cede_sinai
+			random_list = {
+				60 = { }
+				40 = { TUR = { set_country_flag = TUR_emboldened_1 } }
+			}
+		}
+	}
+}
+
+#Britain refuses to cede the Sinai 
+country_event = {
+	id = turkey.36 
+	title = turkey.36.t 
+	desc = turkey.36.d 
+	picture = GFX_report_event_british_inspect_troops 
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = turkey.36.a #We will make them cede it!
+		ai_chance = {
+			factor = 100 
+		}
+		create_wargoal = {
+			type = take_state_focus
+			target = ENG
+			generator = { 453 }
+		}
+	}
+	
+	option = {
+		name = turkey.36.b #No the British are too powerful
+		ai_chance = {
+			factor = 0 
+		}
+		add_national_unity = -0.05 
+		add_political_power = -50 
+		remove_state_core = 453 
+		ENG = {
+			add_opinion_modifier = {
+				target = TUR modifier = TUR_drop_claim_sinai
+			}
+		}
+		custom_effect_tooltip = TUR_no_more_claims #We'll be seen too weak to claim more territory for some time 
+		hidden_effect = {
+			set_global_flag = TUR_weak_claim 
+			country_event = {
+				id = turkey.38 days = 450 
+			}
+		}
+	}
+}
+
+#Britain Cedes the Sinai 
+country_event = {
+	 id = turkey.37 
+	 title = turkey.37.t 
+	 desc = turkey.37.d 
+	 picture = GFX_report_event_journalists_speech
+	 
+	 is_triggered_only = yes 
+	 
+	 option = {
+		name = turkey.37.a #Great 
+		transfer_state = 453 
+	 }
+}
+
+#Removing the Turkey is weak flag ( Hidden )
+country_event = {
+	id = turkey.38 
+	hidden = yes 
+	
+	is_triggered_only = yes 
+	
+	immediate = {
+		clr_global_flag = TUR_weak_claim
+	}
+}
+
+#The Balkan Protection Pact 
+country_event = {
+	id = turkey.39 
+	title = turkey.39.t 
+	desc = turkey.39.d 
+	picture = GFX_report_event_journalists_speech
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = turkey.39.a #Accept 
+		ai_chance = {
+			base = 79
+			modifier = {
+				add = -25 
+				has_opinion = { target = TUR value < -30 }
+			}
+			modifier = {
+				add = -50 
+				strength_ratio = {
+					tag = TUR 
+					ratio < 0.8 
+				}
+			}
+			modifier = {
+				add = 21 
+				TUR = {
+					has_army_size = { size > 99 }
+				}
+			}
+			modifier = {
+				add = -40 
+				has_opinion = { target = TUR value < -59 }
+			}
+			modifier = {
+				add = -100 
+				is_historical_focus_on = yes 
+			}
+		}
+		if = {
+			limit = { tag = SER }
+			remove_state_core = 746 
+			TUR = { diplomatic_relation = { country = SER relation = guarantee } country_event = { id = turkey.40 days = 1.5 } }
+		}
+		if = {
+			limit = { tag = GRE }
+			TUR = { diplomatic_relation = { country = GRE relation = guarantee } country_event = { id = turkey.40 days = 0.5  } }
+			remove_state_core = 185 
+			remove_state_core = 731 
+			remove_state_core = 184
+			remove_state_core = 341 
+			remove_state_claim = 747
+			remove_state_core = 182
+			remove_state_core = 187 
+		}
+		if = {
+			limit = { tag = GRE 183 = { is_owned_by = TUR } }
+			remove_state_core = 183 
+		}
+		if = {
+			limit = { 164 = { is_owned_by = TUR } tag = GRE }
+			remove_state_core = 164 
+		}
+		if = {
+			limit = { tag = ALB 748 = { is_owned_by = TUR } }
+			TUR = { diplomatic_relation = { country = MNT relation = guarantee } country_event = { id = turkey.40 days = 1 } }
+			remove_state_claim = 748 
+		}
+		if = {
+			limit = { tag = MNT NOT = { 748 = { is_owned_by = TUR } } }
+			TUR = { diplomatic_relation = { country = MNT relation = guarantee } country_event = { id = turkey.40 days = 1 } }
+		}
+		set_country_flag = signed_bpp
+	}
+	
+	option = {
+		name = turkey.39.b #No
+		ai_chance = {
+			base = 21
+			modifier = {
+				add = 25 
+				has_opinion = { target = TUR value < -30 }
+			}
+			modifier = {
+				add = 50 
+				strength_ratio = {
+					tag = TUR 
+					ratio < 0.8 
+				}
+			}
+			modifier = {
+				add = -21 
+				TUR = {
+					has_army_size = { size > 99 }
+				}
+			}
+			modifier = {
+				add = 40 
+				has_opinion = { target = TUR value < -59 }
+			}
+			modifier = {
+				add = 100 
+				is_historical_focus_on = yes 
+			}
+		}
+		TUR = {
+			add_opinion_modifier = { target = ROOT modifier = TUR_refused_bpp }
+			country_event = { id = turkey.41 days = 2 }
+		}
+	}
+}
+
+#[FROM.GetName] agrees to Balkan Protection Pact
+country_event = {
+	id = turkey.40 
+	title = turkey.40.t 
+	desc = turkey.40.d 
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = turkey.40.a #Good 
+	}
+} 
+
+#[FROM.GetName] refuses BPP 
+country_event = {
+	id = turkey.41 
+	title = turkey.41.t 
+	desc = turkey.41.d 
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = turkey.41.a #They will regret it
+	}
+}
+
+#Ottoman Occupation
+country_event = {
+	id = turkey.42 
+	title = turkey.42.t 
+	desc = turkey.42.d 
+	picture = GFX_report_event_chinese_soldiers_running
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = turkey.42.a #They'll never occupy our homeland 
+		ai_chance = {
+			base = 5 
+			modifier = {
+				add = 20 
+				is_in_faction = yes 
+			}
+			modifier = {
+				add = -10 
+				TUR = {
+					is_in_faction = yes 
+				}
+			}
+			modifier = {
+				add = 30
+				TUR = {
+					has_army_size = { size < 20 }
+				}
+			}
+			modifier = {
+				add = 100 
+				has_country_flag = accepted_league_invite_1_flag
+			}
+		}
+		TUR = {
+			country_event = { id = turkey.43 days = 1 }
+		}
+		effect_tooltip = {
+			TUR = {
+				declare_war_on = {
+					target = MNT 
+					type = take_state
+					generator = { 105 }
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = turkey.42.b #Resistance would be futile 
+		ai_chance = {
+			base = 95 
+			modifier = {
+				add = 20 
+				is_in_faction = yes 
+			}
+			modifier = {
+				add = 10 
+				TUR = {
+					is_in_faction = yes 
+				}
+			}
+			modifier = {
+				add = -30
+				TUR = {
+					has_army_size = { size < 20 }
+				}
+			}
+		}
+		TUR = {
+			country_event = { hours = 2 id = turkey.44 }
+		}
+		custom_effect_tooltip = GAME_OVER_TT
+	}
+}
+
+#Montenegro Declines 
+country_event = {
+	id = turkey.43 
+	title = turkey.43.t 
+	desc = turkey.43.d 
+	picture = GFX_report_event_journalists_speech
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = turkey.43.a #They'll be annexed by force then 
+		ai_chance = {
+			base = 100 
+			modifier = {
+				add = -90
+				strength_ratio = {
+					tag = MNT 
+					ratio > 0.9
+				}
+			}
+			modifier = {
+				add = -20 
+				MNT = {
+					is_in_faction = yes 
+				}
+			}
+		}
+		declare_war_on = {
+			target = MNT 
+			type = take_state
+			generator = { 105 }
+		}
+		hidden_effect = {
+			news_event = { hours = 12 id = news.247 }
+		}
+	}
+	
+	option = {
+		name = turkey.43.b #Oh well 
+		ai_chance = {	
+			base = 0 
+			modifier = {
+				add = 90 
+				strength_ratio = {
+					tag = MNT 
+					ratio > 0.9
+				}
+			}
+			modifier = {
+				add = 20 
+				MNT = {
+					is_in_faction = yes 
+				}
+			}
+		}
+		add_opinion_modifier = {
+			target = MNT modifier = TUR_refuse_mnt_annex
+		}
+		MNT = {
+			add_opinion_modifier = {
+				target = TUR modifier = TUR_tried_to_annex
+			}
+		}
+	}
+}
+
+#Montenegro Accepts 
+country_event = {
+	id = turkey.44 
+	title = turkey.43.t 
+	desc = turkey.43.d 
+	picture = GFX_report_event_soldiers_marching
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = turkey.44.a #Great 
+		105 = {
+			add_core_of = TUR 
+		}
+		annex_country = { target = MNT transfer_troops = no }
+		add_political_power = 25
+		set_country_flag = MNT_annexed
+		news_event = { hours = 6 id = news.248 }
+	}
+}
+
+#Demand France cede Territory
+country_event = {
+	id = turkey.45 
+	title = turkey.45.t 
+	desc = turkey.45.d 
+	picture = GFX_report_event_dead_soldiers
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = turkey.45.a #We won't concede territory!
+		ai_chance = {
+			base = 20
+			modifier = {
+				add = 20 
+				strength_ratio = {
+					tag = TUR 
+					ratio < 1.0 
+				}
+			}
+			modifier = {
+				add = 30 
+				TUR = {
+					has_war = yes 
+				}
+			}
+			modifier = {
+				add = -20 
+				TUR = {
+					has_army_size = { size > 95 }
+				}
+			}
+			modifier = {
+				add = -10 
+				TUR = {
+					is_in_faction = yes 
+				}
+			}
+			modifier = {
+				add = -30 
+				date < 1914.8.1 
+				TUR = {
+					OR = {
+						is_in_faction_with = GER 
+						is_in_faction_with = AUS 
+					}
+				}
+			}
+		}
+		TUR = {
+			country_event = { id = turkey.46 days = 1 }
+		}
+		effect_tooltip = {
+			TUR = {
+				declare_war_on = {
+					target = FRA 
+					type = take_state 
+					generator = { 665 458 }
+				}
+				add_national_unity = 0.05 
+			}
+		}
+	}
+	
+	option = {
+		name = turkey.45.b #We should concede the territory 
+		ai_chance = {
+			base = 80 
+			modifier = {
+				add = -20 
+				strength_ratio = {
+					tag = TUR 
+					ratio < 1.0 
+				}
+			}
+			modifier = {
+				add = -30 
+				TUR = {
+					has_war = yes 
+				}
+			}
+			modifier = {
+				add = 20 
+				TUR = {
+					has_army_size = { size > 95 }
+				}
+			}
+			modifier = {
+				add = 10 
+				TUR = {
+					is_in_faction = yes 
+				}
+			}
+			modifier = {
+				add = 30 
+				date < 1914.8.1 
+				TUR = {
+					OR = {
+						is_in_faction_with = GER 
+						is_in_faction_with = AUS 
+					}
+				}
+			}
+		}
+		TUR = {
+			country_event = {
+				id = turkey.47 days = 1 
+			}
+		}
+		effect_tooltip = {
+			TUR = {
+				transfer_state = 665 
+				transfer_state = 458
+			}
+		}
+		custom_effect_tooltip = TUR_promise_no_claims_tt #The Ottomans will promise not to make anymore territory claims
+	}
+}
+
+#France Refuses concessions
+country_event = {
+	id = turkey.46
+	title = turkey.46.t 
+	desc = turkey.46.d 
+	picture = GFX_report_event_worried_french 
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = turkey.46.a #To war then 
+		ai_chance = {
+			factor = 30 
+			modifier = {
+				factor = 0 
+				strength_ratio = {
+					tag = FRA 
+					ratio > 1 
+				}
+			}
+			modifier = {
+				factor = 0.3 
+				FRA = {
+					is_in_faction_with = ENG 
+					is_in_faction_with = SOV 
+				}
+			}
+			modifier = {
+				factor = 0 
+				date < 1914.8.1 
+				is_in_faction_with = GER 
+			}
+			modifier = {
+				factor = 2 
+				strength_ratio = {
+					tag = FRA 
+					ratio < 0.7 
+				}
+			}
+			modifier = {
+				factor = 2.5 
+				FRA = {
+					is_in_faction = no 
+				}
+			}
+		}
+		declare_war_on = {
+			target = FRA 
+			type = take_state 
+			generator = { 458 665 }
+		}
+		add_national_unity = 0.05 
+	}
+	
+	option = {
+		name = turkey.46.b #Embargo them 
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 1.4 
+				FRA = {
+					is_in_faction = yes 
+				}
+			}
+			modifier = {
+				factor = 2 
+				strength_ratio = {
+					tag = FRA 
+					ratio > 1 
+				}
+			}
+			modifier = {
+				factor = 0.7 
+				is_in_faction_with = GER 
+			}
+		}
+		add_opinion_modifier = {
+			target = FRA modifier = TUR_major_sanction
+		}
+		add_political_power = -30 
+	}
+	
+	option = {
+		name = turkey.46.c #Do nothing 
+		ai_chance = {
+			factor = 30 
+			modifier = {
+				factor = 1.5 
+				strength_ratio = {
+					tag = FRA 
+					ratio > 2 
+				}
+			}
+			modifier = {
+				factor = 1.8 
+				has_war = yes 
+			}
+		}
+		add_national_unity = -0.05 
+	}
+}
+
+#France cedes territory 
+country_event = {
+	id = turkey.47 
+	title = turkey.47.t 
+	desc = turkey.47.d 
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = turkey.47.a #Great 
+		custom_effect_tooltip = TUR_won't_claim_more_tt #We will promise not to claim more territory 
+		transfer_state = 458 
+		transfer_state = 665 
+		hidden_effect = {
+			set_global_flag = TUR_no_more_claims_gf
+			set_country_flag = TUR_no_more_claims_cf 
+		}
+	}
+}
+
+#The Ottoman Empire wishes to join the Entente 
+country_event = {
+	id = turkey.48 
+	title = turkey.48.t 
+	desc = turkey.48.d 
+	picture = GFX_report_event_degaulle_inspect_troops
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = turkey.48.a #Welcome them 
+		ai_chance = {
+			base = 60 
+			modifier = {
+				add = 25 
+				TUR = {
+					has_army_size = { size < 100 }
+				}
+			}
+			modifier = {
+				add = 20 
+				strength_ratio = {
+					tag = GER 
+					ratio > 1 
+				}
+			}
+			modifier = {
+				add = 40 
+				has_capitulated = yes 
+			}
+			modifier = {
+				add = 10 
+				has_opinion = { target = TUR value > 29 }
+			}
+		}
+		add_to_faction = TUR 
+		TUR = {
+			country_event = { id = turkey.49 days = 1 }
+		}
+	}
+	
+	option = {
+		name = turkey.48.b #No 
+		ai_chance = {
+			base = 40 
+		}
+		TUR = {
+			add_opinion_modifier = { target = FRA modifier = TUR_refuse_fra_alliance }
+			country_event = {
+				id = turkey.50 days = 1 
+			}
+		}
+	}
+}
+
+#France Accepts 
+country_event = {
+	id = turkey.49 
+	title = turkey.49.t 
+	desc = turkey.49.d 
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = turkey.49.a #Great 
+	}
+}
+
+#France Declines 
+country_event = {
+	id = turkey.50 
+	title = turkey.50.t 
+	desc = turkey.50.d 
+	picture = GFX_report_event_worried_french
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = turkey.50.a #Let us then join the Germans 
+		ai_chance = {
+			factor = 75 
+		}
+		GER = {
+			country_event = { id = turkey.29 days = 1 }
+		}
+		hidden_effect = {
+			set_global_flag = TUR_fra_decline_entente_tur
+		}
+	}
+	
+	option = {
+		name = turkey.50.b #Let us do nothing
+		ai_chance = {
+			factor = 25 
+		}
+	}
+}
+
+#The Balkan Alliance 
+country_event = {
+	id = turkey.51 
+	title = turkey.51.t 
+	desc = turkey.51.d 
+	picture = GFX_report_event_journalists_speech
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = turkey.51.a #Sign off 
+		ai_chance = {
+			base = 90 
+			modifier = {
+				add = 5 
+				TUR = {
+					has_army_size = { size > 94 }
+				}
+			}
+			modifier = {
+				add = -40 
+				has_opinion = { target = TUR value < -39 }
+			}
+			modifier = {
+				add = -25 
+				TUR = {
+					NOT = { has_government = democratic }
+				}
+				has_government = democratic 
+			}
+		}
+		TUR = {
+			add_to_faction = ROOT 
+			country_event = { id = turkey.52 days = 1 }
+		}
+	}
+	
+	option = {
+		name = turkey.51.b #Refuse 
+		ai_chance = {
+			base = 10 
+		}
+		TUR = {
+			add_opinion_modifier = { target = ROOT modifier = TUR_refused_balkan_alliance }
+			country_event = { id = turkey.53 days = 1 }
+		}
+	}
+}
+
+#[FROM.GetName] accepts BA 
+country_event = {
+	id = turkey.52
+	title = turkey.52.t 
+	desc = turkey.52.d 
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = turkey.52.a #Good 
+	}
+}
+
+#[FROM.GetName] refuses BA 
+country_event = {
+	id = turkey.53 
+	title = turkey.53.t 
+	desc = turkey.53.d 
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = turkey.53.a #Their choice 
+	}
+}
+
+#The Ottomans want to negotiate for Kuwait and Malta 
+country_event = {
+	id = turkey.54 
+	title = turkey.54.t 
+	desc = turkey.54.d 
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = turkey.54.a #We won't negotiate for them! 
+		ai_chance = {
+			base = 40 
+			modifier = {
+				add = -20 
+				strength_ratio = {
+					tag = TUR 
+					ratio < 0.8
+				}
+			}
+			modifier = {
+				add = -20 
+				TUR = {
+					is_in_faction_with = GER 
+				}
+			}
+		}
+		TUR = {
+			country_event = { id = turkey.55 days = 1 }
+			add_opinion_modifier = { target = ENG modifier = TUR_no_negotiate }
+		}
+	}
+	
+	option = {
+		name = turkey.54.b #Request that they give us Palestine and the Sinai in return 
+		ai_chance = {
+			base = 0 
+		}
+		trigger = {
+			453 = {
+				is_owned_by = TUR 
+				is_controlled_by = TUR 
+			}
+			454 = {
+				is_owned_by = TUR 
+				is_controlled_by = TUR 
+			}
+		}
+		TUR = {
+			country_event = { id = turkey.56 days = 1 }
+		}
+		effect_tooltip = {
+			transfer_state = 453 
+			transfer_state = 454 
+			TUR = {
+				transfer_state = 116 
+				transfer_state = 656 
+			}
+		}
+	}
+	
+	option = {
+		name = turkey.54.c #Demand technological secrets 
+		ai_chance = {
+			base = 30 
+		}
+		TUR = {
+			country_event = { id = turkey.57 days = 1 }
+		}
+		effect_tooltip = {
+			add_tech_bonus = {
+				name = industry_bonus 
+				uses = 2 
+				bonus = 0.5 
+				category = industry 
+			}
+			add_tech_bonus = {
+				name = doctrine_bonus 
+				uses = 1 
+				bonus = 0.6 
+				category = land_doctrine
+			}
+			add_tech_bonus = {
+				name = support_bonus
+				uses = 2 
+				bonus = 0.45
+				category = support_tech
+			}
+			add_tech_bonus = {
+				name = infantry_weapons_bonus 
+				uses = 1 
+				bonus = 0.4 
+				category = infantry_weapons
+			}
+			add_tech_bonus = {
+				name = electronics_bonus 
+				uses = 2 
+				bonus = 0.5 
+				category = electronics
+			}
+			TUR = {
+				transfer_state = 116 
+				transfer_state = 656 
+			}
+		}
+	}
+	
+	option = {
+		name = turkey.54.e #Exchange them for Cyprus 
+		ai_chance = {
+			base = 20 
+		}
+		trigger = {
+			183 = {
+				is_owned_by = TUR 
+				is_controlled_by = TUR 
+			}
+		}
+		TUR = {
+			country_event = { id = turkey.58 days = 1 }
+		}
+		effect_tooltip = {
+			transfer_state = 183 
+			TUR = {
+				transfer_state = 116 
+				transfer_state = 656 
+			}
+		}
+	}
+	
+	option = {
+		name = turkey.54.f #Give it to them as a sign of good will 
+		ai_chance = {
+			base = 5 
+		}
+		TUR = {
+			country_event = {
+				id = turkey.59 days = 1 
+			}
+		}
+		effect_tooltip = {
+			TUR = {
+				transfer_state = 116 
+				transfer_state = 656 
+			}
+		}
+	}
+	
+	option = {
+		name = turkey.54.g #Request that they officially decalre neutrality 
+		ai_chance = {
+			base = 5 
+		}
+		TUR = {
+			country_event = {
+				id = turkey.60 days = 1 
+			}
+		}
+		effect_tooltip = {
+			TUR = {
+				add_ideas = neutrality_idea
+				transfer_state = 116 
+				transfer_state = 656 
+			}
+		}
+	}
+}
+
+#Britain won't negotiate 
+country_event = {
+	id = turkey.55 
+	title = turkey.55.t 
+	desc = turkey.55.d 
+	picture = GFX_report_event_british_inspect_troops
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = turkey.55.a #We'll take them by force 
+		ai_chance = {
+			base = 100 
+			modifier = {
+				add = -15 
+				strength_ratio = {
+					tag = ENG
+					ratio > 0.5 
+				}
+			}
+			modifier = {
+				add = -30 
+				ENG = {
+					has_army_size = {
+						size > 200 
+					}
+				}
+			}
+		}
+		create_wargoal = {
+			target = ENG 
+			type = take_state
+			generator = { 656 }
+		}
+	}
+	
+	option = {
+		name = turkey.55.b 
+		ai_chance = {
+			base = 0 
+			modifier = {
+				add = 15 
+				strength_ratio = {
+					tag = ENG
+					ratio > 0.5 
+				}
+			}
+			modifier = {
+				add = 30 
+				ENG = {
+					has_army_size = {
+						size > 200 
+					}
+				}
+			}
+		}
+	}
+}
+
+#Britain requests Palestine and the Sinai 
+country_event = {
+	id = turkey.56 
+	title = turkey.56.t 
+	desc = turkey.56.d 
+	picture = GFX_report_event_generic_read_write 
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = turkey.56.a #This is an insult! 
+		ai_chance = {
+			factor = 100 
+		}
+	}
+	
+	option = {
+		name = turkey.56.b #No, we should agree to this 
+		ai_chance = {
+			factor = 0 
+		}
+		transfer_state = 116 
+		transfer_state = 656
+		ENG = {
+			transfer_state = 453 
+			transfer_state = 454 
+		}
+	}
+}
+
+#Britain demands technological secrets in return 
+country_event = {
+	id = turkey.57 
+	title = turkey.57.t 
+	desc = turkey.57.d 
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = turkey.57.a #Very well 
+		ai_chance = {
+			base = 60 
+			modifier = {
+				add = -30 
+				is_historical_focus_on = yes 
+			}
+			modifier = {
+				add = 30 
+				has_opinion = {
+					target = ENG value > 30 
+				}
+			}
+		}
+		ENG = {
+			add_tech_bonus = {
+				name = industry_bonus 
+				uses = 2 
+				bonus = 0.5 
+				category = industry 
+			}
+			add_tech_bonus = {
+				name = doctrine_bonus 
+				uses = 1 
+				bonus = 0.6 
+				category = land_doctrine
+			}
+			add_tech_bonus = {
+				name = support_bonus
+				uses = 2 
+				bonus = 0.45
+				category = support_tech
+			}
+			add_tech_bonus = {
+				name = infantry_weapons_bonus 
+				uses = 1 
+				bonus = 0.4 
+				category = infantry_weapons
+			}
+			add_tech_bonus = {
+				name = electronics_bonus 
+				uses = 2 
+				bonus = 0.5 
+				category = electronics
+			}
+		}
+		transfer_state = 116 
+		transfer_state = 656 
+	}
+	
+	option = {
+		name = turkey.57.b #Those would ALL our secrets 
+		ai_chance = {
+			base = 40 
+		}
+	}
+}
+
+#Britain wants Cyprus in exchange 
+country_event = {
+	id = turkey.58 
+	title = turkey.58.t 
+	desc = turkey.58.d 
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = turkey.58.a #Cyprus isn't even worth that much...
+		ai_chance = {
+			base = 90 
+		}
+		ENG = {
+			transfer_state = 183 
+		}
+		transfer_state = 116 
+		transfer_state = 656 
+	}
+	
+	option = {
+		name = turkey.58.b #But still...
+		ai_chance = {
+			base = 10 
+		}
+	}
+}
+
+#Britain cedes Kuwait and Malta as a sign of good will 
+country_event = {
+	id = turkey.59 
+	title = turkey.59.t 
+	desc = turkey.59.d 
+	picture = GFX_report_event_journalists_speech
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = turkey.59.a #Great 
+		add_opinion_modifier = {
+			target = ENG modifier = TUR_gave_gift 
+		}
+		transfer_state = 116 
+		transfer_state = 656 
+	}
+}
+
+#Britain wants us to become neutral 
+country_event = {
+	id = turkey.60 
+	title = turkey.60.t 
+	desc = turkey.60.d 
+	picture = GFX_report_event_british_inspect_troops
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = turkey.60.a #Never! 
+		ai_chance = {
+			factor = 100 
+		}
+	}
+	
+	option = {
+		name = turkey.60.b #Fine 
+		ai_chance = {
+			factor = 0 
+		}
+		add_ideas = neutrality_idea 
+		transfer_state = 116 
+		transfer_state = 656 
 	}
 }

@@ -1568,9 +1568,7 @@ focus_tree = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = has_great_war
-				has_global_flag = {
-					great_war
-				}
+				has_global_flag = great_war
 			}
 			has_war = no 
 			is_puppet = no 
