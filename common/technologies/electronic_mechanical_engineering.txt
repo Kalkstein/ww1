@@ -582,20 +582,18 @@ technologies = {
 	}
 	
 	rocket_engines = {
-				
+	
+		enable_tactic = tactic_mask_chlor
+		
 		path = {
 			leads_to_tech = improved_rocket_engines 
-			research_cost_coeff = 1
-		}
-		path = {
-			leads_to_tech = jet_engines 
 			research_cost_coeff = 1
 		}
 		
 		research_cost = 2
 		start_year = 1915
 		
-		enable_tactic = tactic_mask_chlor
+		
 		
 		folder = {
 			name = electronics_folder
@@ -618,16 +616,10 @@ technologies = {
 	
 	improved_rocket_engines = {
 
-		
-		path = {
-			leads_to_tech = advanced_rocket_engines 
-			research_cost_coeff = 1
-		}
+		enable_tactic = tactic_mask_bunt
 		
 		research_cost = 1.5
 		start_year = 1916
-		
-		enable_tactic = tactic_mask_bunt
 		
 		folder = {
 			name = electronics_folder
@@ -640,61 +632,6 @@ technologies = {
 		
 		categories = {
 			rocketry
-		}
-	}
-	
-	advanced_rocket_engines = {
-
-		show_equipment_icon = yes
-
-		# can build ICBMs?
-		
-		
-		research_cost = 1.5
-		start_year = 1916
-		
-		folder = {
-			name = electronics_folder
-			position = { x = 0 y = 6 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			rocketry
-		}
-	}
-	
-	jet_engines = {
-	
-		folder = {
-			name = electronics_folder
-			position = { x = 2 y = 2 }
-		}
-		
-		start_year = 1916
-		research_cost = 2
-
-		folder = {
-			name = air_techs_folder
-			position = { x = 2 y = 11 }
-		}
-		
-		desc = "JET_ENGINES_SPECIAL"
-
-		on_research_complete = {
-			custom_effect_tooltip = JET_ENGINES_RESEARCHED
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			rocketry
-			jet_technology
 		}
 	}
 	

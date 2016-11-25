@@ -74,7 +74,7 @@ sub_units = {
 		}
 	}
 	
-	rocket_artillery_brigade = {
+	heavy_artillery_brigade = {
 		sprite = "artillery"
 		map_icon_category = infantry
 		priority = 1199
@@ -95,7 +95,7 @@ sub_units = {
 		combat_width = 3
 
 		need = {
-			rocket_artillery_equipment = 36
+			siege_artillery_equipment = 36
 		}
 		
 		manpower = 500
@@ -136,6 +136,76 @@ sub_units = {
 
 		river = {
 			attack = -0.2
+			movement = -0.2
+		}
+
+		amphibious = {
+			attack = -0.4
+		}
+	}
+	
+	siege_artillery_brigade = {
+		sprite = "artillery"
+		map_icon_category = infantry
+		priority = 1199
+		active = yes
+		
+		type = {
+			infantry
+			artillery
+		}
+
+		group = infantry
+		
+		categories = {
+			category_army
+			category_line_artillery
+		}		
+
+		combat_width = 3
+
+		need = {
+			siege_artillery_equipment = 36
+		}
+		
+		manpower = 500
+		max_organisation = 0
+		default_morale = 0.1
+		max_strength = 0.6
+		training_time = 180
+		weight = 1
+
+		supply_consumption = 1
+		
+		forest = {
+			attack = -0.2
+			movement = -0.4
+		}
+
+		hills = {
+			movement = -0.1
+		}
+
+		mountain = {
+			movement = -0.4
+		}
+
+		jungle = {
+			attack = -0.2
+			movement = -0.4
+		}
+
+		marsh = {
+			attack = -0.2
+			movement = -0.6
+		}
+
+		fort = {
+			attack = 0.4
+		}
+
+		river = {
+			attack = -0.1
 			movement = -0.2
 		}
 
