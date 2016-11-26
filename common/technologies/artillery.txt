@@ -260,6 +260,7 @@ technologies = {
 		}
 		enable_subunits = {
 			heavy_artillery
+			heavy_artillery_brigade
 		}
 		
 		path = {
