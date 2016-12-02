@@ -28,7 +28,7 @@ set_convoys = 5
 	set_technology = {
 		tech_support = 1
 		tech_recon = 1
-		gw_artillery = 1
+		field_artillery = 1
 
 		#doctrines
 		air_superiority = 1

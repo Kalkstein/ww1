@@ -26,7 +26,7 @@ set_technology = {
 	
 	oob = "NEP_1939"
 	set_technology = {
-		gw_artillery = 1
+		field_artillery = 1
 		tech_support = 1		
 		tech_engineers = 1
 		infantry_weapons1 = 1
