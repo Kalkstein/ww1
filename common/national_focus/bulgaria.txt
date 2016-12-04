@@ -2431,7 +2431,7 @@ focus_tree = {
 				name = BUL_arty_1 
 				bonus = 0.5 
 				uses = 1 
-				technology = field_artillery
+				technology = gw_artillery 
 			}
 		}
 	}
@@ -3311,15 +3311,18 @@ focus_tree = {
 		icon = GFX_goal_demand_sudetenland
 		prerequisite = { focus = BUL_flamethrowers }
 		prerequisite = { focus = BUL_learn_balkan_war_2 }
+		available= { 
+			date > 1917.06.01 
+		}
 		x = 38 
 		y = 12 
 		cost = 20 
 		completion_reward = {
 			add_tech_bonus = {
 				name = armour_bonus 
-				bonus = 0.5
+				bonus = 0.35 
 				uses = 1 
-				category = armor 
+				technology = gwtank
 			}
 		}
 	}
