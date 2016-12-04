@@ -51,7 +51,7 @@ focus_tree = {
 					ideology = fascism
 					popularity = 0.2
 				}
-			add_ideas = BUL_keep_monarchy_idea #Monarchism support +0.03 daily 
+			add_ideas = BUL_keep_monarchy_idea # Monarchism support +0.03 daily 
 		}
 	}
 	
