@@ -826,7 +826,7 @@ news_event = {
 
 #Morocco betrays France joins the Ottomans
 news_event = {
-	id = new.255 
+	id = news.255 
 	title = news.255.t 
 	desc = news.255.d 
 	picture = GFX_news_event_042

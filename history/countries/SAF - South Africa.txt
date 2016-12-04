@@ -45,7 +45,7 @@ set_technology = {
 	set_technology = {
 		fighter1 = 1
 		tactical_bomber1 = 1
-		interwar_artillery_1 = 1
+		improved_field_artillery1 = 1
 		infantry_weapons_2 = 1
 		
 		#doctrines
