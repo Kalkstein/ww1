@@ -15,7 +15,8 @@ state=
 			}
 		}
 		add_core_of = CRO
-		add_core_of = YUG
+		add_claim_by = SER
+		add_core_of = AUS
 	} 
 	provinces={	
 		3943 
