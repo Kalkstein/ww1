@@ -767,6 +767,109 @@ news_event = {
 	}
 }
 
+#The Black Sea Raid 
+news_event = {
+	id = news.254 
+	title = news.254.t 
+	desc = news.254.d 
+	picture = GFX_news_event_black_sea_raid 
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = news.254.a #A toast to the Ottoman Empire should then be in order 
+		trigger = {
+			tag = GER 
+		}
+		add_to_faction = TUR 
+	}
+	option = {
+		name = news.254.b #We will raze Constantinople for this! 
+		trigger = {
+			tag = SOV 
+		}
+		declare_war_on = {
+			target = TUR 
+			type = annex_everything
+		}
+	}
+	option = {
+		name = news.254.c #This is an act of war! 
+		trigger = {
+			NOT = {
+				tag = SOV 
+			}
+			has_war_with = GER 
+			is_in_faction_with = FRA 
+		}
+	}
+	option = {
+		name = news.254.e #Ha, they didn't even put up a fight 
+		trigger = {
+			tag = TUR 
+		}
+	}
+	option = {
+		name = news.254.f #Another Ally 
+		trigger = {
+			NOT = {
+				OR = {
+					tag = GER 
+					tag = TUR 
+				}
+			}
+			is_in_faction_with = GER 
+			has_war_with = FRA 
+		}
+	}
+}
+
+#Morocco betrays France joins the Ottomans
+news_event = {
+	id = new.255 
+	title = news.255.t 
+	desc = news.255.d 
+	picture = GFX_news_event_042
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = news.255.a #Traitors! 
+		trigger = {
+			OR = {
+				tag = FRA 
+				is_in_faction_with = FRA 
+			}
+		}
+	}
+	
+	option = {
+		name = news.255.b #A toast to our new friends 
+		trigger = {
+			has_war_with = FRA
+			NOT = {
+				OR = {
+					tag = TUR
+					original_tag = MOR 
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = news.255.c #They chose wisely 
+		trigger = {
+			tag = TUR 
+		}
+	}
+	
+	option = {
+		name = news.255.e #That's right damned French!
+		trigger = {
+			original_tag = MOR 
+		}
+	}
+} 
 ########################################################################################################################################################
 
 # Franz Ferdinand is assasinated
