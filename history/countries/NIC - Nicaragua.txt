@@ -30,7 +30,7 @@ set_convoys = 10
 	
 	oob = "NIC_1939"
 	set_technology = {
-		interwar_artillery_1 = 1
+		improved_field_artillery1 = 1
 		infantry_weapons1 = 1
 
 		#doctrines

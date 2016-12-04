@@ -30,7 +30,7 @@
 		
 	}
 	support = {
-       		engineer = { x = 0 y = 0 }
+       	engineer = { x = 0 y = 0 }
 	}
 }
 division_template = {
@@ -854,88 +854,6 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.3
 		efficiency = 50
-	}
-
-	add_equipment_production = {
-		equipment = {
-			type = fighter_equipment_0
-			creator = "ENG" 
-		}
-		requested_factories = 1
-		progress = 0.15
-		efficiency = 50
-	}
-
-	### Ongoing Ship Production Jan 1 1936 ###
-	# DD: G/H class (x9) ("HMS Gallant" "HMS Garland" "HMS Gipsy" "HMS Glowworm" "HMS Grafton" "HMS Grenade" "HMS Grenville" "HMS Greyhound" "HMS Griffin")
-	add_equipment_production = {
-		equipment = {
-			type = destroyer_2
-			creator = "ENG" 
-		}
-		requested_factories = 3
-		progress = 0.33
-		amount = 3
-	}
-	add_equipment_production = {
-		equipment = {
-			type = destroyer_2
-			creator = "ENG" 
-		}
-		requested_factories = 3
-		progress = 0.33
-		amount = 3
-	}
-	add_equipment_production = {
-		equipment = {
-			type = destroyer_2
-			creator = "ENG" 
-		}
-		requested_factories = 3
-		progress = 0.33
-		amount = 3
-	}
-	# SS: S-class variant (x2) ("HMS Seawolf" "HMS Narwhal")
-	add_equipment_production = {
-		equipment = {
-			type = submarine_1
-			creator = "ENG" 
-			version_name = "S Class"
-		}
-		requested_factories = 2
-		progress = 0.50
-		amount = 2
-	}
-	# CL: Amphion-class variant ("HMS Amphion", Comm. 15-Jun, 1936, "HMS Apollo", Comm. 13-Jan 1936, "HMS Penelope", Comm. 12-Nov 1936)
-	add_equipment_production = {
-		equipment = {
-			type = light_cruiser_1
-			creator = "ENG" 
-			version_name = "Amphion Class"
-		}
-		requested_factories = 1
-		progress = 0.95
-		amount = 1
-	}
-	add_equipment_production = {
-		equipment = {
-			type = light_cruiser_1
-			creator = "ENG" 
-			version_name = "Amphion Class"
-		}
-		requested_factories = 1
-		progress = 0.50
-		amount = 1
-	}
-	add_equipment_production = {
-		equipment = {
-			type = light_cruiser_1
-			creator = "ENG" 
-			version_name = "Amphion Class"
-		}
-		requested_factories = 1
-		progress = 0.15
-		amount = 1
 	}
 }
 	#####################

@@ -43,7 +43,6 @@ division_template = {
 	# Note: 1st Armor Battalion had FT-17s in 1936, 
 	#	2nd battalion formed when R-35s added in 1940
 	regiments = {
-		light_armor = { x = 0 y = 0 }
 		infantry = { x = 1 y = 0 }       # added infantry to not make it a death trap
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }

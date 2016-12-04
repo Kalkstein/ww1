@@ -379,25 +379,25 @@ units = {
 		name = "Battleship Division 1"				
 		base = 1562
 		location = 1562 # San Diego
-		ship = { name = "USS Nevada" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA version_name = "Pennsylvania Class" } } }				
-		ship = { name = "USS Arizona" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA version_name = "Pennsylvania Class" } } }				
-		ship = { name = "USS Pennsylvania" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA version_name = "Pennsylvania Class" } } }				
+		ship = { name = "USS Nevada" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA } } }				
+		ship = { name = "USS Arizona" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA } } }				
+		ship = { name = "USS Pennsylvania" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA } } }				
 	}					
 	navy = {					
 		name = "Battleship Division 2"				
 		base = 1562
 		location = 1562 # San Diego
-		ship = { name = "USS Oklahoma" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA version_name = "Pennsylvania Class" } } }				
-		ship = { name = "USS Tennessee" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA version_name = "New Mexico Class" } } }				
-		ship = { name = "USS California" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA version_name = "New Mexico Class" } } }				
+		ship = { name = "USS Oklahoma" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA } } }				
+		ship = { name = "USS Tennessee" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA } } }				
+		ship = { name = "USS California" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA } } }				
 	}					
 	navy = {					
 		name = "Battleship Division 4"				
 		base = 1562
 		location = 1562 # San Diego
-		ship = { name = "USS Colorado" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA version_name = "New Mexico Class" } } }				
-		ship = { name = "USS West Virginia" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA version_name = "New Mexico Class" } } }				
-		ship = { name = "USS Maryland" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA version_name = "New Mexico Class" } } }				
+		ship = { name = "USS Colorado" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA } } }				
+		ship = { name = "USS West Virginia" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA } } }				
+		ship = { name = "USS Maryland" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA } } }				
 	}								
 	navy = {					
 		name = "Cruiser Division 3"				
@@ -414,7 +414,7 @@ units = {
 		ship = { name = "USS Pensacola" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = USA } } }				
 		ship = { name = "USS Salt Lake City" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = USA } } }				
 		ship = { name = "USS Chicago" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = USA } } }				
-		ship = { name = "USS Indianapolis" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = USA version_name = "Portland Class" } } }				
+		ship = { name = "USS Indianapolis" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = USA } } }				
 	}					
 	navy = {					
 		name = "Cruiser Division 5"				
@@ -423,16 +423,16 @@ units = {
 		ship = { name = "USS Northampton" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = USA } } }				
 		ship = { name = "USS Chester" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = USA } } }				
 		ship = { name = "USS Louisville" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = USA } } }					
-		ship = { name = "USS Portland" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = USA version_name = "Portland Class" } } }				
+		ship = { name = "USS Portland" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = USA } } }				
 	}					
 	navy = {					
 		name = "Cruiser Division 6"				
 		base = 1562
 		location = 1562 # San Diego
-		ship = { name = "USS New Orleans" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = USA version_name = "Portland Class" } } }				
-		ship = { name = "USS Astoria" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = USA version_name = "Portland Class" } } }				
-		ship = { name = "USS Minneapolis" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = USA version_name = "Portland Class" } } }				
-		ship = { name = "USS San Francisco" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = USA version_name = "Portland Class" } } }				
+		ship = { name = "USS New Orleans" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = USA } } }				
+		ship = { name = "USS Astoria" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = USA} } }				
+		ship = { name = "USS Minneapolis" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = USA } } }				
+		ship = { name = "USS San Francisco" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = USA } } }				
 	}					
 	navy = {					
 		name = "Destroyer Flotilla  1"				
@@ -440,15 +440,15 @@ units = {
 		location = 1562 # San Diego
 		ship = { name = "USS Raleigh" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = USA } } }				
 		# 1st Destroyer Division				
-		ship = { name = "USS Dewey" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }
-		ship = { name = "USS Hull" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }
-		ship = { name = "USS MacDonough" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }
-		ship = { name = "USS Worden" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }
+		ship = { name = "USS Dewey" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }
+		ship = { name = "USS Hull" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }
+		ship = { name = "USS MacDonough" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }
+		ship = { name = "USS Worden" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }
 		# 2nd Destroyer Division				
-		ship = { name = "USS Farragut" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }
-		ship = { name = "USS Dale" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }
-		ship = { name = "USS Monaghan" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }
-		ship = { name = "USS Aylwin" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA version_name = "Farragut Class" } } }
+		ship = { name = "USS Farragut" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }
+		ship = { name = "USS Dale" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }
+		ship = { name = "USS Monaghan" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }
+		ship = { name = "USS Aylwin" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }
 		# 34th Destroyer Division			
 		ship = { name = "USS Rathburne" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
 		ship = { name = "USS Talbot" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = USA } } }		
@@ -500,12 +500,12 @@ units = {
 		ship = { name = "USS S-34" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
 		ship = { name = "USS S-35" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
 		# 42nd Submarine Division				
-		ship = { name = "USS Argonaut" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA version_name = "Barracuda Class" } } }
-		ship = { name = "USS Narwhal" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA version_name = "Barracuda Class" } } }
-		ship = { name = "USS Nautilus" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA version_name = "Barracuda Class" } } }
-		ship = { name = "USS Dolphin" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA version_name = "Barracuda Class" } } }
-		ship = { name = "USS Cachalot" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA version_name = "Barracuda Class" } } }
-		ship = { name = "USS Cuttlefish" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA version_name = "Barracuda Class" } } }
+		ship = { name = "USS Argonaut" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+		ship = { name = "USS Narwhal" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+		ship = { name = "USS Nautilus" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+		ship = { name = "USS Dolphin" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+		ship = { name = "USS Cachalot" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+		ship = { name = "USS Cuttlefish" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
 		# 43rd Submarine Division				
 		ship = { name = "USS Porpoise" definition = submarine equipment = { submarine_2 = { amount = 1 owner = USA } } }
 		ship = { name = "USS Pike" definition = submarine equipment = { submarine_2 = { amount = 1 owner = USA } } }
@@ -581,9 +581,9 @@ units = {
 		name = "Battleship Division 3"				
 		base = 788
 		location = 788 # Norfolk
-		ship = { name = "USS New Mexico" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA version_name = "New Mexico Class" } } }				
-		ship = { name = "USS Mississippi" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA version_name = "New Mexico Class" } } }				
-		ship = { name = "USS Idaho" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA version_name = "New Mexico Class" } } }				
+		ship = { name = "USS New Mexico" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA } } }				
+		ship = { name = "USS Mississippi" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA } } }				
+		ship = { name = "USS Idaho" definition = battleship equipment = { battleship_1 = { amount = 1 owner = USA } } }				
 	}					
 	navy = {					
 		name = "Battleship Division 5"				
@@ -607,7 +607,7 @@ units = {
 		base = 788
 		location = 788 # Norfolk
 		ship = { name = "USS Augusta" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = USA } } }				
-		ship = { name = "USS Tuscaloosa" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = USA version_name = "Portland Class" } } }				
+		ship = { name = "USS Tuscaloosa" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = USA } } }				
 	}										
 	navy = {					
 		name = "Destroyer Flotilla  3"				
@@ -730,9 +730,9 @@ units = {
 		ship = { name = "USS S-16" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
 		ship = { name = "USS S-17" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
 		# 32nd Submarine Division			
-		ship = { name = "USS Barracuda" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA version_name = "Barracuda Class" } } }
-		ship = { name = "USS Bass" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA version_name = "Barracuda Class" } } }
-		ship = { name = "USS Bonita" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA version_name = "Barracuda Class" } } }
+		ship = { name = "USS Barracuda" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
+		ship = { name = "USS Bass" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA} } }
+		ship = { name = "USS Bonita" definition = submarine equipment = { submarine_1 = { amount = 1 owner = USA } } }
 	}					
 	navy = {					
 		name = "5th Submarine Squadron"				
@@ -901,7 +901,6 @@ instant_effect = {
 		equipment = {
 			type = destroyer_1
 			creator = "USA"
-			version_name = "Farragut Class"
 		}
 		requested_factories = 13
 		progress = 0.80
@@ -922,7 +921,6 @@ instant_effect = {
 		equipment = {
 			type = heavy_cruiser_1
 			creator = "USA"
-			version_name = "Portland Class"
 		}
 		requested_factories = 2
 		progress = 0.85

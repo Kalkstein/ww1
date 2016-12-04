@@ -607,8 +607,8 @@ create_equipment_variant = {
 		ship_reliability_upgrade = 4
 		ship_gun_upgrade = 1
 		ship_armor_upgrade = 1
+		ship_engine_upgrade = 3
 	}
-	obsolete = yes
 }
 create_equipment_variant = {
 	name = "Schwalbe"

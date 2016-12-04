@@ -41,7 +41,7 @@ set_convoys = 5
 		early_bomber = 1
 		CAS1 = 1
 		field_artillery = 1
-		interwar_artillery_1 = 1
+		improved_field_artillery1 = 1
 		basic_submarine = 1
 
 		#doctrines

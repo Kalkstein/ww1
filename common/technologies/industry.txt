@@ -700,7 +700,7 @@ technologies = {
 		
 	industrial_fortitude = {
 	
-		industry_air_damage_factor = 0.1
+		industry_air_damage_factor = -0.1
 
 		research_cost = 1.5
 		start_year = 1916
@@ -721,7 +721,7 @@ technologies = {
 	
 	industrial_fortitude_2 = {
 	
-		industry_air_damage_factor = 0.1
+		industry_air_damage_factor = -0.1
 		
 		
 		research_cost = 1.5
