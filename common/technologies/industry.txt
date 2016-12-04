@@ -158,49 +158,6 @@ technologies = {
 		}
 	}
 	
-	industrial_fortitude = {
-	
-		industry_air_damage_factor = -0.1
-
-		research_cost = 1.5
-		start_year = 1916
-		
-		folder = {
-			name = industry_folder
-			position = { x = 4 y = 8 }
-		}
-		
-		ai_will_do = {
-			factor = 6
-		}
-		
-		categories = {
-			industry
-		}
-	}
-	
-	industrial_fortitude_2 = {
-	
-		industry_air_damage_factor = -0.1
-		
-		
-		research_cost = 1.5
-		start_year = 1917
-		
-		folder = {
-			name = industry_folder
-			position = { x = 4 y = 10 }
-		}
-		
-		ai_will_do = {
-			factor = 6
-		}
-		
-		categories = {
-			industry
-		}
-	}
-	
 	advanced_machine_tools = {
 	
 		production_factory_max_efficiency_factor = 0.15
@@ -544,7 +501,7 @@ technologies = {
 	
 	frontline_fortification_5 = {
 
-		dig_in_speed_factor = 0.04
+		dig_in_speed_factor = 0.03
 		
 		research_cost = 2
 		start_year = 1917
@@ -737,6 +694,50 @@ technologies = {
 		
 		ai_research_weights = {
 			defensive = -1.0
+		}
+	}
+	
+		
+	industrial_fortitude = {
+	
+		industry_air_damage_factor = 0.1
+
+		research_cost = 1.5
+		start_year = 1916
+		
+		folder = {
+			name = industry_folder
+			position = { x = 4 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 6
+		}
+		
+		categories = {
+			industry
+		}
+	}
+	
+	industrial_fortitude_2 = {
+	
+		industry_air_damage_factor = 0.1
+		
+		
+		research_cost = 1.5
+		start_year = 1917
+		
+		folder = {
+			name = industry_folder
+			position = { x = 4 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 6
+		}
+		
+		categories = {
+			industry
 		}
 	}
 	

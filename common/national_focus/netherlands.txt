@@ -239,7 +239,6 @@ focus_tree = {
 		id = HOL_caribbean_oil
 		icon = GFX_goal_generic_oil_refinery
 		prerequisite = { focus = HOL_extra_research_slot }
-		prerequisite = { focus = HOL_colonial_industry_II }
 		x = 2
 		y = 5
 		cost = 10

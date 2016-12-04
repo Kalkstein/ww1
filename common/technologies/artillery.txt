@@ -39,10 +39,10 @@ technologies = {
 	improved_field_artillery1 = {
 
 		artillery = {
-			soft_attack = 0.1
+			defense = 0.1
 		}
 		artillery_brigade = {
-			soft_attack = 0.1
+			defense = 0.1
 		}
 		
 		path = {
@@ -321,10 +321,10 @@ technologies = {
 	improved_heavy_artillery2 = {
 		
 		heavy_artillery = {
-			breakthrough = 0.1
+			defense = 0.1
 		}
 		heavy_artillery_brigade = {
-			breakthrough = 0.1
+			defense = 0.1
 		}
 		
 		path = {
@@ -390,13 +390,15 @@ technologies = {
 	improved_heavy_artillery3 = {
 		
 		heavy_artillery = {
+			breakthrough = 0.1
 			fort = {
-				attack = 0.2
+				attack = 0.1
 			}
 		}
 		heavy_artillery_brigade = {
+			breakthrough = 0.1
 			fort = {
-				attack = 0.2
+				attack = 0.1
 			}
 		}
 		
@@ -426,11 +428,13 @@ technologies = {
 	improved_heavy_artillery4 = {
 		
 		heavy_artillery = {
+			soft_attack = 0.1
 			urban = {
 				attack = 0.1
 			}
 		}
 		heavy_artillery_brigade = {
+			soft_attack = 0.1
 			urban = {
 				attack = 0.1
 			}
@@ -525,10 +529,7 @@ technologies = {
 	improved_siege_artillery2 = {
 
 		siege_artillery = {
-			defense = 0.15
-		}
-		siege_artillery_brigade = {
-			defense = 0.15
+			soft_attack = 0.15
 		}
 
 		path = {
@@ -557,10 +558,7 @@ technologies = {
 	improved_siege_artillery3 = {
 
 		siege_artillery = {
-			defense = 0.15
-		}
-		siege_artillery_brigade = {
-			defense = 0.15
+			hard_attack = 0.15
 		}
 
 		path = {
