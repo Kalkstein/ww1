@@ -62,7 +62,7 @@ set_politics = {
 add_ideas = {
 	undisturbed_isolation
 	neutrality_idea
-	disarmed_nation
+	
 	free_trade
 #	home_of_the_free
 }

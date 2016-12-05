@@ -57,7 +57,7 @@ set_politics = {
 }
 
 add_ideas = {
-	extensive_conscription
+	
 	low_economic_mobilisation
 }
 

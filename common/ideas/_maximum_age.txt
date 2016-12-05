@@ -13,7 +13,7 @@ ideas = {
 			}
 
 			modifier = {
-				#conscription = 0.005
+				conscription = 0.02
 			}
 			
 			ai_will_do = {
@@ -41,8 +41,7 @@ ideas = {
 			}
 
 			modifier = {
-				#conscription = 0.01
-				conscription = 0.005
+				conscription = 0.03
 				training_time_factor = 0.1
 			}
 			
@@ -66,8 +65,7 @@ ideas = {
 			}
 
 			modifier = {
-				#conscription = 0.015
-				conscription = 0.01
+				conscription = 0.04
 				training_time_factor = 0.25
 				political_power_factor = -0.25
 			}
@@ -92,8 +90,7 @@ ideas = {
 			}
 
 			modifier = {
-				#conscription = 0.02
-				conscription = 0.015
+				conscription = 0.05
 				training_time_factor = 0.5
 				political_power_factor = -0.5
 			}

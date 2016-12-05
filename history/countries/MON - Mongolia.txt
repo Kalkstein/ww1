@@ -8,7 +8,7 @@ set_technology = {
 }
 
 add_ideas = {
-	limited_conscription
+	
 }
 
 1939.1.1 = {
@@ -93,7 +93,7 @@ create_country_leader = {
 1939.1.1 = {
 
 	add_ideas = {
-	limited_conscription
+	
 	}	
 
 	set_politics = {

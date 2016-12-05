@@ -5,7 +5,7 @@ oob = "TUR_1936"
 set_research_slots = 3
 
 add_ideas = {
-	limited_conscription
+	
 	TUR_incompetant_officers_idea
 	ethnic_tensions
 }

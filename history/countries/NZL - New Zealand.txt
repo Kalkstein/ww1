@@ -41,7 +41,7 @@ set_technology = {
 	add_ideas = {
 		#laws
 		low_economic_mobilisation
-		limited_conscription
+		
 	}
 
 	

@@ -3,7 +3,7 @@
 oob = "BUL_1936"
 
 add_ideas = {
-	extensive_conscription
+	
 }
 
 set_technology = {

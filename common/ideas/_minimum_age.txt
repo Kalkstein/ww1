@@ -17,8 +17,7 @@ ideas = {
 			}
 
 			modifier = {
-				#conscription = 0.005
-				conscription = 0.01
+				conscription = 0.02
 				political_power_factor = 0.15
 			}
 			
@@ -39,8 +38,7 @@ ideas = {
 			}
 
 			modifier = {
-				#conscription = 0.01
-				conscription = 0.015
+				conscription = 0.025
 				political_power_factor = 0.10
 			}
 			
@@ -61,7 +59,6 @@ ideas = {
 			}
 
 			modifier = {
-				#conscription = 0.015
 				conscription = 0.02
 				political_power_factor = 0.05
 			}
@@ -92,8 +89,7 @@ ideas = {
 			}
 
 			modifier = {
-				#conscription = 0.02
-				conscription = 0.025
+				conscription = 0.03
 			}
 			
 			cancel_if_invalid = no
@@ -116,8 +112,7 @@ ideas = {
 			}
 
 			modifier = {
-				#conscription = 0.025
-				conscription = 0.03
+				conscription = 0.05
 				army_morale_factor = -0.1
 			}
 			
@@ -141,8 +136,7 @@ ideas = {
 			}
 
 			modifier = {
-				#conscription = 0.03
-				conscription = 0.035
+				conscription = 0.075
 				army_morale_factor = -0.25
 			}
 			
@@ -166,8 +160,7 @@ ideas = {
 			}
 
 			modifier = {
-				#conscription = 0.035
-				conscription = 0.05
+				conscription = 0.1
 				army_morale_factor = -0.50
 			}
 			

@@ -3,7 +3,7 @@
 oob = "ALB_revolt_1910"
 
 add_ideas = {
-	extensive_conscription
+	
 }
 
 set_technology = {
