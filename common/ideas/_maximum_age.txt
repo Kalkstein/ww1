@@ -1,0 +1,104 @@
+ideas = {
+
+	maximum_age_laws = { 
+		law = yes
+
+		age_40 = {
+						
+			cost = 100
+			removal_cost = -1
+			level = 4
+			
+			available = {
+			}
+
+			modifier = {
+				#conscription = 0.005
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+			
+			cancel_if_invalid = no
+			default = yes
+		}
+		age_50 = {
+						
+			cost = 100
+			removal_cost = -1
+			level = 3
+			
+			available = {
+				OR = {
+					has_war = yes
+					has_government = fascism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+
+			modifier = {
+				#conscription = 0.01
+				conscription = 0.005
+				training_time_factor = 0.1
+			}
+			
+			cancel_if_invalid = no
+		}
+		age_60 = {
+						
+			cost = 100
+			removal_cost = -1
+			level = 2
+			
+			available = {
+				AND = {
+					has_war = yes
+					enemies_strength_ratio > 1.5
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+
+			modifier = {
+				#conscription = 0.015
+				conscription = 0.01
+				training_time_factor = 0.25
+				political_power_factor = -0.25
+			}
+			
+			cancel_if_invalid = no
+		}
+		all_must_serve_old = {
+						
+			cost = 100
+			removal_cost = -1
+			level = 1
+			
+			available = {
+				AND = {
+					has_war = yes
+					enemies_strength_ratio > 1.5
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+
+			modifier = {
+				#conscription = 0.02
+				conscription = 0.015
+				training_time_factor = 0.5
+				political_power_factor = -0.5
+			}
+			
+			cancel_if_invalid = no
+		}
+	}
+}

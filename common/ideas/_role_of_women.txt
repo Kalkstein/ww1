@@ -1,0 +1,132 @@
+ideas = {
+
+	role_of_women_laws = { 
+		law = yes
+
+		stay_at_home = {
+						
+			cost = 100
+			removal_cost = -1
+			level = 5
+			
+			available = {
+			}
+
+			modifier = {
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+			
+			cancel_if_invalid = no
+			
+			default = yes
+		}
+		women_workers = {		
+			cost = 200
+			removal_cost = -1
+			level = 4
+			
+			available = {
+				OR = {
+					has_war = yes
+					has_government = communism
+					tag = JAP
+				}
+			}
+			
+			ai_will_do = {
+				factor = 25
+			}
+
+			modifier = {
+				industrial_capacity_factory = 0.10
+			}
+			
+			cancel_if_invalid = no
+		}
+		women_auxillary = {
+						
+			cost = 200
+			removal_cost = -1
+			level = 3
+			
+			available = {
+				OR = {
+					has_war = yes
+					has_government = communism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 50
+			}
+
+			modifier = {
+				conscription = 0.01
+				industrial_capacity_factory = 0.05
+				political_power_factor = -0.10
+			}
+			
+			cancel_if_invalid = no
+		}
+		limited_female_service = {
+						
+			cost = 200
+			removal_cost = -1
+			level = 2
+			
+			available = {
+				AND = {
+					has_war = yes
+					NOT = { has_government = fascism }
+				}
+			}
+			
+			ai_will_do = {
+				factor = 75
+			}
+
+			modifier = {
+				conscription = 0.02
+				political_power_factor = -0.25
+			}
+			
+			cancel_if_invalid = no
+		}
+		egalitarian = {
+						
+			cost = 400
+			removal_cost = -1
+			level = 1
+			
+			available = {
+				OR = {
+					AND = {
+						has_war = yes
+						has_government = communism
+					}
+					
+					AND = {
+						has_war = yes
+						NOT = { has_government = fascism }
+						enemies_strength_ratio > 2.0
+					}
+				}
+			}
+			
+			ai_will_do = {
+				factor = 10
+			}
+
+			modifier = {
+				conscription = 0.10
+				political_power_factor = -0.50
+				unity_factor = -0.10
+			}
+			
+			cancel_if_invalid = no
+		}
+	}
+}

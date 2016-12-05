@@ -1,0 +1,111 @@
+ideas = {
+
+	recruitment_standard_laws = { 
+		law = yes
+
+		healthy_standard = {
+						
+			cost = 150
+			removal_cost = -1
+			level = 4
+			
+			available = {
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+
+			modifier = {
+
+			}
+			
+			cancel_if_invalid = no
+			default = yes
+		}
+		
+		loose_standard = {
+						
+			cost = 150
+			removal_cost = -1
+			level = 3
+			
+			available = {
+				OR = {
+					has_war = yes
+					threat > 0.40
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+
+			modifier = {
+				conscription = 0.01
+				training_time_factor = 0.1
+
+			}
+			
+			cancel_if_invalid = no
+		}
+		
+		no_exemptions = {
+						
+			cost = 150
+			removal_cost = -1
+			level = 2
+			
+			available = {
+				AND = {
+					has_war = yes
+					enemies_strength_ratio > 1.5
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+
+			modifier = {
+				conscription = 0.02
+				training_time_factor = 0.15
+				industrial_capacity_factory = -0.15
+				production_speed_industrial_complex_factor = -0.10
+				production_speed_arms_factory_factor = -0.10
+				research_time_factor = 0.10
+			}
+			
+			cancel_if_invalid = no
+		}
+		
+		scraping_the_barrel_standard = {
+						
+			cost = 150
+			removal_cost = -1
+			level = 1
+			
+			available = {
+				AND = {
+					has_war = yes
+					enemies_strength_ratio > 2.0
+				}
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+
+			modifier = {
+				conscription = 0.05
+				training_time_factor = 0.50
+				industrial_capacity_factory = -0.25
+				production_speed_industrial_complex_factor = -0.25
+				production_speed_arms_factory_factor = -0.25
+				research_time_factor = 0.25
+			}
+			
+			cancel_if_invalid = no
+		}
+	}
+}

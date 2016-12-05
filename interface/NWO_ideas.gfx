@@ -1,0 +1,170 @@
+spriteTypes = {
+	## EVENTS ##
+	
+	spriteType = {
+		name = "GFX_idea_GER_armaments_miracle"
+		texturefile = "gfx/interface/ideas/FRA_motorized_focus.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_GER_volkssturm"
+		texturefile = "gfx/interface/ideas/generic_manpower_bonus.dds"
+	}
+	
+	## LAWS ##
+	
+	spriteType = {
+		name = "GFX_idea_free_press"
+		texturefile = "gfx/interface/ideas/idea_free_press.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_censored_press"
+		texturefile = "gfx/interface/ideas/idea_censored_press.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_resistance_press"
+		texturefile = "gfx/interface/ideas/idea_resistance_press.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_productive_press"
+		texturefile = "gfx/interface/ideas/idea_productive_press.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_call_for_volunteers_press"
+		texturefile = "gfx/interface/ideas/idea_call_for_volunteers_press.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_agressive_press"
+		texturefile = "gfx/interface/ideas/idea_agressive_press.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_nationalism_press"
+		texturefile = "gfx/interface/ideas/idea_nationalism_press.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_security_press"
+		texturefile = "gfx/interface/ideas/idea_security_press.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_stay_at_home"
+		texturefile = "gfx/interface/ideas/idea_stay_at_home_gender.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_women_workers"
+		texturefile = "gfx/interface/ideas/idea_women_workers_gender.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_women_auxillary"
+		texturefile = "gfx/interface/ideas/idea_women_auxillary_gender.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_limited_female_service"
+		texturefile = "gfx/interface/ideas/idea_limited_female_service_gender.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_egalitarian"
+		texturefile = "gfx/interface/ideas/idea_egalitarian_gender.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_healthy_standard"
+		texturefile = "gfx/interface/ideas/idea_healthy_standards.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_loose_standard"
+		texturefile = "gfx/interface/ideas/idea_loose_standards.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_no_exemptions"
+		texturefile = "gfx/interface/ideas/idea_no_exemptions.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_scraping_the_barrel_standard"
+		texturefile = "gfx/interface/ideas/idea_the_barrel.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_limited_service"
+		texturefile = "gfx/interface/ideas/idea_limited_service.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_wartime_service"
+		texturefile = "gfx/interface/ideas/idea_wartime_service.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_shake_and_bake"
+		texturefile = "gfx/interface/ideas/idea_shake_n_bake.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_age_19"
+		texturefile = "gfx/interface/ideas/idea_mp_19.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_age_18"
+		texturefile = "gfx/interface/ideas/idea_mp_18.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_age_17"
+		texturefile = "gfx/interface/ideas/idea_mp_17.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_age_16"
+		texturefile = "gfx/interface/ideas/idea_mp_16.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_age_15"
+		texturefile = "gfx/interface/ideas/idea_mp_15.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_age_14"
+		texturefile = "gfx/interface/ideas/idea_mp_14.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_all_must_serve_young"
+		texturefile = "gfx/interface/ideas/idea_mp_all_young.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_age_40"
+		texturefile = "gfx/interface/ideas/idea_mp_40.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_age_50"
+		texturefile = "gfx/interface/ideas/idea_mp_50.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_age_60"
+		texturefile = "gfx/interface/ideas/idea_mp_60.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_all_must_serve_old"
+		texturefile = "gfx/interface/ideas/idea_mp_all_old.dds"
+	}
+}

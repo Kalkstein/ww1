@@ -36,7 +36,7 @@ ideas = {
 			}
 
 			modifier = {
-				conscription = 0.05
+				conscription = 0.015
 			}
 			
 			default = yes
@@ -60,7 +60,7 @@ ideas = {
 			}
 
 			modifier = {
-				conscription = 0.1
+				conscription = 0.025
 			}
 			
 			cancel_if_invalid = no
@@ -90,10 +90,8 @@ ideas = {
 			level = 4
 			
 			modifier = {
-				conscription = 0.2
-				#industrial_capacity_factory = -0.05
-				#production_speed_buildings_factor = -0.05
-				training_time_factor = 0.05
+				conscription = 0.5
+				training_time_factor = 0.1
 			}
 			
 			cancel_if_invalid = no
@@ -124,10 +122,10 @@ ideas = {
 			level = 3
 
 			modifier = {
-				conscription = 0.275
+				conscription = 0.1
 				industrial_capacity_factory = -0.1
 				production_speed_buildings_factor = -0.1
-				training_time_factor = 0.15
+				training_time_factor = 0.2
 			}
 			
 			cancel_if_invalid = no
@@ -158,7 +156,7 @@ ideas = {
 			level = 2
 			
 			modifier = {
-				conscription = 0.35
+				conscription = 0.2
 				industrial_capacity_factory = -0.3
 				production_speed_buildings_factor = -0.3
 				#XP from reinforcement penalty (small)
@@ -189,7 +187,7 @@ ideas = {
 			level = 1
 
 			modifier = {
-				conscription = 0.4
+				conscription = 0.25
 				industrial_capacity_factory = -0.4
 				production_speed_buildings_factor = -0.4
 				training_time_factor = 0.5
