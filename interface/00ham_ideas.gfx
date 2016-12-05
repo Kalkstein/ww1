@@ -1,0 +1,219 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_idea_slot_war_advisor"
+		textureFile = "gfx/interface/idea_slot_political_advisor.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_slot_finance_advisor"
+		textureFile = "gfx/interface/idea_slot_political_advisor.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_slot_education_advisor"
+		textureFile = "gfx/interface/idea_slot_political_advisor.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_slot_development_advisor"
+		textureFile = "gfx/interface/idea_slot_political_advisor.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_slot_science_advisor"
+		textureFile = "gfx/interface/idea_slot_political_advisor.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_slot_foreign_advisor"
+		textureFile = "gfx/interface/idea_slot_political_advisor.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_slot_high_command_ham"
+		textureFile = "gfx/interface/idea_slot_high_command.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_slot_air_chief_ham"
+		textureFile = "gfx/interface/idea_slot_air_chief.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_slot_navy_chief_ham"
+		textureFile = "gfx/interface/idea_slot_navy_chief.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_slot_army_chief_ham"
+		textureFile = "gfx/interface/idea_slot_army_chief.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_slot_theorist_ham"
+		textureFile = "gfx/interface/idea_slot_theorist.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_slot_industrial_concern_ham"
+		textureFile = "gfx/interface/idea_slot_industrial_concern.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_slot_materiel_manufacturer_ham"
+		textureFile = "gfx/interface/idea_slot_materiel_manufacturer.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_slot_naval_manufacturer_ham"
+		textureFile = "gfx/interface/idea_slot_naval_manufacturer.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_slot_aircraft_manufacturer_ham"
+		textureFile = "gfx/interface/idea_slot_aircraft_manufacturer.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_slot_tank_manufacturer_ham"
+		textureFile = "gfx/interface/idea_slot_tank_manufacturer.dds"
+	}
+	
+	### LAW SLOTS
+	#spriteType = {
+	#	name = "GFX_idea_slot_policing_policy"
+	#	textureFile = "gfx/interface/policing_slot.dds"
+	#}
+	#spriteType = {
+	#	name = "GFX_idea_slot_social_welfare"
+	#	textureFile = "gfx/interface/welfare_slot.dds"
+	#}
+	#spriteType = {
+	#	name = "GFX_idea_slot_relations_policy"
+	#	textureFile = "gfx/interface/propaganda_slot.dds"
+	#}
+	
+	### POLICING LAWS
+	spriteType = {
+		name = "GFX_idea_police_community_officers"
+		texturefile = "gfx/interface/ideas/1_community_officers.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_police_white_privelege"
+		texturefile = "gfx/interface/ideas/2_white_privelege.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_police_big_brother"
+		texturefile = "gfx/interface/ideas/3_big_brother.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_police_militarisation"
+		texturefile = "gfx/interface/ideas/4_militarisation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_police_state_protectors"
+		texturefile = "gfx/interface/ideas/5_state_protectors.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_police_police_state"
+		texturefile = "gfx/interface/ideas/6_police_state.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_police_military_dictatorship"
+		texturefile = "gfx/interface/ideas/7_marshall_law.dds"
+	}
+	
+	### WELFARE LAWS
+	spriteType = {
+		name = "GFX_idea_welfare_no_welfare"
+		texturefile = "gfx/interface/ideas/1_social_darwinism.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_welfare_state_education"
+		texturefile = "gfx/interface/ideas/2_state_education.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_welfare_labour_program"
+		texturefile = "gfx/interface/ideas/3_labour_programs.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_welfare_social_housing"
+		texturefile = "gfx/interface/ideas/4_social_housing.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_welfare_national_healthcare"
+		texturefile = "gfx/interface/ideas/5_national_healthcare.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_welfare_basic_income"
+		texturefile = "gfx/interface/ideas/6_basic_income.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_welfare_corporate_subsidies"
+		texturefile = "gfx/interface/ideas/6_corporate_subsidies.dds"
+	}
+	
+	### PROPAGANDA
+	spriteType = {
+		name = "GFX_idea_relations_none"
+		texturefile = "gfx/interface/ideas/propaganda_none.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_relations_national_propaganda"
+		texturefile = "gfx/interface/ideas/propaganda_jingo.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_relations_hard_work"
+		texturefile = "gfx/interface/ideas/propaganda_hard_work.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_relations_rationing"
+		texturefile = "gfx/interface/ideas/propaganda_rations.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_relations_civil_disarm"
+		texturefile = "gfx/interface/ideas/propaganda_disarmament.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_relations_all_hands"
+		texturefile = "gfx/interface/ideas/propaganda_reconstruction.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_relations_enable_fascists"
+		texturefile = "gfx/interface/ideas/propaganda_right.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_relations_enable_communists"
+		texturefile = "gfx/interface/ideas/propaganda_left.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_relations_enable_democrats"
+		texturefile = "gfx/interface/ideas/propaganda_democracy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_relations_enable_moderates"
+		texturefile = "gfx/interface/ideas/propaganda_moderates.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_evacuation"
+		textureFile = "gfx/interface/ideas/idea_evacuation.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_generic_rations"
+		textureFile = "gfx/interface/ideas/idea_rations.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_food_shortage"
+		textureFile = "gfx/interface/ideas/idea_food_shortage.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_war_exhaustion"
+		textureFile = "gfx/interface/ideas/war_exhaustion.dds"
+	}
+	
+}
