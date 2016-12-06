@@ -79,7 +79,7 @@ ideas = {
 					}
 					AND = {
 						has_war = yes
-						enemies_strength_ratio > 1.5
+						enemies_strength_ratio > 1.0
 					}
 				}
 			}
@@ -103,7 +103,7 @@ ideas = {
 			available = {
 				AND = {
 					has_war = yes
-					enemies_strength_ratio > 1.5
+					enemies_strength_ratio > 1.25
 				}
 			}
 			
@@ -151,7 +151,7 @@ ideas = {
 			available = {
 				AND = {
 					has_war = yes
-					enemies_strength_ratio > 1.5
+					enemies_strength_ratio > 2.0
 				}
 			}
 			

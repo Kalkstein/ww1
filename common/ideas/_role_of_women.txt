@@ -78,10 +78,7 @@ ideas = {
 			level = 2
 			
 			available = {
-				AND = {
-					has_war = yes
-					NOT = { has_government = fascism }
-				}
+				has_war = yes
 			}
 			
 			ai_will_do = {
@@ -110,7 +107,6 @@ ideas = {
 					
 					AND = {
 						has_war = yes
-						NOT = { has_government = fascism }
 						enemies_strength_ratio > 2.0
 					}
 				}

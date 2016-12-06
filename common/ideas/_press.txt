@@ -7,10 +7,6 @@ ideas = {
 						
 			cost = 50
 			removal_cost = -1
-			
-			available = {
-				has_government = democratic
-			}
 
 			modifier = {
 				research_time_factor = -0.05
@@ -34,13 +30,6 @@ ideas = {
 						
 			cost = 50
 			removal_cost = -1
-			
-			available = {
-				OR = { 
-					has_war = yes
-					NOT = { has_government = democratic }
-				}
-			}
 
 			modifier = {
 				#production_speed_industrial_complex_factor = 0.05
@@ -76,16 +65,13 @@ ideas = {
 						
 			cost = 50
 			removal_cost = -1
-			
-			available = {
-				OR = { 
-					has_war = yes
-					NOT = { has_government = democratic }
-				}
-			}
 
 			modifier = {
 				partisan_effect = 0.2
+			}
+			
+			available = {
+				has_war = yes
 			}
 			
 			ai_will_do = {
@@ -118,13 +104,6 @@ ideas = {
 						
 			cost = 50
 			removal_cost = -1
-			
-			available = {
-				OR = { 
-					has_war = yes
-					NOT = { has_government = democratic }
-				}
-			}
 
 			modifier = {
 				production_factory_efficiency_gain_factor = 0.10
@@ -146,13 +125,6 @@ ideas = {
 						
 			cost = 50
 			removal_cost = -1
-			
-			available = {
-				OR = { 
-					has_war = yes
-					NOT = { has_government = democratic }
-				}
-			}
 
 			modifier = {
 				conscription = 0.005
@@ -175,13 +147,6 @@ ideas = {
 						
 			cost = 50
 			removal_cost = -1
-			
-			available = {
-				OR = { 
-					has_war = yes
-					NOT = { has_government = democratic }
-				}
-			}
 
 			modifier = {
 				justify_war_goal_time = -0.25
@@ -208,13 +173,6 @@ ideas = {
 						
 			cost = 50
 			removal_cost = -1
-			
-			available = {
-				OR = { 
-					has_war = yes
-					NOT = { has_government = democratic }
-				}
-			}
 
 			modifier = {
 				drift_defence_factor = 0.2
@@ -237,13 +195,6 @@ ideas = {
 						
 			cost = 50
 			removal_cost = -1
-			
-			available = {
-				OR = { 
-					has_war = yes
-					NOT = { has_government = democratic }
-				}
-			}
 
 			modifier = {
 				decryption_factor = 0.1
