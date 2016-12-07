@@ -157,40 +157,76 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/rubber_3.dds"
 	}
 	
+	SpriteType = {
+		name = "GFX_field_artillery_medium"
+		texturefile = "gfx/interface/technologies/Art_1_allies.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_improved_field_artillery1_medium"
+		texturefile = "gfx/interface/technologies/artillery5.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_field_artillery2_medium"
+		texturefile = "gfx/interface/technologies/Art_2_allies.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_improved_field_artillery2_medium"
+		texturefile = "gfx/interface/technologies/artillery1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_improved_field_artillery3_medium"
+		texturefile = "gfx/interface/technologies/artillery3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_field_artillery3_medium"
+		texturefile = "gfx/interface/technologies/Art_3_allies.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_improved_field_artillery5_medium"
+		texturefile = "gfx/interface/technologies/antitank1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_improved_heavy_artillery1_medium"
+		texturefile = "gfx/interface/technologies/rocket_artillery3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_improved_siege_artillery1_medium"
+		texturefile = "gfx/interface/technologies/antitank3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_improved_siege_artillery2_medium"
+		texturefile = "gfx/interface/technologies/antitank5.dds"
+	}
+	
 	
 	
 	
 	
 	
 	SpriteType = {
-		name = "GFX_rocket_interceptor_equipment_3_medium"
-		texturefile = "gfx/interface/technologies/rocket_interceptor_3.dds"
-	}		
+		name = "GFX_interwar_anti_tank_medium"
+		texturefile = "gfx/interface/technologies/AT_1_allies.dds"
+	}
 	
-	SpriteType = {
-		name = "GFX_rocket_interceptor_equipment_2_medium"
-		texturefile = "gfx/interface/technologies/rocket_interceptor_2.dds"
-	}		
 	
-	SpriteType = {
-		name = "GFX_rocket_interceptor_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/rocket_interceptor_1.dds"
-	}		
 	
-	SpriteType = {
-		name = "GFX_guided_missile_equipment_3_medium"
-		texturefile = "gfx/interface/technologies/guided_missile_3.dds"
-	}		
 	
-	SpriteType = {
-		name = "GFX_guided_missile_equipment_2_medium"
-		texturefile = "gfx/interface/technologies/guided_missile_2.dds"
-	}	
 	
-	SpriteType = {
-		name = "GFX_guided_missile_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/guided_missile_1.dds"
-	}		
+	
+	
+	
+	
+	
+	
 	
 	SpriteType = {
 		name = "GFX_tech_support_medium"
@@ -220,7 +256,7 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_interwar_antitank_medium"
 		texturefile = "gfx/interface/technologies/AT_1_allies.dds"
-	}	
+	}
 	
 	SpriteType = {
 		name = "GFX_rocket_artillery_medium"

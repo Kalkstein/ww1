@@ -43,18 +43,16 @@
  heavy_artillery2_desc:0 ""
  heavy_artillery3:0 "Advanced Heavy Artillery"
  heavy_artillery3_desc:0 ""
- improved_heavy_artillery1:0 ""
- improved_heavy_artillery1_desc:0 ""
- improved_heavy_artillery2:0 ""
- improved_heavy_artillery2_desc:0 ""
+ improved_heavy_artillery1:0 "High explosives"
+ improved_heavy_artillery1_desc:0 "With new, more deadly types of shells we are able to enflict much damage to our opponentd."
  improved_heavy_artillery3:0 "Fort attack tactics"
  improved_heavy_artillery3_desc:0 "With new tactics we are able to use our heavy artillery to attack forts and no longer need siege artillery for that."
  improved_heavy_artillery4:0 "Urban attack tactics"
  improved_heavy_artillery4_desc:0 "Cities are getting more and more important these days. We need tatics to caputure those cities!"
- siege_artillery:0 "Siege Artillery"
- siege_artillery_desc:0 "Special great caliber artillery able to penetrate all sorts of forts."
- 
- 
+ improved_siege_artillery1:0 "Improved Siege Artillery I"
+ improved_siege_artillery1_desc:0 "Once our shells breakthrough the fortifications, they still need to enflict damage."
+ improved_siege_artillery2:0 "Improved Siege Artillery II"
+ improved_siege_artillery2_desc:0 "Men and Machines need to be better coordinated, in order to assault forts."
  
  
  industrial_organisation:0 "Industrial Organisation I"

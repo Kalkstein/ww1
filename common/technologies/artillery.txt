@@ -110,7 +110,17 @@ technologies = {
 		artillery_brigade = {
 			soft_attack = 0.1
 		}
+		heavy_artillery = {
+			defense = 0.1
+		}
+		heavy_artillery_brigade = {
+			defense = 0.1
+		}
 		
+		path = {
+			leads_to_tech = heavy_artillery2
+			research_cost_coeff = 1
+		}
 		path = {
 			leads_to_tech = improved_field_artillery3
 			research_cost_coeff = 1
@@ -123,7 +133,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = -3 y = 6 }
+			position = { x = 0 y = 6 }
 		}
 		
 		categories = {
@@ -296,7 +306,11 @@ technologies = {
 		}
 		
 		path = {
-			leads_to_tech = improved_heavy_artillery2
+			leads_to_tech = improved_field_artillery2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = siege_artillery
 			research_cost_coeff = 1
 		}
 		
@@ -307,42 +321,6 @@ technologies = {
 		folder = {
 			name = artillery_folder
 			position = { x = 3 y = 4 }
-		}
-		
-		categories = {
-			artillery
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
-	improved_heavy_artillery2 = {
-		
-		heavy_artillery = {
-			defense = 0.1
-		}
-		heavy_artillery_brigade = {
-			defense = 0.1
-		}
-		
-		path = {
-			leads_to_tech = heavy_artillery2
-			research_cost_coeff = 1
-		}
-		path = {
-			leads_to_tech = siege_artillery
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1
-
-		start_year = 1914
-		
-		folder = {
-			name = artillery_folder
-			position = { x = 3 y = 6 }
 		}
 		
 		categories = {
@@ -471,7 +449,7 @@ technologies = {
 		}
 		
 		path = {
-			leads_to_tech = improved_heavy_artillery5
+			leads_to_tech = interwar_anti_tank
 			research_cost_coeff = 1
 		}
 		
@@ -504,7 +482,7 @@ technologies = {
 		}
 		
 		path = {
-			leads_to_tech = improved_siege_artillery2
+			leads_to_tech = improved_siege_artillery1
 			research_cost_coeff = 1
 		}
 		
@@ -514,7 +492,36 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = 6 y = 6 }
+			position = { x = 7 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			rocketry
+		}
+	}
+	
+	improved_siege_artillery1 = {
+
+		siege_artillery = {
+			soft_attack = 0.15
+		}
+
+		path = {
+			leads_to_tech = improved_siege_artillery2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		start_year = 1915
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 7 y = 8 }
 		}
 		
 		ai_will_do = {
@@ -529,40 +536,11 @@ technologies = {
 	improved_siege_artillery2 = {
 
 		siege_artillery = {
-			soft_attack = 0.15
-		}
-
-		path = {
-			leads_to_tech = improved_siege_artillery3
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1
-
-		start_year = 1915
-		
-		folder = {
-			name = artillery_folder
-			position = { x = 6 y = 8 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			rocketry
-		}
-	}
-	
-	improved_siege_artillery3 = {
-
-		siege_artillery = {
 			hard_attack = 0.15
 		}
 
 		path = {
-			leads_to_tech = siege_artillery4
+			leads_to_tech = siege_artillery2
 			research_cost_coeff = 1
 		}
 		
@@ -572,7 +550,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = 6 y = 10 }
+			position = { x = 7 y = 10 }
 		}
 		
 		ai_will_do = {
@@ -584,7 +562,7 @@ technologies = {
 		}
 	}	
 
-	siege_artillery4 = {
+	siege_artillery2 = {
 		
 		enable_equipments = {
 			siege_artillery_equipment_2
@@ -599,7 +577,7 @@ technologies = {
 		}
 		folder = {
 			name = artillery_folder
-			position = { x = 6 y = 12 }
+			position = { x = 7 y = 12 }
 		}
 		
 		ai_will_do = {
@@ -623,7 +601,7 @@ technologies = {
 		
 		folder = {
 			name = artillery_folder
-			position = { x = 9 y = 12 }
+			position = { x = 5 y = 14 }
 		}
 		
 		ai_will_do = {
