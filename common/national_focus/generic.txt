@@ -1001,7 +1001,7 @@ focus_tree = {
 	}
 
 	focus = {
-		gen_ gen_destroyer_effort
+		id = gen_destroyer_effort
 		icon = GFX_goal_generic_wolf_pack
 		prerequisite = {focus=gen_submarine_effort }
 		x = 8

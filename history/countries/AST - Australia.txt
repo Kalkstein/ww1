@@ -228,7 +228,6 @@ create_equipment_variant = {
 		ship_reliability_upgrade = 2
 		ship_engine_upgrade = 2
 		ship_gun_upgrade = 2
-		ship_anti_air_upgrade = 2
 	}
 }
 

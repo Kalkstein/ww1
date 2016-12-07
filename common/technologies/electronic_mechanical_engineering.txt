@@ -555,92 +555,16 @@ technologies = {
 		}
 	}
 	
-	experimental_rockets = {
-
-		path = {
-			leads_to_tech = rocket_engines 
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 1.5
-		start_year = 1914
-		
-		enable_tactic = tactic_mask_eba
-		
-		folder = {
-			name = electronics_folder
-			position = { x = 0 y = 0 }
-		}
-	
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			rocketry
-		}
-	}
-	
-	rocket_engines = {
-	
-		enable_tactic = tactic_mask_chlor
-		
-		path = {
-			leads_to_tech = improved_rocket_engines 
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 2
-		start_year = 1915
-		
-		
-		
-		folder = {
-			name = electronics_folder
-			position = { x = 0 y = 2 }
-		}
-			folder = {
-			name = secret_weapons_folder
-			position = { x = 10 y = 0 }
-		}
-		
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			rocketry
-		}		
-	}
-	
-	improved_rocket_engines = {
-
-		enable_tactic = tactic_mask_bunt
-		
-		research_cost = 1.5
-		start_year = 1916
-		
-		folder = {
-			name = electronics_folder
-			position = { x = 0 y = 4 }
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			rocketry
-		}
-	}
-	
 	atomic_research = {
 
 		research_time_factor = -0.02
 		
 		path = {
 			leads_to_tech = nuclear_reactor 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = experimental_rockets
 			research_cost_coeff = 1
 		}
 		
@@ -661,28 +585,50 @@ technologies = {
 		categories = {
 			nuclear
 		}
+	}
+	
+	experimental_rockets = {
 		
-
+		enable_tactic = tactic_mask_eba
+		
+		research_cost = 1.5
+		start_year = 1914
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 0 }
+		}
+	
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			rocketry
+		}
 	}
 	
 	nuclear_reactor = {
 
-		# can build reactors
+		enable_tactic = tactic_gas_chlor
 		
 		start_year = 1915
 		research_cost = 5
 		
-		enable_tactic = tactic_gas_chlor
+		
+		path = {
+			leads_to_tech = nukes 
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = rocket_engines
+			research_cost_coeff = 1
+		}
 		
 		folder = {
 			name = electronics_folder
 			position = { x = 0 y = 2 }
 		}
-
-		path = {
-			leads_to_tech = nukes 
-			research_cost_coeff = 1
-		}
 		
 		ai_will_do = {
 			factor = 1
@@ -692,17 +638,48 @@ technologies = {
 			nuclear
 		}
 	}
-
-	nukes = {
 	
-		start_year = 1916
-		research_cost = 5
+	
+	
+	rocket_engines = {
+	
+		enable_tactic = tactic_mask_chlor
 		
-		enable_tactic = tactic_gas_bunt
+		research_cost = 2
+		start_year = 1915
+		
+		
 		
 		folder = {
 			name = electronics_folder
-			position = { x = 0 y = 6 }
+			position = { x = 2 y = 2 }
+		}
+		
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			rocketry
+		}		
+	}
+
+	nukes = {
+		
+		enable_tactic = tactic_gas_bunt
+		
+		path = {
+			leads_to_tech = improved_rocket_engines
+			research_cost_coeff = 1
+		}
+		
+		start_year = 1916
+		research_cost = 5
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 0 y = 4 }
 		}
 		
 		ai_will_do = {
@@ -713,4 +690,27 @@ technologies = {
 			nuclear
 		}
 	}
+	
+	improved_rocket_engines = {
+
+		enable_tactic = tactic_mask_bunt
+		
+		research_cost = 1.5
+		start_year = 1916
+		
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			rocketry
+		}
+	}
+	
+	
 }

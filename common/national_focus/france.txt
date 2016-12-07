@@ -1527,7 +1527,7 @@ focus_tree = {
 				name = FRA_naval_doctorine
 				bonus = 0.5
 				uses = 2
-				category = naval_doctorine
+				category = Naval_doctrine
 			}
 		}
 	}

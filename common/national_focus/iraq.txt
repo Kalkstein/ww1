@@ -847,7 +847,7 @@ focus = {
 				name = IRQ_crusiers_experiments
 				bonus = 0.5
 				uses = 2
-				technology = armor
+				category = armor
 			}
 			#1x 50% reduction on research for medium tanks
 		}

@@ -477,7 +477,6 @@ create_equipment_variant = {
 		ship_torpedo_upgrade = 3
 		destroyer_engine_upgrade = 3
 		ship_ASW_upgrade = 3
-		ship_anti_air_upgrade = 3
 	}
 }
 
