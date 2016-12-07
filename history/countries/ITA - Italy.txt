@@ -177,7 +177,6 @@ create_equipment_variant = {
 		ship_torpedo_upgrade = 1
 		destroyer_engine_upgrade = 1
 		ship_ASW_upgrade = 1
-		ship_anti_air_upgrade = 1
 	}
 	obsolete = yes
 }
@@ -189,7 +188,6 @@ create_equipment_variant = {
 		ship_torpedo_upgrade = 3
 		destroyer_engine_upgrade = 3
 		ship_ASW_upgrade = 3
-		ship_anti_air_upgrade = 3
 	}
 }
 
@@ -200,7 +198,6 @@ create_equipment_variant = {
 		ship_reliability_upgrade = 1
 		ship_engine_upgrade = 1
 		ship_gun_upgrade = 1
-		ship_anti_air_upgrade = 1
 	}
 	obsolete = yes
 }
@@ -212,7 +209,6 @@ create_equipment_variant = {
 		ship_reliability_upgrade = 3
 		ship_engine_upgrade = 3
 		ship_gun_upgrade = 3
-		ship_anti_air_upgrade = 3
 	}
 }
 
