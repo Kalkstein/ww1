@@ -606,12 +606,12 @@ technologies = {
 		}
 
 		path = {
-			leads_to_tech = fire_focus
+			leads_to_tech = capital_fire_focus
 			research_cost_coeff = 1
 		}
 		
 		path = {
-			leads_to_tech = armor_focus
+			leads_to_tech = screen_fire_focus
 			research_cost_coeff = 1
 		}
 		
@@ -636,11 +636,16 @@ technologies = {
 		}
 	}
 	
-	fire_focus = {
+	capital_fire_focus = {
 
 		navy_capital_ship_attack_factor = 0.1
 		
-		xor = { armor_focus }
+		xor = { screen_fire_focus }
+		
+		path = {
+			leads_to_tech = capital_armor_focus
+			research_cost_coeff = 1
+		}
 		
 		doctrine = yes	
 		research_cost = 2
@@ -663,11 +668,9 @@ technologies = {
 		}
 	}
 	
-	armor_focus = {
+	capital_armor_focus = {
 		
 		navy_capital_ship_defence_factor = 0.10
-		
-		xor = { fire_focus }
 
 		doctrine = yes	
 		research_cost = 2
@@ -678,7 +681,64 @@ technologies = {
 
 		folder = {
 			name = naval_doctrine_folder
+			position = { x = 3 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		ai_research_weights = {
+			naval_doctrine = -1.0
+		}
+	}
+	
+	screen_fire_focus = {
+
+		navy_screen_attack_factor = 0.1
+		
+		xor = { capital_fire_focus }
+		
+		path = {
+			leads_to_tech = screen_armor_focus
+			research_cost_coeff = 1
+		}
+		
+		doctrine = yes	
+		research_cost = 2
+		
+		categories = {
+			naval_doctrine
+		}
+
+		folder = {
+			name = naval_doctrine_folder
 			position = { x = 5 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		ai_research_weights = {
+			naval_doctrine = -1.0
+		}
+	}
+	
+	screen_armor_focus = {
+		
+		navy_screen_defence_factor = 0.1
+
+		doctrine = yes	
+		research_cost = 2
+		
+		categories = {
+			naval_doctrine
+		}
+
+		folder = {
+			name = naval_doctrine_folder
+			position = { x = 5 y = 10 }
 		}
 		
 		ai_will_do = {

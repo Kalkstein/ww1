@@ -15,7 +15,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				communist_drift = 0.05
+				communism_drift = 0.05
 			}
 		}
 		
@@ -89,7 +89,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				army_defense_factor = 0.15
+				army_org_Factor = 0.05
 				dig_in_speed_factor = 0.1
 			}
 		}
