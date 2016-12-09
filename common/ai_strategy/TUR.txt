@@ -46,3 +46,342 @@ invade_greece = {
 		value = 200 
 	}
 }
+
+do_not_join_ger_tur = {
+	enable = {
+		tag = TUR 
+		is_historical_focus_on = yes 
+	}
+	abort = {
+		OR = {
+			TUR = { has_completed_focus = TUR_black_sea_raid }
+			has_war_with = ENG 
+			has_war_with = FRA 
+			has_war_with = GER 
+			is_in_faction_with = GER 
+			has_war_with = SOV
+		}
+	}
+	
+	ai_strategy = {
+		type = ignore 
+		id = "GER"
+		value = 300 
+	}
+}
+
+do_not_ally_balkan_wars = {
+	enable = {
+		tag = TUR 
+		OR = {
+			has_global_flag = balkan_war
+			has_global_flag = balkan_war_2
+		}
+	}
+	abort = {
+		NOT = {
+			OR = {
+				has_global_flag = balkan_war 
+				has_global_flag = balkan_war_2 
+			}
+		}
+		BUL = {
+			OR = {
+				has_war_with = GER 
+				has_war_with = FRA 
+				has_war_with = AUS 
+				has_war_with = ENG 
+				has_war_with = SOV 
+				has_war_with = ITA 
+			}
+		}
+	}
+	
+	ai_strategy = {
+		type = ignore 
+		id = "ENG"
+		value = 300 
+	}
+	ai_strategy = {
+		type = ignore 
+		id = "ENG"
+		value = 300 
+	}
+}
+
+invade_romania = {
+	enable = {
+		tag = TUR 
+		has_completed_focus = TUR_annex_romania 
+	}
+	abort = {
+		ROM = {
+			exists = no 
+		}
+	}
+	
+	ai_strategy = {
+		type = conquer 
+		id = "ROM"
+		value = 200 
+	}
+}
+
+annex_arabian_house_1 = {
+	enable = {
+		tag = TUR 
+		has_global_flag = TUR_hostile_arabia_flag
+		has_completed_focus = TUR_side_with_house_rashid 
+	}
+	abort = {
+		SAU = {
+			exists = no 
+		}
+	}
+	
+	ai_strategy = {
+		type = antagonize 
+		id = "SAU"
+		value = 200 
+	}
+}
+
+annex_arabian_house_2 = {
+	enable = {
+		tag = TUR 
+		has_global_flag = TUR_hostile_arabia_flag
+		has_completed_focus = TUR_side_with_house_saud 
+	}
+	abort = {
+		SHA = {
+			exists = no 
+		}
+	}
+	
+	ai_strategy = {
+		type = antagonize 
+		id = "SHA"
+		value = 200 
+	}
+}
+
+annex_serbia = {
+	enable = {
+		tag = TUR 
+		has_completed_focus = TUR_retake_serbia
+	}
+	abort = {
+		SER = {
+			exists = no 
+		}
+	}
+	
+	ai_strategy = {
+		type = conquer 
+		id = "SER"
+		value = 150 
+	}
+}
+
+puppet_serbia = {
+	enable = {
+		tag = TUR 
+		has_global_flag = TUR_will_puppet_ser
+	}
+	abort = {
+		SER = {
+			OR = {
+				exists = no 
+				is_puppet_of = TUR 
+			}
+		}
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = "SER"
+		value = 140 
+	}
+}
+
+puppet_persia = {
+	enable = {
+		tag = TUR 
+		has_global_flag = TUR_will_puppet_per
+	}
+	
+	abort = {
+		PER = {
+			OR = {
+				exists = no 
+				is_puppet_of = TUR 
+			}
+		}
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = "PER"
+		value = 190
+	}
+}
+
+caliph_annex_dissident_sau = {
+	enable = {
+		tag = TUR 
+		has_global_flag = caliph_will_annex_me
+		has_completed_focus = TUR_side_with_house_saud 
+		has_government = fascism
+	}
+	
+	abort = {
+		OR = {
+			SAU = {
+				exists = no 
+			}
+			NOT = {
+				has_government = fascism
+			}
+		}
+	}
+	
+	ai_strategy = {
+		type = conquer
+		id = "SAU"
+		value = 500
+	}
+	
+}
+
+caliph_annex_dissident_sha = {
+	enable = {
+		tag = TUR
+		has_global_flag	= caliph_will_annex_me
+		has_completed_focus = TUR_side_with_house_rashid 
+		has_government = fascism
+	}
+	
+	abort = {
+		OR = {
+			SHA = {
+				exists = no 
+			}
+			NOT = {
+				has_government = fascism
+			}
+		}
+	}
+	
+	ai_strategy = {
+		type = conquer 
+		id = "SHA"
+		value = 500
+	}
+}
+
+caliphate_conquest_1 = {
+	enable = {
+		tag = TUR 
+		has_completed_focus = TUR_re-reconquista
+	}
+	
+	abort = {
+		AND = {
+			118 = { is_owned_by = TUR }
+			168 = { is_owned_by = TUR } 
+			169 = { is_owned_by = TUR } 
+			173 = { is_owned_by = TUR } 
+			177 = { is_owned_by = TUR } 
+			170 = { is_owned_by = TUR } 
+			41 = { is_owned_by = TUR } 
+			175 = { is_owned_by = TUR } 
+			167 = { is_owned_by = TUR }
+		}
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = "SPA"
+		value  = 200
+	}
+}
+
+caliphate_conquest_2 = {
+	enable = {
+		tag = TUR 
+		has_completed_focus = TUR_re-reconquista
+	}
+	
+	abort = {
+		OR = {
+			AND = {
+				179 = { is_owned_by = TUR } 
+				181 = { is_owned_by = TUR } 
+				112 = { is_owned_by = TUR }
+			}
+			POR = { exists = no }
+		}
+	}
+	
+	ai_strategy = {
+		type = antagonize 
+		id = "POR"
+		value = 200 
+	}
+}
+
+caliphate_conquest_3 = {
+	enable = {
+		tag = TUR 
+		has_completed_focus = TUR_conquer_persia
+	}
+	
+	abort = {
+		PER = { exists = no }
+	}
+	
+	ai_strategy = {
+		type = conquer 
+		id = "PER"
+		value = 200 
+	}
+}
+
+caliphate_conquest_4 = {
+	enable = {
+		tag = TUR 
+		has_completed_focus = TUR_take_sicily
+	}
+	
+	abort = {
+		115 = { NOT = { is_owned_by = ITA } }
+	}
+	
+	ai_strategy = {
+		type = antagonize 
+		id = "ITA"
+		value = 200 
+	}
+}
+
+puppet_egypt = {
+	enable = {
+		tag = TUR 
+		has_global_flag = EGY_no_puppet
+	}
+	
+	abort = {
+		EGY = {
+			OR = {
+				is_puppet_of = TUR 
+				exists = no
+			}
+		}
+	}
+	
+	ai_strategy = {
+		type = antagonize
+		id = "EGY"
+		value = 250 
+	}
+}

@@ -671,6 +671,17 @@ opinion_modifiers = {
 	TUR_refused_balkan_alliance = { value = -29 decay = 1 }
 	TUR_no_negotiate = { value = -30 }
 	TUR_gave_gift = { value = 40 decay = 1 }
+	TUR_no_share_secrets = { value = -25 }
+	TUR_arabian_diplo_focus = { value = 40 }
+	TUR_decline_alliance = { value = -40 }
+	TUR_joined_jihad_ger = { value = 30 }
+	TUR_wont_join_jihad_ger = { value = -45 }
+	TUR_betrayed_us = { value = -75 }
+	TUR_wont_betray_us = { value = 30 }
+	TUR_backed_claims = { value = 30 }
+	TUR_sponsered_revolt = { value = -50 }
+	TUR_wont_be_puppeted = { value = -45 }
+	TUR_wont_puppet = { value = 40 }
 	
 	# Russian focus tree
 	

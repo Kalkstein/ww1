@@ -1,6 +1,26 @@
 ideas = {
 
 	country = {
+	
+		TUR_lack_of_officers = {
+			picture = generic_volunteer_expedition_bonus
+			removal_cost = -1 
+			
+			allowed = {
+				always = no 
+			}
+			
+			allowed_civil_war = {
+				always = yes 
+			}
+			
+			modifier = {
+				planning_speed = -0.25
+				max_planning = -0.1
+				army_attack_factor = -0.05 
+				army_morale_factor = -0.05 
+			}
+		}
 		
 		ethnic_tensions_tur = {
 			
@@ -19,6 +39,7 @@ ideas = {
 			modifier = {
 				conscription = -0.01
 				unity_factor = -0.33
+				conscription_factor = -0.1
 			}
 		}
 		
@@ -221,7 +242,26 @@ ideas = {
 		}
 		
 		TUR_army_reform_1_idea = {
-			picture = generic_research_bonus
+			picture = sisu
+			removal_cost = -1 
+			
+			allowed = {
+				always = no 
+			}
+			
+			allowed_civil_war = {
+				always = yes 
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.15
+				infantry_weapons = 0.1
+				support_tech = 0.1 
+			}
+		}
+		
+		TUR_army_reform_2_idea = {
+			picture = generic_production_bonus 
 			removal_cost = -1 
 			
 			allowed = {
@@ -234,7 +274,43 @@ ideas = {
 			
 			research_bonus = {
 				land_doctrine = 0.1 
-				infantry_weapons = 0.08 
+				artillery = 0.15 
+				infantry_weapons = 0.1 
+			}
+		}
+		
+		TUR_new_programme_idea = {
+			picture = generic_infantry_bonus
+			removal_cost = -1 
+			
+			allowed = {
+				always = no 
+			}
+			
+			allowed_civil_war = {
+				always = yes 
+			}
+			
+			modifier = {
+				army_org_factor = 0.05
+				training_time_army_factor = -0.1
+			}
+		}
+		
+		TUR_tightened_conscription_idea = {
+			picture = generic_manpower_bonus
+			removal_cost = -1 
+			
+			allowed = {
+				always = no 
+			}
+			
+			allowed_civil_war = {
+				always = yes 
+			}
+			
+			modifier = {
+				conscription = 0.02 
 			}
 		}
 		
@@ -441,6 +517,195 @@ ideas = {
 				experience_gain_air = 0.02
 			}
 		}
+		
+		TUR_rapid_modernization_idea = {
+			picture = generic_production_bonus 
+			removal_cost = -1 
+			
+			allowed = {
+				always = no 
+			}
+			
+			allowed_civil_war = {
+				always = yes 
+			}
+			
+			research_bonus = {
+				industry = 0.1 
+			}
+			
+			modifier = {
+				consumer_goods_factor = -0.1 
+				production_speed_industrial_complex_factor = 0.2
+				production_speed_arms_factory_factor = 0.2
+			}
+			
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+		
+		TUR_naval_race_idea = {
+			picture = generic_navy_bonus
+			removal_cost = -1 
+			
+			allowed = {
+				always = no 
+			}
+			
+			allowed_civil_war = {
+				always = yes 
+			}
+			
+			equipment_bonus = {
+				capital_ship = {
+					build_cost_ic = -0.15 instant = yes
+				}
+				screen_ship = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				submarine = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+		
+		TUR_ottoman_spirit_idea = {
+			picture = FRA_scw_intervention_republicans_focus
+			removal_cost = -1 
+			
+			allowed = {
+				always = no 
+			}
+			
+			allowed_civil_war = {
+				always = yes 
+			}
+			
+			modifier = {
+				justify_war_goal_time = -0.30
+				unity_factor = 0.1
+				army_org_factor = 0.08
+			}
+		}
+		
+		TUR_jihad_idea = {
+			picture = star_and_crescent 
+			removal_cost = -1 
+			
+			allowed = {
+				always = no 
+			}
+			
+			allowed_civil_war = {
+				always = yes 
+			}
+			
+			cancel = {
+				NOT = {
+					has_war_with = FRA 
+					has_war_with = ENG 
+				}
+			}
+			
+			modifier = {
+				research_time_factor = 0.05 
+				army_org_factor = 0.1 
+				army_morale_factor = 0.05
+				army_attack_factor = 0.15 
+				army_defence_factor = -0.05 
+				consumer_goods_factor = -0.1 
+				conscription = 0.0085
+			}
+		}
+		
+		colonial_muslim_resistance_idea = {
+			picture = FRA_scw_intervention_republicans_focus
+			removal_cost = -1 
+			
+			allowed = {
+				always = no 
+			}
+			
+			allowed_civil_war = {
+				has_war_with = TUR 
+			}
+			
+			cancel = {
+				NOT = {
+					has_war_with = TUR 
+				}
+			}
+			
+			modifier = {
+				conscription = -0.004 
+				conscription_factor = -0.005
+			}
+		}
+		
+		TUR_caliphate_idea = {
+			picture = ottoman_house_symbol
+			removal_cost = -1 
+			
+			allowed = {
+				always = no 
+			}
+			
+			allowed_civil_war = {
+				always = yes 
+			}
+			
+			cancel = {
+				NOT = { has_government = fascism }
+			}
+			
+			modifier = {
+				unity_factor = 0.1 
+				consumer_goods_factor = -0.05 
+				political_power_factor = 0.15 
+				conscription = 0.01
+				justify_war_goal_time = -0.1
+			}
+		}
+		
+		TUR_invirgorated_minorities_idea = {
+			picture = generic_manpower_bonus
+			removal_cost = -1 
+			
+			allowed = {
+				always = no 
+			}
+			
+			allowed_civil_war = {
+				always = yes 
+			}
+			
+			modifier = {
+				conscription_factor = 0.1
+				conscription = 0.005 
+			}
+		}
+		
+		TUR_for_caliph = { 
+			picture = caliphate_symbol
+			removal_cost = -1 
+			
+			allowed = {
+				always = no 
+			}
+			
+			allowed_civil_war = {
+				always = yes 
+			}
+			
+			modifier = {
+				army_org = 5 
+				army_morale_factor = 0.1 
+			}
+		}
+		
 	}
 
 	
@@ -517,78 +782,6 @@ ideas = {
 			traits = { air_warfare_theorist }
 		}
 		
-		TUR_rapid_modernization_idea = {
-			picture = generic_production_bonus 
-			removal_cost = -1 
-			
-			allowed = {
-				always = no 
-			}
-			
-			allowed_civil_war = {
-				always = yes 
-			}
-			
-			research_bonus = {
-				industry = 0.1 
-			}
-			
-			modifier = {
-				consumer_goods_factor = -0.1 
-				production_speed_industrial_complex_factor = 0.2
-				production_speed_arms_factory_factor = 0.2
-			}
-			
-			equipment_bonus = {
-				infantry_equipment = {
-					build_cost_ic = -0.1 instant = yes
-				}
-			}
-		}
-		
-		TUR_naval_race_idea = {
-			picture = generic_navy_bonus
-			removal_cost = -1 
-			
-			allowed = {
-				always = no 
-			}
-			
-			allowed_civil_war = {
-				always = yes 
-			}
-			
-			equipment_bonus = {
-				capital_ship = {
-					build_cost_ic = -0.15 instant = yes
-				}
-				screen_ship = {
-					build_cost_ic = -0.1 instant = yes
-				}
-				submarine = {
-					build_cost_ic = -0.1 instant = yes
-				}
-			}
-		}
-		
-		TUR_ottoman_spirit_idea = {
-			picture = FRA_scw_intervention_republicans_focus
-			removal_cost = -1 
-			
-			allowed = {
-				always = no 
-			}
-			
-			allowed_civil_war = {
-				always = yes 
-			}
-			
-			modifier = {
-				justify_war_goal_time = -0.30
-				unity_factor = 0.1
-				army_org_factor = 0.08
-			}
-		}
 	}	
 
 	army_chief = {

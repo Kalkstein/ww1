@@ -870,6 +870,34 @@ news_event = {
 		}
 	}
 } 
+
+#A Caliph is Crowned
+news_event = {
+	id = news.256
+	title = news.256.t 
+	desc = news.256.d 
+	picture = GFX_news_event_ottoman_coronation
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = news.256.a #Long live the Caliph!
+		trigger = {
+			tag = TUR 
+		}
+		add_political_power = 150
+		add_ideas = TUR_caliphate_idea
+	}
+	
+	option = {
+		name = news.256.b #Interesting 
+		trigger = {
+			NOT = {
+				tag = TUR 
+			}
+		}
+	}
+}
 ########################################################################################################################################################
 
 # Franz Ferdinand is assasinated

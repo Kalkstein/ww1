@@ -1605,6 +1605,8 @@
  BUL_hire_foreign_researchers_desc:0 " "
  BUL_expand_sofia_university:0 "Expand the Sofia University"
  BUL_expand_sofia_university_desc:0 "The Sofia University was founded in 1888 to celebrate 10 years of Bulgarian autonomy within the Ottoman Empire, it has since then become the scientific heart of the nation admiting hundreds of student every year men and women."
+ BUL_fortify_romanian_front:0 "Fortify the Romanian Border"
+ BUL_fortify_romanian_front_desc:0 "The Romanians are awfully hostile towards Austria-Hungary and they even have claims upon Southern Dobrudja, and to top that off we've information that they've been conducting diplomacy with the Entente, we should take care to fortify our border so that if they attack, we'll be prepared and we'll weather the storm."
  needs_approval:0 "§R[This.GetName] must approve of the agreement for bonuses to take effect.§!\n"
  BUL_to_be_expanded_tt:0 "To be expanded"
  BUL_general_mob:0 "General Mobilization will be Issued"
