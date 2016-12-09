@@ -68,7 +68,7 @@ technologies = {
 	
 	radio2 = {
 
-		land_reinforce_rate = 0.10
+		land_reinforce_rate = 0.025
 
 		path = {
 			leads_to_tech = improved_radio
@@ -120,7 +120,7 @@ technologies = {
 	
 	improved_radio = {
 
-		land_reinforce_rate = 0.05
+		land_reinforce_rate = 0.025
 		
 		path = {
 			leads_to_tech = am_radio
@@ -152,7 +152,7 @@ technologies = {
 	am_radio = {
 
 		# radar boost in air/sea combat depends on radar level
-		land_reinforce_rate = 0.10
+		land_reinforce_rate = 0.05
 		
 		research_cost = 2.5
 		start_year = 1916
@@ -447,17 +447,13 @@ technologies = {
 	}
 
 	gas_engines = {
-
+	
+		research_time_factor = -0.02
+		
 		path = {
 			leads_to_tech = improved_gas_engines
 			research_cost_coeff = 1
 		}
-
-		# boost to tank
-		light_armor = {
-			reliability = 0.05 maximum_speed = 0.05
-		}
-		
 		
 		research_cost = 1.5
 		start_year = 1910
