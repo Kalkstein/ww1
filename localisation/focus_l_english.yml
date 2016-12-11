@@ -15,6 +15,8 @@
  gen_mechanization_effort_desc:0 "Rethinking the possibilities of motorized infantry, we can push the limits of what vehicles can be constructed today."
  gen_doctrine_effort_2:0 "Doctrine Effort II"
  gen_doctrine_effort_2_desc:0 "The battlefield has changed not just in the interbellum years, but over the course of recent conflicts. We must continuously reevaluate our doctrines to reflect this."
+ gen_doctrine_effort_3:0 "Doctrine Effort III"
+ gen_doctrine_effort_3_desc:0 "The battlefield has changed, trenches are almost impenetrable. We must continuously reevaluate our doctrines to break enemys lines."
  gen_equipment_effort_3:0 "Equipment Effort III"
  gen_equipment_effort_3_desc:0 "Instead of imitating or buying foreign equipment, we should aim to become world-leading in infantry weapons."
  gen_armor_effort:0 "Armor Effort"
