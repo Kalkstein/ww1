@@ -200,8 +200,10 @@ news_event = {
 			has_global_flag = ger_eco_crisis_end
 		}
 		OR = {
-			MOR = {
-				states = { 290 461 462 }
+			AND = {
+				290 = { is_owned_by = MOR }
+				461 = { is_owned_by = MOR } 
+				462 = { is_owned_by = MOR }
 			}
 			NOT = {
 				country_exists = MOR
@@ -265,9 +267,9 @@ news_event = {
 		NOT = {
 			has_global_flag = agadir_over
 		}
-		MOR = {
-			states = { 290 461 462 }
-		}
+		290 = { is_owned_by = MOR }
+		461 = { is_owned_by = MOR } 
+		462 = { is_owned_by = MOR }
 	}
 	
 	immediate = {
@@ -317,15 +319,19 @@ news_event = {
 		NOT = {
 			has_global_flag = agadir_over
 			has_global_flag = mor_entente_support
-			MOR = {
-				states = { 290 461 462 }
-			}
+			290 = { is_owned_by = MOR }
+			461 = { is_owned_by = MOR } 
+			462 = { is_owned_by = MOR }
 		}
 	}
 	
 	immediate = {
 		set_global_flag = agadir_over
-		MOR = { transfer_state = 290 461 462 }
+		MOR = {
+			transfer_state = 290 
+			transfer_state = 461 
+			transfer_state = 462 
+		}
 	}
 	
 	option = {
@@ -372,9 +378,9 @@ news_event = {
 			has_global_flag = agadir_over
 			has_global_flag = mor_entente_support
 		}
-		MOR = {
-			states = { 290 461 462 }
-		}
+		290 = { is_owned_by = MOR }
+		461 = { is_owned_by = MOR } 
+		462 = { is_owned_by = MOR }
 	}
 	
 	immediate = {
@@ -424,15 +430,19 @@ news_event = {
 			has_global_flag = mor_entente_support
 		NOT = {
 			has_global_flag = agadir_over
-			MOR = {
-				states = { 290 461 462 }
-			}
+			290 = { is_owned_by = MOR }
+			461 = { is_owned_by = MOR } 
+			462 = { is_owned_by = MOR }
 		}
 	}
 	
 	immediate = {
 		set_global_flag = agadir_over
-		MOR = { transfer_state = 290 461 462 }
+		MOR = { 
+			transfer_state = 290 
+			transfer_state = 461 
+			transfer_state = 462 
+		}
 	}
 	
 	option = {
