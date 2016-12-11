@@ -89,7 +89,7 @@ technologies = {
 			research_cost_coeff = 1
 		}		
 
-		research_cost = 1.5
+		research_cost = 0.75
 		start_year = 1911
 		folder = {
 			name = infantry_folder
@@ -120,7 +120,7 @@ technologies = {
 			research_cost_coeff = 1
 		}		
 
-		research_cost = 1.5
+		research_cost = 0.75
 		start_year = 1911
 		folder = {
 			name = infantry_folder
@@ -148,7 +148,7 @@ technologies = {
 		}
 
 
-		research_cost = 2
+		research_cost = 1
 		start_year = 1913
 		folder = {
 			name = infantry_folder
@@ -176,7 +176,7 @@ technologies = {
 		}
 
 
-		research_cost = 2
+		research_cost = 1
 		start_year = 1913
 		folder = {
 			name = infantry_folder
@@ -238,7 +238,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.5
+		research_cost = 0.75
 		start_year = 1915
 		folder = {
 			name = infantry_folder
@@ -265,7 +265,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.5
+		research_cost = 0.75
 		start_year = 1915
 		folder = {
 			name = infantry_folder
@@ -318,7 +318,7 @@ technologies = {
 			soft_attack = 0.05
 		}
 		
-		research_cost = 1.5
+		research_cost = 0.75
 		start_year = 1918
 		folder = {
 			name = infantry_folder
@@ -340,7 +340,7 @@ technologies = {
 			soft_attack = 0.05
 		}
 		
-		research_cost = 1.5
+		research_cost = 0.75
 		start_year = 1918
 		folder = {
 			name = infantry_folder
