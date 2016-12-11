@@ -623,24 +623,56 @@ units = {
 	
 
 	##### NAVAL UNITS #####
-	### Türk Donanmasi ###
+	### Bosporus Fleet ###
 	navy = {				
-		name = "Türk Donanmasi"			
-		base = 4112 
-		location = 4112 # Izmir
-		ship = { name = "TCG Yavuz" definition = battle_cruiser equipment = { battle_cruiser_1 = { amount = 1 owner = TUR } } }			
-		ship = { name = "TCG Mecidiye" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = TUR } } }
-		ship = { name = "TCG Hamidiye" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = TUR } } }
-		ship = { name = "TCG Peyk" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = TUR } } }
-		ship = { name = "TCG Berk" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = TUR } } }
-		ship = { name = "TCG Kocatepe" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = TUR create_if_missing = yes } } }
-		ship = { name = "TCG Adatepe" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = TUR create_if_missing = yes } } }
-		ship = { name = "TCG Zafer" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = TUR create_if_missing = yes } } }
-		ship = { name = "TCG Tinaztepe" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = TUR create_if_missing = yes } } }
-	}			
+		name = "Boğaz Filosu"			
+		base = 9833 
+		location = 9833 
+		ship = { name = "Samsun" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = TUR } } }			
+		ship = { name = "Muavenet-i Milliye" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = TUR version_name = "Muavenet-i Milliye Class" } } }
+		ship = { name = "Yadigar-i Millet" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = TUR version_name = "Muavenet-i Milliye Class" } } }
+		ship = { name = "Nümune-Hamiyet" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = TUR version_name = "Muavenet-i Milliye Class"} } }
+		ship = { name = "Basra" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = TUR } } }
+		ship = { name = "Taşoz" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = TUR } } }
+		ship = { name = "Musul" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = TUR version_name = "Antalya class"} } }
+		ship = { name = "Akhisar" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = TUR version_name = "Akhisar Class" } } }
+		ship = { name = "Sultanhisar" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = TUR version_name = "Demirhisar Class" } } }
+		ship = { name = "Sivrihisar" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = TUR version_name = "Demirhisar Class" } } }			
+	}
+	
+	###Dardanelles Fleet###
+	navy = {
+		name = "Çanakkale Filosu"
+		base = 8435
+		location = 9833
+		ship = { name = "Mesudiye" definition = battleship equipment = { battleship_1 = { amount = 1 owner = TUR version_name = "Mesudiye" } } }
+		ship = { name = "Âsâr-ı Tevfik" definition = battleship equipment = { battleship_1 = { amount = 1 owner = TUR version_name = "Âsâr-ı Tevfik" } } }
+		ship = { name = "Hamidabad" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = TUR version_name = "Demirhisar Class" } } }
+	}
+	
+	###Black Sea Headquarters###
+	navy = {
+		name = "Karadeniz Karargahı"
+		base = 6995
+		location = 11894
+		ship = { name = "Hamidiye" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = TUR } } }
+		ship = { name = "Mecidiye" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = TUR version_name = "Mecidiye" } } }
+	}
+	
+	###Tersâne-i Âmir###
+	navy = {
+		name = "Tersâne-i Âmir"
+		base = 9833 
+		location = 9833 
+		ship = { name = "Berk-i Satvet" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = TUR version_name = "Peyk-i Şevket Class" } } }
+		ship = { name = "Gayret-i Vatâniye" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = TUR version_name = "Muavenet-i Milliye Class" } } }
+		ship = { name = "Yarhisar" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = TUR } } }
+		ship = { name = "Berk Efşan" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = TUR version_name = "Berk Efşân Class" } } }
+		ship = { name = "Kütahya" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = TUR version_name = "Antalya Class" } } }
+		ship = { name = "Draç" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = TUR version_name = "Antalya Class" } } }
+		ship = { name = "Demirhisar" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = TUR version_name = "Demirhisar Class" } } }
+	}
 }
-
-
 
 ### Starting Production ###
 instant_effect = {
@@ -649,8 +681,28 @@ instant_effect = {
 			type = infantry_equipment_1
 			creator = "TUR"
 		}
-		requested_factories = 1
+		requested_factories = 3
 		progress = 0.43
+		efficiency = 100
+	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1 
+			creator = "TUR"
+		}
+		requested_factories = 2 
+		progress = 0.67
+		efficiency = 0.85
+	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1 
+			creator = "TUR"
+		}
+		requested_factories = 3 
+		progress = 0.15
 		efficiency = 100
 	}
 }
