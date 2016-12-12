@@ -14,6 +14,21 @@ spriteTypes = {
 	name = "GFX_idea_combined_bomber_offensive"
 	texturefile = "gfx/interface/ideas/combined_bomber_offensive.dds"
 	}
+	
+	spriteType = {
+		name = "caliphate_symbol"
+		texturefile = "gfx/interface/ideas/caliphate_symbol.dds"
+	}
+	
+	spriteType = {
+		name = "ottoman_house_symbol"
+		texturefile = "gfx/interface/ideas/ottoman_house_symbol.dds"
+	}
+	
+	spriteType = {
+		name = "star_and_crescent"
+		texturefile = "gfx/interface/ideas/star_and_crescent.dds"
+	}
 
 	SpriteType = {
 	name = "GFX_idea_entente_cordiale"
