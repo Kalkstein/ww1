@@ -69,7 +69,16 @@ add_ideas = {
 
 
 # DIPLOMACY
-puppet = PHI
+	if = { 
+		limit = { has_dlc = "Together for Victory" }
+		set_autonomy = {
+			target = PHI 
+			autonomous_state = autonomy_puppet
+		}
+		else = {
+			puppet = PHI
+		}
+	}
 
 
 create_country_leader = {

@@ -65,7 +65,17 @@ set_convoys = 300
 set_national_unity = 0.4
 create_faction = Triple_Entente
 add_to_faction = SOV
-puppet = MOR
+if = {
+	limit = { has_dlc = "Together for Victory" }
+	set_autonomy = {
+		target = MOR 
+		autonomous_state = autonomy_colony
+		freedom_level = 0.4
+	}
+	else = {
+		puppet = MOR 
+	}
+}
 
 create_country_leader = {
 	name = "Raymond Poincaré"

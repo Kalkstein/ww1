@@ -1,5 +1,111 @@
 ideas = {
 
+	hidden_ideas = {
+
+		idea_continuous_naval_production = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				carrier = {
+					instant = yes
+					build_cost_ic = -0.20
+				}
+				capital_ship = {
+					instant = yes
+					build_cost_ic = -0.20
+				}
+				screen_ship = {
+					instant = yes
+					build_cost_ic = -0.20
+				}
+				submarine = {
+					instant = yes
+					build_cost_ic = -0.20
+				}
+				convoy = {
+					instant = yes
+					build_cost_ic = -0.20
+				}
+			}
+		}
+
+
+		idea_continuous_air_production = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				fighter_equipment = {
+					instant = yes
+					build_cost_ic = -0.20
+				}
+				cv_fighter_equipment = {
+					instant = yes
+					build_cost_ic = -0.20
+				}
+				jet_fighter_equipment = {
+					instant = yes
+					build_cost_ic = -0.20
+				}
+				cv_CAS_equipment = {
+					instant = yes
+					build_cost_ic = -0.20
+				}
+				nav_bomber_equipment = {
+					instant = yes
+					build_cost_ic = -0.20
+				}
+				cv_nav_bomber_equipment = {
+					instant = yes
+					build_cost_ic = -0.20
+				}
+				rocket_interceptor_equipment = {
+					instant = yes
+					build_cost_ic = -0.20
+				}
+				tac_bomber_equipment = {
+					instant = yes
+					build_cost_ic = -0.20
+				}
+				jet_tac_bomber_equipment = {
+					instant = yes
+					build_cost_ic = -0.20
+				}
+				heavy_fighter_equipment = {
+					instant = yes
+					build_cost_ic = -0.20
+				}
+				strat_bomber_equipment = {
+					instant = yes
+					build_cost_ic = -0.20
+				}
+				transport_plane_equipment = {
+					instant = yes
+					build_cost_ic = -0.20
+				}
+				guided_missile_equipment = {
+					instant = yes
+					build_cost_ic = -0.20
+				}
+			}		
+		}
+	}
+
 	# Special ones that can be applied on other countries through focus system.
 	country = {
 	

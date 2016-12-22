@@ -810,6 +810,14 @@ leader_traits = {
 		}
 	}
 	
+	support_equipment_manufacturer = {
+		random = no 
+		
+		ai_will_do = {
+			factor = 1 
+		}
+	}
+	
 	motorized_equipment_manufacturer = {
 		random = no
 		

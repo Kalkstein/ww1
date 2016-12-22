@@ -59,7 +59,17 @@ set_politics = {
 set_convoys = 20
 set_national_unity = 0.55
 
-puppet = LBA
+if = {
+	limit = { has_dlc = "Together for Victory" }
+	set_autonomy = {
+		target = LBA
+		autonomous_state = autonomy_integrated_puppet
+		freedom_level = 0.45
+	}
+	else = {
+		puppet = LBA 
+	}
+}
 
 create_country_leader = {
 	name = "Padishah Mehmed Osmanli V"

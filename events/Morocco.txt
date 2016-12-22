@@ -393,7 +393,17 @@ news_event = {
 			tag = GER 
 		}
 		GER = {
-			puppet = MOR
+			if = {
+				limit = { has_dlc = "Together for Victory" }
+				set_autonomy = {
+					target = MOR 
+					autonomous_state = autonomy_colony
+					freedom_level = 0.3
+				}
+				else = {
+					puppet = MOR 
+				}
+			}
 		}
 	}
 	
@@ -451,7 +461,17 @@ news_event = {
 			tag = GER 
 		}
 		GER = {
-			puppet = MOR
+			if = {
+				limit = { has_dlc = "Together for Victory" }
+				set_autonomy = {
+					target = MOR 
+					autonomous_state = autonomy_colony
+					freedom_level = 0.3
+				}
+				else = {
+					puppet = MOR 
+				}
+			}
 		}
 	}
 	

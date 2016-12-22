@@ -1,0 +1,207 @@
+
+
+balkan_peace = {
+	enable = {
+		OR = {
+			AND = {
+				OR = {
+					tag = GRE 
+					tag = BUL 
+					tag = SER 
+					tag = MNT 
+				}
+				has_global_flag = balkan_war
+			}
+			AND = {
+				OR = {
+					tag = GRE 
+					tag = SER 
+					tag = MNT 
+					tag = TUR 
+					tag = ROM 
+				}
+				has_global_flag = balkan_war_2
+			}
+		}
+	}
+	
+	annex_randomness = 0 #400
+	liberate_randomness = 0 #100
+	puppet_randomness = 0 #200
+	take_states_randomness = 0 #250
+	force_government_randomness = 0 #50
+	
+	annex = {
+		factor = 0
+		modifier = {
+			add = 500 
+			ROOT = { tag = TUR }
+		}
+	}
+	
+	liberate = {
+		factor = 0 
+		modifier = { #The Balkan League will now (theoretically) liberate Albania
+			add = 500
+			OR = {
+				tag = BUL 
+				tag = SER 
+				tag = GRE 
+				tag = MNT
+			}
+			FROM = {
+				tag = ALB
+			}
+		}
+	}
+	
+	puppet = {
+		factor = 100
+		modifier = {
+			OR = {
+				tag = MNT 
+				tag = BUL 
+				tag = SER 
+				tag = GRE 
+			}
+			FROM = { tag = TUR }
+		}
+	}
+	
+	take_states = {
+		factor = 600 
+		modifier = {
+			factor = 0 
+			AND = {
+				ROOT = { tag = BUL }
+				has_global_flag = balkan_war
+			}
+			FROM = {
+				NOT = {
+					has_state_flag = BUL_claim_war_1
+				}
+			}
+		}
+		
+		modifier = {
+			factor = 0 
+			AND = {
+				has_global_flag = balkan_war_2
+				ROOT = { 
+					OR = {
+						tag = SER 
+						tag = TUR 
+						tag = MNT 
+						tag = GRE 
+					}
+				}
+			}
+			FROM = {
+				OR = {
+					has_state_flag = BUL_home_flag
+					has_state_flag = BUL_romania_flag
+				}
+			}
+		}
+		
+		modifier = {
+			factor = 0 
+			AND = {
+				has_global_flag = balkan_war_2
+				ROOT = { tag = ROM }
+			}
+			FROM = {
+				NOT = {
+					has_state_flag = BUL_romania_flag
+				}
+			}
+		}
+		
+		modifier = {
+			factor = 1000
+			AND = {
+				ROOT = { tag = BUL }
+				has_global_flag = balkan_war
+			}
+			FROM = {
+				has_state_flag = BUL_claim_war_1
+			}
+		}
+		
+		modifier = {
+			factor = 0 
+			AND = {
+				ROOT = { tag = SER }
+				has_global_flag = balkan_war 
+			}
+			FROM = {
+				NOT = {
+					has_state_flag = SER_claim_war_1
+				}
+			}
+		}
+		
+		modifier = {
+			factor = 1000 
+			AND = {
+				ROOT = { tag = SER }
+				has_global_flag = balkan_war
+			}
+			FROM = {
+				has_state_flag = SER_claim_war_1
+			}
+		}
+		
+		modifier = {
+			factor = 0 
+			AND = {
+				ROOT = { tag = GRE }
+				has_global_flag = balkan_war
+			}
+			FROM = {
+				NOT = {
+					has_state_flag = GRE_claim_war_1
+				}
+			}
+		}
+		
+		modifier = {
+			factor = 1000
+			AND = {
+				ROOT = { tag = GRE }
+				has_global_flag = balkan_war
+			}
+			FROM = {
+				has_state_flag = GRE_claim_war_1
+			}
+		}
+		
+		modifier = {
+			factor = 0 
+			AND = {
+				ROOT = { tag = MNT }
+				has_global_flag = balkan_war
+			}
+			FROM = {
+				NOT = {
+					has_state_flag = MNT_claim_war_1
+				}
+			}
+		}
+		
+		modifier = {
+			factor = 1000
+			AND = {
+				ROOT = { tag = MNT }
+				has_global_flag = balkan_war
+			}
+			FROM = {
+				has_state_flag = MNT_claim_war_1
+			}
+		}
+	}
+	
+	force_government = {
+		factor = 0 
+	}
+}

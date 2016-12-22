@@ -11,7 +11,7 @@ bookmarks = {
 			history = "FRA_BATTEN_DOWN_THE_HATCHES_DESC"
 			ideology = democratic
 			ideas = {
-				FRA_disjointed_government
+				
 			}
 		}
 		"AUS"={

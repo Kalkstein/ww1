@@ -2874,8 +2874,20 @@ country_event = {
 		}
 		
 		effect_tooltip = {
-			TUR = {
-				puppet = SER 
+			if = {
+				limit = { has_dlc = "Together for Victory" }
+				TUR = {
+					set_autonomy = {
+						target = SER 
+						autonomous_state = autonomy_puppet
+						freedom_level = 0.4 
+					}
+				}
+				else = {
+					TUR = {
+						puppet = SER 
+					}
+				}
 			}
 		}
 	} 
@@ -2913,7 +2925,17 @@ country_event = {
 	
 	option = {
 		name = turkey.74 #Wonderful 
-		puppet = SER 
+		if = {
+			limit = { has_dlc = "Together for Victory" }
+			set_autonomy = {
+				target = SER 
+				autonomous_state = autonomy_puppet
+				freedom_level = 0.4 
+			}
+			else = {
+				puppet = SER 
+			}
+		}
 		add_political_power = 50 
 	}
 }
@@ -3166,7 +3188,16 @@ country_event = {
 			factor = 30 
 		}
 		TUR = {
-			puppet = PER 
+			if = {
+				limit = { has_dlc = "Together for Victory" }
+				set_autonomy = {
+					target = PER 
+					autonomous_state = autonomy_puppet
+				}
+				else = {
+					puppet = PER 
+				}
+			}
 			country_event = { id = turkey.82 days = 1 }
 		}
 	}
@@ -3202,7 +3233,13 @@ country_event = {
 	
 	option = {
 		name = turkey.82.a #They have chosen wisely 
-		effect_tooltip = { puppet = PER }
+		effect_tooltip = { 
+			if = { 
+				limit = { has_dlc = "Together for Victory" } 
+				set_autonomy = { target = PER autonomous_state = autonomy_puppet freedom_level = 0.64 } 
+				else = { puppet = PER }
+			}
+		}
 		add_political_power = 50 
 	}
 }
@@ -3355,7 +3392,7 @@ country_event = {
 				send_equipment = { target = ETH type = infantry_equipment_2 amount = 10430 }
 			}
 			if = { 
-				limit = { has_tech = infantry_weapons_1 NOT = { has_tech = infantry_weapons_2 } }  
+				limit = { has_tech = infantry_weapons1 NOT = { has_tech = infantry_weapons_2 } }  
 				send_equipment = { target = ETH type = infantry_equipment_1 amount = 10430 }
 			}
 			if = { 
@@ -3476,7 +3513,17 @@ country_event = {
 		EGY = { country_event = { id = turkey.91 days = 1 } }
 		effect_tooltip = {
 			EGY = { custom_effect_tooltip = needs_approval }
-			puppet = EGY 
+			if = { 
+				limit = { has_dlc = "Together for Victory" }
+				set_autonomy = {
+					target = EGY 
+					autonomous_state = autonomy_colony
+					freedom_level = 0.15
+				}
+				else = {
+					puppet = EGY
+				}
+			}
 		}
 	}
 	
@@ -3528,7 +3575,17 @@ country_event = {
 		TUR = { country_event = { id = turkey.92 days = 1 } }
 		effect_tooltip = {
 			TUR = {
-				puppet = EGY 
+				if = { 
+					limit = { has_dlc = "Together for Victory" }
+					set_autonomy = {
+						target = EGY 
+						autonomous_state = autonomy_colony
+						freedom_level = 0.15
+					}
+					else = {
+						puppet = EGY
+					}
+				}
 			}
 		}
 	}
@@ -3559,7 +3616,17 @@ country_event = {
 	
 	option = {
 		name = turkey.92.a #They chose wisely 
-		puppet = EGY 
+		if = { 
+			limit = { has_dlc = "Together for Victory" }
+			set_autonomy = {
+				target = EGY 
+				autonomous_state = autonomy_colony
+				freedom_level = 0.15
+			}
+			else = {
+				puppet = EGY
+			}
+		} 
 	}
 }
 
@@ -3579,5 +3646,20 @@ country_event = {
 			type = puppet_wargoal_focus
 		}
 		set_global_flag = EGY_no_puppet
+	}
+}
+
+#The Department of Operations 
+country_event = {
+	id = turkey.94 
+	title = turkey.94.t 
+	desc = turkey.94.d 
+	picture = GFX_report_event_ottoman_general_staff_mes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = turkey.94.a 
+		country_event = { id = turkey.95 days = 10 }
 	}
 }
