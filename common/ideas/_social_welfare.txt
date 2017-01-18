@@ -1,0 +1,140 @@
+ideas = {
+	social_welfare = {
+		law = yes
+
+		welfare_no_welfare = {
+		
+			available = {
+			}
+						
+			cost = 50
+			removal_cost = -1
+			level = 6
+
+			modifier = {
+				unity_factor = -0.05
+				political_power_gain = 0.5
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+			
+			cancel_if_invalid = no
+		}
+
+		welfare_state_education = {
+		
+			available = {
+			}
+			
+			default = yes
+						
+			cost = 100
+			removal_cost = -1
+			level = 5
+
+			modifier = {
+				research_time_factor = -0.05
+			}
+			
+			cancel_if_invalid = no
+		}
+
+		welfare_labour_program = {
+		
+			available = {
+			}
+						
+			cost = 100
+			removal_cost = -1
+			level = 4
+
+			modifier = {
+				political_power_gain = -0.1
+				industrial_capacity_factory = 0.05
+				production_factory_efficiency_gain_factor = 0.1
+			}
+			
+			cancel_if_invalid = no
+		}
+
+		welfare_social_housing = {
+		
+			available = {
+			}
+						
+			cost = 100
+			removal_cost = -1
+			level = 3
+
+			modifier = {
+				political_power_gain = -0.125
+				MONTHLY_POPULATION = 0.075
+			}
+			
+			cancel_if_invalid = no
+		}
+
+		welfare_national_healthcare = {
+		
+			available = {
+			}
+						
+			cost = 100
+			removal_cost = -1
+			level = 2
+
+			modifier = {
+				political_power_gain = -0.25
+				unity_factor = 0.05
+				drift_defence_factor = 0.5
+				MONTHLY_POPULATION = 0.075
+				experience_loss_factor = -0.10
+				conscription = 0.01
+			}
+			
+			cancel_if_invalid = no
+		}
+
+		welfare_basic_income = {
+		
+			available = {
+			}
+						
+			cost = 100
+			removal_cost = -1
+			level = 1
+
+			modifier = {
+				political_power_gain = -0.5
+				unity_factor = 0.1
+				drift_defence_factor = 0.75
+				industrial_capacity_factory = 0.25
+				consumer_goods_factor = 0.15
+				conscription = -0.01
+			}
+			
+			cancel_if_invalid = no
+		}
+
+		welfare_corporate_subsidies = {
+		
+			available = {
+			}
+						
+			cost = 100
+			removal_cost = -1
+			level = 1
+
+			modifier = {
+				political_power_gain = -0.5
+				industrial_capacity_factory = 0.25
+				production_speed_industrial_complex_factor = 0.25
+				trade_opinion_factor = 0.5
+			}
+			
+			cancel_if_invalid = no
+		}
+	}
+}

@@ -634,9 +634,9 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			MOR = {
-				country_event = agadir.100
-			}
+			#MOR = {
+			#	country_event = agadir.100
+			#}
 		}
 	}
 
