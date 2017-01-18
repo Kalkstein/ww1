@@ -1314,7 +1314,7 @@ focus_tree = {
 		y = 2
 		cost = 10
 		completion_reward = {
-			remove_ideas = GER_call_for_suffrage_reform_idea
+			remove_ideas = call_for_suffrage_reform_idea
 		}
 	}
 

@@ -3,7 +3,7 @@ ideas = {
 	minimum_age_laws = { 
 		law = yes
 
-		age_19 = {
+		age_20 = {
 						
 			cost = 100
 			removal_cost = -1
@@ -18,13 +18,13 @@ ideas = {
 
 			modifier = {
 				conscription = 0.02
-				political_power_factor = 0.15
+				political_power_factor = 0.05
 			}
 			
 			cancel_if_invalid = no
 			default = yes
 		}
-		age_18 = {
+		age_19 = {
 						
 			cost = 100
 			removal_cost = -1
@@ -39,12 +39,12 @@ ideas = {
 
 			modifier = {
 				conscription = 0.025
-				political_power_factor = 0.10
+				political_power_factor = 0.025
 			}
 			
 			cancel_if_invalid = no
 		}
-		age_17 = {
+		age_18 = {
 						
 			cost = 100
 			removal_cost = -1
@@ -65,7 +65,7 @@ ideas = {
 			
 			cancel_if_invalid = no
 		}
-		age_16 = {
+		age_17 = {
 						
 			cost = 100
 			removal_cost = -1
@@ -94,7 +94,7 @@ ideas = {
 			
 			cancel_if_invalid = no
 		}
-		age_15 = {
+		age_16 = {
 						
 			cost = 100
 			removal_cost = -1
@@ -114,30 +114,6 @@ ideas = {
 			modifier = {
 				conscription = 0.05
 				army_morale_factor = -0.1
-			}
-			
-			cancel_if_invalid = no
-		}
-		age_14 = {
-						
-			cost = 100
-			removal_cost = -1
-			level = 2
-			
-			available = {
-				AND = {
-					has_war = yes
-					enemies_strength_ratio > 1.5
-				}
-			}
-			
-			ai_will_do = {
-				factor = 1
-			}
-
-			modifier = {
-				conscription = 0.075
-				army_morale_factor = -0.25
 			}
 			
 			cancel_if_invalid = no
