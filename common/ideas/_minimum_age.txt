@@ -3,7 +3,7 @@ ideas = {
 	minimum_age_laws = { 
 		law = yes
 
-		age_20 = {
+		age_21 = {
 						
 			cost = 100
 			removal_cost = -1
@@ -24,7 +24,7 @@ ideas = {
 			cancel_if_invalid = no
 			default = yes
 		}
-		age_19 = {
+		age_20 = {
 						
 			cost = 100
 			removal_cost = -1
@@ -44,7 +44,7 @@ ideas = {
 			
 			cancel_if_invalid = no
 		}
-		age_18 = {
+		age_19 = {
 						
 			cost = 100
 			removal_cost = -1
@@ -65,7 +65,7 @@ ideas = {
 			
 			cancel_if_invalid = no
 		}
-		age_17 = {
+		age_18 = {
 						
 			cost = 100
 			removal_cost = -1
@@ -94,7 +94,7 @@ ideas = {
 			
 			cancel_if_invalid = no
 		}
-		age_16 = {
+		age_17 = {
 						
 			cost = 100
 			removal_cost = -1

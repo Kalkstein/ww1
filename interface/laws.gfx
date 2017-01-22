@@ -171,6 +171,11 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_idea_age_21"
+		texturefile = "gfx/interface/ideas/idea_mp_21.dds"
+	}
+	
+	spriteType = {
 		name = "GFX_idea_age_20"
 		texturefile = "gfx/interface/ideas/idea_mp_20.dds"
 	}
@@ -188,11 +193,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_age_17"
 		texturefile = "gfx/interface/ideas/idea_mp_17.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_idea_age_16"
-		texturefile = "gfx/interface/ideas/idea_mp_16.dds"
 	}
 	
 	spriteType = {
