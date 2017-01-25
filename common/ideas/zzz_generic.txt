@@ -502,6 +502,8 @@ ideas = {
 			
 			removal_cost = -1
 	
+			picture = neutrality_idea
+			
 			modifier = {
 				#generate_wargoal_tension = 1.00
 				join_faction_tension = 1.00

@@ -234,7 +234,7 @@ units = {
 	}
 	division = {
 		name = "Divizia 20 Infanterie"
-		location = 6716
+		location = 11588
 		division_template = "Divizia Infanterie"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
@@ -278,7 +278,7 @@ units = {
 	# Corp Alpinisti
 	division = {
 		name = "1 Munte Brigada Mixt"
-		location = 11689
+		location = 6667
 		division_template = "Munte Brigada"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7

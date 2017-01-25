@@ -461,7 +461,7 @@ create_equipment_variant = {
 
 create_equipment_variant = {
 	name = "Series IX Srednyaya"
-	type = submarine_2
+	type = submarine_21
 	upgrades = {
 		ship_reliability_upgrade = 1
 		sub_engine_upgrade = 1
@@ -484,7 +484,7 @@ create_equipment_variant = {
 
 	create_equipment_variant = {
 		name = "Series X Shchuka"
-		type = submarine_2
+		type = submarine_1
 		upgrades = {
 			ship_reliability_upgrade = 3
 			sub_engine_upgrade = 3

@@ -105,7 +105,7 @@ units = {
 	### 6. Armija ###
 	division = {
 		name = "3. 'Dunavska' Pesadijska Div."  			# Peadijska if we get font support
-		location = 3614
+		location = 3609
 		division_template = "Pesadijska Divizija"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
@@ -134,7 +134,7 @@ units = {
 	}
 	division = {
 		name = "3. Konjička Divizija"
-		location = 614
+		location = 797
 		division_template = "Konjička Divizija"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.3
