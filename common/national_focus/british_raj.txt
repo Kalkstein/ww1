@@ -939,7 +939,6 @@ add_building_construction = {
 				uses = 1
 				category = medium_air
 			}
-			#1x 50% cost reduction for one land doctrine research
 		}
 	}
 

@@ -22,33 +22,6 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 0
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
 			random_owned_state = {
 				limit = {
 					free_building_slots = {
@@ -94,33 +67,6 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-		random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 0
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-			}
 			random_owned_state = {
 				limit = {
 					free_building_slots = {
@@ -144,10 +90,10 @@ focus_tree = {
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -208,33 +154,6 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-		random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 0
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
 			random_owned_state = {
 				limit = {
 					free_building_slots = {
@@ -258,10 +177,10 @@ focus_tree = {
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -332,16 +251,59 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = infrastructure
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 			}
 		}
-	}		
+	}
+
+	focus = {
+		id = gen_extended_railway
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = gen_national_railway }
+		x = 6
+		y = 1
+		cost = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
 	focus = {
 		id = gen_international_railway
 		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus=gen_national_railway }
+		prerequisite = { focus = gen_extended_railway }
 		x = 6
 		y = 2
 		cost = 10
@@ -635,8 +597,8 @@ focus_tree = {
 	focus = {
 		id = gen_state_militarization
 		icon = GFX_goal_generic_production
-		prerequisite = {focus=gen_become_self_sufficent}
-		mutually_exclusive={focus=gen_become_self_sufficent}
+		prerequisite = {focus = gen_become_self_sufficent}
+		mutually_exclusive={focus = gen_become_self_sufficent}
 		x= 5
 		y= 4
 		cost = 10
@@ -647,14 +609,15 @@ focus_tree = {
 		
 		completion_reward = {
 			add_political_power = 150
-			add_ideas = state_militarization
+			#add_ideas = state_militarization
 		}
 	}
+	
 	focus = {
 		id = gen_national_economic_boom
 		icon = GFX_goal_generic_construction
-		prerequisite = {focus=gen_become_self_sufficent}
-		mutually_exclusive = {focus=gen_become_self_sufficent}
+		prerequisite = {focus = gen_become_self_sufficent}
+		mutually_exclusive = {focus = gen_become_self_sufficent}
 		x= 7
 		y= 4
 		cost = 10
@@ -665,7 +628,7 @@ focus_tree = {
 		
 		completion_reward = {
 			add_political_power = 150
-			add_ideas = national_economic_boom
+			#add_ideas = national_economic_boom
 			random_owned_state = {
 				limit = {
 					free_building_slots = {

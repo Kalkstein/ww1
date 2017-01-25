@@ -1,8 +1,7 @@
-# All equipment based on light tank chassis
 
 equipments = {
 
-	light_tank_equipment = {
+	tank_equipment = {
 		is_archetype = yes
 		is_buildable = no
 		type = armor
@@ -112,7 +111,6 @@ equipments = {
 		visual_level = 0
 	}
 
-	# 1941
 	early_heavy_tank_equipment_2 = {
 		archetype = light_tank_equipment
 		parent = early_heavy_tank_equipment

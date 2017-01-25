@@ -72,7 +72,7 @@ add_to_faction = GER
 add_to_faction = AUS
 
 add_ideas = {
-	call_for_suffrage_reform_idea
+	GER_call_for_suffrage_reform_idea
 	limited_exports
 	partial_economic_mobilisation
 }

@@ -694,7 +694,7 @@ focus = {
 	focus = {
 		id = IRQ_study_new_land_doctrines
 		icon = GFX_goal_generic_production
-		prerequisite = { focus = IRQ_motorized_army }
+		prerequisite = { focus = IRQ_remove_dependency_on_british_equipment }
 
 		x = 8
 		y = 2
@@ -2148,7 +2148,6 @@ focus = {
 		id = IRQ_form_the_socialist_union_of_the_mashriq
 		icon = GFX_goal_anschluss
 		prerequisite = { focus = IRQ_secret_police focus = IRQ_ministry_of_propaganda }
-		mutually_exclusive = { focus = IRQ_join_the_comitern }
 
 		x = 39
 		y = 7
