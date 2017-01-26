@@ -731,7 +731,7 @@ focus = {
 				name = plane_bonus
 				bonus = 0.5
 				uses = 1
-				category = air_tech
+				category = air_equipment
 			}	
 		}
 	}	
@@ -2072,19 +2072,19 @@ focus = {
 focus = {
 	id = SOV_import_foreign_machines
 	icon = GFX_goal_generic_demand_territory
+	prerequisite = { focus = SOV_western_frontiers_railroads }
 	x = 12
 	y = 4
 	cost = 10
 	ai_will_do = {
 		factor = 0
 		modifier = {
-		factor = 10
-		factories < 100
-		has_government = neutrality	
+			factor = 10
+			num_of_factories > 100
+			has_government = neutrality	
 		}
 	}	
 	
-	prerequisite = { focus = SOV_western_frontiers_railroads }
 	
 	cancel_if_invalid = no
 	

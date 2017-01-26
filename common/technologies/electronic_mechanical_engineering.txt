@@ -579,7 +579,8 @@ technologies = {
 		}
 		
 		categories = {
-			nuclear
+			gas_tech
+			gas_mask_tech
 		}
 	}
 	
@@ -600,7 +601,7 @@ technologies = {
 		}
 		
 		categories = {
-			rocketry
+			gas_mask_tech
 		}
 	}
 	
@@ -631,7 +632,7 @@ technologies = {
 		}
 		
 		categories = {
-			nuclear
+			gas_tech
 		}
 	}
 	
@@ -657,7 +658,7 @@ technologies = {
 		}
 		
 		categories = {
-			rocketry
+			gas_mask_tech
 		}		
 	}
 
@@ -683,7 +684,7 @@ technologies = {
 		}
 		
 		categories = {
-			nuclear
+			gas_tech
 		}
 	}
 	
@@ -704,9 +705,7 @@ technologies = {
 		}
 		
 		categories = {
-			rocketry
+			gas_mask_tech
 		}
 	}
-	
-	
 }

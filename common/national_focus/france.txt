@@ -825,7 +825,8 @@ focus_tree = {
 				name = secret_bonus
 				bonus = 0.5
 				uses = 1
-				category = nuclear
+				category = gas_tech
+				category = gas_mask_tech
 			}		
 		}
 	}

@@ -523,7 +523,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_research_slot = 1
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = construction_tech
+			}
 		}
 	}
 	
@@ -538,7 +542,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_research_slot = 1
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = production_tech
+			}
 		}
 	}
 	
@@ -553,7 +561,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_research_slot = 1
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = synth_resources
+			}
 		}
 	}
 	
@@ -568,7 +580,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_research_slot = 1
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = excavation_tech
+			}
 		}
 	}
 	
@@ -583,7 +599,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_research_slot = 1
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = gas_mask_tech
+				category = gas_tech
+			}
 		}
 	}
 	
@@ -694,6 +715,25 @@ focus_tree = {
 				bonus = 0.5
 				uses = 1
 				category = land_doctrine
+			}
+		}
+	}
+	
+	focus = {
+		id = gen_support_effort
+		icon = GFX_goal_generic_defence
+		prerequisite = { focus = gen_doctrine_effort focus = gen_equipment_effort }
+		x = 15
+		y = 2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = support_tech
 			}
 		}
 	}

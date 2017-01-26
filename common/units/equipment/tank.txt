@@ -45,7 +45,7 @@ equipments = {
 	}
 
 	early_tank_equipment = {
-		archetype = light_tank_equipment
+		archetype = tank_equipment
 		priority = 5
 		visual_level = 0
 		
@@ -71,14 +71,14 @@ equipments = {
 	}
 
 	early_light_tank_equipment = {
-		archetype = light_tank_equipment
+		archetype = tank_equipment
 		parent = early_tank_equipment
 		priority = 10
 		visual_level = 0
 	}
 
 	early_light_tank_equipment_2 = {
-		archetype = light_tank_equipment
+		archetype = tank_equipment
 		parent = early_light_tank_equipment
 		priority = 10
 		visual_level = 1
@@ -106,13 +106,13 @@ equipments = {
 	}
 	
 	early_heavy_tank_equipment = {
-		archetype = light_tank_equipment
+		archetype = tank_equipment
 		priority = 50
 		visual_level = 0
 	}
 
 	early_heavy_tank_equipment_2 = {
-		archetype = light_tank_equipment
+		archetype = tank_equipment
 		parent = early_heavy_tank_equipment
 		priority = 50
 		visual_level = 1
@@ -140,7 +140,7 @@ equipments = {
 	}
 	
 	tank_equipment_2 = {
-		archetype = light_tank_equipment
+		archetype = tank_equipment
 		parent = early_light_tank_equipment_2
 		priority = 50
 		visual_level = 1
