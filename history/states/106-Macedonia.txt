@@ -18,10 +18,10 @@ state={
 		victory_points = {
 			3882 1 
 		}
-		add_core_of = SER
+		add_core_of = YUG
 		1913.5.30 = {
-			owner = SER 
-			controller = SER
+			owner = YUG 
+			controller = YUG
 		}
 	}
 

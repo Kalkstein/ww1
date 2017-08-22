@@ -19,16 +19,16 @@ state={
 			3882 1 
 		}
 		add_core_of = BUL
-		add_claim_by = SER 
+		add_claim_by = YUG 
 		1913.5.30 = {
 			owner = BUL 
 			controller = BUL 
 		}
 		1913.8.10 = {
-			owner = SER 
-			controller = SER 
-			remove_claim_by = SER 
-			add_core_of = SER
+			owner = YUG
+			controller = YUG
+			remove_claim_by = YUG 
+			add_core_of = YUG
 		}
 	}
 

@@ -12,13 +12,13 @@ state={
 
 	history={
 		owner = TUR
-		add_core_of = SER
+		add_core_of = YUG
 		buildings = {
 			infrastructure = 4
 		}
 		1913.5.30 = {
-			owner = SER 
-			controller = SER
+			owner = YUG 
+			controller = YUG
 		}
 	}
 
