@@ -2,7 +2,7 @@
 state={
 	id=354
 	name="STATE_354"
-	manpower = 1031129
+	manpower = 1342778
 	
 	state_category = rural
 
@@ -17,11 +17,14 @@ state={
 			9932 = {
 				naval_base = 2
 			}
+			11894 = {
+				naval_base = 3
+			}
 		}
 		add_core_of = TUR
 	}
 
 	provinces={
-		789 3714 3979 6976 6991 7454 9886 9932 10403 10472 11753 
+		3714 3979 9932 11753 3965 975 960 11894 11881 9868 6919
 	}
 }

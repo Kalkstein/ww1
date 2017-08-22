@@ -1,0 +1,27 @@
+state={
+	id=754 
+	name="STATE_754"
+	manpower = 667178
+	resources={
+		steel=1
+	}
+	buildings_max_level_factor=0.080
+	state_category = pastoral
+
+	history={
+		owner = GER
+		add_core_of = GER
+		victory_points = {
+			506 1 	
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+		add_core_of = POL
+	}
+
+	provinces={
+		6464 506 
+	}
+}

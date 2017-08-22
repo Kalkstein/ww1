@@ -1,0 +1,21 @@
+
+state={
+	id=772
+	name="STATE_772"
+	manpower = 291800
+	
+	state_category = pastoral
+	
+	history={
+		owner = AUS
+		buildings = {
+			infrastructure = 5
+		}
+		add_core_of = AUS
+		add_core_of = HUN
+	}
+
+	provinces={
+		13292 13293 13294
+	}
+}

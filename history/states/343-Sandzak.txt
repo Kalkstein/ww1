@@ -1,0 +1,27 @@
+
+state={
+	id=343
+	name="STATE_343"
+	manpower = 102130
+	
+	state_category = pastoral
+	
+	resources={
+	}
+
+	history={
+		owner = TUR
+		add_core_of = MNT
+		buildings = {
+			infrastructure = 4
+		}
+		1913.5.30 = {
+			owner = MNT 
+			controller = MNT
+		}
+	}
+
+	provinces={
+		13212 937 6913
+	}
+}

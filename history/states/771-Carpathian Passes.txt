@@ -1,0 +1,19 @@
+state={
+	id=771
+	name="STATE_771"
+	manpower=41300
+	buildings_max_level_factor=0.040
+	
+	state_category = pastoral
+	
+	history={
+		owner = ROM
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = ROM
+	}
+	provinces={
+		13281 13282 13283 13284 13285 13286 13287 13288 13289 13290 13291
+	}
+}

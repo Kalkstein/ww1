@@ -2,7 +2,7 @@
 state={
 	id=44
 	name="STATE_44"
-	manpower = 1003000
+	manpower = 350073
 	resources={
 		aluminium=3
 		chromium=3
@@ -18,22 +18,19 @@ state={
 		buildings = {
 			infrastructure = 3
 			arms_factory = 1
-			industrial_complex = 1
-			9914 = {
+			industrial_complex = 1 
+			11767 = {
 				naval_base = 4
 			}
 		}
 		add_core_of = ALB
-		add_claim_by = ITA
-
-		1939.4.12 = {
-			owner = ITA
-			controller = ITA
-			remove_claim_by = ITA
+		1913.8.10 = {
+			owner = ALB 
+			controller = ALB
 		}
 	}
 
 	provinces={
-		3884 9875 9914 
+		3448 3884 3896 6900 9780 9875 9914 11762 11767 
 	}
 }

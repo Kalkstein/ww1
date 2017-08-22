@@ -7,32 +7,35 @@ state={
 		steel=4
 		chromium=22
 		aluminium=58
+		tungsten = 20
 	}
 	
 	state_category = city
 
 	history={
-		owner = GRE
+		owner = TUR
 		victory_points = {
 			4109 20 
 		}
 		buildings = {
 			infrastructure = 5
 			arms_factory = 2
-			industrial_complex = 4
-			air_base = 4
+			industrial_complex = 3
 			4109 = {
-				naval_base = 9
+				naval_base = 7
 
 			}
 
 		}
+		1913.5.30 = {
+			owner = GRE 
+			controller = GRE
+		}
 		add_core_of = GRE
-		add_core_of = TUR
 
 	}
 
 	provinces={
-		863 976 1106 1109 1205 3401 3864 3973 3988 4109 7127 10203 11786 11895 12001 
+		863 976 1109 3864 3973 3988 4109 7127 12001 11895 1205 10203 11786
 	}
 }

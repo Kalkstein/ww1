@@ -1,0 +1,22 @@
+
+state={
+	id=787
+	name="STATE_787" # Limburg
+	manpower = 275700
+	
+	state_category = rural
+
+	history={
+		owner = BEL
+		victory_points = { 9574 1 }
+		buildings = {
+			infrastructure = 7
+		}
+		
+		add_core_of = BEL
+	}
+
+	provinces={
+		9574
+	}
+}

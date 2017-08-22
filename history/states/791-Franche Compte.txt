@@ -1,0 +1,27 @@
+
+state={
+	id=791
+	name="STATE_791" # Franche-Compté
+	manpower = 979000
+	
+	state_category = rural
+	
+
+	history={
+		owner = FRA
+		victory_points = {
+			3652 5 
+		}
+		victory_points = {
+			9642 5 
+		}
+		buildings = {
+			infrastructure = 7
+		}
+		add_core_of = FRA
+	}
+
+	provinces={
+		3646 3666 9642 817  
+	}
+}

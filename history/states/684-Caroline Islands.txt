@@ -2,15 +2,13 @@
 state={
 	id=684
 	name="STATE_684"
-	manpower=42357
+	manpower=32147
 	state_category = small_island
 
 	history={
-		owner = GER
-		add_core_of = GER
+		owner = GNG
 		buildings = {
 			infrastructure = 3
-			air_base = 3
 			2489 = {
 				naval_base = 6
 				coastal_bunker = 5

@@ -1,0 +1,31 @@
+state={
+	id=766
+	name="STATE_766"
+
+	history={
+		owner = GNG
+		buildings = {
+			infrastructure = 2
+			4226 = {
+				naval_base = 1
+
+			}
+			10234 = {
+				naval_base = 1
+
+			}
+
+		}
+		victory_points = {
+			4226 1 
+		}
+
+	}
+
+	provinces={
+		10234 1358 4378 4226 
+	}
+	manpower=23470
+	buildings_max_level_factor=1
+	state_category="small_island"
+}

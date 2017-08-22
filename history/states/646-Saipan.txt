@@ -3,11 +3,10 @@ state=
 	id=646
 	name="STATE_646"
 	state_category = small_island
-	manpower=21657
+	manpower=3000
 	history=
 	{
-		owner = GER
-		add_core_of = JAP
+		owner = GNG
 		buildings = {
 			infrastructure = 3
 			3995 = {

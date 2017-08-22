@@ -10,16 +10,18 @@ state={
 				naval_base = 2
 
 			}
+
 		}
 		victory_points = {
 			1269 3 
 		}
+
 	}
 
 	provinces={
 		1042 1085 1269 1370 4252 4292 7437 10291 10319 12265 
 	}
-	manpower=150000
+	manpower=147000
 	buildings_max_level_factor=1
 	state_category="small_island"
 }

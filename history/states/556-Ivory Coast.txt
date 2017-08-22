@@ -2,10 +2,12 @@
 state={
 	id=556
 	name="STATE_556" # French West Africa
-	manpower = 14844500
+	manpower = 6944385
 	
 	state_category = rural
-
+	resources={
+		rubber=2
+	}
 	history={
 		owner = FRA
 		buildings = {

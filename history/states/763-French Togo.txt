@@ -1,0 +1,19 @@
+
+state={
+	id=763
+	name="STATE_763" # French West Africa
+	manpower = 592000
+	
+	state_category = pastoral
+
+	history={
+		owner = GTL
+		buildings = {
+			infrastructure = 3
+		}
+	}
+
+	provinces={
+		1951 13271 12843
+	}
+}

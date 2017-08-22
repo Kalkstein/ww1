@@ -2,7 +2,7 @@
 state={
 	id=292
 	name="STATE_292"
-	manpower = 1440000
+	manpower = 1230000
 	
 	state_category = rural
 	resources={
@@ -23,9 +23,10 @@ state={
 			12727 5
 		}
 		add_core_of = SAU
+		add_core_of = JAB
 	}
 
 	provinces={
-		 1955 5024 5093 7995 8004 8060 10791 10850 10892 12702 12727 12813 12870 
+		 4968 5024 5027 5093 7995 8004 8060 10850 10892 10923 12702 12727 12813 12870 
 	}
 }

@@ -1,0 +1,37 @@
+
+state={
+	id=744
+	name="STATE_744"
+	manpower=987600
+	
+	state_category = rural
+
+	history={
+		owner = TUR
+		add_core_of = BUL
+		victory_points = {
+			11774 1
+		}
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 1
+		}
+		1913.5.30 = {
+			owner = BUL
+			controller = BUL
+		}
+		1919.11.27 = {
+			owner = GRE 
+			controller = GRE 
+			remove_core_of = BUL
+			add_claim_by = BUL
+		}
+		add_core_of = GRE
+
+	}
+	
+	provinces={
+		11774 11905
+	}
+}

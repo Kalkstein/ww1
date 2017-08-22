@@ -1,0 +1,24 @@
+state={
+	id=780
+	name="STATE_780"
+	manpower = 396000
+	
+	state_category = pastoral
+	
+	history={
+		owner = RUS 
+		add_core_of = RUS
+		victory_points = {
+			3320 1
+		}
+		buildings = {
+			infrastructure = 5
+		}
+		add_core_of = POL
+		add_core_of = BLR
+	}
+
+	provinces={
+		6340 277 406 9341 11342 233 358 
+	}
+}

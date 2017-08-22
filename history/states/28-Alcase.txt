@@ -2,53 +2,53 @@
 state={
 	id=28
 	name="STATE_28" # Alsace-Lorraine
-	manpower = 1915600
+	manpower = 1874014
 	
 	state_category = city
 	resources={
 		steel=236
-		chromium=22
 	}
 
 	history={
 		owner = GER
+		add_core_of = GER
 		victory_points = { 678 5 }
 		victory_points = { 9503 5 }
 		victory_points = { 9559 10 }
 		buildings = {
-			infrastructure = 10
+			infrastructure = 7
 			industrial_complex = 3
 			549 = {
-				bunker = 10
+				bunker = 3
 
 			}
-			1346 = {
-				bunker = 2
+			678 = {
+				bunker = 3
+
+			}
+			3629 = {
+				bunker = 3
+
+			}
+			6529 = {
+				bunker = 3
 
 			}
 			9503 = {
-				bunker = 8
+				bunker = 3
 
 			}
 			9559 = {
-				bunker = 10
+				bunker = 3
 
 			}
 			11502 = {
-				bunker = 8
+				bunker = 3
 
 			}
-			anti_air_building = 5
-			air_base = 5
 
 		}
-		add_core_of = GER
 		add_core_of = FRA
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 4
-			}
-		}
 	}
 
 	provinces={

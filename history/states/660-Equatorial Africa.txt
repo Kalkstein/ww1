@@ -2,10 +2,12 @@
 state={
 	id=660
 	name="STATE_660"
-	manpower = 2572456
+	manpower = 888230
 	
 	state_category = wasteland
-
+	resources={
+		rubber=4
+	}
 	history={
 		owner = FRA
 		buildings = {
@@ -15,6 +17,6 @@ state={
 	}
 
 	provinces={
-		1883 1974 2081 3165 3181 5084 7919 8078 9152 11108 12719
+		1883 1974 2081 3165 3181 5084 7919 8078 9152 11108 12719 12830 1473 4978 4897 3123
 	}
 }

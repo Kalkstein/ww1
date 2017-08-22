@@ -1,0 +1,29 @@
+
+state={
+	id=770
+	name="STATE_770" 
+	manpower = 375430
+
+	state_category = rural
+
+	history={
+		owner = ROM
+		victory_points = { 657 3 }
+		buildings = {
+			infrastructure = 4
+			air_base = 3
+			657 = {
+				naval_base = 5
+			}
+			687 = {
+				naval_base = 1
+			}
+			dockyard = 1
+		}
+		add_core_of = ROM
+	}
+
+	provinces={
+		657 9635 3076 687 
+	}
+}

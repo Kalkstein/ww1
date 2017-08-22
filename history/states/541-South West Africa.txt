@@ -2,19 +2,18 @@
 state={
 	id=541
 	name="STATE_541"
-	manpower = 462000
+	manpower = 202600
 	
-	state_category = wasteland
+	state_category = pastoral
 
 	history={
-		owner = GER
+		owner = GSW
 		buildings = {
 			infrastructure = 3
-			10978 = {
-				naval_base = 2
-			}
 		}
-		add_core_of = SAF
+		victory_points = {
+			4879 1
+		}
 	}
 
 	provinces={

@@ -1,0 +1,21 @@
+state={
+	id=750
+	name="STATE_750"
+	manpower = 13431
+	
+	state_category = wasteland
+
+	history={
+		owner = JAB
+		add_core_of = JAB
+		buildings = {
+			infrastructure = 2
+		}
+
+	}
+
+
+	provinces={
+		10383 12316 13223
+	}
+}

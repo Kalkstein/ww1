@@ -2,23 +2,26 @@
 state={
 	id=105
 	name="STATE_105" # Montenegro
-	manpower = 895500
+	manpower = 317856
 	
-	state_category = rural
+	state_category = town
 	
 	resources={
-		chromium=12
-		steel=12
+		chromium=36
+		aluminium=112
 	}
 
 	history={
 		owner = MNT
+		add_core_of = MNT
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 1
+			industrial_complex = 2
+			arms_factory = 1
+			9809 = {
+				naval_base = 1
+			}
 		}
-		add_core_of = SER
-		add_core_of = MNT
 	}
 
 	provinces={

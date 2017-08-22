@@ -2,10 +2,9 @@
 state={
 	id=51
 	name="STATE_51"
-	manpower = 6144743
+	manpower = 4771137
 	resources={
 		steel=54
-		chromium=600
 	}
 
 
@@ -20,23 +19,13 @@ state={
 			587 5 
 		}
 		buildings = {
-			infrastructure = 8
-			arms_factory = 4
+			infrastructure = 7
+			arms_factory = 3
 			industrial_complex = 2
-			air_base = 3
-			587 = {
-				bunker = 2
-			}
 
 		}
 		add_core_of = GER
 
-		1939.1.1 = {
-			buildings = {
-				air_base = 6
-				radar_station = 1
-			}
-		}
 	}
 
 	provinces={

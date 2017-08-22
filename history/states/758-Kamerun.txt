@@ -1,0 +1,25 @@
+
+state={
+	id=758
+	name="STATE_758"
+	manpower = 3000000
+	
+	state_category = rural
+
+	history={
+		owner = GEK
+		victory_points = {
+			6039 1
+		}
+
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+
+	}
+
+	provinces={
+		6039 5036 2080 9137 5054 11194 7963 
+	}
+}

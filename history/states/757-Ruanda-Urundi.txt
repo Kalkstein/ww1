@@ -1,0 +1,23 @@
+state={
+	id=757
+	name="STATE_757"
+	
+	state_category = pastoral
+
+	resources={
+	}
+
+	history={
+		owner = GEA
+		buildings = {
+			infrastructure = 3
+
+		}
+	}
+
+	provinces={
+		9962 2220 
+	}
+	manpower=2808000
+	buildings_max_level_factor=1.000
+}

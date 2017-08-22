@@ -20,12 +20,16 @@ state={
 			}
 
 		}
+		1913.5.30 = {
+			owner = GRE 
+			controller = GRE
+		}
 		add_core_of = GRE
 		add_claim_by = BUL
 
 	}
 	
 	provinces={
-		895 936 966 3526 3844 3936 10163 11818 
+		895 936 966 3844 10163 11818 6930
 	}
 }

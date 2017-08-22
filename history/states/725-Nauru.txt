@@ -1,11 +1,11 @@
 state={
 	id=725
 	name="STATE_725"
-	manpower=5785
+	manpower=1000
 	state_category = tiny_island
 
 	history={
-		owner = GER
+		owner = GNG
 		buildings = {
 			infrastructure = 3
 			13038 = {

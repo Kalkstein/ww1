@@ -1,0 +1,24 @@
+
+state={
+	id=759
+	name="STATE_759"
+	manpower = 287301
+	
+	state_category = wasteland
+
+	history={
+		owner = FRA
+		buildings = {
+			infrastructure = 2
+		}
+		1912.3.30 = {
+			owner = GEK 
+			controller = GEK
+		}
+
+	}
+
+	provinces={
+		13264 13265 13266 13267 13268 11012 6008 1993
+	}
+}

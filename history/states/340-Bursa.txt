@@ -1,15 +1,18 @@
 
 state={
 	id=340
-	name="STATE_340"
-	manpower = 1026527
+	name="STATE_340" #Hüdavendigar
+	manpower = 1691277
+	resources={
+		chromium=86
+	}
 
-	state_category = town
+	state_category = large_town
 
 	history={
 		owner = TUR
 		buildings = {
-			infrastructure = 1
+			infrastructure = 4
 			industrial_complex = 1
 		}
 		
@@ -20,6 +23,6 @@ state={
 	}
 
 	provinces={
-		785 947 3786 3851 6864 6912 9799 9887 11778 11867 
+		785 947 3786 6912 9799 11778 11867 11831 856 3856 3983 6877 6945 9878 11796 11907 6808 3951 909 3907 981
 	}
 }

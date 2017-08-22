@@ -1,0 +1,21 @@
+
+state={
+	id=760
+	name="STATE_760"
+	manpower = 400000
+	
+	state_category = wasteland
+
+	history={
+		owner = GEK
+		buildings = {
+			infrastructure = 2
+
+		}
+
+	}
+
+	provinces={
+		13262 13263
+	}
+}

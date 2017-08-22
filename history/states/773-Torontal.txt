@@ -1,0 +1,23 @@
+
+state={
+	id=773
+	name="STATE_773" # Torontál
+	manpower = 415200
+	
+	state_category = pastoral
+
+	history={
+		owner = AUS
+		add_core_of = AUS 
+		add_core_of = HUN
+		buildings = {
+			infrastructure = 5
+		}
+		add_claim_by = SER
+		
+	}
+
+	provinces={
+		6643 11787 3614 614 
+	}
+}

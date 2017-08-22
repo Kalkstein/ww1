@@ -1,0 +1,28 @@
+
+state={
+	id=339
+	name="STATE_339" 
+	manpower = 106163
+	
+	state_category = pastoral
+	
+	resources={
+	
+	}
+
+	history={
+		owner = TUR
+		add_core_of = SER
+		buildings = {
+			infrastructure = 4
+		}
+		1913.5.30 = {
+			owner = SER 
+			controller = SER
+		}
+	}
+
+	provinces={
+		3922 6940 9849 9874
+	}
+}

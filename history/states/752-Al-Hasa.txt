@@ -1,0 +1,31 @@
+
+state={
+	id=752
+	name="STATE_752"
+	manpower = 58700
+	resources={
+	}
+	
+	state_category = pastoral
+
+
+	history={
+		owner = TUR
+		victory_points = {
+			13257 1 
+		}
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = SAU
+		1913.1.1 = {
+			owner = SAU 
+			controller = SAU
+		}
+
+	}
+
+	provinces={
+		13257 10791 1955  
+	}
+}

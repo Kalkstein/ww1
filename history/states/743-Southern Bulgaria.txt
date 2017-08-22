@@ -1,0 +1,26 @@
+
+state={
+	id=743
+	name="STATE_743"
+	manpower = 623250
+	state_category = pastoral
+	buildings_max_level_factor=0.160
+	
+	history = {
+		owner = TUR
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 1 
+		}
+		add_core_of = BUL
+		1913.5.30 = {
+			owner = BUL
+			controller = BUL
+		}
+	}
+	
+	provinces={
+		13205 878 893 13206 3936 6857 13204
+	}
+}

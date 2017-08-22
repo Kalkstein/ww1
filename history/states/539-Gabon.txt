@@ -2,10 +2,12 @@
 state={
 	id=539
 	name="STATE_539"
-	manpower = 2564000
+	manpower = 259100
 	
-	state_category = rural
-
+	state_category = pastoral
+	resources={
+		rubber=1
+	}
 	history={
 		owner = FRA
 		victory_points = {
@@ -16,8 +18,6 @@ state={
 		}
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 1
-			air_base = 1
 			5139 = {
 				naval_base = 1
 			}
@@ -26,6 +26,6 @@ state={
 	}
 
 	provinces={
-		2192 5139 8193 8207 12975
+		2192 3109 5139 8193 8207 10948 12975 
 	}
 }

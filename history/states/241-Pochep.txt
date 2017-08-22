@@ -1,0 +1,24 @@
+
+state={
+	id=241
+	name="STATE_241" # Gomel
+	manpower = 64400
+	
+	state_category = rural
+
+	history={
+		owner = RUS
+		victory_points = {
+			9288 10 
+		}
+		buildings = {
+			infrastructure = 5
+		}
+		add_core_of = RUS
+		add_core_of = BLR
+	}
+
+	provinces={
+		9288 13349 13350 13351
+	}
+}

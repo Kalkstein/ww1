@@ -2,11 +2,10 @@
 state={
 	id=42
 	name="STATE_42"
-	manpower = 3027739
+	manpower = 2349963
 	resources={
 		steel=100
 		aluminium=24
-		chromium=80
 	}
 	
 	state_category = metropolis
@@ -17,23 +16,13 @@ state={
 		buildings = {
 			infrastructure = 7
 			industrial_complex = 3
-			11494 = {
-				bunker = 2
-			}
 
 		}
 		add_core_of = GER
-
-		1939.1.1 ={
-			buildings = {
-				radar_station = 1
-				synthetic_refinery = 3
-			}
-		}
 	}
 
 	provinces={
-		563 3423 3558 9575 11435 11470 11494 11531 11547 
+		563 3423 3558 9575 11435 11470 11494 11547 
 	}
 	
 	

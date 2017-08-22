@@ -1,7 +1,7 @@
 state={
 	id=726
 	name="STATE_726"
-	manpower=85237
+	manpower=39000
 	state_category = small_island
 
 	history={
@@ -9,12 +9,11 @@ state={
 		buildings = {
 			infrastructure = 3
 			7290 = {
-				naval_base = 2
+				naval_base = 1
 			}
 		}
-		add_core_of = GER
 	}
 	provinces={
-		7290
+		7290 13080 
 	}
 }
