@@ -1,0 +1,24 @@
+state=
+{
+	id=793
+	name="STATE_793" #Muravidék/Prekmurje
+	manpower = 77066
+	
+	state_category = pastoral
+	
+	history =
+	{
+		owner = AUS
+		buildings = {
+			infrastructure = 4
+		}
+		victory_points = {
+			6672 1 #Muraszombat 
+		}
+		add_core_of = AUS
+		add_core_of = HUN
+	}
+	buildings_max_level_factor=0.000
+	provinces={
+		6672	}
+	}
