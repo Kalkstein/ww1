@@ -703,7 +703,7 @@ focus_tree = {
 	focus = {
 		id = GER_expand_the_army
 		icon = GFX_goal_generic_construct_mil_factory
-		x = 15
+		x = 17
 		y = 0
 		cost = 10
 		completion_reward = {
@@ -722,11 +722,11 @@ focus_tree = {
 		id = GER_standardization_of_uniforms
 		icon = GFX_goal_generic_small_arms
 		prerequisite = { focus = GER_expand_the_army }
-		x = 15
+		x = 17
 		y = 1
 		cost = 10
 		completion_reward = {
-			army_experience = 50
+			army_experience = 15
 		}
 	}
 
@@ -734,7 +734,7 @@ focus_tree = {
 		id = GER_found_the_ohl
 		icon = GFX_goal_generic_army_doctrines
 		prerequisite = { focus = GER_standardization_of_uniforms }
-		x = 15
+		x = 17
 		y = 2
 		cost = 10
 		completion_reward = {
@@ -742,19 +742,38 @@ focus_tree = {
 		}
 	}
 
+	
+	
 	focus = {
-		id = GER_invent_heavy_artillery
-		icon = GFX_goal_generic_army_artillery2
+		id = GER_attack_infantry_equipment
+		icon = GFX_goal_generic_special_forces
 		prerequisite = { focus = GER_found_the_ohl }
-		x = 15
+		x = 17
 		y = 3
 		cost = 10
 		completion_reward = {
 			add_tech_bonus = {
-				name = GER_invent_heavy_artillery
+				name = GER_attack_infantry_equipment
 				bonus = 0.50
 				uses = 1
-				category = artillery
+				category = infantry_weapons
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_tank_project
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = GER_attack_infantry_equipment }
+		x = 16
+		y = 4
+		cost = 10
+		completion_reward = {
+			add_tech_bonus = {
+				name = GER_tank_project
+				bonus = 0.50
+				uses = 2
+				category = armor
 			}
 		}
 	}
@@ -762,8 +781,8 @@ focus_tree = {
 	focus = {
 		id = GER_mission_type_tactics
 		icon = GFX_goal_generic_allies_build_infantry
-		prerequisite = { focus = GER_invent_heavy_artillery }
-		x = 15
+		prerequisite = { focus = GER_attack_infantry_equipment }
+		x = 18
 		y = 4
 		cost = 10
 		completion_reward = {
@@ -775,29 +794,44 @@ focus_tree = {
 			}
 		}
 	}
-
+	
 	focus = {
-		id = GER_attack_infantry_equipment
-		icon = GFX_goal_generic_special_forces
-		prerequisite = { focus = GER_mission_type_tactics }
-		x = 15
+		id = GER_improve_heavy_artillery
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = GER_mission_type_tactics 
+						 focus = GER_tank_project }
+		x = 17
 		y = 5
 		cost = 10
 		completion_reward = {
 			add_tech_bonus = {
-				name = GER_attack_infantry_equipment
+				name = GER_invent_heavy_artillery
 				bonus = 0.50
 				uses = 1
-				category = infantry_weapons
+				category = heavy_artillery
 			}
 		}
 	}
+	
+	focus = {
+		id = GER_stormtroopers
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = GER_improve_heavy_artillery }
+		x = 17
+		y = 6
+		cost = 10
+		completion_reward = {
+			add_ideas = GER_stormtroopers_ideas
+		}
+	}
+
+	
 
 	focus = {
 		id = GER_found_the_imperial_airforce
 		icon = GFX_goal_generic_army_doctrines
 		prerequisite = { focus = GER_found_the_ohl }
-		x = 13
+		x = 14
 		y = 3
 		cost = 10
 		completion_reward = {
@@ -817,13 +851,13 @@ focus_tree = {
 			}
 		}
 	}
-
+	
 	focus = {
 		id = GER_modern_planes
 		icon = GFX_goal_generic_army_doctrines
 		prerequisite = { focus = GER_found_the_imperial_airforce }
-		x = 13
-		y = 5
+		x = 14
+		y = 4
 		cost = 10
 		completion_reward = {
 			add_tech_bonus = {
@@ -834,9 +868,97 @@ focus_tree = {
 			}
 		}
 	}
-
+	
+	focus = {
+		id = GER_jagdstaffeln
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = GER_modern_planes }
+		mutually_exclusive = { focus = GER_zeppelin_attacks }
+		x = 13
+		y = 5
+		cost = 10
+		completion_reward = {
+			add_ideas = GER_jagdstaffeln_idea
+		}
+	}
+	
+	focus = {
+		id = GER_zeppelin_attacks
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = GER_modern_planes }
+		mutually_exclusive = { focus = GER_jagdstaffeln }
+		x = 15	
+		y = 5
+		cost = 10
+		completion_reward = {
+			add_tech_bonus = {
+				name = GER_modern_planes
+				bonus = 0.50
+				uses = 1
+				category = zeppelins
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_build_airports
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = GER_jagdstaffeln
+						 focus = GER_zeppelin_attacks }
+		x = 14
+		y = 6
+		cost = 10
+		completion_reward = {
+			54 = {
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+			64 = {
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_monoplanes
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = GER_build_airports }
+		x = 13	
+		y = 7
+		cost = 10
+		completion_reward = {
+			add_tech_bonus = {
+				name = GER_modern_planes
+				bonus = 0.50
+				uses = 1
+				category = light_fighter
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_air_propaganda
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = GER_build_airports }
+		x = 15	
+		y = 7
+		cost = 10
+		completion_reward = {
+			add_ideas = GER_air_propaganda_idea
+		}
+	}
+	
+	
 	#### END ####
 
+	
 	focus = {
 		id = GER_politics
 		icon = GFX_goal_generic_national_unity
@@ -864,7 +986,7 @@ focus_tree = {
 		id = GER_break_the_entente
 		icon = GFX_goal_support_fascism
 		prerequisite = { focus = GER_diplomacy }
-		x = 20
+		x = 21
 		y = 2
 		cost = 10
 		completion_reward = {
@@ -890,61 +1012,57 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GER_focus_on_france
+		id = GER_warplans
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = GER_break_the_entente }
 		prerequisite = { focus = GER_found_the_ohl }
-		x = 18
+		x = 21
 		y = 3
 		cost = 10
 		completion_reward = {
-			create_wargoal = {
-				type = puppet_wargoal_focus
-				target = FRA
-			}
 		}
 	}
 
 	focus = {
-		id = GER_around_the_french_fortifications
+		id = GER_the_schlieffen_plan
 		icon = GFX_goal_generic_military_sphere
-		prerequisite = { focus = GER_focus_on_france }
-		mutually_exclusive = { focus = GER_keep_britain_out_of_the_war }
-		x = 17
+		prerequisite = { focus = GER_warplans }
+		mutually_exclusive = { focus = GER_the_moltke_plan }
+		x = 20
 		y = 4
 		cost = 10
 		completion_reward = {
-			create_wargoal = {
-				type = take_state_focus
-				target = BEL
-				generator = { 6 34 }
-			}
 		}
 	}
 
 	focus = {
 		id = GER_stick_to_the_old_plan
 		icon = GFX_goal_generic_more_territorial_claims
-		prerequisite = { focus = GER_around_the_french_fortifications }
-		x = 17
+		prerequisite = { focus = GER_the_schlieffen_plan }
+		x = 19
 		y = 5
 		cost = 10
 		completion_reward = {
-			create_wargoal = {
-				type = take_state_focus
-				target = HOL
-				generator = { 35 }
-			}
+		}
+	}
+	
+	focus = {
+		id = GER_the_moltke_plan
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = GER_warplans }
+		x = 22
+		y = 4
+		cost = 10
+		completion_reward = {
 		}
 	}
 
 	focus = {
 		id = GER_keep_britain_out_of_the_war
 		icon = GFX_goal_generic_propaganda
-		prerequisite = { focus = GER_focus_on_france }
-		mutually_exclusive = { focus = GER_around_the_french_fortifications }
-		x = 19
-		y = 4
+		prerequisite = { focus = GER_the_moltke_plan }
+		x = 21
+		y = 5
 		cost = 10
 		completion_reward = {
 			ENG = {
@@ -959,10 +1077,9 @@ focus_tree = {
 	focus = {
 		id = GER_fight_for_liberty
 		icon = GFX_goal_support_democracy
-		prerequisite = { focus = GER_conquer_the_east }
 		prerequisite = { focus = GER_keep_britain_out_of_the_war }
-		x = 20
-		y = 5
+		x = 21
+		y = 6
 		cost = 10
 		completion_reward = {
 			ENG = {
@@ -980,48 +1097,19 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = GER_focus_on_russia
-		icon = GFX_goal_generic_political_pressure
-		prerequisite = { focus = GER_break_the_entente }
-		x = 22
-		y = 3
-		cost = 10
-		completion_reward = {
-			create_wargoal = {
-				type = puppet_wargoal_focus
-				target = SOV
-			}
-		}
-	}
+	
 
 	focus = {
 		id = GER_support_communism_in_russia
 		icon = GFX_goal_support_communism
-		prerequisite = { focus = GER_focus_on_russia }
+		prerequisite = { focus = GER_the_moltke_plan }
 		x = 23
-		y = 4
+		y = 5
 		cost = 10
 		completion_reward = {
-			SOV = {
-				add_ideas = GER_support_communism_in_russia_idea
-			}
-		}
-	}
-
-	focus = {
-		id = GER_conquer_the_east
-		icon = GFX_goal_generic_occupy_states_ongoing_war
-		prerequisite = { focus = GER_focus_on_russia }
-		x = 21
-		y = 4
-		cost = 10
-		completion_reward = {
-			create_wargoal = {
-				type = take_state_focus
-				target = SOV
-				generator = { 87 98 10 90 92 93 94 95 96 97 11 189 190 12 13 191}
-			}
+			#SOV = {
+			#	add_ideas = GER_support_communism_in_russia_idea
+			#}
 		}
 	}
 
@@ -1031,7 +1119,7 @@ focus_tree = {
 		icon = GFX_goal_generic_more_territorial_claims
 		mutually_exclusive = { focus = GER_unite_all_germans }
 		prerequisite = { focus = GER_diplomacy }
-		x = 25
+		x = 26
 		y = 2
 		cost = 10
 		ai_will_do = {
@@ -1053,7 +1141,7 @@ focus_tree = {
 		icon = GFX_goal_generic_occupy_states_ongoing_war
 		prerequisite = { focus = GER_expand_the_central_powers }
 		mutually_exclusive = { focus = GER_make_concessions_to_italy }
-		x = 24
+		x = 25
 		y = 3
 		cost = 10
 		completion_reward = {
@@ -1072,7 +1160,7 @@ focus_tree = {
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = GER_expand_the_central_powers }
 		mutually_exclusive = { focus = GER_ottoman_military_mission }
-		x = 26
+		x = 27
 		y = 3
 		cost = 10
 		completion_reward = {
@@ -1085,7 +1173,7 @@ focus_tree = {
 		icon = GFX_goal_generic_more_territorial_claims
 		prerequisite = { focus = GER_make_concessions_to_italy
 						 focus = GER_ottoman_military_mission }
-		x = 25
+		x = 26
 		y = 4
 		cost = 10
 		completion_reward = {
@@ -1102,7 +1190,7 @@ focus_tree = {
 		id = GER_threaten_british_india
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = GER_promise_land_to_bulgaria }
-		x = 24
+		x = 25
 		y = 5
 		cost = 10
 		completion_reward = {
@@ -1114,7 +1202,7 @@ focus_tree = {
 		id = GER_ally_afghanstistan
 		icon = GFX_goal_generic_dangerous_deal
 		prerequisite = { focus = GER_threaten_british_india }
-		x = 24
+		x = 25
 		y = 6
 		cost = 10
 		completion_reward = {
@@ -1131,7 +1219,7 @@ focus_tree = {
 		id = GER_ally_persia
 		icon = GFX_goal_generic_major_alliance
 		prerequisite = { focus = GER_ally_afghanstistan }
-		x = 24
+		x = 25
 		y = 7
 		cost = 10
 		completion_reward = {
@@ -1148,7 +1236,7 @@ focus_tree = {
 		id = GER_german_advisors_in_china
 		icon = GFX_goal_generic_occupy_states_ongoing_war
 		prerequisite = { focus = GER_promise_land_to_bulgaria }
-		x = 26
+		x = 27
 		y = 5
 		cost = 10
 		completion_reward = {
@@ -1162,7 +1250,7 @@ focus_tree = {
 		id = GER_invest_in_china
 		icon = GFX_goal_generic_construction
 		prerequisite = { focus = GER_german_advisors_in_china }
-		x = 26
+		x = 27
 		y = 6
 		cost = 10
 		completion_reward = {
@@ -1179,7 +1267,7 @@ focus_tree = {
 		id = GER_ally_china
 		icon = GFX_goal_tripartite_pact
 		prerequisite = { focus = GER_invest_in_china }
-		x = 26
+		x = 27
 		y = 7
 		cost = 10
 		completion_reward = {
@@ -1197,7 +1285,7 @@ focus_tree = {
 		icon = GFX_goal_support_fascism
 		prerequisite = { focus = GER_ally_china
 						 focus = GER_ally_persia }
-		x = 25
+		x = 26
 		y = 8
 		cost = 10
 		completion_reward = {
@@ -1210,7 +1298,7 @@ focus_tree = {
 		icon = GFX_goal_generic_territory_or_war
 		mutually_exclusive = { focus = GER_expand_the_central_powers }
 		prerequisite = { focus = GER_diplomacy }
-		x = 27
+		x = 28
 		y = 2
 		cost = 10
 		completion_reward = {
@@ -1228,7 +1316,7 @@ focus_tree = {
 		id = GER_claim_austria
 		icon = GFX_goal_anschluss
 		prerequisite = { focus = GER_unite_all_germans }
-		x = 28
+		x = 29
 		y = 3
 		cost = 10
 		completion_reward = {
@@ -1242,7 +1330,7 @@ focus_tree = {
 		id = GER_claim_bohemia
 		icon = GFX_goal_demand_sudetenland
 		prerequisite = { focus = GER_claim_austria }
-		x = 28
+		x = 29
 		y = 4
 		cost = 10
 		completion_reward = {
@@ -1255,7 +1343,7 @@ focus_tree = {
 		id = GER_claim_south_tyrol
 		icon = GFX_goal_generic_military_deal
 		prerequisite = { focus = GER_claim_bohemia }
-		x = 28
+		x = 29
 		y = 5
 		cost = 10
 		completion_reward = {
@@ -1267,7 +1355,7 @@ focus_tree = {
 		id = GER_claim_luxembourg
 		icon = GFX_goal_generic_attack_allies
 		prerequisite = { focus = GER_unite_all_germans }
-		x = 30
+		x = 31
 		y = 3
 		cost = 10
 		completion_reward = {
@@ -1285,7 +1373,7 @@ focus_tree = {
 		id = GER_claim_swiss
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = GER_claim_luxembourg }
-		x = 30
+		x = 31
 		y = 4
 		cost = 10
 		completion_reward = {
@@ -1298,7 +1386,7 @@ focus_tree = {
 		id = GER_reform_the_goverment
 		icon = GFX_goal_generic_demand_territory
 		prerequisite = { focus = GER_politics }
-		x = 33
+		x = 34
 		y = 1
 		cost = 10
 		completion_reward = {
@@ -1310,11 +1398,11 @@ focus_tree = {
 		id = GER_reform_the_suffage
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = GER_reform_the_goverment }
-		x = 33
+		x = 34
 		y = 2
 		cost = 10
 		completion_reward = {
-			remove_ideas = call_for_suffrage_reform_idea
+			remove_ideas = GER_call_for_suffrage_reform_idea
 		}
 	}
 
@@ -1329,7 +1417,7 @@ focus_tree = {
 				num_of_factories > 30
 			}
 		}
-		x = 32
+		x = 33
 		y = 3
 		cost = 10
 		completion_reward = {
@@ -1348,7 +1436,7 @@ focus_tree = {
 				num_of_factories > 30
 			}
 		}
-		x = 34
+		x = 35
 		y = 3
 		cost = 10
 		completion_reward = {
