@@ -1,0 +1,143 @@
+
+# MAIN THEME
+music = {
+	name = "maintheme"
+	file = "maintheme.ogg"
+	volume = 3.9
+}
+
+# SOUNDTRACK
+music = {
+	name = "colonel_bogey_march"
+	file = "colonel_bogey_march.ogg"
+	volume = 3.9
+}
+music = {
+	name = "dunedin"
+	file = "dunedin.ogg"
+	volume = 3.9
+}
+music = {
+	name = "erzherzog_albrecht_marsch"
+	file = "erzherzog_albrecht_marsch.ogg"
+	volume = 3.9
+}
+
+music = {
+	name = "florentiner_marsch"
+	file = "florentiner_marsch.ogg"
+	volume = 3.9
+}
+music = {
+	name = "fridericus_rex_grenadiermarsch"
+	file = "fridericus_rex_grenadiermarsch.ogg"
+	volume = 3.9
+}
+
+music = {
+	name = "hoch_und_deutschmeister_marsch"
+	file = "hoch_und_deutschmeister_marsch.ogg"
+	volume = 3.9
+}
+music = {
+	name = "its_a_long_way_to_tipperary"
+	file = "its_a_long_way_to_tipperary.ogg"
+	volume = 3.9
+}
+
+music = {
+	name = "koniggratzer_marsch"
+	file = "koniggratzer_marsch.ogg"
+	volume = 3.9
+}
+music = {
+	name = "o_du_mein_osterreich"
+	file = "o_du_mein_osterreich.ogg"
+	volume = 3.9
+}
+
+music = {
+	name = "over_there"
+	file = "over_there.ogg"
+	volume = 3.9
+}
+music = {
+	name = "pack_up_your_troubles_in_your_old_kit_bag"
+	file = "pack_up_your_troubles_in_your_old_kit_bag.ogg"
+	volume = 3.9
+}
+
+music = {
+	name = "put_on_your_old_grey_bonnet"
+	file = "put_on_your_old_grey_bonnet.ogg"
+	volume = 3.9
+}
+music = {
+	name = "radetzky_marsch"
+	file = "radetzky_marsch.ogg"
+	volume = 3.9
+}
+music = {
+	name = "silberkondor"
+	file = "silberkondor.ogg"
+	volume = 3.9
+}
+music = {
+	name = "the_great_little_army"
+	file = "the_great_little_army.ogg"
+	volume = 3.9
+}
+
+music = {
+	name = "the_middy_march"
+	file = "the_middy_march.ogg"
+	volume = 3.9
+}
+
+music = {
+	name = "the_thin_red_line"
+	file = "the_thin_red_line.ogg"
+	volume = 3.9
+}
+
+music = {
+	name = "the_vanished_army"
+	file = "the_vanished_army.ogg"
+	volume = 3.9
+}
+
+music = {
+	name = "the_vedette"
+	file = "the_vedette.ogg"
+	volume = 3.9
+}
+
+music = {
+	name = "the_voice_of_the_guns"
+	file = "the_voice_of_the_guns.ogg"
+	volume = 3.9
+}
+
+music = {
+	name = "tiroler_holzhackerbuam_marsch"
+	file = "tiroler_holzhackerbuam_marsch.ogg"
+	volume = 3.9
+}
+
+music = {
+	name = "unter_dem_doppeladler"
+	file = "unter_dem_doppeladler.ogg"
+	volume = 3.9
+}
+
+music = {
+	name = "wein_bleibt_wein"
+	file = "wein_bleibt_wein.ogg"
+	volume = 3.9
+}
+
+music = {
+	name = "zum_stadtele_hinaus"
+	file = "zum_stadtele_hinaus.ogg"
+	volume = 3.9
+}
