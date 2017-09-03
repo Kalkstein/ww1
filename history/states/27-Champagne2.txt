@@ -2,7 +2,7 @@
 state={
 	id=27
 	name="STATE_27" # Bourgogne
-	manpower = 1031300
+	manpower = 1431506
 	
 	state_category = city
 	
