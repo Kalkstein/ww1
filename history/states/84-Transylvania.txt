@@ -20,6 +20,9 @@ state={
 		victory_points = {
 			690 1 
 		}
+		victory_points = {
+			676 1 #Gyulafehérvár
+		}
 		add_core_of = HUN
 	}
 

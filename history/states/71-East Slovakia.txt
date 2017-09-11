@@ -10,6 +10,9 @@ state={
 		add_core_of = AUS 
 		add_core_of = HUN
 		add_core_of = SLO
+		victory_points = {
+			3581 1 #Eperjes
+		}
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1

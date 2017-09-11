@@ -20,6 +20,9 @@ state={
 		victory_points = {
 			686 1 
 		}
+		victory_points = {
+			6703 1 #Székesfehérvár
+		}
 		buildings = {
 			infrastructure = 6
 			industrial_complex = 2

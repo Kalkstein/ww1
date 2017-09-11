@@ -12,6 +12,9 @@ state={
 	history={
 		owner = AUS
 		add_core_of = AUS
+		victory_points = {
+			646 3 #Temesvár
+		}
 		buildings = {
 			infrastructure = 5
 			industrial_complex = 1

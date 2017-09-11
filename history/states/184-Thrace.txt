@@ -16,6 +16,12 @@ state={
 		buildings = {
 			infrastructure = 4
 		}
+		victory_points = {
+			9930 1 #Kavala
+		}
+		victory_points = {
+			6990 1 #Serres/Siroz (Greek/Turkish)
+		}
 		1913.5.30 = {
 			owner = BUL 
 			controller = BUL
