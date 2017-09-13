@@ -1,0 +1,23 @@
+
+state={
+	id=629
+	name="STATE_629"
+	manpower = 191874
+	state_category = town
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 3
+			4180 = {
+				naval_base = 10
+			}
+		}
+		victory_points = {
+			4180 1 #Honolulu
+		 }
+	}
+
+	provinces={
+		4180 7112 7195 10048 12021 
+	}
+}
