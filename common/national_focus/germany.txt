@@ -815,7 +815,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_stormtroopers
-		icon = GFX_goal_generic_army_artillery2
+		icon = GFX_goal_generic_major_war
 		prerequisite = { focus = GER_improve_heavy_artillery }
 		x = 17
 		y = 6
@@ -854,7 +854,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_modern_planes
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_goal_generic_air_fighter2
 		prerequisite = { focus = GER_found_the_imperial_airforce }
 		x = 14
 		y = 4
@@ -871,7 +871,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_jagdstaffeln
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_goal_generic_air_fighter
 		prerequisite = { focus = GER_modern_planes }
 		mutually_exclusive = { focus = GER_zeppelin_attacks }
 		x = 13
@@ -884,7 +884,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_zeppelin_attacks
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_goal_generic_occupy_start_war
 		prerequisite = { focus = GER_modern_planes }
 		mutually_exclusive = { focus = GER_jagdstaffeln }
 		x = 15	
@@ -902,7 +902,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_build_airports
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_goal_generic_build_airforce
 		prerequisite = { focus = GER_jagdstaffeln
 						 focus = GER_zeppelin_attacks }
 		x = 14
@@ -928,7 +928,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_monoplanes
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_goal_generic_air_bomber
 		prerequisite = { focus = GER_build_airports }
 		x = 13	
 		y = 7
@@ -945,7 +945,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_air_propaganda
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_goal_generic_air_doctrine
 		prerequisite = { focus = GER_build_airports }
 		x = 15	
 		y = 7
@@ -1056,12 +1056,30 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
+	
+		
+
+	focus = {
+		id = GER_support_communism_in_russia
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = GER_the_moltke_plan
+						 focus = GER_the_schlieffen_plan 
+		}
+		x = 21
+		y = 5
+		cost = 10
+		completion_reward = {
+			#SOV = {
+			#	add_ideas = GER_support_communism_in_russia_idea
+			#}
+		}
+	}
 
 	focus = {
 		id = GER_keep_britain_out_of_the_war
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = GER_the_moltke_plan }
-		x = 21
+		x = 23
 		y = 5
 		cost = 10
 		completion_reward = {
@@ -1078,7 +1096,7 @@ focus_tree = {
 		id = GER_fight_for_liberty
 		icon = GFX_goal_support_democracy
 		prerequisite = { focus = GER_keep_britain_out_of_the_war }
-		x = 21
+		x = 23
 		y = 6
 		cost = 10
 		completion_reward = {
@@ -1097,21 +1115,7 @@ focus_tree = {
 		}
 	}
 
-	
 
-	focus = {
-		id = GER_support_communism_in_russia
-		icon = GFX_goal_support_communism
-		prerequisite = { focus = GER_the_moltke_plan }
-		x = 23
-		y = 5
-		cost = 10
-		completion_reward = {
-			#SOV = {
-			#	add_ideas = GER_support_communism_in_russia_idea
-			#}
-		}
-	}
 
 
 	focus = {
