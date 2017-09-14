@@ -6,10 +6,284 @@ focus_tree = {
 		
 		modifier = {
 			add = 10
-			tag = RUS
+			tag = BEL
 		}
 	}
 	
 	default = no
+	
+	focus = {
+		id = RUS_third_rome
+		icon = GFX_goal_support_fascism
+		x = 3
+		y = 0
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_gurantee_serbia
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = RUS_third_rome }
+		x = 1
+		y = 1
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_initiate_the_balkan_league
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = RUS_third_rome }
+		x = 1
+		y = 2
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_threaten_bulgaria
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = RUS_initiate_the_balkan_league }
+		mutually_exclusive = { focus = RUS_promise_land_to_bulgaria }
+		x = 3
+		y = 3
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_promise_land_to_bulgaria
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = RUS_initiate_the_balkan_league }
+		mutually_exclusive = { focus = RUS_threaten_bulgaria }
+		x = 1
+		y = 3
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_promise_land_to_greece
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = RUS_threaten_bulgaria 
+						 focus = RUS_promise_land_to_bulgaria }
+		x = 2
+		y = 4
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_demilitarize_the_bospurus
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = RUS_threaten_bulgaria }
+		x = 4
+		y = 4
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_occupy_the_straits
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = RUS_demilitarize_the_bospurus }
+		x = 4
+		y = 5
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_reform_the_balkan_league
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = RUS_occupy_the_straits 
+						 focus = RUS_promise_land_to_greece }
+		x = 3
+		y = 6
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	focus = {
+		id = RUS_army_effort
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = RUS_third_rome }
+		x = 7
+		y = 1
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_reform_the_army
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = RUS_army_effort }
+		x = 8
+		y = 2
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	
+	focus = {
+		id = RUS_aristocracy_officers
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = RUS_reform_the_army }
+		mutually_exclusive = { focus = RUS_new_officers }
+		x = 7
+		y = 3
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_mass_army
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = RUS_aristocracy_officers }
+		x = 6
+		y = 4
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_form_the_guard
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = RUS_mass_army }
+		x = 6
+		y = 5
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_allied_doctrines
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = RUS_form_the_guard }
+		x = 7
+		y = 6
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	
+	
+	focus = {
+		id = RUS_new_officers
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = RUS_reform_the_army }
+		mutually_exclusive = { focus = RUS_aristocracy_officers }
+		x = 9
+		y = 3
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_skilled_officers
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = RUS_new_officers }
+		x = 10
+		y = 4
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_foergin_trainers
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = RUS_skilled_officers }
+		x = 10
+		y = 5
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_enemy_doctrin
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = RUS_foergin_trainers }
+		x = 9
+		y = 6
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	
+	
+	
+	focus = {
+		id = RUS_the_brusilov_offensive
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = RUS_enemy_doctrin
+						 focus = RUS_allied_doctrines }
+		x = 8
+		y = 7
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	
+	
+	#focus = {
+	#	id = RUS_infantry_equipment
+	#	icon = GFX_goal_support_fascism
+	#	prerequisite = { focus = RUS_aristocracy_officers
+	#					 focus = RUS_new_officers }
+	#	x = 7
+	#	y = 3
+	#	cost = 10
+	#	completion_reward = {
+	#		
+	#	}
+	#}
+	
 	
 }
