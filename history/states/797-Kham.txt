@@ -1,0 +1,20 @@
+
+state={
+	id=797
+	name="STATE_797" # Xikang
+	manpower = 1478500
+	
+	state_category = pastoral
+
+	history={
+		owner = TIB
+		add_core_of = TIB
+		buildings = {
+			infrastructure = 1
+		}
+	}
+
+	provinces={
+		5080 10741 8059 8041 10856 4407 5102 5018 
+	}
+}

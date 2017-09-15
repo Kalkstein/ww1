@@ -1,0 +1,25 @@
+
+state={
+	id=434
+	name="STATE_434"
+	manpower = 197000
+	
+	state_category = wasteland
+	resources={
+		tungsten=54
+	}
+
+	history={
+		owner = TIB
+		add_core_of = TIB
+		add_claim_by RAJ
+		buildings = {
+			infrastructure = 1
+		}
+
+	}
+
+	provinces={
+		1116 1996 10810 12322 12730 
+	}
+}
