@@ -104,58 +104,58 @@ add_namespace = germany
 #}
 
 #Schlieffenplan (historic)
-country_event = {
-	id = germany.1
-	title = germany.1.t
-	desc = germany.1.d
-	picture = GFX_report_event_degaulle_churchill
-	
-	fire_only_once = no
-	
-	trigger = {
-		tag = GER
-		country_exists = FRA
-		AND = {
-			complete_national_focus = GER_the_schlieffen_plan
-			NOT = { complete_national_focus = GER_stick_to_the_old_plan }	
-		}
-	}
-	
-	option = {
-		name = germany.1.a
-		ai_chance = { factor = 100 }
-		trigger = {
-			country_exists = FRA
-			country_exists = BEL
-			NOT = {
-				has_war_with = FRA
-				has_war_with = BEL
-			}
-		}
-		create_wargoal = {
-			target = FRA
-			type = topple_government
-		}
-		declare_war_on = {
-			target = FRA
-			type = topple_government
-		}
-		BEL = {
-			add_to_war = { targeted_alliance = FRA enemy = GER } 
-		}
-		LUX = {
-			add_to_war = { targeted_alliance = FRA enemy = GER } 
-		}
-	}
-	
-	option = {
-		name = germany.1.b
-		ai_chance = { factor = 0 }
-		FRA = {
-			add_national_unity = 0.05
-		}
-	}
-}
+#country_event = {
+#	id = germany.1
+#	title = germany.1.t
+#	desc = germany.1.d
+#	picture = GFX_report_event_degaulle_churchill
+#	
+#	fire_only_once = no
+#	
+#	trigger = {
+#		tag = GER
+#		country_exists = FRA
+#		AND = {
+#			complete_national_focus = GER_the_schlieffen_plan
+#			NOT = { complete_national_focus = GER_stick_to_the_old_plan }	
+#		}
+#	}
+#	
+#	option = {
+#		name = germany.1.a
+#		ai_chance = { factor = 100 }
+#		trigger = {
+#			country_exists = FRA
+#			country_exists = BEL
+#			NOT = {
+#				has_war_with = FRA
+#				has_war_with = BEL
+#			}
+#		}
+#		create_wargoal = {
+#			target = FRA
+#			type = topple_government
+#		}
+#		declare_war_on = {
+#			target = FRA
+#			type = topple_government
+#		}
+#		BEL = {
+#			add_to_war = { targeted_alliance = FRA enemy = GER } 
+#		}
+#		LUX = {
+#			add_to_war = { targeted_alliance = FRA enemy = GER } 
+#		}
+#	}
+#	
+#	option = {
+#		name = germany.1.b
+#		ai_chance = { factor = 0 }
+#		FRA = {
+#			add_national_unity = 0.05
+#		}
+#	}
+#}
 
 
 
