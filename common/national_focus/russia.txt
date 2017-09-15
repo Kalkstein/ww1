@@ -24,9 +24,21 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = RUS_gurantee_serbia
+		id = RUS_treaty_of_st_petersburg
 		icon = GFX_goal_support_fascism
 		prerequisite = { focus = RUS_third_rome }
+		x = 1
+		y = 1
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_gurantee_serbia
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = RUS_treaty_of_st_petersburg }
 		x = 1
 		y = 2
 		cost = 10
@@ -355,8 +367,6 @@ focus_tree = {
 		}
 	}
 	
-	
-	
 	focus = {
 		id = RUS_artillery_for_premezyl
 		icon = GFX_goal_support_fascism
@@ -370,10 +380,34 @@ focus_tree = {
 	}
 	
 	focus = {
+		id = RUS_black_sea_bases
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = RUS_artillery_for_premezyl }
+		x = 13
+		y = 5
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_defense_of_sevastopol
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = RUS_black_sea_bases }
+		x = 13
+		y = 6
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
 		id = RUS_the_primary_sector
 		icon = GFX_goal_support_fascism
 		prerequisite = { focus = RUS_industrial_effort }
-		x = 14
+		x = 16
 		y = 1
 		cost = 10
 		completion_reward = {
@@ -385,7 +419,7 @@ focus_tree = {
 		id = RUS_agriculture
 		icon = GFX_goal_support_fascism
 		prerequisite = { focus = RUS_the_primary_sector }
-		x = 15
+		x = 17
 		y = 2
 		cost = 10
 		completion_reward = {
@@ -397,7 +431,7 @@ focus_tree = {
 		id = RUS_found_mining_researching
 		icon = GFX_goal_support_fascism
 		prerequisite = { focus = RUS_the_primary_sector }
-		x = 13
+		x = 15
 		y = 2
 		cost = 10
 		completion_reward = {
@@ -410,7 +444,7 @@ focus_tree = {
 		icon = GFX_goal_support_fascism
 		prerequisite = { focus = RUS_found_mining_researching
 						 focus = RUS_agriculture }
-		x = 14
+		x = 16
 		y = 3
 		cost = 10
 		completion_reward = {
@@ -418,6 +452,218 @@ focus_tree = {
 		}
 	}
 	
+	focus = {
+		id = RUS_caucasian_oilfields
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = RUS_new_mines }
+		x = 16
+		y = 4
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
 	
+	focus = {
+		id = RUS_caucasian_factories
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = RUS_caucasian_oilfields }
+		x = 15
+		y = 5
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_trans_caucasian_railway
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = RUS_caucasian_oilfields }
+		x = 17
+		y = 5
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_develop_sevastopol
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = RUS_caucasian_factories }
+		x = 15
+		y = 6
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_sevastopol_dockyards
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = RUS_defense_of_sevastopol}
+		prerequisite = { focus = RUS_develop_sevastopol }
+		x = 14
+		y = 7
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_asian_policy
+		icon = GFX_goal_support_fascism
+		x = 20
+		y = 0
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_improve_the_transsiberian_railway
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = RUS_asian_policy }
+		x = 20
+		y = 1
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_second_track_of_the_eastsiberian_railway
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = RUS_improve_the_transsiberian_railway }
+		x = 20
+		y = 2
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_circum_baikal_railway
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = RUS_second_track_of_the_eastsiberian_railway }
+		x = 20
+		y = 3
+		cost = 10
+		completion_reward = {
+			566 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = RUS_siberian_mining
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = RUS_circum_baikal_railway	}
+		prerequisite = { focus = RUS_new_mines	}
+		x = 20
+		y = 4
+		cost = 10
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_siberian_mining_2
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = RUS_siberian_mining }
+		x = 19
+		y = 5
+		cost = 10
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_irkutsk_factories
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = RUS_siberian_mining 
+						 focus = RUS_circum_baikal_railway }
+		x = 21
+		y = 5
+		cost = 10
+		completion_reward = {
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	focus = {
+		id = RUS_petersburg_hiitola_railway
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = RUS_industrial_effort }
+		x = 25
+		y = 2
+		cost = 10
+		completion_reward = {
+			146 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			195 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = RUS_primorskaya_railway
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = RUS_petersburg_hiitola_railway }
+		x = 25
+		y = 3
+		cost = 10
+		completion_reward = {
+			111 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			146 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
 	
 }
