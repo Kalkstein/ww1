@@ -36,7 +36,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = RUS_gurantee_serbia
+		id = RUS_initiate_the_balkan_league
 		icon = GFX_goal_support_fascism
 		prerequisite = { focus = RUS_treaty_of_st_petersburg }
 		x = 1
@@ -48,9 +48,9 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = RUS_initiate_the_balkan_league
+		id = RUS_gurantee_serbia
 		icon = GFX_goal_support_fascism
-		prerequisite = { focus = RUS_gurantee_serbia }
+		prerequisite = { focus = RUS_initiate_the_balkan_league }
 		x = 1
 		y = 3
 		cost = 10
@@ -602,31 +602,30 @@ focus_tree = {
 	}
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	focus = {
+		id = RUS_western_industry
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = RUS_industrial_effort }
+		x = 24
+		y = 1
+		cost = 10
+		completion_reward = {
+		}
+	}
 	
 	focus = {
 		id = RUS_petersburg_hiitola_railway
 		icon = GFX_goal_support_fascism
-		prerequisite = { focus = RUS_industrial_effort }
-		x = 25
+		prerequisite = { focus = RUS_western_industry }
+		mutually_exclusive = { focus = RUS_primorskaya_railway }
+		x = 23
 		y = 2
 		cost = 10
 		completion_reward = {
 			146 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -643,9 +642,10 @@ focus_tree = {
 	focus = {
 		id = RUS_primorskaya_railway
 		icon = GFX_goal_support_fascism
-		prerequisite = { focus = RUS_petersburg_hiitola_railway }
+		prerequisite = { focus = RUS_western_industry }
+		mutually_exclusive = { focus = RUS_petersburg_hiitola_railway }
 		x = 25
-		y = 3
+		y = 2
 		cost = 10
 		completion_reward = {
 			111 = {
@@ -658,12 +658,38 @@ focus_tree = {
 			146 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 		}
 	}
+	
+	focus = {
+		id = RUS_ukrainian_industry
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = RUS_primorskaya_railway
+						 focus = RUS_petersburg_hiitola_railway }
+		x = 24
+		y = 2
+		cost = 10
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_polish_industry
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = RUS_primorskaya_railway
+						 focus = RUS_petersburg_hiitola_railway }
+		x = 24
+		y = 2
+		cost = 10
+		completion_reward = {
+		}
+	}
+	
+	
 
 	
 }
