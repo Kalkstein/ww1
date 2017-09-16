@@ -38,7 +38,6 @@ ideas = {
 
 			modifier = {
 				conscription = 0.03
-				training_time_factor = 0.1
 			}
 			
 			cancel_if_invalid = no
@@ -62,8 +61,8 @@ ideas = {
 
 			modifier = {
 				conscription = 0.04
-				training_time_factor = 0.25
-				political_power_factor = -0.25
+				training_time_factor = 0.1
+				political_power_factor = -0.1
 			}
 			
 			cancel_if_invalid = no
@@ -87,8 +86,8 @@ ideas = {
 
 			modifier = {
 				conscription = 0.05
-				training_time_factor = 0.5
-				political_power_factor = -0.5
+				training_time_factor = 0.25
+				political_power_factor = -0.25
 			}
 			
 			cancel_if_invalid = no

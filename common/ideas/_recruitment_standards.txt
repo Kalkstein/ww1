@@ -70,10 +70,10 @@ ideas = {
 			modifier = {
 				conscription = 0.04
 				training_time_factor = 0.15
-				industrial_capacity_factory = -0.15
-				production_speed_industrial_complex_factor = -0.10
-				production_speed_arms_factory_factor = -0.10
-				research_time_factor = 0.10
+				industrial_capacity_factory = -0.05
+				production_speed_industrial_complex_factor = -0.05
+				production_speed_arms_factory_factor = -0.05
+				research_time_factor = 0.05
 			}
 			
 			cancel_if_invalid = no
@@ -98,11 +98,11 @@ ideas = {
 
 			modifier = {
 				conscription = 0.075
-				training_time_factor = 0.50
-				industrial_capacity_factory = -0.25
-				production_speed_industrial_complex_factor = -0.25
-				production_speed_arms_factory_factor = -0.25
-				research_time_factor = 0.25
+				training_time_factor = 0.25
+				industrial_capacity_factory = -0.1
+				production_speed_industrial_complex_factor = -0.1
+				production_speed_arms_factory_factor = -0.1
+				research_time_factor = 0.1
 			}
 			
 			cancel_if_invalid = no
