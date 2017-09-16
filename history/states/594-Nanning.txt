@@ -1,0 +1,28 @@
+
+state={
+	id=594
+	name="STATE_594"
+	manpower = 2298352
+	state_category = town
+	resources={
+		tungsten=14
+		steel = 10
+		chromium = 4
+	}
+
+	history={
+		owner = MAN
+		add_core_of = MAN
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		victory_points = { 
+			7137 10 
+		}
+	}
+
+	provinces={
+		1018 4023 4121 4177 7044 7137 7192 10004 10050 10105 11926 11983 12023 
+	}
+}

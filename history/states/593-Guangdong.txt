@@ -1,0 +1,23 @@
+state= {
+	id=593
+	name="STATE_593"
+	manpower = 8402743
+	state_category = town
+	resources={
+		tungsten=20
+		steel= 20
+		chromium = 4
+	}
+
+	history= {
+		owner = MAN
+		add_core_of = MAN
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+	}
+	provinces={
+		1078 1120 1162 1202 4050 4165 4207 7067 7108 7141 7182 9938 9970 9978 9997 10080 12014 12095 
+	}
+}
