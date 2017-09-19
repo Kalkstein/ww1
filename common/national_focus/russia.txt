@@ -1,3 +1,5 @@
+### Made by Eagle020 ### 
+
 focus_tree = {
 	id = RUS_focus
 	
@@ -788,6 +790,62 @@ focus_tree = {
 	}
 	
 	focus = {
+		id = RUS_relations_with_persia
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = RUS_continue_the_great_game }
+		x = 31
+		y = 2
+		cost = 10
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_demand_concesion_from_persia
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = RUS_relations_with_persia }
+		x = 30
+		y = 3
+		cost = 10
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_integrate_persia
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = RUS_demand_concesion_from_persia }
+		x = 30
+		y = 4
+		cost = 10
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_demilitarize_northern_persia
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = RUS_demand_concesion_from_persia }
+		x = 31
+		y = 3
+		cost = 10
+		completion_reward = {
+		}
+	}
+	
+	
+	focus = {
+		id = RUS_conquer_persia
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = RUS_demand_concesion_from_persia }
+		x = 31
+		y = 4
+		cost = 10
+		completion_reward = {
+		}
+	}
+	
+	focus = {
 		id = RUS_diplomatic_relations_with_afghanistan
 		icon = GFX_goal_support_fascism
 		prerequisite = { focus = RUS_continue_the_great_game }
@@ -799,17 +857,108 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = RUS_d
+		id = RUS_military_in_afghanistan
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = RUS_diplomatic_relations_with_afghanistan }
+		x = 33
+		y = 3
+		cost = 10
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_puppet_afghanistan
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = RUS_military_in_afghanistan }
+		x = 33
+		y = 4
+		cost = 10
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_intervention_in_china
 		icon = GFX_goal_support_fascism
 		prerequisite = { focus = RUS_continue_the_great_game }
-		x = 33
+		x = 35
 		y = 2
 		cost = 10
 		completion_reward = {
 		}
 	}
 	
+	focus = {
+		id = RUS_conquer_mongolia
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = RUS_intervention_in_china }
+		x = 35
+		y = 3
+		cost = 10
+		completion_reward = {
+		}
+	}
 	
+	
+	focus = {
+		id = RUS_canadian_independence
+		x = 50
+		y = 1
+		cost = 10
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_intervene_mexico
+		x = 52
+		y = 1
+		cost = 10
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_monroe_doctrine
+		prerequisite = { focus = RUS_intervene_mexico 
+						 focus = RUS_canadian_independence }
+		x = 51
+		y = 2
+		cost = 10
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_america1
+		prerequisite = { focus = RUS_monroe_doctrine }
+		x = 49
+		y = 3
+		cost = 10
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_america2
+		prerequisite = { focus = RUS_monroe_doctrine }
+		x = 51
+		y = 3
+		cost = 10
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_america3
+		prerequisite = { focus = RUS_monroe_doctrine }
+		x = 53
+		y = 3
+		cost = 10
+		completion_reward = {
+		}
+	}
 
 	
 }
