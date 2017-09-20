@@ -1096,7 +1096,7 @@ focus_tree = {
 	
 	focus = {
 		id = USA_american_industry
-		icon = GFX_goal_support_fascism
+		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = USA_domestic_policy }
 		x = 42
 		y = 1
@@ -1108,7 +1108,7 @@ focus_tree = {
 	
 	focus = {
 		id = USA_railroads_1
-		icon = GFX_goal_support_fascism
+		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = USA_american_industry }
 		x = 39
 		y = 2
@@ -1120,7 +1120,7 @@ focus_tree = {
 	
 	focus = {
 		id = USA_railroads_2
-		icon = GFX_goal_support_fascism
+		icon = GFX_goal_generic_construct_civilian
 		prerequisite = { focus = USA_railroads_1 }
 		x = 38
 		y = 3
@@ -1132,7 +1132,7 @@ focus_tree = {
 	
 	focus = {
 		id = USA_industrial_effort
-		icon = GFX_goal_support_fascism
+		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = USA_railroads_1 }
 		x = 40
 		y = 3
@@ -1144,7 +1144,7 @@ focus_tree = {
 	
 	focus = {
 		id = USA_industrial_effort_2
-		icon = GFX_goal_support_fascism
+		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = USA_industrial_effort }
 		x = 40
 		y = 4
@@ -1156,7 +1156,7 @@ focus_tree = {
 	
 	focus = {
 		id = USA_industrial_effort_3
-		icon = GFX_goal_support_fascism
+		icon = GFX_goal_generic_construct_civilian
 		prerequisite = { focus = USA_industrial_effort_2 }
 		x = 40
 		y = 5
@@ -1168,7 +1168,7 @@ focus_tree = {
 	
 	focus = {
 		id = USA_armament_effort_1
-		icon = GFX_goal_support_fascism
+		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = USA_american_industry }
 		x = 42
 		y = 2
@@ -1180,7 +1180,7 @@ focus_tree = {
 	
 	focus = {
 		id = USA_armament_effort_2
-		icon = GFX_goal_support_fascism
+		icon = GFX_goal_generic_production
 		prerequisite = { focus = USA_armament_effort_1 }
 		x = 42
 		y = 3
@@ -1192,7 +1192,7 @@ focus_tree = {
 	
 	focus = {
 		id = USA_armament_effort_3
-		icon = GFX_goal_support_fascism
+		icon = GFX_goal_generic_construct_civilian
 		prerequisite = { focus = USA_armament_effort_2 }
 		x = 42
 		y = 4
@@ -1202,10 +1202,9 @@ focus_tree = {
 		}
 	}
 	
-	
 	focus = {
 		id = USA_canal_work
-		icon = GFX_goal_support_fascism
+		icon = GFX_goal_generic_production
 		prerequisite = { focus = USA_isthmus_influence }
 		prerequisite = { focus = USA_railroads_2 }
 		x = 36
@@ -1257,6 +1256,18 @@ focus_tree = {
 	}
 	
 	focus = {
+		id = USA_the_constitution
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = USA_domestic_policy }
+		x = 46
+		y = 2
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
 		id = USA_indiviualism
 		icon = GFX_goal_support_fascism
 		prerequisite = { focus = USA_the_american_dream }
@@ -1274,6 +1285,265 @@ focus_tree = {
 		prerequisite = { focus = USA_indiviualism }
 		x = 37
 		y = 8
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_nativism
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = USA_the_american_dream }
+		x = 35
+		y = 7
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA-immigration_act
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = USA_nativism }
+		x = 35
+		y = 8
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_seperation_of_power
+		icon = GFX_goal_generic_major_alliance
+		prerequisite = { focus = USA_the_constitution }
+		x = 44
+		y = 3
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_the_bully_pulpit
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = USA_seperation_of_power }
+		x = 44
+		y = 4
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_constitunal_covention
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = USA_the_bully_pulpit }
+		mutually_exclusive = { focus = USA_empower_congress }
+		x = 44
+		y = 5
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_empower_congress
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = USA_the_bully_pulpit }
+		mutually_exclusive = { focus = USA_constitunal_covention }
+		x = 46
+		y = 5
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_loose_constructioism
+		icon = GFX_goal_generic_major_alliance
+		prerequisite = { focus = USA_empower_congress }
+		mutually_exclusive = { focus = USA_strict_constructioism }
+		x = 46
+		y = 6
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_home_of_free
+		icon = GFX_goal_support_democracy
+		prerequisite = { focus = USA_loose_constructioism }
+		x = 46
+		y = 7
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_strict_constructioism
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = USA_empower_congress }
+		mutually_exclusive = { focus = USA_loose_constructioism }
+		x = 48
+		y = 6
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_land_of_brave
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = USA_strict_constructioism }
+		x = 48
+		y = 7
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_peoples_revolution
+		icon = GFX_goal_support_communism
+		prerequisite = { focus = USA_constitunal_covention }
+		mutually_exclusive = { focus = USA_embrace_plutocracy }
+		x = 44
+		y = 6
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_embrace_plutocracy
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = USA_constitunal_covention }
+		mutually_exclusive = { focus = USA_peoples_revolution }
+		x = 42
+		y = 6
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_rent_seeking
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = USA_embrace_plutocracy }
+		prerequisite = { focus = USA_robber_barons }
+		x = 41
+		y = 7
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_bosses_of_the_senate
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = USA_rent_seeking }
+		x = 41
+		y = 8
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_the_wobblies
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = USA_peoples_revolution }
+		x = 44
+		y = 7
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_one_big_union
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = USA_the_wobblies }
+		x = 44
+		y = 8
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_amendment_xvi
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = USA_the_constitution }
+		x = 46
+		y = 3
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_amendment_xvii
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = USA_amendment_xvi }
+		x = 46
+		y = 4
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_new_mexico_statehood
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = { focus = USA_the_constitution }
+		x = 48
+		y = 3
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_arizona_statehood
+		icon = GFX_goal_generic_position_armies
+		prerequisite = { focus = USA_new_mexico_statehood }
+		x = 48
+		y = 4
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_federal_reserve_act
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = USA_the_bully_pulpit }
+		x = 48
+		y = 5
 		cost = 10
 		completion_reward = {
 			
