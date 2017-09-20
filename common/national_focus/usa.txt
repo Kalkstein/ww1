@@ -27,7 +27,7 @@ focus_tree = {
 	
 	focus = {
 		id = USA_european_affairs
-		icon = GFX_goal_support_fascism
+		icon = GFX_goal_generic_position_armies
 		prerequisite = { focus = USA_foregin_policy }
 		x = 2
 		y = 1
@@ -39,7 +39,7 @@ focus_tree = {
 	
 	focus = {
 		id = USA_preparedness_movement
-		icon = GFX_goal_support_fascism
+		icon = GFX_goal_generic_build_tank
 		prerequisite = { focus = USA_european_affairs }
 		x = 4
 		y = 2
@@ -51,7 +51,7 @@ focus_tree = {
 	
 	focus = {
 		id = USA_a_war_to_end_all_wars
-		icon = GFX_goal_support_fascism
+		icon = GFX_goal_generic_special_forces
 		prerequisite = { focus = USA_preparedness_movement }
 		mutually_exclusive = { focus = USA_return_to_normal }
 		x = 3
@@ -64,7 +64,7 @@ focus_tree = {
 	
 	focus = {
 		id = USA_return_to_normal
-		icon = GFX_goal_support_fascism
+		icon = GFX_goal_generic_consumer_goods
 		prerequisite = { focus = USA_preparedness_movement }
 		mutually_exclusive = { focus = USA_a_war_to_end_all_wars }
 		x = 5
@@ -89,7 +89,7 @@ focus_tree = {
 	
 	focus = {
 		id = USA_dollar_diplomacy
-		icon = GFX_goal_support_fascism
+		icon = GFX_goal_generic_secret_weapon
 		prerequisite = { focus = USA_isolationism }
 		x = 5
 		y = 6
@@ -101,7 +101,7 @@ focus_tree = {
 	
 	focus = {
 		id = USA_collective_security
-		icon = GFX_goal_support_fascism
+		icon = GFX_goal_generic_position_armies
 		prerequisite = { focus = USA_european_affairs }
 		x = 0
 		y = 2
@@ -113,7 +113,7 @@ focus_tree = {
 	
 	focus = {
 		id = USA_league_of_nations
-		icon = GFX_goal_support_fascism
+		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = USA_collective_security }
 		x = 0
 		y = 3
@@ -125,7 +125,7 @@ focus_tree = {
 	
 	focus = {
 		id = USA_support_britain
-		icon = GFX_goal_support_fascism
+		icon =  GFX_focus_secret_rearmament
 		prerequisite = { focus = USA_a_war_to_end_all_wars }
 		x = 0
 		y = 4
@@ -137,7 +137,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_defend_the_entente
-		icon = GFX_goal_support_fascism
+		icon = GFX_goal_generic_defence
 		prerequisite = { focus = USA_support_britain }
 		x = 0
 		y = 5
@@ -149,7 +149,7 @@ focus_tree = {
 	
 	focus = {
 		id = USA_the_inquiry
-		icon = GFX_goal_support_fascism
+		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = USA_defend_the_entente	
 						 focus = USA_defend_the_germans }
 		x = 0
@@ -162,7 +162,7 @@ focus_tree = {
 	
 	focus = {
 		id = USA_bonus_army
-		icon = GFX_goal_support_fascism
+		icon = GFX_goal_generic_army_doctrines
 		prerequisite = { focus = USA_the_inquiry}
 		x = 0
 		y = 7
@@ -186,7 +186,7 @@ focus_tree = {
 	
 	focus = {
 		id = USA_defend_the_germans
-		icon = GFX_goal_support_fascism
+		icon = GFX_goal_generic_defence
 		prerequisite = { focus = USA_support_germany }
 		x = 2
 		y = 5
@@ -198,7 +198,7 @@ focus_tree = {
 	
 	focus = {
 		id = USA_mobilization
-		icon = GFX_goal_support_fascism
+		icon = GFX_goal_generic_allies_build_infantry
 		prerequisite = { focus = USA_defend_the_entente	
 						 focus = USA_defend_the_germans }
 		x = 2
@@ -211,7 +211,7 @@ focus_tree = {
 	
 	focus = {
 		id = USA_liberty_bonds
-		icon = GFX_goal_support_fascism
+		icon = GFX_goal_support_democracy
 		prerequisite = { focus = USA_mobilization }
 		x = 2
 		y = 7
@@ -235,7 +235,7 @@ focus_tree = {
 	
 	focus = {
 		id = USA_sedition_act
-		icon = GFX_goal_support_fascism
+		icon = GFX_goal_generic_more_territorial_claims
 		prerequisite = { focus = USA_espionage_act }
 		x = 1
 		y = 9
@@ -247,7 +247,7 @@ focus_tree = {
 	
 	focus = {
 		id = USA_lever_food_act
-		icon = GFX_goal_support_fascism
+		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = USA_liberty_bonds }
 		x = 3
 		y = 8
