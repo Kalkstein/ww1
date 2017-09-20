@@ -301,7 +301,11 @@ focus_tree = {
 		y = 3
 		cost = 10
 		completion_reward = {
-			
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 1
+				category = air_doctrine
+			}
 		}
 	}
 	
@@ -313,7 +317,11 @@ focus_tree = {
 		y = 4
 		cost = 10
 		completion_reward = {
-			
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 1
+				category = air_doctrine
+			}
 		}
 	}
 	
@@ -325,7 +333,11 @@ focus_tree = {
 		y = 5
 		cost = 10
 		completion_reward = {
-			
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 1
+				category = air_doctrine
+			}
 		}
 	}
 	
@@ -337,7 +349,11 @@ focus_tree = {
 		y = 3
 		cost = 10
 		completion_reward = {
-			
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 1
+				category = light_fighter
+			}
 		}
 	}
 	
@@ -349,7 +365,11 @@ focus_tree = {
 		y = 4
 		cost = 10
 		completion_reward = {
-			
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 1
+				category = light_fighter
+			}
 		}
 	}
 	
@@ -361,7 +381,11 @@ focus_tree = {
 		y = 3
 		cost = 10
 		completion_reward = {
-			
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 1
+				category = tactical_bomber
+			}
 		}
 	}
 	
@@ -373,7 +397,11 @@ focus_tree = {
 		y = 4
 		cost = 10
 		completion_reward = {
-			
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 1
+				category = tactical_bomber
+			}
 		}
 	}
 	
@@ -386,7 +414,12 @@ focus_tree = {
 		y = 5
 		cost = 10
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = GER_modern_planes
+				bonus = 0.50
+				uses = 1
+				category = cas_bomber
+			}
 		}
 	}
 	
@@ -410,7 +443,11 @@ focus_tree = {
 		y = 3
 		cost = 10
 		completion_reward = {
-			
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 1
+				category = naval_doctrine
+			}
 		}
 	}
 	
@@ -422,7 +459,11 @@ focus_tree = {
 		y = 4
 		cost = 10
 		completion_reward = {
-			
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 1
+				category = naval_doctrine
+			}
 		}
 	}
 	
@@ -434,7 +475,11 @@ focus_tree = {
 		y = 5
 		cost = 10
 		completion_reward = {
-			
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 1
+				category = naval_doctrine
+			}
 		}
 	}
 	
@@ -459,7 +504,11 @@ focus_tree = {
 		y = 4
 		cost = 10
 		completion_reward = {
-			
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 1
+				category = dd_tech
+			}
 		}
 	}
 	
@@ -471,7 +520,11 @@ focus_tree = {
 		y = 5
 		cost = 10
 		completion_reward = {
-			
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 1
+				category = cl_tech
+			}
 		}
 	}
 	
@@ -484,7 +537,11 @@ focus_tree = {
 		y = 4
 		cost = 10
 		completion_reward = {
-			
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 1
+				category = ca_tech
+			}
 		}
 	}
 	
@@ -496,7 +553,11 @@ focus_tree = {
 		y = 5
 		cost = 10
 		completion_reward = {
-			
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 1
+				category = bb_tech
+			}
 		}
 	}
 	
@@ -534,7 +595,11 @@ focus_tree = {
 		y = 3
 		cost = 10
 		completion_reward = {
-			
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 1
+				category = land_doctrine
+			}
 		}
 	}
 	
@@ -546,7 +611,11 @@ focus_tree = {
 		y = 4
 		cost = 10
 		completion_reward = {
-			
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 1
+				category = land_doctrine
+			}
 		}
 	}
 	
@@ -558,7 +627,11 @@ focus_tree = {
 		y = 3
 		cost = 10
 		completion_reward = {
-			
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 1
+				category = infantry_weapons
+			}
 		}
 	}
 	
@@ -570,7 +643,11 @@ focus_tree = {
 		y = 4
 		cost = 10
 		completion_reward = {
-			
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 1
+				category = infantry_weapons
+			}
 		}
 	}
 	
@@ -582,7 +659,11 @@ focus_tree = {
 		y = 3
 		cost = 10
 		completion_reward = {
-			
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 1
+				category = artillery
+			}
 		}
 	}
 	
@@ -594,7 +675,11 @@ focus_tree = {
 		y = 4
 		cost = 10
 		completion_reward = {
-			
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 1
+				category = heavy_artillery
+			}
 		}
 	}
 	
@@ -765,18 +850,6 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = USA_isthmus_influence
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = USA_central_america }
-		x = 35
-		y = 3
-		cost = 10
-		completion_reward = {
-			
-		}
-	}
-	
-	focus = {
 		id = USA_new_world_faction
 		icon = GFX_goal_anschluss
 		prerequisite = { focus = USA_dollar_diplomacy }
@@ -823,11 +896,21 @@ focus_tree = {
 		id = USA_war_plan_white
 		icon = GFX_goal_generic_position_armies
 		prerequisite = { focus = USA_moral_diplomacy }
+		available = {
+			country_exists = SOV
+			OR = {
+				SOV = { has_offensive_war = yes }
+				communism > 0.3
+			}
+			NOT = { has_government = communism }
+		}
 		x = 12
 		y = 9
 		cost = 10
 		completion_reward = {
-			
+			SOV = {
+				add_opinion_modifier = { target = USA modifier = war_plan_white }
+			}
 		}
 	}
 	
@@ -835,6 +918,13 @@ focus_tree = {
 		id = USA_supress_socialism
 		icon = GFX_goal_support_communism
 		prerequisite = { focus = USA_war_plan_white }
+		available = {
+			country_exists = SOV
+			OR = {
+				SOV = { has_added_tension_amount > 30 }
+				threat > 0.6
+			}
+		}
 		x = 11
 		y = 10
 		cost = 10
@@ -863,7 +953,9 @@ focus_tree = {
 		y = 9
 		cost = 10
 		completion_reward = {
-			
+			GER = {
+				add_opinion_modifier = { target = USA modifier = war_plan_black }
+			}
 		}
 	}
 	
@@ -875,7 +967,9 @@ focus_tree = {
 		y = 10
 		cost = 10
 		completion_reward = {
-			
+			GER = { 
+				add_opinion_modifier = { target = USA modifier = embargo } 
+			}
 		}
 	}
 	
@@ -887,7 +981,10 @@ focus_tree = {
 		y = 11
 		cost = 10
 		completion_reward = {
-			
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = GER
+			}
 		}
 	}
 	
@@ -923,7 +1020,10 @@ focus_tree = {
 		y = 11
 		cost = 10
 		completion_reward = {
-			
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = FRA
+			}
 		}
 	}
 	
@@ -935,7 +1035,9 @@ focus_tree = {
 		y = 9
 		cost = 10
 		completion_reward = {
-			
+			ENG = {
+				add_opinion_modifier = { target = USA modifier = war_plan_red }
+			}
 		}
 	}
 	
@@ -947,7 +1049,9 @@ focus_tree = {
 		y = 10
 		cost = 10
 		completion_reward = {
-			
+			ENG = {
+				add_opinion_modifier = { target = USA modifier = embargo }
+			}
 		}
 	}
 	
@@ -959,10 +1063,222 @@ focus_tree = {
 		y = 11
 		cost = 10
 		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = ENG
+				generator = { 689 690 693 308 691 692 696 } # Carribean Islands
+			}
+		}
+	}
+	
+	focus = {
+		id = USA_isthmus_influence
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = USA_central_america }
+		x = 35
+		y = 3
+		cost = 10
+		completion_reward = {
 			
 		}
 	}
 	
+	focus = {
+		id = USA_domestic_policy
+		icon = GFX_goal_support_fascism
+		x = 44
+		y = 0
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_american_industry
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = USA_domestic_policy }
+		x = 42
+		y = 1
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_railroads_1
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = USA_american_industry }
+		x = 39
+		y = 2
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_railroads_2
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = USA_railroads_1 }
+		x = 38
+		y = 3
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_industrial_effort
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = USA_railroads_1 }
+		x = 40
+		y = 3
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_industrial_effort_2
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = USA_industrial_effort }
+		x = 40
+		y = 4
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_industrial_effort_3
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = USA_industrial_effort_2 }
+		x = 40
+		y = 5
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_armament_effort_1
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = USA_american_industry }
+		x = 42
+		y = 2
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_armament_effort_2
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = USA_armament_effort_1 }
+		x = 42
+		y = 3
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_armament_effort_3
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = USA_armament_effort_2 }
+		x = 42
+		y = 4
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	
+	focus = {
+		id = USA_canal_work
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = USA_isthmus_influence }
+		prerequisite = { focus = USA_railroads_2 }
+		x = 36
+		y = 4
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_the_jones_act
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = USA_canal_work }
+		x = 36
+		y = 5
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_robber_barons
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = USA_the_jones_act }
+		prerequisite = { focus = USA_industrial_effort_3 }
+		mutually_exclusive = { focus = USA_the_american_dream }
+		x = 39
+		y = 6
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_the_american_dream
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = USA_the_jones_act }
+		prerequisite = { focus = USA_industrial_effort_3 }
+		mutually_exclusive = { focus = USA_robber_barons }
+		x = 37
+		y = 6
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_indiviualism
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = USA_the_american_dream }
+		x = 37
+		y = 7
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_personal_thought
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus = USA_indiviualism }
+		x = 37
+		y = 8
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
 }
 	
 	
