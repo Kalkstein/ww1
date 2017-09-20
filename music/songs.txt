@@ -8,369 +8,445 @@ music = {
 	}
 }
 
-# PEACE SONGS ##################
+# ALL SONGS ##################
 
 music = {
-	song = "florentiner_marsch"
-	
+	song = "alexander_march"
 	chance = {
 		modifier = {
 			factor = 1
-
-			has_war = no
-			NOT = {
-				has_government = democratic
-			}
 		}		
 	}	
 }
 
 music = {
-	song = "o_du_mein_osterreich"
-	
+	song = "belorussky_hussar_march"
 	chance = {
 		modifier = {
 			factor = 1
-
-			has_war = no
-			NOT = {
-				has_government = democratic
-			}
 		}		
 	}	
 }
 
 music = {
-	song = "silberkondor"
-	
+	song = "borodino_march"
 	chance = {
 		modifier = {
 			factor = 1
-
-			has_war = no
-			NOT = {
-				has_government = democratic
-			}
-		}		
-	}	
-}
-
-music = {
-	song = "tiroler_holzhackerbuam_marsch"
-	
-	chance = {
-		modifier = {
-			factor = 1
-
-			has_war = no
-			NOT = {
-				has_government = democratic
-			}
-		}		
-	}	
-}
-
-music = {
-	song = "wein_bleibt_wein"
-	
-	chance = {
-		modifier = {
-			factor = 1
-
-			has_war = no
-			NOT = {
-				has_government = democratic
-			}
-		}		
-	}	
-}
-
-music = {
-	song = "zum_stadtele_hinaus"
-	
-	chance = {
-		modifier = {
-			factor = 1
-
-			has_war = no
-			NOT = {
-				has_government = democratic
-			}
 		}		
 	}	
 }
 
 music = {
 	song = "colonel_bogey_march"
-	
 	chance = {
 		modifier = {
 			factor = 1
-
-			has_war = no
-			NOT = {
-				has_government = fascism
-			}
-		}		
-	}	
-}
-
-music = {
-	song = "its_a_long_way_to_tipperary"
-	
-	chance = {
-		modifier = {
-			factor = 1
-
-			has_war = no
-			NOT = {
-				has_government = fascism
-			}
-		}		
-	}	
-}
-
-music = {
-	song = "put_on_your_old_grey_bonnet"
-	
-	chance = {
-		modifier = {
-			factor = 1
-
-			has_war = no
-			NOT = {
-				has_government = fascism
-			}
-		}		
-	}	
-}
-
-music = {
-	song = "the_great_little_army"
-	
-	chance = {
-		modifier = {
-			factor = 1
-
-			has_war = no
-			NOT = {
-				has_government = fascism
-			}
-		}		
-	}	
-}
-
-music = {
-	song = "the_middy_march"
-	
-	chance = {
-		modifier = {
-			factor = 1
-
-			has_war = no
-			NOT = {
-				has_government = fascism
-			}
-		}		
-	}	
-}
-
-music = {
-	song = "the_thin_red_line"
-	
-	chance = {
-		modifier = {
-			factor = 1
-
-			has_war = no
-			NOT = {
-				has_government = fascism
-			}
-		}		
-	}	
-}
-
-# WAR SONGS ####################
-
-music = {
-	song = "erzherzog_albrecht_marsch"
-	
-	chance = {
-		modifier = {
-			factor = 1
-
-			has_war = yes
-			NOT = {
-				has_government = democratic
-			}
-		}		
-	}	
-}
-
-music = {
-	song = "fridericus_rex_grenadiermarsch"
-	
-	chance = {
-		modifier = {
-			factor = 1
-
-			has_war = yes
-			NOT = {
-				has_government = democratic
-			}
-		}		
-	}	
-}
-
-music = {
-	song = "hoch_und_deutschmeister_marsch"
-	
-	chance = {
-		modifier = {
-			factor = 1
-
-			has_war = yes
-			NOT = {
-				has_government = democratic
-			}
-		}		
-	}	
-}
-
-music = {
-	song = "koniggratzer_marsch"
-	
-	chance = {
-		modifier = {
-			factor = 1
-
-			has_war = yes
-			NOT = {
-				has_government = democratic
-			}
-		}		
-	}	
-}
-
-music = {
-	song = "radetzky_marsch"
-	
-	chance = {
-		modifier = {
-			factor = 1
-
-			has_war = yes
-			NOT = {
-				has_government = democratic
-			}
-		}		
-	}	
-}
-
-music = {
-	song = "unter_dem_doppeladler"
-	
-	chance = {
-		modifier = {
-			factor = 1
-
-			has_war = yes
-			NOT = {
-				has_government = democratic
-			}
 		}		
 	}	
 }
 
 music = {
 	song = "dunedin"
-	
 	chance = {
 		modifier = {
 			factor = 1
+		}		
+	}	
+}
 
-			has_war = yes
-			NOT = {
-				has_government = fascism
-			}
+music = {
+	song = "erzherzog_albrecht_marsch"
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}	
+}
+
+music = {
+	song = "farewell_of_slovianka"
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}	
+}
+
+music = {
+	song = "florentiner_marsch"
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}	
+}
+
+music = {
+	song = "foshay_tower_washington_memorial"
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}	
+}
+
+music = {
+	song = "fridericus_rex_grenadiermarsch"
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}	
+}
+
+music = {
+	song = "grenadier_march"
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}	
+}
+
+music = {
+	song = "hands_across_the_sea"
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}	
+}
+
+music = {
+	song = "high_school_cadets"
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}	
+}
+
+music = {
+	song = "hoch_und_deutschmeister_marsch"
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}	
+}
+
+music = {
+	song = "its_a_long_way_to_tipperary"
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}	
+}
+
+music = {
+	song = "koniggratzer_marsch"
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}	
+}
+
+music = {
+	song = "nc_4_march"
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}	
+}
+
+music = {
+	song = "o_du_mein_osterreich"
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}	
+}
+
+music = {
+	song = "on_the_mall"
+	chance = {
+		modifier = {
+			factor = 1
 		}		
 	}	
 }
 
 music = {
 	song = "over_there"
-	
 	chance = {
 		modifier = {
 			factor = 1
-
-			has_war = yes
-			USA = {
-				has_war = yes
-			}
-			NOT = {
-				has_government = fascism
-			}
 		}		
 	}	
 }
 
 music = {
 	song = "pack_up_your_troubles_in_your_old_kit_bag"
-	
 	chance = {
 		modifier = {
 			factor = 1
+		}		
+	}	
+}
 
-			has_war = yes
-			NOT = {
-				has_government = fascism
-			}
+music = {
+	song = "put_on_your_old_grey_bonnet"
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}	
+}
+
+music = {
+	song = "quick_march"
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}	
+}
+
+music = {
+	song = "radetzky_marsch"
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}	
+}
+
+music = {
+	song = "russian_grosser_zapfernstreich"
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}	
+}
+
+music = {
+	song = "russian_jeager_march"
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}	
+}
+
+music = {
+	song = "saratov_infantry_march"
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}	
+}
+
+music = {
+	song = "semenovsky_march"
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}	
+}
+
+music = {
+	song = "semper_fidelis"
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}	
+}
+
+music = {
+	song = "silberkondor"
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}	
+}
+
+music = {
+	song = "smolensk_uhlans_march"
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}	
+}
+
+music = {
+	song = "the_billboard"
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}	
+}
+
+music = {
+	song = "the_great_little_army"
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}	
+}
+
+music = {
+	song = "the_liberty_bell"
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}	
+}
+
+music = {
+	song = "the_middy_march"
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}	
+}
+
+music = {
+	song = "the_pechora_infantry_march"
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}	
+}
+
+music = {
+	song = "the_purple_carnival"
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}	
+}
+
+music = {
+	song = "the_siegfried_line"
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}	
+}
+
+music = {
+	song = "the_thin_red_line"
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}	
+}
+
+music = {
+	song = "the_thunderer"
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}	
+}
+
+music = {
+	song = "the_us_air_force_march"
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}	
+}
+
+music = {
+	song = "the_us_field_artillery_march"
+	chance = {
+		modifier = {
+			factor = 1
 		}		
 	}	
 }
 
 music = {
 	song = "the_vanished_army"
-	
 	chance = {
 		modifier = {
 			factor = 1
-
-			has_war = yes
-			NOT = {
-				has_government = fascism
-			}
 		}		
 	}	
 }
 
 music = {
 	song = "the_vedette"
-	
 	chance = {
 		modifier = {
 			factor = 1
-
-			has_war = yes
-			NOT = {
-				has_government = fascism
-			}
 		}		
 	}	
 }
 
 music = {
 	song = "the_voice_of_the_guns"
-	
 	chance = {
 		modifier = {
 			factor = 1
+		}		
+	}	
+}
 
-			has_war = yes
-			NOT = {
-				has_government = fascism
-			}
+music = {
+	song = "tiroler_holzhackerbuam_marsch"
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}	
+}
+
+music = {
+	song = "unter_dem_doppeladler"
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}	
+}
+
+music = {
+	song = "wein_bleibt_wein"
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}	
+}
+
+music = {
+	song = "zum_stadtele_hinaus"
+	chance = {
+		modifier = {
+			factor = 1
 		}		
 	}	
 }
