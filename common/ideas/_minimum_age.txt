@@ -59,8 +59,7 @@ ideas = {
 			}
 
 			modifier = {
-				conscription = 0.02
-				political_power_factor = 0.05
+				conscription = 0.03
 			}
 			
 			cancel_if_invalid = no
@@ -89,29 +88,6 @@ ideas = {
 			}
 
 			modifier = {
-				conscription = 0.03
-			}
-			
-			cancel_if_invalid = no
-		}
-		age_17 = {
-						
-			cost = 100
-			removal_cost = -1
-			level = 3
-			
-			available = {
-				AND = {
-					has_war = yes
-					enemies_strength_ratio > 1.25
-				}
-			}
-			
-			ai_will_do = {
-				factor = 1
-			}
-
-			modifier = {
 				conscription = 0.05
 				army_morale_factor = -0.1
 			}
@@ -122,7 +98,7 @@ ideas = {
 						
 			cost = 100
 			removal_cost = -1
-			level = 1
+			level = 3
 			
 			available = {
 				AND = {
@@ -141,7 +117,7 @@ ideas = {
 			}
 			
 			cancel_if_invalid = no
-		}
+		}		
 	}
 }
 		
