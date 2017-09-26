@@ -894,7 +894,7 @@ focus_tree = {
 		y = 7
 		cost = 10
 		completion_reward = {
-			
+			create_faction = NewWorldFaction
 		}
 	}
 	
@@ -909,7 +909,7 @@ focus_tree = {
 		y = 7
 		cost = 10
 		completion_reward = {
-			
+			add_ideas = undisturbed_isolation
 		}
 	}
 	
@@ -922,7 +922,7 @@ focus_tree = {
 		y = 8
 		cost = 10
 		completion_reward = {
-			
+			#set_rule = { can_guarantee_other_ideologies = no }
 		}
 	}
 	
@@ -963,7 +963,7 @@ focus_tree = {
 		y = 10
 		cost = 10
 		completion_reward = {
-			
+			add_ideas = supress_socialism
 		}
 	}
 	

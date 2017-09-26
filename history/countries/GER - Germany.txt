@@ -232,7 +232,6 @@ add_ideas = {
 	sour_loser
 	general_staff
 	limited_exports
-	limited_conscription
 	partial_economic_mobilisation
 }
 
