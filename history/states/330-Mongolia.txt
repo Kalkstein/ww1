@@ -26,6 +26,10 @@ state={
 			arms_factory = 1
 			industrial_complex = 3
 		}
+		1911.12.29 = {
+			owner = MON
+			controller = MON
+		}
 		add_core_of = MON
 	}
 
