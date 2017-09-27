@@ -491,7 +491,22 @@ focus_tree = {
 		y = 3
 		cost = 10
 		completion_reward = {
-			
+			random_owned_controlled_state = {
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -571,7 +586,22 @@ focus_tree = {
 		y = 6
 		cost = 10
 		completion_reward = {
-			
+			random_owned_controlled_state = {
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -694,7 +724,11 @@ focus_tree = {
 		y = 5
 		cost = 10
 		completion_reward = {
-			
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 1
+				category = support_tech
+			}
 		}
 	}
 	
@@ -860,7 +894,7 @@ focus_tree = {
 		y = 7
 		cost = 10
 		completion_reward = {
-			
+			create_faction = NewWorldFaction
 		}
 	}
 	
@@ -875,7 +909,7 @@ focus_tree = {
 		y = 7
 		cost = 10
 		completion_reward = {
-			
+			add_ideas = undisturbed_isolation
 		}
 	}
 	
@@ -888,7 +922,7 @@ focus_tree = {
 		y = 8
 		cost = 10
 		completion_reward = {
-			
+			#set_rule = { can_guarantee_other_ideologies = no }
 		}
 	}
 	
@@ -929,7 +963,7 @@ focus_tree = {
 		y = 10
 		cost = 10
 		completion_reward = {
-			
+			add_ideas = supress_socialism
 		}
 	}
 	
@@ -1102,7 +1136,11 @@ focus_tree = {
 		y = 1
 		cost = 10
 		completion_reward = {
-			
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 1
+				category = industry
+			}
 		}
 	}
 	
@@ -1114,7 +1152,33 @@ focus_tree = {
 		y = 2
 		cost = 10
 		completion_reward = {
-			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -1126,7 +1190,60 @@ focus_tree = {
 		y = 3
 		cost = 10
 		completion_reward = {
-			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -1138,7 +1255,36 @@ focus_tree = {
 		y = 3
 		cost = 10
 		completion_reward = {
-			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -1150,19 +1296,77 @@ focus_tree = {
 		y = 4
 		cost = 10
 		completion_reward = {
-			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
 	focus = {
 		id = USA_industrial_effort_3
-		icon = GFX_goal_generic_construct_civilian
+		icon = GFX_goal_generic_production
 		prerequisite = { focus = USA_industrial_effort_2 }
 		x = 40
 		y = 5
 		cost = 10
 		completion_reward = {
-			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -1174,7 +1378,36 @@ focus_tree = {
 		y = 2
 		cost = 10
 		completion_reward = {
-			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -1186,7 +1419,36 @@ focus_tree = {
 		y = 3
 		cost = 10
 		completion_reward = {
-			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -1198,13 +1460,42 @@ focus_tree = {
 		y = 4
 		cost = 10
 		completion_reward = {
-			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
 	focus = {
 		id = USA_canal_work
-		icon = GFX_goal_generic_production
+		icon = GFX_goal_generic_construct_civilian
 		prerequisite = { focus = USA_isthmus_influence }
 		prerequisite = { focus = USA_railroads_2 }
 		x = 36
@@ -1217,7 +1508,7 @@ focus_tree = {
 	
 	focus = {
 		id = USA_the_jones_act
-		icon = GFX_goal_support_fascism
+		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = USA_canal_work }
 		x = 36
 		y = 5
@@ -1229,7 +1520,7 @@ focus_tree = {
 	
 	focus = {
 		id = USA_robber_barons
-		icon = GFX_goal_support_fascism
+		icon = GFX_goal_generic_oil_refinery
 		prerequisite = { focus = USA_the_jones_act }
 		prerequisite = { focus = USA_industrial_effort_3 }
 		mutually_exclusive = { focus = USA_the_american_dream }
@@ -1243,7 +1534,7 @@ focus_tree = {
 	
 	focus = {
 		id = USA_the_american_dream
-		icon = GFX_goal_support_fascism
+		icon = GFX_goal_generic_territory_or_war
 		prerequisite = { focus = USA_the_jones_act }
 		prerequisite = { focus = USA_industrial_effort_3 }
 		mutually_exclusive = { focus = USA_robber_barons }
@@ -1256,20 +1547,8 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = USA_the_constitution
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = USA_domestic_policy }
-		x = 46
-		y = 2
-		cost = 10
-		completion_reward = {
-			
-		}
-	}
-	
-	focus = {
 		id = USA_indiviualism
-		icon = GFX_goal_support_fascism
+		icon = GFX_goal_support_democracy
 		prerequisite = { focus = USA_the_american_dream }
 		x = 37
 		y = 7
@@ -1281,7 +1560,7 @@ focus_tree = {
 	
 	focus = {
 		id = USA_personal_thought
-		icon = GFX_goal_support_fascism
+		icon = GFX_goal_generic_demand_territory
 		prerequisite = { focus = USA_indiviualism }
 		x = 37
 		y = 8
@@ -1293,7 +1572,7 @@ focus_tree = {
 	
 	focus = {
 		id = USA_nativism
-		icon = GFX_goal_support_fascism
+		icon = GFX_goal_generic_major_alliance
 		prerequisite = { focus = USA_the_american_dream }
 		x = 35
 		y = 7
@@ -1304,11 +1583,23 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = USA-immigration_act
-		icon = GFX_goal_support_fascism
+		id = USA_immigration_act
+		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = USA_nativism }
 		x = 35
 		y = 8
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = USA_the_constitution
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = USA_domestic_policy }
+		x = 46
+		y = 2
 		cost = 10
 		completion_reward = {
 			
@@ -1329,7 +1620,7 @@ focus_tree = {
 	
 	focus = {
 		id = USA_the_bully_pulpit
-		icon = GFX_goal_support_fascism
+		icon = GFX_goal_generic_special_forces
 		prerequisite = { focus = USA_seperation_of_power }
 		x = 44
 		y = 4
@@ -1341,7 +1632,7 @@ focus_tree = {
 	
 	focus = {
 		id = USA_constitunal_covention
-		icon = GFX_goal_support_fascism
+		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = USA_the_bully_pulpit }
 		mutually_exclusive = { focus = USA_empower_congress }
 		x = 44
@@ -1354,7 +1645,7 @@ focus_tree = {
 	
 	focus = {
 		id = USA_empower_congress
-		icon = GFX_goal_support_fascism
+		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = USA_the_bully_pulpit }
 		mutually_exclusive = { focus = USA_constitunal_covention }
 		x = 46
@@ -1443,7 +1734,7 @@ focus_tree = {
 	
 	focus = {
 		id = USA_rent_seeking
-		icon = GFX_goal_support_fascism
+		icon = GFX_goal_generic_more_territorial_claims
 		prerequisite = { focus = USA_embrace_plutocracy }
 		prerequisite = { focus = USA_robber_barons }
 		x = 41
@@ -1456,7 +1747,7 @@ focus_tree = {
 	
 	focus = {
 		id = USA_bosses_of_the_senate
-		icon = GFX_goal_support_fascism
+		icon = GFX_goal_generic_position_armies
 		prerequisite = { focus = USA_rent_seeking }
 		x = 41
 		y = 8
@@ -1504,7 +1795,7 @@ focus_tree = {
 	
 	focus = {
 		id = USA_amendment_xvii
-		icon = GFX_goal_support_fascism
+		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = USA_amendment_xvi }
 		x = 46
 		y = 4
@@ -1522,7 +1813,9 @@ focus_tree = {
 		y = 3
 		cost = 10
 		completion_reward = {
-			
+			376 = {
+				add_core_of = USA
+			}
 		}
 	}
 	
@@ -1534,7 +1827,9 @@ focus_tree = {
 		y = 4
 		cost = 10
 		completion_reward = {
-			
+			377 = {
+				add_core_of = USA
+			}
 		}
 	}
 	
