@@ -1,4 +1,4 @@
-### Made by Eagle020 ### 
+### Coded by Eagle020 ### 
 
 focus_tree = {
 	id = USA_focus
