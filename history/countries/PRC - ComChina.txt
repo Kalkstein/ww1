@@ -50,7 +50,7 @@ set_technology = {
 	add_ideas = {
 		#laws
 		tot_economic_mobilisation
-		service_by_requirement
+		
 		closed_economy
 	}
 	
@@ -136,7 +136,7 @@ set_politics = {
 
 add_ideas = {
 	closed_economy
-	service_by_requirement
+	
 	tot_economic_mobilisation
 }
 

@@ -65,19 +65,10 @@ give_guarantee = URG
 	
 	#adding ministers
 	add_ideas = {
-		USA_robert_taft
-		carl_spaatz
-		jimmy_doolittle
-		army_ordnance_department
-		general_electric
-		robert_goddard
-		USA_prepare_intervention
 
 		#laws
 		isolation
-		volunteer_only
-
-		new_deal
+		
 	}
 
 	#focuses
@@ -192,10 +183,7 @@ set_politics = {
 
 add_ideas = {
 	undisturbed_isolation
-	great_depression
-	disarmed_nation
 	free_trade
-	home_of_the_free
 }
 
 

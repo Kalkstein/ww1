@@ -1,0 +1,193 @@
+bookmarks = {
+	bookmark = {
+		name = "BLITZKRIEG_NAME"
+		desc = "BLITZKRIEG_DESC"
+		date = 1939.8.14.12
+		picture = "GFX_select_date_1939"
+		default_country = "GER"
+	
+		FRA = {
+			history = FRA_BLITZKRIEG_DESC
+			ideology = democratic
+			ideas={
+				
+			}
+			focuses = {
+				
+			}
+		}
+		USA = {
+			history = USA_BLITZKRIEG_DESC
+			ideology = democratic
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		ENG = {
+			history = ENG_BLITZKRIEG_DESC
+			ideology = democratic
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+			
+		}
+		GER = {
+			history = GER_BLITZKRIEG_DESC
+			ideology = fascism
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		ITA = {
+			history = ITA_BLITZKRIEG_DESC
+			ideology = fascism
+			ideas={
+				
+			}
+			focuses = {
+				
+			}			
+		}
+		JAP = {
+			history = JAP_BLITZKRIEG_DESC
+			ideology = fascism
+			ideas={
+				
+			}	
+			focuses = {
+				
+			}		
+		}
+		RUS = {
+			history = RUS_BLITZKRIEG_DESC
+			ideology = neutrality
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+
+		"---"={
+			history = "OTHER_BLITZKRIEG_DESC"
+		}
+
+		# minors from DLC ####
+		"POL"={
+			minor = yes
+			history = "POL_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"CAN"={
+			minor = yes
+			history = "CAN_BLITZKRIEG_DESC"
+			ideology = democratic
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"AST"={
+			minor = yes
+			history = "AST_BLITZKRIEG_DESC"
+			ideology = democratic
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"NZL"={
+			minor = yes
+			history = "NZL_BLITZKRIEG_DESC"
+			ideology = democratic
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"SAF"={
+			minor = yes
+			history = "SAF_BLITZKRIEG_DESC"
+			ideology = democratic
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"RAJ"={
+			minor = yes
+			history = "RAJ_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"HUN"={
+			minor = yes
+			history = "HUN_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+
+		"ROM"={
+			minor = yes
+			history = "ROM_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		
+		"YUG"={
+			minor = yes
+			history = "YUG_GATHERING_BLITZ_DESC"
+			ideology = neutrality
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+
+		effect = {
+			randomize_weather = 12345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

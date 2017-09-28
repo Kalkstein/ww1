@@ -9,7 +9,7 @@ set_research_slots = 4
 add_ideas = {
 	state_shintoism
 	limited_exports
-	limited_conscription
+	
 	partial_economic_mobilisation
 }
 
@@ -73,7 +73,7 @@ create_import = {
 
 		#laws
 		tot_economic_mobilisation
-		service_by_requirement
+		
 		closed_economy
 	}
 

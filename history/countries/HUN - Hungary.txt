@@ -20,7 +20,7 @@ if = {
 		has_dlc = "Death or Dishonor"
 	}
 	add_ideas = {
-		disarmed_nation
+		
 		HUN_treaty_of_triannon
 	}
 }
@@ -55,7 +55,7 @@ if = {
 		#Handle this manually
 		unlock_national_focus = HUN_renounce_the_treaty_of_trianon
 		add_ideas = {
-			limited_conscription
+			
 			HUN_treaty_of_triannon_3
 		}
 

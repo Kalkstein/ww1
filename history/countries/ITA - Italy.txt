@@ -8,7 +8,7 @@ add_ideas = {
 	victor_emmanuel
 	vittoria_mutilata
 	limited_exports
-	limited_conscription
+	
 	partial_economic_mobilisation
 }
 
@@ -66,7 +66,7 @@ set_technology = {
 
 		#laws
 		partial_economic_mobilisation
-		extensive_conscription
+		
 	}
 
 	complete_national_focus = ITA_ethiopian_war_logistics

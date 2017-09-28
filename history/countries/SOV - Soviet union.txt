@@ -50,7 +50,7 @@ set_technology = {
 
 		#laws
 		war_economy
-		extensive_conscription
+		
 	}
 
 	#purge stuff

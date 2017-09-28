@@ -115,7 +115,7 @@ set_politics = {
 
 add_ideas = {
 	neutrality_idea	
-	limited_conscription
+	
 }
 
 set_national_unity = 0.85

@@ -1,0 +1,17 @@
+### Made by Eagle020 ### 
+# Just to fix errors #
+
+focus_tree = {
+	id = GER_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = GER
+		}
+	}
+	
+	default = no
+}

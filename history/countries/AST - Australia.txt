@@ -69,7 +69,7 @@ if = {
 
 	add_ideas = {
 		#laws		
-		volunteer_only
+		
 		low_economic_mobilisation
 	}
 
