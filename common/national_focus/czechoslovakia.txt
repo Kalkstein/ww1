@@ -2,14 +2,14 @@
 # Just to fix errors #
 
 focus_tree = {
-	id = GER_focus
+	id = CZE_focus
 	
 	country = {
 		factor = 0
 		
 		modifier = {
 			add = 10
-			tag = GER
+			tag = CZE
 		}
 	}
 	
