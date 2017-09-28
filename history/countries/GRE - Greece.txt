@@ -1,6 +1,6 @@
 ﻿capital = 47
 
-oob = "GRE_1936"
+oob = "GRE_1910"
 
 set_research_slots = 3
 
@@ -39,7 +39,7 @@ set_convoys = 10
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
 	
-	oob = "GRE_1939"
+	oob = "GRE_1914"
 	set_technology = {
 		tech_support = 1		
 		tech_engineers = 1

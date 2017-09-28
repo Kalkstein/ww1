@@ -1,6 +1,6 @@
 ﻿capital = 266
 
-oob = "PER_1936"
+oob = "PER_1910"
 
 # Starting tech
 set_technology = {
@@ -26,7 +26,7 @@ set_technology = {
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
 	
-	oob = "PER_1939"
+	oob = "PER_1914"
 	set_technology = {
 		tech_support = 1
 		tech_recon = 1

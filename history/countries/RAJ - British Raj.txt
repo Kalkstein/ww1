@@ -1,6 +1,6 @@
 ﻿capital = 439
 
-oob = "RAJ_1936"
+oob = "RAJ_1910"
 
 # Starting tech
 set_technology = {
@@ -51,7 +51,7 @@ set_cosmetic_tag = RAJ_UK # British Raj
 	}
 
 	add_political_power = 1198
-	oob = "RAJ_1939"
+	oob = "RAJ_1914"
 
 	#generic focuses
 	complete_national_focus = army_effort

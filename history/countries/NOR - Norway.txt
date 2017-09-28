@@ -1,6 +1,6 @@
 ﻿capital = 110
 
-oob = "NOR_1936"
+oob = "NOR_1910"
 
 set_research_slots = 3
 
@@ -36,7 +36,7 @@ set_technology = {
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
 	
-	oob = "NOR_1939"
+	oob = "NOR_1914"
 	set_technology = {
 		gw_artillery = 1
 		interwar_artillery = 1

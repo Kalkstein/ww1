@@ -1,6 +1,6 @@
 ﻿capital = 622
 
-oob = "PRC_1936"
+oob = "PRC_1910"
 
 # Starting tech
 set_technology = {
@@ -11,7 +11,7 @@ set_technology = {
 1939.1.1 = {
 
 	add_political_power = 1198
-	oob = "PRC_1939"
+	oob = "PRC_1914"
 
 	#generic focuses
 	complete_national_focus = army_effort

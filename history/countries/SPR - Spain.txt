@@ -1,6 +1,6 @@
 ﻿capital = 41
 
-oob = "SPR_1936"
+oob = "SPR_1910"
 
 set_research_slots = 3
 
@@ -65,8 +65,7 @@ set_national_unity = 0.5
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
 	
-	oob = "SPA_1939"
-	load_oob = "unlock_tanks"
+	oob = "SPA_1914"
 	set_technology = {
 		fighter1 = 1
 		CAS1 = 1

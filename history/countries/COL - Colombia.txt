@@ -1,6 +1,6 @@
 ﻿capital = 306
 
-oob = "COL_1936"
+oob = "COL_1910"
 
 # Starting tech
 set_technology = {
@@ -31,7 +31,7 @@ set_convoys = 10
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
 	
-	oob = "COL_1939"
+	oob = "COL_1914"
 	set_technology = {
 		interwar_artillery = 1
 		infantry_weapons1 = 1

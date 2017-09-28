@@ -1,6 +1,6 @@
 ﻿capital = 440
 
-oob = "PAK_1936"
+oob = "PAK_1910"
 
 # Starting tech
 set_technology = {
@@ -28,7 +28,7 @@ set_convoys = 20
 	#generic focuses
 
 	add_political_power = 1198
-	oob = "PAK_1939"
+	oob = "PAK_1914"
 	
 	complete_national_focus = army_effort
 	complete_national_focus = equipment_effort

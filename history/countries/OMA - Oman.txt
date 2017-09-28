@@ -1,6 +1,6 @@
 ﻿capital = 294
 
-oob = "OMA_1936"
+oob = "OMA_1910"
 
 # Starting tech
 set_technology = {
@@ -24,7 +24,7 @@ set_convoys = 10
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
 	
-	oob = "OMA_1939"
+	oob = "OMA_1914"
 	set_technology = {
 		#doctrines
 		grand_battle_plan = 1

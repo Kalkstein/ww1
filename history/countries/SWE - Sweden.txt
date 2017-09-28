@@ -1,6 +1,6 @@
 ﻿capital = 141	
 
-oob = "SWE_1936"
+oob = "SWE_1910"
 
 set_research_slots = 3
 
@@ -47,7 +47,7 @@ set_technology = {
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
 	
-	oob = "SWE_1939"
+	oob = "SWE_1914"
 	set_technology = {
 		early_bomber = 1
 		tactical_bomber1 = 1

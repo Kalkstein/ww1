@@ -1,6 +1,6 @@
 ﻿capital = 2
 
-oob = "ITA_1936"
+oob = "ITA_1910"
 
 set_research_slots = 4
 
@@ -80,7 +80,7 @@ set_technology = {
 	complete_national_focus = ITA_submarine_effort
 	complete_national_focus = ITA_bulgaria_friend
 	complete_national_focus = ITA_pact_of_steel
-	oob = "ITA_1939"
+	oob = "ITA_1914"
 	set_technology = {
 		fighter1 = 1
 		fighter2 = 1

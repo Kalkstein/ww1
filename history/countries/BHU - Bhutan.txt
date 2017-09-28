@@ -1,6 +1,6 @@
 ﻿capital = 324
 
-oob = "BHU_1936"
+oob = "BHU_1910"
 
 # Starting tech
 set_technology = {
@@ -24,7 +24,7 @@ set_technology = {
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
 	
-	oob = "BHU_1939"
+	oob = "BHU_1914"
 	set_technology = {
 		infantry_weapons = 1
 		tech_mountaineers = 1

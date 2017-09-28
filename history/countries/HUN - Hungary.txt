@@ -1,6 +1,6 @@
 ﻿capital = 43
 
-oob = "HUN_1936"
+oob = "HUN_1910"
 
 set_research_slots = 3
 
@@ -78,7 +78,7 @@ if = {
 	}
 	
 	
-	oob = "HUN_1939"
+	oob = "HUN_1914"
 	set_technology = {
 		fighter1 = 1
 		early_bomber = 1

@@ -1,6 +1,6 @@
 ﻿capital = 327
 
-oob = "PHI_1936"
+oob = "PHI_1910"
 
 # Starting tech
 set_technology = {
@@ -30,7 +30,7 @@ set_convoys = 5
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
 	
-	oob = "PHI_1939"
+	oob = "PHI_1914"
 	set_technology = {
 		gwtank = 1
 		basic_light_tank = 1

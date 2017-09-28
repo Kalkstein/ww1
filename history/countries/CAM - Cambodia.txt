@@ -1,6 +1,6 @@
 ﻿capital = 286 #Phnom Penh NOT on the map as VP!
 
-oob = "CAM_1936"
+oob = "CAM_1910"
 
 set_research_slots = 3
 

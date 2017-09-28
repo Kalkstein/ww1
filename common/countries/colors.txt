@@ -337,6 +337,11 @@ LBA = {
 	color_ui = rgb { 200 180 90 }
 }
 
+JAB = {
+	color = rgb { 157 183 135 }
+	color_ui = rgb { 157 183 135 }
+}
+
 EGY = {
 	color = rgb { 230 230 70 }
 	color_ui = rgb { 230 230 70 }

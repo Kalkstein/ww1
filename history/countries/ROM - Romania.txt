@@ -1,6 +1,6 @@
 ﻿capital = 46
 
-oob = "ROM_1936"
+oob = "ROM_1910"
 
 set_research_slots = 3
 
@@ -118,7 +118,7 @@ set_convoys = 10
 		}
 	}
 	
-	oob = "ROM_1939"
+	oob = "ROM_1914"
 	set_technology = {
 		fighter1 = 1
 		early_bomber = 1

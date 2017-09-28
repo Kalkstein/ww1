@@ -1,6 +1,6 @@
 ﻿capital = 284
 
-oob = "NZL_1936"
+oob = "NZL_1910"
 
 # Starting tech
 
@@ -31,7 +31,7 @@ if = {
 1939.1.1 = {
 
 	add_political_power = 1198
-	oob = "NZL_1939"
+	oob = "NZL_1914"
 	
 	if = {
 		limit = { has_dlc = "Together for Victory" }

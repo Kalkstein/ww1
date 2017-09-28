@@ -1,6 +1,6 @@
 ﻿capital = 113
 
-oob = "IRE_1936"
+oob = "IRE_1910"
 
 set_research_slots = 3
 
@@ -26,7 +26,7 @@ set_convoys = 10
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
 	
-	oob = "IRE_1939"
+	oob = "IRE_1914"
 	set_technology = {
 		gw_artillery = 1
 		interwar_antiair = 1

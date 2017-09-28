@@ -1,6 +1,6 @@
 ﻿capital = 49
 
-oob = "TUR_1936"
+oob = "TUR_1910"
 
 set_research_slots = 3
 
@@ -39,7 +39,7 @@ set_technology = {
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
 	
-	oob = "TUR_1939"
+	oob = "TUR_1914"
 	set_technology = {
 		fighter1 = 1
 		early_bomber = 1

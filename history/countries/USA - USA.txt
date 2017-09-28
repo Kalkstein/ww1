@@ -1,6 +1,6 @@
 ﻿capital = 361
 
-oob = "USA_1936"
+oob = "USA_1910"
 
 set_research_slots = 4
 
@@ -86,7 +86,7 @@ give_guarantee = URG
 	complete_national_focus = USA_fund_the_navy
 
 	set_global_flag = earhart_disappeared
-	oob = "USA_1939"
+	oob = "USA_1914"
 	set_technology = {
 		fighter1 = 1
 		cv_fighter1 = 1

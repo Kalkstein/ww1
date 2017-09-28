@@ -1,6 +1,6 @@
 ﻿capital = 322
 
-oob = "TIB_1936"
+oob = "TIB_1910"
 
 # Starting tech
 set_technology = {
@@ -23,7 +23,7 @@ set_technology = {
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
 	
-	oob = "TIB_1939"
+	oob = "TIB_1914"
 	set_technology = {
 		#doctrines
 		air_superiority = 1

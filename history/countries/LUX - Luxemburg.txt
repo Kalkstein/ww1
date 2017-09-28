@@ -1,6 +1,6 @@
 ﻿capital = 8
 
-oob = "LUX_1936"
+oob = "LUX_1910"
 
 # Starting tech
 set_technology = {
@@ -28,7 +28,7 @@ set_technology = {
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
 	
-	oob = "LUX_1939"
+	oob = "LUX_1914"
 	set_technology = {
 		tech_recon = 1
 		fighter1 = 1

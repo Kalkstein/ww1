@@ -1,6 +1,6 @@
 ﻿capital = 10
 
-oob = "POL_1936"
+oob = "POL_1910"
 
 set_research_slots = 3
 
@@ -73,7 +73,7 @@ set_technology = {
 		partial_economic_mobilisation
 	}
 
-	oob = "POL_1939"
+	oob = "POL_1914"
 	set_technology = {
 		basic_light_tank = 1
 		tactical_bomber1 = 1

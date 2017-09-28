@@ -1,6 +1,6 @@
 ﻿capital = 7
 
-oob = "HOL_1936"
+oob = "HOL_1910"
 
 set_research_slots = 3
 
@@ -54,7 +54,7 @@ if = {
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
 	
-	oob = "HOL_1939"
+	oob = "HOL_1914"
 	set_technology = {
 		gw_artillery = 1
 		tech_engineers = 1

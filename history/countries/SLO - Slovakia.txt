@@ -1,6 +1,6 @@
 ﻿capital = 70
 
-oob = "SLO_1939"
+oob = "SLO_1910"
 
 set_technology = {
 	gw_artillery = 1

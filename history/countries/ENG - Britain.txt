@@ -1,6 +1,6 @@
 ﻿capital = 126
 
-oob = "ENG_1936"
+oob = "ENG_1910"
 
 set_research_slots = 4
 
@@ -146,7 +146,7 @@ create_country_leader = {
 	give_guarantee = POL
 	
 	set_national_unity = 0.8
-	oob = "ENG_1939"
+	oob = "ENG_1914"
 	set_technology = {
 		fighter1 = 1
 		fighter2 = 1

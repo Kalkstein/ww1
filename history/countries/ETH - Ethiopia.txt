@@ -1,6 +1,6 @@
 ﻿capital = 271
 
-oob = "ETH_1936"
+oob = "ETH_1910"
 
 # Starting tech
 set_technology = {

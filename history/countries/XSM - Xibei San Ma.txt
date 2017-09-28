@@ -1,6 +1,6 @@
 ﻿capital = 604
 
-oob = "XSM_1936"
+oob = "XSM_1910"
 
 # Starting tech
 set_technology = {
@@ -31,7 +31,7 @@ set_technology = {
 		closed_economy
 	}
 
-	oob = "XSM_1939"
+	oob = "XSM_1914"
 	
 	set_technology = {
 		#doctrines

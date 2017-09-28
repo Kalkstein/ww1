@@ -1,6 +1,6 @@
 ﻿capital = 16
 
-oob = "FRA_1936"
+oob = "FRA_1910"
 
 set_research_slots = 3
 
@@ -74,7 +74,7 @@ set_technology = {
 	give_guarantee = POL
 	ENG = { add_to_faction = FRA }
 
-	oob = "FRA_1939"
+	oob = "FRA_1914"
 	set_technology = {
 		fighter1 = 1
 		fighter2 = 1

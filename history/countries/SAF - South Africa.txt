@@ -1,6 +1,6 @@
 ﻿capital = 275
 
-oob = "SAF_1936"
+oob = "SAF_1910"
 
 # Starting tech
 set_technology = {
@@ -36,7 +36,7 @@ if = {
 1939.1.1 = {
 
 	add_political_power = 1198
-	oob = "SAF_1939"
+	oob = "SAF_1914"
 	
 	if = {
 		limit = { has_dlc = "Together for Victory" }

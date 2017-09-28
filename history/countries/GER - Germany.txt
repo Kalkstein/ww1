@@ -1,6 +1,6 @@
 ﻿capital = 64
 
-oob = "GER_1936"
+oob = "GER_1910"
 
 # Starting tech
 set_technology = {
@@ -75,7 +75,7 @@ create_import = {
 		
 	}
 	
-	oob = "GER_1939"
+	oob = "GER_1914"
 	
 	set_autonomy = {
 		target = SLO

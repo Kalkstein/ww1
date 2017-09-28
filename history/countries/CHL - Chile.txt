@@ -1,6 +1,6 @@
 ﻿capital = 279
 
-oob = "CHL_1936"
+oob = "CHL_1910"
 
 # Starting tech
 set_technology = {
@@ -35,7 +35,7 @@ set_convoys = 20
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
 	
-	oob = "CHL_1939"
+	oob = "CHL_1914"
 	set_technology = {
 		tactical_bomber1 = 1
 		CAS1 = 1

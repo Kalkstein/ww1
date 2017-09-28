@@ -1,6 +1,6 @@
 ﻿capital = 107
 
-oob = "YUG_1936"
+oob = "YUG_1910"
 
 set_research_slots = 3
 
@@ -96,7 +96,7 @@ set_technology = {
 	complete_national_focus = production_effort
 	}
 	
-	oob = "YUG_1939"
+	oob = "YUG_1914"
 	set_technology = {
 		fighter1 = 1
 		early_bomber = 1
