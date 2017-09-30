@@ -1,0 +1,52 @@
+﻿capital = 104
+
+oob = "BOS_1910"
+
+set_research_slots = 2
+
+set_technology = {
+	tech_support = 1		
+}
+
+1939.1.1 = {
+	add_political_power = 1198
+}
+
+	set_politics = {
+		parties = {
+			democratic = { 
+				popularity = 25
+			}
+
+			fascism = {
+				popularity = 2
+			}
+			
+			communism = {
+				popularity = 5
+				#banned = no #default is no
+			}
+			
+			neutrality = { 
+				popularity = 68
+			}
+		}
+		
+		ruling_party = neutrality
+		last_election = "1908.1.1"
+		election_frequency = 36
+		elections_allowed = no
+	}
+	
+	set_convoys = 0
+	
+create_country_leader = {
+	name = "PLACEHOLDER"
+	desc = ""
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+	expire = "1965.1.1"
+	ideology = Despotism
+	traits = {
+		#
+	}
+}
