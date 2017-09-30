@@ -1,0 +1,182 @@
+### Coded by Eagle020 ### 
+
+focus_tree = {
+	id = ENG_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = ENG
+		}
+	}
+	
+	default = no
+	
+	focus = {
+		id = ENG_non_duplicity
+		icon = GFX_goal_generic_more_territorial_claims
+		x = 4
+		y = 5
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = ENG_support_iraq
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = { focus = ENG_non_duplicity }
+		x = 0
+		y = 5
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = ENG_support_the_kurds
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = { focus = ENG_support_iraq }
+		x = 0
+		y = 6
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = ENG_support_palistine
+		icon = GFX_goal_generic_more_territorial_claims
+		x = 2
+		y = 5
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = ENG_support_the_levante
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = { focus = ENG_support_palistine }
+		x = 2
+		y = 6
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = ENG_subjugate_the_turks
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = { focus = ENG_support_the_kurds }
+		prerequisite = { focus = ENG_support_the_levante }
+		x = 1
+		y = 7
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = ENG_subjugate_iran
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = { focus = ENG_subjugate_the_turks }
+		x = 1
+		y = 8
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = ENG_arab_revolt
+		icon = GFX_goal_generic_more_territorial_claims
+		x = 4
+		y = 5
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = ENG_northern_army
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = { focus = ENG_arab_revolt }
+		x = 4
+		y = 6
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = ENG_lawrence_of_arabia
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = { focus = ENG_northern_army }
+		x = 4
+		y = 7
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = ENG_constantinople_agreement
+		icon = GFX_goal_generic_more_territorial_claims
+		x = 7
+		y = 5
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = ENG_sykes_picot_agreement
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = { focus = ENG_constantinople_agreement }
+		x = 7
+		y = 6
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = ENG_claim_palistine
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = { focus = ENG_sykes_picot_agreement }
+		mutually_exclusive = { focus = ENG_balfour_declaration }
+		x = 6
+		y = 7
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = ENG_balfour_declaration
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = { focus = ENG_sykes_picot_agreement }
+		mutually_exclusive = { focus = ENG_claim_palistine }
+		x = 8
+		y = 7
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
