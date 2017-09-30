@@ -2,7 +2,7 @@
 state={
 	id=788
 	name="STATE_788"
-	manpower = 968700
+	manpower = 3544400
 	resources={
 		steel=12
 	}
@@ -12,15 +12,14 @@ state={
 	history={
 		owner = BEL
 		victory_points = { 6598 30 }
+		victory_points = { 9574 1 }
 		buildings = {
 			infrastructure = 7
 			
 		}
 		add_core_of = BEL
 	}
-	buildings_max_level_factor=0.500
-
 	provinces={
-		11419 6598 
+		11419 6598 9574 13068 
 	}
 }
