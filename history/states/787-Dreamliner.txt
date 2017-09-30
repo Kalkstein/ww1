@@ -1,22 +1,23 @@
-
 state={
 	id=787
-	name="STATE_787" # Limburg
-	manpower = 275700
-	
-	state_category = rural
-
+	name="STATE_787"
+	state_category = town
 	history={
-		owner = BEL
-		victory_points = { 9574 1 }
+		owner = GER
 		buildings = {
-			infrastructure = 7
+			infrastructure = 8
+			arms_factory = 2
+			industrial_complex = 1
 		}
-		
-		add_core_of = BEL
+		victory_points = {
+			3530 3
+		}
+		add_core_of = GER
 	}
 
 	provinces={
-		9574
+		6581 6568 3530 6542 6712 3692 11640 3679  
 	}
+	manpower=2110658
+	buildings_max_level_factor=1.000
 }

@@ -1,0 +1,29 @@
+state=
+{
+	id=798
+	name="STATE_798"
+	manpower = 33490
+	state_category = town
+	
+	
+	history=
+	{
+		owner = GER
+		add_core_of = MAN
+		add_claim_by = JAP
+		victory_points = {
+			10000 5 
+		}
+		buildings = {
+			infrastructure = 3
+			10000 = {
+				naval_base = 5
+				coastal_bunker = 1
+				bunker = 1
+			}
+		}
+	}
+	provinces={
+		10000
+	}
+}
