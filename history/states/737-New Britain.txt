@@ -22,7 +22,7 @@ state={
 		}
 		
 		victory_points = {
-			7251 5 
+			7251 5 #Simpsonhafen/Rabaul
 		}
 		
 	}

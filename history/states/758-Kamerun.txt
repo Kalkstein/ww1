@@ -9,9 +9,11 @@ state={
 	history={
 		owner = GEK
 		victory_points = {
-			6039 1
+			6039 3 #Buea
 		}
-
+		victory_points = {
+			5036 1 # Douala
+		}
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
