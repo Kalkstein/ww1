@@ -176,44 +176,43 @@ country_event = {
 			target = ROOT 
 			modifier = medium_decrease }
 		}
-	ITA = {
-		add_ai_strategy = {
-			type = alliance
-			id = "GER"
-			value = 200
+		ITA = {
+			add_ai_strategy = {
+				type = alliance
+				id = "GER"
+				value = 200
+			}
+			add_ai_strategy = {
+				type = alliance
+				id = "AUS"
+				value = 200
+			}
 		}
-		add_ai_strategy = {
-			type = alliance
-			id = "AUS"
-			value = 200
+		AUS = {
+			add_ai_strategy = {
+				type = alliance
+				id = "GER"
+				value = 200
+			}
+			add_ai_strategy = {
+				type = alliance
+				id = "ITA"
+				value = 200
+			}
 		}
-	}
-	AUS = {
-		add_ai_strategy = {
-			type = alliance
-			id = "GER"
-			value = 200
+		AUS = {
+			add_ai_strategy = {
+				type = alliance
+				id = "GER"
+				value = 200
+			}	
+			add_ai_strategy = {
+				type = alliance
+				id = "ITA"
+				value = 200
+			}
 		}
-		add_ai_strategy = {
-			type = alliance
-			id = "ITA"
-			value = 200
-		}
-	}
-	AUS = {
-		add_ai_strategy = {
-			type = alliance
-			id = "GER"
-			value = 200
-		}
-		add_ai_strategy = {
-			type = alliance
-			id = "ITA"
-			value = 200
-		}
-	}
-	}
-	
+	}	
 }
 
 #Netherlands wants to join The Central-Powers

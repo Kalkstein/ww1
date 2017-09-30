@@ -58,7 +58,7 @@ focus_tree = {
 		y = 3
 		cost = 10
 		completion_reward = {
-			
+			add_ideas = war_economy
 		}
 	}
 	
@@ -77,13 +77,13 @@ focus_tree = {
 	
 	focus = {
 		id = USA_isolationism
-		icon = GFX_goal_support_fascism
+		icon = GFX_goal_generic_demand_territory
 		prerequisite = { focus = USA_return_to_normal }
 		x = 5
 		y = 4
 		cost = 10
 		completion_reward = {
-			
+			add_ideas = undisturbed_isolation
 		}
 	}
 	
@@ -1155,7 +1155,7 @@ focus_tree = {
 						 focus = USA_canadian_indepenence }
 		prerequisite = { focus = USA_peruivan_border }
 		prerequisite = { focus = USA_bolivian_border }
-		prerequisite = { focus = USA_canadian_indepenence }
+		prerequisite = { focus = USA_caribbean_independence }
 		x = 28
 		y = 6
 		cost = 10
