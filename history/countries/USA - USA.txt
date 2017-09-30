@@ -182,7 +182,7 @@ set_politics = {
 }
 
 add_ideas = {
-	undisturbed_isolation
+	isolation
 	free_trade
 }
 
