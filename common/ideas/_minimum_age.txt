@@ -5,7 +5,7 @@ ideas = {
 
 		age_21 = {
 						
-			cost = 100
+			cost = 75
 			removal_cost = -1
 			level = 7
 			
@@ -18,7 +18,6 @@ ideas = {
 
 			modifier = {
 				conscription = 0.02
-				political_power_factor = 0.05
 			}
 			
 			cancel_if_invalid = no
@@ -26,7 +25,7 @@ ideas = {
 		}
 		age_20 = {
 						
-			cost = 100
+			cost = 75
 			removal_cost = -1
 			level = 6
 			
@@ -39,14 +38,13 @@ ideas = {
 
 			modifier = {
 				conscription = 0.025
-				political_power_factor = 0.025
 			}
 			
 			cancel_if_invalid = no
 		}
 		age_19 = {
 						
-			cost = 100
+			cost = 75
 			removal_cost = -1
 			level = 5
 			
@@ -60,13 +58,14 @@ ideas = {
 
 			modifier = {
 				conscription = 0.03
+				training_time_factor = 0.05
 			}
 			
 			cancel_if_invalid = no
 		}
 		age_18 = {
 						
-			cost = 100
+			cost = 75
 			removal_cost = -1
 			level = 4
 			
@@ -90,13 +89,14 @@ ideas = {
 			modifier = {
 				conscription = 0.05
 				army_morale_factor = -0.1
+				training_time_factor = 0.1
 			}
 			
 			cancel_if_invalid = no
 		}
 		all_must_serve_young = {
 						
-			cost = 100
+			cost = 75
 			removal_cost = -1
 			level = 3
 			
@@ -114,6 +114,7 @@ ideas = {
 			modifier = {
 				conscription = 0.1
 				army_morale_factor = -0.50
+				training_time_factor = 0.2
 			}
 			
 			cancel_if_invalid = no

@@ -5,7 +5,7 @@ ideas = {
 
 		age_40 = {
 						
-			cost = 100
+			cost = 75
 			removal_cost = -1
 			level = 4
 			
@@ -25,8 +25,8 @@ ideas = {
 			default = yes
 		}
 		age_50 = {
-						
-			cost = 100
+			
+			cost = 75
 			removal_cost = -1
 			level = 3
 			
@@ -44,8 +44,8 @@ ideas = {
 			cancel_if_invalid = no
 		}
 		age_60 = {
-						
-			cost = 100
+		
+			cost = 75
 			removal_cost = -1
 			level = 2
 			
@@ -69,8 +69,8 @@ ideas = {
 			cancel_if_invalid = no
 		}
 		all_must_serve_old = {
-						
-			cost = 100
+		
+			cost = 75
 			removal_cost = -1
 			level = 1
 			

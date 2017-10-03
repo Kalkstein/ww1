@@ -5,7 +5,7 @@ ideas = {
 
 		stay_at_home = {
 						
-			cost = 100
+			cost = 150
 			removal_cost = -1
 			level = 5
 			
