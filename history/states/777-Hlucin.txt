@@ -1,6 +1,6 @@
 state={
 	id=777
-	name="STATE_777"
+	name="STATE_777" #In German: Hultschiner Ländchen In Czech: Hlučínsko In Polish: Kraik Hulczyński
 	manpower = 23500
 	
 	state_category = pastoral

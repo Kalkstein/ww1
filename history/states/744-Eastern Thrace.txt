@@ -21,12 +21,6 @@ state={
 			owner = BUL
 			controller = BUL
 		}
-		1919.11.27 = {
-			owner = GRE 
-			controller = GRE 
-			remove_core_of = BUL
-			add_claim_by = BUL
-		}
 		add_core_of = GRE
 
 	}

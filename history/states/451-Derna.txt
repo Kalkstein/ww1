@@ -1,0 +1,33 @@
+
+state={
+	id=451
+	name="STATE_451"
+	manpower = 62898
+	
+	state_category = wasteland
+
+	history={
+		owner = TUR
+		add_core_of = TUR
+		
+		victory_points = {
+			1130 5 
+		}
+		buildings = {
+			infrastructure = 2
+			1130 = {
+				naval_base = 6
+			}
+		}
+		1912.10.18 = {
+			owner = ITA
+			controller = ITA
+			remove_core_of = TUR
+		}
+		add_core_of = LBA
+	}
+
+	provinces={
+		1130 1204 4136 4151 7082 9992 10120 12094 
+	}
+}

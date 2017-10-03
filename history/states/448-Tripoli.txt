@@ -1,0 +1,33 @@
+
+state={
+	id=448
+	name="STATE_448"
+	manpower = 455184
+	
+	state_category = town
+
+	history={
+		owner = TUR
+		
+		victory_points = {
+			1149 10 
+		}
+		buildings = {
+			infrastructure = 3
+			1149 = {
+				naval_base = 5
+			}
+		}
+		1912.10.18 = {
+			owner = ITA
+			controller = ITA
+			remove_core_of = TUR
+		}
+		add_core_of = TUR
+		add_core_of = LBA
+	}
+
+	provinces={
+		1118 1149 1189 4194 7066 7209 9980 12039 
+	}
+}

@@ -1,0 +1,32 @@
+
+state={
+	id=450
+	name="STATE_450"
+	manpower = 114360
+	
+	state_category = enclave
+
+	history={
+		owner = TUR
+		add_core_of = TUR
+		victory_points = {
+			11954 3 
+		}
+		buildings = {
+			infrastructure = 3
+			11954 = {
+				naval_base = 1
+			}
+		}
+		1912.10.18 = {
+			owner = ITA
+			controller = ITA
+			remove_core_of = TUR
+		}
+		add_core_of = LBA
+	}
+
+	provinces={
+		1127 4120 10123 11954 
+	}
+}

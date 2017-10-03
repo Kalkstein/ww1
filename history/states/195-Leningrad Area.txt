@@ -1,7 +1,7 @@
 
 state={
 	id=195
-	name="STATE_195"
+	name="STATE_195" #Sankt-Peterburg changed to Petrograd in 1914
 	manpower = 2670760
 	
 	state_category = metropolis
