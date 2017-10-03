@@ -223,11 +223,11 @@ set_autonomy = {
 create_country_leader = {
 	name = "Theodore Roosevelt"
 	desc = "POLITICS_FRANKLIN_DELANO_ROOSEVELT_DESC"
-	picture = "Portrait_USA_Theodore_Roosevelt"
+	picture = "Portrait_USA_Theodore_Roosevelt.dds"
 	expire = "1947.1.1"
 	ideology = liberalism
 	traits = {
-		dislikes_germany
+		
 	}
 }
 
