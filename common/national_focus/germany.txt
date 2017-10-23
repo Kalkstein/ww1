@@ -17,79 +17,47 @@ focus_tree = {
 	focus = {
 		id = GER_a_place_under_the_sun
 		icon = GFX_goal_support_fascism
-		x = 3
+		x = 6
 		y = 0
 		cost = 10
 		completion_reward = {
 			add_ideas = GER_place_under_the_sun_idea
 		}
 	}
-
-	focus = {
-		id = GER_develop_tsingtao
-		icon = GFX_goal_generic_construct_civilian
-		prerequisite = { focus = GER_a_place_under_the_sun }
-		x = 1
-		y = 1
-		cost = 10
-		completion_reward = {
-			744 = {
-				add_building_construction ={
-					type = naval_base
-					level = 3
-					instant_build = yes
-					province = 10000
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = GER_trade_with_china
-		icon = GFX_goal_generic_neutrality_focus
-		prerequisite = { focus = GER_develop_tsingtao }
-		x = 1
-		y = 2
-		cost = 10
-		completion_reward = {
-			744 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-					instant_build = yes
-					}
-			}
-		}
-	}
-
-	focus = {
-		id = GER_local_ship_building
-		icon = GFX_goal_generic_construct_naval_dockyard
-		prerequisite = { focus = GER_trade_with_china }
-		x = 1
-		y = 3
-		cost = 10
-		completion_reward = {
-			744 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-					}
-			}
-		}
-	}
-
-
-
+	
 	focus = {
 		id = GER_colonial_infrastructure
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = GER_a_place_under_the_sun }
-		x = 3
+		x = 5
 		y = 1
+		cost = 10
+		completion_reward = {
+			752 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			758 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_develop_africa
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = GER_colonial_infrastructure }
+		x = 2
+		y = 2
 		cost = 10
 		completion_reward = {
 			750 = {
@@ -127,13 +95,6 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			743 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
 			737 = {
 				add_building_construction = {
 					type = infrastructure
@@ -143,13 +104,13 @@ focus_tree = {
 			}
 		}
 	}
-
+	
 	focus = {
 		id = GER_colonial_harbours
 		icon = GFX_goal_generic_construct_naval_dockyard
-		prerequisite = { focus = GER_colonial_infrastructure }
-		x = 3
-		y = 2
+		prerequisite = { focus = GER_develop_africa }
+		x = 2
+		y = 3
 		cost = 10
 		completion_reward = {
 			758 = {
@@ -186,13 +147,13 @@ focus_tree = {
 			}
 		}
 	}
-
+	
 	focus = {
 		id = GER_colonial_airfields
 		icon = GFX_goal_generic_build_airforce
 		prerequisite = { focus = GER_colonial_harbours }
-		x = 3
-		y = 3
+		x = 2
+		y = 4
 		cost = 10
 		completion_reward = {
 			758 = {
@@ -225,287 +186,94 @@ focus_tree = {
 			}
 		}
 	}
-
+	
 	focus = {
-		id = GER_prussian_infrastructure_I
+		id = GER_develop_tsingtao
 		icon = GFX_goal_generic_construct_civilian
-		prerequisite = { focus = GER_a_place_under_the_sun }
-		x = 5
-		y = 1
-		cost = 10
-		completion_reward = {
-			61 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			62 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			68 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = GER_prussian_infrastructure_II
-		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = GER_prussian_infrastructure_I }
+		prerequisite = { focus = GER_colonial_infrastructure }
 		x = 5
 		y = 2
 		cost = 10
 		completion_reward = {
-			63 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
+			798 = {
+				add_building_construction ={
+					type = naval_base
+					level = 3
 					instant_build = yes
-				}
-			}
-			85 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			86 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			5 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
+					province = 10000
 				}
 			}
 		}
 	}
-
+	
 	focus = {
-		id = GER_diversify_industry
-		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = GER_prussian_infrastructure_II }
+		id = GER_local_ship_building
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = GER_develop_tsingtao }
 		x = 5
 		y = 3
 		cost = 10
 		completion_reward = {
-			63 = {
-				add_extra_state_shared_building_slots = 1
+			798 = {
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = industrial_complex
-					level = 1
+					type = dockyard
+					level = 2
 					instant_build = yes
-				}
-			}
-			85 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			86 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			68 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
+					}
 			}
 		}
 	}
-
+	
 	focus = {
-		id = GER_extra_research_slot
-		icon = GFX_focus_research
-		prerequisite = { focus = GER_colonial_airfields
-						 focus = GER_local_ship_building
-						 focus = GER_diversify_industry}
-		x = 3
+		id = GER_german_advisors_in_china
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = GER_local_ship_building }
+		x = 5
 		y = 4
 		cost = 10
 		completion_reward = {
-			add_research_slot = 1
+			CHI = {
+				add_ideas = { german_advisors }
+			}
 		}
 	}
-
+	
 	focus = {
-		id = GER_industrial_warfare
-		icon = GFX_goal_generic_production
-		prerequisite = { focus = GER_extra_research_slot }
-		x = 3
+		id = GER_ally_china
+		icon = GFX_goal_tripartite_pact
+		prerequisite = { focus = GER_german_advisors_in_china }
+		x = 4
 		y = 5
 		cost = 10
 		completion_reward = {
-			add_tech_bonus = {
-				name = GER_industrial_warfare
-				bonus = 0.5
-				category = industry
+			CHI = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = offered_support
+				}
 			}
 		}
 	}
-
+	
 	focus = {
-		id = GER_defense_of_qingdao
-		icon = GFX_goal_generic_construct_naval_dockyard
-		prerequisite = { focus = GER_local_ship_building }
-		x = 1
+		id = GER_mercantilism
+		icon = GFX_goal_tripartite_pact
+		prerequisite = { focus = GER_german_advisors_in_china }
+		x = 6
 		y = 5
 		cost = 10
 		completion_reward = {
-			744 = {
-				add_building_construction = {
-					type = coastal_bunker
-					level = 3
-					instant_build = yes
-					}
-			}
+			#Resoruces for the other colonies
 		}
 	}
-
-	focus = {
-		id = GER_war_preparation
-		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = GER_diversify_industry }
-		x = 5
-		y = 5
-		cost = 10
-		completion_reward = {
-			60 = {
-				add_extra_state_shared_building_slots = 4
-				add_building_construction = {
-					type = arms_factory
-					level = 4
-					instant_build = yes
-					}
-				}
-			}
-	}
-
-	focus = {
-		id = GER_war_resources
-		icon = GFX_goal_generic_oil_refinery
-		prerequisite = { focus = GER_war_preparation }
-		x = 5
-		y = 7
-		cost = 10
-		completion_reward = {
-			59 = {
-				add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = synthetic_refinery
-						level = 2
-						instant_build = yes
-						}
-			}
-		}
-	}
-
-	focus = {
-		id = GER_eastern_defense
-		icon = GFX_goal_generic_construct_military
-		prerequisite = { focus = GER_defense_of_qingdao }
-		prerequisite = { focus = GER_war_preparation }
-		x = 3
-		y = 6
-		cost = 10
-		completion_reward = {
-			 188 = {
-				add_building_construction = {
-					type = bunker
-					level = 1
-					instant_build = yes
-					province = 3288
-					}
-			}
-
-			5 = {
-				add_building_construction = {
-					type = bunker
-					level = 1
-					instant_build = yes
-					province = 281
-				}
-				add_building_construction = {
-					type = bunker
-					level = 1
-					instant_build = yes
-					province = 3384
-				}
-				add_building_construction = {
-					type = bunker
-					level = 1
-					instant_build = yes
-					province = 9327
-				}
-				add_building_construction = {
-					type = bunker
-					level = 1
-					instant_build = yes
-					province = 11386
-				}
-				add_building_construction = {
-					type = bunker
-					level = 1
-					instant_build = yes
-					province = 9372
-				}
-				add_building_construction = {
-					type = bunker
-					level = 1
-					instant_build = yes
-					province = 6375
-				}
-				add_building_construction = {
-					type = bunker
-					level = 1
-					instant_build = yes
-					province = 9346
-				}
-				add_building_construction = {
-					type = bunker
-					level = 1
-					instant_build = yes
-					province = 3351
-				}
-			}
-		}
-	}
-
-
-	#### END ####
-
-
+	
 	focus = {
 		id = GER_modern_navy
 		icon = GFX_goal_generic_navy_doctrines_tactics
+		prerequisite = { focus = GER_a_place_under_the_sun }
 		x = 10
-		y = 0
+		y = 1
 		cost = 10
 		completion_reward = {
 			navy_experience = 50
@@ -513,50 +281,147 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GER_naval_industry
+		id = GER_expand_wilhelmshafen
 		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = { focus = GER_modern_navy }
-		x = 10
-		y = 1
-		cost = 10
-		completion_reward = {
-			62 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = dockyard
-					level = 3
-					instant_build =  yes
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = GER_defense_of_wilhelmshafen
-		icon = GFX_goal_generic_fortify_city
-		prerequisite = { focus = GER_naval_industry }
 		x = 10
 		y = 2
 		cost = 10
 		completion_reward = {
-		56 = {
-			add_building_construction = {
-					type = coastal_bunker
-					level = 4
+			56 = {
+				add_building_construction = {
+					type = naval_base
+					level = 3
 					instant_build =  yes
 					province = 241
 				}
 			}
 		}
 	}
+	
+	focus = {
+		id = GER_naval_industry_I
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = GER_expand_wilhelmshafen }
+		x = 8
+		y = 4
+		cost = 10
+		completion_reward = {
+			56 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build =  yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_naval_industry_II
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = GER_naval_industry_I }
+		x = 8
+		y = 6
+		cost = 10
+		completion_reward = {
+			62 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build =  yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_capitals_I
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = GER_expand_wilhelmshafen }
+		mutually_exclusive = { focus = GER_screens_I }
+		x = 11
+		y = 3
+		cost = 10
+		completion_reward = {
 
+		}
+	}
+	
+	focus = {
+		id = GER_capitals_II
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = GER_capitals_I }
+		x = 11
+		y = 4
+		cost = 10
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = GER_screens_I
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = GER_expand_wilhelmshafen }
+		mutually_exclusive = { focus = GER_capitals_I }
+		x = 13
+		y = 3
+		cost = 10
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = GER_screens_II
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = GER_screens_I }
+		x = 13
+		y = 4
+		cost = 10
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = GER_naval_risk_theory
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = GER_screens_II
+						 focus = GER_capitals_II }
+		mutually_exclusive = { focus = GER_appease_britain }
+		x = 12
+		y = 5
+		cost = 10
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GER_navy_bills
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = GER_naval_risk_theory }
+		x = 12
+		y = 6
+		cost = 10
+		completion_reward = {
+
+		}
+	}
+	
+	
 	focus = {
 		id = GER_subface_fleet
 		icon = GFX_goal_generic_navy_submarine
-		prerequisite = { focus = GER_defense_of_wilhelmshafen }
+		prerequisite = { focus = GER_navy_bills }
+		prerequisite = { focus = GER_naval_industry_II }
 		mutually_exclusive = { focus = GER_surface_fleet }
-		x = 11
-		y = 3
+		x = 9
+		y = 7
 		cost = 10
 		completion_reward = {
 			add_ideas = GER_subface_idea
@@ -566,51 +431,48 @@ focus_tree = {
 	focus = {
 		id = GER_surface_fleet
 		icon = GFX_goal_generic_navy_cruiser
-		prerequisite = { focus = GER_defense_of_wilhelmshafen }
+		prerequisite = { focus = GER_navy_bills }
+		prerequisite = { focus = GER_naval_industry_II }
 		mutually_exclusive = { focus = GER_subface_fleet }
-		x = 9
-		y = 3
+		x = 11
+		y = 7
 		cost = 10
 		completion_reward = {
 			add_ideas = GER_surface_idea
 		}
 	}
-
-
-
+	
 	focus = {
-		id = GER_expand_wilhelmshafen
+		id = GER_uboats_I
 		icon = GFX_goal_generic_construct_naval_dockyard
-		prerequisite = { focus = GER_diversify_industry }
-		prerequisite = { focus = GER_surface_fleet }
-		x = 7
-		y = 4
+		prerequisite = { focus = GER_subface_fleet }
+		x = 8
+		y = 8
 		cost = 10
 		completion_reward = {
-			56 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = dockyard
-					level = 3
-					instant_build =  yes
-				}
-				add_building_construction = {
-					type = naval_base
-					level = 2
-					instant_build =  yes
-					province = 241
-				}
-			}
+
 		}
 	}
+	
+	focus = {
+		id = GER_uboats_II
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = GER_uboats_I }
+		x = 8
+		y = 9
+		cost = 10
+		completion_reward = {
 
+		}
+	}
+	
 	focus = {
 		id = GER_prioritize_tactics
 		icon = GFX_goal_generic_navy_cruiser
 		prerequisite = { focus = GER_surface_fleet
 						 focus = GER_subface_fleet }
 		x = 10
-		y = 4
+		y = 8
 		cost = 10
 		completion_reward = {
 			add_tech_bonus = {
@@ -625,10 +487,9 @@ focus_tree = {
 	focus = {
 		id = GER_battleship_research
 		icon = GFX_goal_generic_navy_battleship
-		prerequisite = { focus = GER_surface_fleet }
-		prerequisite = { focus = GER_expand_wilhelmshafen }
-		x = 9
-		y = 5
+		prerequisite = { focus = GER_prioritize_tactics }
+		x = 10
+		y = 9
 		cost = 10
 		completion_reward = {
 			add_tech_bonus = {
@@ -641,396 +502,185 @@ focus_tree = {
 			}
 		}
 	}
-
+	
 	focus = {
-		id = GER_submarine_research
-		icon = GFX_goal_generic_navy_cruiser
-		prerequisite = { focus = GER_subface_fleet }
-		x = 11
-		y = 5
+		id = GER_battleship
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite = { focus = GER_surface_fleet }
+		x = 12
+		y = 8
 		cost = 10
 		completion_reward = {
 			add_tech_bonus = {
 				name = GER_battleship_research
 				bonus = 0.5
 				uses = 1
-				technology = basic_submarine
-				technology = improved_submarine
-				technology = advanced_submarine
-
+				technology = basic_battleship
+				technology = improved_battleship
+				technology = advanced_battleship
 			}
 		}
 	}
-
+	
 	focus = {
-		id = GER_destroyer_research
-		icon = GFX_goal_generic_navy_anti_submarine
-		prerequisite = { focus = GER_battleship_research
-						 focus = GER_prioritize_tactics
-						 focus = GER_submarine_research }
-		x = 10
-		y = 6
+		id = GER_crusiers
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = GER_battleship }
+		x = 12
+		y = 9
 		cost = 10
 		completion_reward = {
 			add_tech_bonus = {
-				name = GER_
+				name = GER_battleship_research
 				bonus = 0.5
 				uses = 1
-				technology = basic_destroyer
-				technology = improved_destroyer
-				technology = advanced_destroyer
+				category = cl_tech
 			}
 		}
 	}
-
+	
 	focus = {
-		id = GER_war_with_britain
-		icon = GFX_goal_generic_major_war
-		prerequisite = { focus = GER_battleship_research
-						 focus = GER_submarine_research }
-		prerequisite = { focus = GER_destroyer_research }
-		x = 10
-		y = 7
-		cost = 10
-		completion_reward = {
-			create_wargoal = {
-				type = take_state_focus
-				target = ENG
-				generator = { 118 446 447 452 453 456 457 336 552 }
-			}
-		}
-	}
-	#### END ####
-
-	focus = {
-		id = GER_expand_the_army
-		icon = GFX_goal_generic_construct_mil_factory
-		x = 17
+		id = GER_military_traditions
+		icon = GFX_goal_generic_navy_cruiser
+		x = 20
 		y = 0
 		cost = 10
 		completion_reward = {
-			86 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = arms_factory
-					level = 3
-					instant_build = yes
-				}
-			}
 		}
 	}
-
+	
 	focus = {
-		id = GER_standardization_of_uniforms
-		icon = GFX_goal_generic_small_arms
-		prerequisite = { focus = GER_expand_the_army }
-		x = 17
+		id = GER_european_interests
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = GER_military_traditions }
+		x = 20
 		y = 1
 		cost = 10
 		completion_reward = {
-			army_experience = 15
 		}
 	}
-
+	
 	focus = {
-		id = GER_found_the_ohl
-		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = GER_standardization_of_uniforms }
-		x = 17
+		id = GER_diplomacy_second
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = GER_european_interests }
+		mutually_exclusive = { focus = GER_side_of_three }
+		x = 19
 		y = 2
 		cost = 10
 		completion_reward = {
-			add_ideas = GER_found_the_ohl_idea
-		}
-	}
-
-	
-	
-	focus = {
-		id = GER_attack_infantry_equipment
-		icon = GFX_goal_generic_special_forces
-		prerequisite = { focus = GER_found_the_ohl }
-		x = 17
-		y = 3
-		cost = 10
-		completion_reward = {
-			add_tech_bonus = {
-				name = GER_attack_infantry_equipment
-				bonus = 0.50
-				uses = 1
-				category = infantry_weapons
-			}
 		}
 	}
 	
 	focus = {
-		id = GER_tank_project
-		icon = GFX_goal_generic_army_tanks
-		prerequisite = { focus = GER_attack_infantry_equipment }
-		x = 16
-		y = 4
-		cost = 10
-		completion_reward = {
-			add_tech_bonus = {
-				name = GER_tank_project
-				bonus = 0.50
-				uses = 2
-				category = armor
-			}
-		}
-	}
-
-	focus = {
-		id = GER_mission_type_tactics
-		icon = GFX_goal_generic_allies_build_infantry
-		prerequisite = { focus = GER_attack_infantry_equipment }
-		x = 18
-		y = 4
-		cost = 10
-		completion_reward = {
-			add_tech_bonus = {
-				name = GER_mission_type_tactics
-				bonus = 0.50
-				uses = 2
-				category = Land_doctrine
-			}
-		}
-	}
-	
-	focus = {
-		id = GER_improve_heavy_artillery
-		icon = GFX_goal_generic_army_artillery2
-		prerequisite = { focus = GER_mission_type_tactics 
-						 focus = GER_tank_project }
-		x = 17
-		y = 5
-		cost = 10
-		completion_reward = {
-			add_tech_bonus = {
-				name = GER_invent_heavy_artillery
-				bonus = 0.50
-				uses = 1
-				category = heavy_artillery
-			}
-		}
-	}
-	
-	focus = {
-		id = GER_stormtroopers
-		icon = GFX_goal_generic_major_war
-		prerequisite = { focus = GER_improve_heavy_artillery }
-		x = 17
-		y = 6
-		cost = 10
-		completion_reward = {
-			add_ideas = GER_stormtroopers_ideas
-		}
-	}
-
-	
-
-	focus = {
-		id = GER_found_the_imperial_airforce
-		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = GER_found_the_ohl }
-		x = 14
-		y = 3
-		cost = 10
-		completion_reward = {
-			28 = {
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-				}
-			}
-			5 = {
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = GER_modern_planes
-		icon = GFX_goal_generic_air_fighter2
-		prerequisite = { focus = GER_found_the_imperial_airforce }
-		x = 14
-		y = 4
-		cost = 10
-		completion_reward = {
-			add_tech_bonus = {
-				name = GER_modern_planes
-				bonus = 0.50
-				uses = 1
-				category = light_fighter
-			}
-		}
-	}
-	
-	focus = {
-		id = GER_jagdstaffeln
-		icon = GFX_goal_generic_air_fighter
-		prerequisite = { focus = GER_modern_planes }
-		mutually_exclusive = { focus = GER_zeppelin_attacks }
-		x = 13
-		y = 5
-		cost = 10
-		completion_reward = {
-			add_ideas = GER_jagdstaffeln_idea
-		}
-	}
-	
-	focus = {
-		id = GER_zeppelin_attacks
-		icon = GFX_goal_generic_occupy_start_war
-		prerequisite = { focus = GER_modern_planes }
-		mutually_exclusive = { focus = GER_jagdstaffeln }
-		x = 15	
-		y = 5
-		cost = 10
-		completion_reward = {
-			add_tech_bonus = {
-				name = GER_modern_planes
-				bonus = 0.50
-				uses = 1
-				category = zeppelins
-			}
-		}
-	}
-	
-	focus = {
-		id = GER_build_airports
-		icon = GFX_goal_generic_build_airforce
-		prerequisite = { focus = GER_jagdstaffeln
-						 focus = GER_zeppelin_attacks }
-		x = 14
-		y = 6
-		cost = 10
-		completion_reward = {
-			54 = {
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-				}
-			}
-			64 = {
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = GER_monoplanes
-		icon = GFX_goal_generic_air_bomber
-		prerequisite = { focus = GER_build_airports }
-		x = 13	
-		y = 7
-		cost = 10
-		completion_reward = {
-			add_tech_bonus = {
-				name = GER_modern_planes
-				bonus = 0.50
-				uses = 1
-				category = light_fighter
-			}
-		}
-	}
-	
-	focus = {
-		id = GER_air_propaganda
-		icon = GFX_goal_generic_air_doctrine
-		prerequisite = { focus = GER_build_airports }
-		x = 15	
-		y = 7
-		cost = 10
-		completion_reward = {
-			add_ideas = GER_air_propaganda_idea
-		}
-	}
-	
-	
-	#### END ####
-
-	
-	focus = {
-		id = GER_politics
-		icon = GFX_goal_generic_national_unity
-		x = 25
-		y = 0
-		cost = 10
-		completion_reward = {
-			add_political_power = 120
-		}
-	}
-
-	focus = {
-		id = GER_diplomacy
-		icon = GFX_goal_generic_propaganda
-		prerequisite = { focus = GER_politics }
-		x = 25
-		y = 1
-		cost = 10
-		completion_reward = {
-			add_political_power = 50
-		}
-	}
-
-	focus = {
-		id = GER_break_the_entente
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = GER_diplomacy }
+		id = GER_side_of_three
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = GER_european_interests }
+		mutually_exclusive = { focus = GER_diplomacy_second }
 		x = 21
 		y = 2
 		cost = 10
 		completion_reward = {
-			FRA = {
-				add_opinion_modifier = {
-					target = ROOT
-					modifier = large_decrease
-				}
-			}
-			ENG = {
-				add_opinion_modifier = {
-					target = ROOT
-					modifier = large_decrease
-				}
-			}
-			SOV = {
-				add_opinion_modifier = {
-					target = ROOT
-					modifier = large_decrease
-				}
-			}
 		}
 	}
-
+	
 	focus = {
-		id = GER_warplans
-		icon = GFX_goal_generic_political_pressure
-		prerequisite = { focus = GER_break_the_entente }
-		prerequisite = { focus = GER_found_the_ohl }
-		x = 21
+		id = GER_the_siegfried_line
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = GER_diplomacy_second }
+		x = 17
 		y = 3
 		cost = 10
 		completion_reward = {
 		}
 	}
-
+	
+	focus = {
+		id = GER_respect_belgium
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = GER_the_siegfried_line }
+		mutually_exclusive = { focus = GER_the_schlieffen_plan }
+		x = 15
+		y = 4
+		cost = 10
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = GER_appease_britain
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = GER_respect_belgium }
+		mutually_exclusive = { focus = GER_naval_risk_theory }
+		x = 15
+		y = 5
+		cost = 10
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = GER_court_america
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = GER_appease_britain }
+		mutually_exclusive = { focus = GER_zimmerman_note }
+		x = 15
+		y = 7
+		cost = 10
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = GER_call_to_war
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = GER_court_america }
+		x = 15
+		y = 8
+		cost = 10
+		completion_reward = {
+		}
+	}
+	
 	focus = {
 		id = GER_the_schlieffen_plan
-		icon = GFX_goal_generic_military_sphere
-		prerequisite = { focus = GER_warplans }
-		mutually_exclusive = { focus = GER_the_moltke_plan }
-		x = 20
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = GER_the_siegfried_line }
+		mutually_exclusive = { focus = GER_respect_belgium }
+		x = 17
+		y = 4
+		cost = 10
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = GER_blitzkrieg
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = GER_the_schlieffen_plan }
+		x = 17
+		y = 5
+		cost = 10
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = GER_prussian_mobilisation
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = GER_diplomacy_second }
+		x = 19
+		y = 3
+		cost = 10
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = GER_ober_ost
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = GER_prussian_mobilisation }
+		x = 19
 		y = 4
 		cost = 10
 		completion_reward = {
@@ -1038,9 +688,9 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GER_stick_to_the_old_plan
-		icon = GFX_goal_generic_more_territorial_claims
-		prerequisite = { focus = GER_the_schlieffen_plan }
+		id = GER_return_lenin
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = GER_ober_ost }
 		x = 19
 		y = 5
 		cost = 10
@@ -1049,402 +699,147 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = GER_the_moltke_plan
-		icon = GFX_goal_generic_political_pressure
-		prerequisite = { focus = GER_warplans }
-		x = 22
-		y = 4
-		cost = 10
-		completion_reward = {
-		}
-	}
-
-	focus = {
-		id = GER_support_communism_in_russia
-		icon = GFX_goal_support_communism
-		prerequisite = { focus = GER_the_moltke_plan
-						 focus = GER_the_schlieffen_plan 
-		}
-		x = 21
-		y = 5
-		cost = 10
-		completion_reward = {
-			#SOV = {
-			#	add_ideas = GER_support_communism_in_russia_idea
-			#}
-		}
-	}
-
-	focus = {
-		id = GER_keep_britain_out_of_the_war
-		icon = GFX_goal_generic_propaganda
-		prerequisite = { focus = GER_the_moltke_plan }
-		x = 23
-		y = 5
-		cost = 10
-		completion_reward = {
-			ENG = {
-				add_opinion_modifier = {
-					target = ROOT
-					modifier = medium_increase
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = GER_fight_for_liberty
-		icon = GFX_goal_support_democracy
-		prerequisite = { focus = GER_keep_britain_out_of_the_war }
-		x = 23
+		id = GER_fight_for_survival
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = GER_return_lenin
+						 focus = GER_blitzkrieg }
+		x = 18
 		y = 6
 		cost = 10
 		completion_reward = {
-			ENG = {
-				add_opinion_modifier = {
-					target = ROOT
-					modifier = medium_increase
-				}
-			}
-			USA = {
-				add_opinion_modifier = {
-					target = ROOT
-					modifier = medium_increase
-				}
-			}
 		}
 	}
-
-
-
-
+	
 	focus = {
-		id = GER_expand_the_central_powers
-		icon = GFX_goal_generic_more_territorial_claims
-		mutually_exclusive = { focus = GER_unite_all_germans }
-		prerequisite = { focus = GER_diplomacy }
-		x = 26
-		y = 2
+		id = GER_zimmerman_note
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = GER_fight_for_survival }
+		mutually_exclusive = { focus = GER_court_america }
+		x = 17
+		y = 7
 		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
 		completion_reward = {
-			AUS = {
-				add_opinion_modifier = {
-					target = ROOT
-					modifier = offered_support
-				}
-			}
 		}
 	}
-
-
+	
 	focus = {
 		id = GER_ottoman_military_mission
-		icon = GFX_goal_generic_occupy_states_ongoing_war
-		prerequisite = { focus = GER_expand_the_central_powers }
-		mutually_exclusive = { focus = GER_make_concessions_to_italy }
-		x = 25
-		y = 3
-		cost = 10
-		completion_reward = {
-			TUR = {
-				add_ideas = { german_advisors }
-			}
-			add_opinion_modifier = {
-				target = ROOT
-				modifier = offered_support
-			}
-		}
-	}
-
-	focus = {
-		id = GER_make_concessions_to_italy
-		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = { focus = GER_expand_the_central_powers }
-		mutually_exclusive = { focus = GER_ottoman_military_mission }
-		x = 27
-		y = 3
-		cost = 10
-		completion_reward = {
-			ITA = { country_event = { id = italy.17 } }
-		}
-	}
-
-	focus = {
-		id = GER_promise_land_to_bulgaria
-		icon = GFX_goal_generic_more_territorial_claims
-		prerequisite = { focus = GER_make_concessions_to_italy
-						 focus = GER_ottoman_military_mission }
-		x = 26
-		y = 4
-		cost = 10
-		completion_reward = {
-			BUL = {
-				add_opinion_modifier = {
-					target = ROOT
-					modifier = offered_support
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = GER_threaten_british_india
-		icon = GFX_goal_generic_political_pressure
-		prerequisite = { focus = GER_promise_land_to_bulgaria }
-		x = 25
-		y = 5
-		cost = 10
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = GER_ally_afghanstistan
-		icon = GFX_goal_generic_dangerous_deal
-		prerequisite = { focus = GER_threaten_british_india }
-		x = 25
-		y = 6
-		cost = 10
-		completion_reward = {
-			AFG = {
-				add_opinion_modifier = {
-					target = ROOT
-					modifier = offered_support
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = GER_ally_persia
-		icon = GFX_goal_generic_major_alliance
-		prerequisite = { focus = GER_ally_afghanstistan }
-		x = 25
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = GER_fight_for_survival
+						 focus = GER_abbandon_austria }
+		mutually_exclusive = { focus = GER_protect_the_baltics }
+		x = 19
 		y = 7
 		cost = 10
 		completion_reward = {
-			PER = {
-				add_opinion_modifier = {
-					target = ROOT
-					modifier = offered_support
-				}
-			}
 		}
 	}
-
+	
 	focus = {
-		id = GER_german_advisors_in_china
-		icon = GFX_goal_generic_occupy_states_ongoing_war
-		prerequisite = { focus = GER_promise_land_to_bulgaria }
-		x = 27
-		y = 5
-		cost = 10
-		completion_reward = {
-			CHI = {
-				add_ideas = { german_advisors }
-			}
-		}
-	}
-
-	focus = {
-		id = GER_invest_in_china
-		icon = GFX_goal_generic_construction
-		prerequisite = { focus = GER_german_advisors_in_china }
-		x = 27
-		y = 6
-		cost = 10
-		completion_reward = {
-			CHI = {
-				add_opinion_modifier = {
-					target = ROOT
-					modifier = aided_industry
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = GER_ally_china
-		icon = GFX_goal_tripartite_pact
-		prerequisite = { focus = GER_invest_in_china }
-		x = 27
-		y = 7
-		cost = 10
-		completion_reward = {
-			CHI = {
-				add_opinion_modifier = {
-					target = ROOT
-					modifier = offered_support
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = GER_fight_for_survival
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = GER_ally_china
-						 focus = GER_ally_persia }
-		x = 26
+		id = GER_baghdad_railway
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = GER_ottoman_military_mission}
+		x = 19
 		y = 8
 		cost = 10
 		completion_reward = {
-			add_ideas = tot_economic_mobilisation
 		}
 	}
-
+	
 	focus = {
-		id = GER_unite_all_germans
-		icon = GFX_goal_generic_territory_or_war
-		mutually_exclusive = { focus = GER_expand_the_central_powers }
-		prerequisite = { focus = GER_diplomacy }
-		x = 28
-		y = 2
-		cost = 10
-		completion_reward = {
-			remove_from_faction = AUS
-			AUS = {
-				add_opinion_modifier = {
-					target = ROOT
-					modifier = large_decrease
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = GER_claim_austria
-		icon = GFX_goal_anschluss
-		prerequisite = { focus = GER_unite_all_germans }
-		x = 29
+		id = GER_the_tripple_alliance
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = GER_side_of_three }
+		mutually_exclusive = { focus = GER_three_caesers_alliance }
+		x = 21
 		y = 3
 		cost = 10
 		completion_reward = {
-			add_state_claim = 152
-			add_state_claim = 153
-			add_state_claim = 4
 		}
 	}
-
+	
 	focus = {
-		id = GER_claim_bohemia
-		icon = GFX_goal_demand_sudetenland
-		prerequisite = { focus = GER_claim_austria }
-		x = 29
+		id = GER_befriend_the_nords
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = GER_the_tripple_alliance }
+		x = 21
 		y = 4
 		cost = 10
 		completion_reward = {
-			add_state_claim = 9
-			add_state_claim = 69
 		}
 	}
-
+	
 	focus = {
-		id = GER_claim_south_tyrol
-		icon = GFX_goal_generic_military_deal
-		prerequisite = { focus = GER_claim_bohemia }
-		x = 29
+		id = GER_three_caesers_alliance
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = GER_side_of_three }
+		mutually_exclusive = { focus = GER_the_tripple_alliance }
+		x = 23
+		y = 3
+		cost = 10
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = GER_target_the_nords
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = GER_three_caesers_alliance }
+		x = 23
+		y = 4
+		cost = 10
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = GER_stablize_the_realm
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = GER_befriend_the_nords 
+						 focus = GER_target_the_nords }
+		x = 23
 		y = 5
 		cost = 10
 		completion_reward = {
-			add_state_claim = 39
 		}
 	}
-
+	
 	focus = {
-		id = GER_claim_luxembourg
-		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = GER_unite_all_germans }
-		x = 31
-		y = 3
+		id = GER_invest_in_austria
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = GER_stablize_the_realm }
+		mutually_exclusive = { focus = GER_abbandon_austria }
+		x = 23
+		y = 6
 		cost = 10
 		completion_reward = {
-			add_state_claim = 8
-			ITA = {
-				add_opinion_modifier = {
-					target = ROOT
-					modifier = large_decrease
-				}
-			}
 		}
 	}
-
+	
 	focus = {
-		id = GER_claim_swiss
-		icon = GFX_goal_generic_propaganda
-		prerequisite = { focus = GER_claim_luxembourg }
-		x = 31
-		y = 4
+		id = GER_abbandon_austria
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = GER_befriend_the_nords 
+						 focus = GER_target_the_nords }
+		mutually_exclusive = { focus = GER_invest_in_austria }
+		x = 21
+		y = 6
 		cost = 10
 		completion_reward = {
-			add_state_claim = 3
-			add_state_claim = 151
 		}
 	}
-
+	
 	focus = {
-		id = GER_reform_the_goverment
-		icon = GFX_goal_generic_demand_territory
-		prerequisite = { focus = GER_politics }
-		x = 34
-		y = 1
+		id = GER_protect_the_baltics
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = GER_abbandon_austria }
+		mutually_exclusive = { focus = GER_ottoman_military_mission }
+		x = 21
+		y = 7
 		cost = 10
 		completion_reward = {
-			add_political_power = 120
 		}
 	}
+	
 
-	focus = {
-		id = GER_reform_the_suffage
-		icon = GFX_goal_generic_propaganda
-		prerequisite = { focus = GER_reform_the_goverment }
-		x = 34
-		y = 2
-		cost = 10
-		completion_reward = {
-			remove_ideas = GER_call_for_suffrage_reform_idea
-		}
-	}
-
-	focus = {
-		id = GER_declearation_of_the_93
-		icon = GFX_goal_generic_defence
-		prerequisite = { focus = GER_reform_the_suffage }
-		available = {
-			any_country = {
-				has_war_with = ROOT
-				has_government = democratic
-				num_of_factories > 30
-			}
-		}
-		x = 33
-		y = 3
-		cost = 10
-		completion_reward = {
-			add_ideas = GER_declearation_of_the_93
-		}
-	}
-
-	focus = {
-		id = GER_burgfrieden
-		icon = GFX_goal_generic_positive_trade_relations
-		prerequisite = { focus = GER_reform_the_suffage }
-		available = {
-			any_country = {
-				has_war_with = ROOT
-				has_government = democratic
-				num_of_factories > 30
-			}
-		}
-		x = 35
-		y = 3
-		cost = 10
-		completion_reward = {
-			add_ideas = GER_burgfrieden_idea
-		}
-	}
 }
