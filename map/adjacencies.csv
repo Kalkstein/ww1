@@ -104,7 +104,10 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 1440;4155;sea;5507;-1;-1;-1;-1;;Puerto Rico-Virgin Islands
 10203;9805;sea;13252;-1;-1;-1;-1;;Corfu-Epirus
 1106;12001;sea;13316;-1;-1;-1;-1;;Lefkada-Epirus
-3401;7127;sea;6801;-1;-1;-1;-1;;Cyclades-Greece
+13498;7127;sea;6801;-1;-1;-1;-1;;Cyclades-Greece
+3401;4109;sea;6801;-1;-1;-1;-1;;Cyclades-Greece
+3401;13497;sea;6801;-1;-1;-1;-1;;Milos-Naxos
+13498;13497;sea;6801;-1;-1;-1;-1;;Mykonos-Naxos
 8435;6864;sea;13364;-1;-1;-1;-1;;Lesbos-Turkey
 6550;4112;sea;7226;-1;-1;-1;-1;;Chios-Turkey
 7003;9941;sea;13362;-1;-1;-1;-1;;Kos-Bodrum
