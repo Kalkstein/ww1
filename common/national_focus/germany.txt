@@ -1365,7 +1365,7 @@ focus_tree = {
 		y = 2
 		cost = 10
 		completion_reward = {
-			add_ideas = GER_found_the_ohl_idea
+			add_ideas = general_staff
 		}
 	}
 	
@@ -2093,7 +2093,7 @@ focus_tree = {
 		y = 4
 		cost = 10
 		completion_reward = {
-			set_country_leader_ideology = democratic
+			set_country_leader_ideology = conservatism
 		}
 	}
 	

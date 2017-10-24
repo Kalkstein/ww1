@@ -138,7 +138,7 @@ ideas = {
 			}
 		}
 		
-		GER_found_the_ohl_idea = {
+		general_staff = {
 			picture = German_advisors
 			allowed = {
 				original_tag = GER
@@ -193,7 +193,7 @@ ideas = {
 		}
 		
 		GER_kulturkampf_idea = {
-			picture = generic_pp_unity_bonus
+			picture = generic_infantry_bonus
 			removal_cost = -1
 			
 			allowed = {
@@ -210,7 +210,7 @@ ideas = {
 		}
 		
 		GER_sonderweg_idea = {
-			picture = generic_pp_unity_bonus
+			picture = generic_production_bonus
 			removal_cost = -1
 			
 			allowed = {
@@ -227,7 +227,7 @@ ideas = {
 		}
 		
 		GER_diversity_of_culture_idea = {
-			picture = generic_pp_unity_bonus
+			picture = generic_manpower_bonus
 			removal_cost = -1
 			
 			allowed = {
@@ -244,7 +244,7 @@ ideas = {
 		}
 		
 		GER_legacy_of_marx_idea = {
-			picture = generic_pp_unity_bonus
+			picture = generic_communism_drift_bonus
 			removal_cost = -1
 			
 			allowed = {
@@ -261,7 +261,7 @@ ideas = {
 		}
 		
 		GER_legacy_of_marx_II_idea = {
-			picture = generic_pp_unity_bonus
+			picture = generic_communism_drift_bonus
 			removal_cost = -1
 			
 			allowed = {

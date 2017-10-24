@@ -3,7 +3,7 @@ ideas = {
 	country = {
 		
 		RUS_germany_support_communism_in_russia_idea = {
-			picture = generic_democratic_drift_bonus
+			picture = generic_communism_drift_bonus
 			removal_cost = -1
 			
 			allowed = {
