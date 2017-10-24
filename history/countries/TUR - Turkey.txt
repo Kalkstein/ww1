@@ -44,11 +44,11 @@ set_technology = {
 		fighter1 = 1
 		early_bomber = 1
 		tactical_bomber1 = 1
-		gw_artillery = 1
-		interwar_artillery = 1
-		interwar_antiair = 1
-		infantry_weapons2 = 1
-		support_weapons = 1
+		
+		
+		
+		
+		
 		basic_submarine = 1
 
 		#doctrines
@@ -65,7 +65,7 @@ set_technology = {
 		#electronics
 		electronic_mechanical_engineering = 1
 		radio = 1
-		radio_detection = 1
+		
 		mechanical_computing = 1
 		computing_machine = 1
 
@@ -76,8 +76,8 @@ set_technology = {
 		oil_plant = 1
 		construction1 = 1
 		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
+		
+		
 	}
 }
 

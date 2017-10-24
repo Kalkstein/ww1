@@ -11,16 +11,15 @@ set_technology = {
 	tech_support = 1
 	tech_recon = 1
 	tech_mountaineers = 1
-	motorised_infantry = 1
-	gw_artillery = 1
-	interwar_antiair = 1
-	gwtank = 1
-	basic_light_tank = 1
-	improved_light_tank = 1
+	
+	
+	
+	
+	
 	early_fighter = 1
-	naval_bomber1 = 1
-	cv_early_fighter = 1
-	cv_naval_bomber1 = 1
+	
+	
+	
 	early_bomber = 1
 	tactical_bomber1 = 1
 	CAS1 = 1
@@ -80,17 +79,17 @@ set_technology = {
 		fighter2 = 1
 		heavy_fighter1 = 1
 		tactical_bomber2 = 1
-		strategic_bomber1 = 1
-		cv_fighter1 = 1
-		cv_CAS1 = 1
-		improved_light_tank = 1
+		
+		fighter1 = 1
+		CAS1 = 1
+		
 		basic_medium_tank = 1
-		basic_heavy_tank = 1
-		interwar_artillery = 1
+		
+		
 		interwar_antitank = 1
-		infantry_weapons2 = 1
-		support_weapons = 1
-		support_weapons2 = 1
+		
+		
+		
 		basic_battleship = 1
 		basic_battlecruiser = 1
 
@@ -113,7 +112,7 @@ set_technology = {
 		#electronics
 		electronic_mechanical_engineering = 1
 		radio = 1
-		radio_detection = 1
+		
 		mechanical_computing = 1
 		computing_machine = 1
 		basic_encryption = 1
@@ -129,9 +128,9 @@ set_technology = {
 		construction1 = 1
 		construction2 = 1
 		construction3 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-		dispersed_industry3 = 1
+		
+		
+		
 	}
 }
 

@@ -28,9 +28,9 @@ set_convoys = 10
 	
 	oob = "IRE_1914"
 	set_technology = {
-		gw_artillery = 1
-		interwar_antiair = 1
-		infantry_weapons2 = 1
+		
+		
+		
 
 		#doctrines
 		air_superiority = 1
@@ -43,7 +43,7 @@ set_convoys = 10
 		#electronics
 		electronic_mechanical_engineering = 1
 		radio = 1
-		radio_detection = 1
+		
 		mechanical_computing = 1
 		computing_machine = 1
 
@@ -56,8 +56,8 @@ set_convoys = 10
 		improved_oil_plant = 1
 		construction1 = 1
 		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
+		
+		
 	}
 }
 

@@ -35,7 +35,7 @@ set_technology = {
 		#electronics
 		electronic_mechanical_engineering = 1
 		radio = 1
-		radio_detection = 1
+		
 
 		#industry
 		basic_machine_tools = 1
@@ -43,8 +43,8 @@ set_technology = {
 		synth_oil_experiments = 1
 		construction1 = 1
 		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
+		
+		
 	}
 }
 

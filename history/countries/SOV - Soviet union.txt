@@ -13,18 +13,12 @@ set_technology = {
 	tech_engineers = 1
 	tech_military_police = 1
 	tech_mountaineers = 1
-	motorised_infantry = 1
 	paratroopers = 1
-	gw_artillery = 1
-	gwtank = 1
-	basic_light_tank = 1  # PLACEHOLDER
-	#basic_heavy_tank = 1  # PLACEHOLDER
-	#basic_medium_tank = 1 # PLACEHOLDER
 	early_fighter = 1
 	fighter1 = 1
 	early_bomber = 1
-	strategic_bomber1 = 1
-	naval_bomber1 = 1
+	
+	
 	early_submarine = 1
 	basic_submarine = 1
 	early_destroyer = 1
@@ -147,16 +141,16 @@ set_technology = {
 	
 	set_technology = {
 		CAS1 = 1
-		improved_light_tank = 1 
-		basic_heavy_tank = 1    # Should be available in 1936 (T-35)
+		 
+		    # Should be available in 1936 (T-35)
 		basic_medium_tank = 1 # Should be available in 1936 (T-28)
 		tactical_bomber1 = 1
-		interwar_artillery = 1
+		
 		interwar_antitank = 1
-		interwar_antiair = 1
-		infantry_weapons2 = 1
-		support_weapons = 1
-		support_weapons2 = 1
+		
+		
+		
+		
 		paratroopers = 1
 		basic_submarine = 1
 		basic_destroyer = 1
@@ -176,7 +170,7 @@ set_technology = {
 		#electronics
 		electronic_mechanical_engineering = 1
 		radio = 1
-		radio_detection = 1
+		
 		mechanical_computing = 1
 		computing_machine = 1
 		basic_encryption = 1
@@ -192,9 +186,9 @@ set_technology = {
 		construction1 = 1
 		construction2 = 1
 		construction3 = 1
-		concentrated_industry = 1
-		concentrated_industry2 = 1
-		concentrated_industry3 = 1
+		
+		
+		
 	}
 }
 

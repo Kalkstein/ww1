@@ -6,7 +6,7 @@ oob = "ARG_1910"
 set_technology = {
 	infantry_weapons = 1
 	tech_mountaineers = 1
-	gw_artillery = 1
+	
 	early_fighter = 1
 	CAS1 = 1
 	early_submarine = 1
@@ -36,12 +36,12 @@ set_country_flag = monroe_doctrine
 	oob = "ARG_1914"
 	set_technology = {
 		early_bomber = 1
-		naval_bomber1 = 1
-		interwar_artillery = 1
-		interwar_antiair = 1
+		
+		
+		
 		infantry_weapons1 = 1
-		infantry_weapons2 = 1
-		support_weapons = 1
+		
+		
 		basic_destroyer = 1
 		basic_light_cruiser = 1
 
@@ -57,7 +57,7 @@ set_country_flag = monroe_doctrine
 		#electronics
 		electronic_mechanical_engineering = 1
 		radio = 1
-		radio_detection = 1
+		
 		mechanical_computing = 1
 		computing_machine = 1
 
@@ -70,8 +70,8 @@ set_country_flag = monroe_doctrine
 		improved_oil_plant = 1
 		construction1 = 1
 		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
+		
+		
 	}
 }
 

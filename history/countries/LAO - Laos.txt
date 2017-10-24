@@ -1,5 +1,4 @@
-﻿
-capital = 670 #today Vientiane in 1945 Luang Prabang sel proclaimed indie Laos 
+﻿capital = 670 #today Vientiane in 1945 Luang Prabang sel proclaimed indie Laos 
 
 oob = "LAO_1910"
 
@@ -13,16 +12,7 @@ set_technology = {
 	tech_support = 1
 	tech_recon = 1
 	tech_mountaineers = 1
-	motorised_infantry = 1
-	gw_artillery = 1
-	interwar_antiair = 1
-	gwtank = 1
-	basic_light_tank = 1
-	improved_light_tank = 1
 	early_fighter = 1
-	naval_bomber1 = 1
-	cv_early_fighter = 1
-	cv_naval_bomber1 = 1
 	early_bomber = 1
 	tactical_bomber1 = 1
 	CAS1 = 1

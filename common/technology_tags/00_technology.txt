@@ -5,21 +5,18 @@ technology_categories = {
 	light_air
 	medium_air
 	heavy_air
+	jet_technology
 	armor
 	cat_light_armor
 	cat_medium_armor
 	cat_heavy_armor
 	artillery
-	siege_artillery_tech
-	heavy_artillery
 	cat_anti_tank
 	naval_air
 	infantry_weapons
 	motorized_equipment
 	cat_mechanized_equipment
 	naval_equipment
-	gas_tech
-	gas_mask_tech
 	industry
 	excavation_tech
 	production_tech
@@ -30,7 +27,6 @@ technology_categories = {
 	strategic_destruction_tree
 	battlefield_support_tree
 	operational_integrity_tree
-	jet_technology
 	trade_interdiction_tree
 	convoy_defense_tree
 	light_fighter
@@ -85,6 +81,13 @@ technology_categories = {
 	rocketry
 	nuclear
 	zeppelins
+	screen_doc
+	capital_doc
+	gas_tech
+	gas_mask_tech
+	incendiaries
+	siege_artillery_tech
+	heavy_artillery
 }
 
 technology_folders = {
