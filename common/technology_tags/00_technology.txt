@@ -85,6 +85,7 @@ technology_categories = {
 	capital_doc
 	gas_tech
 	gas_mask_tech
+	cavalry
 	incendiaries
 	siege_artillery_tech
 	heavy_artillery

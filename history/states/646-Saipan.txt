@@ -6,7 +6,7 @@ state=
 	manpower=3000
 	history=
 	{
-		owner = GNG
+		owner = GER
 		buildings = {
 			infrastructure = 3
 			3995 = {

@@ -2,7 +2,7 @@ ideas = {
 
 	country = {
 		
-		supress_socialism = {
+		USA_supress_socialism_idea = {
 			picture = anti_soviet_pact
 			removal_cost = -1
 			
@@ -19,38 +19,37 @@ ideas = {
 			}
 		}
 		
-		american_influence_drift_democratic = {
-			allowed = { always = no	}
+		USA_american_influence_drift_democratic_idea = {
+			picture = generic_democratic_drift_bonus
+			removal_cost = -1
+			
+			allowed = {
+				always = no	
+			}
 
 			allowed_civil_war = {
 				has_government = democratic
 			}
 
-			removal_cost = -1
-			picture = generic_democratic_drift_bonus
 			modifier = {
 				democratic_drift = 0.05
 			}
 		}
 		
-		american_influence_defence_democratic = {
-			allowed = { always = no	}
+		USA_american_influence_defence_democratic_idea = {
+			picture = generic_democratic_drift_bonus
+			removal_cost = -1
+			allowed = { 
+				always = no	
+			}
 
 			allowed_civil_war = {
 				has_government = democratic
 			}
 
-			removal_cost = -1
-			picture = generic_democratic_drift_bonus
 			modifier = {
 				drift_defence_factor = 0.5
 			}
 		}
-		
-		
-		
-		
-		
-		
 	}
 }

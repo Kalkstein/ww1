@@ -65,8 +65,6 @@ set_cosmetic_tag = RAJ_UK # British Raj
 	complete_national_focus = production_effort
 
 	add_ideas = {
-		#laws
-		
 		low_economic_mobilisation
 	}
 

@@ -342,7 +342,7 @@ on_actions = {
 				limit = {
 					FROM = {
 						OR = {
-							has_idea = american_influence_drift_democratic
+							has_idea = USA_american_influence_drift_democratic_idea
 						}
 					}
 					NOT = { 

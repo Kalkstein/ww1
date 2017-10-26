@@ -298,26 +298,6 @@ YEM = {
 	color = rgb { 155 101 107 }
 	color_ui = rgb { 202 131 139 }
 }
-GNG = {
-	color = rgb { 105 120 110 }
-	color_ui = rgb {  138 155 116 }
-}
-GTL = {
-	color = rgb { 71 71 71 }
-	color_ui = rgb { 50 50 50 }
-}
-GEA = {
-	color = rgb { 150 150 150 }
-	color_ui = rgb { 125 125 130 }
-}
-GSW = {
-	color = rgb { 100 100 100 }
-	color_ui = rgb { 45 45 45 }
-}
-GEK = {
-	color = rgb { 130 130 130 }
-	color_ui = rgb { 30 30 30 }
-}
 OMA = {
 	color = rgb { 155 101 107 }
 	color_ui = rgb { 202 131 139 }
