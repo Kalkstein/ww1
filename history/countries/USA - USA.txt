@@ -11,13 +11,7 @@ set_technology = {
 	tech_recon = 1
 	tech_support = 1		
 	tech_engineers = 1
-	
-	
 	early_fighter = 1
-	
-	
-	CAS1 = 1
-	
 	CAS1 = 1
 	early_bomber = 1
 	early_submarine = 1
@@ -65,58 +59,18 @@ give_guarantee = URG
 	
 	#adding ministers
 	add_ideas = {
-
-		#laws
 		isolation
-		
+		neutrality_idea
 	}
-
-	#focuses
-	unlock_national_focus = USA_wpa
-	unlock_national_focus = USA_war_propaganda
-	unlock_national_focus = USA_prepare_intervention
-	complete_national_focus = USA_military_construction
-	complete_national_focus = USA_air_war_plans_division
-	complete_national_focus = USA_reinforce_monroe_doctrine
-	complete_national_focus = USA_bureau_of_ships
-	complete_national_focus = USA_escort_effort
-	complete_national_focus = USA_amphibious_operations
-	complete_national_focus = USA_expand_the_USMC
-	complete_national_focus = USA_convoy_tactics
-	complete_national_focus = USA_fund_the_navy
 
 	set_global_flag = earhart_disappeared
 	oob = "USA_1914"
 	set_technology = {
-		fighter1 = 1
-		fighter1 = 1
-		heavy_fighter1 = 1
-		tactical_bomber1 = 1
-		CAS2 = 1
-		
-		
-		
-		interwar_antitank = 1
-		
-		
-		
-		
 		marines = 1
-		improved_submarine = 1
 		basic_destroyer = 1
 		basic_heavy_cruiser = 1
 		basic_battlecruiser = 1
-
-		#doctrines
-		#Air
-		air_superiority = 1
-		infrastructure_destruction = 1
-		naval_strike_tactics = 1
-
 		
-		
-		
-
 		#electronics
 		electronic_mechanical_engineering = 1
 		radio = 1
@@ -136,9 +90,6 @@ give_guarantee = URG
 		construction1 = 1
 		construction2 = 1
 		construction3 = 1
-		
-		
-		
 	}
 	create_equipment_variant = {
 		name = "Martin M166"
@@ -183,6 +134,7 @@ set_politics = {
 
 add_ideas = {
 	isolation
+	neutrality_idea
 	free_trade
 }
 

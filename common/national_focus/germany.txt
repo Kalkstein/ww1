@@ -764,6 +764,11 @@ focus_tree = {
 		x = 19
 		y = 5
 		cost = 10
+		available = {
+			if = {
+				GER = { has_war_with = RUS }
+			}
+		}
 		completion_reward = {
 			RUS = {
 				add_ideas = RUS_germany_support_communism_in_russia_idea
@@ -779,6 +784,11 @@ focus_tree = {
 		x = 18
 		y = 6
 		cost = 10
+		available = {
+			if = {
+				has_war = yes
+			}
+		}
 		completion_reward = {
 			add_ideas = tot_economic_mobilisation
 		}
@@ -795,17 +805,24 @@ focus_tree = {
 		available = {
 			if = {
 				has_war = yes
+				NOT = { GER = { has_war_with = MEX } }
 			}
 		}
 		completion_reward = {
 			MEX = {
 				country_event = { days = 1 id = germany.3 }
 			}
-#			if = {
-#				ENG  {
-#					has_completed_focus = ENG_advanced_research
-#				}
-#			}
+			if = {
+				limit = { 
+					ENG  {
+						ENG = { has_war_with = GER }
+						has_completed_focus = ENG_advance_research
+					}
+				}
+				ENG = {
+					country_event = { days = 1 id = britain.2 }
+				}
+			}
 		}
 	}
 	

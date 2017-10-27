@@ -15,7 +15,7 @@ focus_tree = {
 	default = no
 	
 	focus = {
-		id = USA_foregin_policy
+		id = USA_foreign_policy
 		icon = GFX_goal_generic_more_territorial_claims
 		x = 10
 		y = 0
@@ -28,7 +28,7 @@ focus_tree = {
 	focus = {
 		id = USA_european_affairs
 		icon = GFX_goal_generic_position_armies
-		prerequisite = { focus = USA_foregin_policy }
+		prerequisite = { focus = USA_foreign_policy }
 		x = 2
 		y = 1
 		cost = 10
@@ -95,7 +95,7 @@ focus_tree = {
 		y = 6
 		cost = 10
 		completion_reward = {
-			
+			remove_ideas = neutrality_idea
 		}
 	}
 	
@@ -272,7 +272,7 @@ focus_tree = {
 	focus = {
 		id = USA_military_effort
 		icon = GFX_goal_generic_allies_build_infantry
-		prerequisite = { focus = USA_foregin_policy }
+		prerequisite = { focus = USA_foreign_policy }
 		x = 10
 		y = 1
 		cost = 10
@@ -745,9 +745,9 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = USA_moroe_doctrine
+		id = USA_monroe_doctrine
 		icon = GFX_goal_generic_positive_trade_relations
-		prerequisite = { focus = USA_foregin_policy }
+		prerequisite = { focus = USA_foreign_policy }
 		x = 30
 		y = 1
 		cost = 10
@@ -782,7 +782,7 @@ focus_tree = {
 	focus = {
 		id = USA_our_neighbours
 		icon = GFX_goal_generic_political_pressure
-		prerequisite = { focus = USA_moroe_doctrine }
+		prerequisite = { focus = USA_monroe_doctrine }
 		x = 26
 		y = 2
 		cost = 10
@@ -865,7 +865,7 @@ focus_tree = {
 	focus = {
 		id = USA_south_america
 		icon = GFX_goal_generic_political_pressure
-		prerequisite = { focus = USA_moroe_doctrine }
+		prerequisite = { focus = USA_monroe_doctrine }
 		x = 30
 		y = 2
 		cost = 10
@@ -1013,7 +1013,7 @@ focus_tree = {
 	focus = {
 		id = USA_central_america
 		icon = GFX_goal_generic_political_pressure
-		prerequisite = { focus = USA_moroe_doctrine }
+		prerequisite = { focus = USA_monroe_doctrine }
 		x = 34
 		y = 2
 		cost = 10

@@ -355,7 +355,12 @@ focus_tree = {
 		y = 4
 		cost = 10
 		completion_reward = {
-			
+			ITA = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = medium_increase
+				}
+			}
 		}
 	}
 	
@@ -367,7 +372,9 @@ focus_tree = {
 		y = 5
 		cost = 10
 		completion_reward = {
-			
+			ITA = {
+				country_event = { days = 1 id = britain.1 }
+			}
 		}
 	}
 	
@@ -403,7 +410,7 @@ focus_tree = {
 		y = 6
 		cost = 10
 		completion_reward = {
-			
+			add_political_power = 120
 		}
 	}
 	
@@ -427,7 +434,9 @@ focus_tree = {
 		y = 7
 		cost = 10
 		completion_reward = {
-			add_political_power = 120
+			119 = {
+				remove_core_of = IRE
+			}
 		}
 	}
 	
@@ -453,7 +462,9 @@ focus_tree = {
 		y = 9
 		cost = 10
 		completion_reward = {
+			release = IRE
 			
+			add_political_power = 600
 		}
 	}
 	

@@ -20,6 +20,8 @@
  JAB_neutrality:0 "Jabal Shammar"
  JAB_neutrality_DEF:0 "Emirate of Jabal Shammar"
  JAB_neutrality_ADJ:0 "Rashid"
- 
+ PER_neutrality:0 "Persia"
+ PER_neutrality_DEF:0 "Sublime State of Persia"
+ PER_neutrality_ADJ:0 "Persian"
  
 
