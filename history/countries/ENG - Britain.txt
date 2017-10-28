@@ -34,6 +34,7 @@ set_technology = {
 
 add_ideas = {
 	ENG_no_conscription_idea
+	ENG_ireland_idea
 }
 
 set_convoys = 800

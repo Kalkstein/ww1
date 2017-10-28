@@ -2,12 +2,29 @@ ideas = {
 
 	country = {
 		
+		ENG_ireland_idea = {
+			picture = FRA_scw_intervention_republicans_focus
+			removal_cost = -1
+			
+			allowed = {
+				original_tag = ENG
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				political_power_cost = 0.5
+			}
+		}
+		
 		ENG_no_conscription_idea = {
 			picture = generic_manpower_bonus
 			removal_cost = -1
 			
 			allowed = {
-				original_tag = USA
+				original_tag = ENG
 			}
 
 			allowed_civil_war = {
@@ -19,12 +36,30 @@ ideas = {
 			}
 		}
 		
+		ENG_status_quo_economy_idea = {
+			picture = generic_production_bonus
+			removal_cost = -1
+			
+			allowed = {
+				original_tag = ENG
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = -0.1
+			}
+		}
+		
 		ENG_the_senior_service__with_no_conscription_idea = {
 			picture = generic_manpower_bonus
 			removal_cost = -1
 			
 			allowed = {
-				original_tag = USA
+				original_tag = ENG
 			}
 
 			allowed_civil_war = {
@@ -41,7 +76,7 @@ ideas = {
 			removal_cost = -1
 			
 			allowed = {
-				original_tag = USA
+				original_tag = ENG
 			}
 
 			allowed_civil_war = {
@@ -58,7 +93,7 @@ ideas = {
 			removal_cost = -1
 			
 			allowed = {
-				original_tag = USA
+				original_tag = ENG
 			}
 
 			allowed_civil_war = {

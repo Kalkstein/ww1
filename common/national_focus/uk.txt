@@ -463,8 +463,8 @@ focus_tree = {
 		cost = 10
 		completion_reward = {
 			release = IRE
-			
-			add_political_power = 600
+			remove_ideas = ENG_ireland_idea
+			add_political_power = 120
 		}
 	}
 	
@@ -505,7 +505,7 @@ focus_tree = {
 		y = 3
 		cost = 10
 		completion_reward = {
-			
+			add_political_power = 120
 		}
 	}
 	
@@ -672,7 +672,11 @@ focus_tree = {
 		y = 2
 		cost = 10
 		completion_reward = {
-			
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
 		}
 	}
 	
@@ -685,7 +689,7 @@ focus_tree = {
 		y = 3
 		cost = 10
 		completion_reward = {
-			
+			add_ideas = ENG_status_quo_economy_idea
 		}
 	}
 	
@@ -997,7 +1001,7 @@ focus_tree = {
 			add_tech_bonus = {
 				bonus = 0.50
 				uses = 1
-				category = industry
+				category = excavation_tech
 			}
 		}
 	}
@@ -1610,7 +1614,7 @@ focus_tree = {
 			add_tech_bonus = {
 				bonus = 0.5
 				uses = 1
-				category = excavation_tech
+				category = synth_resources
 			}
 		}
 	}
