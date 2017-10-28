@@ -29,20 +29,18 @@ add_ideas = {
 	
 	oob = "MON_1914"
 	set_technology = {
-		support_weapons = 1
-		gw_artillery = 1
+		
+		
 		
 		#doctrines
 		air_superiority = 1
 		
 		mass_assault = 1
-		pocket_defence = 1
-		defence_in_depth = 1
 
 		#electronics
 		electronic_mechanical_engineering = 1
 		radio = 1
-		radio_detection = 1
+		
 		mechanical_computing = 1
 
 		#industry
@@ -53,8 +51,8 @@ add_ideas = {
 		oil_plant = 1
 		construction1 = 1
 		construction2 = 1
-		concentrated_industry = 1
-		concentrated_industry2 = 1
+		
+		
 	}
 }
 

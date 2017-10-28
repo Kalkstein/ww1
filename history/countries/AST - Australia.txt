@@ -9,12 +9,12 @@ set_technology = {
 	tech_support = 1		
 	tech_engineers = 1
 	tech_recon = 1
-	gw_artillery = 1
-	gwtank = 1
+	
+	
 	early_fighter = 1
-	cv_early_fighter = 1
-	cv_naval_bomber1 = 1
-	naval_bomber1 = 1
+	
+	
+	
 	early_bomber = 1
 	CAS1 = 1
 	early_destroyer = 1
@@ -77,15 +77,9 @@ if = {
 	set_technology = {
 		fighter1 = 1
 		tactical_bomber1 = 1
-		basic_light_tank = 1
-		improved_light_tank = 1
-		basic_medium_tank = 1
-		basic_heavy_tank = 1
-		interwar_artillery = 1
-		interwar_antitank = 1
-		infantry_weapons2 = 1
-		support_weapons = 1
-		support_weapons2 = 1
+		
+		
+		
 		basic_destroyer = 1
 
 		#doctrines
@@ -99,7 +93,7 @@ if = {
 		#electronics
 		electronic_mechanical_engineering = 1
 		radio = 1
-		radio_detection = 1
+		
 		mechanical_computing = 1
 		computing_machine = 1
 
@@ -112,8 +106,8 @@ if = {
 		improved_oil_plant = 1
 		construction1 = 1
 		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
+		
+		
 	}
 }
 

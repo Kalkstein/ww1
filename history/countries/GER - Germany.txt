@@ -10,20 +10,11 @@ set_technology = {
 	tech_support = 1		
 	tech_engineers = 1
 	tech_mountaineers = 1
-	motorised_infantry = 1
-	gw_artillery = 1
-	interwar_antiair = 1
-	gwtank = 1
-	basic_light_tank = 1
-	improved_light_tank = 1
-	basic_heavy_tank = 1
 	early_fighter = 1
 	fighter1 = 1
 	early_bomber = 1
 	tactical_bomber1 = 1
-	strategic_bomber1 = 1
 	CAS1 = 1
-	naval_bomber1 = 1
 	early_submarine = 1
 	basic_submarine = 1
 	early_destroyer = 1
@@ -35,7 +26,6 @@ set_technology = {
 	basic_battleship = 1
 	early_battlecruiser = 1
 	mobile_warfare = 1
-	trade_interdiction = 1
 	formation_flying = 1
 	synth_oil_experiments = 1
 	transport = 1
@@ -48,12 +38,8 @@ set_technology = {
 set_research_slots = 4
 set_convoys = 200
 set_national_unity = 0.9
-
-#Trade
-create_import = {
-		resource = tungsten
-		factories = 1
-		exporter = SWE
+add_ideas = {
+	GER_call_for_suffrage_reform_idea
 }
 
 1939.1.1 = {
@@ -77,105 +63,11 @@ create_import = {
 	
 	oob = "GER_1914"
 	
-	set_autonomy = {
-		target = SLO
-		autonomous_state = autonomy_puppet
-	}
-	
-	give_military_access = SLO
-	create_wargoal = {
-		type = take_state_focus
-		target = POL
-		generator = { 72 88 90 87 86 } # Zaolzie Krakow Kielce Lodz Poznan
-	}
-
-#Trade
-	create_import = {
-			resource = oil
-			factories = 2
-			exporter = SOV
-	}
-
-	#MR pact effect, Also has a part scripted in soviet history file
-	unlock_national_focus = GER_mol_rib_pact
-	every_other_country = {
-		limit = {
-			has_government = fascism 
-		}
-		add_opinion_modifier = { target = GER modifier = MR_pact_fascists }
-	}
-	diplomatic_relation = { country = SOV relation = non_aggression_pact }
-	add_opinion_modifier = { target = SOV modifier = MR_pact }
-	#MR pact end
-
-	#Soviet treaty
-	unlock_national_focus = GER_soviet_treaty
-	add_tech_bonus = {
-		bonus = 0.5
-		uses = 2
-		category = armor
-	}
-	SOV = {
-		add_opinion_modifier = { target = GER modifier = sov_ger_treaty }
-		add_opinion_modifier = { target = GER modifier = sov_ger_treaty_trade }
-	}
-	#Soviet treaty end
-	
-	unlock_national_focus = GER_rhineland
-	unlock_national_focus = GER_anschluss
-	unlock_national_focus = GER_demand_sudetenland
-	unlock_national_focus = GER_first_vienna_award
-	unlock_national_focus = GER_end_of_czechoslovakia
-	unlock_national_focus = GER_demand_memel
-
-	set_global_flag = end_of_czechoslovakia
-	set_global_flag = olympics_1936
-	complete_national_focus = GER_autobahn
-	complete_national_focus = GER_west_wall
-	complete_national_focus = GER_army_innovation
-	complete_national_focus = GER_industrial_effort
-
-	#BUILDINGS
-	
 
 	set_technology = {
-		improved_light_tank = 1 
-		basic_medium_tank = 1 
-		CAS2 = 1
-		heavy_fighter1 = 1
-		interwar_artillery = 1
-		interwar_antitank = 1
-		infantry_weapons2 = 1
-		improved_infantry_weapons = 1
-		support_weapons = 1
-		support_weapons2 = 1
-		paratroopers = 1
-		basic_heavy_cruiser = 1
-		improved_heavy_cruiser = 1
-		improved_battleship = 1
-		early_carrier = 1
-		basic_carrier = 1
-		improved_carrier = 1
-
-		#doctrines
-		delay = 1
-		elastic_defence = 1
-		armored_spearhead = 1
-		schwerpunk = 1
-		blitzkrieg = 1
-		convoy_interdiction_ti = 1
-		unrestricted_submarine_warfare = 1
-		raider_patrols = 1
-		#air
-		formation_flying = 1		
-		dive_bombing = 1
-		direct_ground_support = 1
-
 		#electronics
 		electronic_mechanical_engineering = 1
 		radio = 1
-		radio_detection = 1
-		decimetric_radar = 1
 		mechanical_computing = 1
 		computing_machine = 1
 		basic_encryption = 1
@@ -192,11 +84,6 @@ create_import = {
 		construction2 = 1
 		construction3 = 1
 		construction4 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-		dispersed_industry3 = 1
-		dispersed_industry4 = 1
-
 	}
 }
 
@@ -224,8 +111,9 @@ set_politics = {
 
 }
 
-create_faction = Axis
+create_faction = central_powers
 add_to_faction = GER
+add_to_faction = AUS
 
 
 add_ideas = {

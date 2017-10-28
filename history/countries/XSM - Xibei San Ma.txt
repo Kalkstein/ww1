@@ -45,7 +45,7 @@ set_technology = {
 		#electronics
 		electronic_mechanical_engineering = 1
 		radio = 1
-		radio_detection = 1
+		
 		mechanical_computing = 1
 		computing_machine = 1
 		basic_encryption = 1
@@ -61,9 +61,9 @@ set_technology = {
 		construction1 = 1
 		construction2 = 1
 		construction3 = 1
-		concentrated_industry = 1
-		concentrated_industry2 = 1
-		concentrated_industry3 = 1
+		
+		
+		
 	}
 }
 

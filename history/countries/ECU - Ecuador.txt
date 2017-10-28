@@ -28,10 +28,10 @@ set_convoys = 5
 	
 	oob = "ECU_1914"
 	set_technology = {
-		gw_artillery = 1
+		
 		infantry_weapons1 = 1
-		infantry_weapons2 = 1
-		support_weapons = 1
+		
+		
 
 		#doctrines
 		air_superiority = 1
@@ -43,7 +43,7 @@ set_convoys = 5
 		#electronics
 		electronic_mechanical_engineering = 1
 		radio = 1
-		radio_detection = 1
+		
 		mechanical_computing = 1
 
 		#industry
@@ -54,8 +54,8 @@ set_convoys = 5
 		oil_plant = 1
 		construction1 = 1
 		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
+		
+		
 	}
 }
 

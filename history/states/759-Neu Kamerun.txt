@@ -12,8 +12,8 @@ state={
 			infrastructure = 2
 		}
 		1912.3.30 = {
-			owner = GEK 
-			controller = GEK
+			owner = GER 
+			controller = GER
 		}
 
 	}

@@ -19,18 +19,17 @@ set_technology = {
 	tech_support = 1		
 	tech_recon = 1
 	tech_engineers = 1
-	motorised_infantry = 1
 	marines  = 1
-	gw_artillery = 1
-	gwtank = 1
-	basic_light_tank = 1
-	#basic_heavy_tank = 1  # PLACEHOLDER
+	
+	
+	
+	#  # PLACEHOLDER
 	#basic_medium_tank = 1 # PLACEHOLDER
-	cv_early_fighter = 1
-	cv_CAS1 = 1
-	cv_naval_bomber1 = 1
+	
+	CAS1 = 1
+	
 	early_fighter = 1
-	naval_bomber1 = 1
+	
 	early_bomber = 1
 	CAS1 = 1
 	early_submarine = 1
@@ -47,7 +46,7 @@ set_technology = {
 	basic_carrier = 1
 	transport = 1
 	trench_warfare = 1
-	base_strike = 1
+	
 	synth_oil_experiments = 1
 }
 
@@ -112,7 +111,7 @@ create_import = {
 		improved_heavy_cruiser = 1
 		improved_carrier = 1
 		heavy_battleship = 1
-		cv_fighter1 = 1
+		fighter1 = 1
 		fighter1 = 1
 		tactical_bomber1 = 1
 	
@@ -126,13 +125,13 @@ create_import = {
 		grand_battle_plan = 1
 		prepared_defense = 1
 		grand_assault = 1
-		carrier_primacy = 1
+		
 		carrier_task_forces = 1
 
 		#electronics
 		electronic_mechanical_engineering = 1
 		radio = 1
-		radio_detection = 1
+		
 		mechanical_computing = 1
 		computing_machine = 1
 		basic_encryption = 1
@@ -148,9 +147,9 @@ create_import = {
 		construction1 = 1
 		construction2 = 1
 		construction3 = 1
-		concentrated_industry = 1
-		concentrated_industry2 = 1
-		concentrated_industry3 = 1
+		
+		
+		
 	}
 }
 

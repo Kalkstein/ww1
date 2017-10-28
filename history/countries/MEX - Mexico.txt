@@ -5,7 +5,7 @@ oob = "MEX_1910"
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
-	gw_artillery = 1
+	
 	early_fighter = 1
 	early_bomber = 1
 	CAS1 = 1
@@ -29,10 +29,10 @@ set_country_flag = monroe_doctrine
 	
 	oob = "MEX_1914"
 	set_technology = {
-		interwar_artillery = 1
+		
 		infantry_weapons1 = 1
-		infantry_weapons2 = 1
-		support_weapons = 1
+		
+		
 
 		#doctrines
 		air_superiority = 1
@@ -44,7 +44,7 @@ set_country_flag = monroe_doctrine
 		#electronics
 		electronic_mechanical_engineering = 1
 		radio = 1
-		radio_detection = 1
+		
 		mechanical_computing = 1
 		computing_machine = 1
 
@@ -58,9 +58,9 @@ set_country_flag = monroe_doctrine
 		construction1 = 1
 		construction2 = 1
 		construction3 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-		dispersed_industry3 = 1
+		
+		
+		
 	}
 }
 

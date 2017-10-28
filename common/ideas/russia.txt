@@ -1,0 +1,23 @@
+ideas = {
+
+	country = {
+		
+		RUS_germany_support_communism_in_russia_idea = {
+			picture = generic_communism_drift_bonus
+			removal_cost = -1
+			
+			allowed = {
+				original_tag = GER
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				democratic_drift = 0.05
+			}
+		}
+		
+	}
+}

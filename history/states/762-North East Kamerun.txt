@@ -7,7 +7,7 @@ state={
 	state_category = wasteland
 
 	history={
-		owner = GEK
+		owner = GER
 		
 		1912.3.30 = {
 			owner = FRA 

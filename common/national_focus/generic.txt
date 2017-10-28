@@ -64,7 +64,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = motorized_bonus
 				bonus = 0.75
-				technology = motorised_infantry
+				category = recon_tech
 			}
 		}
 	}
@@ -346,9 +346,6 @@ focus_tree = {
 				name = bomber_bonus
 				bonus = 0.5
 				uses = 2
-				technology = strategic_bomber1
-				technology = strategic_bomber2
-				technology = strategic_bomber3
 				category = tactical_bomber
 			}
 		}
@@ -670,11 +667,7 @@ focus_tree = {
 				name = sub_op_bonus
 				bonus = 0.5
 				uses = 2
-				technology = convoy_interdiction_ti
-				technology = unrestricted_submarine_warfare
-				technology = wolfpacks
-				technology = advanced_submarine_warfare
-				technology = combined_operations_raiding
+				category = trade_interdiction_tree
 			}
 		}
 	}

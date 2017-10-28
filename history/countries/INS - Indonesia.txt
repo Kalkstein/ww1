@@ -117,13 +117,13 @@ set_cosmetic_tag = INS_HOL # Netherlands East Indies
 	complete_national_focus = production_effort
 	
 	set_technology = {
-		gwtank = 1
-		basic_light_tank = 1
-		interwar_artillery = 1
-		interwar_antiair = 1
+		
+		
+		
+		
 		tech_recon = 1
-		infantry_weapons2 = 1
-		support_weapons = 1
+		
+		
 
 		#doctrines
 		air_superiority = 1
@@ -136,7 +136,7 @@ set_cosmetic_tag = INS_HOL # Netherlands East Indies
 		#electronics
 		electronic_mechanical_engineering = 1
 		radio = 1
-		radio_detection = 1
+		
 		mechanical_computing = 1
 
 		#industry
@@ -147,8 +147,8 @@ set_cosmetic_tag = INS_HOL # Netherlands East Indies
 		oil_plant = 1
 		construction1 = 1
 		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
+		
+		
 	}
 }
 

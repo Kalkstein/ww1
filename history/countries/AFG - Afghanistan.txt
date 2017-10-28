@@ -4,8 +4,8 @@ oob = "AFG_1910"
 
 set_technology = {
 	infantry_weapons = 1
-	gwtank = 1
-	basic_light_tank = 1
+	
+	
 }
 
 1939.1.1 = {
@@ -28,7 +28,7 @@ set_technology = {
 	set_technology = {
 		early_fighter = 1
 		CAS1 = 1
-		gw_artillery = 1
+		
 
 		#doctrines
 		air_superiority = 1
@@ -42,7 +42,7 @@ set_technology = {
 		#electronics
 		electronic_mechanical_engineering = 1
 		radio = 1
-		radio_detection = 1
+		
 		mechanical_computing = 1
 
 		#industry
@@ -54,8 +54,8 @@ set_technology = {
 		improved_oil_plant = 1
 		construction1 = 1
 		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
+		
+		
 	}
 }
 
