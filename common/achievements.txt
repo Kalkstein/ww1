@@ -104,23 +104,6 @@ destroyer_of_worlds = {
 	}
 }
 
-wunderwaffen = {
-	id = 13
-	
-	possible = {
-		is_ironman = yes
-		difficulty > 0
-		has_start_date < 1936.01.02
-		has_any_custom_difficulty_setting = no
-	}
-	
-	happened = {
-		has_tech = nukes
-		has_tech = advanced_rocket_engines
-		has_tech = jet_engines
-	}
-}
-
 united_netherlands = {
 	id = 17
 	
@@ -171,80 +154,6 @@ vive_la_france = {
 # 1 MEDIUM ACHIEVEMENTS
 #############################
 
-master_of_war = {
-	id = 7
-	
-	possible = {
-		is_ironman = yes
-		difficulty > 0
-		has_start_date < 1936.01.02
-		has_any_custom_difficulty_setting = no
-	}
-	
-	happened = {
-		OR = {
-			#Fleet in being
-			AND = {
-				has_tech = grand_battlefleet
-				has_tech = submarine_offensive
-			}
-			#Trade Interdiction
-			AND = {
-				has_tech = floating_airfield_ti
-				has_tech = combined_operations_raiding
-			}
-			#Base Strike 
-			AND = {
-				has_tech = carrier_battlegroups
-				has_tech = integrated_convoy_defence_bs
-				has_tech = submarine_offensive_bs
-			}
-
-		}
-
-		OR = {
-			#Strategic Destruction
-			AND = {
-				has_tech = infrastructure_destruction
-				has_tech = home_defence
-				has_tech = offensive_formations
-				has_tech = mass_destruction
-			}			
-			#Battlefield Support
-			AND = {
-				has_tech = battlefield_support
-				has_tech = keypoint_bombing
-				has_tech = ground_support_integration
-				has_tech = forward_interception
-			}			
-			#Operational Integrity
-			AND = {
-				has_tech = naval_strike_torpedo_tactics_oi
-				has_tech = carousel_bombing
-				has_tech = high_level_bombing
-			}
-		}
-		
-		OR = {
-			#Mobile Warfare
-			has_tech = werwolf_guerillas
-			has_tech = modern_blitzkrieg
-
-			#Superior Firepower
-			has_tech = air_land_battle
-			has_tech = shock_and_awe
-
-			#Grand Battleplan
-			has_tech = c3i_theory
-			has_tech = infiltration_in_depth
-
-			#Mass Assault
-			has_tech = continuous_offensive
-			has_tech = guerilla_warfare
-		}
-	}
-}
-
 mine_is_bigger_than_yours = {
 	id = 4
 	
@@ -258,38 +167,6 @@ mine_is_bigger_than_yours = {
 	happened = {
 		is_faction_leader = yes
 		num_faction_members > 19
-	}
-}
-
-#no_country_for_old_men = {
-#	id = 9
-#	
-#	possible = {
-#		is_ironman = yes
-#		difficulty > 0
-#		has_start_date < 1936.01.02
-#	
-#	}
-#	
-#	happened = {
-#		has_idea = scraping_the_barrel
-#		has_manpower < 1
-#	}
-#}
-
-poland_can_into_space = {
-	id = 11
-	
-	possible = {
-		is_ironman = yes
-		difficulty > 0
-		has_start_date < 1936.01.02
-		has_any_custom_difficulty_setting = no
-		tag = POL
-	}
-	
-	happened = {
-		has_tech = advanced_rocket_engines
 	}
 }
 

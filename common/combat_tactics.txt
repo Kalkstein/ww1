@@ -3,7 +3,8 @@
 # NOTE: tactics must start with "tactic_" in their name to work with techs.
 ###############################################################################
 
-phases = { # phase = no is the standard phase
+phases = { # phase = default is the standard phase
+	default
 	close_combat
 	tactical_withdrawal
 	seize_bridge
@@ -15,7 +16,7 @@ tactic_basic_attack = {
 	is_attacker = yes
 	trigger = { # combined scope for both country and combatant
 		is_attacker = yes
-		phase = no
+		phase = default
 	}
 	
 	active = yes
@@ -32,7 +33,7 @@ tactic_basic_defend = {
 	is_attacker = no
 	trigger = {
 		is_attacker = no
-		phase = no
+		phase = default
 	}
 	
 	active = yes
@@ -48,7 +49,7 @@ tactic_counterattack = { # counters basic attack, assault
 	trigger = {
 		is_attacker = no
 		skill_advantage > 0
-		phase = no
+		phase = default
 	}
 	
 	active = yes
@@ -64,7 +65,7 @@ tactic_assault = {
 	is_attacker = yes
 	trigger = {
 		is_attacker = yes
-		phase = no
+		phase = default
 	}
 	
 	active = yes
@@ -155,7 +156,7 @@ tactic_cc_withdraw = {
 	picture = cc_withdraw
 	display_phase = close_combat
 
-	phase = no #changes phase to no
+	phase = default #changes phase to no
 	
 	attacker = -0.05
 	defender = -0.05
@@ -166,7 +167,7 @@ tactic_encirclement = {
 	is_attacker = yes
 	trigger = {
 		is_attacker = yes
-		phase = no
+		phase = default
 		frontage_full = yes
 		has_reserves = yes
 		OR = {
@@ -191,7 +192,7 @@ tactic_delay = {
 	is_attacker = no
 	trigger = {
 		is_attacker = no
-		phase = no
+		phase = default
 	}
 	
 	active = no
@@ -209,7 +210,7 @@ tactic_shock = { #counters delay
 	is_attacker = yes
 	trigger = {
 		is_attacker = yes
-		phase = no
+		phase = default
 	}
 	
 	active = no
@@ -225,7 +226,7 @@ tactic_tactical_withdrawal = { #counters encirclement
 	is_attacker = no
 	trigger = {
 		is_attacker = no
-		phase = no
+		phase = default
 		OR = {
 			skill_advantage > 0
 			has_trait = trickster
@@ -317,7 +318,7 @@ tactic_tw_intercept = {
 	picture = tw_intercept
 	display_phase = tactical_withdrawal
 	
-	phase = no
+	phase = default
 		
 	attacker = -0.05
 	defender = -0.1
@@ -329,7 +330,7 @@ tactic_breakthrough = { #counters ambush
 	is_attacker = yes
 	trigger = {
 		is_attacker = yes
-		phase = no
+		phase = default
 		OR = {
 			hardness > 0.5
 			skill_advantage > 1
@@ -352,7 +353,7 @@ tactic_ambush = { #counters shock
 	is_attacker = no
 	trigger = {
 		is_attacker = no
-		phase = no
+		phase = default
 		OR = {
 			skill_advantage > 1
 			skill > 2
@@ -374,7 +375,7 @@ tactic_blitz = {
 	trigger = {
 		is_attacker = yes
 		hardness > 0.5
-		phase = no
+		phase = default
 		OR = {
 			skill > 2
 			has_trait = panzer_leader
@@ -398,7 +399,7 @@ tactic_elastic_defense = { #counters blitz
 	is_attacker = no
 	trigger = {
 		is_attacker = no
-		phase = no
+		phase = default
 		OR = {
 			has_trait = defensive_doctrine
 			skill > 2
@@ -419,7 +420,7 @@ tactic_backhand_blow = { #counters breakthrough
 	is_attacker = no
 	trigger = {
 		is_attacker = no
-		phase = no
+		phase = default
 		OR = {
 			skill > 4
 			AND = {
@@ -442,7 +443,7 @@ tactic_seize_bridge = {
 	trigger = {
 		is_attacker = yes
 		has_combat_modifier = river_crossing
-		phase = no
+		phase = default
 		OR = {
 			skill > 3
 			AND = {
@@ -550,7 +551,7 @@ tactic_hold_bridge = {
 	trigger = {
 		has_combat_modifier = river_crossing
 		is_attacker = no
-		phase = no
+		phase = default
 		OR = {
 			skill > 2
 			has_trait = defensive_doctrine
@@ -655,7 +656,7 @@ tactic_guerrilla_tactics = { #People's army defender tactic. also for German vol
 	is_attacker = no
 	trigger = {
 		is_attacker = no
-		phase = no
+		phase = default
 		OR = {
 			skill > 2
 			has_trait = trickster
@@ -676,7 +677,7 @@ tactic_human_wave_tactics = { #People's army attacker tactic
 	is_attacker = yes
 	trigger = {
 		is_attacker = yes
-		phase = no
+		phase = default
 		frontage_full = yes
 		has_reserves = yes
 	}
@@ -696,7 +697,7 @@ tactic_banzai_charge = { #Special Japan attacker tactic
 	trigger = {
 		tag = JAP
 		is_attacker = yes
-		phase = no
+		phase = default
 	}
 	
 	active = yes
@@ -715,7 +716,7 @@ tactic_infantry_charge = { #GBP -> Infantry attacker tactic
 	is_attacker = yes
 	trigger = {
 		is_attacker = yes
-		phase = no
+		phase = default
 	}
 	
 	active = no
@@ -731,7 +732,7 @@ tactic_planned_attack = { #GBP -> Armor attacker tactic
 	is_attacker = yes
 	trigger = {
 		is_attacker = yes
-		phase = no
+		phase = default
 	}
 	
 	active = no
@@ -746,7 +747,7 @@ tactic_relentless_assault = { #Deep battle attacker tactic
 	is_attacker = yes
 	trigger = {
 		is_attacker = yes
-		phase = no
+		phase = default
 	}
 	
 	active = no
@@ -763,7 +764,7 @@ tactic_unexpected_thrust = { #Mobile warfare attacker tactic
 	is_attacker = yes
 	trigger = {
 		is_attacker = yes
-		phase = no
+		phase = default
 	}
 	
 	active = no
@@ -779,7 +780,7 @@ tactic_overwhelming_fire = { # Counters Banzai charge
 	is_attacker = no
 	trigger = {
 		is_attacker = no
-		phase = no
+		phase = default
 	}
 	
 	active = no
@@ -795,7 +796,7 @@ tactic_barrage = { #Superior firepower attacker tactic
 	is_attacker = yes
 	trigger = {
 		is_attacker = yes
-		phase = no
+		phase = default
 	}
 	
 	active = no
@@ -810,7 +811,7 @@ tactic_barrage = { #Superior firepower attacker tactic
 tactic_gas_chlor = {
 	trigger = {
 		is_attacker = yes
-		phase = no
+		phase = default
 		OWNER = { has_country_flag = CW_using_cw_flag }
 	}
 	
@@ -827,7 +828,7 @@ tactic_gas_chlor = {
 tactic_gas_phosgene  = {
 	trigger = {
 		is_attacker = yes
-		phase = no
+		phase = default
 		OWNER = { has_country_flag = CW_using_cw_flag }
 	}
 	
@@ -843,7 +844,7 @@ tactic_gas_phosgene  = {
 tactic_gas_mustard = {
 	trigger = {
 		is_attacker = yes
-		phase = no
+		phase = default
 		OWNER = { has_country_flag = CW_using_cw_flag }
 	}
 	
@@ -859,7 +860,7 @@ tactic_gas_mustard = {
 
 tactic_mask_chlor = {
 	trigger = {
-		phase = no
+		phase = default
 	}
 	
 	active = no
@@ -873,7 +874,7 @@ tactic_mask_chlor = {
 
 tactic_mask_phosgene = {
 	trigger = {
-		phase = no
+		phase = default
 	}
 	
 	active = no
@@ -887,7 +888,7 @@ tactic_mask_phosgene = {
 
 tactic_mask_mustard = {
 	trigger = {
-		phase = no
+		phase = default
 	}
 	
 	active = no
