@@ -1,2 +1,2 @@
-# ww1
-Hearts of Iron IV - WW1 mod
+# The War to End All Wars
+Hearts of Iron IV - The War to End All Wars
