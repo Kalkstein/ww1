@@ -24,6 +24,33 @@ state=
 		victory_points = { 
 			6999 20
 		}
+		victory_points = {
+			7240 1 #Guang'an
+		}
+		1911.11.21 = {
+			CHI = {
+				set_province_controller = 7240
+			}
+		}
+		1911.11.22 = {
+			CHI = {
+				set_province_controller = 4925
+			}
+		}
+		1911.11.27 = {
+			CHI = {
+				set_state_owner = 605
+				add_state_core = 605
+			}
+			controller = MAN
+			CHI = {
+				set_province_controller = 7240
+				set_province_controller = 4925
+			}
+		}
+		1912.1.1 = {
+			controller = CHI 
+		}
 	}
 	provinces={
 		1367 1395 1893 2030 2091 4041 4141 4431 4925 5048 6999 7240 7256 8026 10132 10144 10304 11865 11972 12141 12274 12705 12767 12819 

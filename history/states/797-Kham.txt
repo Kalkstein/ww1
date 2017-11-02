@@ -1,7 +1,7 @@
 
 state={
 	id=797
-	name="STATE_797" # Xikang
+	name="STATE_797" 
 	manpower = 1478500
 	
 	state_category = pastoral
@@ -11,6 +11,15 @@ state={
 		add_core_of = TIB
 		buildings = {
 			infrastructure = 1
+		}
+		1910.2.25 = {
+			owner = MAN 
+			controller = MAN 
+		}
+		1912.2.12 = {
+			owner = CHI
+			controller = CHI 
+			add_core_of = CHI
 		}
 	}
 

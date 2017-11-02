@@ -21,11 +21,12 @@ state={
 			10627 3
 		}
 		add_core_of = MAN
-		1911.10.10 = {
+		1911.12.18 = {
 			add_core_of = TAN
 			owner = TAN
 			controller = TAN 
 			add_claim_by = RUS
+			remove_core_of = MAN 
 		}
 	}
 

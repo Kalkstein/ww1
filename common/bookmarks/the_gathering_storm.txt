@@ -48,9 +48,9 @@ bookmarks = {
 				
 			}
 		}
-		"ITA"={
-			history = "ITA_GATHERING_STORM_DESC"
-			ideology = fascism
+		"AUS"={
+			history = "AUS_GATHERING_STORM_DESC"
+			ideology = neutrality
 			ideas = {
 			
 			}	
@@ -58,9 +58,9 @@ bookmarks = {
 				
 			}		
 		}
-		"JAP"={
-			history = "JAP_GATHERING_STORM_DESC"
-			ideology = fascism
+		"TUR"={
+			history = "TUR_GATHERING_STORM_DESC"
+			ideology = neutrality
 			ideas = {
 				
 			}	
@@ -68,9 +68,9 @@ bookmarks = {
 				
 			}			
 		}
-		"SOV"={
-			history = "SOV_GATHERING_STORM_DESC"
-			ideology = communism
+		"RUS"={
+			history = "RUS_GATHERING_STORM_DESC"
+			ideology = neutrality
 			ideas = {
 				
 			}
@@ -85,9 +85,42 @@ bookmarks = {
 
 
 		# minors from DLC ####
-		"POL"={
+		"ITA"={
+			minor = yes 
+			history = "ITA_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+			
+			}
+			focuses = {
+				
+			}
+		}
+		"MAN"={
+			minor = yes 
+			history = "QING_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+			
+			}
+			focuses = {
+			
+			}
+		}
+		"JAP"={
+			minor = yes 
+			history = "JAP_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+			
+			}
+			focuses = {
+			
+			}
+		}
+		"BUL"={
 			minor = yes
-			history = "POL_GATHERING_STORM_DESC"
+			history = "BUL_GATHERING_STORM_DESC"
 			ideology = neutrality
 			ideas = {
 				
@@ -95,67 +128,13 @@ bookmarks = {
 			focuses = {
 		
 			}
-		}
-		"CAN"={
+		} 
+		
+		"SER"={
 			minor = yes
-			history = "CAN_GATHERING_STORM_DESC"
-			ideology = democratic
-			ideas = {
-				
-			}
-			focuses = {
-				
-			}
-		}
-		"AST"={
-			minor = yes
-			history = "AST_GATHERING_STORM_DESC"
-			ideology = democratic
-			ideas = {
-				
-			}
-			focuses = {
-			
-			}
-		}
-		"NZL"={
-			minor = yes
-			history = "NZL_GATHERING_STORM_DESC"
-			ideology = democratic
-			ideas = {
-				
-			}
-			focuses = {
-				
-			}
-		}
-		"SAF"={
-			minor = yes
-			history = "SAF_GATHERING_STORM_DESC"
-			ideology = democratic
-			ideas = {
-			
-			}
-			focuses = {
-
-			}
-		}
-		"RAJ"={
-			minor = yes
-			history = "RAJ_GATHERING_STORM_DESC"
+			history = "SER_GATHERING_STORM_DESC"
 			ideology = neutrality
 			ideas = {
-
-			}
-			focuses = {
-
-			}
-		}
-		"CZE"={
-			minor = yes
-			history = "CZE_GATHERING_STORM_DESC"
-			ideology = democratic
-			ideas = {
 	
 			}
 			focuses = {
@@ -163,9 +142,9 @@ bookmarks = {
 			}
 		}
 
-		"HUN"={
+		"GRE"={
 			minor = yes
-			history = "HUN_GATHERING_STORM_DESC"
+			history = "GRE_GATHERING_STORM_DESC"
 			ideology = neutrality
 			ideas = {
 				
@@ -187,17 +166,6 @@ bookmarks = {
 			}
 		}
 		
-		"YUG"={
-			minor = yes
-			history = "YUG_GATHERING_STORM_DESC"
-			ideology = neutrality
-			ideas = {
-				
-			}
-			focuses = {
-	
-			}
-		}
 
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !

@@ -23,6 +23,11 @@ state={
 		victory_points = {
 			10068 1 
 		}
+		1912.2.12 = {
+			owner = CHI 
+			controller = CHI 
+			add_core_of = CHI
+		}
 	}
 
 	provinces={

@@ -29,6 +29,8 @@ state={
 		1911.12.29 = {
 			owner = MON
 			controller = MON
+			add_claim_by = CHI
+			remove_core_of = MAN
 		}
 		add_core_of = MON
 	}

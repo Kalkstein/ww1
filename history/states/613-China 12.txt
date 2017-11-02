@@ -20,6 +20,30 @@ state={
 		victory_points = {
 			7014 10
 		}
+		victory_points = {
+			10076 5 #Suzhou
+		}
+		1911.11.5 = {
+			CHI = {
+				set_province_controller = 7014
+				set_province_controller = 11982
+			}
+		}
+		1911.12.2 = {
+			CHI = {
+				set_state_owner = 613
+				add_state_core = 613
+			}
+			controller = MAN
+			CHI = {
+				set_province_controller = 7014
+				set_province_controller = 11982
+				set_province_controller = 11913
+			}
+		}
+		1912.1.1 = {
+			controller = CHI 
+		}
 	}
 
 	provinces={

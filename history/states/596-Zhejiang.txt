@@ -19,6 +19,19 @@ state=
 		buildings = {
 			infrastructure = 4
 		}
+		1911.11.4 = {
+			CHI = {
+				set_state_owner = 596
+				add_state_core = 596
+			}
+			controller = MAN
+			CHI = {
+				set_province_controller = 7191
+			}
+		}
+		1912.1.1 = {
+			controller = CHI 
+		}
 	}
 	provinces={
 		1055 1096 1168 1195 4013 4042 4099 7058 7086 7146 7174 7191 9944 9972 9974 10014 10058 10086 10101 11920 11947 11991 12059 

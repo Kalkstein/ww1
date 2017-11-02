@@ -2,24 +2,14 @@ bookmarks = {
 	bookmark = {
 		name = "BLITZKRIEG_NAME"
 		desc = "BLITZKRIEG_DESC"
-		date = 1939.8.14.12
+		date = 1914.7.28.11
 		picture = "GFX_select_date_1939"
-		default_country = "GER"
+		default_country = "AUS"
 	
 		FRA = {
 			history = FRA_BLITZKRIEG_DESC
 			ideology = democratic
 			ideas={
-				
-			}
-			focuses = {
-				
-			}
-		}
-		USA = {
-			history = USA_BLITZKRIEG_DESC
-			ideology = democratic
-			ideas = {
 				
 			}
 			focuses = {
@@ -47,9 +37,9 @@ bookmarks = {
 				
 			}
 		}
-		ITA = {
-			history = ITA_BLITZKRIEG_DESC
-			ideology = fascism
+		AUS = {
+			history = AUS_BLITZKRIEG_DESC
+			ideology = neutrality
 			ideas={
 				
 			}
@@ -57,9 +47,9 @@ bookmarks = {
 				
 			}			
 		}
-		JAP = {
-			history = JAP_BLITZKRIEG_DESC
-			ideology = fascism
+		SER = {
+			history = SER_BLITZKRIEG_DESC
+			ideology = neutrality
 			ideas={
 				
 			}	
@@ -77,15 +67,48 @@ bookmarks = {
 				
 			}
 		}
+		TUR={
+			history = "TUR_BLITZKRIEG_DESC"
+			ideology = neutrality
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
 
 		"---"={
 			history = "OTHER_BLITZKRIEG_DESC"
 		}
 
 		# minors from DLC ####
-		"POL"={
+		"BEL"={
 			minor = yes
-			history = "POL_BLITZKRIEG_DESC"
+			history = "BEL_BLITZKRIEG_DESC"
+			ideology = democratic
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		
+		"USA"={
+			minor = yes
+			history = "USA_BLITZKRIEG_DESC"
+			ideology = democratic
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"BUL"={
+			minor = yes
+			history = "BUL_BLITZKRIEG_DESC"
 			ideology = neutrality
 			ideas = {
 				
@@ -94,76 +117,23 @@ bookmarks = {
 				
 			}
 		}
-		"CAN"={
-			minor = yes
-			history = "CAN_BLITZKRIEG_DESC"
-			ideology = democratic
-			ideas = {
-				
-			}
-			focuses = {
-				
-			}
-		}
-		"AST"={
-			minor = yes
-			history = "AST_BLITZKRIEG_DESC"
-			ideology = democratic
-			ideas = {
-				
-			}
-			focuses = {
-				
-			}
-		}
-		"NZL"={
-			minor = yes
-			history = "NZL_BLITZKRIEG_DESC"
-			ideology = democratic
-			ideas = {
-				
-			}
-			focuses = {
-				
-			}
-		}
-		"SAF"={
-			minor = yes
-			history = "SAF_BLITZKRIEG_DESC"
-			ideology = democratic
-			ideas = {
-				
-			}
-			focuses = {
-				
-			}
-		}
-		"RAJ"={
-			minor = yes
-			history = "RAJ_BLITZKRIEG_DESC"
-			ideology = neutrality
-			ideas = {
-				
-			}
-			focuses = {
-				
-			}
-		}
-		"HUN"={
-			minor = yes
-			history = "HUN_BLITZKRIEG_DESC"
-			ideology = neutrality
-			ideas = {
-				
-			}
-			focuses = {
-				
-			}
-		}
-
 		"ROM"={
 			minor = yes
 			history = "ROM_BLITZKRIEG_DESC"
+			ideology = democratic
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		
+		
+		
+		"ITA"={
+			minor = yes
+			history = "ITA_BLITZKRIEG_DESC"
 			ideology = neutrality
 			ideas = {
 				
@@ -173,9 +143,9 @@ bookmarks = {
 			}
 		}
 		
-		"YUG"={
+		"JAP"={
 			minor = yes
-			history = "YUG_GATHERING_BLITZ_DESC"
+			history = "JAP_BLITZKRIEG_DESC"
 			ideology = neutrality
 			ideas = {
 				
@@ -184,6 +154,19 @@ bookmarks = {
 				
 			}
 		}
+
+		"CHI"={
+			minor = yes
+			history = "CHI_BLITZKRIEG_DESC"
+			ideology = democratic
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		
 
 		effect = {
 			randomize_weather = 12345 # <- Obligatory in every bookmark !

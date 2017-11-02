@@ -22,6 +22,14 @@ state={
 			5033 5 
 		}
 		add_core_of = TIB
+		1910.2.25 = {
+			owner = MAN 
+			controller = MAN 
+		}
+		1912.2.12 = {
+			owner = TIB
+			controller = TIB
+		}
 	}
 
 	provinces={

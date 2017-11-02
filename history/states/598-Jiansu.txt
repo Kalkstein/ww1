@@ -12,6 +12,16 @@ state={
 			infrastructure = 3
 
 		}
+		1911.11.13 = {
+			CHI = {
+				set_state_owner = 598
+				add_state_core = 598
+			}
+			controller = MAN
+		}
+		1912.1.1 = {
+			controller = CHI 
+		}
 	}
 
 	provinces={

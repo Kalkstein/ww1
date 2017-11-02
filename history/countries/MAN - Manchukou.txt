@@ -1,4 +1,4 @@
-﻿capital = 328
+﻿capital = 608
 
 oob = "MAN_1910"
 
@@ -9,6 +9,14 @@ set_technology = {
 }
 
 set_convoys = 5
+1910.2.12 = {
+	declare_war_on = { target = TIB type = annex_everything }
+}
+1911.10.10 = {
+	declare_war_on = { target = CHI type = annex_everything } 
+	
+}
+1912.2.12 = { white_peace = CHI }
 1939.1.1 = {
 
 	add_political_power = 1198

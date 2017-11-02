@@ -26,6 +26,16 @@ state=
 			industrial_complex = 2
 
 		}
+		1911.10.22 = {
+			CHI = {
+				set_province_controller = 7418
+				add_state_core = 622
+			}
+		}
+		1912.1.1 = {
+			owner = CHI 
+			controller = CHI
+		}
 
 	}
 	provinces={

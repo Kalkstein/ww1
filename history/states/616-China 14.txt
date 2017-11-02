@@ -12,6 +12,16 @@ state={
 		buildings = {
 			infrastructure = 2
 		}
+		1911.11.23 = {
+			CHI = {
+				set_state_owner = 616
+				add_state_core = 616 
+			}
+			controller = MAN
+		}
+		1912.1.1 = {
+			controller = CHI 
+		}
 	}
 
 	provinces={

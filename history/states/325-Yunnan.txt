@@ -26,6 +26,19 @@ state={
 			arms_factory = 1
 			industrial_complex = 3
 		}
+		1911.10.31 = {
+			CHI = {
+				set_state_owner = 325
+				add_state_core = 325 
+			}
+			controller = MAN
+			CHI = {
+				set_province_controller = 1319
+			}
+		}
+		1912.1.1 = {
+			controller = CHI 
+		}
 	}
 
 	provinces={

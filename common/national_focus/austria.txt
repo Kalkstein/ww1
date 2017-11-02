@@ -1,0 +1,76 @@
+
+
+focus_tree = {
+	id = AUS_focus
+	
+	country = {
+		factor = 0 
+		
+		modifier = {
+			add = 10 
+			tag = AUS
+		}
+	}
+	
+	default = no 
+	
+	focus = {
+		id = AUS_bosnian_constitution 
+		icon = GFX_goal_generic_improve_relations
+		bypass = { NOT = { 104 = { is_owned_by = AUS } } }
+		x = 5
+		y = 0 
+		cost = 6.86
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = AUS_trialism 
+		icon = GFX_goal_trialism
+		mutually_exclusive = { focus = AUS_dualism }
+		prerequisite = { focus = AUS_bosnian_constitution }
+		x = 2
+		y = 1 
+		cost = 10 
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = AUS_dualism
+		icon = GFX_focus_proclaim_the_restauration_of_Austria_Hungary
+		mutually_exclusive = { focus = AUS_trialism }
+		prerequisite = { focus = AUS_bosnian_constitution }
+		x = 9
+		y = 1 
+		cost = 10 
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = AUS_maintain_kaiser
+		icon = GFX_aus_crown
+		mutually_exclusive = { focus = AUS_reform_state }
+		prerequisite = { focus = AUS_trialism }
+		x = 1
+		y = 2 
+		cost = 10 
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = AUS_reform_state 
+		icon = GFX_goal_generic_forceful_treaty
+		mutually_exclusive = { focus = AUS_maintain_kaiser }
+		prerequisite = { focus = AUS_trialism }
+		x = 3 
+		y = 2 
+		cost = 10 
+		completion_reward = {
+		
+		}
+	}
+}

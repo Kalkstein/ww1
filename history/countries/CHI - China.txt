@@ -1,4 +1,4 @@
-﻿capital = 613 # Nanjing
+﻿capital = 620
 
 oob = "CHI_1910"
 
@@ -20,6 +20,14 @@ add_ideas = {
 }
 
 set_convoys = 40
+
+1911.12.2 = {
+	set_capital = 613
+}
+
+1912.4.5 = {
+	set_capital = 608
+}
 
 1939.1.1 = {
 

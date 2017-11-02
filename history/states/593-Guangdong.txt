@@ -16,6 +16,25 @@ state= {
 			infrastructure = 3
 			industrial_complex = 1
 		}
+		victory_points = {
+			7108 3 #Huizhou
+		}
+		1911.11.8 = {
+			CHI = {
+				set_province_controller = 7108
+			}
+		}
+		1911.11.9 = {
+			CHI = {
+				set_state_owner = 593 
+				add_state_core = 593
+			}
+			controller = MAN 
+			CHI = { set_province_controller = 7108 }
+		}
+		1912.1.1 = {
+			controller = CHI 
+		}
 	}
 	provinces={
 		1078 1120 1162 1202 4050 4165 4207 7067 7108 7141 7182 9938 9970 9978 9997 10080 12014 12095 
