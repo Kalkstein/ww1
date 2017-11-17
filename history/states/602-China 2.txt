@@ -26,8 +26,8 @@ state= {
 		}
 		1911.10.22 = {
 			CHI = {
-				set_state_owner = 620
-				add_state_core = 620
+				set_state_owner = 602
+				add_state_core = 602
 			}
 			controller = MAN
 			CHI = {
