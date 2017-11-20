@@ -2,7 +2,7 @@ bookmarks = {
 	bookmark = {
 		name = "BLITZKRIEG_NAME"
 		desc = "BLITZKRIEG_DESC"
-		date = 1914.7.28.11
+		date = 1914.6.25.12
 		picture = "GFX_select_date_1939"
 		default_country = "AUS"
 	
@@ -81,92 +81,6 @@ bookmarks = {
 		"---"={
 			history = "OTHER_BLITZKRIEG_DESC"
 		}
-
-		# minors from DLC ####
-		"BEL"={
-			minor = yes
-			history = "BEL_BLITZKRIEG_DESC"
-			ideology = democratic
-			ideas = {
-				
-			}
-			focuses = {
-				
-			}
-		}
-		
-		"USA"={
-			minor = yes
-			history = "USA_BLITZKRIEG_DESC"
-			ideology = democratic
-			ideas = {
-				
-			}
-			focuses = {
-				
-			}
-		}
-		"BUL"={
-			minor = yes
-			history = "BUL_BLITZKRIEG_DESC"
-			ideology = neutrality
-			ideas = {
-				
-			}
-			focuses = {
-				
-			}
-		}
-		"ROM"={
-			minor = yes
-			history = "ROM_BLITZKRIEG_DESC"
-			ideology = democratic
-			ideas = {
-				
-			}
-			focuses = {
-				
-			}
-		}
-		
-		
-		
-		"ITA"={
-			minor = yes
-			history = "ITA_BLITZKRIEG_DESC"
-			ideology = neutrality
-			ideas = {
-				
-			}
-			focuses = {
-				
-			}
-		}
-		
-		"JAP"={
-			minor = yes
-			history = "JAP_BLITZKRIEG_DESC"
-			ideology = neutrality
-			ideas = {
-				
-			}
-			focuses = {
-				
-			}
-		}
-
-		"CHI"={
-			minor = yes
-			history = "CHI_BLITZKRIEG_DESC"
-			ideology = democratic
-			ideas = {
-				
-			}
-			focuses = {
-				
-			}
-		}
-		
 
 		effect = {
 			randomize_weather = 12345 # <- Obligatory in every bookmark !

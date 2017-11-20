@@ -17,16 +17,7 @@ bookmarks = {
 				
 			}
 		}
-		"USA"={
-			history = "USA_GATHERING_STORM_DESC"
-			ideology = democratic
-			ideas = {
-				
-			}
-			focuses = {
-				
-			}
-		}
+		
 		"ENG"={
 			history = "ENG_GATHERING_STORM_DESC"
 			ideology = democratic
@@ -37,9 +28,9 @@ bookmarks = {
 				
 			}
 		}
-
-		"GER"={
-			history = "GER_GATHERING_STORM_DESC"
+		
+		"RUS"={
+			history = "RUS_GATHERING_STORM_DESC"
 			ideology = fascism
 			ideas = {
 				
@@ -48,9 +39,21 @@ bookmarks = {
 				
 			}
 		}
-		"AUS"={
-			history = "AUS_GATHERING_STORM_DESC"
-			ideology = neutrality
+
+		"ITA"={
+			history = "ITA_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		
+		"GER"={
+			history = "GER_GATHERING_STORM_DESC"
+			ideology = fascism
 			ideas = {
 			
 			}	
@@ -58,9 +61,10 @@ bookmarks = {
 				
 			}		
 		}
-		"TUR"={
-			history = "TUR_GATHERING_STORM_DESC"
-			ideology = neutrality
+		
+		"AUS"={
+			history = "AUS_GATHERING_STORM_DESC"
+			ideology = fascism
 			ideas = {
 				
 			}	
@@ -68,9 +72,9 @@ bookmarks = {
 				
 			}			
 		}
-		"RUS"={
-			history = "RUS_GATHERING_STORM_DESC"
-			ideology = neutrality
+		"TUR"={
+			history = "TUR_GATHERING_STORM_DESC"
+			ideology = fascism
 			ideas = {
 				
 			}
@@ -82,90 +86,6 @@ bookmarks = {
 		"---"={
 			history = "OTHER_GATHERING_STORM_DESC"
 		}
-
-
-		# minors from DLC ####
-		"ITA"={
-			minor = yes 
-			history = "ITA_GATHERING_STORM_DESC"
-			ideology = neutrality
-			ideas = {
-			
-			}
-			focuses = {
-				
-			}
-		}
-		"MAN"={
-			minor = yes 
-			history = "QING_GATHERING_STORM_DESC"
-			ideology = neutrality
-			ideas = {
-			
-			}
-			focuses = {
-			
-			}
-		}
-		"JAP"={
-			minor = yes 
-			history = "JAP_GATHERING_STORM_DESC"
-			ideology = neutrality
-			ideas = {
-			
-			}
-			focuses = {
-			
-			}
-		}
-		"BUL"={
-			minor = yes
-			history = "BUL_GATHERING_STORM_DESC"
-			ideology = neutrality
-			ideas = {
-				
-			}
-			focuses = {
-		
-			}
-		} 
-		
-		"SER"={
-			minor = yes
-			history = "SER_GATHERING_STORM_DESC"
-			ideology = neutrality
-			ideas = {
-	
-			}
-			focuses = {
-	
-			}
-		}
-
-		"GRE"={
-			minor = yes
-			history = "GRE_GATHERING_STORM_DESC"
-			ideology = neutrality
-			ideas = {
-				
-			}
-			focuses = {
-
-			}
-		}
-
-		"ROM"={
-			minor = yes
-			history = "ROM_GATHERING_STORM_DESC"
-			ideology = neutrality
-			ideas = {
-				
-			}
-			focuses = {
-	
-			}
-		}
-		
 
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !

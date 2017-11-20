@@ -17,7 +17,7 @@ focus_tree = {
 	focus = {
 		id = RUS_third_rome
 		icon = GFX_goal_support_fascism
-		x = 4
+		x = 7
 		y = 0
 		cost = 10
 		completion_reward = {
@@ -26,10 +26,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = RUS_treaty_of_st_petersburg
+		id = RUS_kitay_gorod
 		icon = GFX_goal_support_fascism
 		prerequisite = { focus = RUS_third_rome }
-		x = 1
+		x = 2
 		y = 1
 		cost = 10
 		completion_reward = {
@@ -38,10 +38,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = RUS_initiate_the_balkan_league
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = RUS_treaty_of_st_petersburg }
-		x = 1
+		id = RUS_moscovite_industry
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = RUS_kitay_gorod }
+		x = 0
 		y = 2
 		cost = 10
 		completion_reward = {
@@ -50,10 +50,11 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = RUS_gurantee_serbia
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = RUS_initiate_the_balkan_league }
-		x = 1
+		id = RUS_petrograd_railway
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = RUS_moscovite_industry }
+		prerequisite = { focus = RUS_petrograd_industry }
+		x = 0
 		y = 3
 		cost = 10
 		completion_reward = {
@@ -62,23 +63,9 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = RUS_threaten_bulgaria
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = RUS_initiate_the_balkan_league }
-		mutually_exclusive = { focus = RUS_promise_land_to_bulgaria }
-		x = 2
-		y = 4
-		cost = 10
-		completion_reward = {
-			
-		}
-	}
-	
-	focus = {
-		id = RUS_promise_land_to_bulgaria
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = RUS_initiate_the_balkan_league }
-		mutually_exclusive = { focus = RUS_threaten_bulgaria }
+		id = RUS_ruthenian_railway
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = RUS_petrograd_railway }
 		x = 0
 		y = 4
 		cost = 10
@@ -88,11 +75,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = RUS_promise_land_to_greece
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = RUS_threaten_bulgaria 
-						 focus = RUS_promise_land_to_bulgaria }
-		x = 1
+		id = RUS_trans_siberian_railway
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = RUS_ruthenian_railway }
+		x = 0
 		y = 5
 		cost = 10
 		completion_reward = {
@@ -101,22 +87,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = RUS_demilitarize_the_bospurus
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = RUS_threaten_bulgaria }
-		x = 3
-		y = 5
-		cost = 10
-		completion_reward = {
-			
-		}
-	}
-	
-	focus = {
-		id = RUS_occupy_the_straits
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = RUS_demilitarize_the_bospurus }
-		x = 3
+		id = RUS_primorskaya_railway
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = RUS_trans_siberian_railway }
+		x = 0
 		y = 6
 		cost = 10
 		completion_reward = {
@@ -125,11 +99,109 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = RUS_reform_the_balkan_league
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = RUS_occupy_the_straits 
-						 focus = RUS_promise_land_to_greece }
+		id = RUS_petrograd_industry
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = RUS_kitay_gorod }
 		x = 2
+		y = 2
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_kieven_industry
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = RUS_petrograd_industry }
+		x = 2
+		y = 3
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_imperial_council
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus =  RUS_kitay_gorod }
+		x = 5
+		y = 2
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_state_duma
+		icon = GFX_goal_generic_neutrality_focus
+		prerequisite = { focus = RUS_imperial_council }
+		x = 5
+		y = 3
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_modernize
+		icon = GFX_goal_generic_production
+		prerequisite = { focus =  RUS_state_duma }
+		mutually_exclusive = { focus = RUS_enforce_tsardom }
+		x = 4
+		y = 4
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_enforce_tsardom
+		icon = GFX_focus_rom_royal_dictatorship
+		prerequisite = { focus =  RUS_state_duma }
+		mutually_exclusive = { focus = RUS_modernize }
+		x = 6
+		y = 4
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_modern_industry
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = RUS_modernize }
+		x = 2
+		y = 5
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_western_science
+		icon = GFX_focus_research
+		prerequisite = { focus = RUS_modern_industry }
+		x = 2
+		y = 6
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_industry_effort
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = RUS_primorskaya_railway }
+		prerequisite = { focus = RUS_western_science }
+		x = 1
 		y = 7
 		cost = 10
 		completion_reward = {
@@ -137,17 +209,209 @@ focus_tree = {
 		}
 	}
 	
-	
-	
-	
-	
-	
+	focus = {
+		id = RUS_industry_effort_2
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = RUS_industry_effort }
+		x = 1
+		y = 8
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
 	
 	focus = {
-		id = RUS_army_effort
+		id = RUS_industry_effort_3
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = RUS_industry_effort_2 }
+		x = 1
+		y = 9
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_emancipate_the_surfs
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = RUS_modernize }
+		x = 4
+		y = 5
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_zemsky_sobor
 		icon = GFX_goal_support_fascism
-		prerequisite = { focus = RUS_third_rome }
-		x = 9
+		prerequisite = { focus = RUS_emancipate_the_surfs }
+		x = 4
+		y = 6
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_meritocratic_economy
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = RUS_zemsky_sobor }
+		x = 4
+		y = 7
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_enforce_serfdom
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus =  RUS_enforce_tsardom }
+		x = 6
+		y = 5
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_most_holy_synod
+		icon = GFX_focus_generic_strike_at_democracy1
+		prerequisite = { focus =  RUS_enforce_serfdom }
+		x = 6
+		y = 6
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_affirm_the_patriarch
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus =  RUS_most_holy_synod }
+		x = 6
+		y = 7
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_moscovite_aristrocracy
+		icon = GFX_goal_support_fascism
+		prerequisite = { focus =  RUS_enforce_tsardom }
+		x = 8 	
+		y = 5
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_boris_and_gleb
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus =  RUS_moscovite_aristrocracy }
+		x = 8
+		y = 6
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_the_pale_of_settlement
+		icon = GFX_goal_tfv_saf_support_ossebrandwag
+		prerequisite = { focus =  RUS_boris_and_gleb }
+		x = 8
+		y = 7
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_siberian_mining
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = RUS_affirm_the_patriarch }
+		x = 4
+		y = 8
+		cost = 10
+		completion_reward = {
+			add_resource = { type = steel amount = 17 state = 582 }
+		}
+	}
+	
+	focus = {
+		id = RUS_caucasian_oilfields
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = { focus = RUS_siberian_mining }
+		x = 4
+		y = 9
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_expel_the_jews
+		icon = GFX_focus_CZE_german_puppet
+		prerequisite = { focus =  RUS_the_pale_of_settlement
+						 focus = RUS_affirm_the_patriarch  }
+		mutually_exclusive = { focus = RUS_conscript_the_jews }
+		x = 6
+		y = 8
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_conscript_the_jews
+		icon = GFX_focus_generic_little_entente
+		prerequisite = { focus =  RUS_the_pale_of_settlement
+						 focus = RUS_affirm_the_patriarch  }
+		mutually_exclusive = { focus = RUS_expel_the_jews }
+		x = 8
+		y = 8
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+
+	focus = {
+		id = RUS_repress_revolutionaries
+		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+		prerequisite = { focus =  RUS_expel_the_jews
+						 focus = RUS_conscript_the_jews  }
+		x = 7
+		y = 9
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_russification
+		icon = GFX_goal_generic_secret_weapon
+		prerequisite = { focus =  RUS_third_rome }
+		x = 12
 		y = 1
 		cost = 10
 		completion_reward = {
@@ -156,170 +420,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = RUS_reform_the_army
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = RUS_army_effort }
-		x = 7
-		y = 2
-		cost = 10
-		completion_reward = {
-			
-		}
-	}
-	
-	
-	focus = {
-		id = RUS_aristocracy_officers
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = RUS_reform_the_army }
-		mutually_exclusive = { focus = RUS_new_officers }
-		x = 6
-		y = 3
-		cost = 10
-		completion_reward = {
-			
-		}
-	}
-	
-	focus = {
-		id = RUS_mass_army
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = RUS_aristocracy_officers }
-		x = 5
-		y = 4
-		cost = 10
-		completion_reward = {
-			
-		}
-	}
-	
-	focus = {
-		id = RUS_light_artillery
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = RUS_mass_army }
-		x = 6
-		y = 5
-		cost = 10
-		completion_reward = {
-			
-		}
-	}
-	
-	focus = {
-		id = RUS_form_the_guard
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = RUS_mass_army }
-		x = 5
-		y = 6
-		cost = 10
-		completion_reward = {
-			
-		}
-	}
-	
-	focus = {
-		id = RUS_allied_doctrines
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = RUS_form_the_guard }
-		x = 6
-		y = 7
-		cost = 10
-		completion_reward = {
-			
-		}
-	}
-	
-	focus = {
-		id = RUS_new_officers
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = RUS_reform_the_army }
-		mutually_exclusive = { focus = RUS_aristocracy_officers }
-		x = 8
-		y = 3
-		cost = 10
-		completion_reward = {
-			
-		}
-	}
-	
-	focus = {
-		id = RUS_skilled_officers
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = RUS_new_officers }
-		x = 9
-		y = 4
-		cost = 10
-		completion_reward = {
-			
-		}
-	}
-	
-	focus = {
-		id = RUS_heavy_artillery
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = RUS_skilled_officers }
-		x = 8
-		y = 5
-		cost = 10
-		completion_reward = {
-			
-		}
-	}
-	
-	focus = {
-		id = RUS_the_brusilov_offensive
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = RUS_heavy_artillery
-						 focus = RUS_light_artillery }
-		x = 7
-		y = 6
-		cost = 10
-		completion_reward = {
-			
-		}
-	}
-	
-	focus = {
-		id = RUS_foergin_trainers
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = RUS_skilled_officers }
-		x = 9
-		y = 6
-		cost = 10
-		completion_reward = {
-			
-		}
-	}
-	
-	focus = {
-		id = RUS_enemy_doctrin
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = RUS_foergin_trainers }
-		x = 8
-		y = 7
-		cost = 10
-		completion_reward = {
-			
-		}
-	}
-	
-	focus = {
-		id = RUS_industrial_effort
-		icon = GFX_goal_support_fascism
-		x = 16
-		y = 0
-		cost = 10
-		completion_reward = {
-			
-		}
-	}
-	
-	focus = {
-		id = RUS_modern_arms_industry
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = RUS_army_effort }
-		prerequisite = { focus = RUS_industrial_effort }
-		x = 11
+		id = RUS_pan_slavism
+		icon = GFX_goal_generic_position_armies
+		prerequisite = { focus =  RUS_russification }
+		x = 12
 		y = 2
 		cost = 10
 		completion_reward = {
@@ -328,21 +432,9 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = RUS_infantry_equipment
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = RUS_modern_arms_industry }
-		x = 10
-		y = 3
-		cost = 10
-		completion_reward = {
-			
-		}
-	}
-	
-	focus = {
-		id = RUS_artillery_equipment
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = RUS_modern_arms_industry }
+		id = RUS_balkan_league
+		icon = GFX_goal_anschluss
+		prerequisite = { focus =  RUS_pan_slavism }
 		x = 12
 		y = 3
 		cost = 10
@@ -352,11 +444,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = RUS_modern_engines
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = RUS_artillery_equipment
-						 focus = RUS_infantry_equipment }
-		x = 11
+		id = RUS_serbian_question
+		icon = GFX_goal_generic_position_armies
+		prerequisite = { focus =  RUS_balkan_league }
+		x = 10
 		y = 4
 		cost = 10
 		completion_reward = {
@@ -365,34 +456,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = RUS_armoured_trains
+		id = RUS_greek_question
 		icon = GFX_goal_support_fascism
-		prerequisite = { focus = RUS_modern_engines }
-		x = 11
-		y = 5
-		cost = 10
-		completion_reward = {
-			
-		}
-	}
-	
-	focus = {
-		id = RUS_armor
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = RUS_armoured_trains }
-		x = 11
-		y = 6
-		cost = 10
-		completion_reward = {
-			
-		}
-	}
-	
-	focus = {
-		id = RUS_artillery_for_premezyl
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = RUS_artillery_equipment }
-		x = 13
+		prerequisite = { focus =  RUS_balkan_league }
+		x = 12
 		y = 4
 		cost = 10
 		completion_reward = {
@@ -401,10 +468,24 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = RUS_black_sea_bases
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = RUS_artillery_for_premezyl }
-		x = 13
+		id = RUS_bulgarian_question
+		icon = GFX_goal_anschluss
+		prerequisite = { focus =  RUS_balkan_league }
+		x = 14
+		y = 4
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_albanian_question
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus =  RUS_serbian_question }
+		prerequisite = { focus =  RUS_greek_question }
+		prerequisite = { focus =  RUS_bulgarian_question }
+		x = 12
 		y = 5
 		cost = 10
 		completion_reward = {
@@ -413,10 +494,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = RUS_defense_of_sevastopol
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = RUS_black_sea_bases }
-		x = 13
+		id = RUS_good_balkan_war
+		icon = GFX_goal_generic_position_armies
+		prerequisite = { focus =  RUS_albanian_question }
+		x = 12
 		y = 6
 		cost = 10
 		completion_reward = {
@@ -425,10 +506,21 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = RUS_the_primary_sector
+		id = RUS_mobilization
 		icon = GFX_goal_support_fascism
-		prerequisite = { focus = RUS_industrial_effort }
-		x = 16
+		x = 22
+		y = 0
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_army_effort
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = RUS_mobilization }
+		x = 19
 		y = 1
 		cost = 10
 		completion_reward = {
@@ -437,35 +529,23 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = RUS_agriculture
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = RUS_the_primary_sector }
+		id = RUS_aristocracy_officers
+		icon = GFX_focus_generic_strike_at_democracy1
+		prerequisite = { focus = RUS_army_effort }
+		mutually_exclusive = { focus = RUS_new_officers }
+		x = 18
+		y = 2
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_mass_army
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = { focus = RUS_aristocracy_officers }
 		x = 17
-		y = 2
-		cost = 10
-		completion_reward = {
-			
-		}
-	}
-	
-	focus = {
-		id = RUS_found_mining_researching
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = RUS_the_primary_sector }
-		x = 15
-		y = 2
-		cost = 10
-		completion_reward = {
-			
-		}
-	}
-	
-	focus = {
-		id = RUS_new_mines
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = RUS_found_mining_researching
-						 focus = RUS_agriculture }
-		x = 16
 		y = 3
 		cost = 10
 		completion_reward = {
@@ -474,9 +554,21 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = RUS_caucasian_oilfields
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = RUS_new_mines }
+		id = RUS_light_artillery
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = { focus = RUS_mass_army }
+		x = 18
+		y = 4
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_the_guard
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = RUS_mass_army }
 		x = 16
 		y = 4
 		cost = 10
@@ -486,22 +578,9 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = RUS_caucasian_factories
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = RUS_caucasian_oilfields }
-		x = 15
-		y = 5
-		cost = 10
-		completion_reward = {
-			
-		}
-	}
-	
-	focus = {
-		id = RUS_trans_caucasian_railway
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = RUS_caucasian_oilfields 
-						 focus = RUS_develop_zarizyn }
+		id = RUS_allied_doctrines
+		icon = GFX_goal_generic_defence
+		prerequisite = { focus = RUS_the_guard }
 		x = 17
 		y = 5
 		cost = 10
@@ -511,10 +590,85 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = RUS_develop_sevastopol
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = RUS_caucasian_factories }
-		x = 15
+		id = RUS_new_officers
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = RUS_army_effort }
+		mutually_exclusive = { focus = RUS_aristocracy_officers }
+		x = 20
+		y = 2
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_skilled_officers
+		icon = GFX_goal_generic_position_armies
+		prerequisite = { focus = RUS_new_officers }
+		x = 21
+		y = 3
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_heavy_artillery
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = RUS_skilled_officers }
+		x = 20
+		y = 4
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_infantry_equipment
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = RUS_heavy_artillery
+						 focus = RUS_light_artillery }
+		x = 19
+		y = 5
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_foergin_trainers
+		icon = GFX_goal_generic_military_deal
+		prerequisite = { focus = RUS_skilled_officers }
+		x = 22
+		y = 4
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_enemy_doctrines
+		icon = GFX_goal_generic_special_forces
+		prerequisite = { focus = RUS_foergin_trainers }
+		x = 21
+		y = 5
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_russian_winter
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = RUS_allied_doctrines 
+						 focus = RUS_enemy_doctrines }
+		x = 19
 		y = 6
 		cost = 10
 		completion_reward = {
@@ -523,10 +677,22 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = RUS_sevastopol_dockyards
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = RUS_defense_of_sevastopol}
-		prerequisite = { focus = RUS_develop_sevastopol }
+		id = RUS_scorched_earth_tactics
+		icon = GFX_goal_generic_position_armies
+		prerequisite = { focus = RUS_russian_winter }
+		x = 19
+		y = 7
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_fortify_mazovia
+		icon = GFX_goal_generic_construct_military
+		prerequisite = { focus = RUS_good_balkan_war }
+		prerequisite = { focus = RUS_russian_winter }
 		x = 14
 		y = 7
 		cost = 10
@@ -536,166 +702,293 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = RUS_western_industry
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = RUS_industrial_effort }
-		x = 21
+		id = RUS_fortify_ruthenia
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = RUS_fortify_mazovia }
+		x = 14
+		y = 8
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_fortify_livonia
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = RUS_good_balkan_war }
+		prerequisite = { focus = RUS_russian_winter }
+		x = 16
+		y = 7
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_fortify_the_caucasus
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = RUS_fortify_livonia }
+		x = 16
+		y = 8
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_armament_effort_1
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = RUS_fortify_the_caucasus }
+		prerequisite = { focus = RUS_fortify_ruthenia }
+		x = 15
+		y = 9
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_armament_effort_2
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = RUS_armament_effort_1 }
+		x = 15
+		y = 10
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_armament_effort_3
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = RUS_armament_effort_2 }
+		x = 15
+		y = 11
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = RUS_imperial_russian_navy
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		prerequisite = { focus = RUS_mobilization }
+		x = 25
 		y = 1
 		cost = 10
 		completion_reward = {
+			
 		}
 	}
-	
+
 	focus = {
-		id = RUS_petersburg_hiitola_railway
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = RUS_western_industry }
-		mutually_exclusive = { focus = RUS_primorskaya_railway }
-		x = 20
-		y = 2
-		cost = 10
-		completion_reward = {
-			146 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-			}
-			195 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = RUS_primorskaya_railway
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = RUS_western_industry }
-		mutually_exclusive = { focus = RUS_petersburg_hiitola_railway }
-		x = 22
-		y = 2
-		cost = 10
-		completion_reward = {
-			111 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-			}
-			146 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = RUS_ukrainian_industry
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = RUS_primorskaya_railway
-						 focus = RUS_petersburg_hiitola_railway }
-		x = 19
-		y = 3
-		cost = 10
-		completion_reward = {
-		}
-	}
-	
-	focus = {
-		id = RUS_develop_zarizyn
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = RUS_ukrainian_industry }
-		x = 18
-		y = 4
-		cost = 10
-		completion_reward = {
-		}
-	}
-	
-	focus = {
-		id = RUS_ukrainian_industry_2
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = RUS_ukrainian_industry }
-		x = 20
-		y = 4
-		cost = 10
-		completion_reward = {
-		}
-	}
-	
-	focus = {
-		id = RUS_polish_industry
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = RUS_primorskaya_railway
-						 focus = RUS_petersburg_hiitola_railway }
-		x = 22
-		y = 3
-		cost = 10
-		completion_reward = {
-		}
-	}
-	
-	focus = {
-		id = RUS_polish_industry_2
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = RUS_polish_industry }
-		x = 22
-		y = 4
-		cost = 10
-		completion_reward = {
-		}
-	}
-	
-	focus = {
-		id = RUS_warsaw_fortress
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = RUS_polish_industry_2 }
+		id = RUS_steamships
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite = { focus = RUS_imperial_russian_navy }
 		x = 23
-		y = 5
+		y = 2
 		cost = 10
 		completion_reward = {
+			
 		}
 	}
 	
 	focus = {
-		id = RUS_brest_fortress
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = RUS_polish_industry_2 }
-		x = 21
-		y = 5
+		id = RUS_russian_gunboats
+		icon = GFX_goal_generic_navy_anti_submarine
+		prerequisite = { focus = RUS_steamships }
+		x = 23
+		y = 3
 		cost = 10
 		completion_reward = {
+			
 		}
 	}
 	
 	focus = {
-		id = RUS_island_fortresses
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = RUS_warsaw_fortress
-						 focus = RUS_brest_fortress }
+		id = RUS_torpedo_boats
+		icon = GFX_goal_generic_air_naval_bomber
+		prerequisite = { focus = RUS_imperial_russian_navy }
+		x = 25
+		y = 2
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_destroyers
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = RUS_torpedo_boats }
+		x = 25
+		y = 3
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_dockyards_1
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = RUS_imperial_russian_navy }
+		prerequisite = { focus = RUS_warm_water_quest }
+		x = 27
+		y = 2
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_dockyards_2
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		prerequisite = { focus = RUS_dockyards_1 }
+		x = 27
+		y = 3
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_dockyards_3
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = RUS_russian_gunboats }
+		prerequisite = { focus = RUS_destroyers }
+		prerequisite = { focus = RUS_dockyards_2 }
+		x = 25
+		y = 4
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_u_boats
+		icon = GFX_goal_generic_navy_submarine
+		prerequisite = { focus = RUS_dockyards_3 }
+		x = 25
+		y = 5
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_advanced_military_research
+		icon = GFX_focus_research
+		prerequisite = { focus = RUS_u_boats }
+		prerequisite = { focus = RUS_scorched_earth_tactics }
+		x = 25
+		y = 8
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	
+	
+	focus = {
+		id = RUS_long_range_artillery
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = RUS_advanced_military_research }
 		x = 22
-		y = 6
+		y = 9
 		cost = 10
 		completion_reward = {
+			
 		}
 	}
 	
-	
-	
+	focus = {
+		id = RUS_mustard_gas
+		icon = GFX_goal_generic_CAS
+		prerequisite = { focus = RUS_long_range_artillery }
+		x = 22
+		y = 10
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
 	
 	focus = {
-		id = RUS_asian_policy
-		icon = GFX_goal_support_fascism
-		x = 30
+		id = RUS_imperial_russian_airforce
+		icon = GFX_goal_generic_build_airforce
+		prerequisite = { focus = RUS_advanced_military_research }
+		x = 25
+		y = 9
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_triplanes
+		icon = GFX_goal_generic_air_doctrine
+		prerequisite = { focus = RUS_imperial_russian_airforce }
+		x = 24
+		y = 10
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_biplanes
+		icon = GFX_goal_generic_air_fighter2
+		prerequisite = { focus = RUS_imperial_russian_airforce }
+		x = 26
+		y = 10
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_secret_codes
+		icon = GFX_goal_generic_build_tank
+		prerequisite = { focus = RUS_advanced_military_research }
+		x = 28
+		y = 9
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_plan_interception
+		icon = GFX_goal_generic_position_armies
+		prerequisite = { focus = RUS_secret_codes }
+		x = 28
+		y = 10
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_imperialism
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 35
 		y = 0
 		cost = 10
 		completion_reward = {
@@ -704,10 +997,10 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = RUS_improve_the_transsiberian_railway
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = RUS_asian_policy }
-		x = 29
+		id = RUS_warm_water_quest
+		icon = GFX_goal_generic_position_armies
+		prerequisite = { focus = RUS_imperialism }
+		x = 30
 		y = 1
 		cost = 10
 		completion_reward = {
@@ -716,9 +1009,9 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = RUS_second_track_of_the_eastsiberian_railway
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = RUS_improve_the_transsiberian_railway }
+		id = RUS_defend_the_batlic_ports
+		icon = GFX_goal_generic_construct_military
+		prerequisite = { focus = RUS_warm_water_quest }
 		x = 29
 		y = 2
 		cost = 10
@@ -728,175 +1021,314 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = RUS_circum_baikal_railway
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = RUS_second_track_of_the_eastsiberian_railway }
+		id = RUS_expand_petrograd
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = RUS_defend_the_batlic_ports }
 		x = 29
 		y = 3
 		cost = 10
 		completion_reward = {
-			566 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-			}
+			
 		}
 	}
 	
 	focus = {
-		id = RUS_siberian_mining
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = RUS_circum_baikal_railway	}
+		id = RUS_expand_riga
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = RUS_expand_petrograd }
 		x = 29
 		y = 4
 		cost = 10
 		completion_reward = {
+			
 		}
 	}
 	
 	focus = {
-		id = RUS_siberian_mining_2
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = RUS_siberian_mining }
-		x = 28
-		y = 5
+		id = RUS_defend_the_crimean_ports
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = RUS_warm_water_quest }
+		x = 31
+		y = 2
 		cost = 10
 		completion_reward = {
+			
 		}
 	}
 	
 	focus = {
-		id = RUS_irkutsk_factories
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = RUS_siberian_mining }
+		id = RUS_expand_sevastopol
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = RUS_defend_the_crimean_ports }
+		x = 31
+		y = 3
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_expand_odessa
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = RUS_expand_sevastopol }
+		x = 31
+		y = 4
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_defend_the_eastern_ports
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = RUS_expand_riga
+						 focus = RUS_expand_odessa }
 		x = 30
 		y = 5
 		cost = 10
 		completion_reward = {
+			
 		}
 	}
 	
 	focus = {
-		id = RUS_continue_the_great_game
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = RUS_asian_policy }
-		x = 33
+		id = RUS_expand_vladivostok
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = RUS_defend_the_eastern_ports }
+		x = 30
+		y = 6
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_the_great_game
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = { focus = RUS_imperialism }
+		x = 34
 		y = 1
 		cost = 10
 		completion_reward = {
+			
 		}
 	}
 	
 	focus = {
-		id = RUS_relations_with_persia
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = RUS_continue_the_great_game }
-		x = 31
-		y = 2
-		cost = 10
-		completion_reward = {
-		}
-	}
-	
-	focus = {
-		id = RUS_demand_concesion_from_persia
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = RUS_relations_with_persia }
-		x = 30
-		y = 3
-		cost = 10
-		completion_reward = {
-		}
-	}
-	
-	focus = {
-		id = RUS_integrate_persia
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = RUS_demand_concesion_from_persia }
-		x = 30
-		y = 4
-		cost = 10
-		completion_reward = {
-		}
-	}
-	
-	focus = {
-		id = RUS_demilitarize_northern_persia
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = RUS_demand_concesion_from_persia }
-		x = 31
-		y = 3
-		cost = 10
-		completion_reward = {
-		}
-	}
-	
-	
-	focus = {
-		id = RUS_conquer_persia
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = RUS_demand_concesion_from_persia }
-		x = 31
-		y = 4
-		cost = 10
-		completion_reward = {
-		}
-	}
-	
-	focus = {
-		id = RUS_diplomatic_relations_with_afghanistan
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = RUS_continue_the_great_game }
+		id = RUS_claim_persia
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = RUS_the_great_game }
+		mutually_exclusive = { focus = RUS_claim_afghanistan }
 		x = 33
 		y = 2
 		cost = 10
 		completion_reward = {
+			
 		}
 	}
 	
 	focus = {
-		id = RUS_military_in_afghanistan
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = RUS_diplomatic_relations_with_afghanistan }
+		id = RUS_claim_the_bospurus
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = RUS_claim_persia }
 		x = 33
 		y = 3
 		cost = 10
 		completion_reward = {
+			
 		}
 	}
 	
 	focus = {
-		id = RUS_puppet_afghanistan
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = RUS_military_in_afghanistan }
+		id = RUS_claim_romania
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = { focus = RUS_claim_the_bospurus }
+		prerequisite = { focus = RUS_expand_odessa }
 		x = 33
-		y = 4
+		y = 5
 		cost = 10
 		completion_reward = {
+			
 		}
 	}
 	
 	focus = {
-		id = RUS_intervention_in_china
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = RUS_continue_the_great_game }
+		id = RUS_claim_afghanistan
+		icon = GFX_goal_demand_sudetenland
+		prerequisite = { focus = RUS_the_great_game }
+		mutually_exclusive = { focus = RUS_claim_persia }
 		x = 35
 		y = 2
 		cost = 10
 		completion_reward = {
+			
 		}
 	}
 	
 	focus = {
-		id = RUS_conquer_mongolia
-		icon = GFX_goal_support_fascism
-		prerequisite = { focus = RUS_intervention_in_china }
+		id = RUS_revenge_the_treaty_of_st_petersburg
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		prerequisite = { focus = RUS_claim_afghanistan }
+		prerequisite = { focus = RUS_demand_tannu_tuva }
 		x = 35
+		y = 5
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_far_east_sphere_of_influence
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		prerequisite = { focus = RUS_imperialism }
+		x = 40
+		y = 1
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_exploit_the_chinese
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = RUS_far_east_sphere_of_influence }
+		x = 38
+		y = 2
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_mongolian_influence
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = RUS_exploit_the_chinese }
+		x = 37
 		y = 3
 		cost = 10
 		completion_reward = {
+			
 		}
 	}
+	
+	focus = {
+		id = RUS_demand_tannu_tuva
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = RUS_mongolian_influence }
+		x = 37
+		y = 4
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_manchurian_influence
+		icon = GFX_goal_demand_sudetenland
+		prerequisite = { focus = RUS_exploit_the_chinese }
+		x = 39
+		y = 4
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_colonize_china
+		icon = GFX_goal_tfv_saf_support_ossebrandwag
+		prerequisite = { focus = RUS_demand_tannu_tuva }
+		prerequisite = { focus = RUS_manchurian_influence }
+		x = 37
+		y = 5
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_invade_india
+		icon = GFX_focus_RAJ_seek_help_from_germany
+		prerequisite = { focus = RUS_claim_romania
+						 focus = RUS_revenge_the_treaty_of_st_petersburg }
+		prerequisite = { focus = RUS_colonize_china }
+		x = 35
+		y = 6
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_challenge_japan
+		icon = GFX_focus_AST_war_japan
+		prerequisite = { focus = RUS_far_east_sphere_of_influence }
+		x = 42
+		y = 2
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_claim_korea
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = RUS_challenge_japan }
+		mutually_exclusive = { focus = RUS_claim_sakhalin }
+		x = 41
+		y = 3
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_claim_sakhalin
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = { focus = RUS_challenge_japan }
+		mutually_exclusive = { focus = RUS_claim_korea }
+		x = 43
+		y = 3
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_denounce_america
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		prerequisite = { focus = RUS_claim_korea
+						 focus = RUS_claim_sakhalin }
+		x = 42
+		y = 4
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_reclaim_alaska
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = RUS_denounce_america }
+		x = 42
+		y = 5
+		cost = 10
+		completion_reward = {
+			
+		}
+	}
+	
 }

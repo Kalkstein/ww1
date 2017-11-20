@@ -1,0 +1,5 @@
+﻿l_english:
+ FACTION_LEADER:0 "Faction leader: §Y$COUNTRY$§!"
+ FACTION_MEMBER:0 "Faction member: §Y$COUNTRY$§!"
+ FACTION_NAME_IDEOLOGY_DEFAULT:0 "Supporters of $IDEOLOGY$"
+ Central_Powers:0 "Central Powers"

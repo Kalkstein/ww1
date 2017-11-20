@@ -18,7 +18,7 @@ state={
 			9809 5 #Podgorica
 		}
 		victory_points ={
-			9821 1 #Kotor (is one of the best Star Wars games)
+			9821 1 #Kotor 
 		}
 		buildings = {
 			infrastructure = 3
