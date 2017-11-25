@@ -1,0 +1,198 @@
+focus_tree = {
+    id = FRA_focus
+
+    country = {
+        factor = 0
+
+        modifier = {
+            add = 10
+            tag = FRA
+        }
+    }
+
+    default = no
+	
+	focus = {
+        id = FRA_belle_epoque
+	    icon = GFX_goal_support_fascism
+        x =6
+        y = 0
+        cost = 10
+        completion_reward = {
+
+        }
+    }
+ 
+ 
+    focus = {
+        id = FRA_champagne_riots
+        icon = GFX_goal_support_fascism
+        prerequisite = { focus =  FRA_belle_epoque }
+        x = 7
+        y = 1
+        cost = 10
+        completion_reward = {
+
+        }
+    }
+
+	focus = {
+        id = FRA_french_industrialization
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus =  FRA_belle_epoque }
+        x =5
+        y = 1
+        cost = 10
+        completion_reward = {
+
+        }
+    }
+	
+	focus = {
+        id = FRA_industry_1
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus =  FRA_french_industrialization }
+        x = 1
+        y = 2
+        cost = 10
+        completion_reward = {
+
+        }
+    }
+	
+	focus = {
+        id = FRA_industry_2
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus =  FRA_industry_1 }
+        x = 1
+        y = 3
+        cost = 10
+        completion_reward = {
+
+        }
+    }
+	
+	focus = {
+        id = FRA_industry_3
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus =  FRA_industry_2 }
+        x = 1
+        y = 4
+        cost = 10
+        completion_reward = {
+
+        }
+    }
+	
+	focus = {
+        id = FRA_industry_4
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus =  FRA_industry_3 }
+        x = 1
+        y = 5
+        cost = 10
+        completion_reward = {
+
+        }
+    }
+	
+	focus = {
+        id = FRA_infrastructure_1
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus =  FRA_french_industrialization }
+        x = 4
+        y = 2
+        cost = 10
+        completion_reward = {
+
+        }
+    }
+	
+	focus = {
+        id = FRA_infrastructure_2
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus =  FRA_infrastructure_1 }
+        x = 4
+        y = 3
+        cost = 10
+        completion_reward = {
+
+        }
+    }
+	
+	focus = {
+        id = FRA_railway_logistics
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus =  FRA_infrastructure_2 
+		focus = FRA_armament_2 
+		focus = FRA_industry_2}
+        x = 4
+        y = 4
+        cost = 10
+        completion_reward = {
+
+        }
+    }
+	
+	focus = {
+        id = FRA_armament_1
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus =  FRA_french_industrialization }
+        x = 7
+        y = 2
+        cost = 10
+        completion_reward = {
+
+        }
+    }
+	
+	focus = {
+        id = FRA_armament_2
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus =  FRA_armament_1}
+        x = 7
+        y = 3
+        cost = 10
+        completion_reward = {
+
+        }
+    }
+	
+	focus = {
+        id = FRA_armament_3
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus =  FRA_armament_2 }
+        x = 7
+        y = 4
+        cost = 10
+        completion_reward = {
+
+        }
+    }
+	
+	focus = {
+        id = FRA_armament_4
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus =  FRA_armament_3 }
+        x = 7
+        y = 5
+        cost = 10
+        completion_reward = {
+
+        }
+    }
+	
+	focus = {
+        id = FRA_paris_manufacturies
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_armament_4 }
+		prerequisite = { focus = FRA_industry_4 }
+		prerequisite = { focus = FRA_railway_logistics }
+        x = 4
+        y = 6
+        cost = 10
+        completion_reward = {
+
+        }
+    }
+}	
