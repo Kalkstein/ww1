@@ -1835,7 +1835,15 @@ guiTypes = {
 				name ="mass_assault_bg"
 				spriteType = "GFX_mass_assault_bg"
 				position = { x=1605 y=33 }
-			}		
+			}
+
+			iconType = {
+				name = "highlight_grand_battle_plan"
+				spriteType = "GFX_tutorial_research_small_item_icon_glow"
+				position = { x=1245 y=291}
+				hide = yes
+				alwaystransparent = yes
+			}
 			
 			instantTextBoxType = {
 				name = "mob_warfare_title"
@@ -1982,14 +1990,8 @@ guiTypes = {
 			iconType = {
 				name ="fleet_in_being_bg"
 				spriteType = "GFX_fleet_in_being_bg"
-				position = { x=341 y=33 }
-			}			
-				
-			iconType = {
-				name ="trade_interdiction_bg"
-				spriteType = "GFX_trade_interdiction_bg"
-				position = { x=800 y=33 }
-			}				
+				position = { x=550 y=33 }
+			}							
 			
 			instantTextBoxType = {
 				name = "fleet_in_being_title"

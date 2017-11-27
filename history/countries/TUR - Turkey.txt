@@ -47,7 +47,7 @@ set_technology = {
 		basic_submarine = 1
 
 		#doctrines
-		air_superiority = 1
+		
 
 		mass_assault = 1
 		pocket_defence = 1

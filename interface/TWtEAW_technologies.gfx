@@ -1,0 +1,140 @@
+spriteTypes = {	
+
+
+
+	#template
+	#template
+	#template
+	SpriteType = {
+		name = "GFX__medium"
+		texturefile = "gfx/interface/technologies/.dds"
+	}
+	#template
+	#template
+	#template
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	SpriteType = {
+		name = "GFX_attack_armend_vessels_medium"
+		texturefile = "gfx/interface/technologies/Convoy_Interdiction.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_sea_mines_medium"
+		texturefile = "gfx/interface/technologies/Submarine Offensive.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_trade_security_medium"
+		texturefile = "gfx/interface/technologies/Escort_Patrols.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_submarine_trap_medium"
+		texturefile = "gfx/interface/technologies/Advanced_Submarine_Warfare.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_world_wide_active_fleet_medium"
+		texturefile = "gfx/interface/technologies/Undersea_Blockade.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_gunboat_medium"
+		texturefile = "gfx/interface/technologies/Floating_Fortress.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_fleet_redeployment_medium"
+		texturefile = "gfx/interface/technologies/Grand_Battlefleet.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_battle_fleet_medium"
+		texturefile = "gfx/interface/technologies/.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_light_cruiser_effort_medium"
+		texturefile = "gfx/interface/technologies/.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_heavy_cruiser_effort_medium"
+		texturefile = "gfx/interface/technologies/.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_capital_fire_focus_medium"
+		texturefile = "gfx/interface/technologies/Capital_Ship_Raiders.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_screen_fire_focus_medium"
+		texturefile = "gfx/interface/technologies/Raider_Patrols.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_capital_armor_focus_medium"
+		texturefile = "gfx/interface/technologies/Floating_Fortress.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_screen_armor_focus_medium"
+		texturefile = "gfx/interface/technologies/Fleet_In_Being.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_light_cruiser_effort_medium"
+		texturefile = "gfx/interface/technologies/Raider_Patrols.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_heavy_cruiser_effort_medium"
+		texturefile = "gfx/interface/technologies/Convoy_Escorts.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_battle_cruiser_effort_medium"
+		texturefile = "gfx/interface/technologies/Floating_Fortress.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_patrol_effort_medium"
+		texturefile = "gfx/interface/technologies/Convoy_Escorts.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_propaganda_medium"
+		texturefile = "gfx/interface/technologies/.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_organisation_medium"
+		texturefile = "gfx/interface/technologies/.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_head_quarter_medium"
+		texturefile = "gfx/interface/technologies/Radio.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_naval_bombers_medium"
+		texturefile = "gfx/interface/technologies/Massed_Strikes.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_invasion_tactics_medium"
+		texturefile = "gfx/interface/technologies/Landing_Craft.dds"
+	}
+	
+	
+}

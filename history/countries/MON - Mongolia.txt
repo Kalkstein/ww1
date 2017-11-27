@@ -33,7 +33,7 @@ add_ideas = {
 		
 		
 		#doctrines
-		air_superiority = 1
+		
 		
 		mass_assault = 1
 

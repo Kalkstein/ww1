@@ -30,7 +30,7 @@ set_convoys = 5
 		infantry_weapons1 = 1
 
 		#doctrines
-		air_superiority = 1
+		
 		
 		mass_assault = 1
 

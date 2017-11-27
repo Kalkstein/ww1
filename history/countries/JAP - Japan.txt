@@ -9,7 +9,6 @@ set_research_slots = 4
 add_ideas = {
 	state_shintoism
 	limited_exports
-	
 	partial_economic_mobilisation
 }
 
@@ -20,18 +19,6 @@ set_technology = {
 	tech_recon = 1
 	tech_engineers = 1
 	marines  = 1
-	
-	
-	
-	#  # PLACEHOLDER
-	#basic_medium_tank = 1 # PLACEHOLDER
-	
-	CAS1 = 1
-	
-	early_fighter = 1
-	
-	early_bomber = 1
-	CAS1 = 1
 	early_submarine = 1
 	basic_submarine = 1
 	early_destroyer = 1
@@ -46,7 +33,6 @@ set_technology = {
 	basic_carrier = 1
 	transport = 1
 	trench_warfare = 1
-	
 	synth_oil_experiments = 1
 }
 
@@ -63,16 +49,7 @@ create_import = {
 
 	#adding ministers
 	add_ideas = {
-		JAP_mitsumasa_yonai
-		minoru_genda
-		hajime_sugiyama
-		soemu_toyoda
-		fushimi_hiroyasu
-		kawasaki
-
-		#laws
 		tot_economic_mobilisation
-		
 		closed_economy
 	}
 
@@ -103,30 +80,16 @@ create_import = {
 	#}
 	oob = "JAP_1914"
 	set_technology = {
-
-		#PLACEHOLDERS for vehicles
-		improved_submarine = 1
 		basic_destroyer = 1
 		improved_destroyer = 1
 		improved_heavy_cruiser = 1
 		improved_carrier = 1
 		heavy_battleship = 1
-		fighter1 = 1
-		fighter1 = 1
-		tactical_bomber1 = 1
 	
 		#doctrines
-		#air
-		force_rotation = 1
-		fighter_baiting = 1
-		low_echelon_support = 1
-		dispersed_fighting = 1
-
 		grand_battle_plan = 1
 		prepared_defense = 1
 		grand_assault = 1
-		
-		carrier_task_forces = 1
 
 		#electronics
 		electronic_mechanical_engineering = 1
@@ -147,9 +110,6 @@ create_import = {
 		construction1 = 1
 		construction2 = 1
 		construction3 = 1
-		
-		
-		
 	}
 }
 

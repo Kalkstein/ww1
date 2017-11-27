@@ -42,7 +42,7 @@ set_convoys = 10
 		
 
 		#doctrines
-		air_superiority = 1
+		
 		grand_battle_plan = 1
 		trench_warfare = 1
 		fleet_in_being = 1
