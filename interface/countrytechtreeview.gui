@@ -1990,7 +1990,7 @@ guiTypes = {
 			iconType = {
 				name ="fleet_in_being_bg"
 				spriteType = "GFX_fleet_in_being_bg"
-				position = { x=550 y=33 }
+				position = { x=75 y=33 }
 			}							
 			
 			instantTextBoxType = {
@@ -2021,12 +2021,16 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "fleet_in_being_tree"
-				position = { x=80 y=172 }
-				size = { width = 478 height = 1000 }
+				position = { x=-325 y=172 }
+				size = { width = 1275 height = 925 }
 				slotsize = { width=60 height= 60 }
 				format = "UP"
 
-									
+				background = {
+					name = "Background"
+					quadTextureSprite ="GFX_fullborder_tiled"
+					position = { x=388 y=-150 }					
+				}	
 				
 			}
 		}
@@ -2054,7 +2058,7 @@ guiTypes = {
 			iconType = {
 				name ="battlefield_destruction_bg"
 				spriteType = "GFX_battlefield_destruction_bg"
-				position = { x=595 y=33 }
+				position = { x=340 y=33 }
 			}			
 
 			instantTextBoxType = {
@@ -2083,10 +2087,16 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "formation_flying_tree"
-				position = { x=600 y=172 }
-				size = { width = 400 height = 1050 }
+				position = { x=300 y=172 }
+				size = { width = 1017 height = 826 }
 				slotsize = { width=60 height= 60 }
 				format = "UP"
+				
+				background = {
+					name = "Background"
+					quadTextureSprite ="GFX_fullborder_tiled"
+					position = { x=31 y=-150 }					
+				}
 			}
 		}
 		

@@ -288,7 +288,7 @@ technologies = {
 		MONTHLY_POPULATION = 0.05
 		
 		path = {
-			leads_to_tech = agriculture_2
+			leads_to_tech = agriculture2
 			research_cost_coeff = 1
 		}
 		
@@ -313,12 +313,12 @@ technologies = {
 		}
 	}
 	
-	agriculture_2 = {
+	agriculture2 = {
 
 		MONTHLY_POPULATION = 0.1
 		
 			path = {
-			leads_to_tech = agriculture_3
+			leads_to_tech = agriculture3
 			research_cost_coeff = 1
 		}
 		
@@ -375,7 +375,7 @@ technologies = {
 		max_dig_in = 2
 		
 		path = {
-			leads_to_tech = frontline_fortification_2
+			leads_to_tech = frontline_fortification2
 			research_cost_coeff = 1
 		}
 		
@@ -413,12 +413,12 @@ technologies = {
 		}
 	}
 	
-	frontline_fortification_2 = {
+	frontline_fortification2 = {
 
 		max_dig_in = 2
 		
 		path = {
-			leads_to_tech = frontline_fortification_3
+			leads_to_tech = frontline_fortification3
 			research_cost_coeff = 1
 		}
 		
@@ -443,12 +443,12 @@ technologies = {
 		}
 	}
 	
-	frontline_fortification_3 = {
+	frontline_fortification3 = {
 
 		dig_in_speed_factor = 0.02
 		
 		path = {
-			leads_to_tech = frontline_fortification_4 
+			leads_to_tech = frontline_fortification4 
 			research_cost_coeff = 1
 		}
 		
@@ -473,12 +473,12 @@ technologies = {
 		}
 	}
 	
-	frontline_fortification_4 = {
+	frontline_fortification4 = {
 
 		max_dig_in = 4
 		
 		path = {
-			leads_to_tech = frontline_fortification_5
+			leads_to_tech = frontline_fortification5
 			research_cost_coeff = 1
 		}
 		
@@ -503,7 +503,7 @@ technologies = {
 		}
 	}
 	
-	frontline_fortification_5 = {
+	frontline_fortification5 = {
 
 		dig_in_speed_factor = 0.03
 		
@@ -676,7 +676,7 @@ technologies = {
 		production_speed_coastal_bunker_factor = 0.2
 		
 		path = {
-			leads_to_tech =  industrial_fortitude_2
+			leads_to_tech =  industrial_fortitude2
 			research_cost_coeff = 1
 		}
 		
@@ -723,7 +723,7 @@ technologies = {
 		}
 	}
 	
-	industrial_fortitude_2 = {
+	industrial_fortitude2 = {
 	
 		industry_air_damage_factor = -0.1
 		

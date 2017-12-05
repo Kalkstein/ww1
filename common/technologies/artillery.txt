@@ -1,0 +1,616 @@
+technologies = {
+
+	field_artillery = {
+
+		enable_equipments = {
+			artillery_equipment_1
+		}
+		enable_subunits = {
+			artillery
+		}
+		
+		path = {
+			leads_to_tech = improved_field_artillery
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = heavy_artillery
+			research_cost_coeff = 1
+		}
+		
+		start_year = 1905
+		
+		research_cost = 1.5
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	improved_field_artillery = {
+
+		artillery = {
+			defense = 0.1
+		}
+		artillery_brigade = {
+			defense = 0.1
+		}
+		
+		path = {
+			leads_to_tech = field_artillery2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+
+		start_year = 1910
+		
+		folder = {
+			name = artillery_folder
+			position = { x = -3 y = 2.5 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	field_artillery2 = {
+	
+		enable_equipments = {
+			artillery_equipment_2
+		}
+		
+		path = {
+			leads_to_tech = improved_field_artillery2
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = support_artillery
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		start_year = 1911
+		
+		folder = {
+			name = artillery_folder
+			position = { x = -3 y = 4 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	improved_field_artillery2 = {
+
+		artillery = {
+			soft_attack = 0.1
+		}
+		artillery_brigade = {
+			soft_attack = 0.1
+		}
+		heavy_artillery = {
+			defense = 0.1
+		}
+		heavy_artillery_brigade = {
+			defense = 0.1
+		}
+		
+		path = {
+			leads_to_tech = heavy_artillery2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = improved_field_artillery3
+			research_cost_coeff = 1
+		}
+
+		
+		research_cost = 1
+
+		start_year = 1914
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 0 y = 6 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	improved_field_artillery3 = {
+
+		artillery = {
+			breakthrough = 0.2
+			supply_consumption_factor = 0.1
+		}
+		artillery_brigade = {
+			breakthrough = 0.2
+			supply_consumption_factor = 0.1
+		}
+		
+		path = {
+			leads_to_tech = field_artillery3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		start_year = 1915
+		
+		folder = {
+			name = artillery_folder
+			position = { x = -3 y = 8 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	field_artillery3 = {
+	
+		enable_equipments = {
+			artillery_equipment_3
+		}
+		
+		path = {
+			leads_to_tech = improved_field_artillery4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = improved_field_artillery5
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+
+		start_year = 1916
+		
+		folder = {
+			name = artillery_folder
+			position = { x = -3 y = 10 }
+		}
+		
+		categories = {
+			artillery
+		}
+	}
+	
+	improved_field_artillery4 = {
+
+		artillery = {
+			 maximum_speed = 0.05
+		}
+		artillery_brigade = {
+			 maximum_speed = 0.05
+		}
+		
+		research_cost = 1
+
+		start_year = 1917
+		
+		folder = {
+			name = artillery_folder
+			position = { x = -2 y = 12 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	improved_field_artillery5 = {
+
+		artillery = {
+			hard_attack = 0.1
+		}
+		artillery_brigade = {
+			hard_attack = 0.1
+		}
+		
+		research_cost = 1
+
+		start_year = 1917
+		
+		folder = {
+			name = artillery_folder
+			position = { x = -4 y = 12 }
+		}
+		
+		categories = {
+			artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	
+	heavy_artillery = {
+
+		enable_equipments = {
+			heavy_artillery_equipment_1
+		}
+		enable_subunits = {
+			heavy_artillery
+			heavy_artillery_brigade
+		}
+		
+		path = {
+			leads_to_tech = improved_heavy_artillery
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		start_year = 1910
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 3 y = 2.5 }
+		}
+		
+		categories = {
+			heavy_artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	improved_heavy_artillery = {
+		
+		heavy_artillery = {
+			soft_attack = 0.1
+		}
+		heavy_artillery_brigade = {
+			soft_attack = 0.1
+		}
+		
+		path = {
+			leads_to_tech = improved_field_artillery2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = siege_artillery
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		start_year = 1911
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 3 y = 4 }
+		}
+		
+		categories = {
+			heavy_artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	heavy_artillery2 = {
+		
+		enable_equipments = {
+			heavy_artillery_equipment_2
+		}
+		
+		path = {
+			leads_to_tech = improved_heavy_artillery3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = improved_heavy_artillery4
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		start_year = 1915
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 3 y = 8 }
+		}
+		
+		categories = {
+			heavy_artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	improved_heavy_artillery3 = {
+		
+		heavy_artillery = {
+			breakthrough = 0.1
+			fort = {
+				attack = 0.1
+			}
+		}
+		heavy_artillery_brigade = {
+			breakthrough = 0.1
+			fort = {
+				attack = 0.1
+			}
+		}
+		
+		path = {
+			leads_to_tech = heavy_artillery3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		start_year = 1914
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 2 y = 10 }
+		}
+		
+		categories = {
+			heavy_artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	improved_heavy_artillery4 = {
+		
+		heavy_artillery = {
+			soft_attack = 0.1
+			urban = {
+				attack = 0.1
+			}
+		}
+		heavy_artillery_brigade = {
+			soft_attack = 0.1
+			urban = {
+				attack = 0.1
+			}
+		}
+		
+		path = {
+			leads_to_tech = heavy_artillery3
+			research_cost_coeff = 1
+		}
+		
+		
+		research_cost = 1
+
+		start_year = 1914
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 4 y = 10 }
+		}
+		
+		categories = {
+			heavy_artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	heavy_artillery3 = {
+
+		enable_equipments = {
+			heavy_artillery_equipment_3
+		}
+		
+		path = {
+			leads_to_tech = interwar_antitank
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		start_year = 1915
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 3 y = 12 }
+		}
+		
+		categories = {
+			heavy_artillery
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	
+	siege_artillery = {
+
+		enable_equipments = {
+			siege_artillery_equipment_1
+		}
+		enable_subunits = {
+			siege_artillery
+		}
+		
+		path = {
+			leads_to_tech = improved_siege_artillery
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+
+		start_year = 1914
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 7 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			siege_artillery_tech
+		}
+	}
+	
+	improved_siege_artillery = {
+
+		siege_artillery = {
+			soft_attack = 0.15
+		}
+
+		path = {
+			leads_to_tech = improved_siege_artillery2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		start_year = 1915
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 7 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			siege_artillery_tech
+		}
+	}
+	
+	improved_siege_artillery2 = {
+
+		siege_artillery = {
+			hard_attack = 0.15
+		}
+
+		path = {
+			leads_to_tech = siege_artillery2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		start_year = 1916
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 7 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			siege_artillery_tech
+		}
+	}	
+
+	siege_artillery2 = {
+		
+		enable_equipments = {
+			siege_artillery_equipment_2
+		}
+		
+		research_cost = 1
+		start_year = 1917
+		
+		path = {
+			leads_to_tech = interwar_antitank
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = artillery_folder
+			position = { x = 7 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			siege_artillery_tech
+		}
+	}
+	
+	interwar_antitank = {
+
+		enable_equipments = {
+			anti_tank_equipment_1
+		}
+		
+		research_cost = 1.5
+
+		start_year = 1917
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 5 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			artillery
+			cat_anti_tank
+		}
+	}
+}

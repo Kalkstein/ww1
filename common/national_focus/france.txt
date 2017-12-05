@@ -195,4 +195,1094 @@ focus_tree = {
 
         }
     }
+	
+	focus = {
+        id = FRA_diplomatic_intersts
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_french_industrialization }
+		prerequisite = { focus = FRA_union_sacree }
+        x = 10
+        y = 2
+        cost = 10
+        completion_reward = {
+
+        }
+    }
+	
+	focus = {
+        id = FRA_alliance_building
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_diplomatic_intersts }
+        x = 10
+        y = 3
+        cost = 10
+        completion_reward = {
+
+        }
+    }
+	
+	focus = {
+        id = FRA_british_rapproachement
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_alliance_building }
+        x = 9
+        y = 4
+        cost = 10
+        completion_reward = {
+
+        }
+    }
+	
+	focus = {
+        id = FRA_russian_rapproachement
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_alliance_building }
+        x = 11
+        y = 4
+        cost = 10
+        completion_reward = {
+
+        }
+    }
+	
+	focus = {
+        id = FRA_franco_russian_alliance
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_russian_rapproachement }
+        x = 11
+        y = 5
+        cost = 10
+        completion_reward = {
+
+        }
+    }
+	
+	focus = {
+        id = FRA_entente_cordiale
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_british_rapproachement }
+        x = 9
+        y = 5
+        cost = 10
+        completion_reward = {
+
+        }
+    }
+	
+	focus = {
+        id = FRA_triple_entente
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_franco_russian_alliance }
+		prerequisite = { focus = FRA_entente_cordiale }
+        x = 10
+        y = 6
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_the_national_assembly
+	    icon = GFX_goal_support_fascism
+        x = 20
+        y = 0
+        cost = 10
+        completion_reward = {
+
+        }
+    }
+	
+	focus = {
+        id = FRA_union_sacree
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_the_national_assembly }
+        x = 19
+        y = 1
+        cost = 10
+        completion_reward = {
+
+        }
+    }
+	
+	focus = {
+        id = FRA_republican_tradition
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_union_sacree }
+        x = 19
+        y = 2
+        cost = 10
+        completion_reward = {
+
+        }
+    }
+	
+	focus = {
+        id = FRA_liberte_egalite_fraternite
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_republican_tradition }
+        x = 19
+        y = 3
+        cost = 10
+        completion_reward = {
+
+        }
+    }
+	
+	focus = {
+        id = FRA_factionalism
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_the_national_assembly }
+        x = 21
+        y = 1
+        cost = 10
+        completion_reward = {
+
+        }
+    }
+	
+	focus = {
+        id = FRA_end_moral_order
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_factionalism }
+		mutually_exclusive = { focus = FRA_napoleonic_reform }
+        x = 21
+        y = 2
+        cost = 10
+        completion_reward = {
+
+        }
+    }
+	
+	focus = {
+        id = FRA_new_communards
+	    icon = GFX_goal_support_communism
+		prerequisite = { focus = FRA_end_moral_order }
+        x = 21
+        y = 3
+        cost = 10
+        completion_reward = {
+
+        }
+    }
+	
+	focus = {
+        id = FRA_the_fourth_republic
+	    icon = GFX_goal_support_communism
+		prerequisite = { focus = FRA_new_communards }
+        x = 21
+        y = 4
+        cost = 10
+        completion_reward = {
+
+        }
+    }
+	
+	focus = {
+        id = FRA_support_lenin
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_the_fourth_republic }
+		mutually_exclusive = { focus = FRA_support_liebknecht }
+        x = 21
+        y = 5
+        cost = 10
+        completion_reward = {
+
+        }
+    }
+	
+	focus = {
+        id = FRA_paris_moscow_alliance
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_union_sacree }
+        x = 21
+        y = 6
+        cost = 10
+        completion_reward = {
+
+        }
+    }
+	
+	focus = {
+        id = FRA_support_liebknecht
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_the_fourth_republic }
+		mutually_exclusive = { focus = FRA_support_lenin }
+        x = 18
+        y = 5
+        cost = 10
+        completion_reward = {
+
+        }
+    }
+	
+	focus = {
+        id = FRA_paris_berlin_alliance
+	    icon = GFX_focus_generic_home_defense
+		prerequisite = { focus = FRA_support_liebknecht }
+        x = 18
+        y = 6
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_napoleonic_reform
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_factionalism }
+		mutually_exclusive = { focus = FRA_end_moral_order }
+        x = 24
+        y = 2
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_save_the_french_crown_jewels
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_napoleonic_reform }
+        x = 24
+        y = 3
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_imperial_restoration
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_save_the_french_crown_jewels }
+        x = 24
+        y = 4
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_napoleonic_nationalism
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_imperial_restoration }
+		prerequisite = { focus = FRA_orchestrate_financial_crisis }
+        x = 26
+        y = 5
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_mandate_of_service
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_napoleonic_nationalism }
+        x = 24
+        y = 6
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_the_eight_coalition
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_mandate_of_service }
+        x = 24
+        y = 7
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_denounce_spain
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_napoleonic_nationalism }
+        x = 27
+        y = 6
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_reclaim_catalonia
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_denounce_spain }
+        x = 27
+        y = 7
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_denounce_germany
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_napoleonic_nationalism }
+        x = 29
+        y = 6
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_relaim_alsace_lorraine
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_denounce_germany }
+        x = 29
+        y = 7
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_denounce_italy
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_napoleonic_nationalism }
+        x = 31
+        y = 6
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_reclaim_piemonte
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_denounce_italy }
+        x = 31
+        y = 7
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_denounce_the_turks
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_napoleonic_nationalism }
+        x = 33
+        y = 6
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_crusader_claim_in_syria
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_denounce_the_turks }
+        x = 33
+        y = 7
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_invade_the_low_countries
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_reclaim_catalonia }
+		prerequisite = { focus = FRA_reclaim_piemonte }
+		prerequisite = { focus = FRA_relaim_alsace_lorraine }
+        x = 29
+        y = 8
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_conquer_britannia
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_invade_the_low_countries }
+        x = 28
+        y = 9
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_invade_russia
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_invade_the_low_countries }
+        x = 30
+        y = 9
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_civil_code
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_conquer_britannia }
+		prerequisite = { focus = FRA_invade_russia }
+        x = 29
+        y = 10
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_militarism
+	    icon = GFX_goal_support_fascism
+        x = 38
+        y = 0
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_ministary_of_the_navy
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_militarism }
+        x = 32
+        y = 1
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_moroccan_aspirations
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_ministary_of_the_navy }
+        x = 28
+        y = 2
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_the_agadir_crisis
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_moroccan_aspirations }
+        x = 28
+        y = 3
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_orchestrate_financial_crisis
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_the_agadir_crisis }
+        x = 28
+        y = 4
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_fortify_french_africa
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_ministary_of_the_navy }
+        x = 31
+        y = 2
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_algiers_forts
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_fortify_french_africa }
+        x = 30
+        y = 3
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_tunesian_forts
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_algiers_forts }
+        x = 30
+        y = 4
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_congo_forts
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_fortify_french_africa }
+        x = 32
+        y = 3
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_senegal_forts
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_congo_forts }
+        x = 32
+        y = 4
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_fortify_french_asia
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_ministary_of_the_navy }
+        x = 34
+        y = 2
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_indochinese_forts
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_fortify_french_asia }
+        x = 34
+        y = 3
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_pacific_forts
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_indochinese_forts }
+        x = 34
+        y = 4
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_second_french_empire
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_pacific_forts }
+		prerequisite = { focus = FRA_tunesian_forts }
+		prerequisite = { focus = FRA_senegal_forts }
+        x = 31
+        y = 5
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_colonial_ports
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_ministary_of_the_navy }
+        x = 37
+        y = 2
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_brittany_dockyards
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_colonial_ports }
+        x = 36
+        y = 3
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_mediterrenan_dockyards
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_colonial_ports }
+        x = 38
+        y = 3
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_invasion_tactics
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_brittany_dockyards 
+						 focus = FRA_mediterrenan_dockyards }
+        x = 37
+        y = 4
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_destroyers
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_invasion_tactics }
+		mutually_exclusive = { focus = FRA_battleships }
+        x = 36
+        y = 5
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_light_crusiers
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_destroyers }
+        x = 36
+        y = 6
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_battleships
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_invasion_tactics }
+		mutually_exclusive = { focus = FRA_destroyers }
+        x = 38
+        y = 5
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_carriers
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_battleships }
+        x = 38
+        y = 6
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_la_royale
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_light_crusiers
+						 focus = FRA_carriers }
+        x = 37
+        y = 7
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_ministary_of_the_army
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_militarism }
+        x = 44
+        y = 1
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_trench_warfare
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_ministary_of_the_army }
+        x = 41
+        y = 2
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_race_to_the_sea
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_trench_warfare }
+        x = 40
+        y = 3
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_court_martial
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_race_to_the_sea }
+        x = 40
+        y = 4
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_fortify_verdun
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_trench_warfare }
+        x = 42
+        y = 3
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_breakthrough_tactics
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_fortify_verdun }
+        x = 42
+        y = 4
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_marines
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_breakthrough_tactics
+						 focus = FRA_court_martial }
+		prerequisite = { focus = FRA_invasion_tactics }
+        x = 41
+        y = 5
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_paratroopers
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_marines }
+        x = 41
+        y = 6
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_new_uniforms
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_ministary_of_the_army }
+        x = 45
+        y = 2
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_adrian_helmet
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_new_uniforms }
+        x = 44
+        y = 3
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_cavalry
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_adrian_helmet }
+        x = 44
+        y = 4
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_infantry_equipment
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_new_uniforms }
+        x = 46
+        y = 3
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_artillery
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_infantry_equipment }
+        x = 46
+        y = 4
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_siege_artillery
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_artillery }
+        x = 46
+        y = 5
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_armoured_cars
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_cavalry }
+		prerequisite = { focus = FRA_invasion_tactics }
+        x = 43
+        y = 5
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_tanks
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_armoured_cars }
+        x = 43
+        y = 6
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_advance_research
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_paratroopers }
+		prerequisite = { focus = FRA_tanks }
+        x = 42
+        y = 7
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_air_force
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_advance_research }
+        x = 40
+        y = 8
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_air_bases
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_air_force }
+        x = 40
+        y = 9
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_bombers
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_air_bases }
+		mutually_exclusive = { focus = FRA_fighters }
+        x = 39
+        y = 10
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_revenge_bombing
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_bombers }
+        x = 39
+        y = 11
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_fighters
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_air_bases }
+		mutually_exclusive = { focus = FRA_bombers }
+        x = 41
+        y = 10
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_interception_tactics
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_fighters }
+        x = 41
+        y = 11
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_bomb_long_range_artillery
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_interception_tactics }
+        x = 42
+        y = 12
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_cas
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_interception_tactics
+						 focus = FRA_revenge_bombing }
+        x = 40
+        y = 12
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_chemical_weapons
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_advance_research }
+        x = 42
+        y = 8
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_medicine
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_advance_research }
+        x = 44
+        y = 8
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_encryption
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_medicine }
+        x = 43
+        y = 9
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
+	focus = {
+        id = FRA_decryption
+	    icon = GFX_goal_support_fascism
+		prerequisite = { focus = FRA_medicine }
+        x = 45
+        y = 9
+        cost = 10
+        completion_reward = {
+
+        }
+	}
+	
 }	
