@@ -1,0 +1,722 @@
+technologies = {
+
+	formation_flying = {
+	
+		air_superiority_detect_factor = 0.15
+		
+		path = {
+			leads_to_tech = independent_actions
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = wide_formations
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = tight_formations
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = forward_interception
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = low_intensity_operations
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = logistical_bombing
+			research_cost_coeff = 1
+		}
+		
+		doctrine = yes	
+		research_cost = 1.5
+		
+		categories = {
+			air_doctrine
+		}
+		
+		folder = {
+			name = air_doctrine_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		ai_research_weights = {
+			air_doctrine = -1.0
+		}
+	}
+	
+	independent_actions = {
+
+		experience_gain_air_factor = 0.15
+	
+		path = {
+			leads_to_tech = aces
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = training_programs
+			research_cost_coeff = 1
+		}
+	
+		
+		doctrine = yes	
+		research_cost = 2
+		
+		categories = {
+			air_doctrine
+		}
+		
+		folder = {
+			name = air_doctrine_folder
+			position = { x = -5 y = 3 }
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		ai_research_weights = {
+			air_doctrine = -1.0
+		}
+	}
+
+	aces = {
+
+		air_ace_generation_chance_factor = 0.25
+	
+		path = {
+			leads_to_tech = lonely_hunter
+			research_cost_coeff = 1
+		}
+		
+		xor = { training_programs }
+	
+		
+		doctrine = yes	
+		research_cost = 2
+		
+		categories = {
+			air_doctrine
+		}
+		
+		folder = {
+			name = air_doctrine_folder
+			position = { x = -6 y = 5 }
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		ai_research_weights = {
+			air_doctrine = -1.0
+		}
+	}
+	
+	lonely_hunter = {
+	
+		army_bonus_air_superiority_factor = 0.2
+		
+		doctrine = yes	
+		research_cost = 2
+		
+		categories = {
+			air_doctrine
+		}
+		
+		folder = {
+			name = air_doctrine_folder
+			position = { x = -6 y = 7 }
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		ai_research_weights = {
+			air_doctrine = -1.0
+		}
+	}
+	
+	training_programs = {
+
+		air_superiority_efficiency = 0.1
+		
+		path = {
+			leads_to_tech = continuous_rotation
+			research_cost_coeff = 1
+		}
+		
+		xor = { aces }
+	
+		
+		doctrine = yes	
+		research_cost = 2
+		
+		categories = {
+			air_doctrine
+		}
+		
+		folder = {
+			name = air_doctrine_folder
+			position = { x = -4 y = 5 }
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		ai_research_weights = {
+			air_doctrine = -1.0
+		}
+	}
+	
+	continuous_rotation = {
+	
+		air_accidents_factor = -0.1
+		
+		doctrine = yes	
+		research_cost = 2
+		
+		categories = {
+			air_doctrine
+		}
+		
+		folder = {
+			name = air_doctrine_folder
+			position = { x = -4 y = 7 }
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		ai_research_weights = {
+			air_doctrine = -1.0
+		}
+	}
+	
+	tight_formations = {
+	
+		air_superiority_efficiency = 0.15
+	
+		path = {
+			leads_to_tech = multi_altitude_flying
+			research_cost_coeff = 1
+		}
+		
+		xor = { wide_formations }
+	
+		
+		doctrine = yes	
+		research_cost = 2
+		
+		categories = {
+			air_doctrine
+		}
+		
+		folder = {
+			name = air_doctrine_folder
+			position = { x = -3 y = 3 }
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		ai_research_weights = {
+			air_doctrine = -1.0
+		}
+	}
+	
+	wide_formations = {
+
+		air_interception_detect_factor = 0.1
+		air_superiority_detect_factor = 0.1
+		
+		path = {
+			leads_to_tech = multi_altitude_flying
+			research_cost_coeff = 1
+		}
+		
+		xor = { tight_formations }
+	
+		
+		doctrine = yes	
+		research_cost = 2
+		
+		categories = {
+			air_doctrine
+		}
+		
+		folder = {
+			name = air_doctrine_folder
+			position = { x = -1 y = 3 }
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		ai_research_weights = {
+			air_doctrine = -1.0
+		}
+	}
+	
+	multi_altitude_flying = {
+
+		category_fighter = {
+			air_agility = 0.1
+		}
+		
+		doctrine = yes	
+		research_cost = 2
+		
+		categories = {
+			air_doctrine
+		}
+		
+		folder = {
+			name = air_doctrine_folder
+			position = { x = -2 y = 5 }
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		ai_research_weights = {
+			air_doctrine = -1.0
+		}
+	}
+	
+	forward_interception = {
+
+		air_interception_detect_factor = 0.1
+	
+		path = {
+			leads_to_tech = fighter_baits
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = air_skirmish
+			research_cost_coeff = 1
+		}
+	
+		
+		doctrine = yes	
+		research_cost = 2
+		
+		categories = {
+			air_doctrine
+		}
+		
+		folder = {
+			name = air_doctrine_folder
+			position = { x = 1 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		ai_research_weights = {
+			air_doctrine = -1.0
+		}
+	}
+	
+	fighter_baits = {
+
+		air_intercept_efficiency = 0.1
+		air_ace_generation_chance_factor = 0.05
+	
+		doctrine = yes	
+		research_cost = 2
+		
+		categories = {
+			air_doctrine
+		}
+		
+		folder = {
+			name = air_doctrine_folder
+			position = { x = 3 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		ai_research_weights = {
+			air_doctrine = -1.0
+		}
+	}
+	
+	air_skirmish = {
+		
+		army_bonus_air_superiority_factor = 0.1
+		
+		path = {
+			leads_to_tech = nav_recon
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = bomb_dropping
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = patrols
+			research_cost_coeff = 1
+		}
+		
+		doctrine = yes	
+		research_cost = 2
+		
+		categories = {
+			air_doctrine
+		}
+		
+		folder = {
+			name = air_doctrine_folder
+			position = { x = 1 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		ai_research_weights = {
+			air_doctrine = -1.0
+		}
+	}
+	
+	nav_recon = {
+
+		
+		
+		path = {
+			leads_to_tech = torpedos
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = carrier_planes
+			research_cost_coeff = 1
+		}
+	
+		
+		doctrine = yes	
+		research_cost = 2
+		
+		categories = {
+			air_doctrine
+		}
+		
+		folder = {
+			name = air_doctrine_folder
+			position = { x = 0 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		ai_research_weights = {
+			air_doctrine = -1.0
+		}
+	}
+	
+	torpedos = {
+	
+		air_nav_efficiency = 0.15
+		
+		doctrine = yes	
+		research_cost = 2
+		
+		categories = {
+			air_doctrine
+		}
+		
+		folder = {
+			name = air_doctrine_folder
+			position = { x = -1 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		ai_research_weights = {
+			air_doctrine = -1.0
+		}
+	}
+	
+	carrier_planes = {
+	
+		
+		doctrine = yes	
+		research_cost = 2
+		
+		categories = {
+			air_doctrine
+		}
+		
+		folder = {
+			name = air_doctrine_folder
+			position = { x = 1 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		ai_research_weights = {
+			air_doctrine = -1.0
+		}
+	}
+
+		
+	patrols = {
+	
+		
+		doctrine = yes	
+		research_cost = 2
+		
+		categories = {
+			air_doctrine
+		}
+		
+		folder = {
+			name = air_doctrine_folder
+			position = { x = 2 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		ai_research_weights = {
+			air_doctrine = -1.0
+		}
+	}
+	
+	bomb_dropping = {
+
+		air_cas_efficiency = 0.20
+	
+		path = {
+			leads_to_tech = strafing_runs
+			research_cost_coeff = 1
+		}
+	
+		
+		doctrine = yes	
+		research_cost = 2
+		
+		categories = {
+			air_doctrine
+		}
+		
+		folder = {
+			name = air_doctrine_folder
+			position = { x = 4 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		ai_research_weights = {
+			air_doctrine = -1.0
+		}
+	}
+	
+	strafing_runs = {
+
+		air_cas_present_factor = 0.20
+	
+		path = {
+			leads_to_tech = independent_force
+			research_cost_coeff = 1
+		}
+	
+		
+		doctrine = yes	
+		research_cost = 2
+		
+		categories = {
+			air_doctrine
+		}
+		
+		folder = {
+			name = air_doctrine_folder
+			position = { x = 4 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		ai_research_weights = {
+			air_doctrine = -1.0
+		}
+	}
+	
+	low_intensity_operations = {
+	
+		
+		doctrine = yes	
+		research_cost = 2
+		
+		categories = {
+			air_doctrine
+		}
+		
+		folder = {
+			name = air_doctrine_folder
+			position = { x = 3 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		ai_research_weights = {
+			air_doctrine = -1.0
+		}
+	}
+	
+	logistical_bombing = {
+
+		army_bonus_air_superiority_factor = 0.15
+	
+		path = {
+			leads_to_tech = strategic_bombing
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = infiltration_bombing
+			research_cost_coeff = 1
+		}
+	
+		
+		doctrine = yes	
+		research_cost = 2
+		
+		categories = {
+			air_doctrine
+		}
+		
+		folder = {
+			name = air_doctrine_folder
+			position = { x = 6 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		ai_research_weights = {
+			air_doctrine = -1.0
+		}
+	}
+	
+	strategic_bombing = {
+	
+		air_strategic_bomber_bombing_factor = 0.3
+	
+		path = {
+			leads_to_tech = carpet_bombing
+			research_cost_coeff = 1
+		}
+		
+		doctrine = yes	
+		research_cost = 2
+		
+		categories = {
+			air_doctrine
+		}
+		
+		folder = {
+			name = air_doctrine_folder
+			position = { x = 5 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		ai_research_weights = {
+			air_doctrine = -1.0
+		}
+	}
+	
+	infiltration_bombing = {
+	
+		strategic_bomb_visibility = -0.5
+	
+		path = {
+			leads_to_tech = carpet_bombing
+			research_cost_coeff = 1
+		}
+		
+		doctrine = yes	
+		research_cost = 2
+		
+		categories = {
+			air_doctrine
+		}
+		
+		folder = {
+			name = air_doctrine_folder
+			position = { x = 7 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		ai_research_weights = {
+			air_doctrine = -1.0
+		}
+	}
+	
+	carpet_bombing = {
+	
+		air_strategic_bomber_night_penalty = -0.25
+		
+		doctrine = yes	
+		research_cost = 2
+		
+		categories = {
+			air_doctrine
+		}
+		
+		folder = {
+			name = air_doctrine_folder
+			position = { x = 6 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		ai_research_weights = {
+			air_doctrine = -1.0
+		}
+	}	
+}

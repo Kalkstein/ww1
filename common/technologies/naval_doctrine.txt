@@ -862,75 +862,6 @@ technologies = {
 		}
 	}
 	
-	flexible_navy = {
-
-		destroyer = {
-			max_organisation = 10	
-		}
-		light_cruiser = {
-			max_organisation = 10	
-		}
-		
-		xor = { concentrated_navy }
-		
-		
-		doctrine = yes	
-		research_cost = 2
-		
-		categories = {
-			naval_doctrine
-		}
-
-		folder = {
-			name = naval_doctrine_folder
-			position = { x = 4 y = 13 }
-		}
-		
-		ai_will_do = {
-			factor = 10
-		}
-		
-		ai_research_weights = {
-			naval_doctrine = -1.0
-		}
-	}
-	
-	concentrated_navy = {
-		
-		battleship = {
-			max_organisation = 10	
-		}
-		battle_cruiser = {
-			max_organisation = 10
-		}
-		heavy_cruiser = {
-			max_organisation = 10	
-		}
-		
-		xor = { flexible_navy }
-
-		
-		doctrine = yes	
-		research_cost = 2
-		
-		categories = {
-			naval_doctrine
-		}
-
-		folder = {
-			name = naval_doctrine_folder
-			position = { x = 6 y = 13 }
-		}
-		
-		ai_will_do = {
-			factor = 10
-		}
-		
-		ai_research_weights = {
-			naval_doctrine = -1.0
-		}
-	}
-	
 	battlefleet_concentration = {
 	
 		battleship = {
@@ -1181,6 +1112,88 @@ technologies = {
 		}
 	}
 	
+	propaganda = {
+	
+		battleship = {
+			max_organisation = 10	
+		}
+		battle_cruiser = {
+			max_organisation = 10
+		}
+		heavy_cruiser = {
+			max_organisation = 10	
+		}
+		destroyer = {
+			max_organisation = 10	
+		}
+		light_cruiser = {
+			max_organisation = 10	
+		}
+		
+		xor = { organisation }
+		
+		doctrine = yes	
+		research_cost = 2.5
+		
+		categories = {
+			naval_doctrine
+		}
+
+		folder = {
+			name = naval_doctrine_folder
+			position = { x = 9 y = 3 }
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		ai_research_weights = {
+			naval_doctrine = -1.0
+		}
+	}
+	
+	organisation = {
+		
+		battleship = {
+			surface_detection = 0.25
+		}
+		battle_cruiser = {
+			surface_detection = 0.25
+		}
+		heavy_cruiser = {
+			surface_detection = 0.25	
+		}
+		destroyer = {
+			surface_detection = 0.25	
+		}
+		light_cruiser = {
+			surface_detection = 0.25
+		}
+		
+		xor = { propaganda }
+		
+		doctrine = yes	
+		research_cost = 2.5
+		
+		categories = {
+			naval_doctrine
+		}
+
+		folder = {
+			name = naval_doctrine_folder
+			position = { x = 11 y = 3 }
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		ai_research_weights = {
+			naval_doctrine = -1.0
+		}
+	}
+	
 
 	head_quarter = {
 	
@@ -1257,88 +1270,6 @@ technologies = {
 		folder = {
 			name = naval_doctrine_folder
 			position = { x = 15 y = 4 }
-		}
-		
-		ai_will_do = {
-			factor = 10
-		}
-		
-		ai_research_weights = {
-			naval_doctrine = -1.0
-		}
-	}
-	
-	propaganda = {
-	
-		battleship = {
-			max_organisation = 10	
-		}
-		battle_cruiser = {
-			max_organisation = 10
-		}
-		heavy_cruiser = {
-			max_organisation = 10	
-		}
-		destroyer = {
-			max_organisation = 10	
-		}
-		light_cruiser = {
-			max_organisation = 10	
-		}
-		
-		xor = { organisation }
-		
-		doctrine = yes	
-		research_cost = 2.5
-		
-		categories = {
-			naval_doctrine
-		}
-
-		folder = {
-			name = naval_doctrine_folder
-			position = { x = 9 y = 3 }
-		}
-		
-		ai_will_do = {
-			factor = 10
-		}
-		
-		ai_research_weights = {
-			naval_doctrine = -1.0
-		}
-	}
-	
-	organisation = {
-		
-		battleship = {
-			surface_detection = 0.25
-		}
-		battle_cruiser = {
-			surface_detection = 0.25
-		}
-		heavy_cruiser = {
-			surface_detection = 0.25	
-		}
-		destroyer = {
-			surface_detection = 0.25	
-		}
-		light_cruiser = {
-			surface_detection = 0.25
-		}
-		
-		xor = { propaganda }
-		
-		doctrine = yes	
-		research_cost = 2.5
-		
-		categories = {
-			naval_doctrine
-		}
-
-		folder = {
-			name = naval_doctrine_folder
-			position = { x = 11 y = 3 }
 		}
 		
 		ai_will_do = {

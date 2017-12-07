@@ -35,7 +35,7 @@ set_technology = {
 	
 	set_technology = {
 		#doctrines
-		air_superiority = 1
+		
 		pocket_defence = 1
 		defence_in_depth = 1
 		fleet_in_being = 1

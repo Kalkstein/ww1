@@ -74,7 +74,7 @@ set_convoys = 40
 		tech_engineers = 1
 
 		#doctrines
-		air_superiority = 1
+		
 		pocket_defence = 1
 		defence_in_depth = 1
 		battlefleet_concentration = 1

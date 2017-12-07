@@ -27,7 +27,7 @@ set_convoys = 10
 	oob = "LIB_1914"
 	set_technology = {
 		#doctrines
-		air_superiority = 1
+		
 		
 		mass_assault = 1
 		pocket_defence = 1

@@ -57,7 +57,7 @@ set_technology = {
 	set_technology = {
 		tech_mountaineers = 1
 		#doctrines
-		air_superiority = 1
+		
 		pocket_defence = 1
 		defence_in_depth = 1
 

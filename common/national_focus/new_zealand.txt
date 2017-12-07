@@ -1,0 +1,830 @@
+focus_tree = {
+	id = new_zealand
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = NZL
+		}
+	}
+	default = no
+	focus = {
+		id = colonial_question
+		icon = GFX_goal_unknown
+		cost = 0.00
+		x = 7
+		y = 0
+
+	}
+	focus = {
+		id = indstrial_reform_center
+		icon = GFX_goal_unknown
+		cost = 0.00
+		x = 7
+		y = 12
+
+	}
+	focus = {
+		id = army_effort
+		icon = GFX_goal_unknown
+		cost = 0.00
+		x = 25
+		y = 0
+
+	}
+	focus = {
+		id = newfocus_66
+		icon = GFX_goal_unknown
+		cost = 0.00
+		x = 20
+		y = 4
+
+	}
+	focus = {
+		id = anti_colonialism_effort
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = colonial_question
+		}
+		mutually_exclusive = {
+			focus = loyalty_forever
+		}
+		x = 3
+		y = 1
+
+	}
+	focus = {
+		id = wellington_trade_union
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = anti_colonialism_effort
+		}
+		mutually_exclusive = {
+			focus = national_junta
+		}
+		x = 1
+		y = 2
+
+	}
+	focus = {
+		id = labour_party
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = wellington_trade_union
+		}
+		x = 1
+		y = 3
+
+	}
+	focus = {
+		id = mclaren_leadership
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = labour_party
+		}
+		x = 1
+		y = 4
+
+	}
+	focus = {
+		id = defend_ast_socialism
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = mclaren_leadership
+		}
+		x = 1
+		y = 5
+
+	}
+	focus = {
+		id = sydney_is_ours
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = defend_ast_socialism
+		}
+		x = 1
+		y = 6
+
+	}
+	focus = {
+		id = soviet_enemys
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = sydney_is_ours
+		}
+		x = 0
+		y = 7
+
+	}
+	focus = {
+		id = soviet_friendship
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = sydney_is_ours
+		}
+		x = 2
+		y = 7
+
+	}
+	focus = {
+		id = communism_strong
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = soviet_friendship
+			focus = soviet_enemys
+		}
+		x = 1
+		y = 8
+
+	}
+	focus = {
+		id = national_junta
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = anti_colonialism_effort
+		}
+		mutually_exclusive = {
+			focus = wellington_trade_union
+		}
+		x = 5
+		y = 2
+
+	}
+	focus = {
+		id = massey_manifisto
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = national_junta
+		}
+		x = 5
+		y = 3
+
+	}
+	focus = {
+		id = reform_at_front
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = massey_manifisto
+		}
+		x = 5
+		y = 4
+
+	}
+	focus = {
+		id = crush_the_reds
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = reform_at_front
+		}
+		x = 5
+		y = 5
+
+	}
+	focus = {
+		id = fight_democrats
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = crush_the_reds
+		}
+		x = 5
+		y = 6
+
+	}
+	focus = {
+		id = united_new_zealand
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = fight_democrats
+		}
+		x = 5
+		y = 7
+
+	}
+	focus = {
+		id = greater_junta
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = united_new_zealand
+		}
+		x = 5
+		y = 8
+
+	}
+	focus = {
+		id = loyalty_forever
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = colonial_question
+		}
+		mutually_exclusive = {
+			focus = anti_colonialism_effort
+		}
+		x = 11
+		y = 1
+
+	}
+	focus = {
+		id = probritish_coup
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = loyalty_forever
+		}
+		mutually_exclusive = {
+			focus = democracy_first
+		}
+		x = 9
+		y = 2
+
+	}
+	focus = {
+		id = grand_colonial_congress
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = probritish_coup
+		}
+		x = 9
+		y = 3
+
+	}
+	focus = {
+		id = governor_plunket
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = grand_colonial_congress
+		}
+		mutually_exclusive = {
+			focus = governor_dickson
+		}
+		x = 8
+		y = 4
+
+	}
+	focus = {
+		id = governor_dickson
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = grand_colonial_congress
+		}
+		mutually_exclusive = {
+			focus = governor_plunket
+		}
+		x = 10
+		y = 4
+
+	}
+	focus = {
+		id = maori_question
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = governor_dickson
+			focus = governor_plunket
+		}
+		x = 9
+		y = 5
+
+	}
+	focus = {
+		id = befriend_maori
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = maori_question
+		}
+		prerequisite = {
+			focus = governor_dickson
+		}
+		mutually_exclusive = {
+			focus = execute_maori
+		}
+		x = 10
+		y = 6
+
+	}
+	focus = {
+		id = maori_client_state
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = befriend_maori
+		}
+		x = 10
+		y = 7
+
+	}
+	focus = {
+		id = democracy_first
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = loyalty_forever
+		}
+		mutually_exclusive = {
+			focus = probritish_coup
+		}
+		x = 13
+		y = 2
+
+	}
+	focus = {
+		id = probritish_liberals
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = democracy_first
+		}
+		x = 13
+		y = 3
+
+	}
+	focus = {
+		id = aotearoan_liberalism
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = probritish_liberals
+		}
+		x = 13
+		y = 4
+
+	}
+	focus = {
+		id = unbreakable_democracy
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = aotearoan_liberalism
+		}
+		x = 13
+		y = 5
+
+	}
+	focus = {
+		id = help_brits_at_war
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = unbreakable_democracy
+		}
+		x = 13
+		y = 6
+
+	}
+	focus = {
+		id = salute_the_british_soliders
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = help_brits_at_war
+		}
+		x = 13
+		y = 7
+
+	}
+	focus = {
+		id = god_save_britannia
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = salute_the_british_soliders
+		}
+		x = 13
+		y = 8
+
+	}
+	focus = {
+		id = navy
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = army_effort
+		}
+		x = 20
+		y = 1
+
+	}
+	focus = {
+		id = control_sea
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = navy
+		}
+		x = 20
+		y = 2
+
+	}
+	focus = {
+		id = ships_science
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = control_sea
+		}
+		x = 20
+		y = 3
+
+	}
+	focus = {
+		id = land
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = army_effort
+		}
+		x = 25
+		y = 1
+
+	}
+	focus = {
+		id = communist_millita
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = land
+		}
+		x = 22
+		y = 2
+
+	}
+	focus = {
+		id = communal_defence_pact
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = communist_millita
+		}
+		x = 22
+		y = 3
+
+	}
+	focus = {
+		id = antibritish_move
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = communal_defence_pact
+		}
+		x = 22
+		y = 4
+
+	}
+	focus = {
+		id = democratic_soliders
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = land
+		}
+		x = 24
+		y = 2
+
+	}
+	focus = {
+		id = junta_officers
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = land
+		}
+		x = 26
+		y = 2
+
+	}
+	focus = {
+		id = british_officers
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = junta_officers
+			focus = democratic_soliders
+		}
+		x = 25
+		y = 3
+
+	}
+	focus = {
+		id = for_our_lands
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = british_officers
+		}
+		x = 25
+		y = 4
+
+	}
+	focus = {
+		id = massey_expansionism
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = land
+		}
+		x = 28
+		y = 2
+
+	}
+	focus = {
+		id = purge_disloyal_soliders
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = massey_expansionism
+		}
+		x = 28
+		y = 3
+
+	}
+	focus = {
+		id = millitaristic_assault
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = purge_disloyal_soliders
+		}
+		x = 28
+		y = 4
+
+	}
+	focus = {
+		id = viva_new_zealand
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = communism_strong
+			focus = god_save_britannia
+			focus = greater_junta
+			focus = nationalist_new_zealand
+		}
+		x = 7
+		y = 9
+
+	}
+	focus = {
+		id = execute_maori
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = governor_plunket
+		}
+		prerequisite = {
+			focus = maori_question
+		}
+		mutually_exclusive = {
+			focus = befriend_maori
+		}
+		x = 8
+		y = 6
+
+	}
+	focus = {
+		id = anti_maori
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = execute_maori
+		}
+		x = 8
+		y = 7
+
+	}
+	focus = {
+		id = nationalist_new_zealand
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = anti_maori
+			focus = maori_client_state
+		}
+		x = 9
+		y = 8
+
+	}
+	focus = {
+		id = courses_from_colonialism
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = viva_new_zealand
+			focus = nationalist_new_zealand
+			focus = greater_junta
+		}
+		x = 7
+		y = 10
+
+	}
+	focus = {
+		id = anti_tribalism_effort
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = courses_from_colonialism
+		}
+		x = 7
+		y = 11
+
+	}
+	focus = {
+		id = finalize_indstrial_effort
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = capitalist_reformism
+			focus = workers_socialism
+		}
+		x = 7
+		y = 14
+
+	}
+	focus = {
+		id = democratic_indstry
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = viva_new_zealand
+		}
+		prerequisite = {
+			focus = god_save_britannia
+		}
+		x = 13
+		y = 10
+
+	}
+	focus = {
+		id = indstrial_workers
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = communism_strong
+		}
+		prerequisite = {
+			focus = viva_new_zealand
+		}
+		x = 1
+		y = 10
+
+	}
+	focus = {
+		id = bulid_tribes_into_cities
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = democratic_indstry
+		}
+		x = 13
+		y = 11
+
+	}
+	focus = {
+		id = expand_the_tribes
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = indstrial_workers
+		}
+		x = 1
+		y = 11
+
+	}
+	focus = {
+		id = commual_working_center
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = expand_the_tribes
+		}
+		x = 1
+		y = 12
+
+	}
+	focus = {
+		id = capitalist_economic_center
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = bulid_tribes_into_cities
+		}
+		x = 13
+		y = 12
+
+	}
+	focus = {
+		id = capitalist_reformism
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = capitalist_economic_center
+			focus = indstrial_reform_center
+		}
+		x = 10
+		y = 13
+
+	}
+	focus = {
+		id = workers_socialism
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = commual_working_center
+		}
+		x = 4
+		y = 13
+
+	}
+	focus = {
+		id = air
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = army_effort
+		}
+		x = 30
+		y = 1
+
+	}
+	focus = {
+		id = modernization_completed
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = antibritish_move
+			focus = for_our_lands
+			focus = millitaristic_assault
+		}
+		prerequisite = {
+			focus = our_own_fighters
+		}
+		prerequisite = {
+			focus = newfocus_66
+		}
+		x = 25
+		y = 5
+
+	}
+	focus = {
+		id = control_skies
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = air
+		}
+		x = 30
+		y = 2
+
+	}
+	focus = {
+		id = local_made
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = control_skies
+		}
+		x = 30
+		y = 3
+
+	}
+	focus = {
+		id = our_own_fighters
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = local_made
+		}
+		x = 30
+		y = 4
+
+	}
+	focus = {
+		id = wellington_development
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = ships_science
+		}
+		x = 20
+		y = 4
+
+	}
+}
