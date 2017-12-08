@@ -274,7 +274,7 @@ focus_tree = {
 	
 	focus = {
 		id = ENG_strengthen_monarchy
-		icon = GFX_focus_hun_elect_a_king
+		icon = GFX_focus_generic_home_defense
 		prerequisite = { focus = ENG_parliament_act }
 		mutually_exclusive = { focus = ENG_strengthen_parliament }
 		x = 16
@@ -1430,7 +1430,7 @@ focus_tree = {
 	
 	focus = {
 		id = ENG_emperor_of_india
-		icon = GFX_focus_hun_elect_a_king
+		icon = GFX_focus_RAJ_british_investors
 		prerequisite = { focus = ENG_defend_the_suez }
 		x = 34
 		y = 6
