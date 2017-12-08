@@ -80,7 +80,7 @@ technologies = {
 		industrial_capacity_factory = 0.1
 
 		path = {
-			leads_to_tech =  industrial_organisation_2
+			leads_to_tech =  industrial_organisation2
 			research_cost_coeff = 1
 		}
 		
@@ -102,14 +102,14 @@ technologies = {
 		}
 	}
 	
-	industrial_organisation_2 = {
+	industrial_organisation2 = {
 	
 		global_building_slots_factor = 0.20
 		industrial_capacity_factory = 0.1
 
 
 		path = {
-			leads_to_tech =  industrial_organisation_3
+			leads_to_tech =  industrial_organisation3
 			research_cost_coeff = 1
 		}
 		
@@ -133,15 +133,10 @@ technologies = {
 		}
 	}
 	
-	industrial_organisation_3 = {
+	industrial_organisation3 = {
 	
 		global_building_slots_factor = 0.20
 		industrial_capacity_factory = 0.1
-
-		path = {
-			leads_to_tech =  industrial_organisation_2
-			research_cost_coeff = 1
-		}
 		
 		research_cost = 1.5
 		start_year = 1916
@@ -534,7 +529,7 @@ technologies = {
 		production_speed_coastal_bunker_factor = 0.05
 		
 		path = {
-			leads_to_tech = hinterland_fortification_2 
+			leads_to_tech = hinterland_fortification2 
 			research_cost_coeff = 1
 		}
 		
@@ -572,13 +567,13 @@ technologies = {
 		}
 	}
 	
-	hinterland_fortification_2 = {
+	hinterland_fortification2 = {
 
 		production_speed_bunker_factor = 0.075
 		production_speed_coastal_bunker_factor = 0.075
 		
 		path = {
-			leads_to_tech = hinterland_fortification_3
+			leads_to_tech = hinterland_fortification3
 			research_cost_coeff = 1
 		}
 		
@@ -603,13 +598,13 @@ technologies = {
 		}
 	}
 	
-	hinterland_fortification_3 = {
+	hinterland_fortification3 = {
 
 		production_speed_bunker_factor = 0.1
 		production_speed_coastal_bunker_factor = 0.1
 		
 		path = {
-			leads_to_tech = hinterland_fortification_4 
+			leads_to_tech = hinterland_fortification4 
 			research_cost_coeff = 1
 		}
 		
@@ -634,13 +629,13 @@ technologies = {
 		}
 	}
 	
-	hinterland_fortification_4 = {
+	hinterland_fortification4 = {
 
 		production_speed_bunker_factor = 0.15
 		production_speed_coastal_bunker_factor = 0.15
 		
 		path = {
-			leads_to_tech = hinterland_fortification_5 
+			leads_to_tech = hinterland_fortification5 
 			research_cost_coeff = 1
 		}
 		
@@ -670,7 +665,7 @@ technologies = {
 		}
 	}
 	
-	hinterland_fortification_5 = {
+	hinterland_fortification5 = {
 
 		production_speed_bunker_factor = 0.2
 		production_speed_coastal_bunker_factor = 0.2
