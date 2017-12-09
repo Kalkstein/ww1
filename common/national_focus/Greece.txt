@@ -1,0 +1,2101 @@
+## Coded by DoLhades ##
+
+focus_tree = {
+	id = Greece
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = GRE
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 50 y = 2100 }
+	focus = {
+		id = GREBalkanWar
+		text = "Balkan War"
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 10.00
+		x = 2
+		y = 0
+
+	}
+	focus = {
+		id = GREKingsforces
+		text = "The Kings Forces"
+		icon = GFX_focus_generic_military_mission
+		cost = 10.00
+		x = 12
+		y = 0
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 1
+				category = land_doctrine 
+			}
+		}
+	}
+	focus = {
+		id = GRENaval
+		text = "Naval Focus"
+		icon = GFX_goal_continuous_naval_production
+		cost = 10.00
+		x = 23
+		y = 0
+		completion_reward = {
+		capital_scope = { 
+						add_building_construction = {
+					type = naval_base
+					level = 4
+					instant_build = yes
+					}
+				}
+			}
+		}
+
+	focus = {
+		id = GREEstablishair
+		text = "Establish the Hellenic Air Corps"
+		icon = GFX_goal_generic_CAS
+		cost = 10.00
+		x = 29
+		y = 0
+
+	}
+	focus = {
+		id = GRERecover
+		text = "Recover From The Balkan War"
+		icon = GFX_goal_continuous_non_factory_construct
+		cost = 10.00
+		x = 36
+		y = 0
+
+	}
+	focus = {
+		id = GRESerbianDefenceTreaty
+		text = "Serbian Defence Treaty"
+		icon = GFX_goal_generic_defence
+		cost = 10.00
+		prerequisite = {
+			focus = GREBalkanWar
+		}
+		x = 2
+		y = 1
+
+	}
+	focus = {
+		id = GREHandoverFortRupel!
+		text = "Handover Fort Rupel!"
+		icon = GFX_goal_generic_construct_military
+		cost = 10.00
+		prerequisite = {
+			focus = GRESerbianDefenceTreaty
+		}
+		mutually_exclusive = {
+			focus = GRENeutrality
+		}
+		x = 0
+		y = 2
+
+	}
+	focus = {
+		id = GRESupportTheKing!
+		text = "Support The King!"
+		icon = GFX_focus_hun_elect_a_king
+		cost = 10.00
+		prerequisite = {
+			focus = GREHandoverFortRupel!
+		}
+		x = 0
+		y = 3
+
+	}
+	focus = {
+		id = GRESupportBulgaria
+		text = "Support Bulgaria"
+		icon = GFX_goal_generic_military_deal
+		cost = 10.00
+		prerequisite = {
+			focus = GRESupportTheKing!
+		}
+		x = 0
+		y = 4
+
+	}
+	
+	focus = {
+		id = GREANewBalkanLeague
+		text = "A New Balkan League"
+		icon = GFX_goal_anschluss
+		cost = 10.00
+		prerequisite = {
+			focus = GREProfit?
+		}
+		mutually_exclusive = {
+			focus = GREJointheCentralPowers
+			focus = GREJointheEntete
+		}
+		x = 2
+		y = 5
+		
+	}
+	focus = {
+		id = GRESurprisetheSerbians
+		text = "Surprise the Serbians"
+		icon = GFX_focus_renounce_the_treaty_of_triannon
+		cost = 10.00
+		prerequisite = {
+			focus = GRESupportBulgaria
+		}
+		x = 0
+		y = 5
+
+	}
+	focus = {
+		id = GREJointheCentralPowers
+		text = "Join the Central Powers"
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = GRESurprisetheSerbians
+		}
+		mutually_exclusive = {
+			focus = GREANewBalkanLeague
+			focus = GREJointheEntete
+		}
+		x = 0
+		y = 6
+
+	}
+	focus = {
+		id = GRENeutrality
+		text = "Neutrality Path"
+		icon = GFX_goal_generic_national_unity
+		cost = 10.00
+		prerequisite = {
+			focus = GRESerbianDefenceTreaty
+		}
+		mutually_exclusive = {
+			focus = GREHandoverFortRupel!
+			focus = GRESalonikaOccupation
+		}
+		x = 2
+		y = 3
+
+	}
+	focus = {
+		id = GRESalonikaOccupation
+		text = "Salonika Occupation"
+		icon = GFX_goal_generic_position_armies
+		cost = 10.00
+		prerequisite = {
+			focus = GRESerbianDefenceTreaty
+		}
+		mutually_exclusive = {
+			focus = GRENeutrality
+		}
+		x = 4
+		y = 2
+
+	}
+	focus = {
+		id = GRESupportthePrimeMinister!
+		text = "Support Parliament"
+		icon = GFX_focus_rom_abdicate
+		cost = 10.00
+		prerequisite = {
+			focus = GRESalonikaOccupation
+		}
+		x = 4
+		y = 3
+
+	}
+	focus = {
+		id = GRESwingtoBritain
+		text = "Swing to Britain"
+		icon = GFX_focus_generic_home_defense
+		cost = 10.00
+		prerequisite = {
+			focus = GRESupportthePrimeMinister!
+		}
+		x = 4
+		y = 4
+
+	}
+	focus = {
+		id = GREProfit?
+		text = "Profit?"
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10.00
+		prerequisite = {
+			focus = GRENeutrality
+			focus = GRESupportBulgaria
+			focus = GRESwingtoBritain
+		}
+		x = 2
+		y = 4
+				completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = GREAbdicationoftheKing
+		text = "Abdication of the King"
+		icon = GFX_focus_rom_royal_dictatorship
+		cost = 10.00
+		prerequisite = {
+			focus = GRESwingtoBritain
+		}
+		x = 4
+		y = 5
+
+	}
+	focus = {
+		id = GREJointheEntete
+		text = "Join the Entete"
+		icon = GFX_goal_support_democracy
+		cost = 10.00
+		prerequisite = {
+			focus = GREAbdicationoftheKing
+		}
+		mutually_exclusive = {
+			focus = GREJointheCentralPowers
+			focus = GREANewBalkanLeague
+		}
+		x = 4
+		y = 6
+
+	}
+	focus = {
+		id = GREMobilisation
+		text = "Mobilisation"
+		icon = GFX_goal_generic_military_sphere
+		cost = 10.00
+		prerequisite = {
+			focus = GREKingsforces
+		}
+		x = 12
+		y = 1
+
+	}
+	focus = {
+		id = GREGreekPurge
+		text = "Greek Purge"
+		icon = GFX_focus_generic_support_the_left_right
+		cost = 10.00
+		prerequisite = {
+			focus = GREMobilisation
+		}
+		x = 12
+		y = 2
+
+	}
+	focus = {
+		id = GREGerAssist
+		text = "German Assistance"
+		icon = GFX_goal_rhineland
+		cost = 10.00
+		prerequisite = {
+			focus = GREGreekPurge
+			if = {
+				limit = {
+					has_opinion = { target = GER value < 100 }
+					}
+				}
+		}
+		mutually_exclusive = {
+			focus = GREFraAssist
+		}
+		x = 10
+		y = 3
+				completion_reward = {
+					add_tech_bonus = {
+				name = GREGERassist
+				bonus = 0.5
+				uses = 2
+				category = land_doctrine
+				}
+			}
+		}
+
+	focus = {
+		id = GREFraAssist
+		text = "French Assistance"
+		icon = GFX_focus_generic_the_giant_wakes
+		cost = 10.00
+		prerequisite = {
+			focus = GREGreekPurge
+			if = {
+				limit = {
+					has_opinion = { target = FRA value < 100 }
+					}
+				}
+		}
+		mutually_exclusive = {
+			focus = GREGerAssist
+		}
+		x = 14
+		y = 3
+		completion_reward = {
+					add_tech_bonus = {
+				name = GREFRAassist
+				bonus = 0.5
+				uses = 2
+				category = land_doctrine
+				}
+			}
+		}
+
+	focus = {
+		id = GREBorder
+		text = "Build-up The Border"
+		icon = GFX_goal_generic_build_tank
+		cost = 10.00
+		prerequisite = {
+			focus = GREFraAssist
+		}
+		x = 14
+		y = 4
+				completion_reward = {
+		185 = { 				
+					add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					}
+				}
+		731 = { 				
+					add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					}
+				}
+		184 = { 				
+					add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					}
+				}
+			}
+		}
+
+	focus = {
+		id = GREStokes
+		text = "Buy the Stokes"
+		icon = GFX_goal_tripartite_pact
+		cost = 10.00
+		prerequisite = {
+			focus = GREBorder
+		}
+		mutually_exclusive = {
+			focus = GREChauchat
+		}
+		x = 14
+		y = 5
+
+	}
+	focus = {
+		id = GREBritishmodel
+		text = "The British Model"
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		cost = 10.00
+		prerequisite = {
+			focus = GREStokes
+		}
+		x = 14
+		y = 6
+				completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = infantry_weapons
+			}
+		}
+	}
+	focus = {
+		id = GREBreakthrough
+		text = "Breakthrough Tactics"
+		icon = GFX_goal_generic_cavalry
+		cost = 10.00
+		prerequisite = {
+			focus = GREBritishmodel
+		}
+		x = 14
+		y = 7
+						completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = armor
+			}
+		}
+	}
+	focus = {
+		id = GREMadMinute
+		text = "Greek Mad Minute"
+		icon = GFX_focus_generic_home_defense
+		cost = 10.00
+		prerequisite = {
+			focus = GREBreakthrough
+		}
+		x = 14
+		y = 8
+						completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+	}
+	focus = {
+		id = GREChauchat
+		text = "Buy the Chauchat"
+		icon = GFX_goal_tripartite_pact
+		cost = 10.00
+		prerequisite = {
+			focus = GREBorder
+		}
+		mutually_exclusive = {
+			focus = GREStokes
+		}
+		x = 16
+		y = 5
+
+	}
+	focus = {
+		id = GRETriangular
+		text = "Triangular Divisions"
+		icon = GFX_focus_generic_little_entente
+		cost = 10.00
+		prerequisite = {
+			focus = GREChauchat
+		}
+		x = 16
+		y = 6
+
+	}
+	focus = {
+		id = GREDefence
+		text = "Defencive Prowess"
+		icon = GFX_goal_generic_construction2
+		cost = 10.00
+		prerequisite = {
+			focus = GRETriangular
+		}
+		x = 16
+		y = 7
+						completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = GREArmy
+		text = "Army fit for a King"
+		icon = GFX_focus_rom_royal_dictatorship
+		cost = 10.00
+		prerequisite = {
+			focus = GREDefence
+		}
+		x = 16
+		y = 8
+
+	}
+	focus = {
+		id = GREModernise
+		text = "Invest in Modernisation"
+		icon = GFX_goal_generic_build_navy
+		cost = 10.00
+		prerequisite = {
+			focus = GRENaval
+		}
+		x = 23
+		y = 1
+				completion_reward = {
+			navy_experience = 25
+			add_tech_bonus = {
+				name = GREmodernise
+				bonus = 0.3
+				uses = 4
+				category = naval_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = GREOttomanHegemony
+		text = "Help Ottoman Hegemony"
+		icon = GFX_goal_tripartite_pact
+		cost = 10.00
+		prerequisite = {
+			focus = GREModernise
+			if = {
+				limit = {
+					has_opinion = { target = TUR value < 100 }
+					}
+				}
+		}
+		mutually_exclusive = {
+			focus = GREOttoRival
+		}
+		x = 21
+		y = 2
+
+	}
+	focus = {
+		id = GRESmallSHip
+		text = "Destroyers I"
+		icon = GFX_goal_generic_occupy_states_coastal
+		cost = 10.00
+		prerequisite = {
+			focus = GREOttomanHegemony
+		}
+		x = 21
+		y = 3
+				completion_reward = {
+			add_tech_bonus = {
+				name = GREdestroyers
+				bonus = 0.5
+				uses = 1
+				category = dd_tech
+			}
+		}
+	}
+
+	focus = {
+		id = GREDestroyersII
+		text = "Destroyers II"
+		icon = GFX_goal_generic_occupy_states_coastal
+		cost = 10.00
+		prerequisite = {
+			focus = GRESmallSHip
+		}
+		x = 21
+		y = 4
+						completion_reward = {
+			add_tech_bonus = {
+				name = GREdestroyersII
+				bonus = 0.5
+				uses = 1
+				category = dd_tech
+			}
+		}
+	}
+
+	focus = {
+		id = GRECruisers
+		text = "Buy Cruisers"
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10.00
+		prerequisite = {
+			focus = GREDestroyersII
+		}
+		x = 21
+		y = 5
+
+	}
+	focus = {
+		id = GREOttomanbases
+		text = "Use Ottoman Bases"
+		icon = GFX_goal_continuous_naval_production
+		cost = 10.00
+		prerequisite = {
+			focus = GRECruisers
+		}
+		x = 21
+		y = 6
+
+	}
+	focus = {
+		id = GREDestroyersIII
+		text = "Destroyers III"
+		icon = GFX_goal_generic_occupy_states_coastal
+		cost = 10.00
+		prerequisite = {
+			focus = GREOttomanbases
+		}
+		x = 21
+		y = 7
+						completion_reward = {
+			add_tech_bonus = {
+				name = GREdestroyersIII
+				bonus = 0.5
+				uses = 1
+				category = dd_tech
+			}
+		}
+	}
+	focus = {
+		id = GREGerNavAssistance
+		text = "German Naval Help"
+		icon = GFX_goal_generic_production2
+		cost = 10.00
+		prerequisite = {
+			focus = GREDestroyersIII
+		}
+		x = 21
+		y = 8
+
+	}
+	focus = {
+		id = GRERival
+		text = "Rival the Mediteranean Fleet"
+		icon = GFX_goal_generic_navy_cruiser
+		cost = 10.00
+		prerequisite = {
+			focus = GREGerNavAssistance
+		}
+		x = 21
+		y = 9
+						completion_reward = {
+			add_tech_bonus = {
+				name = GRErival
+				bonus = 0.75
+				uses = 1
+				category = bc_tech
+			}
+		}
+	}
+	focus = {
+		id = GREOttoRival
+		text = "Rival Ottoman Hegemony"
+		icon = GFX_goal_generic_major_war
+		cost = 10.00
+		prerequisite = {
+			focus = GREModernise
+			if = {
+				limit = {
+					has_opinion = { target = ENG value < 100 }
+					}
+				}
+		}
+		mutually_exclusive = {
+			focus = GREOttomanHegemony
+		}
+		x = 25
+		y = 2
+						completion_reward = {
+			add_tech_bonus = {
+				name = GREotorival
+				bonus = 0.5
+				uses = 1
+				category = cv_tech
+			}
+		}
+	}
+	focus = {
+		id = GREbigger
+		text = "We Deserve Bigger"
+		icon = GFX_goal_generic_navy_battleship
+		cost = 10.00
+		prerequisite = {
+			focus = GREOttoRival
+		}
+		x = 25
+		y = 3
+						completion_reward = {
+			add_tech_bonus = {
+				name = GREcapital
+				bonus = 0.5
+				uses = 1
+				category = bc_tech
+			}
+		}
+	}
+
+	focus = {
+		id = GREStraitsdefend
+		text = "Defend the Straits"
+		icon = GFX_focus_generic_coastal_fort
+		cost = 10.00
+		prerequisite = {
+			focus = GREbigger
+		}
+		x = 25
+		y = 4
+						completion_reward = {
+					47 = {
+					add_building_construction = {
+					type = coastal_bunker
+					level = 4
+					instant_build = yes
+					}
+				}
+									731 = {
+					add_building_construction = {
+					type = coastal_bunker
+					level = 4
+					instant_build = yes
+					}
+				}
+									184 = {
+					add_building_construction = {
+					type = coastal_bunker
+					level = 4
+					instant_build = yes
+					}
+				}
+			}			
+		}
+
+	focus = {
+		id = GRESubmarines
+		text = "Submarines"
+		icon = GFX_goal_generic_navy_anti_submarine
+		cost = 10.00
+		prerequisite = {
+			focus = GREDestroyersII
+			focus = GREStraitsdefend
+		}
+		x = 23
+		y = 5
+						completion_reward = {
+			add_tech_bonus = {
+				name = GREsubmarine
+				bonus = 0.5
+				uses = 1
+				category = ss_tech
+			}
+		}
+	}
+
+	focus = {
+		id = GREOwncruisers
+		text = "Our Own Cruisers"
+		icon = GFX_goal_generic_navy_cruiser
+		cost = 10.00
+		prerequisite = {
+			focus = GREStraitsdefend
+		}
+		x = 25
+		y = 5
+						completion_reward = {
+			add_tech_bonus = {
+				name = GREcruisers
+				bonus = 0.5
+				uses = 1
+				category = cl_tech
+			}
+		}
+	}
+
+	focus = {
+		id = GRECreteNavyBase
+		text = "Crete Naval Bases"
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 10.00
+		prerequisite = {
+			focus = GREOwncruisers
+		}
+		x = 25
+		y = 6
+		completion_reward = {
+							182 = {
+					add_building_construction = {
+					type = naval_base
+					level = 5
+					instant_build = yes
+					}
+				}
+			}
+		}
+
+	focus = {
+		id = GREflagship
+		text = "The Flagships"
+		icon = GFX_goal_generic_navy_battleship
+		cost = 10.00
+		prerequisite = {
+			focus = GRECreteNavyBase
+		}
+		x = 25
+		y = 7
+						completion_reward = {
+			add_tech_bonus = {
+				name = GREflagships
+				bonus = 0.5
+				uses = 1
+				category = bb_tech
+			}
+		}
+	}
+	focus = {
+		id = GREBritNavHelp
+		text = "British Naval Help"
+		icon = GFX_goal_generic_production2
+		cost = 10.00
+		prerequisite = {
+			focus = GREflagship
+		}
+		x = 25
+		y = 8
+						completion_reward = {
+			add_tech_bonus = {
+				name = GREbrithelp
+				bonus = 0.5
+				uses = 1
+				category = ca_tech
+			}
+		}
+	}
+	focus = {
+		id = GRESupofeast
+		text = "Supremacy of the East"
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 10.00
+		prerequisite = {
+			focus = GREBritNavHelp
+		}
+		x = 25
+		y = 9
+
+	}
+	focus = {
+		id = GREIndepair
+		text = "Independent Air"
+		icon = GFX_goal_generic_territory_or_war
+		cost = 10.00
+		prerequisite = {
+			focus = GREEstablishair
+		}
+		mutually_exclusive = {
+			focus = GREArmyair
+		}
+		x = 27
+		y = 1
+
+	}
+	focus = {
+		id = GREFighterI
+		text = "Fighters I"
+		icon = GFX_goal_generic_air_fighter2
+		cost = 10.00
+		prerequisite = {
+			focus = GREIndepair
+		}
+		x = 27
+		y = 2
+				completion_reward = {
+			add_tech_bonus = {
+				name = GRE_fighter_I
+				bonus = 0.3
+				category = light_air
+				}
+			}
+		}
+		
+	focus = {
+		id = GRENorthair
+		text = "Northern Air Bases"
+		icon = GFX_goal_continuous_air_production
+		cost = 10.00
+		prerequisite = {
+			focus = GREFighterI
+		}
+		x = 27
+		y = 3
+		completion_reward = {
+		185 = { 				
+					add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+					}
+				}
+		731 = { 				
+					add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+					}
+				}
+		184 = { 				
+					add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+					}
+				}
+			}
+		}
+
+	focus = {
+		id = GREfighterii
+		text = "Fighters II"
+		icon = GFX_goal_generic_air_fighter2
+		cost = 10.00
+		prerequisite = {
+			focus = GRENorthair
+		}
+		x = 27
+		y = 4
+				completion_reward = {
+			add_tech_bonus = {
+				name = GRE_fighter_II
+				bonus = 0.3
+				category = light_air
+				}
+			}
+		}
+		
+	focus = {
+		id = GREAirTactics
+		text = "Early Air Tactics"
+		icon = GFX_goal_continuous_boost_freedom
+		cost = 10.00
+		prerequisite = {
+			focus = GREfighterii
+		}
+		x = 27
+		y = 5
+						completion_reward = {
+			add_tech_bonus = {
+				name = GREairdoctrine
+				bonus = 0.5
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+	focus = {
+		id = GREArmyair
+		text = "Army Air Corps"
+		icon = GFX_focus_cze_german_puppet
+		cost = 10.00
+		prerequisite = {
+			focus = GREEstablishair
+		}
+		mutually_exclusive = {
+			focus = GREIndepair
+		}
+		x = 31
+		y = 1
+
+	}
+	focus = {
+		id = GREBomb
+		text = "Bomber I"
+		icon = GFX_goal_poland_goal
+		cost = 10.00
+		prerequisite = {
+			focus = GREIndepair
+			focus = GREArmyair
+		}
+		x = 29
+		y = 2
+						completion_reward = {
+			add_tech_bonus = {
+				name = GRE_Bomber_I
+				bonus = 0.3
+				category = tactical_bomber
+				}
+			}
+		}
+
+	focus = {
+		id = GRECAS
+		text = "Close Air Support I"
+		icon = GFX_goal_generic_air_fighter
+		cost = 10.00
+		prerequisite = {
+			focus = GREArmyair
+		}
+		x = 31
+		y = 2
+						completion_reward = {
+			add_tech_bonus = {
+				name = GRE_CAS_I
+				bonus = 0.3
+				category = cas_bomber
+				}
+			}
+		}
+
+	focus = {
+		id = GRENorthairdef
+		text = "Northern Air Defences"
+		icon = GFX_focus_generic_air_defense
+		cost = 10.00
+		prerequisite = {
+			focus = GRECAS
+		}
+		x = 31
+		y = 3
+				completion_reward = {
+		185 = { 				
+					add_building_construction = {
+					type = anti_air
+					level = 1
+					instant_build = yes
+					}
+				}
+		731 = { 				
+					add_building_construction = {
+					type = anti_air
+					level = 1
+					instant_build = yes
+					}
+				}
+		184 = { 				
+					add_building_construction = {
+					type = anti_air
+					level = 1
+					instant_build = yes
+					}
+				}
+			}
+		}
+		
+	focus = {
+		id = GRENAVBomb
+		text = "Naval Bomber I"
+		icon = GFX_goal_generic_air_naval_bomber
+		cost = 10.00
+		prerequisite = {
+			focus = GREBomb
+			focus = GRENorthair
+			focus = GRENorthairdef
+		}
+		x = 29
+		y = 4
+						completion_reward = {
+			add_tech_bonus = {
+				name = GRE_navBomber_I
+				bonus = 0.3
+				category = naval_bomber
+				}
+			}
+		}
+
+	focus = {
+		id = GREMobair
+		text = "Mobile Air Defences"
+		icon = GFX_goal_generic_army_artillery2
+		cost = 10.00
+		prerequisite = {
+			focus = GRENorthairdef
+		}
+		x = 31
+		y = 4
+
+	}
+	focus = {
+		id = GRECASII
+		text = "Close Air Support II"
+		icon = GFX_goal_generic_air_fighter
+		cost = 10.00
+		prerequisite = {
+			focus = GREMobair
+		}
+		x = 31
+		y = 5
+						completion_reward = {
+			add_tech_bonus = {
+				name = GRE_Bomber_II
+				bonus = 0.3
+				category = cas_bomber
+				}
+			}
+		}
+
+	focus = {
+		id = GREBritishindustry
+		text = "Ask Britain For Help"
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		cost = 10.00
+		prerequisite = {
+			focus = GRERecover
+			if = {
+				limit = {
+					has_opinion = { target = ENG value < 100 }
+					}
+				}
+		}
+		x = 33
+		y = 1
+
+	}
+	focus = {
+		id = GREBritTrade
+		text = "Trade with Britain"
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 10.00
+		prerequisite = {
+			focus = GREBritishindustry
+		}
+		mutually_exclusive = {
+			focus = GRETradeGermany
+			focus = GRETradeserbias
+		}
+		x = 33
+		y = 2
+
+	}
+	focus = {
+		id = GRECivFactI
+		text = "Civilian Factories I"
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		prerequisite = {
+			focus = GREBritTrade
+		}
+		x = 33
+		y = 3
+				completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+						}
+					}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+					}
+				}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+						}
+					}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+					}
+				}
+			}			
+		}
+		
+	focus = {
+		id = GREPMApproves
+		text = "Prime Minister Approves!"
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = GRECivFactI
+		}
+		x = 33
+		y = 4
+				completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = GREEnfieldGreece
+		text = "Enfield Greece"
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = GREPMApproves
+		}
+		x = 33
+		y = 5
+				completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+						}
+					}
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+					}
+				}
+			}			
+		}
+		
+	focus = {
+		id = GRENAVFact
+		text = "Naval Factories"
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 10.00
+		prerequisite = {
+			focus = GREEnfieldGreece
+		}
+		x = 33
+		y = 6
+
+	}
+	focus = {
+		id = GREAngloPact
+		text = "Anglo-Greek Pact"
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		cost = 10.00
+		prerequisite = {
+			focus = GRENAVFact
+		}
+		x = 33
+		y = 7
+
+	}
+	focus = {
+		id = GRECivFactII
+		text = "Civilian Factories II"
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		prerequisite = {
+			focus = GRECivFactI
+		}
+		x = 35
+		y = 4
+		
+						completion_reward = {
+					random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+						}
+					}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+					}
+				}
+					random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+						}
+					}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+					}
+				}
+			}
+		}
+
+	focus = {
+		id = GREInfraBrit
+		text = "British Infrastructure Aid"
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10.00
+		prerequisite = {
+			focus = GRECivFactII
+		}
+		x = 35
+		y = 5
+		
+				completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+					}
+				}
+							random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+					}
+				}
+            }
+		}
+
+	focus = {
+		id = GREGermanindustryhelp
+		text = "Ask Germany for Help"
+		icon = GFX_goal_generic_improve_relations
+		cost = 10.00
+		prerequisite = {
+			focus = GRERecover
+			if = {
+				limit = {
+					has_opinion = { target = GER value < 100 }
+					}
+				}
+		}
+		x = 38
+		y = 1
+								completion_reward = {
+					random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 4
+						include_locked = yes
+						}
+					}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+					}
+				}
+									random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 4
+						include_locked = yes
+						}
+					}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+					}
+				}
+			}
+		}
+		
+	focus = {
+		id = GRETradeGermany
+		text = "Trade with Germany"
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 10.00
+		prerequisite = {
+			focus = GREGermanindustryhelp
+		}
+		mutually_exclusive = {
+			focus = GREBritTrade
+			focus = GRETradeserbias
+		}
+		x = 38
+		y = 2
+
+	}
+	focus = {
+		id = GREOttoFriend
+		text = "Greco-Ottoman Friendship"
+		icon = GFX_goal_tripartite_pact
+		cost = 10.00
+		prerequisite = {
+			focus = GRETradeGermany
+		}
+		x = 37
+		y = 3
+				completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = GREGewehrFact
+		text = "Greek Gewehr Factory"
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = GREOttoFriend
+		}
+		x = 37
+		y = 4
+						completion_reward = {
+					random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 4
+						include_locked = yes
+						}
+					}
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+					}
+				}
+			}
+		}
+		
+	focus = {
+		id = GREtradeBulg
+		text = "Trade with Bulgaria"
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 10.00
+		prerequisite = {
+			focus = GRETradeGermany
+		}
+		x = 39
+		y = 3
+
+	}
+	focus = {
+		id = GREBulgindusthelp
+		text = "Support Bulgaria"
+		icon = GFX_goal_continuous_repairments
+		cost = 10.00
+		prerequisite = {
+			focus = GREtradeBulg
+		}
+		x = 39
+		y = 4
+		}
+		
+	focus = {
+		id = GREMilfactI
+		text = "Military Factories I"
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = GREGewehrFact
+			focus = GREBulgindusthelp
+		}
+		x = 38
+		y = 5
+						completion_reward = {
+					random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+						}
+					}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+					}
+				}
+					random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+						}
+					}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+					}
+				}
+			}
+		}
+
+	focus = {
+		id = GRESerbianHelp
+		text = "Ask Serbia for Help"
+		icon = GFX_goal_tripartite_pact
+		cost = 10.00
+		prerequisite = {
+			focus = GRERecover
+		}
+		x = 42
+		y = 1
+
+	}
+	focus = {
+		id = GRERussianhelp
+		text = "Ask Russia for Help"
+		icon = GFX_goal_tripartite_pact
+		cost = 10.00
+		prerequisite = {
+			focus = GRESerbianHelp
+					if = {
+						limit = {
+							has_opinion = { target = SOV value < 100 }
+							}
+						}
+		}
+		x = 42
+		y = 2
+
+	}
+	focus = {
+		id = GRETradeserbias
+		text = "Trade with Serbia"
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 10.00
+		prerequisite = {
+			focus = GRERussianhelp
+		}
+		mutually_exclusive = {
+			focus = GRETradeGermany
+			focus = GREBritTrade
+		}
+		x = 42
+		y = 3
+
+	}
+	focus = {
+		id = GREjointdev
+		text = "Joint Development"
+		icon = GFX_goal_generic_national_unity
+		cost = 10.00
+		prerequisite = {
+			focus = GRETradeserbias
+		}
+		x = 42
+		y = 4
+		ai_will_do = {
+			factor = 1
+		}		
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+					}
+				}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+						}
+					}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+					}
+				}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+						}
+					}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+					}
+				}
+			}			
+		}
+	
+	focus = {
+		id = GRERussianfunds
+		text = "Ask Russia for Funds"
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		prerequisite = {
+			focus = GREjointdev
+		}
+		x = 42
+		y = 5
+				completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	
+	focus = {
+		id = GRERedssupport
+		text = "Support from the Reds"
+		icon = GFX_focus_yug_pan_slavic_congress
+		cost = 10.00
+		prerequisite = {
+			focus = GRERussianfunds
+		}
+		x = 42
+		y = 6
+		
+	}
+	focus = {
+		id = GREbolshpact
+		text = "Bolshevik-Greek Pact"
+		icon = GFX_focus_generic_soviet_politics
+		cost = 10.00
+		prerequisite = {
+			focus = GRERedssupport
+		}
+		x = 42
+		y = 7
+		
+	}
+	focus = {
+		id = GREPromoteNeutrality
+		text = "Promote Neutrality"
+		icon = GFX_goal_generic_propaganda
+		cost = 10.00
+		prerequisite = {
+			focus = GREANewBalkanLeague
+		}
+		x = 2
+		y = 7
+
+	}
+	focus = {
+		id = GREPutDownTheWarenthusiasts
+		text = "Reduce War Enthusiasm"
+		icon = GFX_goal_generic_territory_or_war
+		cost = 10.00
+		prerequisite = {
+			focus = GREPromoteNeutrality
+		}
+		x = 2
+		y = 8
+		
+	}
+	focus = {
+		id = GRECivilWar
+		text = "Civil War"
+		icon = GFX_goal_generic_major_war
+		cost = 10.00
+		prerequisite = {
+			focus = GREPutDownTheWarenthusiasts
+			focus = GREJointheCentralPowers
+			focus = GREJointheEntete
+		}
+		x = 2
+		y = 9
+		
+	}
+	focus = {
+		id = GRECentralPowersResolution
+		text = "Central Powers Resolution"
+		icon = GFX_focus_AST_never_gallipoli
+		cost = 10.00
+		prerequisite = {
+			focus = GREJointheCentralPowers
+		}
+		prerequisite = {
+			focus = GRECivilWar
+		}
+		mutually_exclusive = {
+			focus = GRETheThirdChoice
+			focus = GREEnteteResolution
+		}
+		x = 0
+		y = 10
+		
+	}
+	focus = {
+		id = GRETheThirdChoice
+		text = "The Third Choice"
+		icon = GFX_focus_yug_pan_slavic_congress
+		cost = 10.00
+		prerequisite = {
+			focus = GRECivilWar
+		}
+		mutually_exclusive = {
+			focus = GRECentralPowersResolution
+			focus = GREEnteteResolution
+		}
+		x = 2
+		y = 11
+		
+	}
+	focus = {
+		id = GREAKingsRegime
+		text = "A Kings Regime"
+		icon = GFX_focus_generic_military_mission
+		cost = 10.00
+		prerequisite = {
+			focus = GRECentralPowersResolution
+		}
+		x = 0
+		y = 11
+		
+	}
+	focus = {
+		id = GREEnteteResolution
+		text = "Entete Resolution"
+		icon = GFX_focus_generic_little_entente
+		cost = 10.00
+		prerequisite = {
+			focus = GREJointheEntete
+		}
+		prerequisite = {
+			focus = GRECivilWar
+		}
+		mutually_exclusive = {
+			focus = GRECentralPowersResolution
+			focus = GRETheThirdChoice
+		}
+		x = 4
+		y = 10
+		
+	}
+	focus = {
+		id = GRESupportoftheMinisters
+		text = "Support of the Ministers"
+		icon = GFX_focus_generic_self_management
+		cost = 10.00
+		prerequisite = {
+			focus = GREEnteteResolution
+		}
+		x = 4
+		y = 11
+		
+	}
+	focus = {
+		id = GREGreekCommunistState
+		text = "Greek Communist State"
+		icon = GFX_focus_generic_join_comintern
+		cost = 10.00
+		prerequisite = {
+			focus = GRETheThirdChoice
+		}
+		x = 2
+		y = 12
+		
+	}
+	focus = {
+		id = GRESupportLenin!
+		text = "Support Lenin!"
+		icon = GFX_goal_continuous_suppression
+		cost = 10.00
+		prerequisite = {
+			focus = GREGreekCommunistState
+		}
+		x = 2
+		y = 13
+		
+	}
+	focus = {
+		id = GREABetterAlly
+		text = "A Better Ally"
+		icon = GFX_goal_tripartite_pact
+		cost = 10.00
+		prerequisite = {
+			focus = GRESupportLenin!
+		}
+		x = 2
+		y = 14
+		
+	}
+	focus = {
+		id = GRELessons
+		text = "Balkan War Lessons"
+		icon = GFX_goal_generic_air_doctrine
+		cost = 10.00
+		prerequisite = {
+			focus = GREGerAssist
+		}
+		x = 10
+		y = 4
+		
+	}
+	focus = {
+		id = GREBulgarianAssist
+		text = "Bulgarian Assistance"
+		icon = GFX_goal_rhineland
+		cost = 10.00
+		prerequisite = {
+			focus = GRELessons
+		}
+		x = 8
+		y = 5
+		
+	}
+	focus = {
+		id = GREKaisermodel
+		text = "Kaiser's Army Model"
+		icon = GFX_goal_continuous_reduce_training_time
+		cost = 10.00
+		prerequisite = {
+			focus = GRELessons
+		}
+		prerequisite = {
+			focus = GRELessons
+		}
+		x = 10
+		y = 5
+		
+	}
+	focus = {
+		id = GRESchwarzlose
+		text = "Buy the Schwarzlose"
+		icon = GFX_goal_tripartite_pact
+		cost = 10.00
+		prerequisite = {
+			focus = GREKaisermodel
+		}
+		mutually_exclusive = {
+			focus = GREMannlicher
+		}
+		x = 8
+		y = 6
+		
+	}
+	focus = {
+		id = GREMannlicher
+		text = "Buy the Mannlicher"
+		icon = GFX_goal_tripartite_pact
+		cost = 10.00
+		prerequisite = {
+			focus = GREKaisermodel
+		}
+		mutually_exclusive = {
+			focus = GRESchwarzlose
+		}
+		x = 10
+		y = 6
+		
+	}
+	focus = {
+		id = GREStaticWar
+		text = "Static Warfare"
+		icon = GFX_goal_generic_construct_military
+		cost = 10.00
+		prerequisite = {
+			focus = GRESchwarzlose
+		}
+		x = 8
+		y = 7
+		
+	}
+	focus = {
+		id = GREAusassist
+		text = "Support from Austria-Hungary"
+		icon = GFX_focus_proclaim_the_restauration_of_austria_hungary
+		cost = 10.00
+		prerequisite = {
+			focus = GREStaticWar
+		}
+		x = 8
+		y = 8
+		
+	}
+	focus = {
+		id = GREMobWar
+		text = "Mobile Warfare"
+		icon = GFX_goal_generic_army_motorized
+		cost = 10.00
+		prerequisite = {
+			focus = GREMannlicher
+		}
+		x = 10
+		y = 7
+		
+	}
+	focus = {
+		id = GREBalSchlieffen
+		text = "Balkan Schlieffen?"
+		icon = GFX_focus_SAF_colonialist_crusade
+		cost = 10.00
+		prerequisite = {
+			focus = GREMobWar
+		}
+		x = 10
+		y = 8
+
+	}
+	focus = {
+		id = GREConvoyinter
+		text = "Convoy Interdiction"
+		icon = GFX_goal_generic_wolf_pack
+		cost = 10.00
+		prerequisite = {
+			focus = GRESubmarines
+		}
+		x = 23
+		y = 6
+
+	}
+	focus = {
+		id = GREITBombModel
+		text = "Italian Bomber Model"
+		icon = GFX_goal_generic_occupy_start_war
+		cost = 10.00
+		prerequisite = {
+			focus = GRENAVBomb
+		}
+		x = 29
+		y = 5
+						completion_reward = {
+			add_tech_bonus = {
+				name = GRE_ITBomber
+				bonus = 0.5
+				category = tactical_bomber
+				}
+			}
+		}
+
+	focus = {
+		id = GRENAVbombII
+		text = "Naval Bomber II"
+		icon = GFX_goal_generic_air_naval_bomber
+		cost = 10.00
+		prerequisite = {
+			focus = GREITBombModel
+		}
+		x = 30
+		y = 6
+						completion_reward = {
+			add_tech_bonus = {
+				name = GRE_NavBomber
+				bonus = 0.5
+				category = naval_bomber
+				}
+			}
+		}
+	
+	focus = {
+		id = GREBomberII
+		text = "Bomber II"
+		icon = GFX_goal_poland_goal
+		cost = 10.00
+		prerequisite = {
+			focus = GREITBombModel
+		}
+		x = 28
+		y = 6
+				completion_reward = {
+			add_tech_bonus = {
+				name = GRE_Bomber_II
+				bonus = 0.3
+				category = tactical_bomber
+				}
+			}
+		}
+		
+	focus = {
+		id = GREMilfactII
+		text = "Military Factories II"
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = GREMilfactI
+		}
+		x = 38
+		y = 6
+				completion_reward = {
+					random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+						}
+					}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+					}
+				}
+					random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+						}
+					}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+					}
+				}
+			}
+		}
+		
+	focus = {
+		id = GREinfI
+		text = "Infrastructure I"
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10.00
+		prerequisite = {
+			focus = GRERussianfunds
+		}
+		x = 44
+		y = 6
+		ai_will_do = {
+			factor = 1
+		}		
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+					}
+				}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+					}
+				}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+					}
+				}
+            }
+		}
+			
+	focus = {
+	id = GREinfII
+	text = "Infrastructure II"
+	icon = GFX_goal_generic_construct_civ_factory
+	cost = 10.00
+	prerequisite = { focus = GREinfI }
+	x = 44
+	y = 7
+	ai_will_do = {
+		factor = 1
+		}		
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+					}
+				}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+					}
+				}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+					}
+				}
+            }	
+		}
+	}
+}
