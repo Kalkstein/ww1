@@ -1,5 +1,6 @@
 ﻿division_template = {
 	name = "Imperial Division"
+	# Note:
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -12,8 +13,7 @@
 		engineer = { x = 0 y = 0 }
 		artillery = { x = 0 y = 1 }
 	}
-
-	}
+}
 division_template = {
 	name = "Cavalry Division"
 	regiments = {
@@ -30,8 +30,15 @@ division_template = {
 		engineer = { x = 0 y = 2 }
 	}
 }
-
-
+division_template = {
+	name = "Coast Guard"
+	# Note:
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+	}
+}
 
 units = {
 
@@ -267,8 +274,7 @@ units = {
 		start_equipment_factor = 1
 	}
 	division= {	
-		name = "28th Imperial D
-		ivision"
+		name = "28th Imperial Division"
 		location = 6469 #Essen
 		division_template = "Imperial Division"
 		start_experience_factor = 0.2
