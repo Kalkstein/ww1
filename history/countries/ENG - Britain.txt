@@ -15,7 +15,9 @@ set_technology = {
 	tech_recon = 1
 	electronic_mechanical_engineering = 1
 	radio = 1
-	
+	heavy_artillery = 1
+	field_artillery = 1
+	tech_logistics_company = 1
 }
 
 add_ideas = {
@@ -101,7 +103,8 @@ create_country_leader = {
 		basic_light_cruiser = 1
 		improved_light_cruiser = 1
 		basic_battleship = 1
-
+		heavy_artillery = 1
+		
 		#electronics
 		electronic_mechanical_engineering = 1
 		radio = 1

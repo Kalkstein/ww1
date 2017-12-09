@@ -11,12 +11,7 @@ technologies = {
 		}
 		
 		path = {
-			leads_to_tech = frontline_fortification
-			research_cost_coeff = 1
-		}
-
-		path = {
-			leads_to_tech = hinterland_fortification
+			leads_to_tech = fortification
 			research_cost_coeff = 1
 		}
 		
@@ -339,9 +334,9 @@ technologies = {
 		}
 	}
 	
-	agriculture_3 = {
+	agriculture3 = {
 
-		MONTHLY_POPULATION = 0.15
+		conscription = 0.01
 		
 		research_cost = 2
 		start_year = 1912
@@ -365,24 +360,20 @@ technologies = {
 		}
 	}
 	
-	frontline_fortification = {
+	fortification = {
 
 		max_dig_in = 2
 		
 		path = {
-			leads_to_tech = frontline_fortification2
+			leads_to_tech = fortification2
 			research_cost_coeff = 1
 		}
 		
 		research_cost = 2
 		
-		XOR = {
-			hinterland_fortification
-		}
-		
 		folder = {
 			name = industry_folder
-			position = { x = 8 y = 2 }
+			position = { x = 7 y = 2 }
 		}
 		
 		ai_will_do = {
@@ -408,12 +399,17 @@ technologies = {
 		}
 	}
 	
-	frontline_fortification2 = {
+	fortification2 = {
 
 		max_dig_in = 2
 		
 		path = {
-			leads_to_tech = frontline_fortification3
+			leads_to_tech = frontline_fortification
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = hinterland_fortification
 			research_cost_coeff = 1
 		}
 		
@@ -422,7 +418,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = 8 y = 4 }
+			position = { x = 7 y = 4 }
 		}
 		
 		ai_will_do = {
@@ -438,13 +434,17 @@ technologies = {
 		}
 	}
 	
-	frontline_fortification3 = {
+	frontline_fortification = {
 
 		dig_in_speed_factor = 0.02
 		
 		path = {
-			leads_to_tech = frontline_fortification4 
+			leads_to_tech = frontline_fortification2 
 			research_cost_coeff = 1
+		}
+		
+		XOR = {
+			hinterland_fortification
 		}
 		
 		research_cost = 2
@@ -468,12 +468,12 @@ technologies = {
 		}
 	}
 	
-	frontline_fortification4 = {
+	frontline_fortification2 = {
 
 		max_dig_in = 4
 		
 		path = {
-			leads_to_tech = frontline_fortification5
+			leads_to_tech = frontline_fortification3
 			research_cost_coeff = 1
 		}
 		
@@ -498,7 +498,7 @@ technologies = {
 		}
 	}
 	
-	frontline_fortification5 = {
+	frontline_fortification3 = {
 
 		dig_in_speed_factor = 0.03
 		
@@ -525,87 +525,16 @@ technologies = {
 	
 	hinterland_fortification = {
 
-		production_speed_bunker_factor = 0.05
-		production_speed_coastal_bunker_factor = 0.05
+		production_speed_bunker_factor = 0.1
+		production_speed_coastal_bunker_factor = 0.1
 		
 		path = {
 			leads_to_tech = hinterland_fortification2 
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2
-		
 		XOR = {
 			frontline_fortification
-		}
-		
-		folder = {
-			name = industry_folder
-			position = { x = 6 y = 2 }
-		}
-		
-		ai_will_do = {
-			factor = 4
-
-			modifier = {
-				factor = 2
-				tag = GER
-			}
-
-			modifier = {
-				factor = 0
-				has_war = yes
-			}
-		}
-		
-		categories = {
-			industry
-		}
-		
-		ai_research_weights = {
-			defensive = -1.0
-		}
-	}
-	
-	hinterland_fortification2 = {
-
-		production_speed_bunker_factor = 0.075
-		production_speed_coastal_bunker_factor = 0.075
-		
-		path = {
-			leads_to_tech = hinterland_fortification3
-			research_cost_coeff = 1
-		}
-		
-		research_cost = 2
-		start_year = 1912
-		
-		folder = {
-			name = industry_folder
-			position = { x = 6 y = 4 }
-		}
-		
-		ai_will_do = {
-			factor = 4
-		}
-		
-		categories = {
-			industry
-		}
-		
-		ai_research_weights = {
-			defensive = -1.0
-		}
-	}
-	
-	hinterland_fortification3 = {
-
-		production_speed_bunker_factor = 0.1
-		production_speed_coastal_bunker_factor = 0.1
-		
-		path = {
-			leads_to_tech = hinterland_fortification4 
-			research_cost_coeff = 1
 		}
 		
 		research_cost = 2
@@ -629,13 +558,13 @@ technologies = {
 		}
 	}
 	
-	hinterland_fortification4 = {
+	hinterland_fortification2 = {
 
 		production_speed_bunker_factor = 0.15
 		production_speed_coastal_bunker_factor = 0.15
 		
 		path = {
-			leads_to_tech = hinterland_fortification5 
+			leads_to_tech = hinterland_fortification3 
 			research_cost_coeff = 1
 		}
 		
@@ -665,7 +594,7 @@ technologies = {
 		}
 	}
 	
-	hinterland_fortification5 = {
+	hinterland_fortification3 = {
 
 		production_speed_bunker_factor = 0.2
 		production_speed_coastal_bunker_factor = 0.2

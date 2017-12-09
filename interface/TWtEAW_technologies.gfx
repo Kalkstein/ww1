@@ -406,6 +406,16 @@ spriteTypes = {
 	}
 	
 	SpriteType = {
+		name = "GFX_fortification_medium"
+		texturefile = "gfx/interface/technologies/.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_fortification2_medium"
+		texturefile = "gfx/interface/technologies/.dds"
+	}
+	
+	SpriteType = {
 		name = "GFX_frontline_fortification_medium"
 		texturefile = "gfx/interface/technologies/.dds"
 	}
@@ -421,16 +431,6 @@ spriteTypes = {
 	}
 	
 	SpriteType = {
-		name = "GFX_frontline_fortification4_medium"
-		texturefile = "gfx/interface/technologies/.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_frontline_fortification5_medium"
-		texturefile = "gfx/interface/technologies/.dds"
-	}
-	
-	SpriteType = {
 		name = "GFX_hinterland_fortification_medium"
 		texturefile = "gfx/interface/technologies/.dds"
 	}
@@ -442,16 +442,6 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_hinterland_fortification3_medium"
-		texturefile = "gfx/interface/technologies/.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_hinterland_fortification4_medium"
-		texturefile = "gfx/interface/technologies/.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_hinterland_fortification5_medium"
 		texturefile = "gfx/interface/technologies/.dds"
 	}
 	

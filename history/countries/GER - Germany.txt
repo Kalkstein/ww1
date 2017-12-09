@@ -29,6 +29,8 @@ set_technology = {
 	formation_flying = 1
 	synth_oil_experiments = 1
 	transport = 1
+	field_artillery = 1
+	machine_gun = 1
 }
 
 
