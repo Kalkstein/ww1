@@ -1,0 +1,374 @@
+division_template = {
+	name = "Imperial Division"
+	# Note:
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+}
+}
+division_template = {
+	name = "Coast Guard"
+	# Note:
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+}
+}
+division_template = {
+	name = "Cavalry Division"
+	# Note:
+	regiments = {
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 0 y = 3 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		cavalry = { x = 1 y = 3 }
+}
+}
+
+units = {
+
+	division= {	
+		name = "1st Imperial Division"
+		location = 6521 #Berlin
+		division_template = "Imperial Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "2nd Imperial Division"
+		location = 6521 #Berlin
+		division_template = "Imperial Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "3rd Imperial Division"
+		location = 6521 #Berlin
+		division_template = "Imperial Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "4th Imperial Division"
+		location = 514 #Dresden
+		division_template = "Imperial Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "5th Imperial Division"
+		location = 3535 #Leipzig
+		division_template = "Imperial Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "6th Imperial Division"
+		location = 3535 #Leipzig
+		division_template = "Imperial Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "7th Imperial Division"
+		location = 6524 #Erfurt
+		division_template = "Imperial Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "8th Imperial Division"
+		location = 6558 #Posen
+		division_template = "Imperial Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "9th Imperial Division"
+		location = 6332 #Königsberg
+		division_template = "Imperial Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "10th Imperial Division"
+		location = 6332 #Königsberg
+		division_template = "Imperial Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "1st Bavarian Division"
+		location = 692 #Munich
+		division_template = "Imperial Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "2nd Bavarian Division"
+		location = 692 #Munich
+		division_template = "Imperial Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "3rd Bavarian Division"
+		location = 692 #Munich
+		division_template = "Imperial Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "4th Bavarian Division"
+		location = 692 #Munich
+		division_template = "Imperial Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "5th Bavarian Division"
+		location = 11544 #Nuremberg
+		division_template = "Imperial Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "6th Bavarian Division"
+		location = 11544 #Nuremberg
+		division_template = "Imperial Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "11th Imperial Division"
+		location = 362 #Danzig
+		division_template = "Imperial Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "12th Imperial Division"
+		location = 362 #Danzig
+		division_template = "Imperial Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "13th Imperial Division"
+		location = 9570 #Breslau
+		division_template = "Imperial Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "14th Imperial Division"
+		location = 6282 #Settin
+		division_template = "Imperial Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "15th Imperial Division"
+		location = 6282 #Settin
+		division_template = "Imperial Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "16th Imperial Division"
+		location = 3522 #Magdeburg
+		division_template = "Imperial Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "17th Imperial Division"
+		location = 321 #Rostock
+		division_template = "Imperial Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "18th Imperial Division"
+		location = 9347 #Hamburg
+		division_template = "Imperial Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "19th Imperial Division"
+		location = 9347 #Hamburg
+		division_template = "Imperial Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "20th Imperial Division"
+		location = 9347 #Hamburg
+		division_template = "Imperial Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "21st Imperial Division"
+		location = 6377 #Hannover
+		division_template = "Imperial Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "22nd Imperial Division"
+		location = 6377 #Hannover
+		division_template = "Imperial Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "23rd Imperial Division"
+		location = 6377 #Hannover
+		division_template = "Imperial Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "24th Imperial Division"
+		location = 241 #Wilhelmshaven
+		division_template = "Imperial Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "25th Imperial Division"
+		location = 6488 #Frankfurt
+		division_template = "Imperial Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "26th Imperial Division"
+		location = 6488 #Frankfurt
+		division_template = "Imperial Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "27th Imperial Division"
+		location = 6488 #Frankfurt
+		division_template = "Imperial Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "28th Imperial D
+		ivision"
+		location = 6469 #Essen
+		division_template = "Imperial Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "29th Imperial Division"
+		location = 6469 #Essen
+		division_template = "Imperial Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "30th Imperial Division"
+		location = 9517 #Stuggart
+		division_template = "Imperial Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "31st Imperial Division"
+		location = 9559 #Metz
+		division_template = "Imperial Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "32nd Imperial Division"
+		location = 9559 #Metz
+		division_template = "Imperial Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "33rd Imperial Division"
+		location = 9559 #Metz
+		division_template = "Imperial Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "34th Imperial Division"
+		location = 9503 #Stratsbourg
+		division_template = "Imperial Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "35th Imperial Division"
+		location = 9503 #Stratsbourg
+		division_template = "Imperial Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "36th Imperial Division"
+		location = 9503 #Stratsbourg
+		division_template = "Imperial Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "37th Imperial Division"
+		location = 678 #Mulhouse
+		division_template = "Imperial Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "38th Imperial Division"
+		location = 678 #Mulhouse
+		division_template = "Imperial Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "39th Imperial Division"
+		location = 678 #Mulhouse
+		division_template = "Imperial Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "40th Imperial Division"
+		location = 9517 #Stuggart
+		division_template = "Imperial Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "41st Imperial Division"
+		location = 3530 #Baden
+		division_template = "Imperial Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "42nd Imperial Division"
+		location = 13260 #Eupen-Malmedy
+		division_template = "Imperial Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+}
