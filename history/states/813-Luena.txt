@@ -1,6 +1,10 @@
 state={
 	id=813
 	name="STATE_813"
+	history={
+		owner = POR
+		add_core_of = ANG
+	}
 	provinces={
 		1552 2126 7548 8054 
 	}
