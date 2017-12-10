@@ -2,12 +2,17 @@ state={
 	id=806
 	name="STATE_806"
 		history={
+		buildings = {
+			infrastructure = 1
+
+		}
 		owner = POR
 		add_core_of = POR
 	}
 	provinces={
 		3969 
 	}
-	manpower=0
+	manpower=7600
 	buildings_max_level_factor=1.000
+	state_category=pastoral
 }
