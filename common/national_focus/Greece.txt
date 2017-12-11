@@ -298,11 +298,6 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = GREGreekPurge
-			if = {
-				limit = {
-					has_opinion = { target = GER value < 100 }
-					}
-				}
 		}
 		mutually_exclusive = {
 			focus = GREFraAssist
@@ -315,9 +310,9 @@ focus_tree = {
 				bonus = 0.5
 				uses = 2
 				category = land_doctrine
-				}
 			}
 		}
+	}
 
 	focus = {
 		id = GREFraAssist
@@ -326,12 +321,7 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = GREGreekPurge
-			if = {
-				limit = {
-					has_opinion = { target = FRA value < 100 }
-					}
-				}
-		}
+			}
 		mutually_exclusive = {
 			focus = GREGerAssist
 		}
@@ -346,7 +336,7 @@ focus_tree = {
 				}
 			}
 		}
-
+		
 	focus = {
 		id = GREBorder
 		text = "Build-up The Border"
@@ -536,12 +526,7 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = GREModernise
-			if = {
-				limit = {
-					has_opinion = { target = TUR value < 100 }
-					}
-				}
-		}
+			}
 		mutually_exclusive = {
 			focus = GREOttoRival
 		}
@@ -565,9 +550,9 @@ focus_tree = {
 				bonus = 0.5
 				uses = 1
 				category = dd_tech
+				}
 			}
 		}
-	}
 
 	focus = {
 		id = GREDestroyersII
@@ -670,12 +655,7 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = GREModernise
-			if = {
-				limit = {
-					has_opinion = { target = ENG value < 100 }
-					}
-				}
-		}
+			}
 		mutually_exclusive = {
 			focus = GREOttomanHegemony
 		}
@@ -690,6 +670,7 @@ focus_tree = {
 			}
 		}
 	}
+	
 	focus = {
 		id = GREbigger
 		text = "We Deserve Bigger"
@@ -1112,16 +1093,11 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = GRERecover
-			if = {
-				limit = {
-					has_opinion = { target = ENG value < 100 }
-					}
-				}
-		}
+			}
 		x = 33
 		y = 1
-
-	}
+		}
+		
 	focus = {
 		id = GREBritTrade
 		text = "Trade with Britain"
@@ -1331,12 +1307,7 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = GRERecover
-			if = {
-				limit = {
-					has_opinion = { target = GER value < 100 }
-					}
-				}
-		}
+			}
 		x = 38
 		y = 1
 								completion_reward = {
@@ -1369,9 +1340,9 @@ focus_tree = {
 					level = 2
 					instant_build = yes
 					}
+					}
 				}
 			}
-		}
 		
 	focus = {
 		id = GRETradeGermany
@@ -1521,15 +1492,9 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = GRESerbianHelp
-					if = {
-						limit = {
-							has_opinion = { target = SOV value < 100 }
-							}
-						}
-		}
+			}
 		x = 42
 		y = 2
-
 	}
 	focus = {
 		id = GRETradeserbias
