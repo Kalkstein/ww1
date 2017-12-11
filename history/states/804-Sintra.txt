@@ -1,17 +1,20 @@
 state={
 	id=804
 	name="STATE_804"
+
 	history={
-	buildings = {
+		buildings = {
 			infrastructure = 4
 			industrial_complex = 2
 
 		}
 		owner = POR
 		add_core_of = POR
+
 	}
+
 	provinces={
-		924 970 3861 11768 
+		924 970 3861 11768 13502 
 	}
 	manpower=659690
 	buildings_max_level_factor=1.000
