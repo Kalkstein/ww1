@@ -4,6 +4,10 @@ technologies = {
 		enable_equipments = {
 			armored_car_equipment_1
 		}
+		
+		enable_subunits = {
+			armoured_car
+		}
 	
 		path = {
 			leads_to_tech = armored_car2
@@ -200,6 +204,9 @@ technologies = {
 		enable_equipments = {
 			medium_tank_equipment_1
 		}
+		enable_subunits = {
+			medium_armor
+		}
 	
 		path = {
 			leads_to_tech = landship
@@ -236,6 +243,9 @@ technologies = {
 
 		enable_equipments = {
 			heavy_tank_equipment_1
+		}
+		enable_subunits = {
+			heavy_armor
 		}
 	
 		path = {
@@ -305,6 +315,10 @@ technologies = {
 		enable_equipments = {
 			light_tank_equipment_1
 		}
+		enable_subunits = {
+			light_armor
+		}
+	
 	
 		path = {
 			leads_to_tech = cav_tank2

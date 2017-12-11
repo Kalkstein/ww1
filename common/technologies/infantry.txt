@@ -424,9 +424,7 @@ technologies = {
 			machinegun_company
 		}
 		
-		enable_equipments = {
-			machine_gun_equipment_0
-		}
+		
 		
 		path = {
 			leads_to_tech = machine_gun_2
