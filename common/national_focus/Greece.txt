@@ -28,13 +28,9 @@ focus_tree = {
 		x = 12
 		y = 0
 		completion_reward = {
-			add_tech_bonus = {
-				bonus = 0.75
-				uses = 1
-				category = land_doctrine 
+			add_ideas = GRE_the_kings_forces
 			}
 		}
-	}
 	focus = {
 		id = GRENaval
 		text = "Naval Focus"
@@ -69,6 +65,9 @@ focus_tree = {
 		cost = 10.00
 		x = 36
 		y = 0
+				completion_reward = {
+			add_ideas = GRE_recover_from_the_balkan_war
+			}
 
 	}
 	focus = {
@@ -108,6 +107,9 @@ focus_tree = {
 		}
 		x = 0
 		y = 3
+		completion_reward = {
+			add_ideas = GRE_support_the_king
+			}
 
 	}
 	focus = {
@@ -181,6 +183,9 @@ focus_tree = {
 		}
 		x = 2
 		y = 3
+		completion_reward = {
+			add_ideas = GRE_neutrality_path
+			}
 
 	}
 	focus = {
@@ -208,6 +213,9 @@ focus_tree = {
 		}
 		x = 4
 		y = 3
+				completion_reward = {
+			add_ideas = GRE_democratic_path
+			}
 
 	}
 	focus = {
@@ -496,6 +504,9 @@ focus_tree = {
 		}
 		x = 16
 		y = 8
+		completion_reward	= {
+		add_ideas = GRE_army_fit_for_a_king
+		}
 
 	}
 	focus = {
