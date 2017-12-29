@@ -13501,4 +13501,5 @@
 13500;132;45;11;land;true;hills;1
 13501;125;127;113;land;true;urban;6
 13502;65;30;93;land;true;plains;0
-13503;65;30;92;land;false;unknown;0
+13503;10;156;130;land;true;forest;5
+13504;113;67;66;land;false;unknown;0
