@@ -337,8 +337,8 @@ XSM = {
 }
 
 LBA = {
-	color = rgb { 200 180 90 }
-	color_ui = rgb { 200 180 90 }
+	color = rgb { 40 75 55 }
+	color_ui = rgb { 65 99 78 }
 }
 
 JAB = {

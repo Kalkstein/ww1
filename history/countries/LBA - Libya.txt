@@ -63,24 +63,24 @@ set_politics = {
 
 	parties = {
 		democratic = { 
-			popularity = 25
+			popularity = 3
 		}
 
 		fascism = {
-			popularity = 20
+			popularity = 70
 		}
 		
 		communism = {
-			popularity = 5
+			popularity = 0
 			#banned = no #default is no
 		}
 		
 		neutrality = { 
-			popularity = 50
+			popularity = 27
 		}
 	}
 	
-	ruling_party = neutrality
+	ruling_party = fascism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -97,20 +97,10 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Ettore Bastico"
-	desc = ""
-	picture = "Portrait_Italy_Giuseppe_Fioravanzo.dds"
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Idris Senussi"
+	name = "Ahmed Sharif as-Senussi"
 	desc = ""
 	picture = "Portrait_Arabia_Generic_land_3.dds"
-	ideology = despotism
+	ideology = fascism_ideology
 	traits = {
 		#
 	}

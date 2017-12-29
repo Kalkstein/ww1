@@ -1,26 +1,29 @@
+
 state={
 	id=662
 	name="STATE_662"
-	manpower = 10464
-	
-	state_category = wasteland
-	
-	
+
 	history={
 		owner = TUR
 		add_core_of = TUR
 		buildings = {
 			infrastructure = 1
+
 		}
 		1912.10.18 = {
 			owner = ITA
 			controller = ITA
 			remove_core_of = TUR
+
 		}
 		add_core_of = LBA
+
 	}
-	
+
 	provinces={
-		4200 7076 7136 8069 13073 
+		7136 8069 13073 
 	}
+	manpower=10464
+	buildings_max_level_factor=1.000
+	state_category=wasteland
 }

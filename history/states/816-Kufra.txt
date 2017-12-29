@@ -1,0 +1,21 @@
+state={
+	id=816
+	name="STATE_816"
+	history={
+		owner = LBA
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+
+		}
+		add_core_of = LBA
+
+	}
+	provinces={
+		1057 1140 1994 4191 7076 10104 10754 
+	}
+	manpower=123450
+	state_category=pastoral
+	buildings_max_level_factor=1.000
+}
