@@ -6,6 +6,7 @@ history={
 		buildings = {
 			infrastructure = 1
 		}
+		add_claim_by = POR
 	}
 	provinces={
 		13504 
