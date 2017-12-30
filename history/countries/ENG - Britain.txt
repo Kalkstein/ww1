@@ -70,6 +70,7 @@ if = {
 		puppet = NZL
 	}
 }
+	give_guarantee = BEL
 
 
 if = {
