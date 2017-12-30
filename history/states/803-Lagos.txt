@@ -1,0 +1,23 @@
+state={
+	id=803
+	name="STATE_803"
+	history={
+	buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+						3790 = {
+				naval_base = 2
+
+			}
+
+		}
+		owner = POR
+		add_core_of = POR
+	}
+	provinces={
+		3790 6880 
+	}
+	manpower=86700
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

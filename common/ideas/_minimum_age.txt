@@ -17,7 +17,7 @@ ideas = {
 			}
 
 			modifier = {
-				conscription = 0.02
+				conscription = 0.01
 			}
 			
 			cancel_if_invalid = no
@@ -37,7 +37,7 @@ ideas = {
 			}
 
 			modifier = {
-				conscription = 0.025
+				conscription = 0.02
 			}
 			
 			cancel_if_invalid = no
@@ -87,7 +87,7 @@ ideas = {
 			}
 
 			modifier = {
-				conscription = 0.05
+				conscription = 0.04
 				army_morale_factor = -0.1
 				training_time_factor = 0.1
 			}
@@ -112,7 +112,7 @@ ideas = {
 			}
 
 			modifier = {
-				conscription = 0.1
+				conscription = 0.5
 				army_morale_factor = -0.50
 				training_time_factor = 0.2
 			}

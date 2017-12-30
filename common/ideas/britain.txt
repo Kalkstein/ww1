@@ -32,7 +32,7 @@ ideas = {
 			}
 			
 			modifier = {
-				conscription = -0.8
+				conscription_factor = -0.8
 			}
 		}
 		
@@ -67,7 +67,7 @@ ideas = {
 			}
 			
 			modifier = {
-				conscription = -0.75
+				conscription_factor = -0.75
 			}
 		}
 		

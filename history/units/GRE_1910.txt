@@ -1,0 +1,87 @@
+﻿division_template = {
+	name = "Infantry Division"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+       	engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Cavalry Brigade"
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+	}
+	support = {
+	}
+}
+
+
+units = {
+	division= {	
+		name = "Ι Μεραρχία"
+		location = 4109
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		name = "II Μεραρχία"
+		location = 4109
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		name = "III Μεραρχία"
+		location = 4109
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		name = "IV Μεραρχία"
+		location = 4109
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		name = "V Μεραρχία"
+		location = 4109
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		name = "VI Μεραρχία"
+		location = 4109
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		name = "VII Μεραρχία"
+		location = 4109
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		name = "VIII Μεραρχία"
+		location = 4109
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		name = "Cavalry Brigade"
+		location = 4109
+		division_template = "Cavalry Brigade"
+		start_experience_factor = 0.3
+	}	
+}

@@ -21,7 +21,7 @@ focus_tree = {
 		y = 0
 		cost = 10
 		completion_reward = {
-			
+			add_political_power = 120
 		}
 	}
 	
@@ -33,7 +33,19 @@ focus_tree = {
 		y = 1
 		cost = 10
 		completion_reward = {
-			
+			219 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -45,7 +57,14 @@ focus_tree = {
 		y = 2
 		cost = 10
 		completion_reward = {
-			
+			219 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -58,7 +77,27 @@ focus_tree = {
 		y = 3
 		cost = 10
 		completion_reward = {
-			
+			195 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			208 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			782 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -70,7 +109,27 @@ focus_tree = {
 		y = 4
 		cost = 10
 		completion_reward = {
-			
+			199 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			201 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			202 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -80,9 +139,50 @@ focus_tree = {
 		prerequisite = { focus = RUS_ruthenian_railway }
 		x = 0
 		y = 5
-		cost = 10
+		cost = 20
 		completion_reward = {
-			
+			561 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			563 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			564 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			566 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			567 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			568 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -94,7 +194,20 @@ focus_tree = {
 		y = 6
 		cost = 10
 		completion_reward = {
-			
+			195 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			146 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -106,7 +219,14 @@ focus_tree = {
 		y = 2
 		cost = 10
 		completion_reward = {
-			
+			195 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -118,7 +238,14 @@ focus_tree = {
 		y = 3
 		cost = 10
 		completion_reward = {
-			
+			202 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -180,7 +307,11 @@ focus_tree = {
 		y = 5
 		cost = 10
 		completion_reward = {
-			
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 1
+				category = industry
+			}
 		}
 	}
 	
@@ -192,7 +323,7 @@ focus_tree = {
 		y = 6
 		cost = 10
 		completion_reward = {
-			
+			add_research_slot = 1
 		}
 	}
 	
@@ -205,7 +336,36 @@ focus_tree = {
 		y = 7
 		cost = 10
 		completion_reward = {
-			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -217,7 +377,36 @@ focus_tree = {
 		y = 8
 		cost = 10
 		completion_reward = {
-			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -229,7 +418,36 @@ focus_tree = {
 		y = 9
 		cost = 10
 		completion_reward = {
-			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -361,7 +579,7 @@ focus_tree = {
 		y = 9
 		cost = 10
 		completion_reward = {
-			
+			add_resource = { type = oil amount = 28 state = 229 }
 		}
 	}
 	
@@ -512,7 +730,7 @@ focus_tree = {
 		y = 0
 		cost = 10
 		completion_reward = {
-			
+			add_political_power = 60
 		}
 	}
 	
@@ -524,7 +742,7 @@ focus_tree = {
 		y = 1
 		cost = 10
 		completion_reward = {
-			
+			army_experience = 15
 		}
 	}
 	
@@ -561,7 +779,11 @@ focus_tree = {
 		y = 4
 		cost = 10
 		completion_reward = {
-			
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 1
+				category = artillery
+			}
 		}
 	}
 	
@@ -573,7 +795,40 @@ focus_tree = {
 		y = 4
 		cost = 10
 		completion_reward = {
-			
+			division_template = {
+					name = "Guard"
+					priority = 2
+	
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+	    	   		 	infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						artillery_brigade = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						artillery_brigade = { x = 2 y = 2 }
+						
+					}
+
+					support = {
+        				artillery = { x = 0 y = 0 }
+        				engineer = { x = 0 y = 1 }
+					}
+				}
+	
+				random_owned_controlled_state = {
+					prioritize = { 195 }
+					create_unit = {
+						division = "name = \"1st Guard Division\" division_template = \"Guard\" start_experience_factor = 0.75" 
+						owner = RUS
+					}
+					create_unit = {
+						division = "name = \"2nd Guard Division\" division_template = \"Guard\" start_experience_factor = 0.75" 
+						owner = RUS
+					}
+				}
 		}
 	}
 	
@@ -585,7 +840,11 @@ focus_tree = {
 		y = 5
 		cost = 10
 		completion_reward = {
-			
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 1
+				category = cat_mass_assault
+			}
 		}
 	}
 	
@@ -622,7 +881,11 @@ focus_tree = {
 		y = 4
 		cost = 10
 		completion_reward = {
-			
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 1
+				category = heavy_artillery
+			}
 		}
 	}
 	
@@ -635,7 +898,11 @@ focus_tree = {
 		y = 5
 		cost = 10
 		completion_reward = {
-			
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 1
+				category = infantry_tech
+			}
 		}
 	}
 	
@@ -659,7 +926,11 @@ focus_tree = {
 		y = 5
 		cost = 10
 		completion_reward = {
-			
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 1
+				category = cat_mobile_warfare
+			}
 		}
 	}
 	
@@ -697,7 +968,14 @@ focus_tree = {
 		y = 7
 		cost = 10
 		completion_reward = {
-			
+			10 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 3544
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -709,7 +987,26 @@ focus_tree = {
 		y = 8
 		cost = 10
 		completion_reward = {
-			
+			199 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 6509
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 462
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 3430
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -722,7 +1019,22 @@ focus_tree = {
 		y = 7
 		cost = 10
 		completion_reward = {
-			
+			781 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 9340
+					instant_build = yes
+				}
+			}
+			12 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 310
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -734,7 +1046,26 @@ focus_tree = {
 		y = 8
 		cost = 10
 		completion_reward = {
-			
+			355 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 7454
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 13218
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 13219
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -747,7 +1078,36 @@ focus_tree = {
 		y = 9
 		cost = 10
 		completion_reward = {
-			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -759,7 +1119,36 @@ focus_tree = {
 		y = 10
 		cost = 10
 		completion_reward = {
-			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -771,7 +1160,36 @@ focus_tree = {
 		y = 11
 		cost = 10
 		completion_reward = {
-			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -783,7 +1201,7 @@ focus_tree = {
 		y = 1
 		cost = 10
 		completion_reward = {
-			
+			navy_experience = 50
 		}
 	}
 
@@ -795,7 +1213,11 @@ focus_tree = {
 		y = 2
 		cost = 10
 		completion_reward = {
-			
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 1
+				category = bb_tech
+			}
 		}
 	}
 	
@@ -807,7 +1229,11 @@ focus_tree = {
 		y = 3
 		cost = 10
 		completion_reward = {
-			
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 1
+				category = ca_tech
+			}
 		}
 	}
 	
@@ -819,7 +1245,11 @@ focus_tree = {
 		y = 2
 		cost = 10
 		completion_reward = {
-			
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 1
+				category = cl_tech
+			}
 		}
 	}
 	
@@ -831,7 +1261,11 @@ focus_tree = {
 		y = 3
 		cost = 10
 		completion_reward = {
-			
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 1
+				category = dd_tech
+			}
 		}
 	}
 	
@@ -844,7 +1278,22 @@ focus_tree = {
 		y = 2
 		cost = 10
 		completion_reward = {
-			
+			random_owned_controlled_state = {
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -856,7 +1305,22 @@ focus_tree = {
 		y = 3
 		cost = 10
 		completion_reward = {
-			
+			random_owned_controlled_state = {
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -870,7 +1334,22 @@ focus_tree = {
 		y = 4
 		cost = 10
 		completion_reward = {
-			
+			random_owned_controlled_state = {
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -882,7 +1361,11 @@ focus_tree = {
 		y = 5
 		cost = 10
 		completion_reward = {
-			
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 1
+				category = ss_tech
+			}
 		}
 	}
 	
@@ -895,11 +1378,9 @@ focus_tree = {
 		y = 8
 		cost = 10
 		completion_reward = {
-			
+			add_research_slot = 1
 		}
 	}
-	
-	
 	
 	focus = {
 		id = RUS_long_range_artillery
@@ -909,7 +1390,11 @@ focus_tree = {
 		y = 9
 		cost = 10
 		completion_reward = {
-			
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 1
+				category = siege_artillery_tech
+			}
 		}
 	}
 	
@@ -921,7 +1406,11 @@ focus_tree = {
 		y = 10
 		cost = 10
 		completion_reward = {
-			
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 1
+				category = gas_tech
+			}
 		}
 	}
 	
@@ -933,7 +1422,11 @@ focus_tree = {
 		y = 9
 		cost = 10
 		completion_reward = {
-			
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 1
+				category = air_doctrine
+			}
 		}
 	}
 	
@@ -945,7 +1438,11 @@ focus_tree = {
 		y = 10
 		cost = 10
 		completion_reward = {
-			
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 1
+				category = medium_air
+			}
 		}
 	}
 	
@@ -957,7 +1454,11 @@ focus_tree = {
 		y = 10
 		cost = 10
 		completion_reward = {
-			
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 1
+				category = light_air
+			}
 		}
 	}
 	
@@ -969,7 +1470,11 @@ focus_tree = {
 		y = 9
 		cost = 10
 		completion_reward = {
-			
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 1
+				category = encryption_tech
+			}
 		}
 	}
 	
@@ -981,7 +1486,11 @@ focus_tree = {
 		y = 10
 		cost = 10
 		completion_reward = {
-			
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 1
+				category = decryption_tech
+			}
 		}
 	}
 	
@@ -1016,7 +1525,34 @@ focus_tree = {
 		y = 2
 		cost = 10
 		completion_reward = {
-			
+			195 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 3151
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					province = 3151
+					instant_build = yes
+				}
+			}
+			781 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 9340
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					province = 9340
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -1028,7 +1564,14 @@ focus_tree = {
 		y = 3
 		cost = 10
 		completion_reward = {
-			
+			195 = {
+				add_building_construction = {
+					type = naval_base
+					level = 2
+					province = 3151
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -1040,7 +1583,14 @@ focus_tree = {
 		y = 4
 		cost = 10
 		completion_reward = {
-			
+			781 = {
+				add_building_construction = {
+					type = naval_base
+					level = 2
+					province = 9340
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -1052,7 +1602,20 @@ focus_tree = {
 		y = 2
 		cost = 10
 		completion_reward = {
-			
+			137 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 3686
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					province = 3686
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -1064,7 +1627,14 @@ focus_tree = {
 		y = 3
 		cost = 10
 		completion_reward = {
-			
+			137 = {
+				add_building_construction = {
+					type = naval_base
+					level = 2
+					province = 3686
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -1076,7 +1646,14 @@ focus_tree = {
 		y = 4
 		cost = 10
 		completion_reward = {
-			
+			192 = {
+				add_building_construction = {
+					type = naval_base
+					level = 2
+					province = 11670
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -1089,7 +1666,20 @@ focus_tree = {
 		y = 5
 		cost = 10
 		completion_reward = {
-			
+			408 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 957
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					province = 957
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -1101,7 +1691,14 @@ focus_tree = {
 		y = 6
 		cost = 10
 		completion_reward = {
-			
+			408 = {
+				add_building_construction = {
+					type = naval_base
+					level = 2
+					province = 957
+					instant_build = yes
+				}
+			}
 		}
 	}
 	

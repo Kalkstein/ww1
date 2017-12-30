@@ -320,7 +320,7 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_chlor_medium"
-		texturefile = "gfx/interface/technologies/Atomic_Research.dds"
+		texturefile = "gfx/interface/technologies/chlor.dds"
 	}
 	
 	SpriteType = {
@@ -330,7 +330,7 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_phosgene_medium"
-		texturefile = "gfx/interface/technologies/Atomic_Research.dds"
+		texturefile = "gfx/interface/technologies/phosgene.dds"
 	}
 	
 	SpriteType = {
@@ -340,7 +340,7 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_mustard_medium"
-		texturefile = "gfx/interface/technologies/Atomic_Research.dds"
+		texturefile = "gfx/interface/technologies/mustard.dds"
 	}
 	
 	SpriteType = {
@@ -355,7 +355,7 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_incendiaries2_medium"
-		texturefile = "gfx/interface/technologies/incendiaries2.dds"
+		texturefile = "gfx/interface/technologies/firebomb.dds"
 	}
 	
 	### Industry ###
@@ -367,6 +367,21 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_decrease_working_hours_medium"
+		texturefile = "gfx/interface/technologies/.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_industrial_organisation_medium"
+		texturefile = "gfx/interface/technologies/.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_industrial_organisation2_medium"
+		texturefile = "gfx/interface/technologies/.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_industrial_organisation3_medium"
 		texturefile = "gfx/interface/technologies/.dds"
 	}
 	
@@ -391,6 +406,16 @@ spriteTypes = {
 	}
 	
 	SpriteType = {
+		name = "GFX_fortification_medium"
+		texturefile = "gfx/interface/technologies/.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_fortification2_medium"
+		texturefile = "gfx/interface/technologies/.dds"
+	}
+	
+	SpriteType = {
 		name = "GFX_frontline_fortification_medium"
 		texturefile = "gfx/interface/technologies/.dds"
 	}
@@ -406,16 +431,6 @@ spriteTypes = {
 	}
 	
 	SpriteType = {
-		name = "GFX_frontline_fortification4_medium"
-		texturefile = "gfx/interface/technologies/.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_frontline_fortification5_medium"
-		texturefile = "gfx/interface/technologies/.dds"
-	}
-	
-	SpriteType = {
 		name = "GFX_hinterland_fortification_medium"
 		texturefile = "gfx/interface/technologies/.dds"
 	}
@@ -427,16 +442,6 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_hinterland_fortification3_medium"
-		texturefile = "gfx/interface/technologies/.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_hinterland_fortification4_medium"
-		texturefile = "gfx/interface/technologies/.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_hinterland_fortification5_medium"
 		texturefile = "gfx/interface/technologies/.dds"
 	}
 	

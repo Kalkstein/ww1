@@ -4,23 +4,33 @@
 Eagle020
 Miltus Septimus
 
+#Community Manager
+Porkupie
 
 #Lead Content Designer
-CBstecher
+cbstecher
 
 #Art Director
-momo
+Momo
+
+#Designers
+crusno1
+cm99977
+
+#Artists
+Thyrics
+Reza Shah Pahlavi
+Ekroth
+Leldy
+
 
 #PROGRAMMING
 King Hades
 David Cameron
 Efraim Barkbit
-Smarty99
+Der Kaiser
 
-#Designers
-OptimusLime
-crusno1
-cm99977
+
 
 #Special thanks to 
 Gerald for starting this project

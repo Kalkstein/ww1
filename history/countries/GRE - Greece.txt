@@ -20,6 +20,7 @@ set_technology = {
 	early_heavy_cruiser = 1
 	early_battleship = 1
 	transport = 1
+	field_artillery = 1
 }
 
 set_convoys = 10

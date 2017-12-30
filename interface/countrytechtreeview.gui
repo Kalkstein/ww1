@@ -713,11 +713,11 @@ guiTypes = {
 			
 				instantTextBoxType = {
 					name = "armour_subtitle_heavy"
-					position = { x = 480 y = 55 }
+					position = { x = 600 y = 50 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
-					text = "ARMOUR_TITLE_HEAVY"
+					text = "Tanks"
 					maxWidth = 200
 					maxHeight = 62
 					format = center
@@ -726,11 +726,11 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "armour_subtitle_light"
-					position = { x = -200 y = 55  }
+					position = { x = 0 y = 50  }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
-					text = "ARMOUR_TITLE_LIGHT"
+					text = "Armoured Cars"
 					maxWidth = 200
 					maxHeight = 62
 					format = center
@@ -740,7 +740,7 @@ guiTypes = {
 
 				
 			gridboxtype = {
-				name = "early_armored_car_tree"
+				name = "gwtank_tree"
 				position = { x = 10% y = 172 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
@@ -2389,7 +2389,7 @@ guiTypes = {
 	
 				instantTextBoxType = {
 					name = "electronic_eng_subtitle"
-					position = { x = 415 y = 100 }
+					position = { x = 300 y = 100 }
 					font = "hoi_22tech"
 					borderSize = {x = 0 y = 4}
 					text = "TITLE_ELECTRONIC_SUBTITLE"
@@ -2398,25 +2398,13 @@ guiTypes = {
 					format = center
 					Orientation = "UPPER_LEFT"
 				}
-
-				instantTextBoxType = {
-					name = "experimental_rockets_subtitle"
-					position = { x = 1095 y = 325 }
-					font = "hoi_22tech"
-					borderSize = {x = 0 y = 4}
-					text = "TITLE_EXP_ROCKETS_SUBTITLE"
-					maxWidth = 200
-					maxHeight = 122
-					format = center
-					Orientation = "UPPER_LEFT"
-				}
 				
 				instantTextBoxType = {
 					name = "atomic_research_subtitle"
-					position = { x = 900 y = 220 }
+					position = { x = 1020 y = 220 }
 					font = "hoi_22tech"
 					borderSize = {x = 0 y = 4}
-					text = "TITLE_ATOMIC_RESEARCH_SUBTITLE"
+					text = "Chemical Research"
 					maxWidth = 200
 					maxHeight = 122
 					format = center
