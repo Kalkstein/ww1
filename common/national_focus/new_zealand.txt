@@ -10,18 +10,10 @@ focus_tree = {
 	default = no
 	focus = {
 		id = colonial_question
-		icon = GFX_goal_unknown
+		icon = GFX_goal_anschluss
 		cost = 0.00
 		x = 7
 		y = 0
-
-	}
-	focus = {
-		id = indstrial_reform_center
-		icon = GFX_goal_unknown
-		cost = 0.00
-		x = 7
-		y = 12
 
 	}
 	focus = {
@@ -42,7 +34,7 @@ focus_tree = {
 	}
 	focus = {
 		id = anti_colonialism_effort
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_forceful_treaty
 		cost = 0.00
 		prerequisite = {
 			focus = colonial_question
@@ -56,7 +48,7 @@ focus_tree = {
 	}
 	focus = {
 		id = wellington_trade_union
-		icon = GFX_goal_unknown
+		icon = GFX_goal_tripartite_pact
 		cost = 0.00
 		prerequisite = {
 			focus = anti_colonialism_effort
@@ -70,7 +62,7 @@ focus_tree = {
 	}
 	focus = {
 		id = labour_party
-		icon = GFX_goal_unknown
+		icon = GFX_goal_support_communism
 		cost = 0.00
 		prerequisite = {
 			focus = wellington_trade_union
@@ -81,7 +73,7 @@ focus_tree = {
 	}
 	focus = {
 		id = mclaren_leadership
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_propaganda
 		cost = 0.00
 		prerequisite = {
 			focus = labour_party
@@ -92,7 +84,7 @@ focus_tree = {
 	}
 	focus = {
 		id = defend_ast_socialism
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_more_territorial_claims
 		cost = 0.00
 		prerequisite = {
 			focus = mclaren_leadership
@@ -103,7 +95,7 @@ focus_tree = {
 	}
 	focus = {
 		id = sydney_is_ours
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_demand_territory
 		cost = 0.00
 		prerequisite = {
 			focus = defend_ast_socialism
@@ -114,10 +106,13 @@ focus_tree = {
 	}
 	focus = {
 		id = soviet_enemys
-		icon = GFX_goal_unknown
+		icon = GFX_goal_anti_comintern_pact
 		cost = 0.00
 		prerequisite = {
 			focus = sydney_is_ours
+		}
+		mutually_exclusive = {
+			focus = soviet_friendship
 		}
 		x = 0
 		y = 7
@@ -125,10 +120,13 @@ focus_tree = {
 	}
 	focus = {
 		id = soviet_friendship
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_major_alliance
 		cost = 0.00
 		prerequisite = {
 			focus = sydney_is_ours
+		}
+		mutually_exclusive = {
+			focus = soviet_enemys
 		}
 		x = 2
 		y = 7
@@ -136,7 +134,7 @@ focus_tree = {
 	}
 	focus = {
 		id = communism_strong
-		icon = GFX_goal_unknown
+		icon = GFX_goal_demand_sudetenland
 		cost = 0.00
 		prerequisite = {
 			focus = soviet_friendship
@@ -148,7 +146,7 @@ focus_tree = {
 	}
 	focus = {
 		id = national_junta
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_secret_weapon
 		cost = 0.00
 		prerequisite = {
 			focus = anti_colonialism_effort
@@ -228,7 +226,7 @@ focus_tree = {
 	}
 	focus = {
 		id = loyalty_forever
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_neutrality_focus
 		cost = 0.00
 		prerequisite = {
 			focus = colonial_question
@@ -464,6 +462,10 @@ focus_tree = {
 		prerequisite = {
 			focus = land
 		}
+		mutually_exclusive = {
+			focus = massey_expansionism
+			focus = junta_officers
+		}
 		x = 22
 		y = 2
 
@@ -497,6 +499,10 @@ focus_tree = {
 		prerequisite = {
 			focus = land
 		}
+		mutually_exclusive = {
+			focus = massey_expansionism
+			focus = junta_officers
+		}
 		x = 24
 		y = 2
 
@@ -507,6 +513,12 @@ focus_tree = {
 		cost = 0.00
 		prerequisite = {
 			focus = land
+		}
+		mutually_exclusive = {
+			focus = massey_expansionism
+			focus = democratic_soliders
+			focus = massey_expansionism
+			focus = communist_millita
 		}
 		x = 26
 		y = 2
@@ -541,6 +553,12 @@ focus_tree = {
 		cost = 0.00
 		prerequisite = {
 			focus = land
+		}
+		mutually_exclusive = {
+			focus = junta_officers
+			focus = democratic_soliders
+			focus = communist_millita
+			focus = junta_officers
 		}
 		x = 28
 		y = 2
@@ -647,6 +665,17 @@ focus_tree = {
 
 	}
 	focus = {
+		id = indstrial_reform_center
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = anti_tribalism_effort
+		}
+		x = 7
+		y = 12
+
+	}
+	focus = {
 		id = finalize_indstrial_effort
 		icon = GFX_goal_unknown
 		cost = 0.00
@@ -674,7 +703,7 @@ focus_tree = {
 	}
 	focus = {
 		id = indstrial_workers
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_production2
 		cost = 0.00
 		prerequisite = {
 			focus = communism_strong
@@ -699,7 +728,7 @@ focus_tree = {
 	}
 	focus = {
 		id = expand_the_tribes
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_civilian
 		cost = 0.00
 		prerequisite = {
 			focus = indstrial_workers
@@ -710,7 +739,7 @@ focus_tree = {
 	}
 	focus = {
 		id = commual_working_center
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construction2
 		cost = 0.00
 		prerequisite = {
 			focus = expand_the_tribes
@@ -744,7 +773,7 @@ focus_tree = {
 	}
 	focus = {
 		id = workers_socialism
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_soviet_construction
 		cost = 0.00
 		prerequisite = {
 			focus = commual_working_center
