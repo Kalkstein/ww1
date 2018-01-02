@@ -351,4 +351,5 @@
  SUPPLYAREA_351:0 "ChristmasIslands"
  SUPPLYAREA_352:0 "CocosIslands"
  SUPPLYAREA_353:0 "KerguelenIslands"
- SUPPLYAREA_354:0 "SUPPLYAREA_354"
+ SUPPLYAREA_354:1 "SupplyArea"
+ SUPPLYAREA_355:0 "SupplyArea"
