@@ -13508,9 +13508,13 @@
 13507;55;96;92;land;false;desert;5
 <<<<<<< HEAD
 13508;136;163;118;land;false;desert;5
+<<<<<<< HEAD
 13509;35;32;187;land;false;desert;0
 13510;118;119;177;land;false;unknown;0
 13511;119;119;177;land;false;unknown;0
 =======
 13508;136;163;118;land;false;desert;5
 >>>>>>> parent of dc83f01... Naval Regions, States in Africa and France
+=======
+13509;35;32;187;land;false;desert;5
+>>>>>>> parent of 72b9ea5... Revert "Revert "Fixing things part 1""

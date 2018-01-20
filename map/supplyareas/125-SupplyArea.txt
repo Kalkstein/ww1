@@ -5,9 +5,13 @@ supply_area={
 	value=6
 	states={
 <<<<<<< HEAD
+<<<<<<< HEAD
 		547 548 546 757 810 544 809 814 
 =======
 		547 548 546 757 810 808 809 544 814 
 >>>>>>> parent of dc83f01... Naval Regions, States in Africa and France
+=======
+		547 548 546 757 810 808 809 814 544 
+>>>>>>> parent of 72b9ea5... Revert "Revert "Fixing things part 1""
 	}
 }

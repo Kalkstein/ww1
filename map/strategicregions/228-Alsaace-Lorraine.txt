@@ -3,10 +3,14 @@ strategic_region={
 	name="STRATEGICREGION_228"
 	provinces={
 <<<<<<< HEAD
+<<<<<<< HEAD
 		521 549 678 698 1346 3560 3629 5291 6529 6698 9503 9559 11488 11502 11516 11642 13296 13352 
 =======
 		9559 11502 5291 11516 11488 3629 521 11642 549 9503 6698 1346 6529 678 698 13352
 >>>>>>> parent of dc83f01... Naval Regions, States in Africa and France
+=======
+		549 678 698 1346 3629 6529 6698 9503 9559 11488 11502 11642 13352 
+>>>>>>> parent of 72b9ea5... Revert "Revert "Fixing things part 1""
 	}
 	weather={
 		period={

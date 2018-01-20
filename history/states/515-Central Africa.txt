@@ -16,10 +16,14 @@ state={
 
 	provinces={
 <<<<<<< HEAD
+<<<<<<< HEAD
 		1956 4913 7939 8028 8128 10758 10780 10805 10917 
 =======
 		1956 2068 4902 4913 5136 7939 8028 8128 10758 10780 10805 10893 10917 13138 
 >>>>>>> parent of dc83f01... Naval Regions, States in Africa and France
+=======
+		1956 4913 7939 8028 8128 10758 10780 10805 10917 13138 
+>>>>>>> parent of 72b9ea5... Revert "Revert "Fixing things part 1""
 	}
 	manpower=904474
 	buildings_max_level_factor=1.000
