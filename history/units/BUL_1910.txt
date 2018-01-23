@@ -35,31 +35,31 @@ division_template = {
 units = {
 	division= {	
 		name = "1st Sofia Infantry Division"
-		location = 949
+		location = 9902
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
 	division= {	
 		name = "3rd Balkan Infantry Division"
-		location = 949
+		location = 9888
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
 	division= {	
 		name = "10th Infantry Division"
-		location = 949
+		location = 9862
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
 	division= {	
 		name = "8th Tundzha Infantry Division"
-		location = 949
+		location = 6923
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
 	division= {	
 		name = "9th Pleven Infantry Division"
-		location = 949
+		location = 11813
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
@@ -89,13 +89,13 @@ units = {
 	}
 	division= {	
 		name = "7th Rila Infantry Division"
-		location = 949
+		location = 9818
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
 	division= {	
 		name = "Cavalry Division"
-		location = 949
+		location = 9771
 		division_template = "Cavalry Division"
 		start_experience_factor = 0.3
 	}

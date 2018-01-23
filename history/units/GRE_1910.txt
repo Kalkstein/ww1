@@ -32,31 +32,31 @@ division_template = {
 units = {
 	division= {	
 		name = "Ι Μεραρχία"
-		location = 4109
+		location = 12001
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
 	division= {	
 		name = "II Μεραρχία"
-		location = 4109
+		location = 11786
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
 	division= {	
 		name = "III Μεραρχία"
-		location = 4109
+		location = 11895
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
 	division= {	
 		name = "IV Μεραρχία"
-		location = 4109
+		location = 863
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
 	division= {	
 		name = "V Μεραρχία"
-		location = 4109
+		location = 3973
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
