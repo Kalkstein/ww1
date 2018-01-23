@@ -1,9 +1,13 @@
 
 state={
 	id=17
-	name="STATE_17"
+	name="STATE_17" # Lorraine
+	manpower = 1557500
+	
+	state_category = city
+	
 	resources={
-		steel=48.000
+		steel=48
 	}
 
 	history={
@@ -14,16 +18,11 @@ state={
 		buildings = {
 			infrastructure = 7
 			industrial_complex = 1
-
 		}
 		add_core_of = FRA
-
 	}
 
 	provinces={
-		698 6698 11488 11642 13352 
+		521 698 6698 11488 11516 11642 5291 13352
 	}
-	manpower=1557500
-	buildings_max_level_factor=1.000
-	state_category=city
 }
