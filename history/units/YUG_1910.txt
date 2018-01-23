@@ -32,37 +32,37 @@ division_template = {
 units = {
 	division= {	
 		name = "Šumadija division II line"
-		location = 11586
+		location = 3956
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
 	division= {	
 		name = "Drina division II line"
-		location = 11586
+		location = 797
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
 	division= {	
 		name = "Morava Division II line"
-		location = 11586
+		location = 3609
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
 	division= {	
 		name = "Šumadija Division I line"
-		location = 11586
+		location = 11583
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
 	division= {	
 		name = "Timok Division I line"
-		location = 11586
+		location = 3933
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
 	division= {	
 		name = "Timok division II line"
-		location = 11586
+		location = 630
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
@@ -92,7 +92,7 @@ units = {
 	}
 	division= {	
 		name = "Cavalry Division"
-		location = 11586
+		location = 9756
 		division_template = "Cavalry Division"
 		start_experience_factor = 0.3
 	}

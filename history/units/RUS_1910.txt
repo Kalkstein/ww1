@@ -47,865 +47,865 @@ units = {
 	}
 	division= {	
 		name = "4th Infantry Division"
-		location = 11370
+		location = 3544
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "5th Infantry Division"
-		location = 11370
+		location = 3544
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
 	}
 	division= {	
 		name = "6th Infantry Division"
-		location = 11370
+		location = 3544
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
 	division= {	
 		name = "7th Infantry Division"
-		location = 11370
+		location = 3544
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "8th Infantry Division"
-		location = 11370
+		location = 3151
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "9th Infantry Division"
-		location = 11370
+		location = 3151
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
 	}
 	division= {	
 		name = "10th Infantry Division"
-		location = 11370
+		location = 3151
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "11th Infantry Division"
-		location = 11370
+		location = 3151
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "12th Infantry Division"
-		location = 11370
+		location = 525
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "13th Infantry Division"
-		location = 11370
+		location = 525
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "14th Infantry Division"
-		location = 11370
+		location = 525
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "15th Infantry Division"
-		location = 11370
+		location = 525
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "16th Infantry Division"
-		location = 11370
+		location = 3686
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
 	}
 	division= {	
 		name = "17th Infantry Division"
-		location = 11370
+		location = 3686
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
 	division= {	
 		name = "18th Infantry Division"
-		location = 11370
+		location = 3686
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "19th Infantry Division"
-		location = 11370
+		location = 3686
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "20th Infantry Division"
-		location = 11370
+		location = 3529
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "21st Infantry Division"
-		location = 11370
+		location = 3529
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "22nd Infantry Division"
-		location = 11370
+		location = 3529
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "23rd Infantry Division"
-		location = 11370
+		location = 3529
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "24th Infantry Division"
-		location = 11370
+		location = 6380
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "25th Infantry Division"
-		location = 11370
+		location = 6380
 		division_template = "Infantry Division"
 		start_experience_factor = 0.16
 	}
 	division= {	
 		name = "26th Infantry Division"
-		location = 11370
+		location = 6380
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "27th Infantry Division"
-		location = 11370
+		location = 6380
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "28th Infantry Division"
-		location = 11370
+		location = 6380
 		division_template = "Infantry Division"
 		start_experience_factor = 0.21
 	}
 	division= {	
 		name = "29th Infantry Division"
-		location = 11370
+		location = 6380
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "30th Infantry Division"
-		location = 11370
+		location = 3151
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "31st Infantry Division"
-		location = 11370
+		location = 957
 		division_template = "Infantry Division"
 		start_experience_factor = 0.2
 	}
 	division= {	
 		name = "32nd Infantry Division"
-		location = 11370
+		location = 957
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "33rd Infantry Division"
-		location = 11370
+		location = 957
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "34th Infantry Division"
-		location = 11370
+		location = 12189
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "35th Infantry Division"
-		location = 11370
+		location = 4797
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "36th Infantry Division"
-		location = 11370
+		location = 4797
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "37th Infantry Division"
-		location = 11370
+		location = 1823
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "38th Infantry Division"
-		location = 11370
+		location = 7661
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "39th Infantry Division"
-		location = 11370
+		location = 7661
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "40th Infantry Division"
-		location = 11370
+		location = 7661
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "41st Infantry Division"
-		location = 11370
+		location = 12320
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "42nd Infantry Division"
-		location = 11370
+		location = 12320
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "43rd Infantry Division"
-		location = 11370
+		location = 1599
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "44th Infantry Division"
-		location = 11370
+		location = 1599
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "45th Infantry Division"
-		location = 11370
+		location = 3653
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "46th Infantry Division"
-		location = 11370
+		location = 3653
 		division_template = "Infantry Division"
 		start_experience_factor = 1.0
 	}
 	division= {	
 		name = "47th Infantry Division"
-		location = 11370
+		location = 2672
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "48th Infantry Division"
-		location = 11370
+		location = 2672
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "49th Infantry Division"
-		location = 11370
+		location = 3720
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "51st Infantry Division"
-		location = 11370
+		location = 3734
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "52nd Infantry Division"
-		location = 11370
+		location = 3734
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "53rd Infantry Division"
-		location = 11370
+		location = 9417
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "54th Infantry Division"
-		location = 11370
+		location = 9417
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "55th Infantry Division"
-		location = 11370
+		location = 9417
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "56th Infantry Division"
-		location = 11370
+		location = 9461
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "57th Infantry Division"
-		location = 11370
+		location = 6474
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "58th Infantry Division"
-		location = 11370
+		location = 6474
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "59th Infantry Division"
-		location = 11370
+		location = 11405
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "60th Infantry Division"
-		location = 11370
+		location = 11437
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "61st Infantry Division"
-		location = 11370
+		location = 11437
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "62nd Infantry Division"
-		location = 11370
+		location = 11670
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "63rd Infantry Division"
-		location = 11370
+		location = 11670
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "64th Infantry Division"
-		location = 11370
+		location = 11670
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "65th Infantry Division"
-		location = 11370
+		location = 418
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "66th Infantry Division"
-		location = 11370
+		location = 418
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "67th Infantry Division"
-		location = 11370
+		location = 3580
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "68th Infantry Division"
-		location = 11370
+		location = 413
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "69th Infantry Division"
-		location = 11370
+		location = 413
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "70th Infantry Division"
-		location = 11370
+		location = 9355
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "71st Infantry Division"
-		location = 11370
+		location = 9355
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "72nd Infantry Division"
-		location = 11370
+		location = 9355
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "73rd Infantry Division"
-		location = 11370
+		location = 3335
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "74th Infantry Division"
-		location = 11370
+		location = 3335
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "75th Infantry Division"
-		location = 11370
+		location = 3335
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "76th Infantry Division"
-		location = 11370
+		location = 6262
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "77th Infantry Division"
-		location = 11370
+		location = 9288
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "78th Infantry Division"
-		location = 11370
+		location = 9288
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "79th Infantry Division"
-		location = 11370
+		location = 6354
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "80th Infantry Division"
-		location = 11370
+		location = 306
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "81st Infantry Division"
-		location = 11370
+		location = 306
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "82nd Infantry Division"
-		location = 11370
+		location = 306
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "83rd Infantry Division"
-		location = 11370
+		location = 306
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "84th Infantry Division"
-		location = 11370
+		location = 11241
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "85th Infantry Division"
-		location = 11370
+		location = 11241
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "86th Infantry Division"
-		location = 11370
+		location = 310
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "87th Infantry Division"
-		location = 11370
+		location = 9340
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "88th Infantry Division"
-		location = 11370
+		location = 9340
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "89th Infantry Division"
-		location = 11370
+		location = 9483
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "90th Infantry Division"
-		location = 11370
+		location = 6296
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "91st Infantry Division"
-		location = 11370
+		location = 6296
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "92nd Infantry Division"
-		location = 11370
+		location = 3320
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "93rd Infantry Division"
-		location = 11370
+		location = 3393
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "94th Infantry Division"
-		location = 11370
+		location = 3392
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "95th Infantry Division"
-		location = 11370
+		location = 3392
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "96th Infantry Division"
-		location = 11370
+		location = 9508
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "97th Infantry Division"
-		location = 11370
+		location = 9508
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "98th Infantry Division"
-		location = 11370
+		location = 9221
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "99th Infantry Division"
-		location = 11370
+		location = 3152
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "100th Infantry Division"
-		location = 11370
+		location = 3152
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "101st Infantry Division"
-		location = 11370
+		location = 9228
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "102nd Infantry Division"
-		location = 11370
+		location = 3038
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "103rd Infantry Division"
-		location = 11370
+		location = 11105
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "104th Infantry Division"
-		location = 11370
+		location = 11105
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "105th Infantry Division"
-		location = 11370
+		location = 11105
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "106th Infantry Division"
-		location = 11370
+		location = 9206
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "107th Infantry Division"
-		location = 11370
+		location = 3137
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "108th Infantry Division"
-		location = 11370
+		location = 3122
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "109th Infantry Division"
-		location = 11370
+		location = 197
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "110th Infantry Division"
-		location = 11370
+		location = 3134
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "111th Infantry Division"
-		location = 11370
+		location = 3134
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "112th Infantry Division"
-		location = 11370
+		location = 117
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "113th Infantry Division"
-		location = 11370
+		location = 3140
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "114th Infantry Division"
-		location = 11370
+		location = 11349
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "115th Infantry Division"
-		location = 11370
+		location = 6245
 		division_template = "Infantry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "1st Cavalry Division"
-		location = 11370
+		location = 6245
 		division_template = "Cavalry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "2nd Cavalry Division"
-		location = 11370
+		location = 121
 		division_template = "Cavalry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "3rd Cavalry Division"
-		location = 11370
+		location = 121
 		division_template = "Cavalry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "4th Cavalry Division"
-		location = 11370
+		location = 6380
 		division_template = "Cavalry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "5th Cavalry Division"
-		location = 11370
+		location = 6380
 		division_template = "Cavalry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "6th Cavalry Division"
-		location = 11370
+		location = 6380
 		division_template = "Cavalry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "7th Cavalry Division"
-		location = 11370
+		location = 525
 		division_template = "Cavalry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "8th Cavalry Division"
-		location = 11370
+		location = 525
 		division_template = "Cavalry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "9th Cavalry Division"
-		location = 11370
+		location = 3686
 		division_template = "Cavalry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "10th Cavalry Division"
-		location = 11370
+		location = 3686
 		division_template = "Cavalry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "11th Cavalry Division"
-		location = 11370
+		location = 3544
 		division_template = "Cavalry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "12th Cavalry Division"
-		location = 11370
+		location = 3544
 		division_template = "Cavalry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "13th Cavalry Division"
-		location = 11370
+		location = 3544
 		division_template = "Cavalry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "14th Cavalry Division"
-		location = 11370
+		location = 3151
 		division_template = "Cavalry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "15th Cavalry Division"
-		location = 11370
+		location = 3151
 		division_template = "Cavalry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "16th Cavalry Division"
-		location = 11370
+		location = 3151
 		division_template = "Cavalry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "17th Cavalry Division"
-		location = 11370
+		location = 3151
 		division_template = "Cavalry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "18th Cavalry Division"
-		location = 11370
+		location = 3529
 		division_template = "Cavalry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "19th Cavalry Division"
-		location = 11370
+		location = 3529
 		division_template = "Cavalry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "20th Cavalry Division"
-		location = 11370
+		location = 3529
 		division_template = "Cavalry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "21st Cavalry Division"
-		location = 11370
+		location = 9753
 		division_template = "Cavalry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "22nd Cavalry Division"
-		location = 11370
+		location = 11225
 		division_template = "Cavalry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "23rd Cavalry Division"
-		location = 11370
+		location = 306
 		division_template = "Cavalry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "24th Cavalry Division"
-		location = 11370
+		location = 9340
 		division_template = "Cavalry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "25th Cavalry Division"
-		location = 11370
+		location = 957
 		division_template = "Cavalry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "26th Cavalry Division"
-		location = 11370
+		location = 4724
 		division_template = "Cavalry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "27th Cavalry Division"
-		location = 11370
+		location = 4333
 		division_template = "Cavalry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "28th Cavalry Division"
-		location = 11370
+		location = 9292
 		division_template = "Cavalry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "29th Cavalry Division"
-		location = 11370
+		location = 1278
 		division_template = "Cavalry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "30th Cavalry Division"
-		location = 11370
+		location = 7375
 		division_template = "Cavalry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "31st Cavalry Division"
-		location = 11370
+		location = 12530
 		division_template = "Cavalry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "32nd Cavalry Division"
-		location = 11370
+		location = 3338
 		division_template = "Cavalry Division"
 		start_experience_factor = 0.1
 	}
 	division= {	
 		name = "33rd Cavalry Division"
-		location = 11370
+		location = 11159
 		division_template = "Cavalry Division"
 		start_experience_factor = 0.1
 	}
@@ -935,7 +935,7 @@ units = {
 	}
 	division= {	
 		name = "38th Cavalry Division"
-		location = 11370
+		location = 1459
 		division_template = "Cavalry Division"
 		start_experience_factor = 0.1
 	}
