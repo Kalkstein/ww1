@@ -2200,7 +2200,7 @@
 2199;10;147;135;land;false;mountain;3
 2200;10;150;200;land;true;mountain;5
 2201;10;153;165;land;true;desert;4
-2202;10;156;130;land;false;desert;5
+2202;10;156;130;land;true;forest;5
 2203;10;159;45;land;true;hills;4
 2204;10;159;195;land;false;jungle;3
 2205;10;162;10;land;false;desert;4
@@ -13501,20 +13501,12 @@
 13500;132;45;11;land;true;hills;1
 13501;125;127;113;land;true;urban;6
 13502;65;30;93;land;true;plains;0
-13503;56;75;118;land;true;forest;5
+13503;10;156;130;land;true;forest;5
 13504;113;67;66;land;false;unknown;0
 13505;95;103;84;land;false;desert;5
 13506;82;105;153;land;false;desert;5
 13507;55;96;92;land;false;desert;5
-<<<<<<< HEAD
 13508;136;163;118;land;false;desert;5
-<<<<<<< HEAD
 13509;35;32;187;land;false;desert;0
 13510;118;119;177;land;false;unknown;0
 13511;119;119;177;land;false;unknown;0
-=======
-13508;136;163;118;land;false;desert;5
->>>>>>> parent of dc83f01... Naval Regions, States in Africa and France
-=======
-13509;35;32;187;land;false;desert;5
->>>>>>> parent of 72b9ea5... Revert "Revert "Fixing things part 1""
