@@ -1,9 +1,18 @@
 state={
 	id=820
 	name="STATE_820"
+	history={
+		owner = FRA
+		buildings = {
+			infrastructure = 1
+
+		}
+
+	}
 	provinces={
 		10919 12762 12874 
 	}
-	manpower=0
+	manpower=643000
+	state_category=pastoral
 	buildings_max_level_factor=1.000
 }

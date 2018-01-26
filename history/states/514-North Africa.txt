@@ -16,6 +16,7 @@ state={
 		1043 1095 1901 5095 7041 10749 12849 
 	}
 	manpower=204617
+	impassable=yes
 	buildings_max_level_factor=1.000
 	state_category=wasteland
 }

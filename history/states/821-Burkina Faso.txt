@@ -1,9 +1,18 @@
 state={
 	id=821
 	name="STATE_821"
+history={
+		owner = FRA
+		buildings = {
+			infrastructure = 3
+
+		}
+
+	}
 	provinces={
 		2001 7950 7983 8071 10836 12851 
 	}
-	manpower=0
+	manpower=2454000
+	state_category=rural
 	buildings_max_level_factor=1.000
 }
