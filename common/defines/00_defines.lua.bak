@@ -1128,6 +1128,7 @@ NAI = {
 	STR_UNIT_STRONG = 0.75,						-- Strength (equipment) % for unit to be considered strong
 	
 	ORG_UNIT_WEAK = 0.15,						-- Organization % for unit to be considered weak
+	STR_UNIT_STRONG = 0.75,						-- Strength (equipment) % for unit to be considered strong
 	STR_UNIT_WEAK = 0.2,						-- Strength (equipment) % for unit to be considered weak
 	
 	ORG_UNIT_NORMAL = 0.35,						-- Organization % for unit to be considered normal
