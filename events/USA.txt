@@ -1,9 +1,0 @@
-﻿###########################
-# USA Events
-###########################
-# To do
-# Event for all Americans to join New World Faction
-# Event(s) for Bolivian/Peruian borders
-# Event for canadian independence
-add_namespace = usa
-
