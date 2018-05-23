@@ -1,9 +1,32 @@
 state={
 	id=764
 	name="STATE_764"
+	manpower = 215000
+	
+	state_category = pastoral
+	
+	resources={
+
+	}
+
+	history={
+		owner = TUR
+		victory_points = {
+			914 1 
+		}
+		buildings = {
+			infrastructure = 3
+		}
+		add_claim_by = GRE
+		add_core_of = ALB
+		1913.8.10 = {
+			owner = ALB
+			controller = ALB
+			remove_claim_by = GRE 
+		}
+}
 	provinces={
 		914 13220 13221 
 	}
-	manpower=0
 	buildings_max_level_factor=1.000
 }

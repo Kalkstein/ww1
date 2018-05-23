@@ -1,9 +1,17 @@
 state={
 	id=772
 	name="STATE_772"
+	history = {
+		owner = TUR
+		add_core_of = TUR
+		buildings = {
+			infrastructure = 2
+		}
+	}
 	provinces={
 		849 
 	}
-	manpower=0
+	manpower=31862
+	state_category=pastoral
 	buildings_max_level_factor=1.000
 }

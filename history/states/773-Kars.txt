@@ -1,9 +1,22 @@
 state={
 	id=773
 	name="STATE_773"
+	manpower = 436979
+	
+	state_category = pastoral
+
+	history={
+		owner = SOV
+		add_core_of = SOV
+		add_core_of = TUR
+
+		buildings = {
+			infrastructure = 3
+
+		}
+}
 	provinces={
 		7454 10403 10472 13229 13230 13231 13232 
 	}
-	manpower=0
 	buildings_max_level_factor=1.000
 }

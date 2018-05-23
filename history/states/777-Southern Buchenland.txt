@@ -1,9 +1,18 @@
 state={
 	id=777
 	name="STATE_777"
+	state_category = rural
+	manpower = 129176
+	history=  {
+		owner = AUS
+		buildings = {
+			infrastructure = 5
+		}
+		add_core_of = AUS
+		add_core_of = ROM
+	}
 	provinces={
 		6761 11689 
 	}
-	manpower=0
 	buildings_max_level_factor=1.000
 }

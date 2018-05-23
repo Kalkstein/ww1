@@ -1,9 +1,24 @@
 state={
 	id=778
 	name="STATE_778"
+	history={
+		owner = TUR
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = ALB
+		1913.5.30 = {
+			owner = ALB
+			controller = ALB
+
+		}
+
+	}
 	provinces={
 		3896 9780 
 	}
-	manpower=0
+	manpower=200000
+	state_category=pastoral
 	buildings_max_level_factor=1.000
 }

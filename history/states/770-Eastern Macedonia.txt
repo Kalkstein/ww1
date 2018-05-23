@@ -1,9 +1,37 @@
 state={
 	id=770
 	name="STATE_770"
+	manpower = 244532
+	
+	state_category = pastoral
+	
+	resources={
+		aluminium=10
+	}
+
+	history={
+		owner = TUR
+		buildings = {
+			infrastructure = 3
+		}
+		victory_points = {
+			3882 1 
+		}
+		add_core_of = BUL
+		add_claim_by = SER 
+		1913.5.30 = {
+			owner = BUL 
+			controller = BUL 
+		}
+		1913.8.10 = {
+			owner = SER
+			controller = SER
+			remove_claim_by = SER 
+			add_core_of = SER
+		}
+}
 	provinces={
 		907 6886 13215 13216 
 	}
-	manpower=0
 	buildings_max_level_factor=1.000
 }

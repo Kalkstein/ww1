@@ -1,9 +1,29 @@
 state={
 	id=779
 	name="STATE_779"
+	history={
+		owner = TUR
+		victory_points = {
+			9914 5 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			air_base = 3
+
+		}
+		add_core_of = ALB
+		1913.5.30 = {
+			owner = ALB
+			controller = ALB
+
+		}
+
+	}
 	provinces={
 		9875 9914 11762 
 	}
-	manpower=0
+	manpower=612000
+	state_category=town
 	buildings_max_level_factor=1.000
 }

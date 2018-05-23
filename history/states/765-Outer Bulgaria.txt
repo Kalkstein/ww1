@@ -1,9 +1,17 @@
 state={
 	id=765
 	name="STATE_765"
+	history = {
+		owner = BUL
+		add_core_of = BUL
+		buildings = {
+			infrastructure = 1
+		}
+	}
 	provinces={
 		13224 13225 13226 
 	}
-	manpower=0
+	manpower=5000
+	state_category=pastoral
 	buildings_max_level_factor=1.000
 }

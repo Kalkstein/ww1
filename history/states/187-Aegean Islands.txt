@@ -10,7 +10,6 @@ state={
 		owner = TUR
 		buildings = {
 			infrastructure = 4
-			dockyard = 1
 			8435 = {
 				naval_base = 1
 
@@ -22,7 +21,10 @@ state={
 
 		}
 		add_core_of = GRE
-		add_core_of = TUR
+		1913.5.30 = {
+			owner = GRE
+			controller = GRE
+		}
 
 	}
 

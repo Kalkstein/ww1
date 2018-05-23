@@ -23,7 +23,10 @@ state=
 			}
 		}
 		add_core_of = GRE
-		add_core_of = TUR
+		1912.10.18 = {
+			owner = ITA
+			controller = ITA
+		}
 	}
 	provinces=
 	{

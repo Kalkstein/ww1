@@ -1,9 +1,25 @@
 state={
 	id=771
 	name="STATE_771"
+	history = {
+		owner = TUR
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+		}
+		victory_points = {
+			878 1 #Kardzhali
+		}
+		add_core_of = BUL
+		1913.5.30 = {
+			owner = BUL
+			controller = BUL
+		}
+}
 	provinces={
 		878 893 6857 13209 13211 13212 13213 
 	}
-	manpower=0
+	manpower = 623250
+	state_category = rural
 	buildings_max_level_factor=1.000
 }

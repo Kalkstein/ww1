@@ -1,9 +1,35 @@
 state={
 	id=769
 	name="STATE_769"
+	manpower = 333000
+	
+	state_category = rural
+	
+	resources={
+		steel = 20
+		chromium=20
+	}
+
+	history={
+		owner = TUR
+		buildings = {
+			infrastructure = 3
+			9805 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			13207 1 #Ioannina/Yanya 
+		}
+		add_core_of = GRE
+		1913.5.30 = {
+			owner = GRE 
+			controller = GRE
+		}
+	}
+
 	provinces={
 		841 3914 3980 6930 9805 9837 9916 13219 
 	}
-	manpower=0
 	buildings_max_level_factor=1.000
 }

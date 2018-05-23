@@ -1,0 +1,23 @@
+state=
+{
+	id=163
+	name="STATE_163"
+	manpower = 18000
+	
+	state_category = pastoral
+	
+	history={
+		owner = AUS
+		add_core_of = AUS
+		add_core_of = CRO
+		buildings = {
+			infrastructure = 5
+			3943 = {
+				naval_base = 1
+			}
+		}
+	} 
+	provinces={	
+		3943 
+	}
+}
