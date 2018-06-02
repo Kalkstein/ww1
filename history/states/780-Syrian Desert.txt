@@ -1,0 +1,15 @@
+state={
+	id=780
+	name="STATE_780"
+	history = {
+		owner = JBS
+		add_core_of = JBS
+	}
+	provinces={
+		13233 13234 
+	}
+	manpower=5000
+	state_category=wasteland
+	impassable=yes
+	buildings_max_level_factor=1.000
+}
